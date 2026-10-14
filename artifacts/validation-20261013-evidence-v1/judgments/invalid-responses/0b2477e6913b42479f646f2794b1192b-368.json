@@ -1,0 +1,120 @@
+{
+  "page": 10,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "FINIS",
+      "location": "页面上方居中，小字号",
+      "statement": "页面顶部出现拉丁文'FINIS'，作为结束页标识，属于装饰性收束元素",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "谢谢聆听——欢迎指正、补充线索与“拆台”",
+      "location": "页面中上部大标题区域",
+      "statement": "主标题采用断行排版：'谢谢聆听——欢迎指正、补充线'为第一行，'索与“拆台”'为第二行。根据局部放大图核查，'线'与'索'虽bbox有垂直方向小范围交集，但实际笔画无遮挡，属于相邻换行排版，非真实叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "谢谢各位听完这份只有四天的驻村笔记——这是一份中期田野笔记的分享，不是研究结论。欢迎指正、补充线索与当场“拆台”，线索可在沙龙现场投递。四天的笔记只够提出问题，接下来靠多方核验。",
+      "location": "页面中部说明文字",
+      "statement": "正文明确标注'这是一份中期田野笔记的分享，不是研究结论'，体现存疑态度；'四天的笔记只够提出问题，接下来靠多方核验'呼应需求中'存疑的地方标出来，别下定论'的要求。根据局部放大图核查，两行文字虽bbox有微小垂直交集，但实际笔画无遮挡，属于正常行间距排版",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论。"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "4",
+          "unit": "天",
+          "subject": "驻村笔记时长",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "驻村田野记录者",
+      "location": "页面下方偏右",
+      "statement": "署名信息，未出现编造的具体人名",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "驻村第 1–4 日 · 初步观察，存疑待考",
+      "location": "页面底部署名下方小字",
+      "statement": "明确标注'存疑待考'，与需求中'存疑的地方标出来'一致；'第1-4日'覆盖Day1-Day4全部田野时段，'初步观察'对应需求中'初步感受'的定位",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来,别下定论。"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "1-4",
+          "unit": "日",
+          "subject": "驻村时间范围",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "谢谢各位听完这份只有四天的驻村笔记——这是一份中期田野笔记的分享，不是研究结论。",
+      "location": "页面中部说明文字首句",
+      "statement": "明确否定'研究结论'定性，将内容定位为'中期田野笔记的分享'，符合需求'别下定论'的要求，不构成uncertainty_overclaimed",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来,别下定论。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "四天的笔记只够提出问题，接下来靠多方核验。",
+      "location": "页面中部说明文字末句",
+      "statement": "主动声明信息局限性，邀请'多方核验'，体现开放性和存疑意识",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来,别下定论。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

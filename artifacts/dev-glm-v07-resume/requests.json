@@ -1,0 +1,74 @@
+[
+  {
+    "request_id": 1,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "f5a957c1f2f6d5298cd2afd9bbf2a5f289db79088bee0f1ad049fa5d392d60d9",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3853,
+      "total_tokens": 3920,
+      "completion_tokens": 67,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Invalid model review response",
+    "elapsed_seconds": 7.377
+  },
+  {
+    "request_id": 2,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "f5a957c1f2f6d5298cd2afd9bbf2a5f289db79088bee0f1ad049fa5d392d60d9",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3853,
+      "total_tokens": 3918,
+      "completion_tokens": 65,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Invalid model review response",
+    "elapsed_seconds": 8.056
+  },
+  {
+    "request_id": 3,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "f5a957c1f2f6d5298cd2afd9bbf2a5f289db79088bee0f1ad049fa5d392d60d9",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3853,
+      "total_tokens": 3923,
+      "completion_tokens": 70,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Invalid model review response",
+    "elapsed_seconds": 5.772
+  }
+]

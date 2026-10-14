@@ -1,0 +1,21 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 68314,
+    "total_tokens": 68337,
+    "completion_tokens": 23,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 116.231,
+  "attempts": 1
+}

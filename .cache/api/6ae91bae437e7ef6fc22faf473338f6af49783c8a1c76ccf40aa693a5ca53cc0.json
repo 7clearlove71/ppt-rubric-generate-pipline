@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "叙事顺序验证：第1-2页完成四条产线能耗对比（柱状图+差距贡献分解，1号线0.85、2号线0.52、3号线0.48、4号线0.52）；第3-4页聚焦1号线深挖原因（四步诊断链锁定液压系统老化，45%电耗占比、29%老化损失）；第5页投资回报测算（120万投入、月节电6.6万、约18个月回收期+敏感性分析）；第6页3号线空载问题为补充支线，未打断主叙事；第7页汇总立项建议。对比→深挖→投资回报三环节齐全且顺序正确，未出现颠倒。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23342,
+    "total_tokens": 23540,
+    "completion_tokens": 198,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 14.4,
+  "attempts": 1
+}

@@ -1,0 +1,49 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 13,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              13
+            ],
+            "evidence": "左侧正文区两行文字实际叠印：'临床试验阶段 · 工程化闭环成形'与'欢迎就工艺、验证与临床转化开展合作交流'笔画相交，局部放大图确认两行字形相互穿插，需猜读；其余内容（标题'三年，从实验室到临床'、'78% → 92% 量产良率 · 100,000 次弯曲无衰减'、右栏'三大成果回顾'三组数据）均可辨认。",
+            "defect": {
+              "key": "doc_2694aca209eb8b797e618fce/page/13/正文'临床试验阶段·工程化闭环成形'与'欢迎就工艺、验证与临床转化开展合作交流'两行文字叠印",
+              "description": "左下正文两行文字实际重叠叠印，笔画相交导致两行均需猜读，存在信息可读性损失。"
+            }
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              13
+            ],
+            "evidence": "标题'三年，从实验室到临床'与结语标签、正文要点、右栏'三大成果回顾'三组并列数据分区清晰，主次与阅读顺序明确；左下文字叠印属可读性问题，已在V_READ计分，本条不重复处罚。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 758,
+    "completion_tokens_details": {
+      "reasoning_tokens": 456,
+      "text_tokens": 302
+    },
+    "prompt_tokens": 4509,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3461,
+      "text_tokens": 1048
+    },
+    "total_tokens": 5267
+  },
+  "elapsed_seconds": 41.261,
+  "attempts": 1
+}

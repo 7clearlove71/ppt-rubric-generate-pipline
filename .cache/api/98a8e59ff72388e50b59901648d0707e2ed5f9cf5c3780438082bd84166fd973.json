@@ -1,0 +1,86 @@
+{
+  "parsed": {
+    "task_summary": "基于一个月的产线能耗数据制作几页PPT，用于节能改造立项汇报：通过四线对比凸显1号线能耗异常，归因液压系统老化，并算清更换液压系统的投资回报账。",
+    "source_policy": "已知事实：四条产线一个月的月产量、月用电、单位能耗、空载能耗数据；工业电价0.75元/kWh；行业标杆单位能耗约0.45kWh/件；1号线能耗高的归因（液压系统老化）。用户给出的估算：更换液压系统投入约120万元、回收期约18个月（按当前产量和电价测算，为估算值而非审计值）。允许补充：基于给定数据和电价的合理推导（如节电量、年化收益、与标杆的差距）。待确认/不补全：具体改造方案细节、停机流程整改措施、其他产线改造计划等源文未给出的内容。",
+    "requirements": [
+      {
+        "id": "Q01",
+        "kind": "fact",
+        "text": "准确呈现四条产线一个月的能耗对比数据（月产量万件/月用电万kWh/单位能耗kWh每件/空载能耗kWh每h）：1号线80/68/0.85/8；2号线95/49/0.52/6；3号线70/34/0.48/12；4号线60/31/0.52/5，并突出核心发现：1号线单位产品能耗0.85kWh/件，远高于其他产线的约0.5kWh/件。",
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91",
+          "src_92ca0f240dd5cf7359acefc0",
+          "src_174da649339240d00804ab0f",
+          "src_4c1e7e4f7af4c47b5b98d7b3",
+          "src_66a4055884f76a0f13058c95",
+          "src_6646cf47decd3caa6c8683f3",
+          "src_088ada1ab22d5049ba57d957"
+        ],
+        "importance": 3
+      },
+      {
+        "id": "Q02",
+        "kind": "fact",
+        "text": "明确指出1号线能耗异常的主要原因是液压系统老化导致效率下降。",
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91"
+        ],
+        "importance": 3
+      },
+      {
+        "id": "Q03",
+        "kind": "deliverable",
+        "text": "1号线更换液压系统的投资回报账要在PPT里算清楚：投入约120万元，按当前产量和工业电价0.75元/kWh测算，约18个月收回成本；需呈现可理解的测算过程，并保持这些数值的估算性质。",
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91",
+          "src_624e5d89a92f6fbecfcd2a96"
+        ],
+        "importance": 3
+      },
+      {
+        "id": "Q04",
+        "kind": "fact",
+        "text": "提及3号线的问题：单位能耗0.48kWh/件虽不高，但空载能耗偏高，待机状态每小时仍耗电12kWh，说明停机流程不规范。",
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91",
+          "src_6646cf47decd3caa6c8683f3"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q05",
+        "kind": "presentation",
+        "text": "整体结构符合要求：先呈现四条产线的能耗对比，再聚焦1号线做深挖，最后落到节能改造的投资回报测算。",
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q06",
+        "kind": "fact",
+        "text": "行业标杆单位能耗约0.45kWh/件（作为对标参考信息，如引用需数值准确）。",
+        "source_ids": [
+          "src_624e5d89a92f6fbecfcd2a96"
+        ],
+        "importance": 1
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 4615,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3783,
+      "text_tokens": 832
+    },
+    "prompt_tokens": 1277,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 1277
+    },
+    "total_tokens": 5892
+  },
+  "elapsed_seconds": 94.145,
+  "attempts": 1
+}

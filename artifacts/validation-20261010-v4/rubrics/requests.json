@@ -1,0 +1,226 @@
+[
+  {
+    "request_id": 1,
+    "invocation_id": "29215761b5b04be986b2c9c0393ba9e9",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "fcfff23274c67315cb4d47d0b7fe27dc16497917741da8c79077edced76d768d",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 1702,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1702
+      },
+      "prompt_tokens": 1978,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 1978
+      },
+      "total_tokens": 3680
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Requirement Q06a: quote is not verbatim source text",
+    "elapsed_seconds": 27.084
+  },
+  {
+    "request_id": 2,
+    "invocation_id": "29215761b5b04be986b2c9c0393ba9e9",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "fcfff23274c67315cb4d47d0b7fe27dc16497917741da8c79077edced76d768d",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 1746,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1746
+      },
+      "prompt_tokens": 1978,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 1978
+      },
+      "total_tokens": 3724
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Requirement Q06a: quote is not verbatim source text",
+    "elapsed_seconds": 28.521
+  },
+  {
+    "request_id": 3,
+    "invocation_id": "29215761b5b04be986b2c9c0393ba9e9",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "fcfff23274c67315cb4d47d0b7fe27dc16497917741da8c79077edced76d768d",
+    "attempt": 3,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 1408,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1408
+      },
+      "prompt_tokens": 1978,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 1978
+      },
+      "total_tokens": 3386
+    },
+    "elapsed_seconds": 22.91
+  },
+  {
+    "request_id": 4,
+    "invocation_id": "29215761b5b04be986b2c9c0393ba9e9",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "fe734818e295924db7198680b783bddb2bb0644983eae8cc425181aeb1288805",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 2874,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 2874
+      },
+      "prompt_tokens": 3239,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 3239
+      },
+      "total_tokens": 6113
+    },
+    "elapsed_seconds": 65.603
+  },
+  {
+    "request_id": 5,
+    "invocation_id": "29215761b5b04be986b2c9c0393ba9e9",
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "eec86228316e96a963e76ec39abdefe76f463dbdacddab7fe509b3f996f9b269",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 1609,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1609
+      },
+      "prompt_tokens": 21867,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 13424,
+        "text_tokens": 8443
+      },
+      "total_tokens": 23476
+    },
+    "elapsed_seconds": 44.108
+  },
+  {
+    "request_id": 6,
+    "invocation_id": "29215761b5b04be986b2c9c0393ba9e9",
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "bbc834a569f7516537a4784f8400c5f9aab07eb443077043ad440a5d7fdf49bb",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 2033,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 2033
+      },
+      "prompt_tokens": 31433,
+      "prompt_tokens_details": {
+        "cached_tokens": 5120,
+        "image_tokens": 16780,
+        "text_tokens": 14653
+      },
+      "total_tokens": 33466
+    },
+    "elapsed_seconds": 55.11
+  },
+  {
+    "request_id": 7,
+    "invocation_id": "29215761b5b04be986b2c9c0393ba9e9",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "8fdc720d60e64bfb213d1568db0b61f0b1a4f7e32e3e1dd1c12d2da7b1d817a3",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 3283,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3283
+      },
+      "prompt_tokens": 10428,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 10428
+      },
+      "total_tokens": 13711
+    },
+    "elapsed_seconds": 46.329
+  },
+  {
+    "request_id": 8,
+    "invocation_id": "29215761b5b04be986b2c9c0393ba9e9",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "ddababbdfe18fb7143e0112903f2eb30c4b3c915c0af7cdcb3b3a1f1a027bba3",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 3372,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3372
+      },
+      "prompt_tokens": 7222,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 7222
+      },
+      "total_tokens": 10594
+    },
+    "elapsed_seconds": 50.15
+  },
+  {
+    "request_id": 9,
+    "invocation_id": "29215761b5b04be986b2c9c0393ba9e9",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "0caa6f6cbc4c822881a8fd21ea18b7a92b46a892963af0c95fe9e6c71752af8a",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 3372,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3372
+      },
+      "prompt_tokens": 7311,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "text_tokens": 7311
+      },
+      "total_tokens": 10683
+    },
+    "elapsed_seconds": 46.303
+  }
+]

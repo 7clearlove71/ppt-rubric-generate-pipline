@@ -1,0 +1,98 @@
+{
+  "cases": [
+    {
+      "case_id": "03",
+      "A": {
+        "status": "complete",
+        "score": 76.42857142857143,
+        "score_lower": 76.42857142857143,
+        "score_upper": 76.42857142857143,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 22.5,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 2.5,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 6.428571428571429,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "B": {
+        "status": "complete",
+        "score": 93.57142857142857,
+        "score_lower": 93.57142857142857,
+        "score_upper": 93.57142857142857,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 8.571428571428571,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "status": "complete"
+    }
+  ],
+  "status_counts": {
+    "complete": 1
+  },
+  "total_cases": 1,
+  "approved_fraction": 0.0,
+  "logical_cache_hits": 45,
+  "models": {
+    "kimi-k2.6": {
+      "http_attempts": 69,
+      "failed_attempts": 9,
+      "reported_prompt_tokens": 1215812,
+      "reported_completion_tokens": 24797,
+      "reported_total_tokens": 1240609,
+      "usage_missing_attempts": 0
+    }
+  },
+  "attempt_journal_available": true,
+  "usage_scope": "Cumulative journals for this output directory; includes resumed invocations.",
+  "usage_caveat": null,
+  "failed_or_incomplete_cases": [],
+  "human_agreement": null,
+  "acceptance": "Automated operational report only; no human alignment claim."
+}

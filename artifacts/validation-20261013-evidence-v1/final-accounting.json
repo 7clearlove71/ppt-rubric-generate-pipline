@@ -1,0 +1,211 @@
+{
+  "closed_at": "2026-10-13T21:34:55.021799+00:00",
+  "outcome": "bounded_round_finished_with_incomplete_scores_and_semantic_failures",
+  "all_rubrics_approved": true,
+  "approved_rubrics": 7,
+  "rubrics_reused_from_current_validator_approved_cases": [
+    "01",
+    "06"
+  ],
+  "complete_candidates": 8,
+  "requested_candidates": 14,
+  "evidence_pages_complete": 127,
+  "evidence_pages_requested": 130,
+  "actual_requests": {
+    "bailian": 56,
+    "maas": 607
+  },
+  "reported_tokens": {
+    "bailian": 868945,
+    "maas": 21256884
+  },
+  "maas_requests_with_missing_usage": [
+    {
+      "request_id": 25,
+      "status": "started",
+      "http_status": null,
+      "error_type": null
+    },
+    {
+      "request_id": 78,
+      "status": "failed",
+      "http_status": 429,
+      "error_type": "RequestException"
+    },
+    {
+      "request_id": 80,
+      "status": "failed",
+      "http_status": 429,
+      "error_type": "RequestException"
+    },
+    {
+      "request_id": 82,
+      "status": "failed",
+      "http_status": 429,
+      "error_type": "RequestException"
+    },
+    {
+      "request_id": 84,
+      "status": "failed",
+      "http_status": 429,
+      "error_type": "RequestException"
+    },
+    {
+      "request_id": 142,
+      "status": "failed",
+      "http_status": null,
+      "error_type": "ReadTimeout"
+    },
+    {
+      "request_id": 143,
+      "status": "failed",
+      "http_status": null,
+      "error_type": "ReadTimeout"
+    },
+    {
+      "request_id": 172,
+      "status": "failed",
+      "http_status": 429,
+      "error_type": "RequestException"
+    },
+    {
+      "request_id": 174,
+      "status": "failed",
+      "http_status": 429,
+      "error_type": "RequestException"
+    },
+    {
+      "request_id": 176,
+      "status": "failed",
+      "http_status": 429,
+      "error_type": "RequestException"
+    },
+    {
+      "request_id": 408,
+      "status": "failed",
+      "http_status": null,
+      "error_type": "ConnectionError"
+    },
+    {
+      "request_id": 489,
+      "status": "failed",
+      "http_status": null,
+      "error_type": "ConnectionError"
+    },
+    {
+      "request_id": 490,
+      "status": "failed",
+      "http_status": null,
+      "error_type": "SSLError"
+    },
+    {
+      "request_id": 581,
+      "status": "failed",
+      "http_status": 403,
+      "error_type": "ProviderError"
+    },
+    {
+      "request_id": 593,
+      "status": "failed",
+      "http_status": 403,
+      "error_type": "ProviderError"
+    },
+    {
+      "request_id": 595,
+      "status": "failed",
+      "http_status": 403,
+      "error_type": "ProviderError"
+    }
+  ],
+  "orphan_request_note": "MaaS request 25 was interrupted in an earlier worker. It remains started in the original journal, is consumed, has unknown token usage, and is not a currently running request.",
+  "per_case_versions": {
+    "01": {
+      "A": {
+        "judge_validator_version": 9,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "4b4479199b6faa25c90d81c3ee44f6850264cec17b4318a6c50144be54993a87"
+      },
+      "B": {
+        "judge_validator_version": 9,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "4b4479199b6faa25c90d81c3ee44f6850264cec17b4318a6c50144be54993a87"
+      }
+    },
+    "02": {
+      "A": {
+        "judge_validator_version": 11,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "e1dc76c384700e8d6241310d11d63a98e7dd16a4292ccd29f557ccb75b3fe42d"
+      },
+      "B": {
+        "judge_validator_version": 11,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "e1dc76c384700e8d6241310d11d63a98e7dd16a4292ccd29f557ccb75b3fe42d"
+      }
+    },
+    "03": {
+      "A": {
+        "judge_validator_version": 12,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "24595b336250f3ece09503b5031707b800a3aedb3f0361e6b0292eed624c5b24"
+      },
+      "B": {
+        "judge_validator_version": 12,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "24595b336250f3ece09503b5031707b800a3aedb3f0361e6b0292eed624c5b24"
+      }
+    },
+    "05": {
+      "A": {
+        "judge_validator_version": 13,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "5420d5d1442c66e609cdfada4acac64af643aea4a4c7ddeb3a261183a78f857d"
+      },
+      "B": {
+        "judge_validator_version": 13,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "5420d5d1442c66e609cdfada4acac64af643aea4a4c7ddeb3a261183a78f857d"
+      }
+    },
+    "06": {
+      "A": {
+        "judge_validator_version": 13,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "4a9b34dc05f078fd09bdd7c1f27c38a5f4f28bf967f7cd9fc8b0413252f523dc"
+      },
+      "B": {
+        "judge_validator_version": 13,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "4a9b34dc05f078fd09bdd7c1f27c38a5f4f28bf967f7cd9fc8b0413252f523dc"
+      }
+    },
+    "09": {
+      "A": {
+        "judge_validator_version": 13,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "4a9b34dc05f078fd09bdd7c1f27c38a5f4f28bf967f7cd9fc8b0413252f523dc"
+      },
+      "B": {
+        "judge_validator_version": 13,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "4a9b34dc05f078fd09bdd7c1f27c38a5f4f28bf967f7cd9fc8b0413252f523dc"
+      }
+    },
+    "10": {
+      "A": {
+        "judge_validator_version": 13,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "fdc982a3da0a410f2289f05976344100cc04d54d786a606690b4da0a6f8d0340"
+      },
+      "B": {
+        "judge_validator_version": 13,
+        "judge_model": "kimi-k2.6",
+        "config_hash": "fdc982a3da0a410f2289f05976344100cc04d54d786a606690b4da0a6f8d0340"
+      }
+    }
+  },
+  "single_final_validator_full_rerun": false,
+  "holdout_run": false,
+  "remaining_allowance_rolls_over": false,
+  "currency_cost_estimate": null
+}

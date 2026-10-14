@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      {
+        "content": "两个候选作品均判定为yes，结论一致。A作品采用13页展开，每个纲目分配2页（居民满意度3页），通过目录页（P02）预先展示五个纲目及对应页码，并在各板块内部使用数据溯源标注（如P10标注'P05、P06数据直接导出'）强化板块间呼应；B作品采用7页紧凑结构，每个纲目1页，通过红色标注〔对应第X部分〕实现问题溯源。两者在内容-标题对应关系上均符合criterion要求：各板块主体内容紧扣标题，仅存在必要的衔接性提及，未出现主体内容错位或混装。差异主要体现在篇幅分配和呼应方式上，不构成标准冲突。",
+        "type": "comparison_detail"
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 63168,
+    "total_tokens": 63337,
+    "completion_tokens": 169,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 124.101,
+  "attempts": 1
+}

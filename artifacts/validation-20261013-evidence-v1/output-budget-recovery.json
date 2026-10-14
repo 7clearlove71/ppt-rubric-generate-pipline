@@ -1,0 +1,35 @@
+{
+  "at": "2026-10-13T05:09:00.282943+00:00",
+  "case_scope": [
+    "02"
+  ],
+  "original_stage_completed": true,
+  "bailian_consumed_before_recovery": 50,
+  "bailian_remaining": 70,
+  "maas_consumed": 126,
+  "role_max_output_tokens": {
+    "reviser": 32768
+  },
+  "other_role_limit": 16000,
+  "source_refinement_limit_unchanged": 1,
+  "max_revisions_unchanged": 2,
+  "offline_tests": {
+    "passed": 137,
+    "warnings": 6
+  },
+  "scoring_protocol_unchanged": "2026-10-13.12 / judge validator 9",
+  "source_snapshot": "frozen-source-role-output/ppt_rubric",
+  "canonical_request_journals": [
+    "rubrics/requests.json",
+    "judgments/requests.json"
+  ],
+  "recovery_bound": "One resume of output-truncated generation; do not add logical revision rounds.",
+  "status": "completed",
+  "result": {
+    "case02": "approved",
+    "items": 14,
+    "revisions": 2,
+    "actual_recovery_requests": 6,
+    "total_bailian_requests": 56
+  }
+}

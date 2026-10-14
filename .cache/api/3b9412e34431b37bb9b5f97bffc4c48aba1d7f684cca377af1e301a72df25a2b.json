@@ -1,0 +1,92 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 1,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "主标题“产品安全质疑舆情危机应对方案”、副标题、说明正文、三张指标卡（48 小时/36 小时/约 72%）及页脚文字均清晰可辨；所附局部放大图显示“约 72%”与“评论区负面情绪占比”笔画无相交、无截断；无重叠叠印、无NaN残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "在内容可读前提下，顶部来源标注—红色状态条—主标题—副标题—说明段—三张并列指标卡—页脚的层级清晰，三卡并列关系与主次明确，阅读顺序可确定，无错误对应。",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "标题、四个KPI卡（转发破万/约72%/大概40通/较平时多约15%）、01-03步骤卡、条形图（技术复核出结论=36、48小时响应窗口=48，轴刻度0/12/24/36/48）及底部“核心研判”“口径风险”框均可辨；局部放大图显示轴单位“小时”与刻度“48”上下分行、笔画无相交，二者均可读；无截断或破损残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "在内容可读前提下，顶部KPI带—中部三步骤箭头流程与“36小时复核 vs 48小时窗口”对比图—底部双结论框的组织清晰，灰=复核、红=响应窗口、粉色带=重叠缺口的图形编码与文字标注对应一致，阅读顺序明确。",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "标题、横幅、图例（舆情轨/经营轨/应对轨）、六列时间线各框正文与来源标注（[舆情摘要][客服来电][声明草稿]）、右侧36/48卡片及“事实层量化节点”条形图（约72%/约60%/约35%/约15%，轴0%–100%）均可辨；局部放大图显示斜体注释“全部素材中唯一带明确日期的节点·[舆情摘要]”无重叠、无截断。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "在内容可读前提下，标题—横幅—左侧六列时间线（按T0→T0+48h时序）与右侧推导卡、量化图的分区明确，泳道颜色图例与各列左边框及虚线“应对轨”框对应一致，并列与主次关系可识别，阅读顺序可确定。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 5120,
+    "completion_tokens_details": {
+      "reasoning_tokens": 4459,
+      "text_tokens": 661
+    },
+    "prompt_tokens": 6403,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5240,
+      "text_tokens": 1163
+    },
+    "total_tokens": 11523
+  },
+  "elapsed_seconds": 134.086,
+  "attempts": 1
+}

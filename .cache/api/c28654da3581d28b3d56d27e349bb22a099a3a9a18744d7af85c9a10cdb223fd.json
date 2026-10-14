@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "全篇对存疑内容均保持审慎标注，未下确定性结论。P1封面即标注'存疑待证'；P2明确写'后续方向，不作结论；待证材料单独标注'；P3注明'\"约\"\"不到一半\"为田野口述观察，后续需核对'；P4族谱处用红色标注'待考：需多问几位老人'，底部强调'此处不下结论'；P5对'外姓人建造'用红色'待考'标签，底部写'暂不认定'；P6用'错位'定性而非定论；P7标题'先补证，再下判断'，'TO BE VERIFIED'框列出待考项，'NEXT STEP'明确'多访谈几位老人，交叉比对说法；再谈结论'。无任一处将存疑信息写成已证实事实。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23718,
+    "total_tokens": 23932,
+    "completion_tokens": 214,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 21.06,
+  "attempts": 1
+}

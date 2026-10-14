@@ -1,0 +1,36 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      4
+    ],
+    "evidence": "第4页右侧存在一条金色折线（先降后升），但经核查该折线图无任何坐标轴、数据点标签、图例或单位说明，属于chart_label_integrity缺陷。ledger记录p4_e8已明确标注该折线图'无坐标轴、无数据标签、无图例'，符合R16-chart_label_integrity的定义'图表分类/轴/图例/单位标签缺失'。其余页面（1-3、5-8）未使用需要坐标轴/图例/单位标签的数据图表，主要以大数字、文字排版、箭头连接等方式呈现数据，不在本条scope的缺陷范围内。",
+    "evidence_ids": [
+      "p4_e8"
+    ],
+    "failure_ids": [
+      "p4_e8"
+    ],
+    "resolutions": [
+      {
+        "evidence_id": "p4_e8",
+        "decision": "confirm",
+        "reason": "第4页右侧折线图确实无任何坐标轴、数据标签、图例或单位标签，无法读取具体数值，真实违反chart_label_integrity。该折线不是纯装饰性线条，而是与'最难时'到'如今回头看'的叙事转折形成呼应的图表化表达，属于使用了数据图表但标签缺失的情形。"
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35991,
+    "total_tokens": 36248,
+    "completion_tokens": 257,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 10.868,
+  "attempts": 1
+}

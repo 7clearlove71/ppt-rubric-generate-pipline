@@ -1,0 +1,1301 @@
+[
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "4636367327032d5f0452924d5558f78fd9786130afefc8a173070ae03b9504fb",
+    "cached": true,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d"
+  },
+  {
+    "role": "generator",
+    "cache_key": "b3bc02406f7d19f5811d2bd90ebbfca7dbabb26d9e33bf27f456f3ad93d2066b",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 4136,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4136
+      },
+      "prompt_tokens": 3505,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 3505
+      },
+      "total_tokens": 7641
+    },
+    "elapsed_seconds": 79.818,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "efcbe3e3fe3ca550f22141abd34a824e3359da3311ef2b756803c71fa27d84cf",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1985,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1985
+      },
+      "prompt_tokens": 31530,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 16780,
+        "text_tokens": 14750
+      },
+      "total_tokens": 33515
+    },
+    "elapsed_seconds": 48.101,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "c8fee8d2ee9f3a56767e6d59d564c2ea1c296b3b8e74904fff28a6ede5881e69",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1269,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1269
+      },
+      "prompt_tokens": 21964,
+      "prompt_tokens_details": {
+        "cached_tokens": 5120,
+        "image_tokens": 13424,
+        "text_tokens": 8540
+      },
+      "total_tokens": 23233
+    },
+    "elapsed_seconds": 33.748,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "640813e81ce6f5c19200ae200437b4740dd16b9078ba1b9e211e014c5f19a546",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3928,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3928
+      },
+      "prompt_tokens": 10827,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 10827
+      },
+      "total_tokens": 14755
+    },
+    "elapsed_seconds": 57.599,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "4ef42a35a91633f0f49d3c9fa822b4651d910ac1899203a8f17c456d73334f7f",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 5913,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 5913
+      },
+      "prompt_tokens": 9271,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 9271
+      },
+      "total_tokens": 15184
+    },
+    "elapsed_seconds": 77.283,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "5c0d20d599cfdea790c35c35047fadec2d52e4de1e69614b3260113ed62ed094",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 4667,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4667
+      },
+      "prompt_tokens": 9290,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "text_tokens": 9290
+      },
+      "total_tokens": 13957
+    },
+    "elapsed_seconds": 66.688,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "c862cdc8ec924467e2218149b2a5592d7101d76fd85bfda62e10b586c05967d9",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1412,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1412
+      },
+      "prompt_tokens": 2042,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 2042
+      },
+      "total_tokens": 3454
+    },
+    "elapsed_seconds": 66.233,
+    "attempts": 3
+  },
+  {
+    "role": "generator",
+    "cache_key": "64487bebccd256882771321801cb5d150fa3d41b486b01e07665fcd27708c11c",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3641,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3641
+      },
+      "prompt_tokens": 4040,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 4040
+      },
+      "total_tokens": 7681
+    },
+    "elapsed_seconds": 77.109,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "7d9850ecdaa2ec4537b8d89534cc8b2410c25f5fc8cb8c50382a566e61761aa9",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1869,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1869
+      },
+      "prompt_tokens": 32315,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 16780,
+        "text_tokens": 15535
+      },
+      "total_tokens": 34184
+    },
+    "elapsed_seconds": 50.108,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "cf793f73da23abfb8bcc070129401e7e77deea030364e8f595cabfbb49537d50",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1200,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1200
+      },
+      "prompt_tokens": 22749,
+      "prompt_tokens_details": {
+        "cached_tokens": 6144,
+        "image_tokens": 13424,
+        "text_tokens": 9325
+      },
+      "total_tokens": 23949
+    },
+    "elapsed_seconds": 35.282,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "c1390d3e88e9e2d3988b756eb0d96771d1f24a2d706b36ef51f72998c7385658",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 4283,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4283
+      },
+      "prompt_tokens": 11401,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 11401
+      },
+      "total_tokens": 15684
+    },
+    "elapsed_seconds": 63.268,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "e5a486a4a4efa80b9ae0106f543956c5c8027e98a0d0e0c4205face400167bbb",
+    "cached": true,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d"
+  },
+  {
+    "role": "generator",
+    "cache_key": "fec7975df07207bba53efeab63df0b219d24f29b66d2d1ea05139ed14317b6a4",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3705,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3705
+      },
+      "prompt_tokens": 3672,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 3672
+      },
+      "total_tokens": 7377
+    },
+    "elapsed_seconds": 73.502,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "c2eb7f4120b644c275c75c8aa4bd7cb4bdc08b44a09dc72bb1875412d3df6a5c",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1895,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1895
+      },
+      "prompt_tokens": 24444,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 13424,
+        "text_tokens": 11020
+      },
+      "total_tokens": 26339
+    },
+    "elapsed_seconds": 43.82,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "13922fccaf9f500f4f0d00054ec1ccb749644ab60754417849b58d01f3f6ba64",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1394,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1394
+      },
+      "prompt_tokens": 28086,
+      "prompt_tokens_details": {
+        "cached_tokens": 5120,
+        "image_tokens": 13424,
+        "text_tokens": 14662
+      },
+      "total_tokens": 29480
+    },
+    "elapsed_seconds": 36.19,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "42fcef9d32f3a07b9570afe2065f9c9f95061675d7499a783386a41f5c2d1e1f",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3705,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3705
+      },
+      "prompt_tokens": 11333,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 11333
+      },
+      "total_tokens": 15038
+    },
+    "elapsed_seconds": 49.635,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "5de0136b84b28bdf487776ffc486cd0df3401396ac32f545451dd960855a7138",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 5489,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 5489
+      },
+      "prompt_tokens": 9722,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 9722
+      },
+      "total_tokens": 15211
+    },
+    "elapsed_seconds": 71.833,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "19962dcf3d25b29313d7cc3456214e68b3556984cbc945b7de6941142ea7a61b",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 5534,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 5534
+      },
+      "prompt_tokens": 9897,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "text_tokens": 9897
+      },
+      "total_tokens": 15431
+    },
+    "elapsed_seconds": 69.712,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "01a9d2482225b995a45bc7b50636fb1f8a631a4aa5d6edcf496c996170083a8a",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1508,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1508
+      },
+      "prompt_tokens": 2145,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 2145
+      },
+      "total_tokens": 3653
+    },
+    "elapsed_seconds": 23.631,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "2ff3bd6bf13079dea3b7df795de7874ec52269d2c9a6674dcd8095cc22edccc2",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 2968,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 2968
+      },
+      "prompt_tokens": 4129,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 4129
+      },
+      "total_tokens": 7097
+    },
+    "elapsed_seconds": 50.778,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "6f1a5bc333a335291ea8dcabc9d634ec058584bb1e62c0e8b32c91aba83e96cf",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1435,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1435
+      },
+      "prompt_tokens": 23457,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 13424,
+        "text_tokens": 10033
+      },
+      "total_tokens": 24892
+    },
+    "elapsed_seconds": 37.655,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "69bba8b8cc476775e24d126f7cff130411bbfcc61cd61194fd6582bf93667dfa",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1656,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1656
+      },
+      "prompt_tokens": 27099,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "image_tokens": 13424,
+        "text_tokens": 13675
+      },
+      "total_tokens": 28755
+    },
+    "elapsed_seconds": 44.674,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "4293b0001e82efee9d791fd6e33b863431536df59307bbf9612fa5a1f4468c42",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3238,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3238
+      },
+      "prompt_tokens": 10137,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 10137
+      },
+      "total_tokens": 13375
+    },
+    "elapsed_seconds": 44.967,
+    "attempts": 1
+  },
+  {
+    "role": "reviser",
+    "cache_key": "36bf612ba68419e9fd9153aa949133c85a55991fcf8f353eb6052f05e2475943",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 7265,
+      "completion_tokens_details": {
+        "reasoning_tokens": 3528,
+        "text_tokens": 3737
+      },
+      "prompt_tokens": 8210,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 8210
+      },
+      "total_tokens": 15475
+    },
+    "elapsed_seconds": 139.214,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "9db352e8b3ea21e6b8999ec1938d99aa773bf273842ae3e7e97cd8f61e20e644",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 189,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 189
+      },
+      "prompt_tokens": 8901,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 8901
+      },
+      "total_tokens": 9090
+    },
+    "elapsed_seconds": 6.477,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "81ead0cf538dbbf1e6c9e5502ffdc2e59a7d4cbe0c7f2989e317f963dfdc6960",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 21,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 21
+      },
+      "prompt_tokens": 9027,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 9027
+      },
+      "total_tokens": 9048
+    },
+    "elapsed_seconds": 16.44,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "4f9c365c17e1d2d1a40748be5bd64488219f3e8332def8769f019c36e2fd8044",
+    "cached": true,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d"
+  },
+  {
+    "role": "generator",
+    "cache_key": "2729077fa24e8cb4132b2d148809cf6430a4c0c0bcc9cf4488ea6d90fcd4f9ab",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3675,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3675
+      },
+      "prompt_tokens": 3216,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 3216
+      },
+      "total_tokens": 6891
+    },
+    "elapsed_seconds": 92.473,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "cfeff86b658cf025e38c75594952ada593f95311e8afaedc22e9563f00b049da",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1416,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1416
+      },
+      "prompt_tokens": 28253,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 20699,
+        "text_tokens": 7554
+      },
+      "total_tokens": 29669
+    },
+    "elapsed_seconds": 38.999,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "3b7e4864a872d335c6220fca16fbee983d2aba84804272268259e99c0f16b2e0",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1843,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1843
+      },
+      "prompt_tokens": 33398,
+      "prompt_tokens_details": {
+        "cached_tokens": 5120,
+        "image_tokens": 16780,
+        "text_tokens": 16618
+      },
+      "total_tokens": 35241
+    },
+    "elapsed_seconds": 46.48,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "6b6446d4573a0bd7bdd70cf81f67913ecc84e2f40ec968f26d4f8f8b10fe0921",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 4438,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4438
+      },
+      "prompt_tokens": 10791,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 10791
+      },
+      "total_tokens": 15229
+    },
+    "elapsed_seconds": 58.894,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "22adb3ede24031a20943d7d9400423fb750382efacaebcaf6d3059b162109c61",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 4262,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4262
+      },
+      "prompt_tokens": 9237,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 9237
+      },
+      "total_tokens": 13499
+    },
+    "elapsed_seconds": 60.693,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "d0c6209d9e74051308b248eeef8609a3736df24b303dedf03ab8f9d20926a5c7",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 122,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 122
+      },
+      "prompt_tokens": 8073,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 8073
+      },
+      "total_tokens": 8195
+    },
+    "elapsed_seconds": 5.184,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "13af955c132aba89a027b9dd6c8ee05e1e2aa259886f1a67008b5066c8255e0d",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 21,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 21
+      },
+      "prompt_tokens": 8199,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 8199
+      },
+      "total_tokens": 8220
+    },
+    "elapsed_seconds": 17.998,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "41f007ec744750f96b63483c200a3f28438d677845d166f43f609b0869477b3f",
+    "cached": true,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d"
+  },
+  {
+    "role": "generator",
+    "cache_key": "7b25395efb22a02f1ce030aa5efc2e9d90b6b5d931b391f1329e2352d363605c",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3010,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3010
+      },
+      "prompt_tokens": 3147,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 3147
+      },
+      "total_tokens": 6157
+    },
+    "elapsed_seconds": 81.281,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "2d02be125c97960e9ff32e3ab054674e0bd50c748524bc5fea7d0bbbb1921e6e",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1838,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1838
+      },
+      "prompt_tokens": 29929,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 23656,
+        "text_tokens": 6273
+      },
+      "total_tokens": 31767
+    },
+    "elapsed_seconds": 41.909,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "72400e71db9eb1bd978bd9ca0065e7f4904378f83f20e98556162aa84d68ef2e",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1609,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1609
+      },
+      "prompt_tokens": 23834,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "image_tokens": 13424,
+        "text_tokens": 10410
+      },
+      "total_tokens": 25443
+    },
+    "elapsed_seconds": 43.495,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "e05e7935a97aa4e2749381dc1a4413bbac7d2c0e97af5ac1ab28a7c14424b37d",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3712,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3712
+      },
+      "prompt_tokens": 9998,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 9998
+      },
+      "total_tokens": 13710
+    },
+    "elapsed_seconds": 51.28,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "96190a73079f66e354e5a9bc762e60838b97f7f65818781070f7da3f7b156173",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 4587,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4587
+      },
+      "prompt_tokens": 8077,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 8077
+      },
+      "total_tokens": 12664
+    },
+    "elapsed_seconds": 63.459,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "574bcffbe032881ca96cec752371021974a40dceb35f66d180e0d027a8a86634",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 109,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 109
+      },
+      "prompt_tokens": 7074,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 7074
+      },
+      "total_tokens": 7183
+    },
+    "elapsed_seconds": 4.277,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "142f9e2c698bd7727365510bac1c26ccbecd3f107b6889f4c9c617a802509d8b",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 21,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 21
+      },
+      "prompt_tokens": 7200,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 7200
+      },
+      "total_tokens": 7221
+    },
+    "elapsed_seconds": 19.204,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "e79c40f7368fd9501e77a5d666c7deb2251a0ff145946da5461508130a60ec67",
+    "cached": true,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d"
+  },
+  {
+    "role": "generator",
+    "cache_key": "fff36e30a9ca185c0494dbb09fe978c274902ac67e6038922dc42b1b61e0c7b3",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3267,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3267
+      },
+      "prompt_tokens": 3804,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 3804
+      },
+      "total_tokens": 7071
+    },
+    "elapsed_seconds": 85.285,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "1eedd6bfffae9590b18c2872f5afe092636f845d8fccdb2cc703b0ed6045379d",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1102,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1102
+      },
+      "prompt_tokens": 27242,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "image_tokens": 13424,
+        "text_tokens": 13818
+      },
+      "total_tokens": 28344
+    },
+    "elapsed_seconds": 32.763,
+    "attempts": 1
+  },
+  {
+    "role": "vision",
+    "cache_key": "4f037d8f6fbd66f09a4599975baef706c1a474fe29aff916d174f4ab40a20392",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1641,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1641
+      },
+      "prompt_tokens": 23571,
+      "prompt_tokens_details": {
+        "cached_tokens": 5120,
+        "image_tokens": 13424,
+        "text_tokens": 10147
+      },
+      "total_tokens": 25212
+    },
+    "elapsed_seconds": 45.434,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "f8582cdb71cd15423e3e72160ef61a334154490e9f33e3288c9f7526cfa66688",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 4256,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4256
+      },
+      "prompt_tokens": 10450,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 10450
+      },
+      "total_tokens": 14706
+    },
+    "elapsed_seconds": 66.306,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "123b860786be6612b143eeae36ec389d24ae586430c5b6529113d36f594c0fe2",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 4302,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4302
+      },
+      "prompt_tokens": 9730,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 9730
+      },
+      "total_tokens": 14032
+    },
+    "elapsed_seconds": 58.154,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "126228349ac5192e5dcc9f21138d2f2d2012dbb313ba1313da70c318bd7eeec7",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 4707,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4707
+      },
+      "prompt_tokens": 9675,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "text_tokens": 9675
+      },
+      "total_tokens": 14382
+    },
+    "elapsed_seconds": 68.749,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "df59d1fef7d841811d6a04f69fea12e90789ce49338e56ac22a8b4dd052bc974",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 167,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 167
+      },
+      "prompt_tokens": 9276,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 9276
+      },
+      "total_tokens": 9443
+    },
+    "elapsed_seconds": 7.505,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "357576256fa9babd03ca2a07357081a56f6f34626e170d87f75989276f6464d0",
+    "cached": false,
+    "invocation_id": "2699750c89704c9a8205ac433a5e4f8d",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 99,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 99
+      },
+      "prompt_tokens": 9402,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 9402
+      },
+      "total_tokens": 9501
+    },
+    "elapsed_seconds": 19.412,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "4636367327032d5f0452924d5558f78fd9786130afefc8a173070ae03b9504fb",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "b3bc02406f7d19f5811d2bd90ebbfca7dbabb26d9e33bf27f456f3ad93d2066b",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "efcbe3e3fe3ca550f22141abd34a824e3359da3311ef2b756803c71fa27d84cf",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "c8fee8d2ee9f3a56767e6d59d564c2ea1c296b3b8e74904fff28a6ede5881e69",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "640813e81ce6f5c19200ae200437b4740dd16b9078ba1b9e211e014c5f19a546",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "4ef42a35a91633f0f49d3c9fa822b4651d910ac1899203a8f17c456d73334f7f",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "5c0d20d599cfdea790c35c35047fadec2d52e4de1e69614b3260113ed62ed094",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "c862cdc8ec924467e2218149b2a5592d7101d76fd85bfda62e10b586c05967d9",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "64487bebccd256882771321801cb5d150fa3d41b486b01e07665fcd27708c11c",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "7d9850ecdaa2ec4537b8d89534cc8b2410c25f5fc8cb8c50382a566e61761aa9",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "cf793f73da23abfb8bcc070129401e7e77deea030364e8f595cabfbb49537d50",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "c1390d3e88e9e2d3988b756eb0d96771d1f24a2d706b36ef51f72998c7385658",
+    "cached": true,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb"
+  },
+  {
+    "role": "reviser",
+    "cache_key": "708d1216fd1403670668bc710a8d5ddcb33a9ed4bd3d0a796135e1a9d477242a",
+    "cached": false,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 12207,
+      "completion_tokens_details": {
+        "reasoning_tokens": 7654,
+        "text_tokens": 4553
+      },
+      "prompt_tokens": 11240,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 11240
+      },
+      "total_tokens": 23447
+    },
+    "elapsed_seconds": 245.542,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "49ef22a5e674f2f166cb78f56453a06c5af5b4999c68698021dfcbac097866fc",
+    "cached": false,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 81,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 81
+      },
+      "prompt_tokens": 9103,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 9103
+      },
+      "total_tokens": 9184
+    },
+    "elapsed_seconds": 4.283,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "23c39d0a6460346620f3c56c03fbd39912107794b24d8666758f392c0e22f167",
+    "cached": false,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 345,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 345
+      },
+      "prompt_tokens": 9229,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 9229
+      },
+      "total_tokens": 9574
+    },
+    "elapsed_seconds": 25.017,
+    "attempts": 1
+  },
+  {
+    "role": "reviser",
+    "cache_key": "39c43bbc53d935558fcdb3a3226b04f051b8e836312db06b315a13c0dfec0629",
+    "cached": false,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 5469,
+      "completion_tokens_details": {
+        "reasoning_tokens": 859,
+        "text_tokens": 4610
+      },
+      "prompt_tokens": 11198,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "text_tokens": 11198
+      },
+      "total_tokens": 16667
+    },
+    "elapsed_seconds": 93.022,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "b64791af0923321ff4b0668ff286d97ee152fceccdbabdd29425d405f316e0d8",
+    "cached": false,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 148,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 148
+      },
+      "prompt_tokens": 9203,
+      "prompt_tokens_details": {
+        "cached_tokens": 3072,
+        "text_tokens": 9203
+      },
+      "total_tokens": 9351
+    },
+    "elapsed_seconds": 5.394,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "60b7c0d1866ca99c6d8075074d5d8a3ef3b1feb31b4525b5edf33301730e1e7d",
+    "cached": false,
+    "invocation_id": "888d7b2a38164716bc1f817197ccf3bb",
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 107
+      },
+      "prompt_tokens": 9329,
+      "prompt_tokens_details": {
+        "cached_tokens": 3072,
+        "text_tokens": 9329
+      },
+      "total_tokens": 9436
+    },
+    "elapsed_seconds": 19.034,
+    "attempts": 1
+  }
+]

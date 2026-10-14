@@ -1,0 +1,11 @@
+{
+  "request_journal": "../probes09/requests.json",
+  "request_ids": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "prompt_version": "2026-10-12.4",
+  "stop_reason": "Stopped old worker after discovering id alias and retry-ID feedback bug; resume with corrected contract inside same budget."
+}

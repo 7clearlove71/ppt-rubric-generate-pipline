@@ -1,0 +1,345 @@
+[
+  {
+    "id": "valid-flexible-design",
+    "expected_approved": true,
+    "structural_errors": [],
+    "counterexample_review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01",
+            "R02"
+          ],
+          "reason": "反例：PPT包含全部三个模块但工位领取页被意外删除；R01因缺失工位说明失败，R02仍通过。若同时删除工位与考勤两页，则R01、R02各自独立失败，非同一缺陷触发两条。但反例：PPT仅做'入职指引'一页总览，三模块标题均列却无展开内容；R01、R02同时因'无可辨识说明'失败，系同一'内容空洞'缺陷。",
+          "fix": "R01、R02合并为'包含工位领取与考勤说明'单条，或明确R01/R02各自独立判定内容深度，避免同一'未展开'缺陷双重扣分。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R03",
+            "R04"
+          ],
+          "reason": "反例：PPT写'账号需在入职当天激活'（误为当天而非24小时）；R03因时限错误失败。R04若因该错误被判定'将未确认信息冒充制度'也失败，但用户明确要求24小时，此非'用户未提供'信息，R04不应触发。然而更清洁反例：PPT完全遗漏账号激活页；R03因缺失失败，R04是否因'未使用通用描述/占位'也失败？R04要求对'未提供'信息不冒充，缺失整页不涉及此问题，不触发。",
+          "fix": "R04限定为'对未提供的单位政策'的判定，明确'用户已明确要求的内容（如24小时）缺失'不归入R04，仅触发对应explicit项。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R05",
+            "R06"
+          ],
+          "reason": "反例：PPT使用深色背景配深色文字导致不可读；R06因对比度失败。R05若因'不可读'被连带判定'不适合新员工理解'也失败，但R06已覆盖视觉不可读，R05应聚焦语言/结构适配性。另一反例：PPT无缩写、流程清晰、视觉正常，R05通过；但评审主观认为'不够亲切'而失败，无依据。",
+          "fix": "R05删除'清晰对应关系'等可借R06覆盖的表述，明确R05仅判定'缩写解释'与'内部知识前置'两项语言适配，不重复视觉可读性。"
+        }
+      ],
+      "summary": "R01/R02存在同一'内容空洞'缺陷双重扣分风险；R05与R06在'可读性'上边界重叠；R04可能越权评判用户已明确要求内容的缺失。需修正评分边界消除重复计分与越权。"
+    },
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01",
+            "R02"
+          ],
+          "reason": "反例：PPT包含全部三个模块但工位领取页被意外删除；R01因缺失工位说明失败，R02仍通过。若同时删除工位与考勤两页，则R01、R02各自独立失败，非同一缺陷触发两条。但反例：PPT仅做'入职指引'一页总览，三模块标题均列却无展开内容；R01、R02同时因'无可辨识说明'失败，系同一'内容空洞'缺陷。",
+          "fix": "R01、R02合并为'包含工位领取与考勤说明'单条，或明确R01/R02各自独立判定内容深度，避免同一'未展开'缺陷双重扣分。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R03",
+            "R04"
+          ],
+          "reason": "反例：PPT写'账号需在入职当天激活'（误为当天而非24小时）；R03因时限错误失败。R04若因该错误被判定'将未确认信息冒充制度'也失败，但用户明确要求24小时，此非'用户未提供'信息，R04不应触发。然而更清洁反例：PPT完全遗漏账号激活页；R03因缺失失败，R04是否因'未使用通用描述/占位'也失败？R04要求对'未提供'信息不冒充，缺失整页不涉及此问题，不触发。",
+          "fix": "R04限定为'对未提供的单位政策'的判定，明确'用户已明确要求的内容（如24小时）缺失'不归入R04，仅触发对应explicit项。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R05",
+            "R06"
+          ],
+          "reason": "反例：PPT使用深色背景配深色文字导致不可读；R06因对比度失败。R05若因'不可读'被连带判定'不适合新员工理解'也失败，但R06已覆盖视觉不可读，R05应聚焦语言/结构适配性。另一反例：PPT无缩写、流程清晰、视觉正常，R05通过；但评审主观认为'不够亲切'而失败，无依据。",
+          "fix": "R05删除'清晰对应关系'等可借R06覆盖的表述，明确R05仅判定'缩写解释'与'内部知识前置'两项语言适配，不重复视觉可读性。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "rubric通过审核。六项标准覆盖全部五个需求，维度分配合理。R03正确将事实准确性归入correctness而非重复检查fulfillment；R04的integrity条款合理约束无依据断言；R05、R06允许不同有效实现，未增设硬阈值。无重复计分或虚构条件。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": false
+  },
+  {
+    "id": "valid-equivalent-units",
+    "expected_approved": true,
+    "structural_errors": [],
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "经检验，rubric无重复计分或越权要求。R01-R03分别对应独立需求模块，R04为通用诚信约束，R05-R06为合理质量边界，均未引入超出用户要求的结构阈值或标记方式。无实质反例可构造。"
+    },
+    "approved": true,
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "rubric结构清晰，各维度分配合理。R01-R03准确覆盖显式需求，R04正确约束无依据断言，R05落实受众适配，R06保障视觉可读性且不反向添加限制。无重复计分，无新增硬条件，各条目可独立评判。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-font-threshold",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R06"
+          ],
+          "reason": "用户明确'不限制页数、模板与配色'，R06却硬性规定正文字体必须≥28磅，新增无来源的固定字号阈值，排斥其他有效设计实现。",
+          "fix": "删除R06或改为'正文清晰可读，无固定字号要求'，以尊重用户'不限制'的明确要求。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": []
+      },
+      "summary": "R06违反用户'不限制'要求，新增无依据硬阈值，应移除或软化。其余rubric合规，覆盖完整。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-extra-module",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R02"
+          ],
+          "reason": "R02在Q03的考勤说明外，硬性捆绑了用户未要求的'至少一整页网络安全培训'，新增硬条件且无来源依据。",
+          "fix": "删除'与至少一整页网络安全培训'捆绑条件，改为仅检查考勤说明是否可辨识。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R02"
+          ],
+          "reason": "R02与R01同为fulfillment维度，但R01允许通用流程/占位，R02却要求'一整页'硬性篇幅，标准不一致且引入页数阈值。",
+          "fix": "统一为'可辨识的说明'，删除'一整页'篇幅要求。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R02存在双重错误：无依据新增网络安全培训要求，并设置未来源的页数阈值；其余条目符合协议。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-candidate-style",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R06"
+          ],
+          "reason": "强制指定候选A的黑底金字模板与封面布局，违反Q05'不限制页数、模板与配色'的明确要求，新增用户未要求的硬条件并绑定特定候选身份。",
+          "fix": "将R06改为通用视觉质量标准，如'配色与排版保持清晰可读，模板风格统一，不强制特定模板或配色方案'。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R06存在硬性错误：强制绑定特定候选模板，直接违背来源要求'不限制模板'，且依赖候选身份判定，无法独立评判单个候选。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-duplicate-fact",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R03",
+            "R04"
+          ],
+          "reason": "R03与R04重复检查同一事实：账号24小时激活时限。R03属correctness，R04属integrity，双重扣分违反协议。",
+          "fix": "删除R04；将账号时限准确性统一由R03负责，integrity维度另设'不得虚构额外成果'等独立条目。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R04"
+          ],
+          "reason": "R04 source_refs为空但basis=quality，却直接复制Q04的明确要求，实质是显式要求而非通用质量原则，归属错误。",
+          "fix": "删除R04或将其改为真正通用诚信条目，如'不得添加用户未要求的额外培训模块'。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "存在重复计分错误：R03与R04对同一时限事实双重检查。R04 basis标注错误，实质为显式要求。其余条目独立可评判，覆盖完整，无新增硬条件。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-demand-invention",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01"
+          ],
+          "reason": "R01要求'具名负责人及其真实电话号码'，但来源仅要求'工位领取'说明，未要求具体人名电话。'不得使用占位'排斥了合理规划做法，且与R04允许占位矛盾。",
+          "fix": "将R01改为'工位领取说明包含领取流程、地点或对接方式等必要信息，允许通用描述或待补充标注'，与R04保持一致。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R01新增无来源的硬门槛（真实姓名电话、禁止占位），与R04冲突，构成无依据要求。其余条目覆盖完整、语义清晰、无重复计分，维度分配合理。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  }
+]

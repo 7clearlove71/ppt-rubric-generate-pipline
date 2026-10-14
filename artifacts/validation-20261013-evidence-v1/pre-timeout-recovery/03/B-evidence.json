@@ -1,0 +1,252 @@
+{
+  "complete": false,
+  "pages": [
+    {
+      "page": 1,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 2,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 3,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 4,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 5,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 6,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 7,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 8,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    }
+  ],
+  "ledger": [
+    {
+      "id": "p3_overlap_9630fb3867",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_9630fb3867; text spans ['p3_t23', 'p3_t25']: ['以单位能耗而非总电耗对标四线与行业标杆：1 号线 0.85 ，2 号线 0.52 、3 号线 0.48 、4 号线 0.52 ；1 号线月产量 80 万件并非最高（2 号线 95 万件最高）。', '②']. Original PDF rectangle [16.18000030517578, 221.69000244140625, 562.969970703125, 249.99000549316406]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [16.18000030517578, 221.69000244140625, 562.969970703125, 249.99000549316406]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_9cd1e59977",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_9cd1e59977; text spans ['p3_t23', 'p3_t26']: ['以单位能耗而非总电耗对标四线与行业标杆：1 号线 0.85 ，2 号线 0.52 、3 号线 0.48 、4 号线 0.52 ；1 号线月产量 80 万件并非最高（2 号线 95 万件最高）。', ' 分时段 / 分设备电耗拆分']. Original PDF rectangle [16.18000030517578, 221.69000244140625, 562.969970703125, 249.99000549316406]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [16.18000030517578, 221.69000244140625, 562.969970703125, 249.99000549316406]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p6_overlap_924da900d5",
+      "page": 6,
+      "quote": "Slide 6 local enlarged view p6_overlap_924da900d5; text spans ['p6_t8', 'p6_t18']: ['6', '6']. Original PDF rectangle [156.44000244140625, 286.0199890136719, 177.4199981689453, 316.1499938964844]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [156.44000244140625, 286.0199890136719, 177.4199981689453, 316.1499938964844]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p6_overlap_7522399665",
+      "page": 6,
+      "quote": "Slide 6 local enlarged view p6_overlap_7522399665; text spans ['p6_t9', 'p6_t17']: ['8', '7.75']. Original PDF rectangle [184.52999877929688, 286.0199890136719, 217.72999572753906, 316.1499938964844]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [184.52999877929688, 286.0199890136719, 217.72999572753906, 316.1499938964844]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_10d8073d9d",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_10d8073d9d; text spans ['p3_t3', 'p3_t23']: ['0.25', '以单位能耗而非总电耗对标四线与行业标杆：1 号线 0.85 ，2 号线 0.52 、3 号线 0.48 、4 号线 0.52 ；1 号线月产量 80 万件并非最高（2 号线 95 万件最高）。']. Original PDF rectangle [16.18000030517578, 220.75999450683594, 562.969970703125, 249.99000549316406]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [16.18000030517578, 220.75999450683594, 562.969970703125, 249.99000549316406]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_6ef72f099c",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_6ef72f099c; text spans ['p3_t3', 'p3_t26']: ['0.25', ' 分时段 / 分设备电耗拆分']. Original PDF rectangle [21.110000610351562, 220.75999450683594, 134.13999938964844, 249.67999267578125]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [21.110000610351562, 220.75999450683594, 134.13999938964844, 249.67999267578125]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_05b5536975",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_05b5536975; text spans ['p3_t10', 'p3_t31']: ['4 号线', '逐项检查油温、系统压力波动、泵组异响、泄漏点与溢流阀设定（素材仅给出排查项目清单，未提供逐项实测读数）。']. Original PDF rectangle [16.18000030517578, 255.22999572753906, 394.17999267578125, 284.7699890136719]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [16.18000030517578, 255.22999572753906, 394.17999267578125, 284.7699890136719]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_165003b190",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_165003b190; text spans ['p3_t7', 'p3_t31']: ['1 号线', '逐项检查油温、系统压力波动、泵组异响、泄漏点与溢流阀设定（素材仅给出排查项目清单，未提供逐项实测读数）。']. Original PDF rectangle [16.18000030517578, 255.22999572753906, 394.17999267578125, 284.7699890136719]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [16.18000030517578, 255.22999572753906, 394.17999267578125, 284.7699890136719]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_1fd31056d7",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_1fd31056d7; text spans ['p3_t8', 'p3_t31']: ['2 号线', '逐项检查油温、系统压力波动、泵组异响、泄漏点与溢流阀设定（素材仅给出排查项目清单，未提供逐项实测读数）。']. Original PDF rectangle [16.18000030517578, 255.22999572753906, 394.17999267578125, 284.7699890136719]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [16.18000030517578, 255.22999572753906, 394.17999267578125, 284.7699890136719]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_e896bcbad6",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_e896bcbad6; text spans ['p3_t9', 'p3_t31']: ['3 号线', '逐项检查油温、系统压力波动、泵组异响、泄漏点与溢流阀设定（素材仅给出排查项目清单，未提供逐项实测读数）。']. Original PDF rectangle [16.18000030517578, 255.22999572753906, 394.17999267578125, 284.7699890136719]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [16.18000030517578, 255.22999572753906, 394.17999267578125, 284.7699890136719]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_4b0ffc652f",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_4b0ffc652f; text spans ['p3_t7', 'p3_t34']: ['1 号线', ' 锁定主要损失源']. Original PDF rectangle [24.799999237060547, 256.8999938964844, 100.91999816894531, 287.29998779296875]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [24.799999237060547, 256.8999938964844, 100.91999816894531, 287.29998779296875]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_9fdafbae5d",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_9fdafbae5d; text spans ['p3_t2', 'p3_t30']: ['0', ' 现场巡检与实测']. Original PDF rectangle [24.229999542236328, 242.8699951171875, 98.36000061035156, 275.2200012207031]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [24.229999542236328, 242.8699951171875, 98.36000061035156, 275.2200012207031]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    }
+  ],
+  "visual_inspections": [
+    {
+      "id": "p3_overlap_9630fb3867",
+      "page": 3,
+      "rect": [
+        16.18000030517578,
+        221.69000244140625,
+        562.969970703125,
+        249.99000549316406
+      ],
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/dfbb9e6384b3aad86a1892a3123073aca27b5ee626576b2c7df84f389be1d0b5/visual-focus-v1/16d8b00f5bc81e4fa8f350898e52e504941271ca2f8412631c60d99facc18ea5.png",
+      "status": "unavailable",
+      "error_type": "ProviderError"
+    },
+    {
+      "id": "p3_overlap_9cd1e59977",
+      "page": 3,
+      "rect": [
+        16.18000030517578,
+        221.69000244140625,
+        562.969970703125,
+        249.99000549316406
+      ],
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/dfbb9e6384b3aad86a1892a3123073aca27b5ee626576b2c7df84f389be1d0b5/visual-focus-v1/597fccb055b0ab674f79183c7602d3ba4b4563bbb3808e349aef6accd109e839.png",
+      "status": "unavailable",
+      "error_type": "ProviderError"
+    }
+  ],
+  "page_visual_claims_policy": "diagnostic_only_for_visual_criteria"
+}

@@ -1,0 +1,37 @@
+{
+  "parsed": {
+    "consistent": false,
+    "issues": [
+      {
+        "reason": "候选B的p5_e13证据中，arithmetic_checks显示计算不匹配（computed: 29.97 vs reported: 3000；computed: 58.8 vs reported: 5880），但verdict仍判定为yes且未在解释中提及此问题。该证据的failure_mode为\"reasoning_validity\"，但verdict中未将其作为failure_ids列出，也未在文字解释中说明如何处理这一算术不一致。需要重新核验：该页脚注释中的数字与单位是否确实未因换行断裂而分离，以及arithmetic_checks的不匹配是否影响对\"数字与单位不因换行断裂而分离\"这一标准的判定。页脚注释中\"3,000 万元\"与\"5,880 万元\"的数字格式（含逗号千分位）在换行时是否存在断裂风险需具体图像确认，但当前证据未提供换行位置信息。",
+        "evidence_refs": {
+          "B": [
+            "p5_e13"
+          ]
+        }
+      },
+      {
+        "reason": "候选A的p4_e6证据描述中提到\"'2 个'与'月'的排版中'月'字位置较低但属视觉设计选择，非换行断裂导致的语义残缺\"，这一解释将\"2 个\"与\"月\"的分离判定为视觉设计而非换行断裂。但候选A的verdict整体判定为yes，未将此作为failure。需要重新核验：该排版中数字\"2\"、量词\"个\"与单位\"月\"之间的空间分离是否确实不构成\"数字与单位分离\"的语义残缺，以及该判断是否与其他候选在类似情况下的判定标准一致。标准明确要求\"数字与单位不因换行断裂而分离\"，若\"2 个月\"被拆分为\"2 个\"与\"月\"（即使非换行原因），是否构成语义残缺需依据图像实际排版确认。",
+        "evidence_refs": {
+          "A": [
+            "p4_e6"
+          ]
+        }
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5893,
+    "total_tokens": 6346,
+    "completion_tokens": 453,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.265,
+  "attempts": 1
+}

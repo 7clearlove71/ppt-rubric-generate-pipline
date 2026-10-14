@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "Rubric覆盖源全部核心要求（三项进展、路线图、计划、专家适配、时长、时间标注），数据准确性与边界清晰性有独立条目，无双重扣分或过度强制，未发现可成立反例。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 62,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 62
+    },
+    "prompt_tokens": 4565,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 4565
+    },
+    "total_tokens": 4627
+  },
+  "elapsed_seconds": 3.275,
+  "attempts": 1
+}

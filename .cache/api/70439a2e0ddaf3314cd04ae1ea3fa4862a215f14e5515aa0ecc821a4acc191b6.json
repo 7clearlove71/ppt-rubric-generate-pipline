@@ -1,0 +1,171 @@
+{
+  "parsed": {
+    "page": 1,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "寒冬淬火 逆势生长",
+        "location": "页面左侧中部，大字号标题",
+        "statement": "主标题使用四字对仗结构，'寒冬'呼应老板讲话中的'行业寒冬'，'淬火''逆势生长'呼应艰难中坚持并收获，但未直接出现'不裁员''研发投入''现金''工资''无人退缩''脱胎换骨'等核心叙事要素",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "这一年我们走得不容易，年初行业寒冬，咬牙没有裁员反而加大了研发投入，最难那个月账上现金只够发两个月工资，但团队没有一个人退缩，如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "全年营收 4.2亿 同比 +26%",
+        "location": "页面右侧中部",
+        "statement": "展示两项关键数据：全年营收4.2亿元，同比增长26%，与源文数据一致；数字视觉突出，但'亿'字与'同比'二字存在实际笔画遮挡",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿元",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "26",
+            "unit": "%",
+            "subject": "营收同比增长",
+            "denominator": "不适用",
+            "time_origin": "同比"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "亿",
+        "location": "金色大字，bbox[523.5, 312.7, 601.51, 390.71]",
+        "statement": "金色'亿'字与绿色'同比'二字发生实际笔画重叠遮挡：'亿'字的'乙'部笔画穿过'同比'的'同'字内部，'同'字的横竖笔画覆盖'亿'字部分区域，形成真实不可读区域",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "2026 年度大会 · 开场汇报",
+        "location": "页面顶部左侧",
+        "statement": "页面标识信息，'2026'为年份标识，'年度大会·开场汇报'说明用途为年会开场",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "内部汇报 · 请勿外传",
+        "location": "页面底部左侧",
+        "statement": "保密提示文字，小字号灰色显示",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "全年营收",
+        "location": "页面右侧上部，灰色小字",
+        "statement": "数据标签说明，标识下方数字为全年营收指标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "4.2",
+        "location": "金色超大字号，bbox[523.5, 215.59, 631.86, 302.65]",
+        "statement": "营收数值主展示，字号显著大于其他元素，视觉层级最高",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "同比 +26%",
+        "location": "绿色字号，位于'4.2'右下方",
+        "statement": "增幅数据，绿色与营收金色形成区分，但'同比'与'亿'字存在重叠",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "（整页观察）",
+        "location": "全页",
+        "statement": "本页仅展示营收4.2亿和同比+26%两项数据，其余四项关键数据（研发投入占比9%→14%、新增专利18项、员工320→410人、客户续约率91%）均未出现；老板讲话核心要素（不裁员、加大研发投入、现金只够两个月工资、无人退缩、脱胎换骨）未直接呈现，仅'寒冬淬火'间接呼应'行业寒冬'",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%，新增专利18项，员工320涨到410人，客户续约率91%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "年初行业寒冬，咬牙没有裁员反而加大了研发投入，最难那个月账上现金只够发两个月工资，但团队没有一个人退缩，如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "（整页观察）",
+        "location": "全页",
+        "statement": "页面结构为左侧标题+右侧单数据，符合'一页一核心观点'要求；但本页核心观点定位为'寒冬中逆势增长'，仅支撑以营收数据，未将情怀要素落到具体数字，情怀与数据的融合程度有限",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "情怀部分要能落到具体数字上，做到讲述和数据互相支撑"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "（整页观察）",
+        "location": "全页",
+        "statement": "页面无大面积空白占位、无TODO标记、有明确标题和数据，具备开场页基本完整度；但作为年会开场，仅有单页且未呈现完整叙事弧线（困境-坚持-收获），无法判断整体结构是否完整",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6616,
+    "total_tokens": 8116,
+    "completion_tokens": 1500,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 141.733,
+  "attempts": 1
+}

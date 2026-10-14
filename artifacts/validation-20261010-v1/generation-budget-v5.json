@@ -1,0 +1,13 @@
+{
+  "bailian_limit": 120,
+  "bailian_used": 76,
+  "bailian_remaining": 44,
+  "v5_exit_code": 0,
+  "versions": [
+    "artifacts/validation-20261010-v1",
+    "artifacts/validation-20261010-v2",
+    "artifacts/validation-20261010-v3",
+    "artifacts/validation-20261010-v4",
+    "artifacts/validation-20261010-v5"
+  ]
+}

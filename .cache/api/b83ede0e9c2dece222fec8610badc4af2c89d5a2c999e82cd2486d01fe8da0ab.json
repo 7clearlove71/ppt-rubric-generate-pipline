@@ -1,0 +1,638 @@
+{
+  "parsed": {
+    "page": 2,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "申报要点：280 万元扶持资金撬动120 户增收",
+        "location": "页面顶部标题区域",
+        "statement": "标题呈现核心申报数据：总投资280万元，目标带动120户",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "280万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "280",
+            "unit": "万元",
+            "subject": "扶持资金",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "带动农户数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "6 代· 逾150 年",
+        "location": "技艺传承卡片",
+        "statement": "关键事实：传承6代，超过150年",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "传了6代逾150年"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "6",
+            "unit": "代",
+            "subject": "传承代数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "150",
+            "unit": "年",
+            "subject": "传承年限",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "现存12 位师傅、平均62 岁",
+        "location": "技艺传承卡片下方",
+        "statement": "关键事实：现存师傅12人，平均年龄62岁",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "人",
+            "subject": "师傅人数",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "62",
+            "unit": "岁",
+            "subject": "师傅平均年龄",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2018 年省级非遗",
+        "location": "认定层级卡片",
+        "statement": "关键事实：2018年获省级非遗认定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "2018年获批省级非遗"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2018",
+            "unit": "年",
+            "subject": "非遗认定年份",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "非遗保护＋产业带动双线",
+        "location": "认定层级卡片下方",
+        "statement": "对省级非遗价值的定性说明，体现'分量'",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "文化价值这块要能体现出省级非遗认定的分量"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "280 万元",
+        "location": "总投资卡片",
+        "statement": "总投资金额280万元",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "总投资280万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "280",
+            "unit": "万元",
+            "subject": "总投资",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "公司＋合作社＋农户实施",
+        "location": "总投资卡片下方",
+        "statement": "利益联结模式名称呈现",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "公司+合作社+农户"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "60 户→120 户",
+        "location": "带动农户卡片",
+        "statement": "带动农户数：首期60户，第二年扩至120户",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "60",
+            "unit": "户",
+            "subject": "首期带动农户数",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          },
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "第二年带动农户数",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "首年至第二年（＋100% ，测算）",
+        "location": "带动农户卡片下方",
+        "statement": "农户增长幅度标注为测算值，增长100%",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "100",
+            "unit": "%",
+            "subject": "农户增长幅度",
+            "denominator": "基准值60户",
+            "time_origin": "首年至第二年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "growth_percent",
+            "left": "120",
+            "right": "60",
+            "reported": "100",
+            "left_unit": "户",
+            "right_unit": "户",
+            "reported_unit": "%",
+            "left_quote": "60 户→120 户",
+            "right_quote": "60 户→120 户",
+            "reported_quote": "＋100% ，测算",
+            "relation_quote": "首年至第二年（＋100% ，测算）",
+            "meaning": "从60户增长到120户，增幅为100%"
+          }
+        ]
+      },
+      {
+        "quote": "约1800 元",
+        "location": "人均月增收卡片",
+        "statement": "人均月增收约1800元",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "1800",
+            "unit": "元",
+            "subject": "人均月增收",
+            "denominator": "人",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "在家编织、按件计酬",
+        "location": "人均月增收卡片下方",
+        "statement": "农户收益机制：在家编织、按件计酬",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "农户在家编织按件计酬"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "带动农户（户）月增收总额（万元· 测算）",
+        "location": "图表标题区域",
+        "statement": "图表标题，说明双轴内容：带动农户（户）和月增收总额（万元·测算）",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "60",
+        "location": "图表第一年柱状图上方",
+        "statement": "第一年带动农户60户",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "60",
+            "unit": "户",
+            "subject": "第一年带动农户数",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "10.8",
+        "location": "图表第一年黑色柱状图上方",
+        "statement": "第一年月增收总额10.8万元",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "10.8",
+            "unit": "万元",
+            "subject": "第一年月增收总额",
+            "denominator": "不适用",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "60",
+            "right": "1800",
+            "reported": "10.8",
+            "left_unit": "户",
+            "right_unit": "元/人/月",
+            "reported_unit": "万元",
+            "left_quote": "60",
+            "right_quote": "约1800 元",
+            "reported_quote": "10.8",
+            "relation_quote": "户为申报锁定值· 万元为测算（户数×1800 元）",
+            "meaning": "60户×1800元/户/月=108000元=10.8万元"
+          }
+        ]
+      },
+      {
+        "quote": "120",
+        "location": "图表第二年柱状图上方",
+        "statement": "第二年带动农户120户",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "第二年带动农户数",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "21.6",
+        "location": "图表第二年黑色柱状图上方",
+        "statement": "第二年月增收总额21.6万元",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "21.6",
+            "unit": "万元",
+            "subject": "第二年月增收总额",
+            "denominator": "不适用",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "120",
+            "right": "1800",
+            "reported": "21.6",
+            "left_unit": "户",
+            "right_unit": "元/人/月",
+            "reported_unit": "万元",
+            "left_quote": "120",
+            "right_quote": "约1800 元",
+            "reported_quote": "21.6",
+            "relation_quote": "户为申报锁定值· 万元为测算（户数×1800 元）",
+            "meaning": "120户×1800元/户/月=216000元=21.6万元"
+          }
+        ]
+      },
+      {
+        "quote": "户为申报锁定值· 万元为测算（户数×1800 元）",
+        "location": "图表标题右侧注释",
+        "statement": "明确标注万元为测算值，计算方式为户数×1800元",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "评审逻辑链条",
+        "location": "页面右侧模块标题",
+        "statement": "六段承接结构，对应页码P3-P9",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "技艺濒危 P3",
+        "location": "评审逻辑链条第一项",
+        "statement": "第一环节：技艺濒危，对应P3",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "省级非遗价值 P4",
+        "location": "评审逻辑链条第二项",
+        "statement": "第二环节：省级非遗价值，对应P4",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "利益联结与带农增收 P5、P6",
+        "location": "评审逻辑链条第三项",
+        "statement": "第三环节：利益联结与带农增收，对应P5、P6",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "三年递进规划 P7",
+        "location": "评审逻辑链条第四项",
+        "statement": "第四环节：三年递进规划，对应P7",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "280 万元资金用途 P8",
+        "location": "评审逻辑链条第五项",
+        "statement": "第五环节：280万元资金用途，对应P8",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "效益与风险防控 P9",
+        "location": "评审逻辑链条第六项",
+        "statement": "第六环节：效益与风险防控，对应P9",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "申请县级产业扶持资金280 万元，分三年实施，资金用途与三年规划逐项对应，可核查、可考核。",
+        "location": "页面底部申报请求区域",
+        "statement": "申报请求核心内容，强调资金用途与规划对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "资金用途(总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万)这块要跟前面规划对得上"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "280",
+            "unit": "万元",
+            "subject": "申请扶持资金",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "第一年建成800 ㎡工坊并培训50 人｜第二年年产量扩至10 万件｜第三年打造品牌、入驻电商平台",
+        "location": "申报请求下方",
+        "statement": "三年规划核心节点：第一年800㎡工坊+培训50人，第二年产量10万件，第三年品牌+电商",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件、第三年做品牌入驻电商平台"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "800",
+            "unit": "㎡",
+            "subject": "工坊面积",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          },
+          {
+            "value": "50",
+            "unit": "人",
+            "subject": "培训人数",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          },
+          {
+            "value": "10",
+            "unit": "万件",
+            "subject": "年产量",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "以下先说明为什么必须现在扶持 → P3",
+        "location": "页面右下角",
+        "statement": "过渡引导语，指向下一页P3",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：本项目申报锁定口径；月增收总额10.8 万元／21.6 万元、户均撬动约2.33 万元为算术换算（测算）；第三年带动户数与年产量以申报材料为准。",
+        "location": "页面底部数据来源注释",
+        "statement": "数据来源说明，明确10.8万/21.6万为算术换算测算值，户均撬动约2.33万元",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "10.8",
+            "unit": "万元",
+            "subject": "第一年月增收总额",
+            "denominator": "不适用",
+            "time_origin": "月"
+          },
+          {
+            "value": "21.6",
+            "unit": "万元",
+            "subject": "第二年月增收总额",
+            "denominator": "不适用",
+            "time_origin": "月"
+          },
+          {
+            "value": "2.33",
+            "unit": "万元",
+            "subject": "户均撬动资金",
+            "denominator": "户",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "280",
+            "right": "120",
+            "reported": "2.33",
+            "left_unit": "万元",
+            "right_unit": "户",
+            "reported_unit": "万元/户",
+            "left_quote": "280 万元",
+            "right_quote": "120 户",
+            "reported_quote": "户均撬动约2.33 万元",
+            "relation_quote": "月增收总额10.8 万元／21.6 万元、户均撬动约2.33 万元为算术换算（测算）",
+            "meaning": "280万元总资金÷120户≈2.33万元/户"
+          }
+        ]
+      },
+      {
+        "quote": "户",
+        "location": "图表Y轴左侧单位标签",
+        "statement": "视觉现象：单位标签'户'位于图表左上角，与标题文字区域存在bbox相交候选",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "万元",
+        "location": "图表右侧Y轴单位标签",
+        "statement": "视觉现象：单位标签'万元'位于图表右上角，与数字'25'存在bbox相交候选",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "25",
+        "location": "图表右侧Y轴刻度",
+        "statement": "视觉现象：右侧Y轴刻度值25，与'万元'标签存在bbox相交候选，经局部放大图核查，'万元'与'25'为上下相邻排版，'万元'位于'25'上方，无实际笔画遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 7984,
+    "total_tokens": 11813,
+    "completion_tokens": 3829,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 111.762,
+  "attempts": 1
+}

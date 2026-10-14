@@ -1,0 +1,72 @@
+{
+  "02": {
+    "A": {
+      "status": "incomplete",
+      "score": null,
+      "score_lower": 44.473684210526315,
+      "score_upper": 100.0,
+      "unresolved_weight": 55.526315789473685,
+      "dimensions": {
+        "correctness": {
+          "earned": 14.473684210526315,
+          "possible": 24.999999999999996,
+          "unresolved": 10.526315789473685
+        },
+        "fulfillment": {
+          "earned": 30.0,
+          "possible": 30.0,
+          "unresolved": 0
+        },
+        "integrity": {
+          "earned": 0,
+          "possible": 15.0,
+          "unresolved": 15.0
+        },
+        "narrative": {
+          "earned": 0,
+          "possible": 15.0,
+          "unresolved": 15.0
+        },
+        "visual": {
+          "earned": 0,
+          "possible": 15.0,
+          "unresolved": 15.0
+        }
+      }
+    },
+    "B": {
+      "status": "incomplete",
+      "score": null,
+      "score_lower": 0,
+      "score_upper": 100.0,
+      "unresolved_weight": 100.0,
+      "dimensions": {
+        "correctness": {
+          "earned": 0,
+          "possible": 24.999999999999996,
+          "unresolved": 24.999999999999996
+        },
+        "fulfillment": {
+          "earned": 0,
+          "possible": 30.0,
+          "unresolved": 30.0
+        },
+        "integrity": {
+          "earned": 0,
+          "possible": 15.0,
+          "unresolved": 15.0
+        },
+        "narrative": {
+          "earned": 0,
+          "possible": 15.0,
+          "unresolved": 15.0
+        },
+        "visual": {
+          "earned": 0,
+          "possible": 15.0,
+          "unresolved": 15.0
+        }
+      }
+    }
+  }
+}

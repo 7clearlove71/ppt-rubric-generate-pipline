@@ -1,0 +1,579 @@
+{
+  "parsed": {
+    "page": 5,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "研发投入占比从 9% 提到 14% ，投入额接近翻倍，换来 18 项专利",
+        "location": "页首标题",
+        "statement": "该页核心观点：将研发投入占比提升、投入额增长与专利产出关联，直接呼应老板致辞中'加大研发投入'与'脱胎换骨'两个叙事要素，属于情怀与数据的融合表达",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%，新增专利18项"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "9%",
+            "unit": "%",
+            "subject": "上年研发投入占比",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          },
+          {
+            "value": "14%",
+            "unit": "%",
+            "subject": "本年度研发投入占比",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          },
+          {
+            "value": "18",
+            "unit": "项",
+            "subject": "新增专利",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "老板致辞原话「咬牙没有裁员反而加大了研发投入」",
+        "location": "页面上部左侧红色标签区域",
+        "statement": "直接引用老板致辞原文，并与研发投入数据并置，形成叙事-数据对应关系",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "咬牙没有裁员反而加大了研发投入"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "「正是那段日子让我们脱胎换骨」脱胎换骨的形态：研发强度 14% + 新增专利 18 项",
+        "location": "页面上部右侧红色标签区域",
+        "statement": "直接引用老板致辞原文，并明确给出'脱胎换骨'的具体数字形态（研发强度14%+新增专利18项），将情怀表述落到可量化指标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "14%",
+            "unit": "%",
+            "subject": "研发强度",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          },
+          {
+            "value": "18",
+            "unit": "项",
+            "subject": "新增专利",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "上年 ≈3,000 万元（测算）",
+        "location": "图表左侧柱状图",
+        "statement": "上年研发投入测算值，标注为测算，与来源数据推算一致：上年营收≈3.33亿元×9%=≈3,000万元",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3000",
+            "unit": "万元",
+            "subject": "上年研发投入",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "3.33",
+            "right": "9%",
+            "reported": "3000",
+            "left_unit": "亿元",
+            "right_unit": "%",
+            "reported_unit": "万元",
+            "left_quote": "上年营收 ≈3.33 亿元",
+            "right_quote": "上年研发投入 ≈3,000 万元（3.33 亿 × 9% ）",
+            "reported_quote": "≈3,000 万元（测算）",
+            "relation_quote": "本年度研发投入 5,880 万元（4.2 亿 × 14% ）",
+            "meaning": "由上年营收和占比推算上年研发投入"
+          }
+        ]
+      },
+      {
+        "quote": "本年度 5,880 万元",
+        "location": "图表右侧柱状图",
+        "statement": "本年度研发投入金额，由全年营收4.2亿×14%计算得出",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%，研发投入占比从9%提到14%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "5880",
+            "unit": "万元",
+            "subject": "本年度研发投入",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "4.2",
+            "right": "14%",
+            "reported": "5880",
+            "left_unit": "亿元",
+            "right_unit": "%",
+            "reported_unit": "万元",
+            "left_quote": "全年营收4.2亿",
+            "right_quote": "研发投入占比从9%提到14%",
+            "reported_quote": "5,880 万元",
+            "relation_quote": "本年度研发投入 5,880 万元（4.2 亿 × 14% ）",
+            "meaning": "由本年度营收和占比推算本年度研发投入"
+          }
+        ]
+      },
+      {
+        "quote": "3.7 倍 研发增速 ÷ 营收增速 ≈+96% ÷ +26% ，钱先投给未来（测算）",
+        "location": "页面右侧中部数据卡片",
+        "statement": "研发增速与营收增速的比值，标注为测算。研发增量=5,880-3,000=2,880万，增速≈96%；营收增速来源给定+26%；比值≈3.7倍",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3.7",
+            "unit": "倍",
+            "subject": "研发增速与营收增速比值",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "96%",
+            "right": "26%",
+            "reported": "3.7",
+            "left_unit": "%",
+            "right_unit": "%",
+            "reported_unit": "倍",
+            "left_quote": "≈+96%",
+            "right_quote": "+26%",
+            "reported_quote": "3.7 倍",
+            "relation_quote": "研发增速 ÷ 营收增速",
+            "meaning": "研发增速相对于营收增速的倍数"
+          }
+        ]
+      },
+      {
+        "quote": "≈33% 每 3 元营收投回 1 元研发 研发增量 2,880 万 ÷ 营收增量 ≈8,667 万（测算）",
+        "location": "页面右侧中部数据卡片",
+        "statement": "研发增量占营收增量的比例。营收增量=4.2-4.2/1.26≈4.2-3.33=0.87亿=8,667万；研发增量=2,880万；比例≈33.2%≈33%",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "33%",
+            "unit": "%",
+            "subject": "研发增量占营收增量比例",
+            "denominator": "营收增量",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "2880",
+            "right": "8667",
+            "reported": "33%",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "%",
+            "left_quote": "研发增量 2,880 万",
+            "right_quote": "营收增量 ≈8,667 万",
+            "reported_quote": "≈33%",
+            "relation_quote": "研发增量 2,880 万 ÷ 营收增量 ≈8,667 万（测算）",
+            "meaning": "每增加1元营收中有多少投入研发"
+          }
+        ]
+      },
+      {
+        "quote": "+5pct 研发强度 9% → 14% 相对提升 ≈55.6% ，寒冬中的主动选择（测算）",
+        "location": "页面右侧下部数据卡片",
+        "statement": "研发强度百分点提升及相对提升幅度。14%-9%=5pct；(14%-9%)/9%=55.6%",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "5",
+            "unit": "pct",
+            "subject": "研发强度提升",
+            "denominator": "不适用",
+            "time_origin": "本年度vs上年"
+          },
+          {
+            "value": "55.6%",
+            "unit": "%",
+            "subject": "研发强度相对提升",
+            "denominator": "上年研发强度",
+            "time_origin": "本年度vs上年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "14%",
+            "right": "9%",
+            "reported": "5pct",
+            "left_unit": "%",
+            "right_unit": "%",
+            "reported_unit": "pct",
+            "left_quote": "14%",
+            "right_quote": "9%",
+            "reported_quote": "+5pct",
+            "relation_quote": "研发强度 9% → 14%",
+            "meaning": "研发强度绝对百分点提升"
+          },
+          {
+            "operation": "growth_percent",
+            "left": "14%",
+            "right": "9%",
+            "reported": "55.6%",
+            "left_unit": "%",
+            "right_unit": "%",
+            "reported_unit": "%",
+            "left_quote": "14%",
+            "right_quote": "9%",
+            "reported_quote": "≈55.6%",
+            "relation_quote": "相对提升 ≈55.6% ，寒冬中的主动选择（测算）",
+            "meaning": "研发强度相对于上年的增长幅度"
+          }
+        ]
+      },
+      {
+        "quote": "本年度新增专利 18 项 全年经营数据原始值",
+        "location": "页面下部左侧数据卡片",
+        "statement": "直接呈现来源给定的全年新增专利数，标注为原始值",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "新增专利18项"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "18",
+            "unit": "项",
+            "subject": "本年度新增专利",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "每 1 项专利所需研发投入 327 万元/项 5,880 万 ÷ 18 （测算）",
+        "location": "页面下部左二数据卡片",
+        "statement": "单专利研发投入测算值。5,880÷18=326.67≈327万元/项",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "新增专利18项"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "327",
+            "unit": "万元/项",
+            "subject": "每专利研发投入",
+            "denominator": "1项专利",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "5880",
+            "right": "18",
+            "reported": "327",
+            "left_unit": "万元",
+            "right_unit": "项",
+            "reported_unit": "万元/项",
+            "left_quote": "5,880 万",
+            "right_quote": "18",
+            "reported_quote": "327 万元/ 项",
+            "relation_quote": "5,880 万 ÷ 18 （测算）",
+            "meaning": "每项专利对应的研发投入"
+          }
+        ]
+      },
+      {
+        "quote": "每 1 项专利产出节奏 20 天/项 365 ÷ 18 （测算）",
+        "location": "页面下部右二数据卡片",
+        "statement": "按全年365天平均的专利产出节奏，365÷18=20.28≈20天/项。此测算假设专利产出均匀分布于全年，属于作品自行设定的计算口径",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "20",
+            "unit": "天/项",
+            "subject": "专利产出节奏",
+            "denominator": "1项专利",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "365",
+            "right": "18",
+            "reported": "20",
+            "left_unit": "天",
+            "right_unit": "项",
+            "reported_unit": "天/项",
+            "left_quote": "365",
+            "right_quote": "18",
+            "reported_quote": "20 天/ 项",
+            "relation_quote": "365 ÷ 18 （测算）",
+            "meaning": "假设全年均匀产出的专利平均周期"
+          }
+        ]
+      },
+      {
+        "quote": "专利人力密度 · 全员口径 23 人/项 410 ÷ 18 （测算）",
+        "location": "页面下部右侧数据卡片",
+        "statement": "按全员口径的专利人力密度，410÷18=22.78≈23人/项。使用来源给定员工数410人",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "23",
+            "unit": "人/项",
+            "subject": "专利人力密度",
+            "denominator": "1项专利",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "410",
+            "right": "18",
+            "reported": "23",
+            "left_unit": "人",
+            "right_unit": "项",
+            "reported_unit": "人/项",
+            "left_quote": "410",
+            "right_quote": "18",
+            "reported_quote": "23 人/ 项",
+            "relation_quote": "410 ÷ 18 （测算）",
+            "meaning": "每项专利对应的全员人数"
+          }
+        ]
+      },
+      {
+        "quote": "数据来源：公司全年经营数据与老板年会致辞；标注「测算」者按统一口径推算：上年营收 ≈3.33 亿元（4.2 ÷ 1.26 ）、上年研发投入 ≈3,000 万元（3.33 亿 × 9% ）、本年度研发投入 5,880 万元（4.2 亿 × 14% ）、增量元、增幅 ≈+96% 。",
+        "location": "页面底部注释栏",
+        "statement": "数据来源说明及测算口径披露。包含文字叠印候选：p5_t51与p5_t52在y=366.11-367.86区域有17.26%的bbox交集，但放大图显示为正常换行排版，非真实遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%，研发投入占比从9%提到14%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3.33",
+            "unit": "亿元",
+            "subject": "上年营收",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          },
+          {
+            "value": "3000",
+            "unit": "万元",
+            "subject": "上年研发投入",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          },
+          {
+            "value": "5880",
+            "unit": "万元",
+            "subject": "本年度研发投入",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "4.2",
+            "right": "1.26",
+            "reported": "3.33",
+            "left_unit": "亿元",
+            "right_unit": "无量纲",
+            "reported_unit": "亿元",
+            "left_quote": "4.2 ÷ 1.26",
+            "right_quote": "1.26",
+            "reported_quote": "≈3.33 亿元",
+            "relation_quote": "上年营收 ≈3.33 亿元（4.2 ÷ 1.26 ）",
+            "meaning": "由本年度营收和增速反推上年营收"
+          }
+        ]
+      },
+      {
+        "quote": "14% 研发投入占比（% ）",
+        "location": "图表右上角标签区域",
+        "statement": "图表中14%数据标签与图例文字存在bbox交集（fraction=0.1333），放大图显示为图例与数据标签的正常邻近排版，非真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本年度新增专利 / 18 / 全年经营数据原始值",
+        "location": "页面下部左侧数据卡片",
+        "statement": "标题文字'本年度新增专利'与大数字'18'的bbox有10.89%交集，放大图显示为正常的大小字层级排版（标题在上，大数字在下），无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "每 1 项专利所需研发投入 / 327 / 5,880 万 ÷ 18 （测算）",
+        "location": "页面下部左二数据卡片",
+        "statement": "标题与大数字、大数字与说明文字的bbox存在微小交集（fraction分别为0.1102和0.0085），放大图显示为正常的垂直层级排版，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "每 1 项专利产出节奏 / 20 / 365 ÷ 18 （测算）",
+        "location": "页面下部右二数据卡片",
+        "statement": "标题与大数字、大数字与说明文字的bbox存在微小交集（fraction分别为0.0938和0.0078），放大图显示为正常的垂直层级排版，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "专利人力密度 · 全员口径 / 23 / 410 ÷ 18 （测算）",
+        "location": "页面下部右侧数据卡片",
+        "statement": "标题与大数字、大数字与说明文字的bbox存在微小交集（fraction分别为0.0798和0.0076），放大图显示为正常的垂直层级排版，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "≈33% / 研发增量 2,880 万 ÷ 营收增量 ≈8,667 万（测算）",
+        "location": "页面右侧中部数据卡片",
+        "statement": "大数字与说明文字的bbox有6.97%交集，放大图显示为正常上下层级排版，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "3.7 倍 / ≈+96% ÷ +26% ，钱先投给未来（测算）",
+        "location": "页面右侧上部数据卡片",
+        "statement": "大数字与说明文字的bbox有6.96%交集，放大图显示为正常上下层级排版，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "+5pct / 相对提升 ≈55.6% ，寒冬中的主动选择（测算）",
+        "location": "页面右侧下部数据卡片",
+        "statement": "大数字与说明文字的bbox有6.93%交集，放大图显示为正常上下层级排版，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 11652,
+    "total_tokens": 15277,
+    "completion_tokens": 3625,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 145.702,
+  "attempts": 1
+}

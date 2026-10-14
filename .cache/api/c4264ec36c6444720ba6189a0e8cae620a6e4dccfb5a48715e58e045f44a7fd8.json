@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "汇报提纲（页2）明确按01改造任务完成情况→02资金使用情况→03居民满意度→04存在问题→05下一步计划排列。正文页3-7依次对应此顺序：页3为改造任务完成情况，页4为资金使用情况，页5为居民满意度，页6为存在问题（开篇即写“对照前三部分任务完成、资金到位与满意度调查数据”），页7为下一步计划（每条措施标注“对应问题（一）至（四）”）。存在问题位于资金与满意度之后、下一步计划之前，完全支撑问题溯源与计划回应的逻辑。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 28336,
+    "total_tokens": 28482,
+    "completion_tokens": 146,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.179,
+  "attempts": 1
+}

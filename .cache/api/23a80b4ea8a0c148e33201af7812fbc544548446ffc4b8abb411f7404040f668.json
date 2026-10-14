@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "全篇采用统一的红白配色体系（红色#C23531用于强调、标题、数据高亮，深红色#8B0000用于图表，灰色用于辅助文字），贯穿8页。字体层级一致：大标题黑体粗体、小标题红色加粗、正文灰色常规字。版式结构统一：顶部标题区+内容卡片/分栏布局，各页均使用左侧红色竖线标签、底部来源标注格式。图表风格统一（横向柱状图、甘特图均使用同色系）。无花哨装饰或风格跳变，视觉元素均服务于危机应对信息表达，与严肃主题匹配。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 18990,
+    "total_tokens": 19151,
+    "completion_tokens": 161,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 15.836,
+  "attempts": 1
+}

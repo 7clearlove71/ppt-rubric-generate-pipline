@@ -1,0 +1,187 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      1,
+      6,
+      7,
+      9
+    ],
+    "evidence": "封面页（第1页）副标题将'带动120户'作为项目核心要素呈现，未标注'预计''目标'等限定词，且未体现'首期60户第二年扩至120户'的分阶段计划语境，使未来目标呈现为项目整体既定规模。第6页标题'带农增收：120户人均月增收约1800元'直接使用'120户'作为标题主语，虽副标题说明'首年60户、次年120户'，但标题本身将第二年目标值前置为当前陈述对象，未使用'预计''目标'等措辞。第7页三年规划页面中，底部资金条将'设备60万（扩产）·培训30万·流动30万'列为第二年科目，将'品牌推广40万·流动资金30万（滚动）'列为第三年科目，培训经费30万、流动资金30万出现跨年度重复列示，且未明确标注为'计划''预计'，使总投资分项的年度分配呈现为已确定的执行方案而非规划口径。第9页标题及副标题'280万元形成800㎡工坊、年产量10万件产能，带动计件农户60户→120户、人均月增收约1800元'使用'形成'这一完成态动词，将三年规划目标陈述为已形成的产出结果，构成对未来计划的事实化陈述。",
+    "evidence_ids": [
+      "p1_e3",
+      "p6_e1",
+      "p7_e14",
+      "p7_e15",
+      "p7_e16",
+      "p9_e2"
+    ],
+    "resolutions": [],
+    "additional_observations": [
+      {
+        "page": 1,
+        "quote": "省级非物质文化遗产竹编技艺·\"公司+合作社+农户\"带动120户·总投资280万元",
+        "location": "主标题下方，副标题区域",
+        "statement": "封面副标题将'带动120户'作为项目核心要素直接呈现，未使用'预计''目标''计划'等限定词，也未标注时间阶段，使第二年扩展目标呈现为项目整体既定规模",
+        "kind": "fact",
+        "failure_mode": "certainty_boundary_blur",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "顺带把预计带动的农户数(首期60户第二年扩至120户)和人均增收讲一下"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "带动农户数",
+            "denominator": "不适用",
+            "time_origin": "未说明（用户要求首期60户第二年120户）"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 6,
+        "quote": "带农增收：120 户人均月增收约1800 元",
+        "location": "页面上方标题区",
+        "statement": "页面主标题直接使用'120户'作为陈述对象，未使用'预计''目标'等限定词，将第二年扩展目标作为标题主语，虽副标题说明首年60户次年120户，但标题本身构成对未来目标的事实化前置",
+        "kind": "fact",
+        "failure_mode": "certainty_boundary_blur",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "带动农户数（第二年）",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 7,
+        "quote": "科目：设备60 万（扩产）· 培训30 万 · 流动30 万",
+        "location": "底部第二年资金条",
+        "statement": "第二年资金条列示培训30万、流动30万，第三年资金条再次列示流动30万（滚动），培训经费和流动资金出现跨年度重复，且未明确标注为'计划''预计'分配，使资金年度分配呈现为已确定的执行方案",
+        "kind": "fact",
+        "failure_mode": "certainty_boundary_blur",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "培训经费30万"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "流动资金30万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "30",
+            "unit": "万元",
+            "subject": "培训经费",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          },
+          {
+            "value": "30",
+            "unit": "万元",
+            "subject": "流动资金",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          },
+          {
+            "value": "30",
+            "unit": "万元",
+            "subject": "流动资金（滚动）",
+            "denominator": "不适用",
+            "time_origin": "第三年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 9,
+        "quote": "280 万元形成800 ㎡工坊、年产量10 万件产能，带动计件农户60 户→120 户、人均月增收约1800 元",
+        "location": "标题下方副标题区域",
+        "statement": "使用'形成'这一完成态动词，将三年规划目标（800㎡工坊、10万件产能、120户带动、1800元增收）陈述为已形成的产出结果，构成对未来计划的事实化陈述",
+        "kind": "fact",
+        "failure_mode": "certainty_boundary_blur",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件、第三年做品牌入驻电商平台"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "首期60户第二年扩至120户"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "280",
+            "unit": "万元",
+            "subject": "总投资",
+            "denominator": "不适用",
+            "time_origin": "三年规划期"
+          },
+          {
+            "value": "800",
+            "unit": "㎡",
+            "subject": "工坊面积",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          },
+          {
+            "value": "10",
+            "unit": "万件",
+            "subject": "年产量",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          },
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "第二年带动农户数",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          },
+          {
+            "value": "1800",
+            "unit": "元",
+            "subject": "人均月增收",
+            "denominator": "人",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 57558,
+    "total_tokens": 59024,
+    "completion_tokens": 1466,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 67.393,
+  "attempts": 1
+}

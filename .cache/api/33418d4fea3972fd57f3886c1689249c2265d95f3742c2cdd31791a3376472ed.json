@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "主题定位明确：第1页标题即锁定'产线设备能耗分析与节能改造立项建议'，副标题明确'1号线液压系统改造立项评审'。结构完整自洽：第2页四线能耗对标→第3页1号线异常深挖锁定液压老化→第4页老化机理与改造措施→第5页120万元投资回报测算（18个月回本、敏感性分析）→第6页3号线空载问题→第7页立项建议与分批路线图→第8页决策请求。内容体量与'做几页'的轻量立项汇报相称，8页覆盖数据对比、根因分析、投资测算、风险兜底、行动建议，形成可直接汇报的完整闭环。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23105,
+    "total_tokens": 23282,
+    "completion_tokens": 177,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.882,
+  "attempts": 1
+}

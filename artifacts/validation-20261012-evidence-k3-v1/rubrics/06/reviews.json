@@ -1,0 +1,60 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "R01: definition and exclusions must appear verbatim in judge_prompt",
+      "R02: definition and exclusions must appear verbatim in judge_prompt",
+      "R04: definition and exclusions must appear verbatim in judge_prompt",
+      "R05: definition and exclusions must appear verbatim in judge_prompt",
+      "R06: definition and exclusions must appear verbatim in judge_prompt",
+      "R07: definition and exclusions must appear verbatim in judge_prompt",
+      "R08: definition and exclusions must appear verbatim in judge_prompt",
+      "R09: definition and exclusions must appear verbatim in judge_prompt",
+      "R10: definition and exclusions must appear verbatim in judge_prompt",
+      "R11: definition and exclusions must appear verbatim in judge_prompt",
+      "R12: definition and exclusions must appear verbatim in judge_prompt",
+      "R13: definition and exclusions must appear verbatim in judge_prompt",
+      "Every criterion needs an owned failure mode"
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 1,
+    "structural_errors": [
+      "R11: definition and exclusions must appear verbatim in judge_prompt",
+      "Every criterion needs an owned failure mode"
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 2,
+    "structural_errors": [
+      "R11: definition and exclusions must appear verbatim in judge_prompt"
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  }
+]

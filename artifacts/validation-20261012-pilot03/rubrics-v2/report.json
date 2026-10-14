@@ -1,0 +1,35 @@
+{
+  "cases": [
+    {
+      "case_id": "03",
+      "status": "approved",
+      "items": 19,
+      "score_sum": 100.00000000000001,
+      "review_rounds": 2,
+      "semantic_reviews": 1,
+      "counterexample_reviews": 1
+    }
+  ],
+  "status_counts": {
+    "approved": 1
+  },
+  "total_cases": 1,
+  "approved_fraction": 1.0,
+  "logical_cache_hits": 0,
+  "models": {
+    "kimi-k3": {
+      "http_attempts": 3,
+      "failed_attempts": 0,
+      "reported_prompt_tokens": 18149,
+      "reported_completion_tokens": 3372,
+      "reported_total_tokens": 21521,
+      "usage_missing_attempts": 0
+    }
+  },
+  "attempt_journal_available": true,
+  "usage_scope": "Cumulative journals for this output directory; includes resumed invocations.",
+  "usage_caveat": null,
+  "failed_or_incomplete_cases": [],
+  "human_agreement": null,
+  "acceptance": "Automated operational report only; no human alignment claim."
+}

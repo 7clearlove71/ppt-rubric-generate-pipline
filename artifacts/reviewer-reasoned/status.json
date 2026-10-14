@@ -1,0 +1,5 @@
+{
+  "status": "interrupted",
+  "reason": "Reasoned reviewer exceeded 180-second response timeout and began retry; stopped experiment to bound additional requests.",
+  "billing_note": "Timed-out/in-flight request usage is unknown; do not assume zero cost."
+}

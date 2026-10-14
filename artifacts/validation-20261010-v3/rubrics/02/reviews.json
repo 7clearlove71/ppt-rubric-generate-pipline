@@ -1,0 +1,57 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "Uncovered requirements: ['Q10']",
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q03: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q06: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R07', 'R09']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q07: duplicate explicit scoring in fulfillment ['R05'] and correctness ['R07', 'R08', 'R09']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q05: duplicate explicit scoring in fulfillment ['R06'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 1,
+    "structural_errors": [
+      "Q04: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R07', 'R11']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q06: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R09', 'R11', 'R13']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q07: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R10', 'R11', 'R12', 'R13']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 2,
+    "structural_errors": [
+      "Q04: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R07', 'R11']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q06: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R09', 'R11', 'R13']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q07: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R10', 'R11', 'R12', 'R13']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  }
+]

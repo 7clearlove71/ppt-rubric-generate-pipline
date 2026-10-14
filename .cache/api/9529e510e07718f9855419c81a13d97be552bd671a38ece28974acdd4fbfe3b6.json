@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      {
+        "note": "关于信息密度与阅读路径：两者均确认各页布局合理、路径清晰，具体页码和描述细节不同但结论一致，属于正常证据差异。"
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 61187,
+    "total_tokens": 61457,
+    "completion_tokens": 270,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 128.602,
+  "attempts": 1
+}

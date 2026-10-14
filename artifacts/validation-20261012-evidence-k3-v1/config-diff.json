@@ -1,0 +1,40 @@
+{
+  "base_url": {
+    "previous": "https://api.modelarts-maas.com/openai/v1",
+    "this_run": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  },
+  "generator_model": {
+    "previous": "glm-5.2",
+    "this_run": "kimi-k3"
+  },
+  "judge_model": {
+    "previous": "kimi-k2.6",
+    "this_run": "kimi-k3"
+  },
+  "keychain_service": {
+    "previous": "codex.modelarts-maas.api-key",
+    "this_run": "codex.alibaba-bailian.api-key"
+  },
+  "max_api_requests": {
+    "previous": 12,
+    "this_run": 120
+  },
+  "request_options": {
+    "previous": {
+      "thinking": {
+        "type": "disabled"
+      }
+    },
+    "this_run": {
+      "enable_thinking": false
+    }
+  },
+  "reviewer_model": {
+    "previous": "kimi-k2.6",
+    "this_run": "kimi-k3"
+  },
+  "vision_model": {
+    "previous": "kimi-k2.6",
+    "this_run": "kimi-k3"
+  }
+}

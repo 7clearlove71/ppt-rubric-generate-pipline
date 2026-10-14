@@ -1,0 +1,66 @@
+[
+  {
+    "request_id": 1,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "92b764be9426b30c2c2702a478667d3508b9c53a36e2fbcc362812c75a32da3d",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1757,
+      "total_tokens": 2528,
+      "completion_tokens": 771,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 22.584
+  },
+  {
+    "request_id": 2,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "8374e220b2e96b3642cf0b0bf3635f880d5b53fc26f03d610a65dcca17ce9962",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1764,
+      "total_tokens": 2581,
+      "completion_tokens": 817,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "elapsed_seconds": 25.668
+  },
+  {
+    "request_id": 3,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "8374e220b2e96b3642cf0b0bf3635f880d5b53fc26f03d610a65dcca17ce9962",
+    "attempt": 2,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1764,
+      "total_tokens": 3096,
+      "completion_tokens": 1332,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 37.012
+  }
+]

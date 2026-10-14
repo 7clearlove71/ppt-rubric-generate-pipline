@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      7
+    ],
+    "evidence": "第2页明确列出'初步感受：三个方向'——'空心化·文化记忆断层·保护与开发错位'，并标注'后续方向，不作结论；待证材料单独标注'。第7页再次以'01空心化''02记忆断层''03开发错位'三条收敛，保留'待考'与'NEXT STEP'，定位始终为后续方向而非最终结论。三点齐全，'记忆断层'与原文'文化记忆断层'、'开发错位'与'保护与开发错位'为等价措辞，含义一致。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23723,
+    "total_tokens": 23858,
+    "completion_tokens": 135,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.878,
+  "attempts": 1
+}

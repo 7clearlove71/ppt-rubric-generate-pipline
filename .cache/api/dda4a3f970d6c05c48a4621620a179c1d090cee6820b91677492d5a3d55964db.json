@@ -1,0 +1,614 @@
+{
+  "parsed": {
+    "page": 8,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "产品安全质疑舆情危机应对方案",
+        "location": "页面顶部左侧标题",
+        "statement": "页面标题，明确主题为产品安全质疑舆情危机应对",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "管理层决策汇报 | 感谢与会",
+        "location": "页面顶部右侧",
+        "statement": "页面标注为管理层决策汇报，定位汇报对象",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "请拍板：48 小时倒计时",
+        "location": "页面上部大标题区域",
+        "statement": "核心行动诉求，强调48小时决策紧迫性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "决策倒计时窗口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "四项决策当场拍板后，第一段态度声明在48 小时窗口内发出，技术复核预计还需36 小时后发布结论声明",
+        "location": "标题下方说明文字",
+        "statement": "说明决策流程：四项决策拍板→48小时内发态度声明→36小时技术复核后发布结论声明。注意'36小时后'表述存在歧义：是指复核完成后立即发布，还是复核完成后再等36小时",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "态度声明发出窗口",
+            "denominator": "不适用",
+            "time_origin": "决策拍板后"
+          },
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核所需时间",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "48 小时 / 响应窗口进行中 / 第一段态度声明在窗口内发出",
+        "location": "页面中部左侧第一组数据卡片",
+        "statement": "48小时响应窗口事实呈现，与素材一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应，可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "响应窗口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "36 小时 / 技术复核预计还需 / 复核结论一出即发布结论声明",
+        "location": "页面中部左二数据卡片",
+        "statement": "技术复核36小时事实呈现，与素材一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核预计时间",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "约72% / 评论区负面情绪占比 / 尚无权威媒体跟进，3 个垂类KOL 转发",
+        "location": "页面中部右二数据卡片",
+        "statement": "负面情绪占比约72%及传播态势，与素材一致；保留了'约'字",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "评论区负面情绪占比约72%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "目前情绪是质疑为主,还没有权威媒体跟进,但已有3个垂类KOL开始转发"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "72",
+            "unit": "%",
+            "subject": "评论区负面情绪占比",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "约15% / 电商渠道退单量较平时多 / 近三天约40 通来电，退货退款约60% 、要官方说明约35%",
+        "location": "页面中部右侧数据卡片",
+        "statement": "客服数据完整呈现：退单增约15%、来电约40通、退货退款约60%、官方说明约35%，均保留'约'字，与素材一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "近三天相关来电大概40通,诉求集中在退货退款(约60%)和要官方说明(约35%)"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "15",
+            "unit": "%",
+            "subject": "电商渠道退单量增长",
+            "denominator": "平时退单量",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "40",
+            "unit": "通",
+            "subject": "客服来电数量",
+            "denominator": "不适用",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "60",
+            "unit": "%",
+            "subject": "退货退款诉求占比",
+            "denominator": "相关来电总量",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "35",
+            "unit": "%",
+            "subject": "要求官方说明诉求占比",
+            "denominator": "相关来电总量",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "REPORTER / 公关部牵头 / 归口联系方，牵头对外回应",
+        "location": "页面下部左侧信息区",
+        "statement": "明确公关部为牵头部门",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "DEPARTMENT / 客服部 电商部 技术部 法务部 / 按48 小时行动清单分工配合",
+        "location": "页面下部中间信息区",
+        "statement": "列明配合部门及分工方式",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "DATE / 明早决策会当日 / 下一次同步节点：技术复核结论出来时立即向管理层回报",
+        "location": "页面下部右侧信息区",
+        "statement": "明确决策时间节点和后续同步机制",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "公关部会同客服、电商、技术、法务联合汇报 · 明早决策会当日",
+        "location": "页面底部左侧",
+        "statement": "汇报主体和时间说明",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：舆情监测负面话题摘要 · 近三天客服来电统计要点 · 公关部声明草稿",
+        "location": "页面底部右侧",
+        "statement": "明确标注三类素材来源，与需求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "舆情监测那边出的负面话题摘要"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "这三天客服来电统计的要点"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "公关部连夜赶的声明草稿"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "48 小时",
+        "location": "p8_t8区域，放大视图显示",
+        "statement": "视觉检查：'48 小时'大字与下方'响应窗口进行中'小字为正常上下层级排版，非文字叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "36 小时",
+        "location": "p8_t11区域，放大视图显示",
+        "statement": "视觉检查：'36 小时'大字与下方'技术复核预计还需'小字为正常上下层级排版，非文字叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "约72%",
+        "location": "p8_t14区域，放大视图显示",
+        "statement": "视觉检查：'约72%'大字与下方'评论区负面情绪占比'小字为正常上下层级排版，非文字叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "约15%",
+        "location": "p8_t17区域，放大视图显示",
+        "statement": "视觉检查：'约15%'大字与下方'电商渠道退单量较平时多'小字为正常上下层级排版，非文字叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "近三天约40 通来电，退货退款约60% 、要官方说明约 / 35%",
+        "location": "p8_t19-p8_t20区域，放大视图显示",
+        "statement": "视觉检查：长文本'近三天约40通来电，退货退款约60%、要官方说明约'与换行后的'35%'为正常换行排版，非文字叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "四项决策当场拍板后，第一段态度声明在48 小时窗口内发出，技术复核预计还需36 小时 / 后发布结论声明",
+        "location": "p8_t6-p8_t7区域，放大视图显示",
+        "statement": "视觉检查：长句'四项决策当场拍板后，第一段态度声明在48小时窗口内发出，技术复核预计还需36小时'与续行'后发布结论声明'为正常换行排版，非文字叠印遮挡。语义上'36小时后发布'存在歧义理解可能",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "48 小时",
+        "location": "页面整体结构",
+        "statement": "本页为决策呼吁页，集中呈现关键数字和紧迫性。48小时窗口判断存在，'48小时内如果不做有效回应，可能从质疑升级为抵制'的紧迫性通过'请拍板：48小时倒计时'大标题和'响应窗口进行中'得到体现",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "部分用户是直接引用了那条视频的说法打进来的",
+        "location": "素材关联性检查",
+        "statement": "本页未直接呈现'部分用户直接引用视频说法'这一传导关系描述，但底部数据来源标注了'舆情监测负面话题摘要'和'近三天客服来电统计要点'并列，未明确建立两者之间的传导关联",
+        "kind": "fact",
+        "failure_mode": "transmission_link_missing",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "注意有部分用户是直接引用了那条视频的说法打进来的,说明视频的传播已经影响到实际客诉了"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "是否虚标",
+        "location": "舆情焦点话题检查",
+        "statement": "本页未呈现两个焦点话题'是否虚标'和'售后甩锅'的具体内容，仅概括呈现'评论区负面情绪占比约72%'和'尚无权威媒体跟进，3个垂类KOL转发'",
+        "kind": "fact",
+        "failure_mode": "sentiment_detail_distortion",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "话题主要集中在\"是否虚标\"和\"售后甩锅\"这两个点上"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "售后甩锅",
+        "location": "舆情焦点话题检查",
+        "statement": "本页未呈现两个焦点话题'是否虚标'和'售后甩锅'的具体内容",
+        "kind": "fact",
+        "failure_mode": "sentiment_detail_distortion",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "话题主要集中在\"是否虚标\"和\"售后甩锅\"这两个点上"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "有进一步发酵的苗头",
+        "location": "发酵苗头判断",
+        "statement": "本页呈现'3个垂类KOL转发'但未明确表述'有进一步发酵的苗头'这一判断",
+        "kind": "fact",
+        "failure_mode": "sentiment_detail_distortion",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "有进一步发酵的苗头"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "这个时间窗口很关键",
+        "location": "时间窗口紧迫性",
+        "statement": "本页通过'请拍板''倒计时'等表述体现紧迫性，但未直接引用'这个时间窗口很关键'的定性表述",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "说明视频的传播已经影响到实际客诉了",
+        "location": "传导关系建立",
+        "statement": "本页将舆情数据和客服数据并列呈现，但未建立'视频传播→实际客诉'的因果关联说明",
+        "kind": "fact",
+        "failure_mode": "transmission_link_missing",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "说明视频的传播已经影响到实际客诉了"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "6月10日起",
+        "location": "时间线起点",
+        "statement": "本页未呈现'6月10日起'这一时间起点信息",
+        "kind": "fact",
+        "failure_mode": "source_fact_distortion",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "6月10日起某测评博主发视频质疑我们产品有安全隐患"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "视频发布后24小时内转发破万",
+        "location": "传播量级",
+        "statement": "本页未呈现'24小时内转发破万'的传播量级信息",
+        "kind": "fact",
+        "failure_mode": "source_fact_distortion",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "视频发布后24小时内转发破万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "24",
+            "unit": "小时",
+            "subject": "转发破万用时",
+            "denominator": "不适用",
+            "time_origin": "视频发布后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "某测评博主",
+        "location": "事件主体",
+        "statement": "本页未呈现'某测评博主'这一事件发起主体信息",
+        "kind": "fact",
+        "failure_mode": "source_fact_distortion",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "某测评博主发视频质疑我们产品有安全隐患"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "质疑我们产品有安全隐患",
+        "location": "质疑内容",
+        "statement": "本页标题为'产品安全质疑舆情危机应对方案'，但正文中未直接呈现'产品有安全隐患'的具体质疑内容",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "质疑我们产品有安全隐患"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "目前情绪是质疑为主",
+        "location": "情绪定性",
+        "statement": "本页未直接呈现'目前情绪是质疑为主'的定性判断",
+        "kind": "fact",
+        "failure_mode": "sentiment_detail_distortion",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前情绪是质疑为主"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "四项决策当场拍板",
+        "location": "决策项数量",
+        "statement": "本页提到'四项决策'但未说明具体是哪四项决策，需结合前页判断",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第一段态度声明",
+        "location": "声明阶段",
+        "statement": "本页呈现两段式声明策略：第一段态度声明（48小时内）+结论声明（复核后），但未呈现声明草稿原文及修改建议",
+        "kind": "fact",
+        "failure_mode": "statement_revision_missing",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "草稿写的是\"我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利\""
+          },
+          {
+            "source_id": "prompt",
+            "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "\"追究法律责任\"这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "技术复核还没做完",
+        "location": "复核状态",
+        "statement": "本页'技术复核预计还需36小时'体现复核未完成状态，但未明确提示'把话说得这么满，万一复核发现确有问题会非常被动'的风险",
+        "kind": "fact",
+        "failure_mode": "statement_revision_missing",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "内部备注里技术复核还没做完,预计还需要36小时才能出结论"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "分级响应机制",
+        "location": "结构完整性检查",
+        "statement": "本页为决策呼吁页，未直接呈现分级响应机制的具体内容，需结合前页判断四块结构是否完整",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "事实时间线",
+        "location": "结构完整性检查",
+        "statement": "本页未呈现事实时间线的具体内容（如6月10日起始、24小时转发破万等），需结合前页判断",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "影响评估",
+        "location": "结构完整性检查",
+        "statement": "本页集中呈现部分影响数据（负面情绪72%、退单增15%、来电40通等），但缺少'是否虚标''售后甩锅'话题聚焦的影响分析",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "声明草稿修改建议",
+        "location": "结构完整性检查",
+        "statement": "本页未呈现声明草稿原文及修改建议，仅呈现两段式发布策略",
+        "kind": "fact",
+        "failure_mode": "statement_revision_missing",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "这两点务必在修改建议里体现出来,不是随便改改措辞就行"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 8460,
+    "total_tokens": 13504,
+    "completion_tokens": 5044,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 218.466,
+  "attempts": 2
+}

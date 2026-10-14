@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "text_seen": [
+      "同",
+      "比",
+      "亿"
+    ],
+    "overlapping": true,
+    "overlap_objects": [
+      "绿色'同'与金色'亿'在左侧竖笔及横笔区域相交",
+      "绿色'比'与金色'亿'在中间斜笔区域相交"
+    ],
+    "description": "绿色文字'同比'位于上层，金色文字'亿'位于下层。绿色'同'在左，绿色'比'在右，金色'亿'贯穿两者下方及中间。绿色笔画与金色笔画在多处实际相交重叠，绿色覆盖于金色之上。背景为纯白色。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 481,
+    "total_tokens": 623,
+    "completion_tokens": 142,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 4.485,
+  "attempts": 1
+}

@@ -1,0 +1,327 @@
+{
+  "parsed": {
+    "page": 6,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "新修的仿古街，与没钱修的老宅——一处“矛盾挺典型”的现场",
+        "location": "页面顶部标题区域",
+        "statement": "页面标题呈现Day4核心矛盾：新修仿古街与老宅保护资金缺位的对比",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day4 村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "笔记只确认三条事实：村里在搞旅游开发、新修了仿古街、老宅本体保护反而没钱投；资金投向错位是初步印象，机制尚未查证，两侧属性差异只是观感对照，不作因果断言。",
+        "location": "标题下方说明文字",
+        "statement": "显式声明仅确认三条事实，将矛盾定性为初步印象而非定论，符合存疑要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day4 村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "新修仿古街",
+        "location": "左侧卡片标题",
+        "statement": "左侧栏目呈现仿古街属性：新建、可见性强、资金路径清晰",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "新修了仿古街"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "老宅本体保护",
+        "location": "右侧卡片标题",
+        "statement": "右侧栏目呈现老宅保护属性：分散、协调成本高、见效慢、造价高",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "老宅本体保护反而没钱投"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "约40",
+            "unit": "栋",
+            "subject": "天井院落",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "分散于约40 栋天井院落（估算，待核）",
+        "location": "右侧卡片-空间形态行",
+        "statement": "老宅数量引用Day1数据，但标注'估算，待核'，保留存疑态度",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "现存明清老宅约40栋"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "约40",
+            "unit": "栋",
+            "subject": "天井院落",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "建成时间未知，待查",
+        "location": "左侧卡片-建成时间行",
+        "statement": "对建成时间标注未知待查，体现存疑意识",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本村出资方未知，待查",
+        "location": "左侧卡片-资金来源行",
+        "statement": "对资金来源标注未知待查，体现存疑意识",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "存疑 · 待考",
+        "location": "中部深色条带左侧标签",
+        "statement": "显式使用'存疑·待考'标签标注评述性质",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "“矛盾挺典型”是笔记作者本人的评述，属研究者初步判断而非村民陈述；本页把这句判断拆成六个并列开放问题，不作因果结论。",
+        "location": "中部深色条带说明文字",
+        "statement": "明确将矛盾定性为研究者初步判断，拆解为开放问题避免定论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "矛盾挺典型"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "待查 仿古街资金来源与出资方：未知，待查项目立项与竣工验收材料",
+        "location": "中部深色条带第一行",
+        "statement": "使用'待查'标签标注仿古街资金来源为未知",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "待查 老宅修缮预算是否存在及缺口规模：未知，待查村委账目与逐栋台账",
+        "location": "中部深色条带第二行",
+        "statement": "使用'待查'标签标注老宅修缮预算为未知",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "待查 名录资格、保护发展规划与补助申报记录：未知，待查名录公告与资金公示",
+        "location": "中部深色条带第三行",
+        "statement": "使用'待查'标签标注保护资质与补助申报为未知",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Q1 资金是否按“可展示、可验收”口径投放？",
+        "location": "底部六宫格第一格",
+        "statement": "将矛盾拆解为开放问题Q1，不作肯定结论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Q2 产权与住户分散是否抬高了修缮协调成本？",
+        "location": "底部六宫格第二格",
+        "statement": "将矛盾拆解为开放问题Q2，不作肯定结论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Q3 开发主体与保护责任主体是否分离？",
+        "location": "底部六宫格第三格",
+        "statement": "将矛盾拆解为开放问题Q3，不作肯定结论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Q4 保护资金渠道是否未被申请或未被激活？",
+        "location": "底部六宫格第四格",
+        "statement": "将矛盾拆解为开放问题Q4，不作肯定结论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Q5 旅游收益是否未反哺本体保护？",
+        "location": "底部六宫格第五格",
+        "statement": "将矛盾拆解为开放问题Q5，不作肯定结论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Q6 是否存在尚未了解到的修缮投入？",
+        "location": "底部六宫格第六格",
+        "statement": "将矛盾拆解为开放问题Q6，明确保留'完全可能'的开放性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "完全可能：抢险加固、屋面抢修或住户自费维修，须向村委、主管部门与运营方核实。",
+        "location": "Q6下方说明文字",
+        "statement": "对Q6明确给出'完全可能'的开放性结论，并指出核实方向",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "来源：用户田野笔记 Day1 / Day4 （现场可确证事实三条：村里在搞旅游开发、新修了仿古街、老宅本体保护反而没钱投） · 外部参照：传统村落集中连片保护利用示范补助的资金使用范围含传统建筑保护修缮与环境整治，仅作政策与案例语境；同类村落案例属外部案例、非本村 · 本页不含任何本村资金金额、投资比例、游客量与年代",
+        "location": "页面底部来源说明",
+        "statement": "明确标注信息来源边界，区分用户田野笔记事实与外部政策参照，声明不含未提供的数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day1 进村。现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "Day4 村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "对 照",
+        "location": "左右两栏中间竖排文字",
+        "statement": "视觉元素：'对照'二字竖排于两栏之间，形成对比结构",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Q4 保护资金渠道是否未被申请或未被激活？",
+        "location": "底部六宫格第四格标题",
+        "statement": "局部放大显示Q4标题文字，'Q4'与'请或未被激活？'为上下两行排版，非真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Q6 是否存在尚未了解到的修缮投入？",
+        "location": "底部六宫格第六格标题",
+        "statement": "局部放大显示Q6标题文字，'Q6'与'缮投入？'为上下两行排版，非真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "若成立：查不到专项补助、示范项目或名录资格的申报批复。外部参照：渠道存在不等于已申请。",
+        "location": "Q4下方说明文字",
+        "statement": "局部放大显示Q4说明文字，两行连续排版，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "完全可能：抢险加固、屋面抢修或住户自费维修，须向村委、主管部门与运营方核实。",
+        "location": "Q6下方说明文字",
+        "statement": "局部放大显示Q6说明文字，两行连续排版，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 12976,
+    "total_tokens": 15759,
+    "completion_tokens": 2783,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 127.563,
+  "attempts": 1
+}

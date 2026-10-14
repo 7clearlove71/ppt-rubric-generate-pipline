@@ -1,0 +1,11 @@
+{
+  "01": {
+    "status": "approved",
+    "items": 14
+  },
+  "02": {
+    "status": "error",
+    "error_type": "ProviderError",
+    "message": "API request budget reached; increase only within the authorized scope"
+  }
+}

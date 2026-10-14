@@ -1,0 +1,37 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      7
+    ],
+    "evidence": "Day1四项核心事实在PPT中均有准确呈现，且语义未变：\n\n1. **约40栋老宅**：Slide 2 DAY 1卡片明确写\"约 40 栋老\"（p2_e3）；Slide 3左侧大号数字\"40\"配文字\"现存明清老宅 · 约\"（p3_e3, p3_e4）；Slide 7左侧卡片写\"老宅存量\"（p7_e3）。数值保留约数性质，未写成确定数值或明显偏离。\n\n2. **住人不到一半**：Slide 2 DAY 1卡片写\"住人不到一半\"（p2_e3）；Slide 3用\"<1/2\"符号表示，下方标注\"仍在居住\"（p3_e5, p3_e6），为等价数学表达；Slide 7写\"居住不足一半\"（p7_e3），语义一致。\n\n3. **年轻人外出打工**：Slide 3右侧卡片明确写\"年轻人外出打工。\"（p3_e8）；Slide 7左侧卡片写\"代际外出\"（p7_e3），为合理概括。\n\n4. **留守多为老人**：Slide 3右侧卡片明确写\"留守者多为老人。\"（p3_e9）；Slide 7虽未显式重复，但已在第3页完整呈现，且\"代际外出\"隐含此结构。\n\n四项信息均未缺失、未写错、未改写为不同含义，符合criterion要求。",
+    "evidence_ids": [
+      "p2_e3",
+      "p3_e3",
+      "p3_e4",
+      "p3_e5",
+      "p3_e6",
+      "p3_e8",
+      "p3_e9",
+      "p7_e3"
+    ],
+    "resolutions": [],
+    "additional_observations": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35271,
+    "total_tokens": 35694,
+    "completion_tokens": 423,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 119.927,
+  "attempts": 1
+}

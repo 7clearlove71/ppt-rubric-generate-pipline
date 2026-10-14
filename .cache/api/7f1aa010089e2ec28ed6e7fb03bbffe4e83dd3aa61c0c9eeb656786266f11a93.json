@@ -1,0 +1,108 @@
+{
+  "parsed": {
+    "task_summary": "将四天古村田野笔记整理成沙龙用的PPT，风格大气出彩，存疑处标注、不下定论。",
+    "source_policy": "已知：四天田野笔记中的观察记录（老宅数量与居住、祭祖频率变化、建筑形制、旅游开发矛盾等），其中访谈类信息来自老人/村民口述。可推导/允许补充：PPT的组织结构、视觉设计、为沙龙场景做的合理串联与包装。初步感受（空心化、文化记忆断层、保护与开发错位）是笔记作者的初步判断与后续方向，非已验证结论。待确认：族谱在文革被烧、现版本凭记忆补的说法（笔记明确标注待考、需多问几人核实）；几栋木雕风格不同建筑的来历（村民称外姓人所建，来历说不清）。",
+    "requirements": [
+      {
+        "id": "Q01",
+        "kind": "deliverable",
+        "text": "将田野笔记整理为一份完整PPT，覆盖四天笔记的主体内容，供沙龙使用",
+        "source_ids": [
+          "src_98be33261a7f60f298af0b9a"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q02",
+        "kind": "fact",
+        "text": "Day1观察：村里现存明清老宅约40栋，住人不到一半，年轻人外出打工，留守多为老人",
+        "source_ids": [
+          "src_a8e6156f4f2feccdee14c031"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q03",
+        "kind": "fact",
+        "text": "Day2访谈：祠堂以前每年清明祭祖，现在三年一次（来自对几位老人的访谈）",
+        "source_ids": [
+          "src_f9a2bbc5ab9323d56d226945"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q04",
+        "kind": "fact",
+        "text": "Day2访谈：有老人说族谱在文革时被烧掉一部分，现在版本是后来凭记忆补的；此说待考、需多问几人核实，不能作为已确认事实呈现",
+        "source_ids": [
+          "src_f9a2bbc5ab9323d56d226945"
+        ],
+        "importance": 3
+      },
+      {
+        "id": "Q05",
+        "kind": "fact",
+        "text": "Day3观察：民居多为天井院落式；有几栋木雕风格明显不同，村民说是\"外姓人\"建的，来历说不清，需保留这一不确定性",
+        "source_ids": [
+          "src_921dd5a8d2195591727d690a"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q06",
+        "kind": "fact",
+        "text": "Day4观察：村里搞旅游开发、新修了仿古街，而老宅本体保护反而没钱投入，形成保护与开发的矛盾",
+        "source_ids": [
+          "src_765f5c9835c67bf5af3fb7a2"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q07",
+        "kind": "deliverable",
+        "text": "呈现笔记作者的三点初步感受并作为后续方向：空心化、文化记忆断层、保护与开发错位；应作为初步判断/方向而非定论",
+        "source_ids": [
+          "src_ee2b0dbd7e050ee067f797a8"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q08",
+        "kind": "information_boundary",
+        "text": "存疑的地方（如族谱说法待考、木雕建筑来历不清）要明确标注出来，全篇不下定论",
+        "source_ids": [
+          "src_552cfc7abb5940a51e1330c2",
+          "src_f9a2bbc5ab9323d56d226945",
+          "src_921dd5a8d2195591727d690a"
+        ],
+        "importance": 3
+      },
+      {
+        "id": "Q09",
+        "kind": "presentation",
+        "text": "PPT用于沙龙场景，整体风格要大气、出彩",
+        "source_ids": [
+          "src_98be33261a7f60f298af0b9a",
+          "src_552cfc7abb5940a51e1330c2"
+        ],
+        "importance": 2
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 2472,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1670,
+      "text_tokens": 802
+    },
+    "prompt_tokens": 1150,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 1150
+    },
+    "total_tokens": 3622
+  },
+  "elapsed_seconds": 55.827,
+  "attempts": 1
+}

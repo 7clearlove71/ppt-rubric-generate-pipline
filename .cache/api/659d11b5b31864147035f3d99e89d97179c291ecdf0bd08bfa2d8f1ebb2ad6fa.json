@@ -1,0 +1,21 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "各rubric条目语义独立，无重复计分；未发现对页数、模板、配色或来源标记方式的越权结构要求。"
+  },
+  "model": "glm-5.2",
+  "usage": {
+    "prompt_tokens": 1801,
+    "total_tokens": 1848,
+    "completion_tokens": 47,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 6.677,
+  "attempts": 1
+}

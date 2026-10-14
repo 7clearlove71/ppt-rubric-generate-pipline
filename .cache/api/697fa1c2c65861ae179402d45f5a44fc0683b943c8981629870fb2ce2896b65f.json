@@ -1,0 +1,36 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      8
+    ],
+    "evidence": "第8页致谢页的数据区仅呈现四项核心数据：4.2亿元营收（同比+26%）、14%研发投入占比（由9%提升）、410人团队规模（净增90人）、91%客户续约率。源文给定的五项核心数据中，\"新增专利18项\"在该页完全缺失。根据ledger记录，p8_e7明确标注\"该页四个数据模块未包含'新增专利18项'这一源文给定的核心数据，该数据在本页缺失\"，且该证据的failure_mode为\"data_inaccuracy\"，属于本条criterion拥有的缺陷模式。虽然其他七页均完整或部分呈现了五项数据，但criterion要求\"所有出现全年数据的位置\"均需检查，且\"同一数据在多处出现时须一致\"——此处关键问题在于第8页作为数据汇总呈现页，缺失了源文明确给定的\"新增专利18项\"这一核心数据，构成data_inaccuracy。",
+    "evidence_ids": [
+      "p8_e7"
+    ],
+    "failure_ids": [
+      "p8_e7"
+    ],
+    "resolutions": [
+      {
+        "evidence_id": "p8_e7",
+        "decision": "confirm",
+        "reason": "第8页底部数据区明确仅展示4.2亿元、14%、410人、91%四项数据，源文给定的'新增专利18项'在该页完全未出现。该页作为年会汇报的收尾页，承担数据汇总功能，却遗漏一项核心数据，构成data_inaccuracy缺陷。"
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 40693,
+    "total_tokens": 41033,
+    "completion_tokens": 340,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 45.334,
+  "attempts": 2
+}

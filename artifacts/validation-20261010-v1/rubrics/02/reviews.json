@@ -1,0 +1,71 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "Uncovered requirements: ['Q10']",
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q03: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q06: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R07', 'R09']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q07: duplicate explicit scoring in fulfillment ['R05'] and correctness ['R07', 'R08', 'R09']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q05: duplicate explicit scoring in fulfillment ['R06'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 1,
+    "structural_errors": [
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q03: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R09']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R10']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q06: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R12', 'R15']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q07: duplicate explicit scoring in fulfillment ['R05'] and correctness ['R13', 'R14', 'R15']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "normalizations": [
+      {
+        "removed_item": "R06",
+        "source_ref": "Q05",
+        "retained_items": [
+          "R11"
+        ],
+        "separately_covered_context_refs": [],
+        "reason": "Exact single-source ownership duplicated between fulfillment and correctness"
+      }
+    ],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 2,
+    "structural_errors": [
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q03: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R09']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R10']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q06: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R12', 'R15']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q07: duplicate explicit scoring in fulfillment ['R05'] and correctness ['R13', 'R14', 'R15']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  }
+]

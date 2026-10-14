@@ -1,0 +1,65 @@
+[
+  {
+    "request_id": 1,
+    "role": "generator",
+    "model": "glm-5.2",
+    "cache_key": "b49f10c569b73a02adc841a9ea9a3eeeefebd0a8e1d3aad2b5e515070a2a1522",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 4113,
+      "total_tokens": 6205,
+      "completion_tokens": 2092,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 47.219
+  },
+  {
+    "request_id": 2,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "a9dae27f7efea5ef0a48a77a74e7b5e5ef13a4e4c7c87bb1655c350e10964292",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3276,
+      "total_tokens": 3454,
+      "completion_tokens": 178,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 5.289
+  },
+  {
+    "request_id": 3,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "81969c89708749b68d9c132190736334ef70f60bea4455fbad954292320cc7d5",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 4388,
+      "total_tokens": 4531,
+      "completion_tokens": 143,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.482
+  }
+]

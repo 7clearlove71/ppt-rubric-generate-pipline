@@ -1,0 +1,21 @@
+........................................................................ [ 56%]
+........................................................                 [100%]
+=============================== warnings summary ===============================
+../../../Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35
+  /Users/liangyuanzhi/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+    warnings.warn(
+
+tests/test_core.py::test_pdf_attachment_with_text_and_graphic_is_not_silently_reduced_to_text
+tests/test_core.py::test_pdf_attachment_with_text_and_graphic_is_not_silently_reduced_to_text
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+tests/test_core.py::test_pdf_attachment_with_text_and_graphic_is_not_silently_reduced_to_text
+tests/test_core.py::test_pdf_attachment_with_text_and_graphic_is_not_silently_reduced_to_text
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+tests/test_core.py::test_pdf_attachment_with_text_and_graphic_is_not_silently_reduced_to_text
+  <frozen importlib._bootstrap>:228: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+128 passed, 6 warnings in 1.44s
+sys:1: DeprecationWarning: builtin type swigvarlink has no __module__ attribute

@@ -1,0 +1,301 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R11']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q03: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R11']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R11']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01",
+            "R11"
+          ],
+          "reason": "Q02的关键事实（78%→92%）在fulfillment（R01）和correctness（R11）中被重复评分，违反'一个具体评分目标只由一条主要标准负责'的原则，造成重复扣分。",
+          "fix": "将R01从fulfillment移至correctness组（G04），或删除R11中关于Q02的重复检查，确保'良率78%→92%存在且准确'仅由一条标准负责。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R02",
+            "R11"
+          ],
+          "reason": "Q03的关键事实（10万次无衰减）在fulfillment（R02）和correctness（R11）中被重复评分，造成重复扣分。",
+          "fix": "将R02从fulfillment移至correctness组（G04），或删除R11中关于Q03的重复检查，确保'弯曲10万次无衰减存在且准确'仅由一条标准负责。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R03",
+            "R11"
+          ],
+          "reason": "Q04的关键事实（三甲医院合作、临床试验阶段）在fulfillment（R03）和correctness（R11）中被重复评分，造成重复扣分。",
+          "fix": "将R03从fulfillment移至correctness组（G04），或删除R11中关于Q04的重复检查，确保'三甲医院合作与临床试验阶段存在且准确'仅由一条标准负责。"
+        },
+        {
+          "severity": "warning",
+          "item_ids": [
+            "R07"
+          ],
+          "reason": "R07的触发条件'若技术路线图与下一步计划中均出现量化未来目标'表述不够明确，judge可能难以判断何时适用'自动通过'。",
+          "fix": "明确说明：'当且仅当技术路线图与下一步计划（或不同页面）中均出现同一未来指标的量化目标时，检查两处数值是否一致；若仅一处给出或两处均未给出量化目标，本条自动通过。'"
+        },
+        {
+          "severity": "warning",
+          "item_ids": [
+            "R18"
+          ],
+          "reason": "R18末尾'未标注时可在本条酌情从严但不单独判否'的表述模糊，可能导致judge执行不一致。",
+          "fix": "删除'酌情从严'的模糊表述，改为明确规则：'路线图中设定的具体年份若未在需求中给出，应标注为假设/示意/规划；未标注但内容本身合理且不与给定事实矛盾时，记部分满足（no）；将未来计划明确写成已实现成果时才判否。'"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R04",
+          "R10",
+          "R20",
+          "R22"
+        ],
+        "Q02": [
+          "R01",
+          "R11"
+        ],
+        "Q03": [
+          "R02",
+          "R11"
+        ],
+        "Q04": [
+          "R03",
+          "R11",
+          "R16"
+        ],
+        "Q05": [
+          "R08",
+          "R21"
+        ],
+        "Q06": [
+          "R09",
+          "R22"
+        ],
+        "Q07": [
+          "R05",
+          "R07",
+          "R18",
+          "R26"
+        ],
+        "Q08": [
+          "R06",
+          "R07",
+          "R18"
+        ]
+      },
+      "summary": "Rubric整体结构清晰、可判断性较好，但存在3处关键事实在fulfillment与correctness中的重复评分问题（R01/R02/R03与R11），违反原子性原则，需调整归属或删除重复检查。另有2处条件表述模糊（R07、R18）需明确化。修正后可批准。"
+    }
+  },
+  {
+    "revision": 1,
+    "structural_errors": [
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R11']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q03: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R12']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R13']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01",
+            "R11"
+          ],
+          "reason": "R01 与 R11 对同一关键事实（良率78%→92%）重复评分：R01 在 fulfillment 中要求该进展被实质呈现，R11 在 correctness 中要求同一事实存在且准确，违反'同一具体评分目标只由一条主要标准负责'的原子性规则。",
+          "fix": "将 R11 保留为 correctness 中唯一负责该事实'存在且准确'的原子条目；R01 改为仅评价该进展在 fulfillment 层面的实质展开（如技术路径、工艺改进、意义等），不再重复要求事实存在。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R02",
+            "R12"
+          ],
+          "reason": "R02 与 R12 对同一关键事实（OLED弯曲10万次无衰减）重复评分：R02 在 fulfillment 中要求该进展被实质呈现，R12 在 correctness 中要求同一事实存在且准确，违反原子性规则。",
+          "fix": "将 R12 保留为 correctness 中唯一负责该事实'存在且准确'的原子条目；R02 改为仅评价该进展在 fulfillment 层面的实质展开（如测试条件、机理、应用意义等），不再重复要求事实存在。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R03",
+            "R13"
+          ],
+          "reason": "R03 与 R13 对同一关键事实（三甲医院合作植入式电子皮肤进入临床）重复评分：R03 在 fulfillment 中要求该进展被实质呈现，R13 在 correctness 中要求同一事实存在且准确，违反原子性规则。",
+          "fix": "将 R13 保留为 correctness 中唯一负责该事实'存在且准确'的原子条目；R03 改为仅评价该进展在 fulfillment 层面的实质展开（如器件功能、合作模式、临床推进安排等），不再重复要求事实存在。"
+        },
+        {
+          "severity": "warning",
+          "item_ids": [
+            "R18"
+          ],
+          "reason": "R18 与 R13 存在部分重叠：R13 已要求'三甲医院合作'与'临床试验阶段'事实准确，R18 又要求不虚构临床分期、医院名称等。虽然 R18 侧重 integrity 边界，但'不编造具体临床分期'与 R13 的'表述无误'在判断时可能产生交叉。",
+          "fix": "明确 R18 的边界：仅负责'未虚构用户未提供的具体临床细节（分期、医院名、入组人数、疗效数据）'，而'三甲医院合作'与'临床试验阶段'这两个给定事实的准确性由 R13 独立负责，二者不重复扣分。"
+        },
+        {
+          "severity": "warning",
+          "item_ids": [
+            "R20"
+          ],
+          "reason": "R20 中'路线图中设定的具体年份若未在需求中给出，应标注为假设/示意/规划；未标注但内容本身合理且不与给定事实矛盾时，本条记部分满足（按no处理）'的表述过于严格，可能误伤合理构建。用户未要求所有未来年份都必须标注为假设。",
+          "fix": "放宽为：'路线图中设定的具体年份若未在需求中给出，建议标注为假设/示意/规划；未标注但内容本身合理、可识别为规划且不与给定事实矛盾时，本条可通过。'避免将合理的未来规划误判为违规。"
+        },
+        {
+          "severity": "warning",
+          "item_ids": [
+            "R24"
+          ],
+          "reason": "R24 中'外部背景/行业对标内容不喧宾夺主（某核心进展的自有内容明显少于其外部对标内容视为失衡）'的判断标准较为主观，'明显少于'缺乏可观察的量化依据，可能因评审主观差异导致误判。",
+          "fix": "改为更可观察的表述：'三项核心进展各自获得实质篇幅（每项至少包含进展描述与意义/影响），外部背景/行业对标内容总篇幅不超过核心进展内容，且不出现核心进展仅一句话带过而外部背景占多页的情况。'"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R01",
+          "R02",
+          "R03",
+          "R04",
+          "R10",
+          "R22",
+          "R24"
+        ],
+        "Q02": [
+          "R01",
+          "R11"
+        ],
+        "Q03": [
+          "R02",
+          "R12"
+        ],
+        "Q04": [
+          "R03",
+          "R13",
+          "R18"
+        ],
+        "Q05": [
+          "R08",
+          "R23"
+        ],
+        "Q06": [
+          "R09",
+          "R24"
+        ],
+        "Q07": [
+          "R05",
+          "R07",
+          "R20",
+          "R28"
+        ],
+        "Q08": [
+          "R06",
+          "R07",
+          "R20"
+        ]
+      },
+      "summary": "Rubric 存在三处关键事实在 fulfillment 与 correctness 维度重复评分的结构性错误（R01/R11、R02/R12、R03/R13），违反原子性规则，需修正为 correctness 独立负责事实准确性、fulfillment 负责实质呈现。另有 R18 与 R13 边界重叠、R20 对未来年份标注要求过严、R24 详略判断标准主观等三处警告。修正后可批准。"
+    }
+  },
+  {
+    "revision": 2,
+    "structural_errors": [
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R11']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q03: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R12']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R13']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01",
+            "R11"
+          ],
+          "reason": "Q02（良率78%→92%）在fulfillment（R01）与correctness（R11）中被重复计分：同一关键事实的缺失会同时在两组扣分，违反'关键事实由correctness单条负责，fulfillment不再复制同一事实覆盖条目'的规则。",
+          "fix": "将R01改为只评价该进展的技术展开质量（如提升路径、工艺改进、瓶颈分析等实质内容），并明确'该进展是否呈现由R11负责，本条仅评价展开深度；若事实缺失，本条按无展开内容记no但不重复处罚事实本身'；或直接删除R01，由R11承担事实存在且准确的判定。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R02",
+            "R12"
+          ],
+          "reason": "Q03（弯曲10万次无衰减）在R02与R12中重复计分，问题同R01/R11。",
+          "fix": "R02改为仅评价OLED可靠性进展的技术展开质量（测试条件、结构设计、失效机理等），事实存在与准确性完全交由R12；或删除R02。"
+        },
+        {
+          "severity": "error",
+          "item_ids": [
+            "R03",
+            "R13"
+          ],
+          "reason": "Q04（三甲医院合作、临床试验阶段）在R03与R13中重复计分，问题同上。",
+          "fix": "R03改为仅评价电子皮肤进展的技术展开质量（器件功能、合作模式、临床推进安排等），事实存在与准确性完全交由R13；或删除R03。"
+        },
+        {
+          "severity": "warning",
+          "item_ids": [
+            "R07"
+          ],
+          "reason": "触发条件较窄（要求同一未来量化指标在路线图与计划两处均出现才检查一致性），与R16的内部一致性职责存在潜在重叠，judge可能困惑两条的边界。",
+          "fix": "明确R07仅负责路线图与计划两个模块之间的目标数值/阶段呼应，R16负责其余跨页一致性；或考虑将R07并入R16，在R16中补充'路线图与计划中的目标须一致'的情形。"
+        },
+        {
+          "severity": "warning",
+          "item_ids": [
+            "R24"
+          ],
+          "reason": "'外部背景篇幅不超过核心进展'的判定依赖篇幅占比估计，缺少可观察的近似判据，不同judge可能尺度不一。",
+          "fix": "改为可观察表述，如'核心进展页数/信息量明显不少于外部背景内容，且无核心进展仅一句话带过而外部背景独占多页的情况'。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R04",
+          "R10",
+          "R22",
+          "R24"
+        ],
+        "Q02": [
+          "R11"
+        ],
+        "Q03": [
+          "R12"
+        ],
+        "Q04": [
+          "R13",
+          "R18"
+        ],
+        "Q05": [
+          "R08",
+          "R23"
+        ],
+        "Q06": [
+          "R09",
+          "R24"
+        ],
+        "Q07": [
+          "R05",
+          "R07",
+          "R20",
+          "R28"
+        ],
+        "Q08": [
+          "R06",
+          "R07",
+          "R20"
+        ]
+      },
+      "summary": "rubric整体结构清晰、条件条目边界处理较好，但三项关键事实（Q02/Q03/Q04）在fulfillment与correctness中被重复计分，违反原子性与禁止重复处罚的设计规则，须修正后方可使用；另有两处可判定性warning建议一并完善。"
+    }
+  }
+]

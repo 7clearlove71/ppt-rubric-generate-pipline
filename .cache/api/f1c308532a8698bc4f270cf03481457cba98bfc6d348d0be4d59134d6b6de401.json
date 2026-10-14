@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A仅第4页使用数据图表（柱状图），候选B在第2-9、11-12页均使用多种图表（折线图、条形图、柱状图、横向条形图），两者图表使用范围差异显著，但均各自满足'图表标签完整且可读'的标准，答案一致为yes，不存在实质冲突。",
+      "候选B对第6页科学计数法上标排版的说明（提取器将上标'⁻'识别为独立span导致bbox相交，但局部放大图确认实际渲染完整）属于合理解释，不构成标签缺陷，与标准不冲突。",
+      "候选B将第10页技术路线图表格排除在数据图表检查之外，符合criterion中'柱状图、折线图、饼图等'的限定及scope'含图表的页面'的合理理解；候选A仅1页图表亦自然满足，两者对标准的适用边界理解一致。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 7296,
+    "total_tokens": 7517,
+    "completion_tokens": 221,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 63.45,
+  "attempts": 1
+}

@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "两个候选对同一标准均判定为yes，且核心计算（92%-78%=14个百分点、不良率22%→8%、相对下降约64%）的核验逻辑一致。B候选额外包含与行业数据（95%、20万次、50万次）的比较及0.5倍/0.2倍计算，但均明确标注了比较基准和口径差异声明，不构成与A候选的实质冲突。A候选覆盖页码更多（4-13页），B候选聚焦关键计算页（3-5、11页），但二者对reasoning_validity的判定结论一致，无需要翻转任一答案的实质矛盾。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 11385,
+    "total_tokens": 11544,
+    "completion_tokens": 159,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 56.22,
+  "attempts": 1
+}

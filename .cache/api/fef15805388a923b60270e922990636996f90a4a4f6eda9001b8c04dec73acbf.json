@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      5
+    ],
+    "evidence": "第5页为投资回报测算核心页，明确显示：工业电价0.75元/kWh（页面底部标注\"工业电价0.75元/kWh\"，右侧测算口径重复确认）、改造投入120万元（标题\"投入120万元\"及口径一\"120万元÷月省24万元\"）、回本周期约18个月（绿色框标注\"保守口径约18个月收回成本\"）。三个关键参数均与用户给定数值完全一致，未被篡改。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 19675,
+    "total_tokens": 19806,
+    "completion_tokens": 131,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 14.102,
+  "attempts": 1
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "request_id": 1,
+    "invocation_id": "5504108f3bb74cd7845c518cebee6a7c",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "b9fda3b3868a1998782750f0d872bc174840cc826188f854f7b0475f51fe2bd9",
+    "attempt": 1,
+    "status": "failed",
+    "validation_feedback": false,
+    "error_type": "ProviderError",
+    "elapsed_seconds": 0.039
+  },
+  {
+    "request_id": 2,
+    "invocation_id": "1da023713fae4ffea82f0fde7e77edf2",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "b9fda3b3868a1998782750f0d872bc174840cc826188f854f7b0475f51fe2bd9",
+    "attempt": 1,
+    "status": "success",
+    "validation_feedback": false,
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 606,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 606
+      },
+      "prompt_tokens": 396,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 396
+      },
+      "total_tokens": 1002
+    },
+    "elapsed_seconds": 10.622
+  },
+  {
+    "request_id": 3,
+    "invocation_id": "1da023713fae4ffea82f0fde7e77edf2",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "5796064084b5b2ab7dba5c50352c9e360e05f1b724acd00e75cc4b4b5445ddf4",
+    "attempt": 1,
+    "status": "failed",
+    "validation_feedback": false,
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 1657,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1657
+      },
+      "prompt_tokens": 1682,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 1682
+      },
+      "total_tokens": 3339
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Each explicit requirement must have exactly one scoring owner",
+    "invalid_response": "invalid-responses/1da023713fae4ffea82f0fde7e77edf2-3.json",
+    "elapsed_seconds": 27.949
+  },
+  {
+    "request_id": 4,
+    "invocation_id": "1da023713fae4ffea82f0fde7e77edf2",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "5796064084b5b2ab7dba5c50352c9e360e05f1b724acd00e75cc4b4b5445ddf4",
+    "attempt": 2,
+    "status": "success",
+    "validation_feedback": true,
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 1113,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1113
+      },
+      "prompt_tokens": 1736,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 1736
+      },
+      "total_tokens": 2849
+    },
+    "elapsed_seconds": 19.558
+  },
+  {
+    "request_id": 5,
+    "invocation_id": "1da023713fae4ffea82f0fde7e77edf2",
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "fceb5b82761e3f1c9842a5432006518ecaa7ea230a8b2243d3e8250a91241cf7",
+    "attempt": 1,
+    "status": "success",
+    "validation_feedback": false,
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 62,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 62
+      },
+      "prompt_tokens": 4565,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 4565
+      },
+      "total_tokens": 4627
+    },
+    "elapsed_seconds": 2.841
+  }
+]

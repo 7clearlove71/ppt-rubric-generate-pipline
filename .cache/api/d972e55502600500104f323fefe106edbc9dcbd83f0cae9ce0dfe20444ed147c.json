@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "叙事结构完整呈递：封面页（p1）明确主线'能耗对标→异常深挖→投资测算→立项建议'；p2四线能耗对比确立1号线异常（0.85 vs 其他0.5左右）；p3四步诊断锁定液压系统老化主因；p4展开老化机理与改造措施；p5基于120万投入、月节电6.6万测算约18个月回本；p6承接引出3号线空载12kWh/h问题及SOP建议；p7汇总为分批推进路线图与立项请求；p8收尾重申决策请求。各模块环环相扣：对比→归因→方案→投资→决策，读者可顺畅回答'问题在哪（1号线液压老化、3号线停机不规范）、为什么（四步诊断）、花多少钱（120万）、多久回本（约18个月）'，符合立项汇报场景。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23120,
+    "total_tokens": 23333,
+    "completion_tokens": 213,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 38.09,
+  "attempts": 2
+}

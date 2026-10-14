@@ -1,0 +1,69 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 7,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "标题、引言条、五张指标卡（研发投入9%→14%、新增专利18项、团队410人、营收4.2亿元、客户续约率91%）及其灰色小字注释、右侧『下一程』三条抓手、底部横幅与页脚数据来源均清晰可辨；未见文字重叠、截断、对比不足或NaN残留；无坐标轴/图例类图表，不要求补充。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "在内容可读前提下：标题—引言—五环指标（箭头构成投入→专利→团队→续约率→营收→再投入的循环，中心『脱胎换骨』点题）—右侧『下一程』抓手栏—底部结论横幅的主次与阅读路径可识别，箭头指向一致，未造成错误对应关系。",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 8,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "大标题『谢谢，没有退缩的你们』、副标题、四项指标（4.2亿元/14%/410人/91%）及各自小字说明、底部REPORTER/DEPARTMENT/DATE三栏与页脚来源均清晰可辨；所附三张局部放大图（4.2亿元、410人、91%）确认数字与单位无叠印、无截断；无破损残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页性质，合理留白；标题—副标题—四列并列指标—页脚三栏信息的层级与阅读顺序明确，四组大数字与下方标签一一对应，无错误对应或阅读顺序歧义。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 980,
+    "completion_tokens_details": {
+      "reasoning_tokens": 555,
+      "text_tokens": 425
+    },
+    "prompt_tokens": 4755,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3637,
+      "text_tokens": 1118
+    },
+    "total_tokens": 5735
+  },
+  "elapsed_seconds": 81.817,
+  "attempts": 1
+}

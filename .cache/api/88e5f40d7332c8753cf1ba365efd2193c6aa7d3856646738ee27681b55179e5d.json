@@ -1,0 +1,517 @@
+{
+  "parsed": {
+    "page": 3,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "技艺濒危：12 位师傅平均62 岁，传承窗口收窄",
+        "location": "页面顶部标题区域",
+        "statement": "页面标题准确引用用户给定关键事实：12位师傅、平均年龄62岁，并点明传承危机",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "位",
+            "subject": "师傅人数",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "62",
+            "unit": "岁",
+            "subject": "师傅平均年龄",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "六代传承 · 逾150 年",
+        "location": "左侧时间轴上方",
+        "statement": "明确标注传承代数与年限，使用用户给定口径",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "这门手艺在我们那儿传了6代逾150年"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "6",
+            "unit": "代",
+            "subject": "传承代数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "150",
+            "unit": "年",
+            "subject": "传承年限",
+            "denominator": "不适用",
+            "time_origin": "距今"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "纵向时间轴按等距示意刻度排布：逾150 年÷6 代≈每代约25 年（测算，非史实年表）",
+        "location": "左侧时间轴说明文字",
+        "statement": "作品自行给出等距示意排布的测算说明，明确标注为示意而非史实年表，属于合理假设性处理",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "传了6代逾150年"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "150",
+            "unit": "年",
+            "subject": "传承年限",
+            "denominator": "6",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "25",
+            "unit": "年",
+            "subject": "每代约数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "150",
+            "right": "6",
+            "reported": "25",
+            "left_unit": "年",
+            "right_unit": "代",
+            "reported_unit": "年",
+            "left_quote": "逾150 年",
+            "right_quote": "6 代",
+            "reported_quote": "25 年（测算，非史实年表）",
+            "relation_quote": "逾150 年÷6 代≈每代约",
+            "meaning": "等距示意测算每代约25年"
+          }
+        ]
+      },
+      {
+        "quote": "第六代 · 当代（现存）现存师傅12 位、平均年龄62 岁（给定口径）",
+        "location": "左侧时间轴底部",
+        "statement": "时间轴第六代节点明确标注当前现存师傅人数和平均年龄，并标注为给定口径",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "位",
+            "subject": "现存师傅",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "62",
+            "unit": "岁",
+            "subject": "平均年龄",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "代际节点的姓名与年份以申报材料为准，缺失留空、不编造；一旦断代，工序失传、产品品质不可复制，省级非遗项目面临存续风险。",
+        "location": "左侧时间轴下方说明文字",
+        "statement": "作品明确声明不编造代际节点姓名与年份，同时提及省级非遗项目存续风险，但未在本页完整展开文化价值论证",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "文化价值这块要能体现出省级非遗认定的分量(2018年获批省级非遗)"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "6 代 · 逾150 年传承代数与年限（给定口径）",
+        "location": "中部数据卡片第一行",
+        "statement": "中部汇总卡片重复列示传承代数与年限，标注给定口径",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "传了6代逾150年"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "6",
+            "unit": "代",
+            "subject": "传承代数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "150",
+            "unit": "年",
+            "subject": "传承年限",
+            "denominator": "不适用",
+            "time_origin": "距今"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "12 位现存师傅人数（给定口径）",
+        "location": "中部数据卡片第二行",
+        "statement": "中部汇总卡片列示现存师傅人数，标注给定口径",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "位",
+            "subject": "现存师傅人数",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "62 岁师傅平均年龄（给定口径）",
+        "location": "中部数据卡片第三行",
+        "statement": "中部汇总卡片列示师傅平均年龄，标注给定口径",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "62",
+            "unit": "岁",
+            "subject": "师傅平均年龄",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "本项目竹编师傅（给定口径）62 岁",
+        "location": "右侧柱状图上方标签",
+        "statement": "柱状图标注本项目师傅平均年龄62岁，与给定口径一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "62",
+            "unit": "岁",
+            "subject": "本项目竹编师傅平均年龄",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "第五批国家级代表性传承人（参照口径·2018 ）63.29 岁",
+        "location": "右侧柱状图下方标签及数据",
+        "statement": "作品引入外部参照口径：第五批国家级代表性传承人平均年龄63.29岁（2018年），作为对比参照，明确标注为参照口径而非本项目数据",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "2018年获批省级非遗"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "63.29",
+            "unit": "岁",
+            "subject": "第五批国家级代表性传承人平均年龄",
+            "denominator": "不适用",
+            "time_origin": "2018"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "师傅平均年龄对比：本项目给定口径 vs 公开参照口径（单位：岁）",
+        "location": "右侧柱状图标题",
+        "statement": "柱状图明确对比两个口径，标注单位，视觉呈现合理",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "濒危信号：人数、年龄、徒弟三项可核查事实",
+        "location": "中下部模块标题",
+        "statement": "页面将濒危信号归纳为四项（人数少、年龄高、后继乏人、青年学艺意愿待提升），其中人数、年龄为给定口径，后继乏人和青年学艺意愿引入外部参照数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "人数少现存师傅12 位，单人退出即造成局部工序空心化（给定口径）",
+        "location": "中下部第一列",
+        "statement": "准确引用12位师傅数据，标注给定口径，并给出合理推论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "位",
+            "subject": "现存师傅",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "年龄高平均62 岁，已越过主要劳动年龄区间上沿（给定口径）",
+        "location": "中下部第二列",
+        "statement": "准确引用62岁平均年龄，标注给定口径",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "62",
+            "unit": "岁",
+            "subject": "师傅平均年龄",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "后继乏人全国口径55% 传承人无正式徒弟、40 岁以下不足8% （中国社会科学网，2025 ，参照）",
+        "location": "中下部第三列",
+        "statement": "引入外部参照数据说明后继乏人现象，明确标注来源和参照属性，非本项目数据",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "55",
+            "unit": "%",
+            "subject": "传承人无正式徒弟比例",
+            "denominator": "全国口径传承人总数",
+            "time_origin": "2025"
+          },
+          {
+            "value": "8",
+            "unit": "%",
+            "subject": "40岁以下传承人比例",
+            "denominator": "全国口径传承人总数",
+            "time_origin": "2025"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "青年学艺意愿待提升执法检查报告：传承人断代严重、年轻人学艺积极性不高（2024 ，参照）",
+        "location": "中下部第四列",
+        "statement": "引入外部参照数据说明青年学艺意愿，明确标注来源和参照属性",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "时间窗口：以劳动年龄与退休制度的一般参照衡量，平均62 岁已进入传艺窗口后段（定性参照，非本项目数据）。",
+        "location": "底部深色条左侧",
+        "statement": "使用定性参照分析时间窗口，明确标注非本项目数据",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "62",
+            "unit": "岁",
+            "subject": "师傅平均年龄",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "机会成本：自然消亡不可逆，选竹、破篾、编织、定型等隐性经验无法复制。",
+        "location": "底部深色条中部",
+        "statement": "从机会成本角度论证保护紧迫性，属于合理推论",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "面临失传的问题"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "这门技艺的分量，先看它的认定层级",
+        "location": "底部深色条右侧",
+        "statement": "页面结尾以过渡句引出下一页文化价值内容，形成承上启下，但本页未实际展开省级非遗认定分量的论证",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：项目申报材料（给定口径：传承6 代、逾150 年、现存师傅12 位、平均年龄62 岁）；外部参照口径：中国非遗网（2018 ）、中国社会科学网（2025 ），均为参照、非本项目数据。",
+        "location": "页面底部来源标注",
+        "statement": "明确区分给定口径与外部参照口径，标注清晰",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "传了6代逾150年、目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "6",
+            "unit": "代",
+            "subject": "传承代数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "150",
+            "unit": "年",
+            "subject": "传承年限",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "12",
+            "unit": "位",
+            "subject": "现存师傅",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "62",
+            "unit": "岁",
+            "subject": "平均年龄",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "仅两条可比口径，不绘制年龄分布明细",
+        "location": "右侧柱状图右上角小字",
+        "statement": "作品主动说明数据局限，不虚构年龄分布明细，处理审慎",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第五批国家级代表性传承人（参照口径·2018 ）",
+        "location": "右侧柱状图下方标签",
+        "statement": "外部参照数据标注为2018年，但用户给定非遗认定信息为2018年获批省级非遗；此处作品使用第五批国家级代表性传承人作为参照，级别为国家级而非省级，但明确标注为参照口径，需核实是否构成事实扭曲或仅为参照选择问题",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "2018年获批省级非遗"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 13176,
+    "total_tokens": 17068,
+    "completion_tokens": 3892,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 172.132,
+  "attempts": 2
+}

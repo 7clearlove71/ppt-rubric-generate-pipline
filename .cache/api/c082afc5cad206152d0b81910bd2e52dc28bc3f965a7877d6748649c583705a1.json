@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "evidence": "P10-P11列明五项问题（资金筹措缺口4280万元、支出进度滞后、提升类任务推进不均衡、施工管理不到位、改造与管养衔接不畅），P12七项整改措施逐条对应问题一至五（01-03对应问题一，04对应问题二，05对应问题三，06对应问题四，07对应问题五），形成闭环；P13长效机制与请示事项进一步回应资金、工期与共建机制问题。目标值均沿用P02统一口径（如'区级到位率100.0%''支出执行率95.0%''施工管理满意度90.0%'），且以'现状→目标'表述，明确为计划属性。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 49032,
+    "total_tokens": 49197,
+    "completion_tokens": 165,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 15.188,
+  "attempts": 1
+}

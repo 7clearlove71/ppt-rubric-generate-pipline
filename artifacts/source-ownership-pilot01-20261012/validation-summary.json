@@ -1,0 +1,42 @@
+{
+  "case_id": "01",
+  "status": "approved",
+  "rubric_items": 15,
+  "rubric_hash": "7a64b7e988957373f9b6018bb598a5418877ce5b4bd3e1ae8fcf5cf01944b245",
+  "structural_inspection_errors": [],
+  "source_fact_owners": {
+    "Q02": [
+      "R02"
+    ],
+    "Q03": [
+      "R03"
+    ],
+    "Q04": [
+      "R07"
+    ]
+  },
+  "review_status": "semantic_and_counterexample_approved",
+  "actual_requests": 5,
+  "timeouts_counted": 2,
+  "successful_reviser_seconds": 232.563,
+  "judge_ran": false,
+  "agreement": null,
+  "limitations": [
+    "Automatic approval does not establish score quality or human agreement.",
+    "Other failed cases were not regenerated."
+  ],
+  "budget": {
+    "status": "closed",
+    "provider": "bailian",
+    "request_cap": 12,
+    "actual_requests": 5,
+    "remaining_not_reusable": 7,
+    "reported_total_tokens": 37587,
+    "missing_usage_requests": [
+      1,
+      2
+    ],
+    "journal": "requests.json",
+    "reason": "Single-case source repair completed; unspent cap is not future authorization."
+  }
+}

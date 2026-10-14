@@ -1,0 +1,52 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R01",
+        "R16",
+        "R17"
+      ],
+      "Q02": [
+        "R07"
+      ],
+      "Q03": [
+        "R08"
+      ],
+      "Q04": [
+        "R09",
+        "R13"
+      ],
+      "Q05": [
+        "R04",
+        "R17"
+      ],
+      "Q06": [
+        "R05"
+      ],
+      "Q07": [
+        "R02",
+        "R20"
+      ],
+      "Q08": [
+        "R03"
+      ]
+    },
+    "summary": "该rubric审核通过。条目设置符合用户需求与来源政策，覆盖全部8项需求（Q01-Q08），共20条评分标准，数量适中。关键事实准确性由独立条目R07-R09负责，不与fulfillment重复扣分；完整性边界由R13-R15负责，明确禁止虚构临床分期、合作方名称等未提供信息。条件判断清晰：R10、R15、R19均写明未出现对应元素时自动通过。视觉标准描述可观察的层级、对比、信息密度等，未强制固定配色或字号。无模型名字、候选特定措辞或A/B比较。无短prompt发明的精确阈值。叙事结构要求与20分钟专家报告场景匹配，未规定具体页数。所有条目可独立评判单一候选，不依赖其他rubric编号或候选观察。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 4869,
+    "total_tokens": 5117,
+    "completion_tokens": 248,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 7.921,
+  "attempts": 1
+}

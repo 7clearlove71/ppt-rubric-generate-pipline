@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "seed": 20260930,
+  "cases": [
+    {
+      "id": "01",
+      "prompt": "年会特邀报告PPT。柔性电子团队近三年进展：可拉伸传感器阵列量产良率从78%提升至92%；柔性OLED器件弯曲10万次无衰减；与三甲医院合作植入式电子皮肤已进入临床试验阶段。汇报对象：领域内专家，20分钟，含技术路线图与下一步计划。",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/01/glm-5.3/result.pptx",
+          "sha256": "3a234381e88d3ce745e1e1976597dfca656e66f1b6bd7e150e8b2003fe32980e"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/01/qwen3.8-max/result.pptx",
+          "sha256": "a3b55a9df80f9ffddbddd2291519de0dade4904e93b0525a7a7ec592dcdcb81d"
+        }
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "02",
+      "prompt": "想给县里申报一个非遗竹编工坊的产业扶持项目，做一套评审汇报PPT，评审是文旅局和乡村振兴办的领导，所以内容必须站得住。项目背景要讲清楚这门手艺在我们那儿传了6代逾150年、目前仅剩12位师傅平均年龄62岁面临失传的问题；文化价值这块要能体现出省级非遗认定的分量(2018年获批省级非遗)；带动农户就业的模式用\"公司+合作社+农户\"讲清利益联结，公司负责设计和销售、合作社统一采购原料和培训、农户在家编织按件计酬人均月增收约1800元,顺带把预计带动的农户数(首期60户第二年扩至120户)和人均增收讲一下；三年规划分阶段写，第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件、第三年做品牌入驻电商平台这种递进关系要体现出来；资金用途(总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万)这块要跟前面规划对得上，别写虚了。整体逻辑得严丝合缝，每一页之间不能脱节，标题、图表位置这些我也会挑一挑，先按这个思路出一版。",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/02/qwen3.8-max/result.pptx",
+          "sha256": "5debd07966f7950acb76bf14de7ee4be3c5da9d4431806afe5315d1e7c277c1f"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/02/glm-5.3/result.pptx",
+          "sha256": "7bcf739c7f9e492d74ad02785f61aa737a3a29bbb2c2aa1f6e062a24fa1a81a9"
+        }
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "03",
+      "prompt": "产线设备能耗数据我拉了一个月的,节能改造立项要用,做几页PPT。核心发现是1号线的单位产品能耗0.85kWh/件,远高于其他产线的0.5左右,排查下来主要是1号线的液压系统老化导致效率下降,这个要单独拎出来算一笔账:如果更换液压系统投入约120万,按当前产量和电价,大概18个月能收回成本,这笔账要在PPT里算清楚。另外3号线虽然单位能耗不高0.48,但空载能耗偏高,待机状态下每小时还跑12kWh,说明停机流程不规范,这块也要提一句。整体结构上先把四条线的能耗对比摆出来,再聚焦1号线做深挖,最后落到节能改造的投资回报测算。\n\n产线。数据对齐。\n\n/ 月产量(万件) / 月用电(万kWh) / 单位能耗(kWh/件) / 空载能耗(kWh/h)\n1号线 / 80 / 68 / 0.85 / 8\n2号线 / 95 / 49 / 0.52 / 6\n3号线 / 70 / 34 / 0.48 / 12\n4号线 / 60 / 31 / 0.52 / 5\n\n工业电价0.75元/kWh,节能改造的ROI按此计算。行业标杆单位能耗约0.45kWh/件。",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/03/glm-5.3/result.pptx",
+          "sha256": "955fb1fa5c1c8faeeba214060bf4fe806e799bb49babaa47a714ab0ae8701bda"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/03/qwen3.8-max/result.pptx",
+          "sha256": "d8af8a113e8b8cca0e2f822d21cfd91de13a4eaa5d915251ab087cbb50980e99"
+        }
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "04",
+      "prompt": "产品又发了个新版本，几个格式规矩，研发写的更新日志全是术语,客户根本看不懂。客户成功团队要开个版本宣讲,你帮我把日志做成给客户看的几页（PPT格式）,按使用场景讲清楚这次更新能让他们多干成什么事,技术词儿能不用就不用。\n\n每一页只讲一个更新点,标题得是客户视角的一句话,不要照抄New/Optimize这种标签,页面下面配一两句说明就行,别写成大段文字堆在一起。废弃webhook v1那条务必单独拎出来放显眼位置,得让客户突出显示要迁移,不能埋在角落里被忽略。\n\n▶ 版本更新日志 v3.2\n\n- [New] 新增批量操作API,支持单次最多1000条记录的增删改。\n- [New] 报表模块新增自定义维度下钻,支持最多5层。\n- [Optimize] 列表页首屏加载性能优化,大数据量下渲染耗时降低约40%。\n- [Optimize] 重构权限模型,支持字段级权限控制。\n- [Fix] 修复了导出Excel时超过10万行偶发丢数据的问题。\n- [Fix] 修复了部分浏览器下日期控件显示错位。\n- [Deprecated] 旧版webhook接口(v1)将于下个大版本停止支持,请尽快迁移至v2。",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/04/glm-5.3/result.pptx",
+          "sha256": "9cc304fd6963b500348dc64b9dc9720a0c7826e2d056d0f8b121caf86d6fd10c"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/04/qwen3.8-max/result.pptx",
+          "sha256": "ad27c1531925428f7ae53b650b6cb5e14d2be54c5364bdc86dc8984e1a9e43d8"
+        }
+      ],
+      "split": "holdout"
+    },
+    {
+      "id": "05",
+      "prompt": "田野笔记整理成PPT，搞大气一点，沙龙上要用。\n\n原文：\n\nDay1 进村。现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。\nDay2 访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。\nDay3 民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。\nDay4 村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。\n初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。\n存疑的地方标出来,别下定论。一定要出彩。",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/05/glm-5.3/result.pptx",
+          "sha256": "ad795db4a382a0a7f1775a156977d082c677fdce662387390908c221e7d16c2f"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/05/qwen3.8-max/result.pptx",
+          "sha256": "80cd57d0b7963d83c76ef5e203b076ef1935b0b2ae6f73e370e0a3dc55860fbb"
+        }
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "06",
+      "prompt": "老旧小区改造工作汇报的PPT，几条硬杠杠，是给政府评审组看的,纲目我列好了,你按公文口径给我填实、填规范:\n\n#1 改造任务完成情况\n#2 资金使用情况\n#3 居民满意度\n#4 存在问题\n#5 下一步计划\n\n每个小标题下面的内容要对得上标题本身,不要出现文不对题、内容混装的情况;数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法。存在问题那部分不要写虚的,要能看出跟前面资金和满意度两块是呼应的、有对应关系的,评审组一眼要能看出问题是从哪儿来的。小标题的措辞要正、要像公文里出来的,不要用口语化的说法。",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/06/qwen3.8-max/result.pptx",
+          "sha256": "c71a36c3fe125ee402fc76e19890c21ea059b0bd9a22cb3ec4017f7889250f48"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/06/glm-5.3/result.pptx",
+          "sha256": "89d5a717096231d5d33c5867fb1b28518bc28123a56d27e41fce640cbc0ce9f3"
+        }
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "07",
+      "prompt": "应该是要个手册六十多页，你帮我把握下，新人根本没空看,先给我压成几页PPT\"第一天必知\"的,救急用,其他章节的用一句话指路让他们自己去翻就行,别整太细。\n\n《员工手册(节选)》\n\n第一章 公司简介与文化。公司成立于2010年,使命愿景价值观、企业文化口号那些。\n第二章 考勤制度。实行弹性工作制,核心工作时间10:00-16:00,每日工作满8小时即可;迟到早退按规定处理;请假须在OA提前申请,病假需补交证明。\n第三章 薪酬福利。月薪分两次发放;五险一金按规定缴纳;享有带薪年假、补充医疗保险、节日福利、年度体检等。\n第四章 IT与办公。新员工入职当天由IT开通邮箱和办公系统账号;办公电脑须安装公司统一的安全软件;Wi-Fi密码及打印机使用见内网指引;报销在财务系统提交。\n第五章 行为规范。着装得体;保守商业秘密;禁止利用职务之便谋取私利;反对任何形式的骚扰与歧视。\n第六章 培训与发展。新员工须在入职两周内完成线上入职培训;每年有培训学时要求;晋升通道分管理与专业双线。\n第七章 离职管理。离职须提前30天书面提出;办理工作交接与资产归还;完成离职面谈。\n附录:各类申请表单与办事流程索引。\n就留头一周能用上的,考勤怎么打卡、电脑账号谁给开、报销去哪提,这些优先,其他的一句带过就行,尽快给我。这样行不行？",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/07/glm-5.3/result.pptx",
+          "sha256": "e7357f526b59f1dfa477c5be6727198c45770a9ae094e68aa19fab3da240ef4c"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/07/qwen3.8-max/result.pptx",
+          "sha256": "5c7d56eab5e98204dbee95b2f23e5edc99fda27eff2b3066f4018575e0c2f7fb"
+        }
+      ],
+      "split": "holdout"
+    },
+    {
+      "id": "08",
+      "prompt": "你把把关区里这份政府工作报告涉及方方面面、篇幅很长。我要给街道干部做传达学习的材料,把跟咱们基层落实直接相关的部分拎出来做成能照着部署的几页PPT,宏观经济数据和全局性的表述一带而过就行,不要照抄原文那种大段总结的写法,提炼成能对着念、能落实到人的条目。\n\n过去一年,在区委的坚强领导下,全区上下攻坚克难、真抓实干,经济社会发展取得新成效。全年实现地区生产总值增长5.6%,一般公共预算收入增长4.2%,规模以上工业增加值增长6.1%,社会消费品零售总额增长4.8%,城镇新增就业2.8万人,居民人均可支配收入增长5.1%。三次产业结构持续优化,新动能加快培育,固定资产投资增长7%,生态环境质量持续改善,空气质量优良天数比例达到88%。(此处为全年宏观经济运行、产业发展、改革开放、生态建设等方面的详细总结,篇幅较长)\n在保障和改善民生方面,全区财政民生支出占比保持在八成以上,扎实办好各项民生实事:新增公办学位5000个,改造老旧小区32个、惠及居民上万户,新建社区养老服务站15个,完成棚户区改造数十,城乡居民基本医保和大病保险保障水平稳步提高,基层医疗卫生服务能力进一步增强。\n今年是承上启下的关键一年。综合考虑各方面因素,今年全区经济社会发展的主要预期目标是:地区生产总值增长5.5%左右,城镇新增就业2.5万人以上,城镇登记失业率控制在4%以内,居民人均可支配收入增长与经济增长基本同步,生态环境质量持续改善。\n为实现上述目标,今年要重点抓好以下几方面工作。第一,着力稳增长、促发展。推动重点产业链补链强链,支持企业技术改造与数字化转型,全年计划新增规模以上工业企业50家;深化“放管服”改革,持续优化营商环境,推行“一网通办”,企业开办时间压缩至1个工作日,推动惠企政策“免申即享”。第二,扎实办好今年的十件民生实事:一是新增公办学位4000个;二是改造老旧小区25个,同步推进加装电梯不少于60部;三是新建口袋公园8个;四是推动社区食堂(老年助餐点)覆盖所有街道;五是新增普惠性托位800个;六是完成棚户区改造1200户;七是城乡居民医保人均财政补助标准提高30元;八是新增公共停车位3000个;九是完成8个村的农村供水管网改造;十是推动政务服务“就近办”,实现街道便民服务网点全覆盖。第三,加强和创新基层治理。推动治理重心和资源向基层下沉,充实社区工作力量、为基层减负赋能;深化网格化管理,全面推行“接诉即办”,健全群众诉求的受理、办理、反馈闭环,力争全年群众诉求按时办结率和满意率均达到90%以上;推进矛盾纠纷多元化解,把问题化解在基层、化解在萌芽。第四,统筹发展和安全。压实安全生产责任,抓好消防、燃气、交通、危化品等重点领域隐患排查整治;强化食品药品安全监管;做好防汛抗旱与自然灾害防范,加强基层应急能力建设;维护社会大局和谐稳定。\n各位代表,蓝图已经绘就,关键在于落实。让我们更加紧密地团结起来,以钉钉子精神抓好各项工作落实,奋力谱写全区高质量发展新篇章。\n\n十件民生实事那部分数字比较多,按序号一条不落地列清楚,别合并省略;基层治理和安全这两块也单独成页,分开摆,街道干部拿着这个要能对号入座知道自己牵头哪块。有空你看看。",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/08/qwen3.8-max/result.pptx",
+          "sha256": "e5d3ec118b723e532893db718ee95a785cca0025a0616634feaa5630af82a30c"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/08/glm-5.3/result.pptx",
+          "sha256": "a1f7bd5b60b6f61c566a7f309b15d6fcd1ba261540952bdda51e9c8f3a7be4d8"
+        }
+      ],
+      "split": "holdout"
+    },
+    {
+      "id": "09",
+      "prompt": "年会开场那个PPT，参谋，做一个出来。老板的稿子和全年数据我都掉你这了，你自己揉一块儿，别弄成两张皮，数据得能接得上老板讲的话。\n\n老板稿子里原话说，这一年我们走得不容易，年初行业寒冬，咬牙没有裁员反而加大了研发投入，最难那个月账上现金只够发两个月工资，但团队没有一个人退缩，如今回头看正是那段日子让我们脱胎换骨。\n\n数据那边，全年营收4.2亿同比+26%，研发投入占比从9%提到14%，新增专利18项，员工320涨到410人，客户续约率91%。\n\n情怀部分要能落到具体数字上，做到讲述和数据互相支撑。明天就要用，风格上走正式汇报风格——每页一个核心观点配关键数据支撑、结论先行不铺垫寒暄、标题简洁有力。",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/09/glm-5.3/result.pptx",
+          "sha256": "7c246c4ddc822af6dd8a5f67c8ad54e888e4fd7c819d8bf7fa18cc081f8c09bc"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/09/qwen3.8-max/result.pptx",
+          "sha256": "571421f8ffcb0308e6a682e509d087589d4796a6ef3d62b1babccfe6def7d744"
+        }
+      ],
+      "split": "dev"
+    },
+    {
+      "id": "10",
+      "prompt": "明天一早管理层要碰这个事，得今天出，今晚得把PPT攒出来。手上三块料:舆情监测那边出的负面话题摘要、这三天客服来电统计的要点、还有公关部连夜赶的声明草稿,这三样不能直接拼在一起糊弄,得融合成一个完整的危机应对逻辑给到管理层。\n\n结构上我想清楚了,事实时间线要先立住,然后是影响评估,声明草稿这块要单独拎出来给修改建议,分级响应机制也得有,这四块都不能少。\n\n素材一·舆情摘要：6月10日起某测评博主发视频质疑我们产品有安全隐患,视频发布后24小时内转发破万,评论区负面情绪占比约72%,话题主要集中在“是否虚标”和“售后甩锅”这两个点上,目前情绪是质疑为主,还没有权威媒体跟进,但已有3个垂类KOL开始转发,有进一步发酵的苗头,这个时间窗口很关键,48小时内如果不做有效回应,可能从质疑升级为抵制。\n\n素材二·客服来电要点：近三天相关来电大概40通,诉求集中在退货退款(约60%)和要官方说明(约35%),注意有部分用户是直接引用了那条视频的说法打进来的,说明视频的传播已经影响到实际客诉了;另外电商渠道的退单量也比平时多了约15%,需要纳入影响评估。\n\n素材三·声明草稿：草稿写的是“我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利”,但内部备注里技术复核还没做完,预计还需要36小时才能出结论;在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动;另外“追究法律责任”这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立,这两点务必在修改建议里体现出来,不是随便改改措辞就行。",
+      "attachments": [],
+      "candidates": [
+        {
+          "id": "A",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/10/qwen3.8-max/result.pptx",
+          "sha256": "242a9d3ba2a2d72d1c6d19e4dbd74586ec20fe5aa3bf002834961a0722d25250"
+        },
+        {
+          "id": "B",
+          "pptx": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample/10/glm-5.3/result.pptx",
+          "sha256": "bb65216f5456a030a118f0c4aa920be951852bb767639e811fcfec96b1f3581d"
+        }
+      ],
+      "split": "dev"
+    }
+  ],
+  "id": "e77757ab216960926c369a4e24bdd43f979cb999c281022a5181ffa267980c27"
+}

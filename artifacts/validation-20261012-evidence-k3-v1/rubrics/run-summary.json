@@ -1,0 +1,31 @@
+{
+  "01": {
+    "status": "quality_failed",
+    "items": 0
+  },
+  "02": {
+    "status": "quality_failed",
+    "items": 0
+  },
+  "03": {
+    "status": "quality_failed",
+    "items": 0
+  },
+  "05": {
+    "status": "quality_failed",
+    "items": 0
+  },
+  "06": {
+    "status": "quality_failed",
+    "items": 0
+  },
+  "09": {
+    "status": "approved",
+    "items": 17
+  },
+  "10": {
+    "status": "error",
+    "error_type": "ProviderError",
+    "message": "Call failed after 3 attempts (ValueError)"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      4
+    ],
+    "evidence": "第2页'认定层级'卡片明确标注'2018年省级非遗'；第4页标题为'非遗分量：2018年获批省级，三重价值可核查'，正文再次写明'2018年获批省级代表性项目（本项目）'，年份2018与级别'省级'均准确无误，且多次出现可核验。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 26486,
+    "total_tokens": 26575,
+    "completion_tokens": 89,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 5.909,
+  "attempts": 1
+}

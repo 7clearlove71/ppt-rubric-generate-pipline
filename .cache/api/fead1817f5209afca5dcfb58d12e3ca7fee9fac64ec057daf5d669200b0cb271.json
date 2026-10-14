@@ -1,0 +1,31 @@
+{
+  "parsed": {
+    "text_seen": [
+      "64.1%",
+      "50.1%"
+    ],
+    "overlapping": true,
+    "overlap_objects": [
+      "6与5",
+      "4与0",
+      ".与.",
+      "1与1",
+      "%与%"
+    ],
+    "description": "两组数字'64.1%'和'50.1%'以不同颜色叠加显示：'64.1%'为棕色/金色，位于上层；'50.1%'为深蓝色，位于下层。两组文字在水平和垂直方向上几乎完全重叠，字形相互交错。画面下方有一条从左下向右上倾斜的棕色/金色直线，直线中间有一个棕色/金色圆形节点。圆形节点与数字'1'和'%'的下半部分也有重叠。背景为白色，底部有一条深蓝色水平条带，倾斜直线和圆形节点横跨其上。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 165,
+    "total_tokens": 331,
+    "completion_tokens": 166,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 121.906,
+  "attempts": 1
+}

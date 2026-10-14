@@ -1,0 +1,624 @@
+{
+  "parsed": {
+    "page": 3,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "26% 的增长不是靠拉新堆量，而是靠 91% 的老客户续约",
+        "location": "页面顶部大标题",
+        "statement": "本页核心观点前置，结论先行",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "26%",
+            "unit": "%",
+            "subject": "营收同比增长",
+            "denominator": "上年营收",
+            "time_origin": "全年"
+          },
+          {
+            "value": "91%",
+            "unit": "%",
+            "subject": "老客户续约率",
+            "denominator": "全部客户",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "增长了多少 · 营收规模对比",
+        "location": "左上区域标题",
+        "statement": "左侧板块标题，明确功能定位",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "同比 +26%",
+        "location": "左上区域红色标签",
+        "statement": "营收同比增长率标注，与源文一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "+26%",
+            "unit": "%",
+            "subject": "营收同比增长",
+            "denominator": "上年营收",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "上年（测算）",
+        "location": "柱状图左侧柱体下方",
+        "statement": "上年营收标注为测算值",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "≈ 3.33",
+        "location": "左侧灰色柱体顶部",
+        "statement": "上年营收测算值约3.33亿元",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "3.33",
+            "unit": "亿元",
+            "subject": "上年营收",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "4.2",
+            "right": "1.26",
+            "reported": "3.33",
+            "left_unit": "亿元",
+            "right_unit": "1",
+            "reported_unit": "亿元",
+            "left_quote": "4.2",
+            "right_quote": "1.26",
+            "reported_quote": "≈ 3.33",
+            "relation_quote": "上年营收 ≈ 3.33 亿元（4.2 ÷ 1.26 ）",
+            "meaning": "由本年营收和增长率反推上年营收"
+          }
+        ]
+      },
+      {
+        "quote": "本年度",
+        "location": "柱状图右侧柱体下方",
+        "statement": "本年营收标注",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "4.2",
+        "location": "右侧红色柱体顶部",
+        "statement": "本年营收4.2亿元，与源文一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿元",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "亿元",
+        "location": "纵轴单位标注",
+        "statement": "营收单位为亿元",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "营收增量 ≈ 8,667 万元",
+        "location": "左下区域",
+        "statement": "营收增量测算值，红色高亮",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "8667",
+            "unit": "万元",
+            "subject": "营收增量",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "4.2",
+            "right": "3.33",
+            "reported": "0.8667",
+            "left_unit": "亿元",
+            "right_unit": "亿元",
+            "reported_unit": "亿元",
+            "left_quote": "4.2",
+            "right_quote": "3.33",
+            "reported_quote": "8,667 万元",
+            "relation_quote": "营收增量 ≈ 8,667 万元（4.2 亿 − 3.33 亿）",
+            "meaning": "本年营收减上年营收得增量"
+          }
+        ]
+      },
+      {
+        "quote": "（测算：4.2 − 3.33 亿）",
+        "location": "营收增量右侧灰色小字",
+        "statement": "增量计算过程透明展示",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "增长的来处",
+        "location": "中上区域红色标题",
+        "statement": "中间板块功能定位",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "左图回答\" 增长了多少\" ，右图回答\" 增长从哪里来\" 。",
+        "location": "中间区域说明文字",
+        "statement": "左右图功能分工说明",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "「这一年我们走得不容易，年初行业寒冬」",
+        "location": "中间引用框内黑色文字",
+        "statement": "直接引用老板致辞原文，情怀与数据关联",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "这一年我们走得不容易，年初行业寒冬"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "—— 老板年会致辞",
+        "location": "引用框下方灰色小字",
+        "statement": "明确标注引用来源",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "不容易之处：增长必须是高质量增长，而不是靠短期冲量。",
+        "location": "引用框下方说明文字",
+        "statement": "对\"不容易\"的解读，衔接数据论证",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "高增速与高续约率同时成立：若靠透支式拉新堆量，续约率不会守在 91% 。",
+        "location": "中间下方论证文字",
+        "statement": "逻辑推理：高续约率反证非透支式增长",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "91%",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "全部客户",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "增长从哪里来 · 客户续约结构",
+        "location": "右上区域标题",
+        "statement": "右侧板块功能定位",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "续约客户",
+        "location": "环形图右侧标注",
+        "statement": "续约客户占比标注",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "91%",
+        "location": "环形图中心大数字及右侧标注",
+        "statement": "客户续约率91%，与源文一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "91%",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "全部客户",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "流失客户（测算）",
+        "location": "环形图左上方灰色标注",
+        "statement": "流失客户标注为测算",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "9%",
+        "location": "环形图左上方灰色数字",
+        "statement": "客户流失率测算值",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "9%",
+            "unit": "%",
+            "subject": "客户流失率",
+            "denominator": "全部客户",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "100%",
+            "right": "91%",
+            "reported": "9%",
+            "left_unit": "%",
+            "right_unit": "%",
+            "reported_unit": "%",
+            "left_quote": "100%",
+            "right_quote": "91%",
+            "reported_quote": "9%",
+            "relation_quote": "客户流失率 9% （100% − 91% ）",
+            "meaning": "总客户比例减续约客户比例得流失率"
+          }
+        ]
+      },
+      {
+        "quote": "客户流失率 9% （测算：100% − 91% ）",
+        "location": "右下区域",
+        "statement": "流失率计算过程透明展示",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "结论",
+        "location": "底部区域红色标签",
+        "statement": "结论板块标识",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "增长答卷的关键不在\" 卖得多\" ，而在\" 留得住\"——4.2 亿元营收、+26% 同比的背后，是 91% 的客户续约率在支撑增长质量。",
+        "location": "底部结论第一行",
+        "statement": "核心结论：增长质量由续约率支撑，数据与叙事融合",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿元",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "+26%",
+            "unit": "%",
+            "subject": "营收同比增长",
+            "denominator": "上年营收",
+            "time_origin": "全年"
+          },
+          {
+            "value": "91%",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "全部客户",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "寒冬里没有用透支式拉新换规模，而是靠交付质量守住老客户，才有下一程加注的底气。",
+        "location": "底部结论第二行灰色小字",
+        "statement": "呼应\"行业寒冬\"叙事，强调坚守老客户",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年初行业寒冬"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：公司全年经营数据与老板年会致辞｜测算口径：上年营收 ≈ 3.33 亿元（4.2 ÷ 1.26 ）、营收增量 ≈ 8,667 万元（4.2 亿 − 3.33 亿）、客户流失率 9% （100% − 91% ）。",
+        "location": "页面底部灰色小字",
+        "statement": "数据来源和测算口径完整透明",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "亿元",
+        "location": "纵轴顶部",
+        "statement": "单位标注'亿元'与数字'5'上下相邻排版，非叠印遮挡",
+        "location_detail": "纵轴区域[41.02, 123.26, 56.83, 145.12]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "续约客户 / 91%",
+        "location": "环形图右侧标注区域",
+        "statement": "标签文字与百分比数字上下排列，bbox微相交但字形无遮挡",
+        "location_detail": "右侧区域[604.23, 217.99, 635.93, 240.13]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "流失客户（测算）/ 9%",
+        "location": "环形图左上方标注区域",
+        "statement": "标签与百分比数字相邻，bbox微相交但字形无遮挡",
+        "location_detail": "左上方区域[496.74, 124.14, 560.08, 146.28]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "「这一年我们走得不容易，年初 / 行业寒冬」",
+        "location": "中间引用框",
+        "statement": "两行文字上下排列，bbox相交为正常换行排版，非叠印",
+        "location_detail": "中间区域[285.73, 158.59, 425.29, 185.09]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "左图回答\" 增长了多少\" ，右图回答\" 增长从 / 哪里来\" 。",
+        "location": "中间说明文字",
+        "statement": "两行文字上下排列，bbox相交为正常换行排版，非叠印",
+        "location_detail": "中间区域[276.72, 111.12, 455.38, 135.0]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "不容易之处：增长必须是高质量增 / 长，而不是靠短期冲量。",
+        "location": "中间下方说明文字",
+        "statement": "两行文字上下排列，bbox相交为正常换行排版，非叠印",
+        "location_detail": "中间区域[285.73, 207.47, 420.88, 231.35]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "高增速与高续约率同时成立：若靠透支式 / 拉新堆量，续约率不会守在  / 91%  /  。",
+        "location": "中间下方论证文字",
+        "statement": "多行文字正常换行排版，各span bbox相交为行间距区域，非真实叠印遮挡",
+        "location_detail": "中间区域[276.72, 248.37, 438.88, 272.26]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "\" 留得住\" / —— / 4.2 亿元 / 营收、",
+        "location": "底部结论第一行",
+        "statement": "多个span首尾相接形成连续语句，bbox微相交为字符间距，非叠印遮挡",
+        "location_detail": "底部区域[229.04, 289.57, 361.46, 304.06]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "91% /  的客户续约率在支撑增长质量。",
+        "location": "底部结论第一行右侧",
+        "statement": "百分比与后续文字首尾相接，bbox微相交为字符间距，非叠印遮挡",
+        "location_detail": "底部区域[466.53, 289.57, 629.72, 304.06]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "营收增量  / ≈ 8,667 万元",
+        "location": "左下区域",
+        "statement": "标签与数值首尾相接，bbox微相交为字符间距，非叠印遮挡",
+        "location_detail": "左下区域[23.05, 254.44, 119.55, 267.49]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "≈ 8,667 万元 / （测算：4.2 − 3.33 亿）",
+        "location": "左下区域",
+        "statement": "数值与测算说明首尾相接，bbox微相交为字符间距，非叠印遮挡",
+        "location_detail": "左下区域[61.06, 254.44, 222.98, 267.49]",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "0/1/2/3/4/5",
+        "location": "纵轴刻度",
+        "statement": "纵轴刻度数字0-5均匀分布，与横线网格对应，无遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "柱状图：上年（测算）≈3.33亿元（灰色柱） vs 本年度4.2亿元（红色柱）",
+        "location": "左侧图表区域",
+        "statement": "柱状图视觉呈现营收对比，颜色区分年度，数据标签清晰",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "环形图：续约客户91%（红色大环） vs 流失客户9%（灰色小扇区）",
+        "location": "右侧图表区域",
+        "statement": "环形图视觉呈现客户结构，中心大数字突出续约率",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 10985,
+    "total_tokens": 14410,
+    "completion_tokens": 3425,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 243.46,
+  "attempts": 2
+}

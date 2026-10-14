@@ -1,0 +1,791 @@
+{
+  "parsed": {
+    "page": 4,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "液压系统占 1 号线电耗 45% （约 30.6 万 kWh/ 月），老化使其能耗高出正常水平约 29%",
+        "location": "页面顶部标题区域",
+        "statement": "本页核心结论：液压系统占1号线电耗45%，老化导致能耗高出正常水平约29%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "45",
+            "unit": "%",
+            "subject": "液压系统占1号线电耗比例",
+            "denominator": "1号线月用电",
+            "time_origin": "月"
+          },
+          {
+            "value": "30.6",
+            "unit": "万kWh",
+            "subject": "液压系统月用电量",
+            "denominator": "不适用",
+            "time_origin": "月"
+          },
+          {
+            "value": "29",
+            "unit": "%",
+            "subject": "老化导致能耗高出正常水平比例",
+            "denominator": "正常水平",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "68",
+            "right": "0.45",
+            "reported": "30.6",
+            "left_unit": "万kWh",
+            "right_unit": "1",
+            "reported_unit": "万kWh",
+            "left_quote": "68",
+            "right_quote": "45%",
+            "reported_quote": "约 30.6 万 kWh/ 月",
+            "relation_quote": "液压系统占 1 号线电耗 45% （约 30.6 万 kWh/ 月）",
+            "meaning": "验证液压系统用电量是否为1号线月用电的45%"
+          }
+        ]
+      },
+      {
+        "quote": "1 号线月用电 68 万kWh",
+        "location": "左侧柱状图最上方绿色柱体",
+        "statement": "1号线月用电量68万kWh，与用户给定数据一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "68",
+            "unit": "万kWh",
+            "subject": "1号线月用电",
+            "denominator": "不适用",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "液压系统 占 45% 30.6 万kWh",
+        "location": "左侧柱状图中间绿色柱体",
+        "statement": "液压系统用电量30.6万kWh，标注占45%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "30.6",
+            "unit": "万kWh",
+            "subject": "液压系统月用电",
+            "denominator": "不适用",
+            "time_origin": "月"
+          },
+          {
+            "value": "45",
+            "unit": "%",
+            "subject": "液压系统占1号线电耗比例",
+            "denominator": "1号线月用电",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "老化损失 约 29% 8.8 万kWh",
+        "location": "左侧柱状图最下方红色柱体",
+        "statement": "老化损失约8.8万kWh，标注约29%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "8.8",
+            "unit": "万kWh",
+            "subject": "老化损失电量",
+            "denominator": "不适用",
+            "time_origin": "月"
+          },
+          {
+            "value": "29",
+            "unit": "%",
+            "subject": "老化损失占液压系统用电比例",
+            "denominator": "液压系统正常水平",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "8.8",
+            "right": "30.6",
+            "reported": "29",
+            "left_unit": "万kWh",
+            "right_unit": "万kWh",
+            "reported_unit": "%",
+            "left_quote": "8.8 万 kWh",
+            "right_quote": "30.6 万 kWh",
+            "reported_quote": "约 29%",
+            "relation_quote": "老化损失 约 29%",
+            "meaning": "验证老化损失占液压系统用电的比例"
+          }
+        ]
+      },
+      {
+        "quote": "口径：液压系统 30.6 万 kWh 中约 8.8 万 kWh 为老化损失",
+        "location": "左侧柱状图下方注释",
+        "statement": "明确口径说明：30.6万kWh中的8.8万kWh为老化损失",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "30.6",
+            "unit": "万kWh",
+            "subject": "液压系统月用电",
+            "denominator": "不适用",
+            "time_origin": "月"
+          },
+          {
+            "value": "8.8",
+            "unit": "万kWh",
+            "subject": "老化损失电量",
+            "denominator": "不适用",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "泵组磨损、容积效率下降",
+        "location": "中间表格第一行损失机理列",
+        "statement": "第一类损失机理：泵组磨损、容积效率下降",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "同流量下需更高转速或更长运行时间",
+        "location": "中间表格第一行能耗后果列",
+        "statement": "泵组磨损导致的能耗后果",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "泵组更新 + 变频 / 负载敏感（LS ）控制，按需供油",
+        "location": "中间表格第一行对应改造措施列",
+        "statement": "第一类改造措施：泵组更新+变频/负载敏感控制",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "密封与管路内泄增加",
+        "location": "中间表格第二行损失机理列",
+        "statement": "第二类损失机理：密封与管路内泄增加",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "保压阶段压力回落，电能转为无效液压能与热量",
+        "location": "中间表格第二行能耗后果列",
+        "statement": "内泄导致的能耗后果",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "更换老化密封件与高压管路，处理泄漏点",
+        "location": "中间表格第二行对应改造措施列",
+        "statement": "第二类改造措施：更换密封件与高压管路",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "溢流损失上升、卸荷不良",
+        "location": "中间表格第三行损失机理列",
+        "statement": "第三类损失机理：溢流损失上升、卸荷不良",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "高压油直接回油箱、能量全部变热；空载 8 kWh/h （2 号线 6 、4 号线 5 ）",
+        "location": "中间表格第三行能耗后果列",
+        "statement": "溢流卸荷不良的能耗后果，提及空载8kWh/h，并对比2号线6、4号线5",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "2号线 / 95 / 49 / 0.52 / 6"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "4号线 / 60 / 31 / 0.52 / 5"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "8",
+            "unit": "kWh/h",
+            "subject": "1号线空载能耗",
+            "denominator": "小时",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "6",
+            "unit": "kWh/h",
+            "subject": "2号线空载能耗",
+            "denominator": "小时",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "5",
+            "unit": "kWh/h",
+            "subject": "4号线空载能耗",
+            "denominator": "小时",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "重新标定溢流与保压设定，完善卸荷逻辑",
+        "location": "中间表格第三行对应改造措施列",
+        "statement": "第三类改造措施：重新标定溢流与保压设定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "油液劣化、油温升高",
+        "location": "中间表格第四行损失机理列",
+        "statement": "第四类损失机理：油液劣化、油温升高",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "黏度下降加剧内泄、冷却负荷上升，形成正反馈",
+        "location": "中间表格第四行能耗后果列",
+        "statement": "油液劣化的能耗后果",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "油箱与过滤 / 冷却系统整治，恢复油品与温控能力",
+        "location": "中间表格第四行对应改造措施列",
+        "statement": "第四类改造措施：油箱与过滤/冷却系统整治",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第五项措施：加装液压分项计量与压力/ 温度监测点，纳入预防性维护周期，支撑改造前后实测对比。",
+        "location": "中间表格下方补充说明",
+        "statement": "第五项措施为监测计量类措施，非直接改造",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "改造效果预期（测算）",
+        "location": "右侧板块标题",
+        "statement": "右侧为改造效果预期测算区域",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "单位能耗 kWh/ 件（改造前 → 后） 0.85 → 约 0.74",
+        "location": "右侧板块第一行",
+        "statement": "改造前单位能耗0.85kWh/件，改造后约0.74kWh/件",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线的单位产品能耗0.85kWh/件"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.85",
+            "unit": "kWh/件",
+            "subject": "1号线改造前单位能耗",
+            "denominator": "件",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "0.74",
+            "unit": "kWh/件",
+            "subject": "1号线改造后单位能耗（估算）",
+            "denominator": "件",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "降 0.11 ，降幅约 13%",
+        "location": "右侧板块第一行下方",
+        "statement": "单位能耗降低0.11，降幅约13%",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0.11",
+            "unit": "kWh/件",
+            "subject": "单位能耗降低量",
+            "denominator": "件",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "13",
+            "unit": "%",
+            "subject": "单位能耗降幅",
+            "denominator": "改造前单位能耗",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "0.85",
+            "right": "0.74",
+            "reported": "0.11",
+            "left_unit": "kWh/件",
+            "right_unit": "kWh/件",
+            "reported_unit": "kWh/件",
+            "left_quote": "0.85",
+            "right_quote": "约 0.74",
+            "reported_quote": "降 0.11",
+            "relation_quote": "降 0.11 ，降幅约 13%",
+            "meaning": "验证单位能耗降低量"
+          },
+          {
+            "operation": "ratio_percent",
+            "left": "0.11",
+            "right": "0.85",
+            "reported": "13",
+            "left_unit": "kWh/件",
+            "right_unit": "kWh/件",
+            "reported_unit": "%",
+            "left_quote": "降 0.11",
+            "right_quote": "0.85",
+            "reported_quote": "降幅约 13%",
+            "relation_quote": "降 0.11 ，降幅约 13%",
+            "meaning": "验证降幅百分比"
+          }
+        ]
+      },
+      {
+        "quote": "月节电量（测算） 8.8 万 kWh/ 月",
+        "location": "右侧板块第二行",
+        "statement": "月节电量测算为8.8万kWh/月",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "8.8",
+            "unit": "万kWh/月",
+            "subject": "月节电量",
+            "denominator": "月",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "80",
+            "right": "0.11",
+            "reported": "8.8",
+            "left_unit": "万件",
+            "right_unit": "kWh/件",
+            "reported_unit": "万kWh",
+            "left_quote": "对应月产量 80 万件",
+            "right_quote": "降 0.11",
+            "reported_quote": "8.8 万 kWh/ 月",
+            "relation_quote": "对应月产量 80 万件",
+            "meaning": "验证月节电量=月产量×单位能耗降低量"
+          }
+        ]
+      },
+      {
+        "quote": "对应月产量 80 万件",
+        "location": "右侧板块第二行下方",
+        "statement": "月节电量测算对应月产量80万件",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "80",
+            "unit": "万件",
+            "subject": "1号线月产量",
+            "denominator": "不适用",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "液压系统状态 高出正常约 29%",
+        "location": "右侧板块第三行",
+        "statement": "液压系统状态高出正常约29%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "29",
+            "unit": "%",
+            "subject": "液压系统高出正常水平比例",
+            "denominator": "正常水平",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "改造后消除该老化损失",
+        "location": "右侧板块第三行下方",
+        "statement": "改造后预期消除老化损失",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "行业标杆参照 0.45 kWh/ 件",
+        "location": "右侧板块第四行",
+        "statement": "行业标杆单位能耗0.45kWh/件",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.45",
+            "unit": "kWh/件",
+            "subject": "行业标杆单位能耗",
+            "denominator": "件",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "仍有差距，属第一批改造",
+        "location": "右侧板块第四行下方",
+        "statement": "改造后0.74kWh/件仍高于行业标杆0.45kWh/件，属于第一批改造",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "来源：能耗实测数据（实测月口径）+ 工程测算；45% 电耗占比与 29% 老化损失为工程估算，最终以改造前后分项计量实测为准。",
+        "location": "页面底部来源说明",
+        "statement": "明确标注45%和29%为工程估算，非实测确定值",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "0.85 → 约 0.74",
+        "location": "右侧板块，p4_t48与p4_t49相邻",
+        "statement": "视觉检查：两文本行垂直间距极小（交叠比例0.0057），但放大图显示为正常上下行排版，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "8.8 万 kWh/ 月 / 对应月产量 80 万件",
+        "location": "右侧板块，p4_t51与p4_t52相邻",
+        "statement": "视觉检查：两文本行垂直间距极小（交叠比例0.0057），放大图显示为正常上下行排版，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "高出正常约 29% / 改造后消除该老化损失",
+        "location": "右侧板块，p4_t54与p4_t55相邻",
+        "statement": "视觉检查：两文本行垂直间距极小（交叠比例0.0057），放大图显示为正常上下行排版，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "0.45 kWh/ 件 / 仍有差距，属第一批改造",
+        "location": "右侧板块，p4_t57与p4_t58相邻",
+        "statement": "视觉检查：两文本行垂直间距极小（交叠比例0.0048），放大图显示为正常上下行排版，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "口径：液压系统 30.6 万 kWh 中约 8.8 万 kWh 为老 / 化损失",
+        "location": "左下角注释，p4_t42与p4_t43",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.2017），但放大图显示为正常的'老化损失'换行排版，'老'字在第一行末尾，'化损失'在第二行开头，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "泵组更新 + 变频 / 负载敏感 / （LS ）控制，按需供油",
+        "location": "中间表格，p4_t18与p4_t19",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.201），但放大图显示为正常的上下行排版，第一行结束于'敏感'，第二行开始于'（LS）'，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "保压阶段压力回落，电能转为无效液压能与热 / 量",
+        "location": "中间表格，p4_t22与p4_t23",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.201），但放大图显示为正常的'热量'换行排版，'热'字在第一行末尾，'量'字在第二行开头，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "更换老化密封件与高压管路，处理泄 / 漏点",
+        "location": "中间表格，p4_t24与p4_t25",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.201），但放大图显示为正常的'泄漏点'换行排版，'泄'字在第一行末尾，'漏点'在第二行开头，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "高压油直接回油箱、能量全部变热；空载 8 / kWh/h （2 号线 6 、4 号线 5 ）",
+        "location": "中间表格，p4_t28与p4_t29",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.201），但放大图显示为正常的上下行排版，第一行结束于'空载 8'，第二行开始于'kWh/h'，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "重新标定溢流与保压设定，完善卸荷 / 逻辑",
+        "location": "中间表格，p4_t30与p4_t31",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.201），但放大图显示为正常的'卸荷逻辑'换行排版，'卸荷'在第一行末尾，'逻辑'在第二行开头，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "黏度下降加剧内泄、冷却负荷上升，形成正反 / 馈",
+        "location": "中间表格，p4_t34与p4_t35",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.201），但放大图显示为正常的'正反馈'换行排版，'正反'在第一行末尾，'馈'在第二行开头，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "油箱与过滤 / 冷却系统整治，恢复 / 油品与温控能力",
+        "location": "中间表格，p4_t36与p4_t37",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.201），但放大图显示为正常的上下行排版，第一行结束于'恢复'，第二行开始于'油品'，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "液压系统占 1 号线电耗 45% （约 30.6 万 kWh/ 月），老化使其能耗高出正常水 / 平约 29%",
+        "location": "页面标题，p4_t38与p4_t39",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.2001），但放大图显示为正常的'水平约 29%'换行排版，'水'字在第一行末尾，'平约 29%'在第二行开头，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "油液劣化、油 / 温升高",
+        "location": "中间表格，p4_t32与p4_t33",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.1997），但放大图显示为正常的'油温升高'换行排版，'油'字在第一行末尾，'温升高'在第二行开头，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "溢流损失上升、 / 卸荷不良",
+        "location": "中间表格，p4_t26与p4_t27",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.1996），但放大图显示为正常的'卸荷不良'换行排版，第一行结束于顿号，第二行开始于'卸荷不良'，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "泵组磨损、容 / 积效率下降",
+        "location": "中间表格，p4_t15与p4_t16",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.199），但放大图显示为正常的'容积效率下降'换行排版，'容'字在第一行末尾，'积效率下降'在第二行开头，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "密封与管路内 / 泄增加",
+        "location": "中间表格，p4_t20与p4_t21",
+        "statement": "视觉检查：两文本行有交叠区域（fraction 0.199），但放大图显示为正常的'泄增加'换行排版，'内'字在第一行末尾，'泄增加'在第二行开头，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页未出现3号线空载能耗偏高的内容",
+        "location": "整页",
+        "statement": "本页聚焦1号线液压系统深挖，未提及3号线空载能耗12kWh/h及停机流程不规范问题；该问题可能在其他页面呈现",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "3号线虽然单位能耗不高0.48,但空载能耗偏高,待机状态下每小时还跑12kWh,说明停机流程不规范,这块也要提一句"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页未出现投资回报测算的完整独立单元（投入120万、18个月回本）",
+        "location": "整页",
+        "statement": "本页呈现改造效果预期测算（单位能耗变化、月节电量），但未出现更换液压系统投入约120万及按当前产量和电价约18个月回本的投资回报测算；该内容可能在其他页面呈现",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如果更换液压系统投入约120万,按当前产量和电价,大概18个月能收回成本,这笔账要在PPT里算清楚"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "0.74 kWh/件",
+        "location": "右侧板块改造后单位能耗",
+        "statement": "改造后单位能耗0.74kWh/件为用户未给定的估算值，标注为'约'，但未明确标注为假设或工程测算来源",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0.74",
+            "unit": "kWh/件",
+            "subject": "1号线改造后预估单位能耗",
+            "denominator": "件",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 12283,
+    "total_tokens": 19155,
+    "completion_tokens": 6872,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 154.751,
+  "attempts": 1
+}

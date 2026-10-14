@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      8,
+      10,
+      13
+    ],
+    "evidence": "PPT多处准确表述植入式电子皮肤与三甲医院合作、已进入临床试验阶段：页2目录写'与三甲医院合作，进入临床试验'；页3总览写'临床试验 已进入临床试验阶段'；页8标题明确'与三甲医院合作，植入式电子皮肤进入临床试验'，流程图标注'当前阶段'为'临床试验'，注脚说明'当前临床试验阶段为既定事实'；页10表格关键指标列写'进入临床试验'；页13结语写'临床试验阶段'、'临床试验 三甲医院合作推进'。全文未出现'已获批上市''已完成临床试验'等超出原事实的表述，也未缺失该事实。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 42096,
+    "total_tokens": 42254,
+    "completion_tokens": 158,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.652,
+  "attempts": 1
+}

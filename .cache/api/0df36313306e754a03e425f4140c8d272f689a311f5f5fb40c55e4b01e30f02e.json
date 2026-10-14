@@ -1,0 +1,444 @@
+{
+  "parsed": {
+    "page": 2,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "不容易的一年，交出了脱胎换骨的答卷",
+        "location": "页面顶部主标题",
+        "statement": "标题简洁有力，直接传达核心判断，融合叙事关键词'不容易'与'脱胎换骨'",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "风格上走正式汇报风格——每页一个核心观点配关键数据支撑、结论先行不铺垫寒暄、标题简洁有力"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "“这一年我们走得不容易，年初行业寒冬。” ——老板年会致辞",
+        "location": "页面上部左侧引用区",
+        "statement": "直接引用老板原话，标注来源，与数据板块形成关联",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "这一年我们走得不容易，年初行业寒冬"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "最难那个月，账上现金只够发 2 个月 工资（约 60 天）",
+        "location": "页面上部右侧",
+        "statement": "呈现老板叙事五要素之一'现金仅够发两个月工资'，数字2个月与源文一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "最难那个月账上现金只够发两个月工资"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2",
+            "unit": "个月",
+            "subject": "账上现金可发工资时长",
+            "denominator": "不适用",
+            "time_origin": "最难那个月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "全年经营总览 这一年外部是行业寒冬，内部是咬牙坚守，结果是全面向好——五项指标一屏看清“寒冬里的成绩单”",
+        "location": "页面中部，五个数据卡片上方",
+        "statement": "以观点统领数据，将叙事语境（寒冬、咬牙坚守）与数据成果衔接，避免'两张皮'",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "情怀部分要能落到具体数字上，做到讲述和数据互相支撑"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "全年营收 4.2 亿元 同比 +26%",
+        "location": "左侧第一个数据卡片",
+        "statement": "核心数据准确呈现，与源文一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿元",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "26",
+            "unit": "%",
+            "subject": "营收同比增长率",
+            "denominator": "上年营收",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "增量 ≈ 8,667 万元（测算）",
+        "location": "全年营收卡片内底部",
+        "statement": "派生计算值，标注'测算'，来源脚注说明计算方式：上年营收 ≈ 3.33 亿元（4.2 ÷ 1.26）",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "8667",
+            "unit": "万元",
+            "subject": "营收增量",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "excess_over_baseline_percent",
+            "left": "42000",
+            "right": "26",
+            "reported": "8667",
+            "meaning": "4.2亿元营收相比上年增长26%的增量，按上年=4.2/1.26≈3.333亿元，增量≈0.8667亿元=8667万元"
+          }
+        ]
+      },
+      {
+        "quote": "研发投入占比 14% 上年 9%，+5 个百分点，逆势加出来的（测算） 9% → 14%",
+        "location": "左二数据卡片",
+        "statement": "核心数据准确，从9%提到14%，增幅为5个百分点，标注'测算'但实为源文给定事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "14",
+            "unit": "%",
+            "subject": "研发投入占比",
+            "denominator": "全年营收",
+            "time_origin": "全年"
+          },
+          {
+            "value": "9",
+            "unit": "%",
+            "subject": "上年研发投入占比",
+            "denominator": "上年营收",
+            "time_origin": "上年"
+          },
+          {
+            "value": "5",
+            "unit": "个百分点",
+            "subject": "研发投入占比提升幅度",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "新增专利 18 项 研发投入实打实投出来的技术资产 平均每 20 天 1 项（测算）",
+        "location": "中间数据卡片",
+        "statement": "核心数据18项准确，'平均每20天1项'为派生计算（365÷18≈20.3），标注'测算'",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "新增专利18项"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "18",
+            "unit": "项",
+            "subject": "新增专利",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "20",
+            "unit": "天",
+            "subject": "平均每项专利产出周期",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "365",
+            "right": "18",
+            "reported": "20",
+            "meaning": "全年天数除以新增专利数，约20天/项，实际20.3天/项，取整表述"
+          }
+        ]
+      },
+      {
+        "quote": "员工规模 410 人 净增 90 人、裁员 0 人，团队没散反增（测算） 320 → 410 人",
+        "location": "右二数据卡片",
+        "statement": "核心数据320涨到410人准确，净增90人为正确派生计算，'裁员0人'为源文'没有裁员'的等价表述",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "咬牙没有裁员反而加大了研发投入"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "年末员工规模",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          },
+          {
+            "value": "320",
+            "unit": "人",
+            "subject": "年初员工规模",
+            "denominator": "不适用",
+            "time_origin": "年初"
+          },
+          {
+            "value": "90",
+            "unit": "人",
+            "subject": "员工净增人数",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "410",
+            "right": "320",
+            "reported": "90",
+            "meaning": "年末员工数减年初员工数，净增90人"
+          }
+        ]
+      },
+      {
+        "quote": "客户续约率 91% 老客户留下来复购，流失率 9%（测算） 基本盘 91%",
+        "location": "右侧数据卡片",
+        "statement": "核心数据91%准确，'流失率9%'为派生计算（100%-91%），标注'测算'",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "91",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "全部客户",
+            "time_origin": "全年"
+          },
+          {
+            "value": "9",
+            "unit": "%",
+            "subject": "客户流失率",
+            "denominator": "全部客户",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "100",
+            "right": "91",
+            "reported": "9",
+            "meaning": "续约率91%对应的流失率为9%"
+          }
+        ]
+      },
+      {
+        "quote": "“如今回头看，正是那段日子让我们脱胎换骨。” ——老板年会致辞",
+        "location": "页面下部左侧引用区",
+        "statement": "直接引用老板原话，与页面标题'脱胎换骨'呼应，形成叙事闭环",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "人效未被摊薄：人均营收 ≈ 104 → ≈102 万元/人（测算）",
+        "location": "页面下部右侧",
+        "statement": "派生计算，标注'测算'，体现'加大研发投入'未导致人效下降的论证，计算口径：4.2亿÷320≈131.25万，4.2亿÷410≈102.44万。但标注'104→102'与直接用4.2亿计算有差异，疑使用上年营收3.33亿÷320≈104万，本年4.2亿÷410≈102万",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "104",
+            "unit": "万元/人",
+            "subject": "上年人均营收",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          },
+          {
+            "value": "102",
+            "unit": "万元/人",
+            "subject": "本年人均营收",
+            "denominator": "不适用",
+            "time_origin": "本年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "42000",
+            "right": "410",
+            "reported": "102",
+            "meaning": "本年营收4.2亿元除以410人，约102.4万元/人；若上年用3.33亿元÷320≈104万元/人"
+          }
+        ]
+      },
+      {
+        "quote": "接下来用四页，把“不容易”和“脱胎换骨”分别拆到可核对的数字上。",
+        "location": "页面底部右侧预告文字",
+        "statement": "预告后续结构，表明本页为总览页，后续将展开分解叙事与数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：公司全年经营数据与老板年会致辞；标注“测算”者为派生指标，如上年营收 ≈ 3.33 亿元（4.2 ÷ 1.26）、净增 90 人（410 − 320）。",
+        "location": "页面最底部脚注",
+        "statement": "明确标注数据来源与测算方法，增强可信度，上年营收3.33亿元的计算正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3.33",
+            "unit": "亿元",
+            "subject": "上年营收",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "4.2",
+            "right": "1.26",
+            "reported": "3.33",
+            "meaning": "由本年营收4.2亿和增长率26%反推上年营收，4.2÷1.26=3.333...亿元"
+          }
+        ]
+      },
+      {
+        "quote": "五个数据卡片横向等距排列，各卡片内数字突出放大，红色强调关键数值",
+        "location": "页面中部整体布局",
+        "statement": "视觉层级清晰，核心数据可快速定位，一屏呈现五项指标，信息密度较高但结构规整",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页同时呈现'不容易'的叙事元素（行业寒冬、现金紧张、咬牙坚守）与'脱胎换骨'的成果数据",
+        "location": "整页内容组织",
+        "statement": "叙事与数据在同一页交织，情怀落到具体数字，未形成互不关联的'两张皮'",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "别弄成两张皮，数据得能接得上老板讲的话"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "情怀部分要能落到具体数字上，做到讲述和数据互相支撑"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 3868,
+    "total_tokens": 6698,
+    "completion_tokens": 2830,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 136.233,
+  "attempts": 2
+}

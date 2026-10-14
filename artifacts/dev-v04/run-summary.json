@@ -1,0 +1,10 @@
+{
+  "02": {
+    "status": "approved",
+    "items": 17
+  },
+  "01": {
+    "status": "quality_failed",
+    "items": 0
+  }
+}

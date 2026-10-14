@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      6
+    ],
+    "evidence": "第2页关键发现04明确写道：\"3号线单耗最优但空载最高——单位能耗0.48 kWh/件四线最优，空载能耗12 kWh/h为四线之最，待机管理有改进空间\"，完整呈现了\"单位能耗不高但空载偏高\"的反差与12kWh/h数据。第6页标题及正文进一步聚焦3号线空载问题：\"3号线待机每小时仍跑12 kWh\"，并归因\"停机流程不规范\"，提出\"规范停机与待机标准作业流程\"等零投入管理改进方向。空载损失仅按小时费率9元/kWh（0.75元/kWh×12kWh）展示，未引入月待机小时数等未给定参数，无需额外假设标注。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 19524,
+    "total_tokens": 19704,
+    "completion_tokens": 180,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.235,
+  "attempts": 1
+}

@@ -1,0 +1,111 @@
+{
+  "parsed": {
+    "page": 12,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "下一步：三条线的三个动作",
+        "location": "页面上方标题区域",
+        "statement": "页面标题明确标识为下一步计划内容，属于规划性表述而非已完成事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "含技术路线图与下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "计划一 · 传感主线 / 良率工艺固化 / 工艺窗口固化与产线交接 / 产能扩展支撑规模交付",
+        "location": "页面左侧第一栏",
+        "statement": "计划一围绕传感器量产良率工艺固化展开，提及产线交接与产能扩展，但未出现具体数值78%或92%，本页为计划模块不强制要求重复历史数值",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "计划二 · 显示主线 / 验证体系标准化 / 弯曲疲劳协议标准化 / 向应用评估推进",
+        "location": "页面中间第二栏",
+        "statement": "计划二围绕显示主线验证体系标准化，提及弯曲疲劳协议，但未出现10万次无衰减的具体数值，本页为计划模块不强制要求重复历史数值",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "计划三 · 医疗主线 / 临床推进与迭代 / 临床试验持续推进 / 临床反馈驱动器件迭代",
+        "location": "页面右侧第三栏",
+        "statement": "计划三明确提及医疗主线、临床试验持续推进，与prompt中植入式电子皮肤已进入临床试验阶段的事实方向一致，但未明确重复三甲医院合作方信息",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "情景内容：三项计划为团队规划性表述，衔接既有成果",
+        "location": "页面底部左侧说明文字",
+        "location_2": "[59.39, 463.35, 419.31, 478.35]",
+        "statement": "页面明确标注三项计划为规划性表述，与既有成果区分，有助于区分事实与推测",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "三个合作切口：工艺 · 验证方法 · 临床转化",
+        "location": "页面中下部横幅区域",
+        "statement": "该横幅文字在视觉呈现中，'三个合作切口：'与'工艺'之间存在bounding box极小交集（fraction_of_smaller_bbox=0.0002），但放大图显示实际字形无遮挡，'工艺'二字完整可读，属于相邻排版而非真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "12 / 13",
+        "location": "页面右下角",
+        "statement": "当前为第12页，共13页，说明存在下一页，本页作为计划模块页面存在",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "页",
+            "subject": "当前页码",
+            "denominator": "13",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 7377,
+    "total_tokens": 8048,
+    "completion_tokens": 671,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 31.419,
+  "attempts": 1
+}

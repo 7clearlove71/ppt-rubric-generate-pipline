@@ -1,0 +1,282 @@
+{
+  "complete": false,
+  "pages": [
+    {
+      "page": 1,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 2,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 3,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 4,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 5,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 6,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 7,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 8,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 9,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 10,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 11,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 12,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 13,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    }
+  ],
+  "ledger": [
+    {
+      "id": "p2_overlap_83a18fd292",
+      "page": 2,
+      "quote": "Slide 2 local enlarged view p2_overlap_83a18fd292; text spans ['p2_t37', 'p2_t38']: ['标', '＜']. Original PDF rectangle [57.41999816894531, 429.0899963378906, 86.91999816894531, 460.3999938964844]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [57.41999816894531, 429.0899963378906, 86.91999816894531, 460.3999938964844]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p9_overlap_16c01a529f",
+      "page": 9,
+      "quote": "Slide 9 local enlarged view p9_overlap_16c01a529f; text spans ['p9_t47', 'p9_t53']: [' 件', '64.1%']. Original PDF rectangle [359.3399963378906, 259.6499938964844, 409.29998779296875, 291.2799987792969]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [359.3399963378906, 259.6499938964844, 409.29998779296875, 291.2799987792969]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p9_overlap_9c7e2c5450",
+      "page": 9,
+      "quote": "Slide 9 local enlarged view p9_overlap_9c7e2c5450; text spans ['p9_t46', 'p9_t53']: ['50', '64.1%']. Original PDF rectangle [359.3399963378906, 259.6499938964844, 409.29998779296875, 292.239990234375]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [359.3399963378906, 259.6499938964844, 409.29998779296875, 292.239990234375]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p13_overlap_a385bcea2c",
+      "page": 13,
+      "quote": "Slide 13 local enlarged view p13_overlap_a385bcea2c; text spans ['p13_t50', 'p13_t51']: ['入市级文件，明确付费节点与比例。', '以上请示事项，请予审议。']. Original PDF rectangle [510.42999267578125, 429.69000244140625, 768.5399780273438, 464.9100036621094]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [510.42999267578125, 429.69000244140625, 768.5399780273438, 464.9100036621094]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p12_overlap_3e25b8667d",
+      "page": 12,
+      "quote": "Slide 12 local enlarged view p12_overlap_3e25b8667d; text spans ['p12_t32', 'p12_t33']: ['缺口纳入年度预算调整方案', '建立管线单位出资联席会议制度，签订']. Original PDF rectangle [207.42999267578125, 198.69000244140625, 451.95001220703125, 235.6999969482422]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [207.42999267578125, 198.69000244140625, 451.95001220703125, 235.6999969482422]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p12_overlap_0d6ab83c73",
+      "page": 12,
+      "quote": "Slide 12 local enlarged view p12_overlap_0d6ab83c73; text spans ['p12_t41', 'p12_t42']: ['待审计资金实行竣工结算限时办结', '加装电梯与停车泊位项目单独建档、单独']. Original PDF rectangle [207.42999267578125, 302.19000244140625, 465.42999267578125, 339.19000244140625]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [207.42999267578125, 302.19000244140625, 465.42999267578125, 339.19000244140625]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p7_overlap_8265dfe85f",
+      "page": 7,
+      "quote": "Slide 7 local enlarged view p7_overlap_8265dfe85f; text spans ['p7_t59', 'p7_t61']: ['15', '无效问卷']. Original PDF rectangle [669.4500122070312, 312.32000732421875, 739.219970703125, 349.3900146484375]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [669.4500122070312, 312.32000732421875, 739.219970703125, 349.3900146484375]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p7_overlap_8c4bbc3627",
+      "page": 7,
+      "quote": "Slide 7 local enlarged view p7_overlap_8c4bbc3627; text spans ['p7_t60', 'p7_t61']: [' 日', '无效问卷']. Original PDF rectangle [669.4500122070312, 312.8599853515625, 739.219970703125, 349.3900146484375]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [669.4500122070312, 312.8599853515625, 739.219970703125, 349.3900146484375]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_07dfe1a583",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_07dfe1a583; text spans ['p4_t26', 'p4_t27']: ['盖', '加装电梯']. Original PDF rectangle [141.38999938964844, 221.35000610351562, 217.3699951171875, 261.3299865722656]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [141.38999938964844, 221.35000610351562, 217.3699951171875, 261.3299865722656]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p2_overlap_0c5a53b7fc",
+      "page": 2,
+      "quote": "Slide 2 local enlarged view p2_overlap_0c5a53b7fc; text spans ['p2_t14', 'p2_t16']: ['8', '数据截至']. Original PDF rectangle [57.41999816894531, 234.99000549316406, 121.45999908447266, 275.45001220703125]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [57.41999816894531, 234.99000549316406, 121.45999908447266, 275.45001220703125]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p1_overlap_97e8cb8bff",
+      "page": 1,
+      "quote": "Slide 1 local enlarged view p1_overlap_97e8cb8bff; text spans ['p1_t19', 'p1_t20']: ['90.0%', '口径：实际到位资金 ']. Original PDF rectangle [341.7139892578125, 334.78399658203125, 475.135986328125, 410.21600341796875]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [341.7139892578125, 334.78399658203125, 475.135986328125, 410.21600341796875]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p1_overlap_76fb196e8f",
+      "page": 1,
+      "quote": "Slide 1 local enlarged view p1_overlap_76fb196e8f; text spans ['p1_t14', 'p1_t15']: ['92.6%', '口径：竣工验收小区数 ']. Original PDF rectangle [35.7140007019043, 334.78399658203125, 181.11599731445312, 410.21600341796875]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [35.7140007019043, 334.78399658203125, 181.11599731445312, 410.21600341796875]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    }
+  ],
+  "visual_inspections": [
+    {
+      "id": "p2_overlap_83a18fd292",
+      "page": 2,
+      "rect": [
+        57.41999816894531,
+        429.0899963378906,
+        86.91999816894531,
+        460.3999938964844
+      ],
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/941ac8d12033019f933c035910849ddd33be26490889512bfcade365bfb697d7/visual-focus-v1/2fb2d9ce275063ad453984fdfcc1cd9e9f11e46793ee6d6dabe0515ebb27dd49.png",
+      "status": "unavailable",
+      "error_type": "ProviderError"
+    },
+    {
+      "id": "p9_overlap_16c01a529f",
+      "page": 9,
+      "rect": [
+        359.3399963378906,
+        259.6499938964844,
+        409.29998779296875,
+        291.2799987792969
+      ],
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/941ac8d12033019f933c035910849ddd33be26490889512bfcade365bfb697d7/visual-focus-v1/1200a77f57a45d6c07a9d06813ea7be04e939312f8d4251a4ecdeab34fbd39c9.png",
+      "status": "unavailable",
+      "error_type": "ProviderError"
+    }
+  ],
+  "page_visual_claims_policy": "diagnostic_only_for_visual_criteria"
+}

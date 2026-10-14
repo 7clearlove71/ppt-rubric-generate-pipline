@@ -1,6 +1,8 @@
 # PPT Rubric Pipeline
 
-**首次运行：先看 [安装与快速开始](docs/quickstart.md)**。公开仓库包含源码、测试、全部研究文档和离线示例；原始评测数据及实验日志未公开，历史 `data/`、`artifacts/` 路径是本地记录，不随 clone 提供。详见 [发布范围](docs/publication-scope.md)。
+**首次运行：先看 [安装与快速开始](docs/quickstart.md)**。本仓库现包含源码、测试、研究文档、原始评测数据和历史实验记录。新机接续请运行 [迁移检查](docs/new-machine.md)，并单独配置运行时及凭据。详见 [发布范围](docs/publication-scope.md)。
+
+迁移原开发环境请看 [新机接续与本机材料盘点](docs/new-machine.md)，包含离线路径迁移工具和历史产物边界。
 
 首次了解本项目，先看 **[方案概览：调用流程、完整评审 prompt 与真实用例](docs/pipeline-overview.md)**，了解每次模型调用的输入输出、内容与视觉的处理批次，以及评分标准的生成和计分方式。
 

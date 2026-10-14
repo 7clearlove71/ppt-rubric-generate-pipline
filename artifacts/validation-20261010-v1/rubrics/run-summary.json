@@ -1,0 +1,30 @@
+{
+  "02": {
+    "status": "quality_failed",
+    "items": 0
+  },
+  "01": {
+    "status": "approved",
+    "items": 15
+  },
+  "03": {
+    "status": "approved",
+    "items": 19
+  },
+  "05": {
+    "status": "quality_failed",
+    "items": 0
+  },
+  "06": {
+    "status": "approved",
+    "items": 14
+  },
+  "09": {
+    "status": "approved",
+    "items": 14
+  },
+  "10": {
+    "status": "approved",
+    "items": 19
+  }
+}

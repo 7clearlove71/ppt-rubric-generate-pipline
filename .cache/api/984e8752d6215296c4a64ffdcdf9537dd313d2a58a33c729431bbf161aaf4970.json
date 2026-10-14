@@ -1,0 +1,196 @@
+{
+  "parsed": {
+    "page": 6,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "弯曲 100,000 次，性能零衰减",
+        "location": "页面顶部标题区域",
+        "statement": "页面主标题明确包含关键数值100,000次及'性能零衰减'结论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "柔性OLED器件弯曲10万次无衰减"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "100000",
+            "unit": "次",
+            "subject": "弯曲次数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "100,000",
+        "location": "页面左侧中部大字号数字",
+        "statement": "页面核心数据展示，与标题一致，重复强调弯曲次数",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "弯曲10万次"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "100000",
+            "unit": "次",
+            "subject": "弯曲循环次数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "次弯曲循环",
+        "location": "100,000数字下方",
+        "statement": "单位说明，确认100,000为弯曲循环次数",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "性能零衰减",
+        "location": "页面左侧下部，橙色文字",
+        "statement": "明确表述性能无衰减结论，与prompt中'无衰减'一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "无衰减"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "关键性能参数在循环前后无衰减",
+        "location": "页面右侧'验证判据'模块",
+        "statement": "验证标准说明，再次确认'无衰减'结论，但表述为'循环前后无衰减'而非直接引用'弯曲10万次无衰减'",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "弯曲10万次无衰减"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "注：团队可靠性测试结论（柔性 OLED 器件）",
+        "location": "页面底部左侧注释",
+        "statement": "明确标注该数据为柔性OLED器件的可靠性测试结论，与prompt中'柔性OLED器件'完全对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "柔性OLED器件"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "可靠性验证 · 反复弯曲",
+        "location": "页面左侧上部，100,000数字上方",
+        "statement": "模块主题说明，表明本页内容为可靠性验证中的反复弯曲测试",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "工程意义 折叠与贴合形态下的长寿命可用性得到验证",
+        "location": "页面右侧下部",
+        "statement": "对测试结果的工程应用解读，属于合理推论，未改变原始事实",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "柔性电子团队 · 年会特邀报告",
+        "location": "页面底部左侧",
+        "statement": "页脚信息，确认报告主体和场景",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年会特邀报告"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "06 / 13",
+        "location": "页面底部右侧",
+        "statement": "页码显示为第6页，共13页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "6",
+            "unit": "页",
+            "subject": "当前页码",
+            "denominator": "13",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "验证判据",
+        "location": "页面右侧上部，带绿色对勾图标",
+        "statement": "结构化信息模块标题，视觉层级清晰",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "工程意义",
+        "location": "页面右侧中部，带橙色上升箭头图标",
+        "statement": "结构化信息模块标题，与验证判据形成并列结构",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6519,
+    "total_tokens": 7817,
+    "completion_tokens": 1298,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 61.215,
+  "attempts": 1
+}

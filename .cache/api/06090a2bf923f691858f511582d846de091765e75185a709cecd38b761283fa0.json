@@ -1,0 +1,725 @@
+{
+  "parsed": {
+    "page": 6,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "现金只够发 2 个月工资的那 60 天，我们没有裁员、没有砍研发、没有一个人退缩",
+        "location": "页面顶部主标题区域",
+        "statement": "页面标题为完整陈述句，直接呈现老板讲话核心场景与三个关键行动，属于结论先行的表达",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "这一年我们走得不容易，年初行业寒冬，咬牙没有裁员反而加大了研发投入，最难那个月账上现金只够发两个月工资，但团队没有一个人退缩"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2",
+            "unit": "个月",
+            "subject": "现金可发放时长",
+            "denominator": "不适用",
+            "time_origin": "最难那个月"
+          },
+          {
+            "value": "60",
+            "unit": "天",
+            "subject": "现金跑道最短时点",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "「最难那个月账上现金只够发两个月工资，但团队没有一个人退缩。」——老板年会致辞原话",
+        "location": "标题下方灰色引用条",
+        "statement": "直接引用老板原话并标注来源，建立叙事与数据的对应锚点",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "最难那个月账上现金只够发两个月工资，但团队没有一个人退缩"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "现金跑道最短时点：2 个月 ≈ 60 天（老板致辞原话，不换算为具体金额）",
+        "location": "引用条下方左侧",
+        "statement": "将老板讲话中的「两个月工资」转化为可视化时间轴的60天刻度，明确标注不换算金额，避免虚构数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "最难那个月账上现金只够发两个月工资"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2",
+            "unit": "个月",
+            "subject": "现金跑道",
+            "denominator": "不适用",
+            "time_origin": "最难那个月"
+          },
+          {
+            "value": "60",
+            "unit": "天",
+            "subject": "现金跑道",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "2",
+            "right": "30",
+            "reported": "60",
+            "left_unit": "个月",
+            "right_unit": "天/月",
+            "reported_unit": "天",
+            "left_quote": "2 个月",
+            "right_quote": "未说明30天/月",
+            "reported_quote": "60 天",
+            "relation_quote": "≈",
+            "meaning": "将月份换算为天数"
+          }
+        ]
+      },
+      {
+        "quote": "第 1 个月工资 · 0-30 天 / 第 2 个月工资 · 31-60 天",
+        "location": "页面上部时间轴条形图",
+        "statement": "视觉化呈现60天现金跑道，分为两个阶段，红色标注第二阶段为「跑道最短时点」",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0-30",
+            "unit": "天",
+            "subject": "第1个月工资覆盖期",
+            "denominator": "不适用",
+            "time_origin": "0天"
+          },
+          {
+            "value": "31-60",
+            "unit": "天",
+            "subject": "第2个月工资覆盖期",
+            "denominator": "不适用",
+            "time_origin": "0天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "没有裁员 / 0 人 · 全年裁员",
+        "location": "左栏核心数据区",
+        "statement": "以0人作为「没有裁员」的量化表达，直接对应老板「咬牙没有裁员」",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "咬牙没有裁员"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0",
+            "unit": "人",
+            "subject": "全年裁员人数",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "跑道只剩 2 个月时仍保留全部岗位：员工 320 → 410 人，净增 90 人、+28.1%（测算）",
+        "location": "左栏说明文字",
+        "statement": "给出员工人数变化及净增人数、增长率，标注「测算」",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "320",
+            "unit": "人",
+            "subject": "期初员工数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "期末员工数",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          },
+          {
+            "value": "90",
+            "unit": "人",
+            "subject": "净增员工数",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "410",
+            "right": "320",
+            "reported": "90",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "人",
+            "left_quote": "410",
+            "right_quote": "320",
+            "reported_quote": "90",
+            "relation_quote": "净增",
+            "meaning": "期末减期初得净增人数"
+          },
+          {
+            "operation": "growth_percent",
+            "left": "410",
+            "right": "320",
+            "reported": "28.1",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "%",
+            "left_quote": "410",
+            "right_quote": "320",
+            "reported_quote": "+28.1%",
+            "relation_quote": "测算",
+            "meaning": "员工增长率"
+          }
+        ]
+      },
+      {
+        "quote": "老板原话：「咬牙没有裁员」",
+        "location": "左栏底部",
+        "statement": "再次引用老板原话，强化叙事与数据的对应关系",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "咬牙没有裁员"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "没有砍研发 / 14% 研发投入占比",
+        "location": "中栏核心数据区",
+        "statement": "以14%作为研发投入占比，对应老板「加大了研发投入」",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "14",
+            "unit": "%",
+            "subject": "研发投入占比",
+            "denominator": "全年营收",
+            "time_origin": "年末/全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "占比 9% → 14%、+5pct（测算）；投入额 ≈3,000 万 → 5,880 万元、+96%（测算）",
+        "location": "中栏说明文字",
+        "statement": "给出研发投入占比变化及百分点提升，同时推算了投入额变化，均标注「测算」",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "9",
+            "unit": "%",
+            "subject": "期初研发投入占比",
+            "denominator": "全年营收",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "14",
+            "unit": "%",
+            "subject": "期末研发投入占比",
+            "denominator": "全年营收",
+            "time_origin": "年末"
+          },
+          {
+            "value": "5",
+            "unit": "pct",
+            "subject": "占比提升",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "3000",
+            "unit": "万元",
+            "subject": "期初研发投入额",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "5880",
+            "unit": "万元",
+            "subject": "期末研发投入额",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "14",
+            "right": "9",
+            "reported": "5",
+            "left_unit": "%",
+            "right_unit": "%",
+            "reported_unit": "pct",
+            "left_quote": "14%",
+            "right_quote": "9%",
+            "reported_quote": "+5pct",
+            "relation_quote": "测算",
+            "meaning": "占比百分点提升"
+          },
+          {
+            "operation": "multiply",
+            "left": "4.2",
+            "right": "9",
+            "reported": "0.378",
+            "left_unit": "亿元",
+            "right_unit": "%",
+            "reported_unit": "亿元",
+            "left_quote": "全年营收4.2亿",
+            "right_quote": "9%",
+            "reported_quote": "≈3,000 万",
+            "relation_quote": "测算",
+            "meaning": "推算期初研发投入额（但作品展示为≈3,000万，与精确计算3780万有差异）"
+          },
+          {
+            "operation": "multiply",
+            "left": "4.2",
+            "right": "14",
+            "reported": "0.588",
+            "left_unit": "亿元",
+            "right_unit": "%",
+            "reported_unit": "亿元",
+            "left_quote": "全年营收4.2亿",
+            "right_quote": "14%",
+            "reported_quote": "5,880 万元",
+            "relation_quote": "测算",
+            "meaning": "推算期末研发投入额"
+          }
+        ]
+      },
+      {
+        "quote": "老板原话：「反而加大了研发投入」",
+        "location": "中栏底部",
+        "statement": "引用老板原话，建立数据与叙事的对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "反而加大了研发投入"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "没有一个人退缩 / 410 人 · 团队规模",
+        "location": "右栏核心数据区",
+        "statement": "以410人团队规模作为「没有一个人退缩」的量化支撑，人数增长本身暗示无人离开",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "团队没有一个人退缩"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "团队规模",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "320 → 410 人，队伍没有散；人均营收 ≈104 万 → ≈102 万元/人（测算，基本持平）",
+        "location": "右栏说明文字",
+        "statement": "给出人数变化及人均营收推算，标注「测算」及「基本持平」",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "320",
+            "unit": "人",
+            "subject": "期初员工数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "期末员工数",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          },
+          {
+            "value": "104",
+            "unit": "万元/人",
+            "subject": "期初人均营收",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "102",
+            "unit": "万元/人",
+            "subject": "期末人均营收",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "4.2",
+            "right": "320",
+            "reported": "104",
+            "left_unit": "亿元",
+            "right_unit": "人",
+            "reported_unit": "万元/人",
+            "left_quote": "全年营收4.2亿",
+            "right_quote": "320",
+            "reported_quote": "≈104 万",
+            "relation_quote": "测算",
+            "meaning": "期初人均营收推算（实际为131.25万，作品展示为104万，存在显著差异）"
+          },
+          {
+            "operation": "divide",
+            "left": "4.2",
+            "right": "410",
+            "reported": "102",
+            "left_unit": "亿元",
+            "right_unit": "人",
+            "reported_unit": "万元/人",
+            "left_quote": "全年营收4.2亿",
+            "right_quote": "410",
+            "reported_quote": "≈102 万元/ 人",
+            "relation_quote": "测算",
+            "meaning": "期末人均营收推算（实际为102.44万，作品展示为102万，基本合理）"
+          }
+        ]
+      },
+      {
+        "quote": "老板原话：「团队没有一个人退缩」",
+        "location": "右栏底部",
+        "statement": "第三次引用老板原话，完成三个「没有」的叙事闭环",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "团队没有一个人退缩"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "熬过这 60 天 / 坚守不是代价，而是结果的前置条件",
+        "location": "页面底部左侧红色区块",
+        "statement": "情怀收束句，将60天困境与后续成果建立逻辑关联",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "60",
+            "unit": "天",
+            "subject": "困境持续期",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "4.2 亿元 全年营收 / +26% 同比增长 / 18 项 新增专利 / 91% 客户续约率",
+        "location": "页面底部数据栏",
+        "statement": "集中呈现四项全年关键成果数据，作为「结果」的量化支撑",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "新增专利18项"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿元",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "26",
+            "unit": "%",
+            "subject": "营收同比增长",
+            "denominator": "不适用",
+            "time_origin": "同比"
+          },
+          {
+            "value": "18",
+            "unit": "项",
+            "subject": "新增专利",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "91",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：公司全年经营数据与老板年会致辞；现金跑道按老板致辞原话呈现为 2 个月 ≈ 60 天；标注「测算」者为派生指标。",
+        "location": "页面最底部",
+        "statement": "明确标注数据来源与测算说明，增强可信度",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t1与p6_t2包围框相交区域[16.87, 46.55, 76.93, 51.51]",
+        "location": "标题「人退缩」与上行文字交界处",
+        "statement": "放大图显示「没有一个人退缩」为正常换行排版，「人退缩」三字位于第二行起始，无字形笔画重叠，属于合理的行尾-行首衔接",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t18与p6_t19包围框相交区域[26.53, 259.15, 189.98, 261.37]",
+        "location": "左栏「员工 320 →」与下行「410 人」交界处",
+        "statement": "放大图显示为正常换行，上行末尾为箭头符号，下行起始为数字410，无笔画重叠",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t25与p6_t26包围框相交区域[261.27, 259.15, 438.13, 261.37]",
+        "location": "中栏「投入额」与下行「≈3,000 万」交界处",
+        "statement": "放大图显示为正常换行，上行末尾为「投入额」，下行起始为≈3,000万，无笔画重叠",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t32与p6_t33包围框相交区域[496.04, 259.15, 652.22, 261.37]",
+        "location": "右栏「人均营收 ≈104 万」与下行「→ ≈102 万元」交界处",
+        "statement": "放大图显示为正常换行，上行末尾为「万」，下行起始为箭头与数字，无笔画重叠",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t22与p6_t23包围框相交区域[261.27, 208.3, 315.88, 209.59]",
+        "location": "中栏标题「没有砍研发」与下方「14%」交界处",
+        "statement": "放大图显示「没有砍研发」标题与下方大号红色「14%」为正常上下层级排版，无笔画重叠，属于标题-数据的视觉层次设计",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t29与p6_t30包围框相交区域[496.04, 208.3, 542.28, 209.59]",
+        "location": "右栏标题「没有一个人退缩」与下方「410」交界处",
+        "statement": "放大图显示为正常标题-数据层级排版，无笔画重叠",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t15与p6_t16包围框相交区域[26.53, 208.3, 43.76, 209.59]",
+        "location": "左栏标题「没有裁员」与下方「0」交界处",
+        "statement": "放大图显示为正常标题-数据层级排版，无笔画重叠",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t3与p6_t4包围框相交区域[337.86, 101.68, 338.13, 114.74]",
+        "location": "引用条中引号与破折号交界处",
+        "statement": "放大图显示「。」与「——」为正常标点衔接，几乎无实际相交，属于极小缝隙",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t27与p6_t28、p6_t34与p6_t35、p6_t20与p6_t21包围框相交区域",
+        "location": "三栏底部「老板原话：」与红色引用句交界处",
+        "statement": "放大图均显示为正常同行内标签-引用排版，「老板原话：」与红色引号内容在同一行，无笔画重叠",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t7与p6_t8包围框相交区域[182.1, 130.01, 182.15, 144.5]",
+        "location": "「2 个月 ≈ 60 天」与括号说明交界处",
+        "statement": "放大图显示「天」与「（」为正常字间距，几乎无实际相交",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "人均营收 ≈104 万 → ≈102 万元/ 人",
+        "location": "右栏说明文字",
+        "statement": "作品展示期初人均营收为≈104万，但按源文4.2亿元÷320人=131.25万元/人，作品数值与源文数据存在显著偏差；若按4.2亿为全年营收且320人为年初人数，该推算本身假设全年平均人数为320，但作品标注「测算」却未展示计算过程",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "104",
+            "unit": "万元/人",
+            "subject": "期初人均营收（作品展示）",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "131.25",
+            "unit": "万元/人",
+            "subject": "期初人均营收（按源文推算）",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "4.2",
+            "right": "320",
+            "reported": "131.25",
+            "left_unit": "亿元",
+            "right_unit": "人",
+            "reported_unit": "万元/人",
+            "left_quote": "全年营收4.2亿",
+            "right_quote": "320",
+            "reported_quote": "未在作品中出现",
+            "relation_quote": "推算",
+            "meaning": "按源文数据直接计算期初人均营收"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 10944,
+    "total_tokens": 16257,
+    "completion_tokens": 5313,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 155.898,
+  "attempts": 1
+}

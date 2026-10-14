@@ -1,0 +1,12 @@
+{
+  "checked": [
+    "09/A/page-001",
+    "09/B/page-001"
+  ],
+  "chinese_glyphs_visible": true,
+  "observations": [
+    "09/A page 1 shows overlap between the gold revenue unit and green year-over-year text. Retain as candidate/rendered appearance evidence, not grounds for excluding the deck.",
+    "09/B page 1 Chinese text is visible; no missing-glyph pattern evident."
+  ],
+  "scope": "Representative-page check only, not a whole-deck approval. No verdicts overwritten."
+}

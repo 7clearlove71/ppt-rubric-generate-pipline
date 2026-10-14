@@ -1,0 +1,803 @@
+{
+  "page": 7,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "与行业测试口径对齐后，10 万次弯曲的\" 无衰减\" 是可比的",
+      "location": "页面顶部标题",
+      "statement": "本页核心主张：团队柔性OLED器件经10万次弯曲测试无衰减，并与行业测试口径对齐建立可比性。该表述与prompt给定事实『柔性OLED器件弯曲10万次无衰减』一致，方向与量级均正确。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "柔性OLED器件弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "本团队柔性 OLED 器件",
+      "location": "横向柱状图左侧标签，蓝色条",
+      "statement": "图表中明确标识『本团队柔性 OLED 器件』对应10万次数据，与标题及prompt给定事实形成对应。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "本团队柔性OLED器件弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "10 万次",
+      "location": "横向柱状图中蓝色条右侧数值标签",
+      "statement": "图表中本团队数据点明确标注为10万次，与prompt给定事实数值一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "本团队柔性OLED器件弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "伯恩 30μm UTG · R0.4mm",
+      "location": "横向柱状图最上方黑色条左侧标签",
+      "statement": "行业对标数据：伯恩30μm UTG产品，标注弯曲寿命200万次。此为外部厂商公开数据，非团队自有成果。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "200",
+          "unit": "万次",
+          "subject": "伯恩30μm UTG弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "华为 nova Flip S · SGS",
+      "location": "横向柱状图第二条黑色条左侧标签",
+      "statement": "行业对标数据：华为nova Flip S产品经SGS认证，标注弯曲寿命120万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "120",
+          "unit": "万次",
+          "subject": "华为nova Flip S弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "荣耀鲁班铰链 · SGS",
+      "location": "横向柱状图第三条黑色条左侧标签",
+      "statement": "行业对标数据：荣耀鲁班铰链经SGS认证，标注弯曲寿命50万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "50",
+          "unit": "万次",
+          "subject": "荣耀鲁班铰链弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "BOE 柔性 OLED 宣称值",
+      "location": "横向柱状图第四条黑色条左侧标签",
+      "statement": "行业对标数据：京东方柔性OLED宣称弯曲寿命50万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "50",
+          "unit": "万次",
+          "subject": "BOE柔性OLED宣称弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "折叠屏国标 · 常温内折",
+      "location": "横向柱状图第五条黑色条左侧标签",
+      "statement": "行业标准数据：折叠屏国标常温内折测试要求20万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "20",
+          "unit": "万次",
+          "subject": "折叠屏国标常温内折弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "普通 UTG 盖板折痕起点",
+      "location": "横向柱状图第六条黑色条左侧标签",
+      "statement": "行业数据：普通UTG盖板折痕起点约20万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "20",
+          "unit": "万次",
+          "subject": "普通UTG盖板折痕起点弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "BOE × 荣耀 Magic V 内屏",
+      "location": "横向柱状图第七条黑色条左侧标签",
+      "statement": "行业对标数据：BOE与荣耀Magic V内屏合作产品，标注弯曲寿命20万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "20",
+          "单位": "万次",
+          "subject": "BOE×荣耀Magic V内屏弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "BOE × 华硕 Zenbook Fold",
+      "location": "横向柱状图第八条黑色条左侧标签",
+      "statement": "行业对标数据：BOE与华硕Zenbook Fold合作产品，标注弯曲寿命10万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "BOE×华硕Zenbook Fold弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "折叠屏国标 · 高低温循环",
+      "location": "横向柱状图最下方黑色条左侧标签",
+      "statement": "行业标准数据：折叠屏国标高低温循环测试要求5万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "5",
+          "unit": "万次",
+          "subject": "折叠屏国标高低温循环弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "200 万次",
+      "location": "横向柱状图最上方黑色条右侧数值",
+      "statement": "伯恩30μm UTG产品弯曲寿命数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "200",
+          "unit": "万次",
+          "subject": "伯恩30μm UTG弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "120 万次",
+      "location": "横向柱状图第二条黑色条右侧数值",
+      "statement": "华为nova Flip S产品弯曲寿命数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "120",
+          "unit": "万次",
+          "subject": "华为nova Flip S弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "50 万次",
+      "location": "横向柱状图第三条黑色条右侧数值",
+      "statement": "荣耀鲁班铰链弯曲寿命数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "50",
+          "unit": "万次",
+          "subject": "荣耀鲁班铰链弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "50 万次",
+      "location": "横向柱状图第四条黑色条右侧数值",
+      "statement": "BOE柔性OLED宣称值弯曲寿命数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "50",
+          "unit": "万次",
+          "subject": "BOE柔性OLED宣称弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "20 万次",
+      "location": "横向柱状图第五条黑色条右侧数值",
+      "statement": "折叠屏国标常温内折测试数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "20",
+          "unit": "万次",
+          "subject": "折叠屏国标常温内折弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "20 万次",
+      "location": "横向柱状图第六条黑色条右侧数值",
+      "statement": "普通UTG盖板折痕起点数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "20",
+          "unit": "万次",
+          "subject": "普通UTG盖板折痕起点弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "20 万次",
+      "location": "横向柱状图第七条黑色条右侧数值",
+      "statement": "BOE×荣耀Magic V内屏弯曲寿命数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "20",
+          "unit": "万次",
+          "subject": "BOE×荣耀Magic V内屏弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "10 万次",
+      "location": "横向柱状图第八条黑色条右侧数值",
+      "statement": "BOE×华硕Zenbook Fold弯曲寿命数值，与本团队数据相同。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "BOE×华硕Zenbook Fold弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "5 万次",
+      "location": "横向柱状图最下方黑色条右侧数值",
+      "statement": "折叠屏国标高低温循环测试数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "5",
+          "unit": "万次",
+          "subject": "折叠屏国标高低温循环弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "循环次数（万次）",
+      "location": "图表X轴标签",
+      "statement": "横轴单位为万次，刻度从0到200。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "0,50,100,150,200",
+          "unit": "万次",
+          "subject": "横轴刻度值",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "单位：万次",
+      "location": "图表右上方",
+      "statement": "图表数据单位统一为万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "零基线横向柱状图；科技蓝为本团队自有数据，近黑为厂商、国标与学术公开口径。10 万次处于面板厂量产验证区间中位，低于 2025–2026 旗舰整机 50 万– 200 万次门槛。",
+      "location": "图表下方说明文字第一行",
+      "statement": "图表说明文字明确区分本团队数据（科技蓝）与外部数据（近黑），并定位本团队10万次处于面板厂量产验证区间中位，低于旗舰整机50万-200万次门槛。该表述为合理的技术定位分析。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "本团队柔性OLED器件弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "50-200",
+          "unit": "万次",
+          "subject": "2025-2026旗舰整机弯曲循环门槛",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "同一把尺子：进入比较框架的口径锚点",
+      "location": "页面右侧第一模块标题",
+      "statement": "右侧模块系统阐述行业测试标准与可比性框架，包括IEC标准、折叠屏国标等。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "循环弯折条款 · IEC 62715-6-1 §76.2 （弯曲/ 卷绕/ 扭转/ 拉伸）",
+      "location": "右侧第一模块第一条",
+      "statement": "引用IEC 62715-6-1:2018标准第76.2条款，涉及弯曲、卷绕、扭转、拉伸等测试方法。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "数据来源：IEC 62715-6-1:2018"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "模组耐久标准 · IEC 62715-6-23 区分静态与动态弯折并复测光电",
+      "location": "右侧第一模块第二条",
+      "statement": "引用IEC 62715-6-23标准，区分静态与动态弯折并复测光电性能。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "IEC 62715-6-23"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "折叠屏国标 · 常温 20±5℃、1 次/ 秒、20 万次，阻尼力衰减 ≤30%",
+      "location": "右侧第一模块第三条",
+      "statement": "折叠屏国标测试条件：常温20±5℃、速率1次/秒、20万次循环，阻尼力衰减阈值≤30%。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "20±5",
+          "unit": "℃",
+          "subject": "折叠屏国标常温测试温度",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "1",
+          "unit": "次/秒",
+          "subject": "折叠屏国标测试速率",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "20",
+          "unit": "万次",
+          "subject": "折叠屏国标弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "30",
+          "unit": "%",
+          "subject": "折叠屏国标阻尼力衰减阈值",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "高低温循环 · −20℃ 至 60℃ 温度冲击下完成 5 万次",
+      "location": "右侧第一模块第四条",
+      "statement": "高低温循环测试条件：温度范围-20℃至60℃，完成5万次循环。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "-20至60",
+          "unit": "℃",
+          "subject": "高低温循环温度范围",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "5",
+          "unit": "万次",
+          "subject": "高低温循环弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "可比性的隐藏变量：速率、夹具与盖板",
+      "location": "页面右侧第二模块标题",
+      "statement": "指出影响可比性的技术变量：速率、夹具与盖板。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "循环速率 · 常见 1–60 cycles/min ，高速设备 5–180 cycles/min",
+      "location": "右侧第二模块第一条",
+      "statement": "循环速率范围：常见1-60 cycles/min，高速设备5-180 cycles/min。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "1-60",
+          "unit": "cycles/min",
+          "subject": "常见循环速率",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "5-180",
+          "unit": "cycles/min",
+          "subject": "高速设备循环速率",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "夹具与中性层 · 弯矩 M 与惯性矩 I 决定同一半径下的应变",
+      "location": "右侧第二模块第二条",
+      "statement": "技术参数说明：弯矩M与惯性矩I决定同一半径下的应变分布。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "盖板路线 · 普通 UTG 约 20 万次见折痕，30μm UTG 达 200 万次",
+      "location": "右侧第二模块第三条",
+      "statement": "盖板技术路线对比：普通UTG约20万次出现折痕，30μm UTG可达200万次。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "20",
+          "unit": "万次",
+          "subject": "普通UTG见折痕弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "30",
+          "unit": "μm",
+          "subject": "UTG厚度",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "200",
+          "unit": "万次",
+          "subject": "30μm UTG弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "失效判据 · 室温 20 万次循环后可见叠层间物理剥离",
+      "location": "右侧第二模块第四条",
+      "statement": "失效判据说明：室温20万次循环后可见叠层间物理剥离。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "20",
+          "unit": "万次",
+          "subject": "室温循环后物理剥离判据弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "验证补强清单与衰减率披露范式",
+      "location": "页面右侧第三模块标题",
+      "statement": "提出验证补强清单与衰减率披露范式，属于方法论建议。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "量化阈值 · 亮度、色坐标、电阻需给出\"无衰减\"判定线",
+      "location": "右侧第三模块第一条",
+      "statement": "建议给出亮度、色坐标、电阻的\"无衰减\"量化判定阈值。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "组合老化 · 60℃/90%RH 、240 小时湿热偏压叠加弯折试验",
+      "location": "右侧第三模块第二条",
+      "statement": "建议组合老化测试条件：60℃/90%RH、240小时湿热偏压叠加弯折。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "60",
+          "unit": "℃",
+          "subject": "组合老化温度",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "90",
+          "unit": "%",
+          "subject": "组合老化相对湿度",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "240",
+          "unit": "小时",
+          "subject": "组合老化湿热偏压时间",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "衰减率披露 · MXene 柔性 OLED 60% 应变降 10.6% 、亮度保持 83%",
+      "location": "右侧第三模块第三条",
+      "statement": "学术参照数据：MXene柔性OLED在60%应变下降低10.6%，亮度保持83%。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "60",
+          "unit": "%",
+          "subject": "MXene柔性OLED应变",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "10.6",
+          "unit": "%",
+          "subject": "MXene柔性OLED应变降",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "83",
+          "unit": "%",
+          "subject": "MXene柔性OLED亮度保持率",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "学术参照 · 超 5000 次动态折叠与水洗后亮度保持 90% 以上",
+      "location": "右侧第三模块第四条",
+      "statement": "学术参照数据：超5000次动态折叠与水洗后亮度保持90%以上。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "5000",
+          "unit": "次",
+          "subject": "动态折叠与水洗后亮度保持循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "90",
+          "unit": "%",
+          "subject": "动态折叠与水洗后亮度保持率阈值",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "数据来源：IEC 62715-6-1:2018 、IEC 62715-6-23 ；磐石测控（折叠屏国标解读）；BOE 与 BOE 品质实验室、DoNews 、荣耀官网、京东商品页、搜狐、DisplayModule ；Drexel 、Lim 2025 可拉伸显示综述。本团队 10 万次弯曲无衰减为团队自有数据，外部数值仅用于建立可比口径。",
+      "location": "页面底部数据来源说明",
+      "statement": "明确声明本团队10万次弯曲无衰减为自有数据，外部数值仅用于建立可比口径。数据来源包括标准文献、行业媒体、学术综述等。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "本团队柔性OLED器件弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "m UTG ",
+      "location": "右侧第二模块第三条，μ与m之间",
+      "statement": "视觉观察：放大图显示『30μm UTG』中希腊字母μ与m UTG之间bbox有微小交集（fraction_of_smaller_bbox: 0.0086），但放大图可见实际字形未发生笔画遮挡，μ与m清晰可辨，为正常排版间距。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "盖板路线 · 普通 UTG 约 20 万次见折痕，30",
+      "location": "右侧第二模块第三条，μ左侧文字",
+      "statement": "视觉观察：该文字片段与μ的bbox有极微小交集（fraction_of_smaller_bbox: 0.0014），放大图显示『30』与『μ』之间为正常排版，无实际笔画遮挡。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

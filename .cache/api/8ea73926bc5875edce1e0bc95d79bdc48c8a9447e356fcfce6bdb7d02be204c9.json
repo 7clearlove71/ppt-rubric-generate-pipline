@@ -1,0 +1,78 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R03",
+        "R04",
+        "R07",
+        "R16"
+      ],
+      "Q02": [
+        "R08"
+      ],
+      "Q03": [
+        "R09"
+      ],
+      "Q04a": [
+        "R03",
+        "R17"
+      ],
+      "Q04b": [
+        "R03"
+      ],
+      "Q04c": [
+        "R12"
+      ],
+      "Q05": [
+        "R12"
+      ],
+      "Q06a": [
+        "R04"
+      ],
+      "Q06b": [
+        "R10"
+      ],
+      "Q06c": [
+        "R10"
+      ],
+      "Q06d": [
+        "R10"
+      ],
+      "Q07a": [
+        "R11"
+      ],
+      "Q07b": [
+        "R17"
+      ],
+      "Q08": [
+        "R15"
+      ],
+      "Q09": [
+        "R18",
+        "R19"
+      ],
+      "Q10": [
+        "R07"
+      ]
+    },
+    "summary": "rubric完整覆盖所有用户需求，各条目独立可判，无重复计分或无依据硬条件，通过审核。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 233,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 233
+    },
+    "prompt_tokens": 5552,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 5552
+    },
+    "total_tokens": 5785
+  },
+  "elapsed_seconds": 5.114,
+  "attempts": 1
+}

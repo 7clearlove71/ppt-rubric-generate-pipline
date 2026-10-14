@@ -1,0 +1,49 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "rubric覆盖全部8项需求，三项关键事实由独立原子条目负责且允许等价表述；路线图与计划模块、专家深度、20分钟体量均有对应条目；failure_modes归属单一、边界互斥，视觉三类缺陷与reasoning_validity定义符合协议；未新增固定页数/模板等无依据硬条件，未发现重复计分。",
+    "coverage": {
+      "Q01": [
+        "R06"
+      ],
+      "Q02": [
+        "R02"
+      ],
+      "Q03": [
+        "R03"
+      ],
+      "Q04": [
+        "R07"
+      ],
+      "Q05": [
+        "R11"
+      ],
+      "Q06": [
+        "R12"
+      ],
+      "Q07": [
+        "R04"
+      ],
+      "Q08": [
+        "R05"
+      ]
+    }
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 91,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 91
+    },
+    "prompt_tokens": 7931,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 7931
+    },
+    "total_tokens": 8022
+  },
+  "elapsed_seconds": 3.74,
+  "attempts": 1
+}

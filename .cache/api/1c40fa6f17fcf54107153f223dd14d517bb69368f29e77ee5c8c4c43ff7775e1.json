@@ -1,0 +1,35 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      4,
+      7
+    ],
+    "evidence": "Day2核心事实在PPT中多处呈现且准确无误。Slide 2（第2页）DAY 2卡片明确列出'访谈老人''祭祖三年一次''族谱存疑'，保留祭祖频率变化与族谱存疑两项核心事实。Slide 4（第4页）为Day2专页，左侧卡片完整呈现'祠堂清明祭祖/以前：每年一次/现在：三年一次'，前后频率对比准确；右侧卡片呈现'老人说：文革烧了一部分''现版本：凭记忆补写''待考：需多问几位老人'，访谈来源（老人说）、受损时期（文革）、补写方式（凭记忆补写）均与原文一致，未作改写。Slide 7（第7页）中间卡片列'记忆断层/祭祀频率下降/族谱重写/口述需核验'，再次确认Day2两项核心事实。无任何事实缺失或错误改写。",
+    "evidence_ids": [
+      "p2_e4",
+      "p4_e3",
+      "p4_e4",
+      "p4_e5",
+      "p7_e4"
+    ],
+    "resolutions": [],
+    "additional_observations": [],
+    "inspection_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35271,
+    "total_tokens": 35556,
+    "completion_tokens": 285,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 117.199,
+  "attempts": 1
+}

@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A与候选B均判定为yes，且均满足scope要求（1号线深挖模块内明确指向液压系统老化导致效率下降）。两者证据充分：A在第4页通过标题'根因排查确认：1号线液压系统老化导致效率下降'、'根因锁定：液压系统老化'及流程图完整呈现因果链；B在第3-4页通过'排查后主因锁定液压系统老化'、四步诊断链第④步'主因锁定为液压系统老化'、第4页标题'液压系统占1号线电耗45%...老化使其能耗高出正常水平约29%'及第7页监测指标等多处强化该归因。两者均明确指向液压系统老化，未指向无关原因，答案一致且无实质冲突。B额外提供量化占比（45%、29%）属于内容展开程度差异，不影响核心归因判定；A的'液压元件磨损'与B的'泵组磨损、容积效率下降'等均为老化机理的具体化展开，属合理等价表述，不触发cause_explanation_missing。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23439,
+    "total_tokens": 23686,
+    "completion_tokens": 247,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 117.589,
+  "attempts": 1
+}

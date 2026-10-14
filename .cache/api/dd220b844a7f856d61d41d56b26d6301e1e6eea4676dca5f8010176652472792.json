@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      4,
+      5
+    ],
+    "evidence": "PPT明确写明了带动农户规模与收益且数值准确：第5页图表显示首期（第一年）60户、第二年（满规模）120户，右侧标注人均月增收约1800元、按件计酬·多劳多得；第4页底部同样标注1800元/人·月为农户人均月增收（约）。两处均保留'约'字体现不确定性，未改写为精确承诺。户数节点、增收口径、归属对象均符合要求。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 17450,
+    "total_tokens": 17567,
+    "completion_tokens": 117,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.742,
+  "attempts": 1
+}

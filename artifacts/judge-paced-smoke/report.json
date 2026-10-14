@@ -1,0 +1,99 @@
+{
+  "cases": [
+    {
+      "case_id": "01",
+      "A": {
+        "status": "incomplete",
+        "score": null,
+        "score_lower": 22.5,
+        "score_upper": 100.0,
+        "unresolved_weight": 77.5,
+        "dimensions": {
+          "correctness": {
+            "earned": 0,
+            "possible": 25.0,
+            "unresolved": 25.0
+          },
+          "fulfillment": {
+            "earned": 22.5,
+            "possible": 30.0,
+            "unresolved": 7.5
+          },
+          "integrity": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          },
+          "narrative": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          },
+          "visual": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          }
+        }
+      },
+      "B": {
+        "status": "incomplete",
+        "score": null,
+        "score_lower": 22.5,
+        "score_upper": 100.0,
+        "unresolved_weight": 77.5,
+        "dimensions": {
+          "correctness": {
+            "earned": 0,
+            "possible": 25.0,
+            "unresolved": 25.0
+          },
+          "fulfillment": {
+            "earned": 22.5,
+            "possible": 30.0,
+            "unresolved": 7.5
+          },
+          "integrity": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          },
+          "narrative": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          },
+          "visual": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          }
+        }
+      },
+      "status": "incomplete"
+    }
+  ],
+  "status_counts": {
+    "incomplete": 1
+  },
+  "total_cases": 1,
+  "approved_fraction": 0.0,
+  "logical_cache_hits": 0,
+  "models": {
+    "kimi-k2.6": {
+      "http_attempts": 7,
+      "failed_attempts": 1,
+      "reported_prompt_tokens": 229958,
+      "reported_completion_tokens": 1024,
+      "reported_total_tokens": 230982,
+      "usage_missing_attempts": 1
+    }
+  },
+  "attempt_journal_available": true,
+  "usage_caveat": null,
+  "failed_or_incomplete_cases": [
+    "01"
+  ],
+  "human_agreement": null,
+  "acceptance": "Automated operational report only; no human alignment claim."
+}

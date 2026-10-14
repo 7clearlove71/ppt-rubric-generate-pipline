@@ -1,0 +1,97 @@
+[
+  {
+    "role": "judge",
+    "cache_key": "59033e37fae5ebab8d47a34e014ee84a0350acd17a7218306f8e6ab363e87add",
+    "cached": false,
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 26497,
+      "total_tokens": 26659,
+      "completion_tokens": 162,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.208,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "4086cef4d5a1fe0ffdc542a49448d578df18e50a580b31d9c1a9b14be7c87ee4",
+    "cached": false,
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 26513,
+      "total_tokens": 26765,
+      "completion_tokens": 252,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 12.04,
+    "attempts": 2
+  },
+  {
+    "role": "judge",
+    "cache_key": "400c12a6cc9bf7ad26c5731f2f5d6e332834d3ef12a1fa4ec823e26f2405c0de",
+    "cached": false,
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 26486,
+      "total_tokens": 26575,
+      "completion_tokens": 89,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 5.909,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "537722c38f66833ac3f4269d7ec3b9b746495def28aaf5057c350dc73c76d894",
+    "cached": false,
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 26506,
+      "total_tokens": 26710,
+      "completion_tokens": 204,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 7.531,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "ac956afade6cfc4b8f7b8a87572dc1632749932b2c5fdcc2290d75a85daffd35",
+    "cached": false,
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 26505,
+      "total_tokens": 26721,
+      "completion_tokens": 216,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.467,
+    "attempts": 1
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      3
+    ],
+    "evidence": "第3页「经营侧」明确写「电商渠道退单量较平时增加约15%」；同页右侧柱状图亦标注「电商退单量较平时增加15.0%」。该数值与用户素材二原文「电商渠道的退单量也比平时多了约15%」完全一致，未缺失或写错。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 18958,
+    "total_tokens": 19042,
+    "completion_tokens": 84,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.064,
+  "attempts": 1
+}

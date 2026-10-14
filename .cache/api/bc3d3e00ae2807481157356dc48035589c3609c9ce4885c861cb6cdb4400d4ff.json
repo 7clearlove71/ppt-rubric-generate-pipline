@@ -1,0 +1,49 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 1,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              1
+            ],
+            "evidence": "四块正文末尾的黑色文字行与红色小字批注发生实际叠印：01区“76.5%，低于基础类与完善类。”与红色“〔对应第一部分：完工率 92.6%，在建 5 个〕”笔画相交（局部放大图可见黑红字形互相穿插）；02区红色“〔对应第二部分：到位率 68.6% / 54.3%、支付率 78.6%〕”叠压在“于中央与省级资金 100.0% 的到位水平。”上，“中央”二字被红线穿过；03区“91.2%。”与红色“〔对应第三部分：长效维护机制满意率 82.7%〕”叠印；04区“93.3%。”与红色“〔对应第三部分：需求匹配满意率 86.1%〕”叠印，导致正文数字与批注均需猜读。其余标题、导语、编号与正文主体清晰可读。",
+            "defect": {
+              "key": "doc_d681f185df11d80b7db1c42f/page/1/red-note-overlaps-body-text",
+              "description": "01–04四个条目正文末行与红色来源批注小字上下叠印、笔画实际相交（01区“76.5%…”行、02区“于中央与省级资金…”行、03区“91.2%。”行、04区“93.3%。”行），黑红文字互相遮挡，造成信息损失需猜读。"
+            }
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "标题“四、存在问题”+导语+01/02/03/04双列四象限编号分区，标题与主体层级、并列关系及阅读顺序明确，无错误对应关系；遮挡叠印问题仅在V_READ计，不在本条重复处罚。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 1605,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1163,
+      "text_tokens": 442
+    },
+    "prompt_tokens": 3999,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3134,
+      "text_tokens": 865
+    },
+    "total_tokens": 5604
+  },
+  "elapsed_seconds": 32.633,
+  "attempts": 1
+}

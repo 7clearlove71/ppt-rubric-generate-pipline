@@ -1,0 +1,5 @@
+{
+  "status": "error",
+  "error_type": "ProviderError",
+  "message": "Call failed after 1 attempts (ValueError)"
+}

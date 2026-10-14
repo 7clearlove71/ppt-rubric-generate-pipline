@@ -1,0 +1,65 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R01",
+        "R02",
+        "R15"
+      ],
+      "Q02": [
+        "R03",
+        "R16"
+      ],
+      "Q03": [
+        "R03"
+      ],
+      "Q04": [
+        "R08",
+        "R09",
+        "R11",
+        "R12"
+      ],
+      "Q05": [
+        "R05",
+        "R16"
+      ],
+      "Q06": [
+        "R01",
+        "R15",
+        "R17"
+      ],
+      "Q07": [
+        "R07",
+        "R09",
+        "R10",
+        "R17"
+      ],
+      "Q08": [
+        "R08",
+        "R09"
+      ],
+      "Q09": [
+        "R06"
+      ]
+    },
+    "summary": "rubric整体覆盖了用户明确要求的结构、数据、测算与呈现要点，未发现需要判error的硬性缺陷；各条目基本可独立评判，且允许合理假设、等价表述和不同有效实现。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 207,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 207
+    },
+    "prompt_tokens": 5578,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072,
+      "text_tokens": 5578
+    },
+    "total_tokens": 5785
+  },
+  "elapsed_seconds": 6.639,
+  "attempts": 1
+}

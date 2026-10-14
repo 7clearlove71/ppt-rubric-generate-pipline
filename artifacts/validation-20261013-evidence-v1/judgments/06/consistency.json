@@ -1,0 +1,397 @@
+{
+  "R01": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": []
+      }
+    }
+  ],
+  "R02": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          {
+            "content": "两个候选作品均判定为yes，结论一致。A作品采用13页展开，每个纲目分配2页（居民满意度3页），通过目录页（P02）预先展示五个纲目及对应页码，并在各板块内部使用数据溯源标注（如P10标注'P05、P06数据直接导出'）强化板块间呼应；B作品采用7页紧凑结构，每个纲目1页，通过红色标注〔对应第X部分〕实现问题溯源。两者在内容-标题对应关系上均符合criterion要求：各板块主体内容紧扣标题，仅存在必要的衔接性提及，未出现主体内容错位或混装。差异主要体现在篇幅分配和呼应方式上，不构成标准冲突。",
+            "type": "comparison_detail"
+          }
+        ]
+      }
+    }
+  ],
+  "R03": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": []
+      }
+    }
+  ],
+  "R04": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          "候选A与B均判定为yes，且各自证据链完整。两作品核心数据指标在全篇内均保持口径统一、数值一致，未出现同一指标前后矛盾或百分比与笼统说法混用的情况。",
+          "候选A采用13页结构，数据截至2026年8月31日，核心指标包括完工率92.6%、资金到位率90.0%、支出执行率86.0%、居民满意度93.8%；候选B采用7页结构，核心指标包括完工率92.6%、资金到位率85.3%、支付率78.6%、居民总体满意率91.2%。两作品数据体系独立自洽，不存在跨作品比较下的标准漂移问题。",
+          "两作品均存在'情景数据'标注，属于对数据性质的统一说明，不构成口径矛盾。候选B的下一步计划页（p7）目标值明确标注'节点为2027年6月底前'，属于因时间进展导致的合理变化且已标注时间节点，符合criterion排除条款。",
+          "候选B的p6存在红色标注与黑色正文的视觉叠印现象，属于视觉呈现问题，但不涉及数据口径或数值本身的矛盾，不在本条criterion（数据类表述口径统一）的审查范围内。"
+        ]
+      }
+    }
+  ],
+  "R05": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          "两个候选均判定为yes，且均满足标准核心要求：存在问题板块包含具体可识别的问题点（非空泛表述），且至少有两个问题与前文资金使用情况或居民满意度板块形成可辨识的呼应关系。A候选采用5个问题分2页展开，每个问题标注数据溯源页码与具体比率；B候选采用4个问题单页展开，以红色标注明确对应前文板块。两者展开顺序、篇幅、措辞不同，但均不构成标准漂移。A候选问题一、二与资金板块呼应，问题三、四、五与满意度/任务板块呼应；B候选问题一与任务完成呼应、问题二与资金到位呼应、问题三与长效维护满意度呼应、问题四与需求匹配满意度呼应。两者均满足'至少两个呼应关系'的门槛条件，答案一致，无需改判。"
+        ]
+      }
+    }
+  ],
+  "R06": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          "两个候选作品均判定为yes，但证据呈现方式不同：A作品提供了极为详尽的逐页计算核查（含大量evidence_ids），B作品提供了关键计算节点的验证。两者核心结论一致——所有计算逻辑正确、口径统一、无算术错误。",
+          "A作品在verdict中提及'P3标注93.0%'与计算值92.647%→92.6%存在微小差异，但evidence中p3_e6明确记录为92.6%，且verdict整体判定为计算正确，该细节不影响最终yes结论。",
+          "B作品存在少量视觉叠印问题（p6_e16至p6_e20），但属于视觉呈现层面，不涉及本条criterion管辖的计算逻辑、比率推导或比较错误范畴。",
+          "两作品在'情景数据'标注方面均明确提示数据性质，不构成计算逻辑层面的实质冲突。"
+        ]
+      }
+    }
+  ],
+  "R07": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          {
+            "note": "两个候选作品均通过本条标准，但标注策略存在差异：A采用全局固定位置（每页右下角）统一标注'情景数据'，B采用每页底部注释独立标注'本页数据为情景示例，正式汇报以核定数为准'。两种标注方式均满足criterion第1条'明确标注为假设、示例或待核实数据'的要求，不构成答案翻转的实质冲突。",
+            "candidates_involved": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "note": "A作品标注为'情景数据（Scenario data）'，B作品标注为'情景示例，正式汇报以核定数为准'，措辞不同但语义等价，均明确传达了数据非官方统计结果的边界信息，不构成标准漂移。",
+            "candidates_involved": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "note": "A作品覆盖13页全篇标注，B作品仅在提供的3页（p3-p5）中可见标注，但B的verdict明确说明'第3页注、第4页注、第5页注'，未声称其他页面无标注。基于现有证据，无法判定B是否存在单页遗漏导致全篇缺失的问题，本条scope不追加逐页披露义务。",
+            "candidates_involved": [
+              "B"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "R08": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          {
+            "note": "候选A与B对同一时间点'二〇二六年九月'的定性存在差异，但此差异源于各自证据集完整度不同，而非对criterion规则理解冲突。A的evidence显示全篇每页底部均标注'情景数据（Scenario data）'，因此将时间视为假设性设定；B仅观察到封面与结尾页，且未注意到'情景数据'标注，故判定为未标注的虚构时间。若B补充观察其余页面底部的'情景数据'标注，其结论可能趋同于A。此属证据覆盖范围差异，非criterion适用上的实质冲突。"
+          }
+        ]
+      }
+    }
+  ],
+  "R09": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          "候选A与B的verdict均为yes，且各自提供的evidence均支持其结论：两作品的小标题及正文措辞均符合公文风格，未发现口语化、随意化表述。",
+          "两作品在公文风格的具体实现路径上有差异：A采用'名词性短语+规范数据表述+跨页溯源说明'的密集公文范式；B采用'动宾/主谓结构+红色对应标注+问题-措施闭环'的简洁公文范式。两种路径均属有效公文表达，不构成标准冲突。",
+          "B的evidence中提及p6存在红色标注与黑色正文的文字叠印现象（p6_e16至p6_e20），但该现象属于视觉排版问题，不在本条'标题与正文措辞'的scope范围内，且B的verdict已明确判定为yes，说明该视觉问题未影响其对口语文体缺陷的判断。",
+          "两作品均出现'情景数据/情景示例'标注，此为用户未提供具体数据时的合理处理方式，与口语化判定无关。"
+        ]
+      }
+    }
+  ],
+  "R10": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          "候选A与B均判定为yes，且依据充分。两者在内容组织、逻辑清晰度、避免冗余套话等方面均符合criterion要求。",
+          "候选A采用13页展开，候选B采用8页精简，篇幅差异属于合理的设计选择，不构成标准漂移。两者均实现了'数据呈现→问题识别→整改措施'的完整逻辑链条。",
+          "候选B的p6、p7存在红色标注与黑色正文的视觉叠印问题（evidence p6_e16-p6_e20, p7_e5/p7_e8/p7_e11），但此为视觉可读性缺陷，属于其他标准（如视觉呈现）的审查范围，不在本条'冗余内容/表达效率'的scope内。",
+          "候选A每页底部重复出现的'数据截至2026年8月31日·比率保留一位小数·情景数据'，以及候选B的'本页数据为情景示例，正式汇报以核定数为准'，均属于必要的跨页一致性提示或数据来源说明，符合exclusions中'必要的背景说明'，不构成冗余堆砌。",
+          "两候选在'存在问题'板块均建立了与前文数据板块的明确呼应关系（A标注P04/P05/P06/P08/P09页码；B标注'〔对应第X部分：具体数据〕'），满足用户需求中'评审组一眼要能看出问题是从哪儿来的'的要求。"
+        ]
+      }
+    }
+  ],
+  "R11": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          {
+            "note": "候选A与候选B均判定为no，但引用的具体页面和叠印类型不同：A聚焦表格单元格内相邻行文字叠印（p12）与请示结束语叠印（p13），B聚焦红色半透明标注与灰色正文的叠印（p6、p7）。两者均属于visual_readability范畴内的真实不可读问题，判定依据充分且互不冲突。",
+            "relevant_candidates": [
+              "A",
+              "B"
+            ]
+          },
+          {
+            "note": "候选A将p9的图表标签重叠（64.1%与50.1%）明确排除至chart_label_integrity，符合criterion的程序附加边界；候选B未涉及图表标签问题。两者在缺陷归属边界上的处理一致，无冲突。",
+            "relevant_candidates": [
+              "A"
+            ]
+          },
+          {
+            "note": "两候选的叠印证据均基于direct_judge_observation的局部放大图确认，而非仅凭bounding-box intersection推测，取证标准一致。",
+            "relevant_candidates": [
+              "A",
+              "B"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "R12": [
+    {
+      "review": {
+        "consistent": false,
+        "issues": [
+          {
+            "reason": "候选B的verdict判定第6、7页存在正文与红色标注文字的笔画重叠，导致visual_hierarchy不通过。但候选B的evidence中同时存在多个overlap类型的image_region证据（如p6_overlap_c650de81d3、p6_overlap_5d36c1cd59等），这些evidence的statement均明确标注为\"A candidate bounding-box intersection, not a confirmed defect or a new slide\"，即仅表示候选相交区域，未确认为实际缺陷。然而候选B的direct_judge_observation证据（p6_R12_direct_da6aed59a6c5等）声称存在\"笔画重叠\"，但缺乏独立的图像验证支持——其引用的quote与对应的image_region证据中的text spans完全一致，却做出了不同的缺陷定性（从\"not a confirmed defect\"升级为\"实际叠印\"）。根据criterion的排除规则\"已经属于遮挡/裁切/标签错误的同一缺陷不再计入本类；不能用'阅读路径被遮挡'再次处罚遮挡\"，若这些重叠属于遮挡/裁切类缺陷，则不应重复计入visual_hierarchy。更关键的是，候选B将bbox相交直接判定为\"笔画重叠\"导致视觉层级混乱，但候选A全篇13页均通过，且候选B的判定所依据的evidence与候选A的evidence体系存在本质差异：候选A详细描述了每页的视觉层级设计（字号、色彩、分区等），而候选B仅基于6个局部放大图的区域相交就判定两页不通过。然而，这些局部放大图证据本身标注为\"candidate bounding-box intersection, not a confirmed defect\"，意味着候选B的verdict将未确认的候选相交直接认定为确认的笔画重叠缺陷，存在证据强度与判定结论不匹配的问题。根据criterion要求\"页面布局混乱、信息密度过高或过低、缺乏视觉引导导致难以快速理解内容结构\"才判定不通过，候选B的证据不足以证明第6、7页整体布局混乱或缺乏视觉引导——红色标注作为对应关系提示，即使与正文存在局部空间接近，也属于设计选择而非结构混乱。因此候选B的\"no\"判定缺乏充分证据支持，应改为\"yes\"。",
+            "rule_quote": "visual_hierarchy：在内容可读前提下的信息组织与重点定位缺陷：页面布局混乱、信息密度过高或过低、缺乏视觉引导导致难以快速理解内容结构\n排除：已经属于遮挡/裁切/标签错误的同一缺陷不再计入本类；不能用'阅读路径被遮挡'再次处罚遮挡",
+            "evidence_refs": {
+              "B": [
+                "p6_overlap_c650de81d3",
+                "p6_overlap_5d36c1cd59",
+                "p6_overlap_e72bdce6f3",
+                "p7_overlap_7e1ff231d9",
+                "p7_overlap_dc3257bdf8",
+                "p7_overlap_242da0dfed",
+                "p6_R12_direct_da6aed59a6c5",
+                "p6_R12_direct_45c299185013",
+                "p6_R12_direct_93c0dce86f0b",
+                "p7_R12_direct_366d5e56fb2e",
+                "p7_R12_direct_3e08b8d81bc6",
+                "p7_R12_direct_182459910cf9"
+              ]
+            },
+            "observed_answers": {
+              "B": "no"
+            },
+            "verdict_quotes": {
+              "B": "第6页和第7页存在多处正文与红色标注文字的实际叠印，导致阅读路径混乱、信息层级冲突，评审组难以快速区分正文结论与对应关系提示。具体包括：第6页中'76.5%'与红色标注'〔对应第一部分：完工率'叠印（p6_overlap_c650de81d3局部放大图显示'76.5%'的'5%'笔画与红色标注的'〔对应'发生相交）；'91.2%'与红色标注'〔对应第三部分：长效维护机制满意率'叠印（p6_overlap_5d36c1cd59局部放大图显示'91.2%'的'1.2%'与红色标注起笔处重叠）；'93.5%'与红色标注'〔对应第三部分：需求匹配满意率'叠印（p6_overlap_e72bdce6f3局部放大图显示'93.5%'的'3.5%'与红色标注'〔对应'相交）。第7页中'100.0%'与红色标注'〔对应问题（一）｜责任：市住建局改造办、属地街道〕'叠印（p7_overlap_7e1ff231d9局部放大图显示'100.0%'的'0.0%'与红色标注'〔对应'重叠）；'90.0%'与红色标注'〔对应问题（二）｜责任：市财政局、市住建局〕'叠印（p7_overlap_dc3257bdf8局部放大图显示'90.0%'的'0.0%'与红色标注'〔对应'重叠）；'长效维护机制满意率提升至'与红色标注'〔对应问题（三）｜责任：属地街道、市住建局〕'叠印（p7_overlap_242da0dfed局部放大图显示'长'字起笔与红色标注'〔'相交）。这些叠印并非单纯的bbox候选相交，而是实际字形笔画重叠，造成正文数据与对应标注在同一空间竞争，破坏了视觉层级和阅读路径。"
+            },
+            "expected_answers": {
+              "B": "yes"
+            }
+          }
+        ],
+        "notes": [
+          "候选A的verdict详细描述了全篇13页的视觉层级设计，包括顶部导航栏、左右分栏、三色阈值标注、数据卡片与图表分区等，证据充分支持其\"yes\"判定。",
+          "候选B的verdict主要依赖6个局部放大图的区域相交证据，但这些image_region证据均明确标注为\"candidate bounding-box intersection, not a confirmed defect\"，其direct_judge_observation证据与image_region证据引用相同的text spans却做出更强的缺陷定性，存在证据升级问题。",
+          "候选B的红色标注作为'对应关系提示'具有明确的语义功能，即使与正文存在局部空间接近，也属于信息组织中的关联设计，不应直接等同于'页面布局混乱'或'缺乏视觉引导'。",
+          "两个候选对同一标准的适用存在实质差异：候选A从全局视觉语言统一性角度评估，候选B从局部像素相交角度评估，后者可能过度放大了局部空间竞争而忽视了整体可读性。"
+        ]
+      }
+    },
+    {
+      "candidate": "B",
+      "rejudgment": {
+        "rubric_id": "R12",
+        "answer": "no",
+        "pages": [
+          6,
+          7
+        ],
+        "evidence": "第6页和第7页存在多处正文文字与红色对应标注文字的实际笔画重叠，导致信息层级混乱、阅读路径受阻。具体核实如下：第6页问题01区域，'76.5%'与红色标注'〔对应第一部分：完工率'发生笔画相交（局部放大图p6_overlap_c650de81d3清晰显示'76.5%'的'6.5%'与红色'〔对应'重叠）；'91.2%'与红色标注'〔对应第三部分：长效维护机制满意率'发生笔画相交（局部放大图p6_overlap_5d36c1cd59显示'91.2%'的'1.2%'与红色标注起笔处重叠）；'93.5%'与红色标注'〔对应第三部分：需求匹配满意率'发生笔画相交（局部放大图p6_overlap_e72bdce6f3显示'93.5%'的'3.5%'与红色标注'〔对应'重叠）。第7页措施01区域，'100.0%'与红色标注'〔对应问题（一）｜责任：市住建局改造办、属地街道〕'发生笔画相交（局部放大图p7_overlap_7e1ff231d9显示'100.0%'的'0.0%'与红色标注'〔对应'重叠）；措施02区域，'90.0%'与红色标注'〔对应问题（二）｜责任：市财政局、市住建局〕'发生笔画相交（局部放大图p7_overlap_dc3257bdf8显示'90.0%'的'0.0%'与红色标注'〔对应'重叠）；措施03区域，'长效维护机制满意率提升至'与红色标注'〔对应问题（三）｜责任：属地街道、市住建局〕'发生笔画相交（局部放大图p7_overlap_242da0dfed显示'长'字起笔与红色标注'〔'重叠）。这些重叠不是单纯的bbox候选相交，而是实际字形笔画在同一空间竞争，正文数据与对应标注难以快速区分，破坏了视觉层级和阅读路径，导致评审组难以快速定位重点信息，符合visual_hierarchy缺陷定义。",
+        "evidence_ids": [
+          "p6_R12_direct_da6aed59a6c5",
+          "p6_R12_direct_45c299185013",
+          "p6_R12_direct_93c0dce86f0b",
+          "p7_R12_direct_366d5e56fb2e",
+          "p7_R12_direct_3e08b8d81bc6",
+          "p7_R12_direct_182459910cf9",
+          "p6_overlap_c650de81d3",
+          "p6_overlap_5d36c1cd59",
+          "p6_overlap_e72bdce6f3",
+          "p7_overlap_7e1ff231d9",
+          "p7_overlap_dc3257bdf8",
+          "p7_overlap_242da0dfed"
+        ],
+        "failure_ids": [
+          "p6_R12_direct_da6aed59a6c5",
+          "p6_R12_direct_45c299185013",
+          "p6_R12_direct_93c0dce86f0b",
+          "p7_R12_direct_366d5e56fb2e",
+          "p7_R12_direct_3e08b8d81bc6",
+          "p7_R12_direct_182459910cf9"
+        ],
+        "resolutions": [
+          {
+            "evidence_id": "p6_R12_direct_da6aed59a6c5",
+            "defect_present": true,
+            "reason": "局部放大图p6_overlap_c650de81d3核实：'76.5%'的'6.5%'笔画与红色标注'〔对应第一部分：完工率'的'〔对应'发生实际重叠，黑色数字与红色括号文字在同一空间相交，导致数据与标注难以区分，构成visual_hierarchy缺陷",
+            "decision": "confirm"
+          },
+          {
+            "evidence_id": "p6_R12_direct_45c299185013",
+            "defect_present": true,
+            "reason": "局部放大图p6_overlap_5d36c1cd59核实：'91.2%'的'1.2%'笔画与红色标注'〔对应第三部分：长效维护机制满意率'的'〔对应'发生实际重叠，句号与标注起笔相交，构成visual_hierarchy缺陷",
+            "decision": "confirm"
+          },
+          {
+            "evidence_id": "p6_R12_direct_93c0dce86f0b",
+            "defect_present": true,
+            "reason": "局部放大图p6_overlap_e72bdce6f3核实：'93.5%'的'3.5%'笔画与红色标注'〔对应第三部分：需求匹配满意率'的'〔对应'发生实际重叠，构成visual_hierarchy缺陷",
+            "decision": "confirm"
+          },
+          {
+            "evidence_id": "p7_R12_direct_366d5e56fb2e",
+            "defect_present": true,
+            "reason": "局部放大图p7_overlap_7e1ff231d9核实：'100.0%'的'0.0%'笔画与红色标注'〔对应问题（一）｜责任：市住建局改造办、属地街道〕'的'〔对应'发生实际重叠，百分号与标注括号相交，构成visual_hierarchy缺陷",
+            "decision": "confirm"
+          },
+          {
+            "evidence_id": "p7_R12_direct_3e08b8d81bc6",
+            "defect_present": true,
+            "reason": "局部放大图p7_overlap_dc3257bdf8核实：'90.0%'的'0.0%'笔画与红色标注'〔对应问题（二）｜责任：市财政局、市住建局〕'的'〔对应'发生实际重叠，构成visual_hierarchy缺陷",
+            "decision": "confirm"
+          },
+          {
+            "evidence_id": "p7_R12_direct_182459910cf9",
+            "defect_present": true,
+            "reason": "局部放大图p7_overlap_242da0dfed核实：'长效维护机制满意率提升至'的'长'字起笔与红色标注'〔对应问题（三）｜责任：属地街道、市住建局〕'的'〔'发生实际重叠，构成visual_hierarchy缺陷",
+            "decision": "confirm"
+          }
+        ],
+        "registered_evidence": [
+          {
+            "page": 6,
+            "quote": "76.5%与红色标注〔对应第一部分：完工率 92.6% 、在建 5 个〕发生笔画重叠",
+            "location": "第6页左上象限问题01下方",
+            "statement": "正文'76.5%'与红色对应标注文字实际叠印，导致数据与标注难以区分",
+            "kind": "visual",
+            "failure_mode": "visual_hierarchy",
+            "source_refs": [],
+            "quantities": [],
+            "calculations": [],
+            "id": "p6_R12_direct_da6aed59a6c5",
+            "failure_mode_origin": "direct_judge_observation",
+            "arithmetic_checks": []
+          },
+          {
+            "page": 6,
+            "quote": "91.2%与红色标注〔对应第三部分：长效维护机制满意率 82.7% 〕发生笔画重叠",
+            "location": "第6页左下象限问题03下方",
+            "statement": "正文'91.2%'与红色对应标注文字实际叠印，句号与标注起笔相交",
+            "kind": "visual",
+            "failure_mode": "visual_hierarchy",
+            "source_refs": [],
+            "quantities": [],
+            "calculations": [],
+            "id": "p6_R12_direct_45c299185013",
+            "failure_mode_origin": "direct_judge_observation",
+            "arithmetic_checks": []
+          },
+          {
+            "page": 6,
+            "quote": "93.5%与红色标注〔对应第三部分：需求匹配满意率 86.1% 〕发生笔画重叠",
+            "location": "第6页右下象限问题04下方",
+            "statement": "正文'93.5%'与红色对应标注文字实际叠印，数字与标注起笔相交",
+            "kind": "visual",
+            "failure_mode": "visual_hierarchy",
+            "source_refs": [],
+            "quantities": [],
+            "calculations": [],
+            "id": "p6_R12_direct_93c0dce86f0b",
+            "failure_mode_origin": "direct_judge_observation",
+            "arithmetic_checks": []
+          },
+          {
+            "page": 7,
+            "quote": "100.0%与红色标注〔对应问题（一）｜责任：市住建局改造办、属地街道〕发生笔画重叠",
+            "location": "第7页左上象限措施01下方",
+            "statement": "正文'100.0%'与红色对应标注文字实际叠印，百分号与标注括号相交",
+            "kind": "visual",
+            "failure_mode": "visual_hierarchy",
+            "source_refs": [],
+            "quantities": [],
+            "calculations": [],
+            "id": "p7_R12_direct_366d5e56fb2e",
+            "failure_mode_origin": "direct_judge_observation",
+            "arithmetic_checks": []
+          },
+          {
+            "page": 7,
+            "quote": "90.0%与红色标注〔对应问题（二）｜责任：市财政局、市住建局〕发生笔画重叠",
+            "location": "第7页右上象限措施02下方",
+            "statement": "正文'90.0%'与红色对应标注文字实际叠印，百分号与标注括号相交",
+            "kind": "visual",
+            "failure_mode": "visual_hierarchy",
+            "source_refs": [],
+            "quantities": [],
+            "calculations": [],
+            "id": "p7_R12_direct_3e08b8d81bc6",
+            "failure_mode_origin": "direct_judge_observation",
+            "arithmetic_checks": []
+          },
+          {
+            "page": 7,
+            "quote": "长效维护机制满意率提升至与红色标注〔对应问题（三）｜责任：属地街道、市住建局〕发生笔画重叠",
+            "location": "第7页左下象限措施03下方",
+            "statement": "正文'长效维护机制满意率提升至'与红色对应标注文字实际叠印，'长'字与标注括号相交",
+            "kind": "visual",
+            "failure_mode": "visual_hierarchy",
+            "source_refs": [],
+            "quantities": [],
+            "calculations": [],
+            "id": "p7_R12_direct_182459910cf9",
+            "failure_mode_origin": "direct_judge_observation",
+            "arithmetic_checks": []
+          }
+        ],
+        "inspection_resolutions": []
+      }
+    },
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": []
+      }
+    }
+  ],
+  "R13": [
+    {
+      "review": {
+        "consistent": true,
+        "issues": [],
+        "notes": [
+          "候选A与B均判定为yes，但两者的视觉风格描述存在差异：A强调深蓝+金色/橙色的三段式正文结构，B强调深红色主题色+左右分栏。这些差异属于两个独立作品的各自风格统一性描述，并非对同一条标准下同一事实的相反判定。两者均在各自体系内满足'同一层级内容视觉处理一致'的要求，且均将封面/结尾的版式差异合理排除。无实质冲突。",
+          "建议：在后续评测中，可补充说明'视觉风格统一'允许不同作品选择不同配色体系，只要各自体系内部保持一致即可。"
+        ]
+      }
+    }
+  ]
+}

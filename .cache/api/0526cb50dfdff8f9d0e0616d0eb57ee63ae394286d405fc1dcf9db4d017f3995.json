@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      5
+    ],
+    "evidence": "第5页「四级动态授权：让风险证据决定响应级别」完整呈现了四个级别：一级关注期（无权威媒体跟进、客诉与退单平稳→监测/口径/FAQ）、二级扩散期（3个KOL转发/负面情绪约72%/退单较平时增加约15%→跨部门小组/声明/优先客服/看板）、三级升级期（权威媒体跟进/平台外溢/监管介入→暂停投放/高管出面/扩大退款）、四级风险确认期（技术复核确认问题→召回/整改/问责）。每级均含可辨识触发条件与对应行动，且渲染画面中文字完整可见，无截断或叠印。第7页「升级机制」亦列有授权三级与四级升级，进一步呼应。满足结构化分级安排要求。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 19044,
+    "total_tokens": 19226,
+    "completion_tokens": 182,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.437,
+  "attempts": 1
+}

@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "PPT正文独立完整呈现全部五个板块：第3页'一、改造任务完成情况'、第4页'二、资金使用情况'、第5页'三、居民满意度'、第6页'四、存在问题'、第7页'五、下一步计划'。第2页目录仅作提纲摘要，未替代正文各板块独立呈现。五个板块标题措辞规范，无合并弱化情形。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 28367,
+    "total_tokens": 28481,
+    "completion_tokens": 114,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 8.574,
+  "attempts": 1
+}

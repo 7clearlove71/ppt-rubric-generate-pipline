@@ -1,0 +1,47 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      5
+    ],
+    "evidence": "第5页为独立的“1号线改造投资回报测算”页面，页面主标题明确为“1号线改造投资回报测算：投入120万元，年节省电费252-288万元”。该页包含完整的独立测算单元：左侧为“1号线月用电对比：改造前后测算（万kWh）”柱状图，展示当前68万kWh、口径一36万kWh、口径二40万kWh；右侧分为“口径一·降至行业标杆0.45 kWh/件”和“口径二·降至0.5 kWh/件”两个独立测算板块，分别列明月省电32/28万kWh、月省电费24/21万元、年节省电费288/252万元、纯电费口径回本约5个月/5-6个月；底部高亮框单独呈现“保守口径约18个月收回成本”的核心结论，并说明已计入施工停产损失与投产爬坡期节能打折。整个第5页在视觉和标题上均清晰可辨识为独立的投资回报测算单元，投入、节省、回本等关键要素完整呈现于同一页面，未零散混入其他模块。",
+    "evidence_ids": [
+      "p5_e1",
+      "p5_e2",
+      "p5_e3",
+      "p5_e4",
+      "p5_e5",
+      "p5_e6",
+      "p5_e7",
+      "p5_e8",
+      "p5_e9",
+      "p5_e10",
+      "p5_e11",
+      "p5_e12",
+      "p5_e13",
+      "p5_e14",
+      "p5_e15",
+      "p5_e16",
+      "p5_e17",
+      "p5_e18",
+      "p5_e19"
+    ],
+    "resolutions": [],
+    "additional_observations": [],
+    "inspection_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 44682,
+    "total_tokens": 45069,
+    "completion_tokens": 387,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 125.191,
+  "attempts": 1
+}

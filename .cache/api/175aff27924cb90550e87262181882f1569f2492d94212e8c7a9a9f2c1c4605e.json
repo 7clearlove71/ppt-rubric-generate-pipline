@@ -1,0 +1,72 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 7,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              7
+            ],
+            "evidence": "标题、决策请求、KPI、图例（需投资/零投入/待另行立项）、甘特条文字、0-18月份轴、差距覆盖条（8.8、约23.2约73%）、监测表、风险与目标及来源脚注均可辨认；但左列甘特行标签“并行推进 · 标准停机 SOP”在页面左缘被裁切，仅见“行推进”，所附同页局部图（x自0.0起）同样无“并”字笔画，确认首字位于页面边界外",
+            "defect": {
+              "key": "doc_82ee78bf1d9505d4d5f3f70f/page/7/左侧甘特行标签“并行推进·标准停机SOP”首字",
+              "description": "页面左缘截断：甘特图第二行标签“并行推进 · 标准停机 SOP”的首字“并”超出页面左边界被切掉（原图及局部图均只显示“行推进 · 标准停机 SOP”），造成文字截断、需据上下文猜读"
+            }
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "在内容可读前提下，顶部标题与决策请求条、右侧四项KPI、左下分批推进路线图与右侧差距覆盖/监测机制、底部风险兜底与立项后目标的分区与主次清晰；甘特条填充/描边/橙色与图例类别一一对应，月份轴与阶段说明的阅读顺序明确，无错误对应关系；左缘标签截切属可读性问题，不在本条重复计",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 8,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页主标题“恳请审议批准 1 号线液压系统节能改造立项”、“// END”标记、三行决策请求说明（批准120万元、约18个月回本、批准后2周内排期）、BACK TO TOP按钮及“设备与能源管理部门”“2026年9月”脚注均清晰可辨；本页无图表，不适用轴/图例/单位检查，无截断、叠印或破损残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页层级明确：END标记→居中大标题→决策请求说明→左下BACK TO TOP与右下部门/日期脚注；作为结束页大面积留白合理，阅读顺序无歧义，四角装饰线不干扰内容",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 10527,
+    "completion_tokens_details": {
+      "reasoning_tokens": 9937,
+      "text_tokens": 590
+    },
+    "prompt_tokens": 4766,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3629,
+      "text_tokens": 1137
+    },
+    "total_tokens": 15293
+  },
+  "elapsed_seconds": 314.477,
+  "attempts": 1
+}

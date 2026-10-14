@@ -1,0 +1,49 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 7,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              7
+            ],
+            "evidence": "页面主体文字（标题“先补证，再下判断”、副标题、卡片标题“空心化/记忆断层/开发错位”、TO BE VERIFIED 与 NEXT STEP 框、页脚）均可辨认；三张卡片中编号数字（1/2/3）与标题首字（空/记/开）有叠印，但局部放大图显示数字与汉字笔画仍可各自辨认，无信息损失。然而三张卡片的第三行要点文字（“代际外出”“口述需核验”“治理待追问”）被卡片底边裁切，仅见上部笔画、下部被截断，需猜读，构成信息损失。",
+            "defect": {
+              "key": "doc_df4cf33d78564807d5565364/p7/card-bottom-lines-clipped",
+              "description": "三张卡片（01空心化、02记忆断层、03开发错位）的第三行文字“代际外出”“口述需核验”“治理待追问”被卡片底部边界截断，文字下半部分不可见，造成可读性损失。"
+            }
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "在假定文字可读的前提下判断组织：顶部为主标题+说明副标题，中部三栏并列卡片（编号+标题+要点）对应副标题所述“三条后续方向”，下方依次为 TO BE VERIFIED（待考）与 NEXT STEP（下一步）两个带色边框条块，层级与阅读顺序（标题→三方向→待考→下一步）清晰，无错误对应关系。编号与标题的叠印属装饰性编码，不造成归属混乱；遮挡裁切问题已在 V_READ 计分，不在本条重复处罚。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 1397,
+    "completion_tokens_details": {
+      "reasoning_tokens": 931,
+      "text_tokens": 466
+    },
+    "prompt_tokens": 4365,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3318,
+      "text_tokens": 1047
+    },
+    "total_tokens": 5762
+  },
+  "elapsed_seconds": 255.923,
+  "attempts": 1
+}

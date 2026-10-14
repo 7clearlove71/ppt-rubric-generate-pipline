@@ -1,0 +1,81 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "Q01: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R09']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "R01: definition and exclusions must appear verbatim in judge_prompt",
+      "R02: definition and exclusions must appear verbatim in judge_prompt",
+      "R03: definition and exclusions must appear verbatim in judge_prompt",
+      "R04: definition and exclusions must appear verbatim in judge_prompt",
+      "R05: definition and exclusions must appear verbatim in judge_prompt",
+      "R06: definition and exclusions must appear verbatim in judge_prompt",
+      "R07: definition and exclusions must appear verbatim in judge_prompt",
+      "R08: definition and exclusions must appear verbatim in judge_prompt",
+      "R09: definition and exclusions must appear verbatim in judge_prompt",
+      "R10: definition and exclusions must appear verbatim in judge_prompt",
+      "R11: definition and exclusions must appear verbatim in judge_prompt",
+      "R12: definition and exclusions must appear verbatim in judge_prompt",
+      "R13: definition and exclusions must appear verbatim in judge_prompt",
+      "R14: definition and exclusions must appear verbatim in judge_prompt",
+      "R15: definition and exclusions must appear verbatim in judge_prompt",
+      "R16: definition and exclusions must appear verbatim in judge_prompt",
+      "R17: definition and exclusions must appear verbatim in judge_prompt"
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 1,
+    "structural_errors": [],
+    "normalizations": [],
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R01",
+          "R12"
+        ],
+        "Q02": [
+          "R01",
+          "R02"
+        ],
+        "Q03": [
+          "R08",
+          "R12"
+        ],
+        "Q04": [
+          "R07",
+          "R09"
+        ],
+        "Q05": [
+          "R03",
+          "R13",
+          "R15"
+        ],
+        "Q06": [
+          "R04"
+        ],
+        "Q07": [
+          "R05"
+        ],
+        "Q08": [
+          "R06"
+        ]
+      },
+      "summary": "rubric完整覆盖八项需求：五项核心数据与叙事五要素各有'存在且准确'的专属条目（R07/R08），融合与情怀落地由R01/R02承担，风格与完整性由R03-R06承担，推论有效性、虚构事实、视觉三类缺陷均有单一owner且failure_modes边界与judge_prompt逐字一致，未发现重复计分、无依据硬条件或缺失要求。"
+    },
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "未发现有依据的反例"
+    }
+  }
+]

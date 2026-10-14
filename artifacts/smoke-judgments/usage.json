@@ -1,0 +1,40 @@
+[
+  {
+    "role": "judge",
+    "cache_key": "bafe364f9c2615bbd196d794936eb0837db10ab53845929ae825c8e9076a6a6d",
+    "cached": false,
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 41663,
+      "total_tokens": 41810,
+      "completion_tokens": 147,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 10.073,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "e1b11a423587f3b315b40e7f02d2828e9f18f39b4c9b8f9efe6df912bcd82ed7",
+    "cached": false,
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 35069,
+      "total_tokens": 35423,
+      "completion_tokens": 354,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 14.994,
+    "attempts": 1
+  }
+]

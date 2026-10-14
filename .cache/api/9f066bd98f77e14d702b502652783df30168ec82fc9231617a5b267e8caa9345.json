@@ -1,0 +1,139 @@
+{
+  "parsed": {
+    "page": 1,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "文化沙龙 · 中期田野分享",
+        "location": "页面顶部左侧，p1_t1区域",
+        "statement": "页面顶部存在橙色小字标识，表明演示场景为文化沙龙中期分享",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "驻村四日：一个明清古村落的田野观察笔记",
+        "location": "页面上部主标题区域，p1_t2与p1_t3联合覆盖区域",
+        "statement": "主标题分两行排版，第一行'驻村四日：一个明清古村落的田野观'，第二行'察笔记'，通过换行实现'观察笔记'的断行排版。从局部放大图可见，'观'字位于第一行末尾，'察笔记'位于第二行开头，字形笔画无实际叠印，属于正常的换行排版策略，非文字遮挡缺陷",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "空心化、文化记忆断层与保护开发错位——中期田野分享（初步观察，存疑待考）",
+        "location": "标题下方副标题区域，p1_t4",
+        "statement": "副标题完整呈现了用户要求的三个初步感受方向（空心化、文化记忆断层、保护开发错位），并明确标注'初步观察，存疑待考'，符合用户'别下定论'和'存疑的地方标出来'的要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来,别下定论"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "田野记录者 · 驻村第 1–4 日",
+        "location": "页面左下角，p1_t5区域",
+        "statement": "署名信息表明记录者身份及时间跨度为第1-4日，与原文Day1-Day4的四天笔记对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day1 进村"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "Day2 访谈几位老人"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "Day3 民居多是天井院落式"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "Day4 村里搞旅游开发"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "1–4",
+            "unit": "日",
+            "subject": "驻村时间跨度",
+            "denominator": "不适用",
+            "time_origin": "Day1"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "本页起所有村落事实均来自 4 日驻村笔记，未经交叉验证",
+        "location": "页面左下角，p1_t6区域，署名下方",
+        "statement": "显式声明信息来源边界及未经交叉验证的状态，属于对存疑信息的等效视觉标识，符合用户'存疑的地方标出来'的要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来,别下定论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4",
+            "unit": "日",
+            "subject": "驻村笔记",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "橙色圆形装饰元素",
+        "location": "页面左下角，署名左侧",
+        "statement": "视觉装饰元素，与古村落田野主题的色调风格协调，无信息承载功能",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "橙色短横线装饰",
+        "location": "副标题上方，主标题下方",
+        "statement": "装饰性分隔线，用于视觉层级划分，非数据承载元素",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5201,
+    "total_tokens": 6177,
+    "completion_tokens": 976,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 149.144,
+  "attempts": 1
+}

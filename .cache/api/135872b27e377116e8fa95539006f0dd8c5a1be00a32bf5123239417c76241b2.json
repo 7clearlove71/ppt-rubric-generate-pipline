@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      7
+    ],
+    "evidence": "三点初步方向齐全且定位准确。页1副标题明确列出'空心化、文化记忆断层与保护开发错位——中期田野分享（初步观察，存疑待考）'；页2'三条待验主线'以'空心化''文化记忆断层''保护与开发错位'并列呈现，标注'不排序、不取舍''并列待验→存疑清单·线索征集'；页7再次以三栏形式展开三条主线，每栏均标注'存疑／待考'，栏内命题一律写成疑问句，底部强调'三条主线是后续方向，不是结论'。概念表述与原文含义一致，未替换为不同含义，亦未写成已验证的最终结论。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 28863,
+    "total_tokens": 29030,
+    "completion_tokens": 167,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 18.551,
+  "attempts": 1
+}

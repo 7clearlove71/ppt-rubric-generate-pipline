@@ -1,0 +1,107 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R01",
+          "R11"
+        ],
+        "reason": "Q02的关键事实（78%→92%）在fulfillment（R01）和correctness（R11）中被重复评分，违反'一个具体评分目标只由一条主要标准负责'的原则，造成重复扣分。",
+        "fix": "将R01从fulfillment移至correctness组（G04），或删除R11中关于Q02的重复检查，确保'良率78%→92%存在且准确'仅由一条标准负责。"
+      },
+      {
+        "severity": "error",
+        "item_ids": [
+          "R02",
+          "R11"
+        ],
+        "reason": "Q03的关键事实（10万次无衰减）在fulfillment（R02）和correctness（R11）中被重复评分，造成重复扣分。",
+        "fix": "将R02从fulfillment移至correctness组（G04），或删除R11中关于Q03的重复检查，确保'弯曲10万次无衰减存在且准确'仅由一条标准负责。"
+      },
+      {
+        "severity": "error",
+        "item_ids": [
+          "R03",
+          "R11"
+        ],
+        "reason": "Q04的关键事实（三甲医院合作、临床试验阶段）在fulfillment（R03）和correctness（R11）中被重复评分，造成重复扣分。",
+        "fix": "将R03从fulfillment移至correctness组（G04），或删除R11中关于Q04的重复检查，确保'三甲医院合作与临床试验阶段存在且准确'仅由一条标准负责。"
+      },
+      {
+        "severity": "warning",
+        "item_ids": [
+          "R07"
+        ],
+        "reason": "R07的触发条件'若技术路线图与下一步计划中均出现量化未来目标'表述不够明确，judge可能难以判断何时适用'自动通过'。",
+        "fix": "明确说明：'当且仅当技术路线图与下一步计划（或不同页面）中均出现同一未来指标的量化目标时，检查两处数值是否一致；若仅一处给出或两处均未给出量化目标，本条自动通过。'"
+      },
+      {
+        "severity": "warning",
+        "item_ids": [
+          "R18"
+        ],
+        "reason": "R18末尾'未标注时可在本条酌情从严但不单独判否'的表述模糊，可能导致judge执行不一致。",
+        "fix": "删除'酌情从严'的模糊表述，改为明确规则：'路线图中设定的具体年份若未在需求中给出，应标注为假设/示意/规划；未标注但内容本身合理且不与给定事实矛盾时，记部分满足（no）；将未来计划明确写成已实现成果时才判否。'"
+      }
+    ],
+    "coverage": {
+      "Q01": [
+        "R04",
+        "R10",
+        "R20",
+        "R22"
+      ],
+      "Q02": [
+        "R01",
+        "R11"
+      ],
+      "Q03": [
+        "R02",
+        "R11"
+      ],
+      "Q04": [
+        "R03",
+        "R11",
+        "R16"
+      ],
+      "Q05": [
+        "R08",
+        "R21"
+      ],
+      "Q06": [
+        "R09",
+        "R22"
+      ],
+      "Q07": [
+        "R05",
+        "R07",
+        "R18",
+        "R26"
+      ],
+      "Q08": [
+        "R06",
+        "R07",
+        "R18"
+      ]
+    },
+    "summary": "Rubric整体结构清晰、可判断性较好，但存在3处关键事实在fulfillment与correctness中的重复评分问题（R01/R02/R03与R11），违反原子性原则，需调整归属或删除重复检查。另有2处条件表述模糊（R07、R18）需明确化。修正后可批准。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 824,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 824
+    },
+    "prompt_tokens": 5791,
+    "prompt_tokens_details": {
+      "cached_tokens": 5120,
+      "text_tokens": 5791
+    },
+    "total_tokens": 6615
+  },
+  "elapsed_seconds": 16.641,
+  "attempts": 1
+}

@@ -1,0 +1,204 @@
+{
+  "groups": [
+    {
+      "id": "G01",
+      "dimension": "fulfillment",
+      "importance": 3,
+      "rationale": "本组重要性来自任务目标：作品须为年会特邀报告PPT，覆盖近三年进展，并含技术路线图与下一步计划。"
+    },
+    {
+      "id": "G02",
+      "dimension": "correctness",
+      "importance": 3,
+      "rationale": "用户给定的三项关键进展事实/数字必须准确呈现，缺失或写错均不通过。"
+    },
+    {
+      "id": "G03",
+      "dimension": "integrity",
+      "importance": 2,
+      "rationale": "需保留信息边界与不确定性，不虚构来源未提供的具体路线细节、医院名、人数或结果。"
+    },
+    {
+      "id": "G04",
+      "dimension": "narrative",
+      "importance": 3,
+      "rationale": "专家受众适配与20分钟报告的叙事结构、信息层级及讲解负荷。"
+    },
+    {
+      "id": "G05",
+      "dimension": "visual",
+      "importance": 2,
+      "rationale": "可读性、布局与视觉信息表达质量，支持专家快速理解。"
+    }
+  ],
+  "items": [
+    {
+      "id": "R01",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q01"
+      ],
+      "basis": "explicit",
+      "scope": "整体作品定位",
+      "evidence_mode": "both",
+      "judge_prompt": "作品整体呈现为年会特邀报告PPT的形态，具有报告标题与汇报结构；等价表述如学术/技术年会主旨演讲幻灯片亦可。若明显为其它体裁（如纯文档、海报）则不通过。"
+    },
+    {
+      "id": "R02",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q02"
+      ],
+      "basis": "explicit",
+      "scope": "内容范围",
+      "evidence_mode": "text",
+      "judge_prompt": "内容覆盖柔性电子团队近三年进展，至少包含可拉伸传感器阵列、柔性OLED器件、植入式电子皮肤三个方向。若缺少任一方向作为进展展开则不通过。"
+    },
+    {
+      "id": "R03",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q08"
+      ],
+      "basis": "explicit",
+      "scope": "技术路线图模块",
+      "evidence_mode": "both",
+      "judge_prompt": "PPT中存在可辨识的技术路线图模块，呈现结构化的发展路径或技术阶段（如时间轴、阶段流程、技术分支、泳道图等任一有效形式）。仅有文字罗列而无路径结构不通过。"
+    },
+    {
+      "id": "R04",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q09"
+      ],
+      "basis": "explicit",
+      "scope": "下一步计划模块",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT中包含下一步计划模块，给出后续工作方向或拟议目标。若全篇无任何未来计划内容则不通过。"
+    },
+    {
+      "id": "R05",
+      "group_id": "G02",
+      "importance": 2,
+      "source_refs": [
+        "Q03"
+      ],
+      "basis": "explicit",
+      "scope": "可拉伸传感器阵列良率事实",
+      "evidence_mode": "text",
+      "judge_prompt": "该事实存在且准确：呈现可拉伸传感器阵列量产良率从78%提升至92%。数值、方向与单位均须正确；写成其它数值、方向相反或缺失该事实均不通过。"
+    },
+    {
+      "id": "R06",
+      "group_id": "G02",
+      "importance": 2,
+      "source_refs": [
+        "Q04"
+      ],
+      "basis": "explicit",
+      "scope": "柔性OLED弯曲耐久事实",
+      "evidence_mode": "text",
+      "judge_prompt": "该事实存在且准确：呈现柔性OLED器件弯曲10万次无衰减。次数与无衰减表述须正确；写成其它次数或缺失该事实均不通过。"
+    },
+    {
+      "id": "R07",
+      "group_id": "G02",
+      "importance": 2,
+      "source_refs": [
+        "Q05"
+      ],
+      "basis": "explicit",
+      "scope": "植入式电子皮肤临床事实",
+      "evidence_mode": "text",
+      "judge_prompt": "该事实存在且准确：呈现与三甲医院合作植入式电子皮肤已进入临床试验阶段。合作方类型、器件与阶段须正确；写成非三甲、非临床试验或缺失该事实均不通过。"
+    },
+    {
+      "id": "R08",
+      "group_id": "G03",
+      "importance": 2,
+      "source_refs": [
+        "Q08",
+        "Q09"
+      ],
+      "basis": "explicit",
+      "scope": "路线图与计划的来源边界",
+      "evidence_mode": "text",
+      "judge_prompt": "技术路线图与下一步计划中基于团队实际补充的内容，应以合理建议或明确标注的假设/计划/待补形式呈现，不把未给出的具体路线节点、时间表、目标参数当作既定事实断言。若出现具体拟议细节但未标注为假设/计划且无法从源文复算，则不通过。"
+    },
+    {
+      "id": "R09",
+      "group_id": "G03",
+      "importance": 2,
+      "source_refs": [
+        "Q02",
+        "Q05"
+      ],
+      "basis": "explicit",
+      "scope": "新增事实边界",
+      "evidence_mode": "text",
+      "judge_prompt": "除源文三项进展外的补充信息不得虚构无来源的具体断言（如具体医院名称、患者人数、试验分期、良率测试批次等）。若出现此类具体断言且未标注为假设/待核实则不通过；一般性领域常识与行业公开基准数据不在此限。"
+    },
+    {
+      "id": "R10",
+      "group_id": "G04",
+      "importance": 3,
+      "source_refs": [
+        "Q06"
+      ],
+      "basis": "explicit",
+      "scope": "专家受众适配",
+      "evidence_mode": "text",
+      "judge_prompt": "内容深度与表述面向领域内专家：使用专业术语和技术性表达，聚焦技术进展、机理与验证方法，而非泛科普。若整体为面向外行的科普解释、缺少技术实质则不通过。"
+    },
+    {
+      "id": "R11",
+      "group_id": "G04",
+      "importance": 3,
+      "source_refs": [
+        "Q07"
+      ],
+      "basis": "explicit",
+      "scope": "报告时长适配",
+      "evidence_mode": "text",
+      "judge_prompt": "内容体量与讲解负荷与20分钟特邀报告相称：有可辨识的论述展开，各进展与路线图/计划有适度信息密度，不极度单薄也不明显超载至无法在20分钟内讲完。页面写出或不写20分钟均可，不以此判定。"
+    },
+    {
+      "id": "R12",
+      "group_id": "G04",
+      "importance": 2,
+      "source_refs": [
+        "Q02",
+        "Q08",
+        "Q09"
+      ],
+      "basis": "explicit",
+      "scope": "叙事结构",
+      "evidence_mode": "text",
+      "judge_prompt": "整体叙事有清晰结构：进展汇报与技术路线图、下一步计划之间有合理组织顺序与衔接，多条技术主线间有可辨识的逻辑关联而非孤立堆叠，形成连贯报告脉络。"
+    },
+    {
+      "id": "R13",
+      "group_id": "G05",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "可读性与阅读层级",
+      "evidence_mode": "visual",
+      "judge_prompt": "幻灯片具有可辨认的标题与正文层级，关键信息可读，不出现整体性文字过小或遮挡导致核心内容不可读的问题。允许不同风格与配色，不强制特定字体或颜色。"
+    },
+    {
+      "id": "R14",
+      "group_id": "G05",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "布局与信息表达",
+      "evidence_mode": "both",
+      "judge_prompt": "布局有助于理解报告内容，信息密度适中，视觉元素（若有图表/图示）对技术进展或路线表达有辅助作用。若全篇布局混乱、信息严重过载或视觉元素与内容无关则不通过。"
+    }
+  ]
+}

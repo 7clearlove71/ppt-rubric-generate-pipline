@@ -1,0 +1,38 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": [
+        "R06"
+      ]
+    },
+    "summary": "五项需求均有对应rubric覆盖，关键事实24小时激活时限由R03在correctness独立检查，未与fulfillment重复计分。R04/R06为通用质量条目且允许source_refs为空，未新增页数、字号等无依据硬条件。各条可独立评判，判据可观察且允许多种有效实现，协议合规。"
+  },
+  "model": "glm-5.2",
+  "usage": {
+    "prompt_tokens": 1882,
+    "total_tokens": 2008,
+    "completion_tokens": 126,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 8.591,
+  "attempts": 1
+}

@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "行业标杆0.45 kWh/件在多处明确出现：页2柱状图有\"行业标杆 0.45\"虚线及文字标注，且四线对比明细中3号线\"0.48\"距标杆0.45仅差0.03；页3标题区有\"行业标杆 0.45\"，四线单位能耗对标图重复出现该标杆线；页4改造效果预期列\"行业标杆参照 0.45 kWh/件\"；页5数据来源注明\"行业标杆 0.45 kWh/件\"，诚实边界提及改造后仍高于标杆0.45；页6反差事实写明\"距标杆0.45仅差0.03\"；页7立项后目标写\"逐步向标杆0.45 kWh/件收敛\"。数值始终为0.45 kWh/件，且均以对比参照或目标参考形式使用。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23109,
+    "total_tokens": 23324,
+    "completion_tokens": 215,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 22.316,
+  "attempts": 1
+}

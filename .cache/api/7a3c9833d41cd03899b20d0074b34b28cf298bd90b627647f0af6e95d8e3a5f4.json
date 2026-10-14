@@ -1,0 +1,454 @@
+{
+  "parsed": {
+    "page": 9,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "临床路径已跑通：从伦理批件到受试者入组的六个节点",
+        "location": "页面上部标题区域",
+        "statement": "页面主标题，描述临床路径六个节点",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "01 医工协同 临床需求定义—器件迭代—术式与植入方案设计",
+        "location": "页面左上第一节点",
+        "statement": "流程节点1：医工协同，包含临床需求定义、器件迭代、术式与植入方案设计",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "02 注册检验 二、三类器械注册前须取得合格注册检验报告",
+        "location": "页面左上部第二节点",
+        "statement": "流程节点2：注册检验，说明二、三类器械注册前须取得合格注册检验报告",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "03 动物实验 序列位于注册检验之后、伦理送审之前的验证节点",
+        "location": "页面中上部第三节点",
+        "statement": "流程节点3：动物实验，位于注册检验之后、伦理送审之前",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "04 伦理审批 NEO 2023 年 4 月通过宣武医院伦理审查并完成试验注册",
+        "location": "页面中上部第四节点",
+        "statement": "流程节点4：伦理审批，提及NEO于2023年4月通过宣武医院伦理审查并完成试验注册",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2023",
+            "unit": "年",
+            "subject": "NEO伦理审批时间",
+            "denominator": "不适用",
+            "time_origin": "2023年4月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "05 临床试验备案 按 2022 年 5 月施行的规范完成项目备案后开展",
+        "location": "页面右上部第五节点",
+        "statement": "流程节点5：临床试验备案，按2022年5月施行规范完成项目备案",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2022",
+            "unit": "年",
+            "subject": "规范施行时间",
+            "denominator": "不适用",
+            "time_origin": "2022年5月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "06 首例入组 NEO 2023-10-24 首例植入，距伦理通过约 6 个月",
+        "location": "页面右上部第六节点",
+        "statement": "流程节点6：首例入组，NEO于2023-10-24首例植入，距伦理通过约6个月",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2023-10-24",
+            "unit": "日期",
+            "subject": "NEO首例植入日期",
+            "denominator": "不适用",
+            "time_origin": "2023年10月24日"
+          },
+          {
+            "value": "6",
+            "unit": "月",
+            "subject": "伦理通过至首例植入间隔",
+            "denominator": "不适用",
+            "time_origin": "伦理通过后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "对标项目累计临床植入与注册验证例数",
+        "location": "页面中部左侧图表标题",
+        "statement": "横向柱状图标题，展示对标项目累计临床植入与注册验证例数",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "NEO 于 2026-03-13 获国家药监局批准上市；例数取公开报道的累计临床口径",
+        "location": "页面中部图表下方注释",
+        "statement": "图表注释说明NEO于2026-03-13获国家药监局批准上市，例数取公开报道累计临床口径",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2026-03-13",
+            "unit": "日期",
+            "subject": "NEO获批上市日期",
+            "denominator": "不适用",
+            "time_origin": "2026年3月13日"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "单位：例",
+        "location": "页面中部图表右侧",
+        "statement": "图表数据单位为例",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "NEO（清华 × 宣武医院） 36 例",
+        "location": "页面中部横向柱状图第一行",
+        "statement": "NEO项目（清华与宣武医院合作）累计36例",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "例",
+            "subject": "NEO累计临床植入例数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "阶梯医疗（中科院 × 华山医院） 40 余例",
+        "location": "页面中部横向柱状图第二行",
+        "statement": "阶梯医疗项目（中科院与华山医院合作）累计40余例",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "例",
+            "subject": "阶梯医疗累计临床植入例数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "北脑一号 5 例",
+        "location": "页面中部横向柱状图第三行",
+        "statement": "北脑一号项目累计5例",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "5",
+            "unit": "例",
+            "subject": "北脑一号累计临床植入例数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "触觉重建临床范式 首批 5 例",
+        "location": "页面中部横向柱状图第四行",
+        "statement": "触觉重建临床范式项目首批5例",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "5",
+            "unit": "例",
+            "subject": "触觉重建临床范式首批例数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "11 家 NEO 获批上市前开展多中心确证性试验的合作医院",
+        "location": "页面右侧上部数据卡片",
+        "statement": "NEO获批上市前开展多中心确证性试验的合作医院数量为11家",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "11",
+            "unit": "家",
+            "subject": "NEO多中心确证性试验合作医院数量",
+            "denominator": "不适用",
+            "time_origin": "获批上市前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "36 例 NEO 累计临床手术：4 例可行性 + 32 例多中心确证性",
+        "location": "页面右侧中部数据卡片",
+        "statement": "NEO累计临床手术36例，其中4例可行性研究+32例多中心确证性试验",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "例",
+            "subject": "NEO累计临床手术总数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "4",
+            "unit": "例",
+            "subject": "NEO可行性研究例数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "32",
+            "unit": "例",
+            "subject": "NEO多中心确证性试验例数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "left": "4",
+            "right": "32",
+            "reported": "36",
+            "left_unit": "例",
+            "right_unit": "例",
+            "reported_unit": "例",
+            "left_quote": "4 例可行性",
+            "right_quote": "32 例多中心确证性",
+            "reported_quote": "36 例",
+            "relation_quote": "NEO 累计临床手术：4 例可行性 + 32 例多中心确证性",
+            "meaning": "4例可行性加32例多中心确证性等于36例累计临床手术，算术正确"
+          }
+        ]
+      },
+      {
+        "quote": "约 29 个月 NEO 首例植入至获批上市全链路时长（公开日期推算）",
+        "location": "页面右侧中下部数据卡片",
+        "statement": "NEO从首例植入至获批上市全链路时长约29个月，由公开日期推算",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "29",
+            "unit": "月",
+            "subject": "NEO首例植入至获批上市全链路时长",
+            "denominator": "不适用",
+            "time_origin": "首例植入至获批上市"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "2026-03-13",
+            "right": "2023-10-24",
+            "reported": "约 29 个月",
+            "left_unit": "日期",
+            "right_unit": "日期",
+            "reported_unit": "月",
+            "left_quote": "NEO 于 2026-03-13 获国家药监局批准上市",
+            "right_quote": "NEO 2023-10-24 首例植入",
+            "reported_quote": "约 29 个月",
+            "relation_quote": "NEO 首例植入至获批上市全链路时长（公开日期推算）",
+            "meaning": "2023年10月24日至2026年3月13日间隔约29个月，推算合理"
+          }
+        ]
+      },
+      {
+        "quote": "98% 以上 北脑一号植入后设备有效通道数占比",
+        "location": "页面右侧下部数据卡片",
+        "statement": "北脑一号植入后设备有效通道数占比98%以上",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "98",
+            "unit": "%",
+            "subject": "北脑一号植入后设备有效通道数占比",
+            "denominator": "总通道数",
+            "time_origin": "植入后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "来源：首都医科大学新闻网 / 清华大学 / 国家药监局 / 财联社 / 北京市科学技术委员会 / 中国科学院 / 阶梯医疗官网 / 解放日报；时长为按公开日期推算",
+        "location": "页面底部来源注释",
+        "statement": "数据来源声明，包含多个公开来源及说明时长按公开日期推算",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "触觉重建临床范式 / 北脑一号 / 阶梯医疗（中科院 × 华山医院）/ NEO（清华 × 宣武医院）",
+        "location": "页面左侧横向柱状图Y轴标签区域",
+        "statement": "页面展示了四个对标项目：触觉重建临床范式、北脑一号、阶梯医疗（中科院×华山医院）、NEO（清华×宣武医院），均为脑机接口/神经植入领域公开项目，非本团队成果",
+        "kind": "inference",
+        "failure_mode": "eskin_clinical_fact",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "整页内容聚焦脑机接口神经植入物（NEO、北脑一号、阶梯医疗）的临床路径与对标数据，未出现『柔性电子』『电子皮肤』『传感器』『OLED』等本报告主题关键词",
+        "location": "整页内容范围",
+        "statement": "本页主题为脑机接口/神经植入物临床路径对标，与用户需求定义的柔性电子团队近三年进展主题存在明显偏离。页中NEO、北脑一号、阶梯医疗均为公开报道的脑机接口项目，非用户给定的柔性电子团队成果。未涉及可拉伸传感器阵列、柔性OLED器件、植入式电子皮肤等任何给定事实",
+        "kind": "inference",
+        "failure_mode": "topic_mismatch",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "柔性电子团队近三年进展：可拉伸传感器阵列量产良率从78%提升至92%；柔性OLED器件弯曲10万次无衰减；与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "页面呈现六个节点流程图+横向柱状图+右侧数据卡片的清晰结构",
+        "location": "整页布局",
+        "statement": "页面具有明确的结构化布局：上部为六节点临床路径流程，中部左侧为对标项目柱状图，右侧为关键数据卡片，底部为来源注释。信息层级较为清晰",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "所有文字区域bbox无相交，text_overlap_candidates为空列表",
+        "location": "基于rendered_text_geometry",
+        "statement": "根据提供的文字几何信息，各文字区域包围框无相交，无候选重叠对需进一步核查",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "横向柱状图有X轴刻度（0,10,20,30,40）及单位标注（例），各项目有明确数值标签",
+        "location": "页面中部图表区域",
+        "statement": "图表标签完整：X轴刻度0-40，单位为例，各柱状条右侧有直接数值标注（36例、40余例、5例、首批5例），无NaN或明显缺失标签",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页未出现技术路线图模块",
+        "location": "整页内容范围",
+        "statement": "页面主题为临床路径节点与对标数据，未包含技术路线图（technology roadmap）相关内容",
+        "kind": "fact",
+        "failure_mode": "missing_roadmap",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "含技术路线图与下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页未出现下一步计划模块",
+        "location": "整页内容范围",
+        "statement": "页面聚焦已完成/已公开的临床路径与对标数据，未包含下一步计划（future plan）相关内容",
+        "kind": "fact",
+        "failure_mode": "missing_plan",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "含技术路线图与下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6860,
+    "total_tokens": 9715,
+    "completion_tokens": 2855,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 74.955,
+  "attempts": 1
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "revision": 0,
+    "requirements_hash": "08de8f32028bb5ab2fcc5aa3e7091c05d29d788c58d6826054f6edcc77ced908",
+    "review": {
+      "approved": true,
+      "issues": [],
+      "summary": "Requirements与rubric对source_catalog的覆盖完整，无遗漏目标或额外阈值；各条目语义独立，pass/exclusions相容，无双重扣分或重复拆分；固定质量库标准合理。"
+    }
+  }
+]

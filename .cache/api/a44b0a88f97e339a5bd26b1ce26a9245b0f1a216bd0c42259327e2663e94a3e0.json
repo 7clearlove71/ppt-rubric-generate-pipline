@@ -1,0 +1,165 @@
+{
+  "parsed": {
+    "items": [
+      {
+        "id": "R01",
+        "dimension": "fulfillment",
+        "importance": 3,
+        "requirement_ids": [
+          "Q01"
+        ],
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91",
+          "src_174da649339240d00804ab0f",
+          "src_4c1e7e4f7af4c47b5b98d7b3",
+          "src_66a4055884f76a0f13058c95",
+          "src_6646cf47decd3caa6c8683f3",
+          "src_088ada1ab22d5049ba57d957"
+        ],
+        "objective": "四条产线能耗对比完整呈现且数据与给定表格一致",
+        "scope": "能耗对比模块",
+        "applicability": "始终适用；这是用户明确要求的交付内容",
+        "pass_condition": "PPT呈现四条产线的能耗对比，各产线月产量/月用电/单位能耗/空载能耗与给定数据一致：1号线80万件/68万kWh/0.85kWh/件/8kWh/h；2号线95/49/0.52/6；3号线70/34/0.48/12；4号线60/31/0.52/5，数值归属不张冠李戴、单位可辨认。",
+        "exclusions": "对比形式（表格、图表、文字列举）不限；等值精度的合理近似不处罚；由数据导出的计算或推论问题由通用推理条目负责；可读性问题不在本条扣分。",
+        "evidence_mode": "text"
+      },
+      {
+        "id": "R02",
+        "dimension": "correctness",
+        "importance": 3,
+        "requirement_ids": [
+          "Q02"
+        ],
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91"
+        ],
+        "objective": "核心发现准确：1号线单位能耗0.85远高于其他产线约0.5",
+        "scope": "核心发现/结论表述",
+        "applicability": "始终适用；用户明确将此列为核心发现",
+        "pass_condition": "明确指出1号线单位产品能耗为0.85kWh/件，并与其他产线约0.5kWh/件（0.48–0.52区间）的水平形成对比，对象、数值和'显著偏高'的结论准确。",
+        "exclusions": "'远高于'的具体措辞不限；对比基准可用各线具体值或概述0.5左右；与行业标杆0.45的对比由Q06条目负责，缺失不在本条扣分。",
+        "evidence_mode": "text"
+      },
+      {
+        "id": "R03",
+        "dimension": "fulfillment",
+        "importance": 3,
+        "requirement_ids": [
+          "Q03"
+        ],
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91"
+        ],
+        "objective": "聚焦1号线深挖并归因于液压系统老化",
+        "scope": "1号线深挖模块",
+        "applicability": "始终适用；用户明确要求单独深挖1号线",
+        "pass_condition": "存在聚焦1号线的独立内容，指出其单位能耗偏高主要因液压系统老化导致效率下降，归因对象和因果关系与来源一致。",
+        "exclusions": "深挖的篇幅、深度与呈现形式不限；液压系统节能率、施工周期等来源未给定的实施细节缺失不处罚；深挖中新增推算的合理性由通用推理条目负责。",
+        "evidence_mode": "text"
+      },
+      {
+        "id": "R04",
+        "dimension": "fulfillment",
+        "importance": 3,
+        "requirement_ids": [
+          "Q04"
+        ],
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91",
+          "src_624e5d89a92f6fbecfcd2a96"
+        ],
+        "objective": "投资回报测算交付完整：投入、电价依据、回收期齐全且账算得清",
+        "scope": "投资回报测算模块",
+        "applicability": "始终适用；用户明确要求这笔账在PPT里算清楚",
+        "pass_condition": "呈现更换液压系统的投资回报测算，包含投入约120万元、按当前产量和工业电价0.75元/kWh计算、约18个月收回成本三项关键内容，且测算过程或计算依据可见，读者能看出回收期如何得出，各数字之间不互相矛盾。",
+        "exclusions": "测算所依据的节能目标或假设（如降至标杆水平）允许合理选择，只要假设明确；计算精度与近似方式允许合理差异，纯运算与推论有效性由通用推理条目负责；未给定的实施细节不强制。",
+        "evidence_mode": "text"
+      },
+      {
+        "id": "R05",
+        "dimension": "correctness",
+        "importance": 2,
+        "requirement_ids": [
+          "Q05"
+        ],
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91",
+          "src_6646cf47decd3caa6c8683f3"
+        ],
+        "objective": "准确提及3号线空载能耗偏高及停机流程问题",
+        "scope": "3号线问题提示",
+        "applicability": "始终适用；用户明确要求这块提一句",
+        "pass_condition": "提及3号线单位能耗不高（0.48kWh/件）但空载能耗偏高，待机状态下每小时耗电约12kWh，并指出这反映停机流程不规范，数值与对象准确。",
+        "exclusions": "'提一句'的篇幅和深度不限，不强制要求整改方案或量化损失；是否展开测算停机浪费金额不影响本条。",
+        "evidence_mode": "text"
+      },
+      {
+        "id": "R06",
+        "dimension": "correctness",
+        "importance": 1,
+        "requirement_ids": [
+          "Q06"
+        ],
+        "source_ids": [
+          "src_624e5d89a92f6fbecfcd2a96"
+        ],
+        "objective": "行业标杆0.45kWh/件作为对标参考准确呈现",
+        "scope": "对标参考内容",
+        "applicability": "PPT引用行业标杆时适用；未引用则自然满足",
+        "pass_condition": "引用行业标杆单位能耗约0.45kWh/件作为对标参考，数值准确，且不将标杆冒充为本企业实际达成的水平。",
+        "exclusions": "不强制要求标杆数据的出处说明、行业背景介绍或详细差距分析；对标位置（对比页或测算页）不限。",
+        "evidence_mode": "text"
+      },
+      {
+        "id": "R07",
+        "dimension": "narrative",
+        "importance": 2,
+        "requirement_ids": [
+          "Q07"
+        ],
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91"
+        ],
+        "objective": "结构顺序符合对比→深挖→投资回报的要求",
+        "scope": "全篇",
+        "applicability": "始终适用；用户明确指定了整体结构",
+        "pass_condition": "内容组织顺序为：先呈现四条产线的能耗对比，再聚焦1号线深挖，最后落到节能改造的投资回报测算，三部分先后关系清晰可辨。",
+        "exclusions": "允许封面、目录、总结等辅助页；章节标题和命名不限；3号线提示放置位置不限；模块内部的事实缺失由对应内容条目负责。",
+        "evidence_mode": "both"
+      },
+      {
+        "id": "R08",
+        "dimension": "narrative",
+        "importance": 2,
+        "requirement_ids": [
+          "Q08"
+        ],
+        "source_ids": [
+          "src_3fecb88711b00ca960c2cb91"
+        ],
+        "objective": "内容组织服务于节能改造立项决策",
+        "scope": "全篇",
+        "applicability": "始终适用；用户明确用途为立项汇报",
+        "pass_condition": "内容组织面向立项决策：能耗对比与1号线归因支撑改造必要性，投资回报测算支撑可行性，读者能据此形成是否立项的判断依据，无与立项无关的内容冲淡主线。",
+        "exclusions": "不规定特定说服话术、立项申报模板或风险章节；事实错误或内容缺失由对应条目负责，不在本条重复扣分。",
+        "evidence_mode": "both"
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 2804,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1243,
+      "text_tokens": 1561
+    },
+    "prompt_tokens": 3326,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 3326
+    },
+    "total_tokens": 6130
+  },
+  "elapsed_seconds": 52.053,
+  "attempts": 1
+}

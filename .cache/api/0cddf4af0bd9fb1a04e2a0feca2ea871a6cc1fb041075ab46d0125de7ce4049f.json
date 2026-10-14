@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      4
+    ],
+    "evidence": "第4页完整呈现'公司+合作社+农户'三方结构及各自分工：公司（市场端）'负责产品设计与市场销售，解决编什么、卖给谁'；合作社（组织端）'统一采购竹材等原料、统一组织技能培训，压降农户单独采购成本'；农户（生产端）'在家编织、按件计酬'。三方职责准确对应需求中'公司负责设计和销售、合作社统一采购原料和培训、农户在家编织按件计酬'，且突出'按件计酬·多劳多得'的利益联结机制，无缺失或错位。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 17440,
+    "total_tokens": 17580,
+    "completion_tokens": 140,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.615,
+  "attempts": 1
+}

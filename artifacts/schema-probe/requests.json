@@ -1,0 +1,23 @@
+[
+  {
+    "request_id": 1,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "0bd29779668fa66564a887777a3bec4133ae07e8f66e6f57406f545cb51c8ae0",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1795,
+      "total_tokens": 1827,
+      "completion_tokens": 32,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 12.594
+  }
+]

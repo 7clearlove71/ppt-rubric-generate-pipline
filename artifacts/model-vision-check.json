@@ -1,0 +1,31 @@
+{
+  "result": {
+    "title": "OLED",
+    "visible_facts": [
+      "20",
+      "01",
+      "02"
+    ]
+  },
+  "usage": [
+    {
+      "role": "vision",
+      "cache_key": "fdfdee5ab93703f4b954254ca16fba5aba8e5511490b094943b7e05d9e2501df",
+      "cached": false,
+      "model": "kimi-k2.6",
+      "usage": {
+        "prompt_tokens": 3010,
+        "total_tokens": 5704,
+        "completion_tokens": 2694,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2677
+        }
+      },
+      "elapsed_seconds": 82.041,
+      "attempts": 1
+    }
+  ]
+}

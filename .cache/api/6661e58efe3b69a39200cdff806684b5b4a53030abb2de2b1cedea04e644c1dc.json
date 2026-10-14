@@ -1,0 +1,97 @@
+{
+  "parsed": {
+    "page": 10,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "汇报结束",
+        "location": "页面上部居中，小字",
+        "statement": "可见结束页标识文字，颜色为#c96442（橙红色）",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "恳请评审指导，感谢聆听",
+        "location": "页面中上部，大号黑色字体",
+        "statement": "结束页主标题文字，视觉层级清晰，无遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "恳请县文化和旅游局、县乡村振兴办公室评审领导与专家指导；本报告数据均可提供原始凭证与台账备查。",
+        "location": "标题下方，灰色小字",
+        "statement": "结束页副标题，明确呼应评审受众（文旅局、乡村振兴办），并声明数据可备查，适配政府评审场景",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "评审是文旅局和乡村振兴办的领导"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "申报单位：×× 县×× 竹编工艺品有限公司／×× 竹编专业合作社",
+        "location": "页面底部偏左，黑色字体",
+        "statement": "申报单位占位信息，使用××占位符未填写具体县名和机构名，属待补状态，未冒充为既成事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "汇报日期：按评审日期填写 · 联系人与联系电话、地址：按申报材料填写",
+        "location": "申报单位下方，灰色小字",
+        "statement": "联系信息占位提示，明确标注按评审日期/申报材料填写，属合理占位处理，未冒充为既成事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "（图像整体）",
+        "location": "全页",
+        "statement": "页面为结束致谢页，背景浅色，文字分布疏朗，无图表、无数据表格、无多模块交叠。所有文字区域bbox无相交，text_overlap_candidates为空，未发现文字叠印、裁切出界或遮挡现象",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "（图像整体）",
+        "location": "全页",
+        "statement": "本页为汇报结束页，不承担项目背景、文化价值、带动模式、三年规划、资金用途等核心内容模块的呈现功能，仅作致谢与申报信息收尾。该页本身不涉及关键事实数字、模式结构、规划分阶段、资金匹配等需核查内容",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 4679,
+    "total_tokens": 5255,
+    "completion_tokens": 576,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 14.39,
+  "attempts": 1
+}

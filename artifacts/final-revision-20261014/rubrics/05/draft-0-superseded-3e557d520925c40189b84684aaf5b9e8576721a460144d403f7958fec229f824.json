@@ -1,0 +1,318 @@
+{
+  "groups": [
+    {
+      "id": "correctness",
+      "dimension": "correctness",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 25.0
+    },
+    {
+      "id": "fulfillment",
+      "dimension": "fulfillment",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 30.0
+    },
+    {
+      "id": "integrity",
+      "dimension": "integrity",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 15.0
+    },
+    {
+      "id": "narrative",
+      "dimension": "narrative",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 15.0
+    },
+    {
+      "id": "visual",
+      "dimension": "visual",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 15.0
+    }
+  ],
+  "items": [
+    {
+      "id": "R01",
+      "dimension": "fulfillment",
+      "importance": 3,
+      "requirement_ids": [
+        "Q01"
+      ],
+      "source_ids": [
+        "src_98be33261a7f60f298af0b9a"
+      ],
+      "objective": "田野笔记完整转化为沙龙可用PPT",
+      "scope": "全篇",
+      "applicability": "始终适用。",
+      "pass_condition": "交付一份结构完整、可直接在沙龙演示的PPT成品，以四天田野笔记的观察与感受为主体内容，而非仅提纲、讲稿、设计说明或零散页面。",
+      "exclusions": "不规定页数、模板、字体或版式；制作性设计可自由发挥；笔记中具体事实的准确性由对应事实条目负责，不在此扣分。",
+      "evidence_mode": "text",
+      "group_id": "fulfillment",
+      "scope_type": "deck",
+      "judge_prompt": "目标：田野笔记完整转化为沙龙可用PPT\n作用域：全篇\n适用条件：始终适用。\n满足条件：交付一份结构完整、可直接在沙龙演示的PPT成品，以四天田野笔记的观察与感受为主体内容，而非仅提纲、讲稿、设计说明或零散页面。\n例外与排除：不规定页数、模板、字体或版式；制作性设计可自由发挥；笔记中具体事实的准确性由对应事实条目负责，不在此扣分。",
+      "score": 18.0
+    },
+    {
+      "id": "R02",
+      "dimension": "narrative",
+      "importance": 2,
+      "requirement_ids": [
+        "Q02"
+      ],
+      "source_ids": [
+        "src_98be33261a7f60f298af0b9a",
+        "src_552cfc7abb5940a51e1330c2"
+      ],
+      "objective": "风格大气出彩，契合沙龙分享",
+      "scope": "全篇表达与呈现",
+      "applicability": "始终适用；允许不同的正式演示风格。",
+      "pass_condition": "全篇表达与呈现统一、正式、有展示感，标题与措辞面向公开分享场合而非私人笔记口吻，无明显敷衍、随意或与'大气出彩'定位相悖的处理。",
+      "exclusions": "不评价主观美丑，不要求特定配色、字体、动效或视觉模板；可读性与布局问题由固定视觉条目负责；内容缺失或事实错误不在此重复扣分。",
+      "evidence_mode": "both",
+      "group_id": "narrative",
+      "scope_type": "deck",
+      "judge_prompt": "目标：风格大气出彩，契合沙龙分享\n作用域：全篇表达与呈现\n适用条件：始终适用；允许不同的正式演示风格。\n满足条件：全篇表达与呈现统一、正式、有展示感，标题与措辞面向公开分享场合而非私人笔记口吻，无明显敷衍、随意或与'大气出彩'定位相悖的处理。\n例外与排除：不评价主观美丑，不要求特定配色、字体、动效或视觉模板；可读性与布局问题由固定视觉条目负责；内容缺失或事实错误不在此重复扣分。",
+      "score": 10.0
+    },
+    {
+      "id": "R03",
+      "dimension": "correctness",
+      "importance": 3,
+      "requirement_ids": [
+        "Q03"
+      ],
+      "source_ids": [
+        "src_a8e6156f4f2feccdee14c031"
+      ],
+      "objective": "Day1观察事实准确呈现",
+      "scope": "对应模块",
+      "applicability": "PPT应覆盖此核心观察；未呈现则不满足。",
+      "pass_condition": "明确呈现：现存明清老宅约40栋、住人不到一半、年轻人外出打工、留守多为老人，数量、对象与表述未被改写或夸大。",
+      "exclusions": "允许'约四十栋''不足半数居住'等等价表达；不强制配图、数据分析或引申结论，合理背景补充不扣分。",
+      "evidence_mode": "text",
+      "group_id": "correctness",
+      "scope_type": "deck",
+      "judge_prompt": "目标：Day1观察事实准确呈现\n作用域：对应模块\n适用条件：PPT应覆盖此核心观察；未呈现则不满足。\n满足条件：明确呈现：现存明清老宅约40栋、住人不到一半、年轻人外出打工、留守多为老人，数量、对象与表述未被改写或夸大。\n例外与排除：允许'约四十栋''不足半数居住'等等价表达；不强制配图、数据分析或引申结论，合理背景补充不扣分。",
+      "score": 5.0
+    },
+    {
+      "id": "R04",
+      "dimension": "correctness",
+      "importance": 2,
+      "requirement_ids": [
+        "Q04"
+      ],
+      "source_ids": [
+        "src_f9a2bbc5ab9323d56d226945"
+      ],
+      "objective": "Day2祭祖频率变化准确",
+      "scope": "对应模块",
+      "applicability": "呈现祠堂祭祖内容时适用。",
+      "pass_condition": "准确呈现祭祖频率的今昔对比：以前每年清明祭祖，现在三年一次，时间基准与频率未被颠倒或改写。",
+      "exclusions": "允许'由一年一次变为三年一次'等等价表述；对变迁原因的解读若标注为推测不扣分。",
+      "evidence_mode": "text",
+      "group_id": "correctness",
+      "scope_type": "deck",
+      "judge_prompt": "目标：Day2祭祖频率变化准确\n作用域：对应模块\n适用条件：呈现祠堂祭祖内容时适用。\n满足条件：准确呈现祭祖频率的今昔对比：以前每年清明祭祖，现在三年一次，时间基准与频率未被颠倒或改写。\n例外与排除：允许'由一年一次变为三年一次'等等价表述；对变迁原因的解读若标注为推测不扣分。",
+      "score": 3.3333333333333335
+    },
+    {
+      "id": "R05",
+      "dimension": "correctness",
+      "importance": 3,
+      "requirement_ids": [
+        "Q05"
+      ],
+      "source_ids": [
+        "src_f9a2bbc5ab9323d56d226945"
+      ],
+      "objective": "族谱说法内容准确且归属为老人转述",
+      "scope": "对应模块",
+      "applicability": "呈现族谱内容时适用；完全不呈现则不满足，因该说法是笔记关键信息。",
+      "pass_condition": "呈现'有老人称族谱在文革期间被烧一部分、现版本凭记忆补写'这一说法，内容不失真，且明确其为老人一方的转述说法而非作者核实的事实。",
+      "exclusions": "'待考'标注的呈现方式、全篇是否对其下定论由诚信条目Q09负责；允许'据老人回忆'等等价归属表述。",
+      "evidence_mode": "text",
+      "group_id": "correctness",
+      "scope_type": "deck",
+      "judge_prompt": "目标：族谱说法内容准确且归属为老人转述\n作用域：对应模块\n适用条件：呈现族谱内容时适用；完全不呈现则不满足，因该说法是笔记关键信息。\n满足条件：呈现'有老人称族谱在文革期间被烧一部分、现版本凭记忆补写'这一说法，内容不失真，且明确其为老人一方的转述说法而非作者核实的事实。\n例外与排除：'待考'标注的呈现方式、全篇是否对其下定论由诚信条目Q09负责；允许'据老人回忆'等等价归属表述。",
+      "score": 5.0
+    },
+    {
+      "id": "R06",
+      "dimension": "correctness",
+      "importance": 2,
+      "requirement_ids": [
+        "Q06"
+      ],
+      "source_ids": [
+        "src_921dd5a8d2195591727d690a"
+      ],
+      "objective": "Day3建筑观察准确呈现",
+      "scope": "对应模块",
+      "applicability": "呈现Day3内容时适用。",
+      "pass_condition": "呈现民居多为天井院落式；其中几栋木雕风格明显不同，村民称系'外姓人'所建且来历说不清，该说法以未证实的村民口径呈现而非定论。",
+      "exclusions": "允许对建筑特征的合理描述性展开；木雕来历标注是否规范由Q09负责，本条只看事实内容与归属准确。",
+      "evidence_mode": "text",
+      "group_id": "correctness",
+      "scope_type": "deck",
+      "judge_prompt": "目标：Day3建筑观察准确呈现\n作用域：对应模块\n适用条件：呈现Day3内容时适用。\n满足条件：呈现民居多为天井院落式；其中几栋木雕风格明显不同，村民称系'外姓人'所建且来历说不清，该说法以未证实的村民口径呈现而非定论。\n例外与排除：允许对建筑特征的合理描述性展开；木雕来历标注是否规范由Q09负责，本条只看事实内容与归属准确。",
+      "score": 3.3333333333333335
+    },
+    {
+      "id": "R07",
+      "dimension": "correctness",
+      "importance": 3,
+      "requirement_ids": [
+        "Q07"
+      ],
+      "source_ids": [
+        "src_765f5c9835c67bf5af3fb7a2"
+      ],
+      "objective": "Day4保护与开发矛盾准确呈现",
+      "scope": "对应模块",
+      "applicability": "PPT应覆盖此核心观察；未呈现则不满足。",
+      "pass_condition": "呈现村里旅游开发新修仿古街、而老宅本体保护缺乏资金投入这一对照，矛盾指向清楚，未被改写为保护资金充足或开发停滞等相反含义。",
+      "exclusions": "允许对矛盾作合理评述或联系三方向展开；不强制提出解决方案，方案类内容须可辨认为建议。",
+      "evidence_mode": "text",
+      "group_id": "correctness",
+      "scope_type": "deck",
+      "judge_prompt": "目标：Day4保护与开发矛盾准确呈现\n作用域：对应模块\n适用条件：PPT应覆盖此核心观察；未呈现则不满足。\n满足条件：呈现村里旅游开发新修仿古街、而老宅本体保护缺乏资金投入这一对照，矛盾指向清楚，未被改写为保护资金充足或开发停滞等相反含义。\n例外与排除：允许对矛盾作合理评述或联系三方向展开；不强制提出解决方案，方案类内容须可辨认为建议。",
+      "score": 5.0
+    },
+    {
+      "id": "R08",
+      "dimension": "fulfillment",
+      "importance": 2,
+      "requirement_ids": [
+        "Q08"
+      ],
+      "source_ids": [
+        "src_ee2b0dbd7e050ee067f797a8"
+      ],
+      "objective": "三个后续方向作为初步感受呈现",
+      "scope": "对应模块",
+      "applicability": "PPT应包含该方向性内容；缺失则不满足。",
+      "pass_condition": "明确呈现空心化、文化记忆断层、保护与开发错位三个后续研究方向，并通过标题、页注、声明或上下文表明其性质为初步感受与后续方向，而非已证实的研究结论。",
+      "exclusions": "不强制给出研究计划或方法细节；三个方向各自对应的事实支撑是否准确由事实条目负责；怀疑性说法的标注由Q09负责。",
+      "evidence_mode": "text",
+      "group_id": "fulfillment",
+      "scope_type": "deck",
+      "judge_prompt": "目标：三个后续方向作为初步感受呈现\n作用域：对应模块\n适用条件：PPT应包含该方向性内容；缺失则不满足。\n满足条件：明确呈现空心化、文化记忆断层、保护与开发错位三个后续研究方向，并通过标题、页注、声明或上下文表明其性质为初步感受与后续方向，而非已证实的研究结论。\n例外与排除：不强制给出研究计划或方法细节；三个方向各自对应的事实支撑是否准确由事实条目负责；怀疑性说法的标注由Q09负责。",
+      "score": 12.0
+    },
+    {
+      "id": "R09",
+      "dimension": "integrity",
+      "importance": 3,
+      "requirement_ids": [
+        "Q09"
+      ],
+      "source_ids": [
+        "src_552cfc7abb5940a51e1330c2",
+        "src_f9a2bbc5ab9323d56d226945",
+        "src_921dd5a8d2195591727d690a"
+      ],
+      "objective": "存疑内容明确标注且全篇不下定论",
+      "scope": "全篇存疑内容",
+      "applicability": "凡呈现族谱来历、木雕建筑来历等待考内容时适用。",
+      "pass_condition": "族谱'待考、需多方核实'与木雕建筑'来历说不清'等存疑信息有明确可辨的存疑标注（可为页注、标记或全篇统一声明），且全篇任何位置均未将这些说法表述为已证实的确定事实或结论。",
+      "exclusions": "标注形式不限，不要求逐句重复；三个方向的'初步'定性由Q08负责；来源之外新增事实的边界由通用诚信条目负责；事实内容本身失真由对应事实条目负责。",
+      "evidence_mode": "text",
+      "group_id": "integrity",
+      "scope_type": "deck",
+      "judge_prompt": "目标：存疑内容明确标注且全篇不下定论\n作用域：全篇存疑内容\n适用条件：凡呈现族谱来历、木雕建筑来历等待考内容时适用。\n满足条件：族谱'待考、需多方核实'与木雕建筑'来历说不清'等存疑信息有明确可辨的存疑标注（可为页注、标记或全篇统一声明），且全篇任何位置均未将这些说法表述为已证实的确定事实或结论。\n例外与排除：标注形式不限，不要求逐句重复；三个方向的'初步'定性由Q08负责；来源之外新增事实的边界由通用诚信条目负责；事实内容本身失真由对应事实条目负责。",
+      "score": 9.0
+    },
+    {
+      "id": "C_REASON",
+      "dimension": "correctness",
+      "importance": 2,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "补充信息与推理成立",
+      "scope": "全篇补充数据、计算、比较和推论",
+      "applicability": "出现补充数据、计算、比较或推论时适用；没有这些现象自然满足，不免除明确要求的分析交付。",
+      "pass_condition": "补充信息前后一致，运算和正常近似正确；比率分子分母、对象、时期与时间起点可比；结论由所述前提支持，不将相关性说成已证实因果、不以待证结论作为其自身证明。",
+      "exclusions": "原始来源关键事实的缺失或改写只由专属事实条目负责；合理且明确的假设本身不是计算错误或循环论证，计划也不等于既成事实；新增事实的来源缺失只属信息边界，不在本条再扣分。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "correctness",
+      "judge_prompt": "目标：补充信息与推理成立\n作用域：全篇补充数据、计算、比较和推论\n适用条件：出现补充数据、计算、比较或推论时适用；没有这些现象自然满足，不免除明确要求的分析交付。\n满足条件：补充信息前后一致，运算和正常近似正确；比率分子分母、对象、时期与时间起点可比；结论由所述前提支持，不将相关性说成已证实因果、不以待证结论作为其自身证明。\n例外与排除：原始来源关键事实的缺失或改写只由专属事实条目负责；合理且明确的假设本身不是计算错误或循环论证，计划也不等于既成事实；新增事实的来源缺失只属信息边界，不在本条再扣分。",
+      "score": 3.3333333333333335
+    },
+    {
+      "id": "I_BOUNDARY",
+      "dimension": "integrity",
+      "importance": 2,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "新增事实不冒充已知事实",
+      "scope": "全篇来源之外的新增具体断言",
+      "applicability": "出现来源之外的新增团队成果、调查结果、合作对象、具体事实或预测时适用；没有则满足。",
+      "pass_condition": "新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。",
+      "exclusions": "合理背景常识、明确建议不需逐句标注；标注可以由适用全篇的声明或上下文承担；不再次检查原给定事实的改写、纯计算错误、以及来源已明确要求且由专属条目负责的披露目标。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "integrity",
+      "judge_prompt": "目标：新增事实不冒充已知事实\n作用域：全篇来源之外的新增具体断言\n适用条件：出现来源之外的新增团队成果、调查结果、合作对象、具体事实或预测时适用；没有则满足。\n满足条件：新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。\n例外与排除：合理背景常识、明确建议不需逐句标注；标注可以由适用全篇的声明或上下文承担；不再次检查原给定事实的改写、纯计算错误、以及来源已明确要求且由专属条目负责的披露目标。",
+      "score": 6.0
+    },
+    {
+      "id": "N_FLOW",
+      "dimension": "narrative",
+      "importance": 1,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "内容组织支持任务用途",
+      "scope": "全篇组织与衔接",
+      "applicability": "所有PPT，允许不同有效结构及合理回顾。",
+      "pass_condition": "内容顺序和模块衔接可理解，没有独立于事实/内容完整性/可读性问题之外、妨碍任务理解的无关信息堆积、自相割裂的表达或无意义重复。",
+      "exclusions": "不因同一内容缺失、事实错误或遮挡再次扣分；不规定章节标题或结构模板；源明确要求的受众、时长、文体和组织目标由其专属条目负责，不重复计入。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "narrative",
+      "judge_prompt": "目标：内容组织支持任务用途\n作用域：全篇组织与衔接\n适用条件：所有PPT，允许不同有效结构及合理回顾。\n满足条件：内容顺序和模块衔接可理解，没有独立于事实/内容完整性/可读性问题之外、妨碍任务理解的无关信息堆积、自相割裂的表达或无意义重复。\n例外与排除：不因同一内容缺失、事实错误或遮挡再次扣分；不规定章节标题或结构模板；源明确要求的受众、时长、文体和组织目标由其专属条目负责，不重复计入。",
+      "score": 5.0
+    },
+    {
+      "id": "V_READ",
+      "dimension": "visual",
+      "importance": 2,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "文字和图表信息实际可读",
+      "scope": "逐页检查全部可见内容",
+      "applicability": "所有页面；没有图表不要求补充图表或图例。",
+      "pass_condition": "有信息作用的文字、数字及图表类别/轴/图例/单位可辨认，不因重叠叠印、截断、对比不足或缺失标签导致信息损失或需要猜读；页面没有未处理的NaN等破损残留。",
+      "exclusions": "不以文字框几何相交自动认定遮挡；无信息损失的装饰叠放、可读的小字或个人风格偏好不扣分。此类遮挡与标签问题只在本条计分。",
+      "evidence_mode": "visual",
+      "scope_type": "page",
+      "group_id": "visual",
+      "judge_prompt": "目标：文字和图表信息实际可读\n作用域：逐页检查全部可见内容\n适用条件：所有页面；没有图表不要求补充图表或图例。\n满足条件：有信息作用的文字、数字及图表类别/轴/图例/单位可辨认，不因重叠叠印、截断、对比不足或缺失标签导致信息损失或需要猜读；页面没有未处理的NaN等破损残留。\n例外与排除：不以文字框几何相交自动认定遮挡；无信息损失的装饰叠放、可读的小字或个人风格偏好不扣分。此类遮挡与标签问题只在本条计分。",
+      "score": 10.0
+    },
+    {
+      "id": "V_LAYOUT",
+      "dimension": "visual",
+      "importance": 1,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "视觉组织支持理解",
+      "scope": "逐页检查内容组织与编码",
+      "applicability": "所有页面；简洁封面、章节页和结束页可以合理留白。",
+      "pass_condition": "在内容本身可读的前提下，标题与主体、并列项与主次关系可识别，布局及图形编码不会造成错误的对应关系或难以确定的阅读顺序。",
+      "exclusions": "不重复处罚遮挡、裁切、对比度及标签缺失；不要求特定配色、模板、图表数量或将所有文字图形化；装饰多少或主观美观偏好不扣分。",
+      "evidence_mode": "visual",
+      "scope_type": "page",
+      "group_id": "visual",
+      "judge_prompt": "目标：视觉组织支持理解\n作用域：逐页检查内容组织与编码\n适用条件：所有页面；简洁封面、章节页和结束页可以合理留白。\n满足条件：在内容本身可读的前提下，标题与主体、并列项与主次关系可识别，布局及图形编码不会造成错误的对应关系或难以确定的阅读顺序。\n例外与排除：不重复处罚遮挡、裁切、对比度及标签缺失；不要求特定配色、模板、图表数量或将所有文字图形化；装饰多少或主观美观偏好不扣分。",
+      "score": 5.0
+    }
+  ]
+}

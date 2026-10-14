@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "text_seen": [
+      "3",
+      "开发错位"
+    ],
+    "overlapping": true,
+    "overlap_objects": [
+      "3与开"
+    ],
+    "description": "金色数字'3'位于左侧，其下半部分与黑色汉字'开'的左上角发生实际笔画相交重叠。数字'3'呈金黄色，汉字'开发错位'为黑色，背景为浅米色。数字'3'整体位置偏左上，与'开'字形成明显的叠压关系，'3'的下部横弧穿过'开'字的第一横和左侧竖笔区域。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 253,
+    "total_tokens": 368,
+    "completion_tokens": 115,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 112.188,
+  "attempts": 1
+}

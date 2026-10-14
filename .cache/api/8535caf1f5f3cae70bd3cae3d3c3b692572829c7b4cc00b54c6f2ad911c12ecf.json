@@ -1,0 +1,428 @@
+{
+  "parsed": {
+    "page": 12,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "老旧小区改造工作情况汇报",
+        "location": "页面左上角标题",
+        "statement": "页面主题为老旧小区改造工作汇报，与需求主题一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "五、下一步计划 ｜ 12 / 13",
+        "location": "页面右上角导航",
+        "statement": "本页属于第五板块\"下一步计划\"，是五个既定纲目之一",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#5 下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "整改措施与责任分工",
+        "location": "主标题区域",
+        "statement": "本页副标题为\"整改措施与责任分工\"，属于\"下一步计划\"下的具体展开，内容定位合理",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "七项措施逐条对应五项问题，明确责任单位、完成时限与验收口径，比率沿用 P02 统一阈值。",
+        "location": "副标题说明文字",
+        "statement": "明确说明措施与问题对应关系，且比率口径统一引用P02，体现前后呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存在问题那部分不要写虚的,要能看出跟前面资金和满意度两块是呼应的、有对应关系的,评审组一眼要能看出问题是从哪儿来的"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "01 问题一 追加区级配套资金安排，将 2140 万元缺口纳入年度预算调整方案",
+        "location": "表格第一行",
+        "statement": "措施01对应问题一，涉及资金2140万元，与资金使用情况板块形成呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2140",
+            "unit": "万元",
+            "subject": "区级配套资金缺口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "02 问题一 建立管线单位出资联席会议制度，签订\"共建共担\"协议并明确付费节点",
+        "location": "表格第二行",
+        "statement": "措施02对应问题一，涉及社会资本出资机制",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "03 问题一 推行居民出资先改造后付费及分期缴纳，公示出资标准与使用去向",
+        "location": "表格第三行",
+        "statement": "措施03对应问题一，涉及居民出资机制，与居民满意度/出资板块呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "04 问题二 建立结余资金月调度机制，对 3236 万元待审计资金实行竣工结算限时办结",
+        "location": "表格第四行",
+        "statement": "措施04对应问题二，涉及3236万元结余资金审计，与资金使用情况板块直接呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "3236",
+            "unit": "万元",
+            "subject": "待审计结余资金",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "05 问题三 加装电梯与停车泊位项目单独建档、单独调度，实行一小区一方案",
+        "location": "表格第五行",
+        "statement": "措施05对应问题三，涉及改造任务完成情况中的具体项目",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "06 问题四 落实文明施工标准，设置公示牌与噪声扬尘监测点，实行投诉 24 小时响应",
+        "location": "表格第六行",
+        "statement": "措施06对应问题四，涉及施工管理满意度，与居民满意度板块呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "24",
+            "unit": "小时",
+            "subject": "投诉响应时限",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "07 问题五 明确设施移交清单与物业接管主体，同步签订后期管养协议",
+        "location": "表格第七行",
+        "statement": "措施07对应问题五，涉及设施移交与后期管理",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "区级到位率 100.0%",
+        "location": "验收口径列第一行",
+        "statement": "验收口径使用百分比数值，与要求的数据类表述统一口径一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "100.0",
+            "unit": "%",
+            "subject": "区级到位率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "社会资本到位率 95.0%",
+        "location": "验收口径列第二行",
+        "statement": "验收口径使用百分比数值，口径统一",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "95.0",
+            "unit": "%",
+            "subject": "社会资本到位率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "居民出资到位率 90.0%",
+        "location": "验收口径列第三行",
+        "statement": "验收口径使用百分比数值，口径统一",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "居民出资到位率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "支出执行率 95.0%",
+        "location": "验收口径列第四行",
+        "statement": "验收口径使用百分比数值，口径统一",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "95.0",
+            "unit": "%",
+            "subject": "支出执行率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "完成率均达 90.0%",
+        "location": "验收口径列第五行",
+        "statement": "验收口径使用百分比数值，口径统一",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "完成率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "施工管理满意度 90.0%",
+        "location": "验收口径列第六行",
+        "statement": "验收口径使用百分比数值，与居民满意度板块呼应，口径统一",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "施工管理满意度",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "设施移交率 100.0%",
+        "location": "验收口径列第七行",
+        "statement": "验收口径使用百分比数值，口径统一",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "100.0",
+            "unit": "%",
+            "subject": "设施移交率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "整改要求：上述七项措施自本报告审定之日起执行，每月 5 日前报送进展；验收口径中的比率均按 P02 统一口径计算。",
+        "location": "表格下方说明文字",
+        "statement": "强调整改措施的执行要求，明确比率按P02统一口径计算，体现数据一致性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "5",
+            "unit": "日",
+            "subject": "每月报送进展时限",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "达标线 95.0% 、滞后线 90.0% ，与 P02 、 P08 判定阈值一致",
+        "location": "表格下方说明文字",
+        "statement": "明确阈值标准并与P02、P08关联，体现前后数据一致性和呼应关系",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "95.0",
+            "unit": "%",
+            "subject": "达标线",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "滞后线",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "措施依据： P10 、 P11 所列五项问题",
+        "location": "页面左下角",
+        "statement": "明确措施依据为P10、P11所列问题，体现与存在问题板块的呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存在问题那部分不要写虚的,要能看出跟前面资金和满意度两块是呼应的、有对应关系的,评审组一眼要能看出问题是从哪儿来的"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据截至 2026 年 8 月 31 日 · 比率保留一位小数 · 情景数据",
+        "location": "页面右下角",
+        "statement": "标注数据截至时间和比率精度，但末尾\"情景数据\"四字可能暗示数据为假设/模拟性质",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "数据截至时间",
+            "denominator": "不适用",
+            "time_origin": "2026年8月31日"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "缺口纳入年度预算调整方案",
+        "location": "表格第一行整改措施列，与第二行交界处",
+        "statement": "视觉观察：第一行末尾\"缺口纳入年度预算调整方案\"与第二行开头\"建立管线单位出资联席会议制度，签订\"在垂直方向上相邻排版，放大图显示存在水平线分隔，无实际字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "待审计资金实行竣工结算限时办结",
+        "location": "表格第四行整改措施列，与第五行交界处",
+        "statement": "视觉观察：第四行末尾\"待审计资金实行竣工结算限时办结\"与第五行开头\"加装电梯与停车泊位项目单独建档、单独\"在垂直方向上相邻排版，放大图显示存在水平线分隔，无实际字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "落实文明施工标准，设置公示牌与噪声扬",
+        "location": "表格第六行整改措施列",
+        "statement": "视觉观察：\"落实文明施工标准，设置公示牌与噪声扬\"与数字\"24\"在放大图中显示为正常行文，\"24\"属于同一单元格内后续文字\"实行投诉 24 小时响应\"的组成部分，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "推行居民出资先改造后付费及分期缴纳，",
+        "location": "表格第三行整改措施列",
+        "statement": "视觉观察：第三行\"推行居民出资先改造后付费及分期缴纳，\"与\"公示出资标准与使用去向\"为同一单元格内的换行排版，放大图显示两行文字上下对齐，无实际字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "情景数据",
+        "location": "页面右下角注释末尾",
+        "statement": "页面右下角标注\"情景数据\"，可能暗示本页数据为假设性、模拟性数据，但全文未明确标注为假设或示例，存在虚构数据未标注的风险，需结合全文判断",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 13803,
+    "total_tokens": 17093,
+    "completion_tokens": 3290,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 399.953,
+  "attempts": 3
+}

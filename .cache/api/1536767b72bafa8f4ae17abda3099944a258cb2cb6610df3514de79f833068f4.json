@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "未发现有依据的反例：三项事实条目各自独立负责不同事实，路线图与计划条目分别负责不同模块且明确允许多样形式，事实与虚构、推论、视觉各类缺陷归属边界清晰，无重复计分、越权要求或关键推论漏项。",
+    "coverage": {}
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 73,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 73
+    },
+    "prompt_tokens": 8057,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 8057
+    },
+    "total_tokens": 8130
+  },
+  "elapsed_seconds": 19.491,
+  "attempts": 1
+}

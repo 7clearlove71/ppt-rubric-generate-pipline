@@ -1,0 +1,57 @@
+{
+  "protocol": "contract_v2",
+  "cases": [
+    {
+      "case_id": "01",
+      "sources": 1,
+      "candidate_input_to_generator": false
+    },
+    {
+      "case_id": "02",
+      "sources": 1,
+      "candidate_input_to_generator": false
+    },
+    {
+      "case_id": "03",
+      "sources": 8,
+      "candidate_input_to_generator": false
+    },
+    {
+      "case_id": "05",
+      "sources": 8,
+      "candidate_input_to_generator": false
+    },
+    {
+      "case_id": "06",
+      "sources": 7,
+      "candidate_input_to_generator": false
+    },
+    {
+      "case_id": "09",
+      "sources": 4,
+      "candidate_input_to_generator": false
+    },
+    {
+      "case_id": "10",
+      "sources": 5,
+      "candidate_input_to_generator": false
+    }
+  ],
+  "offline": true,
+  "generation_logical_calls_per_case": [
+    2,
+    6
+  ],
+  "max_revisions": 2,
+  "generation_stages": [
+    "extract_requirements",
+    "compile_locally",
+    "audit"
+  ],
+  "generation_http_attempts_upper_bound_per_case": 18,
+  "primary_request_budget": null,
+  "verification_request_budget": null,
+  "budget_scope": "per client invocation; recovery authorization accounting must include prior journals",
+  "cost_estimate": null,
+  "human_labels_in_model_inputs": false
+}

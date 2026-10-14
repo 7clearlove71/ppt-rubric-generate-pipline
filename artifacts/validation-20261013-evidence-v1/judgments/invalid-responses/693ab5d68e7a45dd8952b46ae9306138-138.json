@@ -1,0 +1,831 @@
+{
+  "page": 7,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "三年规划：建阵地、扩产能、树品牌逐级递进",
+      "location": "页面顶部标题",
+      "statement": "页面标题明确呈现三年规划的三阶段递进结构",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "三年规划分阶段写，第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件、第三年做品牌入驻电商平台这种递进关系要体现出来"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "三年三级台阶：第一年建成800 ㎡工坊并培训50 人，第二年产能扩至年产量10 万件、计件农户120 户，第三年打造品牌、入驻电商平台。",
+      "location": "标题下方总述文字",
+      "statement": "总述文字完整包含三年各阶段核心指标，与用户给定数字一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件、第三年做品牌入驻电商平台"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "800",
+          "unit": "㎡",
+          "subject": "工坊建筑面积",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        },
+        {
+          "value": "50",
+          "unit": "人",
+          "subject": "培训人数",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        },
+        {
+          "value": "10",
+          "unit": "万件",
+          "subject": "年产量",
+          "denominator": "年",
+          "time_origin": "第二年"
+        },
+        {
+          "value": "120",
+          "unit": "户",
+          "subject": "计件农户数",
+          "denominator": "不适用",
+          "time_origin": "第二年"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "第一年 建阵地\n800 ㎡\n50 人",
+      "location": "左侧第一列卡片",
+      "statement": "第一年阶段明确标注800㎡工坊和50人培训，与用户给定一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "第一年建工坊800平米+培训50人"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "800",
+          "unit": "㎡",
+          "subject": "工坊建筑面积",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        },
+        {
+          "value": "50",
+          "unit": "人",
+          "subject": "累计培训人数",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "前置依赖\n省级非遗技艺、12 位师傅与首期60 户基础",
+      "location": "第一年卡片下方",
+      "statement": "第一年前置依赖提及12位师傅和首期60户，与用户给定数据一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题；首期60户第二年扩至120户"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "12",
+          "unit": "人",
+          "subject": "师傅人数",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        },
+        {
+          "value": "60",
+          "unit": "户",
+          "subject": "首期带动农户数",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "第二年 扩产能\n10 万件/年\n120 户",
+      "location": "中间第二列卡片",
+      "statement": "第二年阶段明确标注年产量10万件和120户计件农户，与用户给定一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "第二年扩产能至年产量10万件；首期60户第二年扩至120户"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万件/年",
+          "subject": "年产量",
+          "denominator": "年",
+          "time_origin": "第二年"
+        },
+        {
+          "value": "120",
+          "unit": "户",
+          "subject": "计件农户数",
+          "denominator": "不适用",
+          "time_origin": "第二年"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "原料统一采购扩量、计件农户由60 户扩至120 户、质检与工序标准化",
+      "location": "第二年支撑动作",
+      "statement": "第二年支撑动作明确体现农户从60户扩至120户的递进，与用户给定一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "首期60户第二年扩至120户"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "60",
+          "unit": "户",
+          "subject": "首期农户数",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        },
+        {
+          "value": "120",
+          "unit": "户",
+          "subject": "第二年农户数",
+          "denominator": "不适用",
+          "time_origin": "第二年"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "前置依赖\n第一年800 ㎡工坊投用＋50 人培训完成",
+      "location": "第二年卡片下方",
+      "statement": "第二年以前一年产出为前置依赖，体现递进关系",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "三年规划分阶段写...递进关系要体现出来"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "计件农户与年产量10 万件为规划匹配关系，不作单产承诺",
+      "location": "第二年卡片底部",
+      "statement": "作品主动标注10万件与120户为规划匹配关系而非单产承诺，属于审慎表述",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "第三年 树品牌拓渠道\n自有品牌 品牌打造\n电商平台入驻 外销渠道拓展",
+      "location": "右侧第三列卡片",
+      "statement": "第三年阶段聚焦品牌与电商渠道，与用户给定一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "第三年做品牌入驻电商平台"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "前置依赖\n第二年年产量10 万件的稳定供货能力",
+      "location": "第三年卡片下方",
+      "statement": "第三年以前两年产能为前置依赖，体现递进关系",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "三年规划分阶段写...递进关系要体现出来"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "政策通道\n文旅部持续推动非遗工坊建设，支持通过非遗购物节、电商平台拓展销售渠道",
+      "location": "第三年卡片政策通道",
+      "statement": "引用文旅部政策作为外部支撑，但未提供具体文件编号或来源，属于无来源具体事实引用",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "销售额与店铺数量目标由年度经营计划细化，本阶段不作承诺",
+      "location": "第三年卡片底部",
+      "statement": "作品对第三年具体销售目标保持审慎，明确不作承诺",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "时间轴贯穿三年：后一阶段以前一阶段产出为前提，工坊与技能人才 → 产能 → 品牌与渠道，逐级递进、不可倒置。",
+      "location": "三列卡片下方说明文字",
+      "statement": "明确用文字总结递进逻辑，三阶段依赖关系清晰",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "这种递进关系要体现出来"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "里程碑与考核节点\n第一年末 考核：800 ㎡建成投用、培训50 人完成\n第二年末 考核：年产量10 万件、计件农户120 户\n第三年末 考核：品牌形成并入驻电商平台",
+      "location": "右侧考核节点栏",
+      "statement": "各年度考核节点与规划目标数字一致，形成闭环",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件、第三年做品牌入驻电商平台"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "800",
+          "unit": "㎡",
+          "subject": "工坊建成投用",
+          "denominator": "不适用",
+          "time_origin": "第一年末"
+        },
+        {
+          "value": "50",
+          "unit": "人",
+          "subject": "培训完成",
+          "denominator": "不适用",
+          "time_origin": "第一年末"
+        },
+        {
+          "value": "10",
+          "unit": "万件",
+          "subject": "年产量",
+          "denominator": "年",
+          "time_origin": "第二年末"
+        },
+        {
+          "value": "120",
+          "unit": "户",
+          "subject": "计件农户",
+          "denominator": "不适用",
+          "time_origin": "第二年末"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "三年贯穿 考核：人均月增收约1800 元、总投资280 万元按科目执行",
+      "location": "右侧考核节点栏底部",
+      "statement": "三年贯穿考核提及人均月增收1800元和总投资280万元，与用户给定一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "人均月增收约1800元；总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "1800",
+          "unit": "元",
+          "subject": "人均月增收",
+          "denominator": "人·月",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "280",
+          "unit": "万元",
+          "subject": "总投资",
+          "denominator": "不适用",
+          "time_origin": "三年合计"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "建阵地 · 第一年\n科目：厂房120 万 · 设备60 万（进场）· 培训30 万",
+      "location": "底部左侧资金条",
+      "statement": "第一年资金科目：厂房120万+设备60万+培训30万=210万",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "厂房建设120万、设备采购60万、培训经费30万"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "120",
+          "unit": "万元",
+          "subject": "厂房建设",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        },
+        {
+          "value": "60",
+          "unit": "万元",
+          "subject": "设备采购（进场）",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        },
+        {
+          "value": "30",
+          "unit": "万元",
+          "subject": "培训经费",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "add",
+          "left": "120",
+          "right": "60",
+          "reported": "180",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "厂房120 万",
+          "right_quote": "设备60 万（进场）",
+          "reported_quote": "未直接给出小计",
+          "relation_quote": "科目并列",
+          "meaning": "第一年厂房加设备180万元"
+        },
+        {
+          "operation": "add",
+          "left": "180",
+          "right": "30",
+          "reported": "210",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "厂房120 万 · 设备60 万",
+          "right_quote": "培训30 万",
+          "reported_quote": "未直接给出小计",
+          "relation_quote": "科目并列",
+          "meaning": "第一年三项合计210万元"
+        }
+      ]
+    },
+    {
+      "quote": "扩产能 · 第二年\n科目：设备60 万（扩产）· 培训30 万 · 流动30 万",
+      "location": "底部中间资金条",
+      "statement": "第二年资金科目：设备60万+培训30万+流动30万=120万",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "设备采购60万、培训经费30万、流动资金30万"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "60",
+          "unit": "万元",
+          "subject": "设备采购（扩产）",
+          "denominator": "不适用",
+          "time_origin": "第二年"
+        },
+        {
+          "value": "30",
+          "unit": "万元",
+          "subject": "培训经费",
+          "denominator": "不适用",
+          "time_origin": "第二年"
+        },
+        {
+          "value": "30",
+          "unit": "万元",
+          "subject": "流动资金",
+          "denominator": "不适用",
+          "time_origin": "第二年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "add",
+          "left": "60",
+          "right": "30",
+          "reported": "90",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "设备60 万（扩产）",
+          "right_quote": "培训30 万",
+          "reported_quote": "未直接给出小计",
+          "relation_quote": "科目并列",
+          "meaning": "第二年设备加培训90万元"
+        },
+        {
+          "operation": "add",
+          "left": "90",
+          "right": "30",
+          "reported": "120",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "设备60 万（扩产）· 培训30 万",
+          "right_quote": "流动30 万",
+          "reported_quote": "未直接给出小计",
+          "relation_quote": "科目并列",
+          "meaning": "第二年三项合计120万元"
+        }
+      ]
+    },
+    {
+      "quote": "树品牌拓渠道 · 第三年\n科目：品牌推广40 万 · 流动资金30 万（滚动）",
+      "location": "底部右侧资金条",
+      "statement": "第三年资金科目：品牌推广40万+流动资金30万=70万",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "品牌推广40万、流动资金30万"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "40",
+          "unit": "万元",
+          "subject": "品牌推广",
+          "denominator": "不适用",
+          "time_origin": "第三年"
+        },
+        {
+          "value": "30",
+          "unit": "万元",
+          "subject": "流动资金（滚动）",
+          "denominator": "不适用",
+          "time_origin": "第三年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "add",
+          "left": "40",
+          "right": "30",
+          "reported": "70",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "品牌推广40 万",
+          "right_quote": "流动资金30 万（滚动）",
+          "reported_quote": "未直接给出小计",
+          "relation_quote": "科目并列",
+          "meaning": "第三年两项合计70万元"
+        }
+      ]
+    },
+    {
+      "quote": "三年合计总投资280 万元",
+      "location": "底部资料来源文字",
+      "statement": "资料来源文字声明三年合计总投资280万元",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "280",
+          "unit": "万元",
+          "subject": "三年合计总投资",
+          "denominator": "不适用",
+          "time_origin": "三年合计"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "add",
+          "left": "210",
+          "right": "120",
+          "reported": "330",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "第一年科目：厂房120 万 · 设备60 万（进场）· 培训30 万",
+          "right_quote": "第二年科目：设备60 万（扩产）· 培训30 万 · 流动30 万",
+          "reported_quote": "未直接给出累计",
+          "relation_quote": "分年科目累加",
+          "meaning": "第一二年合计330万元"
+        },
+        {
+          "operation": "add",
+          "left": "330",
+          "right": "70",
+          "reported": "400",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "第一二年合计330万元",
+          "right_quote": "第三年科目：品牌推广40 万 · 流动资金30 万（滚动）",
+          "reported_quote": "未直接给出累计",
+          "relation_quote": "分年科目累加",
+          "meaning": "三年按展示科目累加为400万元"
+        }
+      ]
+    },
+    {
+      "quote": "设备60 万（进场）· 培训30 万\n设备60 万（扩产）· 培训30 万",
+      "location": "底部资金条第一年和第二年",
+      "statement": "设备60万在第一年标注为'进场'，第二年标注为'扩产'，培训30万两年各出现一次，存在跨期重复计列可能",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "设备采购60万、培训经费30万"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "60",
+          "unit": "万元",
+          "subject": "设备采购",
+          "denominator": "不适用",
+          "time_origin": "第一年进场"
+        },
+        {
+          "value": "60",
+          "unit": "万元",
+          "subject": "设备采购",
+          "denominator": "不适用",
+          "time_origin": "第二年扩产"
+        },
+        {
+          "value": "30",
+          "unit": "万元",
+          "subject": "培训经费",
+          "denominator": "不适用",
+          "time_origin": "第一年"
+        },
+        {
+          "value": "30",
+          "unit": "万元",
+          "subject": "培训经费",
+          "denominator": "不适用",
+          "time_origin": "第二年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "add",
+          "left": "60",
+          "right": "60",
+          "reported": "120",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "设备60 万（进场）",
+          "right_quote": "设备60 万（扩产）",
+          "reported_quote": "未给出设备合计",
+          "relation_quote": "两年各列60万设备",
+          "meaning": "两年设备合计120万元，但用户给定设备采购仅60万"
+        },
+        {
+          "operation": "add",
+          "left": "30",
+          "right": "30",
+          "reported": "60",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "培训30 万",
+          "right_quote": "培训30 万",
+          "reported_quote": "未给出培训合计",
+          "relation_quote": "两年各列30万培训",
+          "meaning": "两年培训合计60万元，但用户给定培训经费仅30万"
+        }
+      ]
+    },
+    {
+      "quote": "流动资金30 万\n流动资金30 万（滚动）",
+      "location": "底部资金条第二年和第三年",
+      "statement": "流动资金30万在第二年和第三年分别出现，第二年为'流动30万'，第三年为'流动资金30万（滚动）'",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "流动资金30万"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "30",
+          "unit": "万元",
+          "subject": "流动资金",
+          "denominator": "不适用",
+          "time_origin": "第二年"
+        },
+        {
+          "value": "30",
+          "unit": "万元",
+          "subject": "流动资金（滚动）",
+          "denominator": "不适用",
+          "time_origin": "第三年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "add",
+          "left": "30",
+          "right": "30",
+          "reported": "60",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "万元",
+          "left_quote": "流动30 万",
+          "right_quote": "流动资金30 万（滚动）",
+          "reported_quote": "未给出流动资金合计",
+          "relation_quote": "两年各列30万流动资金",
+          "meaning": "两年流动资金合计60万元，但用户给定流动资金仅30万"
+        }
+      ]
+    },
+    {
+      "quote": "资料来源：项目申报锁定口径（800 ㎡、培训50 人、年产量10 万件、计件农户120 户、第三年品牌与电商平台入驻）；三年合计总投资280 万元，阶段资金科目的逐项对应见次页。",
+      "location": "页面底部来源说明",
+      "statement": "资料来源说明承认阶段资金科目的逐项对应见次页，暗示本页资金条为阶段分配而非原始给定口径的直接呈现",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "前置依赖\n省级非遗技艺、12 位师傅与首期60 户基础",
+      "location": "第一年卡片，p7_t16与p7_t17区域",
+      "statement": "局部放大图显示'前置依赖'与'省级非遗技艺、12 位师傅与首期60 户基础'为上下相邻排版，'前置依赖'为橙色小标题，下方为灰色正文，无真实字形叠印，是正常段落间距",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "前置依赖\n第一年800 ㎡工坊投用＋50 人培训完成",
+      "location": "第二年卡片，p7_t30与p7_t31区域",
+      "statement": "局部放大图显示'前置依赖'与'第一年800 ㎡工坊投用＋50 人培训完成'为上下相邻排版，无真实字形叠印，是正常段落间距",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "前置依赖\n第二年年产量10 万件的稳定供货能力",
+      "location": "第三年卡片，p7_t44与p7_t45区域",
+      "statement": "局部放大图显示'前置依赖'与'第二年年产量10 万件的稳定供货能力'为上下相邻排版，无真实字形叠印，是正常段落间距",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "支撑动作\n工坊建设、设备进场，合作社集中培训与师\n傅带徒",
+      "location": "第一年卡片，p7_t13/p7_t14/p7_t15区域",
+      "statement": "局部放大图显示'支撑动作'为橙色小标题，下方两行正文为正常换行排版，'师'与'傅带徒'为正常断字换行，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "支撑动作\n原料统一采购扩量、计件农户由60 户扩至\n120 户、质检与工序标准化",
+      "location": "第二年卡片，p7_t27/p7_t28/p7_t29区域",
+      "statement": "局部放大图显示'支撑动作'为橙色小标题，下方正文为正常换行排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "支撑动作\n产品设计与品牌包装、电商店铺开设与运\n营、参加展示展销与非遗购物节",
+      "location": "第三年卡片，p7_t41/p7_t42/p7_t43区域",
+      "statement": "局部放大图显示'支撑动作'为橙色小标题，下方正文为正常换行排版，'运'与'营'为正常断字换行，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "政策通道\n文旅部持续推动非遗工坊建设，支持通过非遗\n购物节、电商平台拓展销售渠道",
+      "location": "第三年卡片，p7_t46/p7_t47/p7_t48区域",
+      "statement": "局部放大图显示'政策通道'为橙色小标题，下方正文为正常换行排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "计件农户与年产量10 万件为规划匹配关系，不作\n单产承诺",
+      "location": "第二年卡片底部，p7_t32/p7_t33区域",
+      "statement": "局部放大图显示两行灰色小字为正常换行排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "800\n工坊建筑面积",
+      "location": "第一年卡片数字区域，p7_t7/p7_t9区域",
+      "statement": "局部放大图显示'800'大号数字与下方'工坊建筑面积'小字标签为上下相邻排版，数字底部与标签顶部有间距，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "50\n累计培训人数",
+      "location": "第一年卡片数字区域，p7_t10/p7_t12区域",
+      "statement": "局部放大图显示'50'大号数字与下方'累计培训人数'小字标签为上下相邻排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "10\n年产量达产口径",
+      "location": "第二年卡片数字区域，p7_t21/p7_t23区域",
+      "statement": "局部放大图显示'10'大号数字与下方'年产量达产口径'小字标签为上下相邻排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "120\n计件农户数",
+      "location": "第二年卡片数字区域，p7_t24/p7_t26区域",
+      "statement": "局部放大图显示'120'大号数字与下方'计件农户数'小字标签为上下相邻排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

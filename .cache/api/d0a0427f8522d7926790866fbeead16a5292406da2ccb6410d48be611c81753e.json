@@ -1,0 +1,31 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R01",
+          "R08"
+        ],
+        "reason": "反例：一份完整PPT仅将项目背景中的“12位师傅”误写为“15位师傅”。R08因该事实不存在且不准确而失败，R01要求包含项目背景模块，该模块仍存在且呈现了传承代际、失传风险等要点，不应因单个事实错误而同时失败。",
+        "fix": "R01仅检查模块是否存在及基本要点覆盖，不评判模块内具体事实的准确性；事实准确性统一由R08–R13逐条负责。"
+      }
+    ],
+    "summary": "存在一处因单个事实错误同时触发模块覆盖项与事实准确性项的重复计分，已修正评分边界。"
+  },
+  "model": "glm-5.2",
+  "usage": {
+    "prompt_tokens": 4368,
+    "total_tokens": 4526,
+    "completion_tokens": 158,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 9.69,
+  "attempts": 1
+}

@@ -1,0 +1,27 @@
+{
+  "case_id": "10",
+  "status": "diagnostic_not_score_override",
+  "human_winner": "B",
+  "automatic_winner": "A",
+  "scores": {
+    "A": 100,
+    "B": 86.875
+  },
+  "findings": [
+    {
+      "type": "criterion_coverage_gap",
+      "analysis": "Correctness items mostly check source fact presence and exact values. They do not explicitly test whether 36-hour remaining time and 48-hour event window have the same origin, or whether absence of a recorded response implies no response occurred."
+    },
+    {
+      "type": "judge_overreach",
+      "candidate": "B",
+      "rubric_id": "R14",
+      "analysis": "R14 explicitly permits identifiable recommendations and decisions for approval, but evidence penalizes suggested response levels, proposed sign-off roles and decision requests as unsupported facts. Some other listed violations (year and time origins) may be valid; mixed valid and invalid evidence must not be treated as all trustworthy."
+    },
+    {
+      "type": "weighting_risk",
+      "analysis": "Small precision/metadata omissions can receive substantial penalties while weak inference is not checked adequately. Do not alter per-case weights to match labels; revise general coverage then validate on a new frozen version."
+    }
+  ],
+  "policy": "No manual changes to scores or human labels."
+}

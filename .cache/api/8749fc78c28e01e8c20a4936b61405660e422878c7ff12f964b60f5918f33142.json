@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "逐页核查标题：P1「寒冬淬火 逆势生长」—4字短语，有态度；P2「这一年，我们逆势增长」—7字核心观点；P3「寒冬里的选择：加码，而不是收缩」—10字观点式对比；P4「最难时，现金只够发两个月工资」—11字精炼陈述；P5「加码的研发，交出18项新专利」—10字成果观点；P6「留下的人，赢得了91%的续约」—11字因果观点；P7「正是那段日子，让我们脱胎换骨」—10字引用升华；P8「带着这份底气，走进新一年」—9字展望收束。全部标题均为短句/短语，直接传达该页核心观点，无冗长空泛栏目式标题，满足条件。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 26108,
+    "total_tokens": 26311,
+    "completion_tokens": 203,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.903,
+  "attempts": 1
+}

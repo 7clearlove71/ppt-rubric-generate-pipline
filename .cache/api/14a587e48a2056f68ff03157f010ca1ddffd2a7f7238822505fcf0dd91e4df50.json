@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "全篇采用统一的红黑灰配色体系：红色用于关键数据/警示（48小时、36小时、约72%、约15%等），黑色用于正文标题，灰色用于辅助说明。字体层级一致：大标题粗黑、副标题灰色细体、数据红色高亮。版式结构统一：每页顶部标题区+中部信息区+底部数据来源标注，左侧红色竖线标记重点。视觉元素均为信息表达服务——时间轴、进度条、表格、泳道图、行动清单等，无花哨装饰。从封面到尾页风格连贯，无模板混用或风格跳变。危机主题严肃，配色与版式均契合紧迫感，无违和元素。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 22661,
+    "total_tokens": 22836,
+    "completion_tokens": 175,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 15.169,
+  "attempts": 1
+}

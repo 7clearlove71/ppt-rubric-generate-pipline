@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      7,
+      8
+    ],
+    "evidence": "P1明确标注\"48小时响应窗口倒计时进行中\"\"不做有效回应恐从质疑升级为抵制\"；P2标题直接呈现\"48小时内不做有效回应，恐从质疑升级为抵制\"，并设\"窗口临界\"节点；P3时间线标注\"T0+48h窗口临界\"及\"48小时内如果不做有效回应，可能从质疑升级为抵制\"；P7决策项D1后果栏写\"窗口失守：48小时内未有效回应，或从质疑升级为抵制\"；P8封面级标题\"请拍板：48小时倒计时\"。48小时窗口与升级风险判断在多处显性呈现，满足本条要求。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 22661,
+    "total_tokens": 22820,
+    "completion_tokens": 159,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 15.184,
+  "attempts": 1
+}

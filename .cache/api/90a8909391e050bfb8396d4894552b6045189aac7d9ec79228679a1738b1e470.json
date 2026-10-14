@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "text_seen": [
+      "初步观察 · 存疑待考 · 村民转述，未经交叉验证",
+      "存疑核心：“外姓人”是谁，来历说不清",
+      "“外姓人”是谁"
+    ],
+    "overlapping": true,
+    "overlap_objects": [
+      "白色大字“存疑核心：”与上方橙色小字“存疑待考”部分区域有垂直方向覆盖",
+      "白色大字“‘外姓人’是谁，来历说不清”与下方半透明灰色小字“‘外姓人’是谁”存在覆盖"
+    ],
+    "description": "图像为深色背景上的文字叠加效果。最上层是橙色小字，内容为“初步观察 · 存疑待考 · 村民转述，未经交叉验证”。中间层是白色大字，内容为“存疑核心：‘外姓人’是谁，来历说不清”。最底层有半透明灰色小字，部分被白色大字遮挡，可辨认出“‘外姓人’是谁”等字样。白色大字与上下两层文字均有视觉上的重叠覆盖关系，形成文字层叠效果。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 265,
+    "total_tokens": 510,
+    "completion_tokens": 245,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 92.667,
+  "attempts": 1
+}

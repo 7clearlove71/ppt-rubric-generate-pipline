@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A判定为yes（未发现虚构事实），候选B判定为no（第9页引入NEO、阶梯医疗等外部脑机接口项目的具体医院名称、日期、例数等事实，且未明确标注为外部对标，构成虚构具体事实冒充既定成果）。两候选答案不同，但各自有充分依据：A确实未引入任何用户未提供的具体事实；B确实引入了多个外部项目的具体事实且未在正文明确区分。答案差异源于作品本身内容差异，而非标准适用不一致。标准边界清晰：用户未提供的具体事实（尤其是医院名称、日期、例数等）不得冒充既定成果，合理技术背景补充与明确标注的计划/目标除外。两候选对该标准的适用一致。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 8205,
+    "total_tokens": 8381,
+    "completion_tokens": 176,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 60.879,
+  "attempts": 1
+}

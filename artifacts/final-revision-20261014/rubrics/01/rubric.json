@@ -1,0 +1,559 @@
+{
+  "groups": [
+    {
+      "id": "correctness",
+      "dimension": "correctness",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 25.0
+    },
+    {
+      "id": "fulfillment",
+      "dimension": "fulfillment",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 30.0
+    },
+    {
+      "id": "integrity",
+      "dimension": "integrity",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 15.0
+    },
+    {
+      "id": "narrative",
+      "dimension": "narrative",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 15.0
+    },
+    {
+      "id": "visual",
+      "dimension": "visual",
+      "importance": 1,
+      "rationale": "Fixed dimension budget; no candidate-dependent groups",
+      "score": 15.0
+    }
+  ],
+  "items": [
+    {
+      "id": "R_Q01",
+      "dimension": "correctness",
+      "importance": 3,
+      "requirement_ids": [
+        "Q01"
+      ],
+      "source_ids": [
+        "src_e215d57feaac10606c9b8cc1"
+      ],
+      "objective": "落实来源目标 Q01",
+      "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+      "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+      "pass_condition": "来源关键事实存在且准确，保留该目标自身的对象、数值、单位、时间、状态与限定条件：可拉伸传感器阵列量产良率（近三年）从78%提升至92%，对象与起止数值准确",
+      "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。只检查本目标，其他来源目标的缺失或错误由其专属条目负责；来源外新增断言与额外推理由固定质量库负责。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "correctness",
+      "judge_prompt": "目标：落实来源目标 Q01\n作用域：全篇与本来源目标有关的内容；可由不同页面共同满足。\n适用条件：来源明确要求，始终检查；不将缺失本目标自动解释为不适用。\n满足条件：来源关键事实存在且准确，保留该目标自身的对象、数值、单位、时间、状态与限定条件：可拉伸传感器阵列量产良率（近三年）从78%提升至92%，对象与起止数值准确\n例外与排除：允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。只检查本目标，其他来源目标的缺失或错误由其专属条目负责；来源外新增断言与额外推理由固定质量库负责。",
+      "score": 6.818181818181818
+    },
+    {
+      "id": "R_Q02",
+      "dimension": "correctness",
+      "importance": 3,
+      "requirement_ids": [
+        "Q02"
+      ],
+      "source_ids": [
+        "src_e215d57feaac10606c9b8cc1"
+      ],
+      "objective": "落实来源目标 Q02",
+      "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+      "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+      "pass_condition": "来源关键事实存在且准确，保留该目标自身的对象、数值、单位、时间、状态与限定条件：柔性OLED器件弯曲10万次无衰减，次数与'无衰减'结论准确",
+      "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。只检查本目标，其他来源目标的缺失或错误由其专属条目负责；来源外新增断言与额外推理由固定质量库负责。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "correctness",
+      "judge_prompt": "目标：落实来源目标 Q02\n作用域：全篇与本来源目标有关的内容；可由不同页面共同满足。\n适用条件：来源明确要求，始终检查；不将缺失本目标自动解释为不适用。\n满足条件：来源关键事实存在且准确，保留该目标自身的对象、数值、单位、时间、状态与限定条件：柔性OLED器件弯曲10万次无衰减，次数与'无衰减'结论准确\n例外与排除：允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。只检查本目标，其他来源目标的缺失或错误由其专属条目负责；来源外新增断言与额外推理由固定质量库负责。",
+      "score": 6.818181818181818
+    },
+    {
+      "id": "R_Q03",
+      "dimension": "correctness",
+      "importance": 3,
+      "requirement_ids": [
+        "Q03"
+      ],
+      "source_ids": [
+        "src_e215d57feaac10606c9b8cc1"
+      ],
+      "objective": "落实来源目标 Q03",
+      "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+      "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+      "pass_condition": "来源关键事实存在且准确，保留该目标自身的对象、数值、单位、时间、状态与限定条件：与三甲医院合作的植入式电子皮肤已进入临床试验阶段，合作方层级（三甲医院）与阶段（临床试验）准确",
+      "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。只检查本目标，其他来源目标的缺失或错误由其专属条目负责；来源外新增断言与额外推理由固定质量库负责。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "correctness",
+      "judge_prompt": "目标：落实来源目标 Q03\n作用域：全篇与本来源目标有关的内容；可由不同页面共同满足。\n适用条件：来源明确要求，始终检查；不将缺失本目标自动解释为不适用。\n满足条件：来源关键事实存在且准确，保留该目标自身的对象、数值、单位、时间、状态与限定条件：与三甲医院合作的植入式电子皮肤已进入临床试验阶段，合作方层级（三甲医院）与阶段（临床试验）准确\n例外与排除：允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。只检查本目标，其他来源目标的缺失或错误由其专属条目负责；来源外新增断言与额外推理由固定质量库负责。",
+      "score": 6.818181818181818
+    },
+    {
+      "id": "R_Q04",
+      "dimension": "fulfillment",
+      "importance": 2,
+      "requirement_ids": [
+        "Q04"
+      ],
+      "source_ids": [
+        "src_e215d57feaac10606c9b8cc1"
+      ],
+      "objective": "落实来源目标 Q04",
+      "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+      "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+      "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：包含技术路线图模块",
+      "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。已由专属fact条目负责的关键事实缺失或改写不重复处罚；关系要求仅检查已呈现组件的时序或衔接，组件缺失归fact所有者。独立模块、分析或计划自身缺失仍不满足本交付目标。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "fulfillment",
+      "judge_prompt": "目标：落实来源目标 Q04\n作用域：全篇与本来源目标有关的内容；可由不同页面共同满足。\n适用条件：来源明确要求，始终检查；不将缺失本目标自动解释为不适用。\n满足条件：完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：包含技术路线图模块\n例外与排除：允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。已由专属fact条目负责的关键事实缺失或改写不重复处罚；关系要求仅检查已呈现组件的时序或衔接，组件缺失归fact所有者。独立模块、分析或计划自身缺失仍不满足本交付目标。",
+      "score": 15.0
+    },
+    {
+      "id": "R_Q05",
+      "dimension": "fulfillment",
+      "importance": 2,
+      "requirement_ids": [
+        "Q05"
+      ],
+      "source_ids": [
+        "src_e215d57feaac10606c9b8cc1"
+      ],
+      "objective": "落实来源目标 Q05",
+      "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+      "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+      "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：包含下一步计划模块",
+      "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。已由专属fact条目负责的关键事实缺失或改写不重复处罚；关系要求仅检查已呈现组件的时序或衔接，组件缺失归fact所有者。独立模块、分析或计划自身缺失仍不满足本交付目标。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "fulfillment",
+      "judge_prompt": "目标：落实来源目标 Q05\n作用域：全篇与本来源目标有关的内容；可由不同页面共同满足。\n适用条件：来源明确要求，始终检查；不将缺失本目标自动解释为不适用。\n满足条件：完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：包含下一步计划模块\n例外与排除：允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。已由专属fact条目负责的关键事实缺失或改写不重复处罚；关系要求仅检查已呈现组件的时序或衔接，组件缺失归fact所有者。独立模块、分析或计划自身缺失仍不满足本交付目标。",
+      "score": 15.0
+    },
+    {
+      "id": "R_Q06",
+      "dimension": "narrative",
+      "importance": 2,
+      "requirement_ids": [
+        "Q06"
+      ],
+      "source_ids": [
+        "src_e215d57feaac10606c9b8cc1"
+      ],
+      "objective": "落实来源目标 Q06",
+      "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+      "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+      "pass_condition": "满足以下来源明确的表达、受众或使用场景约束：内容深度与表达面向领域内专家（可使用专业术语与技术细节，非科普向）",
+      "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。关键事实缺失、事实错误及遮挡不在本条重复处罚；只检查排除这些问题后仍存在的独立表达缺陷。静态PPT不要求证明精确演讲时长，只核对来源明确的讲述负荷约束。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "narrative",
+      "judge_prompt": "目标：落实来源目标 Q06\n作用域：全篇与本来源目标有关的内容；可由不同页面共同满足。\n适用条件：来源明确要求，始终检查；不将缺失本目标自动解释为不适用。\n满足条件：满足以下来源明确的表达、受众或使用场景约束：内容深度与表达面向领域内专家（可使用专业术语与技术细节，非科普向）\n例外与排除：允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。关键事实缺失、事实错误及遮挡不在本条重复处罚；只检查排除这些问题后仍存在的独立表达缺陷。静态PPT不要求证明精确演讲时长，只核对来源明确的讲述负荷约束。",
+      "score": 4.285714285714286
+    },
+    {
+      "id": "R_Q07",
+      "dimension": "narrative",
+      "importance": 2,
+      "requirement_ids": [
+        "Q07"
+      ],
+      "source_ids": [
+        "src_e215d57feaac10606c9b8cc1"
+      ],
+      "objective": "落实来源目标 Q07",
+      "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+      "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+      "pass_condition": "满足以下来源明确的表达、受众或使用场景约束：内容负荷适配20分钟特邀报告（信息密度与篇幅适合该时长口头汇报）",
+      "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。关键事实缺失、事实错误及遮挡不在本条重复处罚；只检查排除这些问题后仍存在的独立表达缺陷。静态PPT不要求证明精确演讲时长，只核对来源明确的讲述负荷约束。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "narrative",
+      "judge_prompt": "目标：落实来源目标 Q07\n作用域：全篇与本来源目标有关的内容；可由不同页面共同满足。\n适用条件：来源明确要求，始终检查；不将缺失本目标自动解释为不适用。\n满足条件：满足以下来源明确的表达、受众或使用场景约束：内容负荷适配20分钟特邀报告（信息密度与篇幅适合该时长口头汇报）\n例外与排除：允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。关键事实缺失、事实错误及遮挡不在本条重复处罚；只检查排除这些问题后仍存在的独立表达缺陷。静态PPT不要求证明精确演讲时长，只核对来源明确的讲述负荷约束。",
+      "score": 4.285714285714286
+    },
+    {
+      "id": "R_Q08",
+      "dimension": "narrative",
+      "importance": 2,
+      "requirement_ids": [
+        "Q08"
+      ],
+      "source_ids": [
+        "src_e215d57feaac10606c9b8cc1"
+      ],
+      "objective": "落实来源目标 Q08",
+      "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+      "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+      "pass_condition": "满足以下来源明确的表达、受众或使用场景约束：形式与定位符合年会特邀报告PPT（团队近三年进展汇报的场合定位）",
+      "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。关键事实缺失、事实错误及遮挡不在本条重复处罚；只检查排除这些问题后仍存在的独立表达缺陷。静态PPT不要求证明精确演讲时长，只核对来源明确的讲述负荷约束。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "narrative",
+      "judge_prompt": "目标：落实来源目标 Q08\n作用域：全篇与本来源目标有关的内容；可由不同页面共同满足。\n适用条件：来源明确要求，始终检查；不将缺失本目标自动解释为不适用。\n满足条件：满足以下来源明确的表达、受众或使用场景约束：形式与定位符合年会特邀报告PPT（团队近三年进展汇报的场合定位）\n例外与排除：允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。关键事实缺失、事实错误及遮挡不在本条重复处罚；只检查排除这些问题后仍存在的独立表达缺陷。静态PPT不要求证明精确演讲时长，只核对来源明确的讲述负荷约束。",
+      "score": 4.285714285714286
+    },
+    {
+      "id": "C_REASON",
+      "dimension": "correctness",
+      "importance": 2,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "补充信息与推理成立",
+      "scope": "全篇补充数据、计算、比较和推论",
+      "applicability": "出现补充数据、计算、比较或推论时适用；没有这些现象自然满足，不免除明确要求的分析交付。",
+      "pass_condition": "补充信息前后一致，运算和正常近似正确；比率分子分母、对象、时期与时间起点可比；结论由所述前提支持，不将相关性说成已证实因果、不以待证结论作为其自身证明。",
+      "exclusions": "原始来源关键事实的缺失或改写只由专属事实条目负责；合理且明确的假设本身不是计算错误或循环论证，计划也不等于既成事实；新增事实的来源缺失只属信息边界，不在本条再扣分。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "correctness",
+      "judge_prompt": "目标：补充信息与推理成立\n作用域：全篇补充数据、计算、比较和推论\n适用条件：出现补充数据、计算、比较或推论时适用；没有这些现象自然满足，不免除明确要求的分析交付。\n满足条件：补充信息前后一致，运算和正常近似正确；比率分子分母、对象、时期与时间起点可比；结论由所述前提支持，不将相关性说成已证实因果、不以待证结论作为其自身证明。\n例外与排除：原始来源关键事实的缺失或改写只由专属事实条目负责；合理且明确的假设本身不是计算错误或循环论证，计划也不等于既成事实；新增事实的来源缺失只属信息边界，不在本条再扣分。",
+      "score": 4.545454545454546
+    },
+    {
+      "id": "I_BOUNDARY",
+      "dimension": "integrity",
+      "importance": 2,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "新增事实不冒充已知事实",
+      "scope": "全篇来源之外的新增具体断言",
+      "applicability": "出现来源之外的新增团队成果、调查结果、合作对象、具体事实或预测时适用；没有则满足。",
+      "pass_condition": "新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。",
+      "exclusions": "合理背景常识、明确建议不需逐句标注；标注可以由适用全篇的声明或上下文承担；不再次检查原给定事实的改写、纯计算错误、以及来源已明确要求且由专属条目负责的披露目标。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "integrity",
+      "judge_prompt": "目标：新增事实不冒充已知事实\n作用域：全篇来源之外的新增具体断言\n适用条件：出现来源之外的新增团队成果、调查结果、合作对象、具体事实或预测时适用；没有则满足。\n满足条件：新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。\n例外与排除：合理背景常识、明确建议不需逐句标注；标注可以由适用全篇的声明或上下文承担；不再次检查原给定事实的改写、纯计算错误、以及来源已明确要求且由专属条目负责的披露目标。",
+      "score": 15.0
+    },
+    {
+      "id": "N_FLOW",
+      "dimension": "narrative",
+      "importance": 1,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "内容组织支持任务用途",
+      "scope": "全篇组织与衔接",
+      "applicability": "所有PPT，允许不同有效结构及合理回顾。",
+      "pass_condition": "内容顺序和模块衔接可理解，没有独立于事实/内容完整性/可读性问题之外、妨碍任务理解的无关信息堆积、自相割裂的表达或无意义重复。",
+      "exclusions": "不因同一内容缺失、事实错误或遮挡再次扣分；不规定章节标题或结构模板；源明确要求的受众、时长、文体和组织目标由其专属条目负责，不重复计入。",
+      "evidence_mode": "both",
+      "scope_type": "deck",
+      "group_id": "narrative",
+      "judge_prompt": "目标：内容组织支持任务用途\n作用域：全篇组织与衔接\n适用条件：所有PPT，允许不同有效结构及合理回顾。\n满足条件：内容顺序和模块衔接可理解，没有独立于事实/内容完整性/可读性问题之外、妨碍任务理解的无关信息堆积、自相割裂的表达或无意义重复。\n例外与排除：不因同一内容缺失、事实错误或遮挡再次扣分；不规定章节标题或结构模板；源明确要求的受众、时长、文体和组织目标由其专属条目负责，不重复计入。",
+      "score": 2.142857142857143
+    },
+    {
+      "id": "V_READ",
+      "dimension": "visual",
+      "importance": 2,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "文字和图表信息实际可读",
+      "scope": "逐页检查全部可见内容",
+      "applicability": "所有页面；没有图表不要求补充图表或图例。",
+      "pass_condition": "有信息作用的文字、数字及图表类别/轴/图例/单位可辨认，不因重叠叠印、截断、对比不足或缺失标签导致信息损失或需要猜读；页面没有未处理的NaN等破损残留。",
+      "exclusions": "不以文字框几何相交自动认定遮挡；无信息损失的装饰叠放、可读的小字或个人风格偏好不扣分。此类遮挡与标签问题只在本条计分。",
+      "evidence_mode": "visual",
+      "scope_type": "page",
+      "group_id": "visual",
+      "judge_prompt": "目标：文字和图表信息实际可读\n作用域：逐页检查全部可见内容\n适用条件：所有页面；没有图表不要求补充图表或图例。\n满足条件：有信息作用的文字、数字及图表类别/轴/图例/单位可辨认，不因重叠叠印、截断、对比不足或缺失标签导致信息损失或需要猜读；页面没有未处理的NaN等破损残留。\n例外与排除：不以文字框几何相交自动认定遮挡；无信息损失的装饰叠放、可读的小字或个人风格偏好不扣分。此类遮挡与标签问题只在本条计分。",
+      "score": 10.0
+    },
+    {
+      "id": "V_LAYOUT",
+      "dimension": "visual",
+      "importance": 1,
+      "requirement_ids": [],
+      "source_ids": [],
+      "objective": "视觉组织支持理解",
+      "scope": "逐页检查内容组织与编码",
+      "applicability": "所有页面；简洁封面、章节页和结束页可以合理留白。",
+      "pass_condition": "在内容本身可读的前提下，标题与主体、并列项与主次关系可识别，布局及图形编码不会造成错误的对应关系或难以确定的阅读顺序。",
+      "exclusions": "不重复处罚遮挡、裁切、对比度及标签缺失；不要求特定配色、模板、图表数量或将所有文字图形化；装饰多少或主观美观偏好不扣分。",
+      "evidence_mode": "visual",
+      "scope_type": "page",
+      "group_id": "visual",
+      "judge_prompt": "目标：视觉组织支持理解\n作用域：逐页检查内容组织与编码\n适用条件：所有页面；简洁封面、章节页和结束页可以合理留白。\n满足条件：在内容本身可读的前提下，标题与主体、并列项与主次关系可识别，布局及图形编码不会造成错误的对应关系或难以确定的阅读顺序。\n例外与排除：不重复处罚遮挡、裁切、对比度及标签缺失；不要求特定配色、模板、图表数量或将所有文字图形化；装饰多少或主观美观偏好不扣分。",
+      "score": 5.0
+    }
+  ],
+  "schema_version": 2,
+  "evaluation_protocol": "contract_v2",
+  "status": "approved",
+  "case_id": "01",
+  "provenance": {
+    "case_id": "01",
+    "source_hash": "b1e42faa190cdbf44fd55015e1b9a723b72f515d10fa0b2482e97859ab1e3d2b",
+    "prompt_version": "2026-10-14.contract-v2.3",
+    "prompt_fingerprint": "8b496a11b1b4ffca8ffe4b874afbacb3d55122a6ff4ff4c99efad4673294cdbd",
+    "validator_version": 3,
+    "generator_model": "kimi-k3",
+    "reviewer_model": "kimi-k2.6",
+    "generation_request_hash": "1ce40f93627927493fe73729a4a385ba314ee9b2cd75576b7ed379a08c0be795",
+    "review_request_hash": "91b59672b52b2188000348282844b39eb31d0a48f9d086c2c1d48fd2991e8d9d",
+    "source_catalog_hash": "6da8b4268f75408bff21623d9f8031cf08433dc71ec25d7f484abd0d1fcb3c55",
+    "max_revisions": 2,
+    "candidate_input": false
+  },
+  "signature": "0aab5a6ed7b3f0b7049b5eaa61cb6c19ac249e93fca1df98512aa050d836f2e1",
+  "dimension_weights": {
+    "fulfillment": 30,
+    "correctness": 25,
+    "integrity": 15,
+    "narrative": 15,
+    "visual": 15
+  },
+  "source_catalog_hash": "6da8b4268f75408bff21623d9f8031cf08433dc71ec25d7f484abd0d1fcb3c55",
+  "requirements": {
+    "task_summary": "为柔性电子团队制作年会特邀报告PPT，面向领域内专家，20分钟，呈现近三年三项关键进展，并含技术路线图与下一步计划。",
+    "source_policy": "已知（须准确呈现）：可拉伸传感器阵列量产良率78%→92%、柔性OLED弯曲10万次无衰减、与三甲医院合作的植入式电子皮肤已进入临床试验阶段，以及受众、时长、模块要求。允许补充：技术背景、路线图与下一步计划的具体内容可合理展开，但不得与给定事实冲突，推断性内容应与事实区分。待确认：临床试验细节、路线图具体时间节点、其他未提供的量化数据，不应虚构为既定事实。",
+    "requirements": [
+      {
+        "id": "Q01",
+        "kind": "fact",
+        "text": "可拉伸传感器阵列量产良率（近三年）从78%提升至92%，对象与起止数值准确",
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "importance": 3
+      },
+      {
+        "id": "Q02",
+        "kind": "fact",
+        "text": "柔性OLED器件弯曲10万次无衰减，次数与'无衰减'结论准确",
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "importance": 3
+      },
+      {
+        "id": "Q03",
+        "kind": "fact",
+        "text": "与三甲医院合作的植入式电子皮肤已进入临床试验阶段，合作方层级（三甲医院）与阶段（临床试验）准确",
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "importance": 3
+      },
+      {
+        "id": "Q04",
+        "kind": "deliverable",
+        "text": "包含技术路线图模块",
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q05",
+        "kind": "deliverable",
+        "text": "包含下一步计划模块",
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q06",
+        "kind": "presentation",
+        "text": "内容深度与表达面向领域内专家（可使用专业术语与技术细节，非科普向）",
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q07",
+        "kind": "presentation",
+        "text": "内容负荷适配20分钟特邀报告（信息密度与篇幅适合该时长口头汇报）",
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "importance": 2
+      },
+      {
+        "id": "Q08",
+        "kind": "presentation",
+        "text": "形式与定位符合年会特邀报告PPT（团队近三年进展汇报的场合定位）",
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "importance": 2
+      }
+    ]
+  },
+  "contract_design": {
+    "items": [
+      {
+        "id": "R_Q01",
+        "dimension": "correctness",
+        "importance": 3,
+        "requirement_ids": [
+          "Q01"
+        ],
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "objective": "落实来源目标 Q01",
+        "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+        "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+        "pass_condition": "来源关键事实存在且准确，保留该目标自身的对象、数值、单位、时间、状态与限定条件：可拉伸传感器阵列量产良率（近三年）从78%提升至92%，对象与起止数值准确",
+        "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。只检查本目标，其他来源目标的缺失或错误由其专属条目负责；来源外新增断言与额外推理由固定质量库负责。",
+        "evidence_mode": "both",
+        "scope_type": "deck"
+      },
+      {
+        "id": "R_Q02",
+        "dimension": "correctness",
+        "importance": 3,
+        "requirement_ids": [
+          "Q02"
+        ],
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "objective": "落实来源目标 Q02",
+        "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+        "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+        "pass_condition": "来源关键事实存在且准确，保留该目标自身的对象、数值、单位、时间、状态与限定条件：柔性OLED器件弯曲10万次无衰减，次数与'无衰减'结论准确",
+        "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。只检查本目标，其他来源目标的缺失或错误由其专属条目负责；来源外新增断言与额外推理由固定质量库负责。",
+        "evidence_mode": "both",
+        "scope_type": "deck"
+      },
+      {
+        "id": "R_Q03",
+        "dimension": "correctness",
+        "importance": 3,
+        "requirement_ids": [
+          "Q03"
+        ],
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "objective": "落实来源目标 Q03",
+        "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+        "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+        "pass_condition": "来源关键事实存在且准确，保留该目标自身的对象、数值、单位、时间、状态与限定条件：与三甲医院合作的植入式电子皮肤已进入临床试验阶段，合作方层级（三甲医院）与阶段（临床试验）准确",
+        "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。只检查本目标，其他来源目标的缺失或错误由其专属条目负责；来源外新增断言与额外推理由固定质量库负责。",
+        "evidence_mode": "both",
+        "scope_type": "deck"
+      },
+      {
+        "id": "R_Q04",
+        "dimension": "fulfillment",
+        "importance": 2,
+        "requirement_ids": [
+          "Q04"
+        ],
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "objective": "落实来源目标 Q04",
+        "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+        "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+        "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：包含技术路线图模块",
+        "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。已由专属fact条目负责的关键事实缺失或改写不重复处罚；关系要求仅检查已呈现组件的时序或衔接，组件缺失归fact所有者。独立模块、分析或计划自身缺失仍不满足本交付目标。",
+        "evidence_mode": "both",
+        "scope_type": "deck"
+      },
+      {
+        "id": "R_Q05",
+        "dimension": "fulfillment",
+        "importance": 2,
+        "requirement_ids": [
+          "Q05"
+        ],
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "objective": "落实来源目标 Q05",
+        "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+        "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+        "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：包含下一步计划模块",
+        "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。已由专属fact条目负责的关键事实缺失或改写不重复处罚；关系要求仅检查已呈现组件的时序或衔接，组件缺失归fact所有者。独立模块、分析或计划自身缺失仍不满足本交付目标。",
+        "evidence_mode": "both",
+        "scope_type": "deck"
+      },
+      {
+        "id": "R_Q06",
+        "dimension": "narrative",
+        "importance": 2,
+        "requirement_ids": [
+          "Q06"
+        ],
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "objective": "落实来源目标 Q06",
+        "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+        "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+        "pass_condition": "满足以下来源明确的表达、受众或使用场景约束：内容深度与表达面向领域内专家（可使用专业术语与技术细节，非科普向）",
+        "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。关键事实缺失、事实错误及遮挡不在本条重复处罚；只检查排除这些问题后仍存在的独立表达缺陷。静态PPT不要求证明精确演讲时长，只核对来源明确的讲述负荷约束。",
+        "evidence_mode": "both",
+        "scope_type": "deck"
+      },
+      {
+        "id": "R_Q07",
+        "dimension": "narrative",
+        "importance": 2,
+        "requirement_ids": [
+          "Q07"
+        ],
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "objective": "落实来源目标 Q07",
+        "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+        "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+        "pass_condition": "满足以下来源明确的表达、受众或使用场景约束：内容负荷适配20分钟特邀报告（信息密度与篇幅适合该时长口头汇报）",
+        "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。关键事实缺失、事实错误及遮挡不在本条重复处罚；只检查排除这些问题后仍存在的独立表达缺陷。静态PPT不要求证明精确演讲时长，只核对来源明确的讲述负荷约束。",
+        "evidence_mode": "both",
+        "scope_type": "deck"
+      },
+      {
+        "id": "R_Q08",
+        "dimension": "narrative",
+        "importance": 2,
+        "requirement_ids": [
+          "Q08"
+        ],
+        "source_ids": [
+          "src_e215d57feaac10606c9b8cc1"
+        ],
+        "objective": "落实来源目标 Q08",
+        "scope": "全篇与本来源目标有关的内容；可由不同页面共同满足。",
+        "applicability": "来源明确要求，始终检查；不将缺失本目标自动解释为不适用。",
+        "pass_condition": "满足以下来源明确的表达、受众或使用场景约束：形式与定位符合年会特邀报告PPT（团队近三年进展汇报的场合定位）",
+        "exclusions": "允许语义等价表达、正确近似及有效呈现方式；不要求逐字复述，不从用途或背景追加字面标注、标题、页数或版式义务。关键事实缺失、事实错误及遮挡不在本条重复处罚；只检查排除这些问题后仍存在的独立表达缺陷。静态PPT不要求证明精确演讲时长，只核对来源明确的讲述负荷约束。",
+        "evidence_mode": "both",
+        "scope_type": "deck"
+      }
+    ]
+  },
+  "scoring_policy": {
+    "unit": "one criterion weight per complete presentation, never per page",
+    "deck_aggregation": "one yes/no/unknown decision over the stated scope",
+    "page_aggregation": "any_no_else_unknown_else_all_yes",
+    "points": {
+      "yes": "full criterion weight",
+      "no": 0,
+      "unknown": null
+    },
+    "unknown": "retain score interval; complete total is null while any positive weight is unresolved"
+  },
+  "rubric_hash": "da3003c33e53ea80ccd4960e3f24f569b34bed7d6b3299da9d3fca039ea8e20f"
+}

@@ -1,0 +1,394 @@
+[
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "1d919846c9e9fc9fde992338b5f4d9b964bde87093705b408536eeddc723eea7",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "60447a83d1cb35b7dd97ad5d66b5c26f92337832ffa6590a2a4fb144283ec08d",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "b46d030ac12558600f444449e58c1b4da38cbb44047014d478549bf40fb259d8",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "7090e6d4ac3dc757ac3aac7b243a0f291b0a81487cd5a3d7ec5fb7e20944391a",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "6ef4383770b5b53e8f39db6e8ce811520e68ca053dce64e988ba890cfd3471ef",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "6da72c5a33e29670bcbee2748b66791a801c43b22da74652f686c7a48362e043",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "3c66b9223b4d9c883342390a863d88153b100e9804d7e42c0f944083793d4885",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "8186adeb1413e977dddb0394ddee7980b0ba642b776bbcbd699ed9d8c2bc8b49",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "4636367327032d5f0452924d5558f78fd9786130afefc8a173070ae03b9504fb",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "9a2ac7f714ce1552adff47152a40dbcea0369245e3540c3765c1dd5555f80d4d",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "5de8fb10aee00dfb03355bc99de63cac958b16c4ae106812f2603ba8ed6ce079",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "ded3b20ed542e6a527524e357137c2260bc76dfc1345a5a6ceb8cf73f86ff28c",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "d66bcddfe388d19b6a70acbe536d1b2c7519de6d2396af0f543b556a956d38d6",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "0954db970cb594156b7c5a5523b6fe5d9ed273fbfbbddcde20c73b9818911fae",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "f84fd439a86fb553a69a70a83d63988fc63dea8ec1d34bd28f2be86d7e607157",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "e5a486a4a4efa80b9ae0106f543956c5c8027e98a0d0e0c4205face400167bbb",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "ee69922be1233578728038b61c6436ae01419986e76c5b09960c632723aba65f",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "fa0c358e77db2c2e9887769d1bb6dd2ce3b7f13ec07e978a6bf677a995d66595",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "018166edcd40014f94774462b235429e3e283f5978f216dd82e334c63162835d",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "de1c28816eb693d29f34fb99a2fd7b6f2f3f63d1c856f48576d103ee51135ecf",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "254d6b8e2a69575b9e7ec081a574270cded9fd7114ff44c0324f900e5fc685f3",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "fd2970f863daefe0f8c520612b066a7ff3ddb50ad94cbcf3a79c64faadb8be39",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "4f9c365c17e1d2d1a40748be5bd64488219f3e8332def8769f019c36e2fd8044",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "7f359936a894ae686df846ab40da05dc1d0884af19f79947b79dc04ea1798a61",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "a6d988150b85f02c4d192d05d0409010154a018b33548c96fa4d4f65e9a15470",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "73779150d4c6d171ec8892e054c4229dea3cbc978fb098bdd99135ffabf00860",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "69cf2696aa83734d1dbf65e6b2dd183533912833e7a9d2877bf0959ee1c9cd84",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "155266647c9d85ebbcff6732e12217dca018625fbe2e3316c53959aab049229e",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "5b4637c912c2af19ac6b109555412bbede2dcc7800f5e44235c5b249be3d47ac",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "b3afdd7adb0754fabb8777935465aae9375d61a852936429b7cc1a1433045dee",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "9d401bc3ed8d67cc23bb4cde6db12c4a7ffbc79218573250427d0d0123252776",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "0f9e6940938ee92ad4393314665810e593381b0cf4b1dbdf63b33c6cbb2cf835",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "8af06fb1078fb94f695fb37034261583ccac4ca8bcde299db3787922c130885e",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "06396cd0fbb91b3cd0fabb204b07c9b00898e6abb1083bdba072ddf07339dd51",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "972e63bfbffe9f042020d278ee86c04f5cb5b5234cbc8e3b919af73e4ca28d69",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "4b45d498181a2cf221fdc32a69f122a5f1b3d3fc893f928920e1d69925fb6472",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "34a8491db8b331f2934e3b432917f08a05aecdbf098f74d67726daf9148cfae2",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "0bd8543ef77b9a84e2521a67f4e56984a137b8aae1cf71c13612e99618048eb4",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "20619a37d42fb170d6f2f9e6e36bce26162d4edc8a2080b34a8bea1dce6b9ffe",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "4c1b2acf4d8c2faba5273596f66b03e5b2bbd5425f5dfca67197ffcd78912126",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "41f007ec744750f96b63483c200a3f28438d677845d166f43f609b0869477b3f",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "c9772ce79daa9389f405d9117a131ea061d0250e9a7befaab67148ed153bfd8e",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "21c34e128cedccbb4f972bab28fa185c9c0a4b328b201e90dfed7e3beb0a8359",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "0f9b227016653a84960422b33c40f4bcc5bb311a9712b96dc3e64f081e789469",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "0ba6c658f7088f5242126b2f7ebcb3ef57b5586ac91eaf608eb581f0e07edbed",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "1f60f98b1ca71f5c99ca6c684fb4772d0dcaaed31525cf62e470aed3d512d3c0",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "633bb76faf3fd3f751ecd5ec660ab72f336104365c46772bb965bbf9f6e5f6d2",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "80e75358fe4ccfcb7cde24aaa79f3dc41c2e210ff73f5e144a290e35d72133c9",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "58d1c679cba97f10fdfb5ea67f797d624d30d48b47f5ce62d7eb134a9941baf0",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "e79c40f7368fd9501e77a5d666c7deb2251a0ff145946da5461508130a60ec67",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "dd6bc5bb091b67aa9f3e31ad499963c5ab3c54886ff3b80cc03e02bb6b395a7d",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "c83dc5f11117b1c27bea73ca5c9f1a9878f09796aae83561867c60170d42476e",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k3",
+    "cache_key": "e9acea128c1e22b99c3e1dfac1e8dce3fd9fe35c890537a52a0069ae3bd78b3a",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "9b895826c81b870974449094dad28c9b224b7387530dd052172309e14b83b7bc",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "c19ca0de95a33ee51df68793a03861eb8597a7264864beba4b73551baf5ba091",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "dca32a1455e3803a72c18967e76d563c43aeeebe78ee4960018bd324939703a5",
+    "cached": true,
+    "invocation_id": "40c6ebdd150b44819856651bfc0a7e27"
+  }
+]

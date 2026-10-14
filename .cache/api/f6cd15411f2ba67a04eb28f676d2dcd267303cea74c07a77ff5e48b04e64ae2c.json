@@ -1,0 +1,264 @@
+{
+  "parsed": {
+    "page": 5,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "首期带动60 户农户、次年扩至120 户，人均月增收约1800 元",
+        "location": "页面上方标题区",
+        "statement": "标题准确引用了用户给定的带动农户数量（首期60户、第二年120户）和人均月增收金额（约1800元），数字与来源一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "60",
+            "unit": "户",
+            "subject": "首期带动农户",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          },
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "次年带动农户",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          },
+          {
+            "value": "1800",
+            "unit": "元",
+            "subject": "人均月增收",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "60 户",
+        "location": "左侧柱状图第一个柱顶",
+        "statement": "图表标注首期带动60户，与用户给定数据一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "60",
+            "unit": "户",
+            "subject": "首期带动农户",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "120 户",
+        "location": "右侧柱状图第二个柱顶",
+        "statement": "图表标注第二年满规模120户，与用户给定数据一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "满规模带动农户",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "约1800 元",
+        "location": "右侧信息卡片上部",
+        "statement": "人均月增收约1800元，与用户给定数据一致，且标注为\"约\"字体现测算性质",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "1800",
+            "unit": "元",
+            "subject": "人均月增收",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "按件计酬 · 多劳多得",
+        "location": "右侧信息卡片中部",
+        "statement": "体现了用户要求的\"按件计酬\"机制，但未展开三方职责归属（公司、合作社、农户）",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "农户在家编织按件计酬"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "约2.16 万元",
+        "location": "右侧信息卡片中下部",
+        "statement": "由月增收1800元乘以12个月得出人均年增收约2.16万元，计算过程在下方注明",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2.16",
+            "unit": "万元",
+            "subject": "人均年增收",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "1800",
+            "right": "12",
+            "reported": "21600",
+            "left_unit": "元",
+            "right_unit": "月",
+            "reported_unit": "元",
+            "left_quote": "按月增收1800 元",
+            "right_quote": "12 个月",
+            "reported_quote": "约2.16 万元",
+            "relation_quote": "按月增收1800 元×12 个月",
+            "meaning": "人均月增收乘以12个月得人均年增收"
+          }
+        ]
+      },
+      {
+        "quote": "约259 万元",
+        "location": "右侧深色信息卡片底部",
+        "statement": "满规模年增收合计测算值，由120户乘以2.16万元/户·年得出",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "259",
+            "unit": "万元",
+            "subject": "满规模年增收合计",
+            "denominator": "不适用",
+            "time_origin": "满规模年份"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "120",
+            "right": "2.16",
+            "reported": "259.2",
+            "left_unit": "户",
+            "right_unit": "万元/户·年",
+            "reported_unit": "万元",
+            "left_quote": "120 户",
+            "right_quote": "2.16 万元/ 户· 年",
+            "reported_quote": "约259 万元",
+            "relation_quote": "120 户×2.16 万元/ 户· 年",
+            "meaning": "满规模户数乘以人均年增收得总年增收"
+          }
+        ]
+      },
+      {
+        "quote": "数据来源：项目申报材料；年增收为按月增收1800 元×12 个月的申报测算口径",
+        "location": "页面左下角",
+        "statement": "明确标注数据来源为项目申报材料，并说明测算口径，保持了条件性目标的边界，未将其陈述为已完成的既成事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "带动农户（户）",
+        "location": "Y轴上方标签区",
+        "statement": "可见文字区域与\"120\"轴标签的包围框存在微小相交（intersection [31.55, 108.72, 43.84, 108.95]），但从局部放大图可见，\"带动农户（户）\"位于上方，\"120\"为Y轴刻度值位于其下方，两者为正常上下排版关系，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "首期示范 → 满规模翻番",
+        "location": "柱状图上方右侧",
+        "statement": "以箭头符号体现首期到第二年的递进关系，\"翻番\"表述准确（60户到120户为翻倍）",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "120",
+            "right": "60",
+            "reported": "200",
+            "left_unit": "户",
+            "right_unit": "户",
+            "reported_unit": "%",
+            "left_quote": "120 户",
+            "right_quote": "60 户",
+            "reported_quote": "满规模翻番",
+            "relation_quote": "首期示范 → 满规模翻番",
+            "meaning": "满规模户数相对于首期户数的比例"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6088,
+    "total_tokens": 7404,
+    "completion_tokens": 1316,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 56.267,
+  "attempts": 1
+}

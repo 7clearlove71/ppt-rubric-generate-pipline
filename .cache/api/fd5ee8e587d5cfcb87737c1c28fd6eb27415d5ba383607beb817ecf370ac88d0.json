@@ -1,0 +1,308 @@
+{
+  "parsed": {
+    "page": 8,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "谢谢，没有退缩的你们",
+        "location": "页面中上部大标题，红色",
+        "statement": "情怀表述，直接引用老板讲话中'团队没有一个人退缩'的核心要素，与数据区域形成呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "团队没有一个人退缩"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "一起走过寒冬，一起走向下一程",
+        "location": "大标题下方副标题",
+        "statement": "承接老板讲话'年初行业寒冬''如今回头看正是那段日子让我们脱胎换骨'的叙事弧线，情怀表述有上下文支撑",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年初行业寒冬"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "4.2 亿元 / 全年营收 / 同比增长 26%",
+        "location": "页面左下数据区第一列",
+        "statement": "源文给定全年营收4.2亿、同比+26%两项数据完整呈现，单位与数值紧邻",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿元",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "26",
+            "unit": "%",
+            "subject": "营收同比增长",
+            "denominator": "上年营收",
+            "time_origin": "全年同比"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "14% / 研发投入占比 / 由 9% 提升，+5 个百分点（测算）",
+        "location": "数据区第二列",
+        "statement": "源文给定研发投入占比从9%提到14%完整呈现，并标注派生指标'+5个百分点'为测算。数值14%与9%的变化方向正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "14",
+            "unit": "%",
+            "subject": "研发投入占比",
+            "denominator": "营收",
+            "time_origin": "全年"
+          },
+          {
+            "value": "9",
+            "unit": "%",
+            "subject": "研发投入占比基准",
+            "denominator": "营收",
+            "time_origin": "上年/年初"
+          },
+          {
+            "value": "5",
+            "unit": "百分点",
+            "subject": "研发投入占比提升幅度",
+            "denominator": "不适用",
+            "time_origin": "年度变化"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "14",
+            "right": "9",
+            "reported": "5",
+            "left_unit": "%",
+            "right_unit": "%",
+            "reported_unit": "百分点",
+            "left_quote": "14%",
+            "right_quote": "由 9% 提升",
+            "reported_quote": "+5 个百分点（测算）",
+            "relation_quote": "由 9% 提升，+5 个百分点（测算）",
+            "meaning": "研发投入占比提升百分点差"
+          }
+        ]
+      },
+      {
+        "quote": "410 人 / 团队规模 / 净增 90 人，裁员 0 人（测算）",
+        "location": "数据区第三列",
+        "statement": "源文给定员工320涨到410人，当前值410人正确；派生指标'净增90人'为测算（410-320=90），'裁员0人'为从老板'没有裁员'推导的合理标注。但源文未直接给出'裁员0人'作为数据项，此处为合理推断并明确标注测算",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "咬牙没有裁员反而加大了研发投入"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "团队规模",
+            "denominator": "不适用",
+            "time_origin": "年末/当前"
+          },
+          {
+            "value": "320",
+            "unit": "人",
+            "subject": "团队规模基准",
+            "denominator": "不适用",
+            "time_origin": "年初"
+          },
+          {
+            "value": "90",
+            "unit": "人",
+            "subject": "净增人数",
+            "denominator": "不适用",
+            "time_origin": "年度变化"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "410",
+            "right": "320",
+            "reported": "90",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "人",
+            "left_quote": "410 人",
+            "right_quote": "员工320涨到410人（源文）",
+            "reported_quote": "净增 90 人（测算）",
+            "relation_quote": "净增 90 人，裁员 0 人（测算）",
+            "meaning": "团队规模净增人数"
+          }
+        ]
+      },
+      {
+        "quote": "91% / 客户续约率 / 客户流失率 9%（测算）",
+        "location": "数据区第四列",
+        "statement": "源文给定客户续约率91%正确呈现；派生指标'客户流失率9%'为合理测算（100%-91%），明确标注测算",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "91",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "全部客户",
+            "time_origin": "全年"
+          },
+          {
+            "value": "9",
+            "unit": "%",
+            "subject": "客户流失率",
+            "denominator": "全部客户",
+            "time_origin": "全年（测算）"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：公司全年经营数据与老板年会致辞 / 派生指标均标注'测算'，无外部来源",
+        "location": "页面左下角与右下角脚注",
+        "statement": "数据来源声明诚实，明确区分源文数据与派生测算指标，未编造外部来源",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "老板的稿子和全年数据我都掉你这了"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "新增专利18项",
+        "location": "页面数据区",
+        "statement": "源文五项关键数据之一'新增专利18项'在本页未直接出现。本页展示的四项数据为：营收4.2亿、研发占比14%、团队410人、续约率91%。源文给定的'新增专利18项'缺失",
+        "kind": "fact",
+        "failure_mode": "key_data_inaccuracy",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "新增专利18项"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "走过寒冬 | 脱胎换骨",
+        "location": "页面右上角小字",
+        "statement": "叙事关键词前置，与老板讲话核心要素'行业寒冬''脱胎换骨'对应，作为页面主题提示",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年初行业寒冬"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "REPORTER 全体同仁 / DEPARTMENT 年度经营回顾 / DATE 年会当日",
+        "location": "页面底部信息区",
+        "statement": "标准汇报文档元信息，'年度经营回顾'作为部门/主题归类，'全体同仁'对应汇报对象，无未完成占位痕迹",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "410 人与团队规模 / 4.2 亿元与全年营收 / 14% 与研发投入占比 / 91% 与客户续约率",
+        "location": "四组数据-标签垂直排列区域",
+        "statement": "经局部放大图核查，四组数字与下方标签均为上下相邻排版，数字底部与标签顶部有明确间距，无真实字形叠印或遮挡。bounding box相交源于数字高度较大与标签位置靠近，但实际笔画无重叠",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "最难那个月账上现金只够发两个月工资",
+        "location": "老板讲话核心要素",
+        "statement": "该核心叙事要素（现金流危机的具体程度）在本页未直接呈现，本页聚焦于'没有退缩'的情怀总结与四项经营成果数据，未展开困境阶段的细节",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "最难那个月账上现金只够发两个月工资"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6666,
+    "total_tokens": 8340,
+    "completion_tokens": 1674,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 90.644,
+  "attempts": 1
+}

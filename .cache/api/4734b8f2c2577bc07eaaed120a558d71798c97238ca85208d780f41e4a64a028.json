@@ -1,0 +1,46 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 1,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "标题、左侧KPI「裁员 0 人」及副标题、右上引用框内老板讲话与测算说明、左图「员工人数（人）」的轴刻度0-500/单位「人」/柱标签320人·410人/类别上年·本年度及红色标签、右图「人均营收（万元/人）」的轴刻度0-120/单位「万元/人」/柱标签104万元·102万元/类别及标签、底部结论条与数据来源小字均可辨认；无重叠叠印、截断或NaN残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "内容可读前提下，标题—KPI与引用—左右并列双图—结论条—来源注释的层级与阅读顺序清晰；两图结构对称、类别一致，灰色=上年、红色=本年度的颜色编码在两图中一致，对应关系无歧义。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 1024,
+    "completion_tokens_details": {
+      "reasoning_tokens": 767,
+      "text_tokens": 257
+    },
+    "prompt_tokens": 2529,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 1678,
+      "text_tokens": 851
+    },
+    "total_tokens": 3553
+  },
+  "elapsed_seconds": 20.837,
+  "attempts": 1
+}

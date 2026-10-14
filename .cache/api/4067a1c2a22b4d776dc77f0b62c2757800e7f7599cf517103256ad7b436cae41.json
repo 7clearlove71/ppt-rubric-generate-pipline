@@ -1,0 +1,140 @@
+{
+  "parsed": {
+    "page": 1,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "产线设备能耗分析",
+        "location": "页面上部大标题第一行",
+        "statement": "标题文字，白色，字号较大，位于页面左上区域",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "与节能改造立项建议",
+        "location": "页面上部大标题第二行",
+        "statement": "标题文字，白色，与第一行标题上下排列，形成完整标题'产线设备能耗分析与节能改造立项建议'",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "// 节能改造立项评审（第一批）",
+        "location": "页面顶部绿色小字",
+        "statement": "绿色标签文字，位于标题上方，作为文档类别标识",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "基于一个月四条产线能耗实测数据 · 1 号线液压系统改造立项评审",
+        "location": "标题下方灰色说明文字第一行",
+        "statement": "说明数据来源和主题，提及'一个月'实测数据、'四条产线'、'1号线液压系统改造'，与用户prompt核心内容一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "产线设备能耗数据我拉了一个月的,节能改造立项要用"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "汇报单位：设备与能源管理部门",
+        "location": "标题下方灰色说明文字第二行",
+        "statement": "汇报主体信息，与第一行说明文字上下排列",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "汇报主线：能耗对标 → 异常深挖 → 投资测算 → 立项建议",
+        "location": "页面右下角",
+        "statement": "明确汇报结构为四段递进：能耗对标→异常深挖→投资测算→立项建议，与用户指定的'四条线的能耗对比→1号线深挖→投资回报测算'三段结构相比，增加了'立项建议'作为结尾，前三段与用户要求基本一致，顺序一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "整体结构上先把四条线的能耗对比摆出来,再聚焦1号线做深挖,最后落到节能改造的投资回报测算"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "READ THE BRIEF",
+        "location": "页面左下角绿色边框按钮内",
+        "statement": "装饰性按钮文字，绿色边框，白色文字",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "DOC · 2026 年 9 月",
+        "location": "页面右下角日期标识",
+        "statement": "文档日期标注为2026年9月，用户未提供日期信息，属于作品自行设定的时间",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "文档日期",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "产线设备能耗分析 与节能改造立项建议",
+        "location": "标题两行文字区域",
+        "statement": "两标题行在垂直方向上有部分重叠区域（bbox相交于[58.51, 126.81, 362.61, 138.22]），但从放大图可见，'产线设备能耗分析'的'析'字底部与'与节能改造立项建议'的'与'字顶部之间存在明显间距，实际字形无遮挡，属于合理的上下行排版间距，非真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "基于一个月四条产线能耗实测数据 · 1 号线液压系统改造立项评审 汇报单位：设备与能源管理部门",
+        "location": "说明文字两行区域",
+        "statement": "两说明行在垂直方向上有部分重叠区域（bbox相交于[58.51, 223.37, 198.06, 226.36]），从放大图可见，第一行末尾'评审'与第二行开头'汇报'在水平方向错开，垂直方向有合理行距，实际字形无遮挡，属于正常的两行文字排版，非真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6001,
+    "total_tokens": 6910,
+    "completion_tokens": 909,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 131.18,
+  "attempts": 1
+}

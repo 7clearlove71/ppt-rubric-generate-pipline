@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      5,
+      7,
+      8
+    ],
+    "evidence": "关键数字跨页一致：投资120万元、月节约电费6.6万元、静态回收期≈18个月（或约18个月）在全篇口径统一。页5标题为\"约第18个月回本\"，正文列明\"④静态回收期 ≈18个月\"及\"120万元÷6.6≈18.2个月\"；页7标题\"约18个月回本\"，决策请求栏写\"≈18个月\"；页8写\"约18个月收回成本\"。三处均使用\"约18个月\"，无漂移为\"18个月以内\"或其他改变承诺含义的表述。敏感性分析区间16.5–25.3个月仅在页5、7作为补充说明出现，不改变主口径。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23094,
+    "total_tokens": 23275,
+    "completion_tokens": 181,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 16.961,
+  "attempts": 1
+}

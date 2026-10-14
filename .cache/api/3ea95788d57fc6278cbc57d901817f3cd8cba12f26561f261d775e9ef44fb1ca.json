@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A与候选B对两处存疑信息的标注机制均给出了yes判定，且证据充分、互不冲突。两者标注形式不同（A采用红色文字/标签+汇总清单，B采用橙色高亮+深色区块+九条存疑清单），但均满足criterion中“标注形式不限”的要求，且均覆盖了两处指定存疑信息。无实质冲突需翻转任一候选答案。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 20464,
+    "total_tokens": 20561,
+    "completion_tokens": 97,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 117.99,
+  "attempts": 1
+}

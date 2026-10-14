@@ -1,0 +1,301 @@
+{
+  "groups": [
+    {
+      "id": "G01",
+      "dimension": "fulfillment",
+      "importance": 3,
+      "rationale": "本组重要性来自任务核心交付范围与纲目落实要求"
+    },
+    {
+      "id": "G02",
+      "dimension": "correctness",
+      "importance": 3,
+      "rationale": "本组重要性来自数据口径统一与推论有效性要求"
+    },
+    {
+      "id": "G03",
+      "dimension": "integrity",
+      "importance": 2,
+      "rationale": "本组重要性来自信息边界与不虚构要求"
+    },
+    {
+      "id": "G04",
+      "dimension": "narrative",
+      "importance": 3,
+      "rationale": "本组重要性来自内容对题、问题呼应与公文受众适配"
+    },
+    {
+      "id": "G05",
+      "dimension": "visual",
+      "importance": 2,
+      "rationale": "本组重要性来自汇报可读性与视觉表达基本质量"
+    }
+  ],
+  "items": [
+    {
+      "id": "R01",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q01"
+      ],
+      "basis": "explicit",
+      "scope": "全篇主题与受众定位",
+      "evidence_mode": "text",
+      "judge_prompt": "作品整体呈现为老旧小区改造工作汇报，面向政府评审组；封面、页眉或结尾等处体现该汇报主题与汇报对象。满足此条件即通过，不要求每页写出“政府评审组”字样。missing_topic_identity：作品未呈现老旧小区改造工作汇报主题或未体现面向政府评审组的汇报对象。本类不扣纲目缺失或内容不实。"
+    },
+    {
+      "id": "R02",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q03"
+      ],
+      "basis": "explicit",
+      "scope": "全篇纲目结构",
+      "evidence_mode": "text",
+      "judge_prompt": "作品包含改造任务完成情况、资金使用情况、居民满意度、存在问题、下一步计划五个纲目，各纲目作为独立内容板块存在；允许等价公文表述（如“资金使用情况”写作“资金拨付与使用情况”），但不得缺失任一主题或将其与其他主题合并为单一板块。missing_required_section：用户指定的五个纲目中任一主题缺失或与其他主题合并为单一板块。本类不扣板块内内容不实或文不对题。"
+    },
+    {
+      "id": "R03",
+      "group_id": "G01",
+      "importance": 2,
+      "source_refs": [
+        "Q02"
+      ],
+      "basis": "explicit",
+      "scope": "全篇内容详实度",
+      "evidence_mode": "text",
+      "judge_prompt": "各纲目下有实质内容填写，非仅列标题或留空；允许使用占位说明并清楚标注待补数据，但不得用空泛套话替代全部实质内容。empty_section_placeholder：纲目下仅列标题、留空或用空泛套话替代全部实质内容。本类不扣数据虚构或口径不一致。"
+    },
+    {
+      "id": "R05",
+      "group_id": "G02",
+      "importance": 3,
+      "source_refs": [
+        "Q05"
+      ],
+      "basis": "explicit",
+      "scope": "全篇数据口径一致性",
+      "evidence_mode": "text",
+      "judge_prompt": "同一数据类指标（如完工率、资金到位率、满意度等）在全文各处使用统一口径，同一指标在同一语境下不出现百分比与笼统说法混用或数值矛盾；同一表格或图表中相同列名/轴名须确保分母与计算方式一致，若业务需要采用不同分母须通过列名差异或行组标题显性区分。若某指标仅出现一次则自然满足。data_caliber_inconsistency：同一数据类指标在同一语境下出现百分比与笼统说法混用或数值矛盾，或相同列名/轴名分母与计算方式不一致且未显性区分。本类不扣新增数据是否虚构或推论错误。"
+    },
+    {
+      "id": "R06",
+      "group_id": "G02",
+      "importance": 2,
+      "source_refs": [
+        "Q06"
+      ],
+      "basis": "explicit",
+      "scope": "存在问题与资金/满意度的对应关系",
+      "evidence_mode": "text",
+      "judge_prompt": "若存在问题部分提出与资金或满意度相关的问题，该问题与前面相应板块呈现的指标或情况存在可辨识的对应关系（如指明资金某环节缺口、某群体满意度偏低），问题来源可追溯到前文已述内容；若问题部分未涉及资金与满意度则不适用本条。problem_source_mismatch：存在问题部分提出与资金或满意度相关的问题，但与前面相应板块呈现的指标或情况无可辨识对应关系，问题来源不可追溯。本类不扣问题是否虚构具体数值或问题表述虚泛。"
+    },
+    {
+      "id": "R07",
+      "group_id": "G02",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇算术与推论有效性",
+      "evidence_mode": "text",
+      "judge_prompt": "涉及测算、比较或推论时，比率分子分母对应、对象与期间可比、因果与比较有依据；派生指标若涉及跨页数据宜标注来源或给出中间变量，但未标注来源不等于算术错误。允许明确标注的合理假设，但标注假设不豁免错误运算或把条件结论说成实测结果。未使用测算时自然满足，不强制生成计算内容。reasoning_validity：算术、比较和推论缺陷，如比率分子分母不匹配、对象或期间不可比、循环论证、把条件结论说成实测结果。本类不扣新增事实虚构或数据口径不一致，仅负责推论本身不成立。"
+    },
+    {
+      "id": "R08",
+      "group_id": "G03",
+      "importance": 2,
+      "source_refs": [
+        "Q01"
+      ],
+      "basis": "explicit",
+      "scope": "全篇具体数据来源",
+      "evidence_mode": "text",
+      "judge_prompt": "用户未提供完工率、资金到位率、满意度等具体数值，作品若使用具体数据须为真实占位或以显著方式标注为假设/示意/待核实，不得以虚构具体数值冒充既成事实；标注宜贯穿含该等数据的页面。source_fact_distortion：将用户未提供的具体数值或结果当作既成事实呈现，且未标注为假设、示意或待核实。本类不扣数据口径不一致或推论错误，这些由对应条目负责。"
+    },
+    {
+      "id": "R09",
+      "group_id": "G03",
+      "importance": 2,
+      "source_refs": [
+        "Q06"
+      ],
+      "basis": "explicit",
+      "scope": "存在问题部分补充信息边界",
+      "evidence_mode": "text",
+      "judge_prompt": "存在问题部分若补充用户未给定的具体原因、金额、责任主体等断言，须明确标注为假设或待核实，不得冒充已知事实；允许与领域基本知识一致的一般性背景事实。unsupported_assertion：未经支持的新增具体事实被冒充已知，如无来源的具体金额、责任主体或因果断言。本类不扣用户给定事实的改写错误或数据口径不一致。"
+    },
+    {
+      "id": "R10",
+      "group_id": "G04",
+      "importance": 3,
+      "source_refs": [
+        "Q04"
+      ],
+      "basis": "explicit",
+      "scope": "各纲目内容与标题对应",
+      "evidence_mode": "text",
+      "judge_prompt": "每个小标题下内容与标题主题对应，不出现文不对题或内容混装（如在“资金使用情况”下写居民满意度内容）；各板块内容归属清晰。content_title_mismatch：小标题下内容与标题主题不对应，出现文不对题或内容混装。本类不扣纲目缺失或标题措辞口语化。"
+    },
+    {
+      "id": "R11",
+      "group_id": "G04",
+      "importance": 3,
+      "source_refs": [
+        "Q06"
+      ],
+      "basis": "explicit",
+      "scope": "存在问题部分具体性",
+      "evidence_mode": "text",
+      "judge_prompt": "存在问题部分写具体问题，不写虚泛套话；问题表述能看出与前文资金或满意度板块的呼应关系，评审组可辨识问题来源。此条检查问题具体性与呼应可辨识性，不负责对应关系的推论有效性或数据虚构。vague_problem_statement：存在问题部分写虚泛套话，未写具体问题，或问题表述看不出与前文资金或满意度板块的呼应关系。本类不扣对应关系推论无效或数据虚构。"
+    },
+    {
+      "id": "R12",
+      "group_id": "G04",
+      "importance": 2,
+      "source_refs": [
+        "Q07"
+      ],
+      "basis": "explicit",
+      "scope": "小标题措辞风格",
+      "evidence_mode": "text",
+      "judge_prompt": "小标题措辞正式、符合公文风格，不使用口语化说法；允许与用户给定纲目等价的规范公文表述，允许使用“一、二、三”等公文序号层级。colloquial_title：小标题措辞使用口语化说法，不符合公文风格。本类不扣正文口径或内容对题问题。"
+    },
+    {
+      "id": "R13",
+      "group_id": "G04",
+      "importance": 2,
+      "source_refs": [
+        "Q02"
+      ],
+      "basis": "explicit",
+      "scope": "全篇公文口径与受众适配",
+      "evidence_mode": "text",
+      "judge_prompt": "正文按公文口径填写，用语规范、面向政府评审组的汇报场景，整体风格与公文汇报一致；不要求页面写出“公文口径”字样。non_official_register：正文未按公文口径填写，用语不规范或整体风格与面向政府评审组的公文汇报不一致。本类不扣小标题措辞口语化或内容对题问题。"
+    },
+    {
+      "id": "R14",
+      "group_id": "G05",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇正文与图形可读性",
+      "evidence_mode": "visual",
+      "judge_prompt": "正文与图形内容无遮挡、裁切、对比不足等真实不可读问题；文本能提取不代表可读。visual_readability：正文/图形内容的遮挡、裁切、对比等真实不可读问题，排除图表标签缺陷。本类不扣图表标签缺失或信息层级问题。"
+    },
+    {
+      "id": "R15",
+      "group_id": "G05",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇信息组织与阅读层级",
+      "evidence_mode": "visual",
+      "judge_prompt": "在内容可读前提下，标题、正文与数据信息有清晰层级与可辨识阅读路径，重点定位合理；允许不同布局与风格。visual_hierarchy：在内容可读前提下的信息组织与重点定位问题，排除已属于遮挡/裁切/标签错误的同一缺陷。本类不扣遮挡/裁切或图表标签缺陷，不能用“阅读路径被遮挡”再次处罚遮挡。"
+    },
+    {
+      "id": "R16",
+      "group_id": "G05",
+      "importance": 1,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "图表标签完整性",
+      "evidence_mode": "visual",
+      "judge_prompt": "若使用数据图表，图表分类、轴、图例、单位等标签完整可读$1无NaN或残留占位；未使用图表时本条自然满足。chart_label3label;int'integrity：图表分类/轴/图例/单位标签缺失、NaN等残留、标签本身不可读。相同标签缺陷不再计入正文可读性或视觉层级。"
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "missing_topic_identity",
+      "owner": "R01",
+      "definition": "作品未呈现老旧小区改造工作汇报主题或未体现面向政府评审组的汇报对象。",
+      "exclusions": "本类不扣纲目缺失或内容不实。"
+    },
+    {
+      "id": "missing_required_section",
+      "owner": "R02",
+      "definition": "用户指定的五个纲目中任一主题缺失或与其他主题合并为单一板块。",
+      "exclusions": "本类不扣板块内内容不实或文不对题。"
+    },
+    {
+      "id": "empty_section_placeholder",
+      "owner": "R03",
+      "definition": "纲目下仅列标题、留空或用空泛套话替代全部实质内容。",
+      "exclusions": "本类不扣数据虚构或口径不一致。"
+    },
+    {
+      "id": "data_caliber_inconsistency",
+      "owner": "R05",
+      "definition": "同一数据类指标在同一语境下出现百分比与笼统说法混用或数值矛盾，或相同列名/轴名分母与计算方式不一致且未显性区分。",
+      "exclusions": "本类不扣新增数据是否虚构或推论错误。"
+    },
+    {
+      "id": "problem_source_mismatch",
+      "owner": "R06",
+      "definition": "存在问题部分提出与资金或满意度相关的问题，但与前面相应板块呈现的指标或情况无可辨识对应关系，问题来源不可追溯。",
+      "exclusions": "本类不扣问题是否虚构具体数值或问题表述虚泛。"
+    },
+    {
+      "id": "reasoning_validity",
+      "owner": "R07",
+      "definition": "算术、比较和推论缺陷，如比率分子分母不匹配、对象或期间不可比、循环论证、把条件结论说成实测结果。",
+      "exclusions": "本类不扣新增事实虚构或数据口径不一致，仅负责推论本身不成立。"
+    },
+    {
+      "id": "source_fact_distortion",
+      "owner": "R08",
+      "definition": "将用户未提供的具体数值或结果当作既成事实呈现，且未标注为假设、示意或待核实。",
+      "exclusions": "本类不扣数据口径不一致或推论错误，这些由对应条目负责。"
+    },
+    {
+      "id": "unsupported_assertion",
+      "owner": "R09",
+      "definition": "未经支持的新增具体事实被冒充已知，如无来源的具体金额、责任主体或因果断言。",
+      "exclusions": "本类不扣用户给定事实的改写错误或数据口径不一致。"
+    },
+    {
+      "id": "content_title_mismatch",
+      "owner": "R10",
+      "definition": "小标题下内容与标题主题不对应，出现文不对题或内容混装。",
+      "exclusions": "本类不扣纲目缺失或标题措辞口语化。"
+    },
+    {
+      "id": "vague_problem_statement",
+      "owner": "R11",
+      "definition": "存在问题部分写虚泛套话，未写具体问题，或问题表述看不出与前文资金或满意度板块的呼应关系。",
+      "exclusions": "本类不扣对应关系推论无效或数据虚构。"
+    },
+    {
+      "id": "colloquial_title",
+      "owner": "R12",
+      "definition": "小标题措辞使用口语化说法，不符合公文风格。",
+      "exclusions": "本类不扣正文口径或内容对题问题。"
+    },
+    {
+      "id": "non_official_register",
+      "owner": "R13",
+      "definition": "正文未按公文口径填写，用语不规范或整体风格与面向政府评审组的公文汇报不一致。",
+      "exclusions": "本类不扣小标题措辞口语化或内容对题问题。"
+    },
+    {
+      "id": "chart_label_integrity",
+      "owner": "R16",
+      "definition": "图表分类/轴/图例/单位标签缺失、NaN等残留、标签本身不可读。",
+      "exclusions": "相同标签缺陷不再计入正文可读性或视觉层级。"
+    },
+    {
+      "id": "visual_readability",
+      "owner": "R14",
+      "definition": "正文/图形内容的遮挡、裁切、对比等真实不可读问题，排除图表标签缺陷。",
+      "exclusions": "本类不扣图表标签缺失或信息层级问题。"
+    },
+    {
+      "id": "visual_hierarchy",
+      "owner": "R15",
+      "definition": "在内容可读前提下的信息组织与重点定位问题，排除已属于遮挡/裁切/标签错误的同一缺陷。",
+      "exclusions": "本类不扣遮挡/裁切或图表标签缺陷，不能用“阅读路径被遮挡”再次处罚遮挡。"
+    }
+  ],
+  "evaluation_protocol": "evidence_v1"
+}

@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A将技术路线图分布在第11页（时间轴：2026-2028三阶段）和第12页（下一步三条线三个动作），候选B将技术路线图集中在第10页（四级演进表格）。两者均满足criterion要求的'技术发展路径或阶段性规划'，且均明确区分已完成阶段与后续规划。",
+      "候选A的ledger曾将第3页底部'材料—器件—系统—应用，工程化闭环已成形'误判为missing_roadmap，但已在verdict中正确驳回该误判；候选B的ledger曾将第9页未出现技术路线图标记为missing_roadmap，同样已在verdict中正确驳回。两者对单页遗漏不等于全篇缺失的处理一致。",
+      "候选B的表格形式与候选A的时间轴+三栏计划形式，均属criterion明确允许的多样形式（'允许采用时间轴、流程图、阶段表格、里程碑列表等形式，不限定具体版式'），不构成标准漂移。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 11928,
+    "total_tokens": 12163,
+    "completion_tokens": 235,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 60.093,
+  "attempts": 1
+}

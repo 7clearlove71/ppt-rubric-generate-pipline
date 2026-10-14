@@ -1,0 +1,35 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "evidence": "全篇未出现用户未提供的具体单位名称、人名、具体小区名单或上级文号。封面与落款使用\"区住房和城乡建设局\"\"区老旧小区改造工作领导小组办公室\"等概括性指称（P01），无具体行政区划名；正文责任单位均用\"区财政局\"\"区住建局\"\"街道办事处\"等通用概括表述（P12）。每页底部均标注\"情景数据（Scenario data）\"（P01-P13），整体呈模板/示例性质，符合rubric允许的统一示意标注情形。数据、小区数量、资金数额等虽具体，但属于汇报所需的量化指标而非虚构的专名/文号，且已明确标注为情景数据。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 49055,
+    "total_tokens": 49241,
+    "completion_tokens": 186,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 54.784,
+  "attempts": 2
+}

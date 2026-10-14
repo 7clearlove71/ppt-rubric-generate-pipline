@@ -1,0 +1,21 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "rubric结构完整，各条目与来源、需求对应关系正确，无实质错误。通过条件与例外相容，无双重扣分风险，未强制额外阈值，未错误排斥正常舍入或合理建议。固定视觉标准V_READ与V_LAYOUT分工清晰，不重复计分。信息边界与事实条目责任划分合理。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 8260,
+    "total_tokens": 8353,
+    "completion_tokens": 93,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 3.167,
+  "attempts": 1
+}

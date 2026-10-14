@@ -1,0 +1,258 @@
+{
+  "parsed": {
+    "page": 10,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "技术路线图：材料—器件—系统—临床四级演进，2026–2028 里程碑已明确",
+        "location": "页首标题",
+        "statement": "页面主题为技术路线图，包含材料层、器件层、系统层、临床/产业层四级结构，时间跨度涵盖2023–2025已完成实测与2026–2028目标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "含技术路线图与下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "支撑良率 78% → 92%",
+        "location": "材料层-2023–2025已完成（实测）列",
+        "statement": "关键事实『可拉伸传感器阵列量产良率从78%提升至92%』以'支撑良率 78% → 92%'形式呈现，数值与方向正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "78",
+            "unit": "%",
+            "subject": "可拉伸传感器阵列量产良率（起始）",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "92",
+            "unit": "%",
+            "subject": "可拉伸传感器阵列量产良率（当前）",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "良率 92% · 弯曲 10 万次",
+        "location": "器件层-2023–2025已完成（实测）列",
+        "statement": "关键事实『柔性OLED器件弯曲10万次无衰减』以'良率 92% · 弯曲 10 万次'及下方'柔性 OLED 弯曲无衰减'形式呈现，弯曲次数为10万次，'无衰减'结论保留",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "柔性OLED器件弯曲10万次无衰减"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "10",
+            "unit": "万次",
+            "subject": "柔性OLED器件弯曲次数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "可拉伸传感阵列量产良率 78% → 92% ；柔性 OLED 弯曲无衰减",
+        "location": "器件层-2023–2025已完成（实测）列详细说明",
+        "statement": "器件层单元格内同时复述了传感器良率提升与OLED弯曲无衰减两项已完成成果",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "可拉伸传感器阵列量产良率从78%提升至92%；柔性OLED器件弯曲10万次无衰减"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "进入临床试验阶段",
+        "location": "临床/产业层-2023–2025已完成（实测）列",
+        "statement": "关键事实『与三甲医院合作的植入式电子皮肤已进入临床试验阶段』以'进入临床试验阶段'为标题呈现",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "植入式电子皮肤与三甲医院合作；中试工艺定型→中试放大",
+        "location": "临床/产业层-2023–2025已完成（实测）列详细说明",
+        "statement": "明确了合作方为三甲医院、产品为植入式电子皮肤、状态为已进入临床试验阶段且进行中试工艺定型→中试放大",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "2026 目标、2027 目标、2028 目标",
+        "location": "技术路线图右侧三列",
+        "statement": "技术路线图包含2026–2028的里程碑目标，构成下一步计划内容",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "含技术路线图与下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "灰色节点 = 2023–2025 实测已完成；蓝色节点 = 2026–2028 团队目标（自定）",
+        "location": "页脚图例",
+        "statement": "通过颜色区分已完成实测与团队目标，区分既有成果与未来规划",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "M1 关键工序 CPK ≥1.33",
+        "location": "2026目标-材料层",
+        "statement": "M1标签与后续文字在PDF渲染中存在极小bbox交集（fraction_of_smaller_bbox=0.0009），放大图显示实际为正常排版间距，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "M3 50 万次整机级验证 + 湿热偏压复测",
+        "location": "2027目标-器件层",
+        "statement": "M3标签与后续文字在PDF渲染中存在极小bbox交集（fraction_of_smaller_bbox=0.0009），放大图显示实际为正常排版间距，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "M4 随访完成率与不良事件率达方案要求",
+        "location": "2026目标-临床/产业层",
+        "statement": "M4标签与后续文字在PDF渲染中存在极小bbox交集（fraction_of_smaller_bbox=0.0009），放大图显示实际为正常排版间距，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "M5 启动多中心，可靠性验证符合在研行业标准",
+        "location": "2027目标-临床/产业层",
+        "statement": "M5标签与后续文字在PDF渲染中存在极小bbox交集（fraction_of_smaller_bbox=0.0009），放大图显示实际为正常排版间距，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "M2 M3 连续 3 批次总良率 ≥95%",
+        "location": "2026目标-器件层",
+        "statement": "M2 M3标签与后续文字在PDF渲染中存在极小bbox交集（fraction_of_smaller_bbox=0.0004），放大图显示实际为正常排版间距，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "M6 M7 注册申报推进；中试→量产产能爬坡",
+        "location": "2028目标-临床/产业层",
+        "statement": "M6 M7标签与后续文字在PDF渲染中存在极小bbox交集（fraction_of_smaller_bbox=0.0004），放大图显示实际为正常排版间距，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "来源：团队自有数据、国家药监局器审中心、飞度 CRO、上海市科委、机器人大讲堂",
+        "location": "页脚",
+        "statement": "作品自述数据来源，包含外部机构名称",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "单站良率 ≥95%、CPK ≥1.33；弯折后光电无衰减",
+        "location": "量化判定标准",
+        "statement": "明确的量化判定标准，与路线图中的目标相呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "技术审评 90 个工作日；三类注册整体 2–3 年",
+        "location": "审评时钟（不可压缩）",
+        "statement": "提供审评时间参考，标注为不可压缩的外部约束",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "90",
+            "unit": "个工作日",
+            "subject": "技术审评时长",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 9993,
+    "total_tokens": 11689,
+    "completion_tokens": 1696,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 46.839,
+  "attempts": 1
+}

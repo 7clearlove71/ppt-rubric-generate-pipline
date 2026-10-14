@@ -1,0 +1,611 @@
+{
+  "parsed": {
+    "page": 6,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "带农增收：120 户人均月增收约1800 元",
+        "location": "页面上方标题区",
+        "statement": "标题呈现带动农户数与增收金额，但标题写\"120 户\"而副标题及正文均说明首年60户、次年120户，标题省略首年口径，属于信息简化而非错误",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "带动农户数（第二年）",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          },
+          {
+            "value": "60",
+            "unit": "户",
+            "subject": "带动农户数（首年）",
+            "denominator": "不适用",
+            "time_origin": "首年"
+          },
+          {
+            "value": "1800",
+            "unit": "元/人·月",
+            "subject": "人均月增收",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "首年60 户、次年120 户，人均月增收约1800 元，测算月增收总额由10.8 万元增至21.6 万元。",
+        "location": "标题下方说明文字",
+        "statement": "准确引用用户给定事实：首年60户、次年120户、人均月增收约1800元，并给出测算的月增收总额变化",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户第二年扩至120户"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "10.8",
+            "unit": "万元/月",
+            "subject": "首年月增收总额",
+            "denominator": "不适用",
+            "time_origin": "首年"
+          },
+          {
+            "value": "21.6",
+            "unit": "万元/月",
+            "subject": "第二年月增收总额",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "60",
+            "right": "1800",
+            "reported": "10.8",
+            "left_unit": "户",
+            "right_unit": "元/人·月",
+            "reported_unit": "万元/月",
+            "left_quote": "首年60 户",
+            "right_quote": "人均月增收约1800 元",
+            "reported_quote": "10.8 万元/月（60×1800 ）",
+            "relation_quote": "测算月增收总额由10.8 万元增至21.6 万元",
+            "meaning": "首年60户按人均月增收1800元计算的月增收总额"
+          },
+          {
+            "operation": "multiply",
+            "left": "120",
+            "right": "1800",
+            "reported": "21.6",
+            "left_unit": "户",
+            "right_unit": "元/人·月",
+            "reported_unit": "万元/月",
+            "left_quote": "次年120 户",
+            "right_quote": "人均月增收约1800 元",
+            "reported_quote": "21.6 万元/月（120×1800 ）",
+            "relation_quote": "测算月增收总额由10.8 万元增至21.6 万元",
+            "meaning": "第二年120户按人均月增收1800元计算的月增收总额"
+          }
+        ]
+      },
+      {
+        "quote": "60 户",
+        "location": "柱状图左侧柱子顶部",
+        "statement": "柱状图显示第一年带动60户，与用户给定首年60户一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "60",
+            "unit": "户",
+            "subject": "带动农户数",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "120 户",
+        "location": "柱状图右侧柱子顶部",
+        "statement": "柱状图显示第二年带动120户，与用户给定第二年120户一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "带动农户数",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "第二年为第一年2 倍 · +60 户 · +100% （测算）",
+        "location": "柱状图上方说明",
+        "statement": "给出第二年相对第一年的增幅关系，2倍、+60户、+100%均为正确算术推论",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2",
+            "unit": "倍",
+            "subject": "倍数关系",
+            "denominator": "不适用",
+            "time_origin": "第二年相对第一年"
+          },
+          {
+            "value": "60",
+            "unit": "户",
+            "subject": "增加户数",
+            "denominator": "不适用",
+            "time_origin": "第二年相对第一年"
+          },
+          {
+            "value": "100",
+            "unit": "%",
+            "subject": "增长率",
+            "denominator": "不适用",
+            "time_origin": "第二年相对第一年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "120",
+            "right": "60",
+            "reported": "100",
+            "left_unit": "户",
+            "right_unit": "户",
+            "reported_unit": "%",
+            "left_quote": "120 户",
+            "right_quote": "60 户",
+            "reported_quote": "+100% （测算）",
+            "relation_quote": "第二年为第一年2 倍 · +60 户 · +100% （测算）",
+            "meaning": "第二年相对第一年的增长率"
+          }
+        ]
+      },
+      {
+        "quote": "约1800 元／人· 月",
+        "location": "页面右侧大字号展示",
+        "statement": "突出显示人均月增收约1800元，与用户给定值一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "1800",
+            "unit": "元/人·月",
+            "subject": "人均月增收",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "按件计酬、按月兑付，实际以质检合格件数结算",
+        "location": "约1800元下方说明",
+        "statement": "说明计酬机制，与用户给定的\"按件计酬\"一致，补充了按月兑付和质检合格条件",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "按件计酬"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "10.8 万元/ 月（60×1800 ）",
+        "location": "增收测算表首年月增收总额",
+        "statement": "首年月增收总额测算，60户×1800元=10.8万元/月，计算正确",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "10.8",
+            "unit": "万元/月",
+            "subject": "首年月增收总额",
+            "denominator": "不适用",
+            "time_origin": "首年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "60",
+            "right": "1800",
+            "reported": "10.8",
+            "left_unit": "户",
+            "right_unit": "元/人·月",
+            "reported_unit": "万元/月",
+            "left_quote": "首年（60 户）",
+            "right_quote": "约1800 元/ 人· 月",
+            "reported_quote": "10.8 万元/ 月（60×1800 ）",
+            "relation_quote": "月增收总额（测算）",
+            "meaning": "首年60户按月人均增收1800元计算的月增收总额"
+          }
+        ]
+      },
+      {
+        "quote": "21.6 万元/ 月（120×1800 ）",
+        "location": "增收测算表第二年月增收总额",
+        "statement": "第二年月增收总额测算，120户×1800元=21.6万元/月，计算正确",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第二年扩至120户"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "21.6",
+            "unit": "万元/月",
+            "subject": "第二年月增收总额",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "120",
+            "right": "1800",
+            "reported": "21.6",
+            "left_unit": "户",
+            "right_unit": "元/人·月",
+            "reported_unit": "万元/月",
+            "left_quote": "第二年（120 户）",
+            "right_quote": "约1800 元/ 人· 月",
+            "reported_quote": "21.6 万元/ 月（120×1800 ）",
+            "relation_quote": "月增收总额（测算）",
+            "meaning": "第二年120户按月人均增收1800元计算的月增收总额"
+          }
+        ]
+      },
+      {
+        "quote": "129.6 万元/ 年",
+        "location": "增收测算表首年年增收总额",
+        "statement": "首年年增收总额，由月增收10.8万元×12个月=129.6万元/年，计算正确",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "129.6",
+            "unit": "万元/年",
+            "subject": "首年年增收总额",
+            "denominator": "不适用",
+            "time_origin": "首年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "10.8",
+            "right": "12",
+            "reported": "129.6",
+            "left_unit": "万元/月",
+            "right_unit": "月",
+            "reported_unit": "万元/年",
+            "left_quote": "10.8 万元/ 月（60×1800 ）",
+            "right_quote": "年值按稳定接单12 个月折算",
+            "reported_quote": "129.6 万元/ 年",
+            "relation_quote": "年增收总额（测算）",
+            "meaning": "首年按稳定接单12个月折算的年增收总额"
+          }
+        ]
+      },
+      {
+        "quote": "259.2 万元/ 年",
+        "location": "增收测算表第二年年增收总额",
+        "statement": "第二年年增收总额，由月增收21.6万元×12个月=259.2万元/年，计算正确",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第二年扩至120户"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "259.2",
+            "unit": "万元/年",
+            "subject": "第二年年增收总额",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "21.6",
+            "right": "12",
+            "reported": "259.2",
+            "left_unit": "万元/月",
+            "right_unit": "月",
+            "reported_unit": "万元/年",
+            "left_quote": "21.6 万元/ 月（120×1800 ）",
+            "right_quote": "年值按稳定接单12 个月折算",
+            "reported_quote": "259.2 万元/ 年",
+            "relation_quote": "年增收总额（测算）",
+            "meaning": "第二年按稳定接单12个月折算的年增收总额"
+          }
+        ]
+      },
+      {
+        "quote": "敏感性口径：稳定接单10 个月时为首年108 万元、第二年216 万元（测算），不作为既成实绩。",
+        "location": "增收测算表下方",
+        "statement": "提供敏感性分析，明确标注10个月接单假设下的年增收额，并声明\"不作为既成实绩\"，符合条件性目标的边界处理要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "108",
+            "unit": "万元/年",
+            "subject": "首年敏感性年增收总额",
+            "denominator": "不适用",
+            "time_origin": "首年（10个月假设）"
+          },
+          {
+            "value": "216",
+            "unit": "万元/年",
+            "subject": "第二年敏感性年增收总额",
+            "denominator": "不适用",
+            "time_origin": "第二年（10个月假设）"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "10.8",
+            "right": "10",
+            "reported": "108",
+            "left_unit": "万元/月",
+            "right_unit": "月",
+            "reported_unit": "万元/年",
+            "left_quote": "10.8 万元/ 月（60×1800 ）",
+            "right_quote": "稳定接单10 个月",
+            "reported_quote": "108 万元",
+            "relation_quote": "敏感性口径：稳定接单10 个月时为首年108 万元",
+            "meaning": "首年按10个月接单折算的年增收敏感性值"
+          }
+        ]
+      },
+      {
+        "quote": "户均1 人参与编织、满勤计件、单价稳定、订单持续；按季度考核，凭证为计件结算单与按月兑付记录。",
+        "location": "页面左下方测算假设与考核",
+        "statement": "明确测算假设条件，包括户均1人、满勤、单价稳定、订单持续，并说明考核方式和凭证要求，属于合理假设与考核机制设计",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "优先吸纳留守妇女、中老年劳动力、脱贫人口与监测对象；第一年培训50 人服务首年60 户，缺口由合作社分批轮训补足。",
+        "location": "页面中下方优先吸纳与培训",
+        "statement": "说明优先吸纳人群，并提到第一年培训50人服务首年60户，与用户给定的第一年培训50人一致；同时说明60户与50人之间的缺口由合作社轮训补足，属于合理推论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第一年建工坊800平米+培训50人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "50",
+            "unit": "人",
+            "subject": "第一年培训人数",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          },
+          {
+            "value": "60",
+            "unit": "户",
+            "subject": "首年带动农户数",
+            "denominator": "不适用",
+            "time_origin": "首年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "全国1.1 万余家非遗工坊带动相关产业链120 余万人就业增收（新华社 2025 ）；典型工坊人均月增收1500—2200 余元。",
+        "location": "页面右下方背景对标",
+        "statement": "引用外部数据作为背景对标，标注来源\"新华社 2025\"，并声明\"口径不同，不混算\"，保持了参照边界，属于合理的外部参照使用",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "1.1",
+            "unit": "万家",
+            "subject": "全国非遗工坊数量",
+            "denominator": "不适用",
+            "time_origin": "2025年"
+          },
+          {
+            "value": "120",
+            "unit": "万人",
+            "subject": "带动就业人数",
+            "denominator": "不适用",
+            "time_origin": "2025年"
+          },
+          {
+            "value": "1500—2200",
+            "unit": "元/人·月",
+            "subject": "典型工坊人均月增收区间",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：申报口径给定值（60 户、120 户、约1800 元/ 人· 月、第一年培训50 人）；月/ 年增收总额与增幅均为算术测算值，第三年带动口径以申报材料为准、不外推。",
+        "location": "页面底部数据来源说明",
+        "statement": "明确标注数据来源为申报口径给定值，区分给定值与算术测算值，并说明第三年口径以申报材料为准、不外推，保持了数据边界清晰",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "首期60户第二年扩至120户"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "第一年建工坊800平米+培训50人"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "人均月增收 · 申报口径给定值 / 约1800 / 元／人· 月",
+        "location": "页面右侧大字号数字区域",
+        "statement": "视觉检查：\"人均月增收 · 申报口径给定值\"与\"约1800\"的包围框在y方向有微小交集（fraction_of_smaller_bbox: 0.0427），但放大图显示两行文字为上下正常排版，大字号\"约1800\"与上方小字号说明文字无实际笔画遮挡，属于标题与数据的正常层级关系，非真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "增收测算表 / 年值按稳定接单12 个月折算",
+        "location": "增收测算表标题区域",
+        "statement": "视觉检查：\"增收测算表\"与\"年值按稳定接单12 个月折算\"的包围框在x方向有极微小交集（fraction_of_smaller_bbox: 0.0005），放大图显示为标题与副标题的正常并排排版，无实际笔画遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "户均1 人参与编织、满勤计件、单价稳定、订单持续；按季度考 / 核，凭证为计件结算单与按月兑付记录。",
+        "location": "页面左下方测算假设与考核区域",
+        "statement": "视觉检查：两行文段包围框有y方向交集（fraction_of_smaller_bbox: 0.1726），放大图显示为正常的换行排版，\"按季度考\"与\"核，\"为同一词语的正常断行，无实际笔画遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "优先吸纳留守妇女、中老年劳动力、脱贫人口与监测对象；第 / 一年培训50 人服务首年60 户，缺口由合作社分批轮训补足。",
+        "location": "页面中下方优先吸纳与培训区域",
+        "statement": "视觉检查：两行文段包围框有y方向交集（fraction_of_smaller_bbox: 0.1726），放大图显示为正常的换行排版，\"第\"与\"一年\"为同一词语的正常断行，无实际笔画遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "全国1.1 万余家非遗工坊带动相关产业链120 余万人就业增收 / （新华社 2025 ）；典型工坊人均月增收1500—2200 余元。",
+        "location": "页面右下方背景对标区域",
+        "statement": "视觉检查：两行文段包围框有y方向交集（fraction_of_smaller_bbox: 0.1726），放大图显示为正常的换行排版，无实际笔画遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 8927,
+    "total_tokens": 12724,
+    "completion_tokens": 3797,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 250.086,
+  "attempts": 3
+}

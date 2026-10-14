@@ -1,0 +1,44 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 1,
+        "page_id": "doc_9d0c38d3fae496c7df8a2d83/page/1",
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "页面全部文字、数字、图表标签及单位均可辨认：标题文字清晰；左侧'裁员0人'及说明文字可读；右侧引用文字及数据（320人→410人、+28.1%、+26%）清晰；两个柱状图的标题、Y轴单位（人/万元/人）、X轴类别（上年/本年度）、数据标签（320人、410人、104万元、102万元）均完整可读；底部总结文字及数据来源注释清晰。无重叠叠印、截断、对比不足或缺失标签问题。无NaN等破损残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "内容可读前提下，视觉组织有效：顶部大标题统领全页；左侧红色强调'裁员0人'与右侧老板讲话形成主次对比；下方双柱状图并列展示'员工人数'与'人均营收'，图表标题、数据标签、单位完整，通过颜色（灰/红）区分年度，阅读顺序明确；底部粉色条带总结结论。无层级混淆或错误对应关系。简洁信息页布局合理，无多余留白问题。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 2442,
+    "total_tokens": 2809,
+    "completion_tokens": 367,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 114.016,
+  "attempts": 1
+}

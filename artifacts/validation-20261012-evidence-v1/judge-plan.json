@@ -1,0 +1,108 @@
+{
+  "operation": "judge",
+  "offline": true,
+  "cases": [
+    {
+      "case_id": "01",
+      "split": "dev",
+      "errors": [
+        "FileNotFoundError: [Errno 2] No such file or directory: '/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261012-evidence-v1/rubrics/01/rubric.json'"
+      ],
+      "source_characters": 116,
+      "candidate_pages": {
+        "A": 13,
+        "B": 13
+      }
+    },
+    {
+      "case_id": "02",
+      "split": "dev",
+      "errors": [
+        "FileNotFoundError: [Errno 2] No such file or directory: '/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261012-evidence-v1/rubrics/02/rubric.json'"
+      ],
+      "source_characters": 436,
+      "candidate_pages": {
+        "A": 10,
+        "B": 8
+      }
+    },
+    {
+      "case_id": "03",
+      "split": "dev",
+      "errors": [
+        "FileNotFoundError: [Errno 2] No such file or directory: '/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261012-evidence-v1/rubrics/03/rubric.json'"
+      ],
+      "source_characters": 473,
+      "candidate_pages": {
+        "A": 8,
+        "B": 8
+      }
+    },
+    {
+      "case_id": "05",
+      "split": "dev",
+      "errors": [
+        "FileNotFoundError: [Errno 2] No such file or directory: '/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261012-evidence-v1/rubrics/05/rubric.json'"
+      ],
+      "source_characters": 279,
+      "candidate_pages": {
+        "A": 7,
+        "B": 10
+      }
+    },
+    {
+      "case_id": "06",
+      "split": "dev",
+      "errors": [
+        "FileNotFoundError: [Errno 2] No such file or directory: '/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261012-evidence-v1/rubrics/06/rubric.json'"
+      ],
+      "source_characters": 277,
+      "candidate_pages": {
+        "A": 13,
+        "B": 8
+      }
+    },
+    {
+      "case_id": "09",
+      "split": "dev",
+      "errors": [
+        "FileNotFoundError: [Errno 2] No such file or directory: '/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261012-evidence-v1/rubrics/09/rubric.json'"
+      ],
+      "source_characters": 302,
+      "candidate_pages": {
+        "A": 8,
+        "B": 8
+      }
+    },
+    {
+      "case_id": "10",
+      "split": "dev",
+      "errors": [
+        "FileNotFoundError: [Errno 2] No such file or directory: '/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261012-evidence-v1/rubrics/10/rubric.json'"
+      ],
+      "source_characters": 657,
+      "candidate_pages": {
+        "A": 8,
+        "B": 8
+      }
+    }
+  ],
+  "ready_cases": 0,
+  "total_cases": 7,
+  "totals": {
+    "first_pass_logical_calls": 0,
+    "max_logical_calls": 0,
+    "max_http_attempts": 0,
+    "first_pass_image_presentations": 0
+  },
+  "configured_request_cap": 900,
+  "token_estimate": null,
+  "cost_estimate": null,
+  "assumptions": [
+    "Cold cache; completed cache hits reduce calls. Early failures can stop sooner.",
+    "Image presentations count page images across requests, not billed tokens.",
+    "max_retries is the total allowed HTTP attempts per logical call.",
+    "No credentials read, PPT rendering, or API calls; estimates confer no bulk authorization.",
+    "Token/cost estimates need measured provider usage and verified pricing."
+  ]
+}

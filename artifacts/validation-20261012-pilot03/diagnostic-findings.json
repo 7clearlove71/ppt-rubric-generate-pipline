@@ -1,0 +1,62 @@
+{
+  "scope": "diagnosis only; does not modify scores or human labels",
+  "findings": [
+    {
+      "type": "model_review_false_accept",
+      "criterion": "R09",
+      "status": "confirmed",
+      "evidence": "Both audit stages accepted a correct rounding result labeled erroneous; preserved first-pass output. Validator 8 forced subsequent repair."
+    },
+    {
+      "type": "reasoning_criterion_too_permissive",
+      "candidate": "A",
+      "criterion": "R09",
+      "status": "observed",
+      "evidence": "Judge accepts a qualitative reference to shutdown and ramp-up costs as sufficient to reconcile 5-6 and 18 months, without quantifying the reconciliation. Existing criterion permits an identifiable change of assumptions."
+    },
+    {
+      "type": "visual_detection_improved",
+      "candidate": "B",
+      "page": 3,
+      "criterion": "R18",
+      "status": "confirmed_in_page_and_final_R18_checks",
+      "evidence": "Page-level check flags overlapping diagnostic rows; direct render inspection confirms overlap. Final criterion result recorded separately."
+    },
+    {
+      "type": "possible_duplicate_penalty",
+      "candidate": "A",
+      "page": 4,
+      "criteria": [
+        "R18",
+        "R19"
+      ],
+      "status": "confirmed_same_NaN_defect_in_final_R18_and_R19",
+      "evidence": "Both page checks fail on NaN category labels. Keep raw judgments; no retrospective weight adjustment."
+    },
+    {
+      "type": "remaining_visual_evidence_error",
+      "candidate": "B",
+      "page": 7,
+      "criterion": "R19",
+      "status": "confirmed",
+      "evidence": "Page check claims kWh rather than KWH everywhere, but visible right-side chart title contains 32.0 万KWH. The leftmost timeline labels are also partly clipped. This does not establish that all of this page is unreadable."
+    },
+    {
+      "type": "denominator_reasoning_gap",
+      "candidate": "B",
+      "criterion": "R10",
+      "status": "observed",
+      "evidence": "The judge accepts 30.6 x 29% as removable excess, although slide wording says energy is 29% above normal. Under that literal meaning, excess is 30.6 x 29% / 1.29, about 6.8791 ten-thousand kWh. This conditional diagnostic does not manually change the score."
+    },
+    {
+      "type": "inconsistent_criterion_application",
+      "candidates": [
+        "A",
+        "B"
+      ],
+      "criterion": "R13",
+      "status": "observed",
+      "evidence": "Same explicit criterion penalizes A for unsourced specific date/department but accepts B by treating date and department as formal report metadata. Criterion explicitly includes cover/end-page date and department."
+    }
+  ]
+}

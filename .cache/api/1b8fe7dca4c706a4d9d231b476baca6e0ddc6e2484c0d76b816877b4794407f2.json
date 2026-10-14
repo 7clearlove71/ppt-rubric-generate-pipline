@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      10
+    ],
+    "evidence": "第10页标题为'技术路线图：材料—器件—系统—临床四级演进，2026–2028 里程碑已明确'，页面包含完整的泳道图结构：横向为时间轴（2023–2025已完成、2026目标、2027目标、2028目标），纵向为四个泳道层级（材料层、器件层、系统层、临床/产业层），每个单元格内标注具体里程碑节点（如M1关键工序CPK≥1.33、M2 M3连续3批次总良率≥95%等），并配有量化判定标准、外部依赖条件、审评时钟等支撑信息。该页面具备明确的时间轴+泳道图+阶段里程碑的结构化技术路线图形式，非简单文字罗列。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35032,
+    "total_tokens": 35209,
+    "completion_tokens": 177,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.335,
+  "attempts": 1
+}

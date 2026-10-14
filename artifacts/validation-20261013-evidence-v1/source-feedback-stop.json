@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-13T09:17:20.874020+00:00",
+  "consumed_maas_requests": 258,
+  "worker_pid": 85983,
+  "no_current_started_requests_observed": true,
+  "reason": "Actionable feedback for noncontiguous or altered source quotes; keep the literal-source requirement unchanged."
+}

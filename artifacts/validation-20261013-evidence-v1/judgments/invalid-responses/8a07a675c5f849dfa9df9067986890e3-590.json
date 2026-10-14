@@ -1,0 +1,355 @@
+{
+  "page": 8,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "请拍板：48 小时倒计时",
+      "location": "页面顶部大标题区域",
+      "statement": "本页为决策呼吁页，以48小时倒计时为核心，聚合关键数据与行动要求，面向管理层快速拍板。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应，可能从质疑升级为抵制"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "响应窗口",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "四项决策当场拍板后，第一段态度声明在48 小时窗口内发出，技术复核预计还需36 小时后发布结论声明",
+      "location": "标题下方说明文字区域",
+      "statement": "文字呈现为两行：第一行'四项决策当场拍板后，第一段态度声明在48 小时窗口内发出，技术复核预计还需36 小时'，第二行'后发布结论声明'。从视觉上看，'后发布结论声明'单独成第二行，与第一行末尾的'36 小时'在语义上可连读为'36小时后发布结论声明'，但分行位置使'后'字孤立。需核查是否为刻意分行还是排版问题。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "技术复核所需时间",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "48 小时 / 响应窗口进行中 / 第一段态度声明在窗口内发出",
+      "location": "左侧第一数据卡片",
+      "statement": "48小时关键窗口被明确标识为'响应窗口进行中'，并指出'第一段态度声明在窗口内发出'，体现了48小时紧迫性。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应，可能从质疑升级为抵制"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "响应窗口",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "36 小时 / 技术复核预计还需 / 复核结论一出即发布结论声明",
+      "location": "左侧第二数据卡片",
+      "statement": "技术复核预计还需36小时，复核结论一出即发布结论声明。与素材中'预计还需要36小时才能出结论'一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完，预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "技术复核所需时间",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "约72% / 评论区负面情绪占比 / 尚无权威媒体跟进，3 个垂类KOL 转发",
+      "location": "中间偏右数据卡片",
+      "statement": "负面情绪占比约72%，并补充'尚无权威媒体跟进，3个垂类KOL转发'，与素材一致。保留了'约'字限定。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "评论区负面情绪占比约72%...目前情绪是质疑为主，还没有权威媒体跟进，但已有3个垂类KOL开始转发"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "72",
+          "unit": "%",
+          "subject": "评论区负面情绪占比",
+          "denominator": "不适用",
+          "time_origin": "视频发布后"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "约15% / 电商渠道退单量较平时多 / 近三天约40 通来电，退货退款约60% 、要官方说明约35%",
+      "location": "右侧数据卡片",
+      "statement": "电商退单增约15%，近三天约40通来电，退货退款约60%、要官方说明约35%。四项客服数据完整呈现，均保留'约'字限定。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "近三天相关来电大概40通，诉求集中在退货退款(约60%)和要官方说明(约35%)...电商渠道的退单量也比平时多了约15%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "15",
+          "unit": "%",
+          "subject": "电商渠道退单量增幅",
+          "denominator": "平时",
+          "time_origin": "近三天"
+        },
+        {
+          "value": "40",
+          "unit": "通",
+          "subject": "相关来电量",
+          "denominator": "不适用",
+          "time_origin": "近三天"
+        },
+        {
+          "value": "60",
+          "unit": "%",
+          "subject": "退货退款诉求占比",
+          "denominator": "相关来电",
+          "time_origin": "近三天"
+        },
+        {
+          "value": "35",
+          "unit": "%",
+          "subject": "要求官方说明诉求占比",
+          "denominator": "相关来电",
+          "time_origin": "近三天"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "REPORTER / 公关部牵头 / 归口联系方，牵头对外回应",
+      "location": "底部左侧信息区",
+      "statement": "汇报主体为公关部牵头，定位为归口联系方，牵头对外回应。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "DEPARTMENT / 客服部 电商部 技术部 法务部 / 按48 小时行动清单分工配合",
+      "location": "底部中间信息区",
+      "statement": "配合部门列明客服部、电商部、技术部、法务部，按48小时行动清单分工配合。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "DATE / 明早决策会当日 / 下一次同步节点：技术复核结论出来时立即向管理层回报",
+      "location": "底部右侧信息区",
+      "statement": "时间节点为'明早决策会当日'，下次同步节点为技术复核结论出来时立即回报。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "明天一早管理层要碰这个事，得今天出"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "公关部会同客服、电商、技术、法务联合汇报 · 明早决策会当日",
+      "location": "页面左下角脚注",
+      "statement": "底部标注汇报形式与时间点。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "数据来源：舆情监测负面话题摘要 · 近三天客服来电统计要点 · 公关部声明草稿",
+      "location": "页面右下角脚注",
+      "statement": "明确标注三份素材来源，与prompt给定一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "舆情监测那边出的负面话题摘要、这三天客服来电统计的要点、还有公关部连夜赶的声明草稿"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "48 小时 / 响应窗口进行中",
+      "location": "p8_overlap_5dc74d3185局部放大区域",
+      "statement": "经局部放大核查：'48 小时'为大字号红色数字，'响应窗口进行中'为下方较小灰色文字，两者为上下层级排版，bbox相交区域为数字底部与文字顶部的空白过渡带，实际字形无叠印遮挡，为正常排版。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "36 小时 / 技术复核预计还需",
+      "location": "p8_overlap_b473b0151c局部放大区域",
+      "statement": "经局部放大核查：'36 小时'为大字号红色数字，'技术复核预计还需'为下方较小灰色文字，两者为上下层级排版，bbox相交区域为数字底部与文字顶部的空白过渡带，实际字形无叠印遮挡，为正常排版。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "约72% / 评论区负面情绪占比",
+      "location": "p8_overlap_c74b509e7f局部放大区域",
+      "statement": "经局部放大核查：'约72%'为大字号红色数字，'评论区负面情绪占比'为下方较小灰色文字，两者为上下层级排版，bbox相交区域为数字底部与文字顶部的空白过渡带，实际字形无叠印遮挡，为正常排版。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "约15% / 电商渠道退单量较平时多",
+      "location": "p8_overlap_d6ed82a731局部放大区域",
+      "statement": "经局部放大核查：'约15%'为大字号红色数字，'电商渠道退单量较平时多'为下方较小灰色文字，两者为上下层级排版，bbox相交区域为数字底部与文字顶部的空白过渡带，实际字形无叠印遮挡，为正常排版。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "近三天约40 通来电，退货退款约60% 、要官方说明约 / 35%",
+      "location": "p8_overlap_71f4e51f7d局部放大区域",
+      "statement": "经局部放大核查：该段文字为连续长句'近三天约40通来电，退货退款约60%、要官方说明约35%'，因文字区域换行导致bbox分割为p8_t19和p8_t20。'35%'为前句末尾的延续，实际为正常换行排版，非叠印遮挡。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "四项决策当场拍板后，第一段态度声明在48 小时窗口内发出，技术复核预计还需36 小时 / 后发布结论声明",
+      "location": "p8_overlap_dc234ff760局部放大区域",
+      "statement": "经局部放大核查：该段为说明文字分两行呈现。第一行'四项决策当场拍板后，第一段态度声明在48小时窗口内发出，技术复核预计还需36小时'，第二行'后发布结论声明'。两行文字为连续语义，'后'字属于'36小时后'的延续，但分行位置使'后'字孤立成行。从视觉上看，两行文字垂直间距正常，无字形叠印，但语义分行略显突兀，'后发布结论声明'单独成行的断句方式可能造成短暂阅读停顿。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "产品安全质疑舆情危机应对方案 / 管理层决策汇报 / 感谢与会",
+      "location": "页面顶部页眉区域",
+      "statement": "页眉包含方案标题、汇报对象标注'管理层决策汇报'及'感谢与会'礼貌语。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页未出现'是否虚标'和'售后甩锅'两个焦点话题的直接文字",
+      "location": "页面内容整体检视",
+      "statement": "经全页检视，'是否虚标'和'售后甩锅'两个焦点话题未在本页直接呈现。本页为决策呼吁聚合页，侧重时间窗口、关键数据与行动要求，而非完整的事实时间线或影响评估展开。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "话题主要集中在'是否虚标'和'售后甩锅'这两个点上"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页未出现'部分用户是直接引用了那条视频的说法打进来的'传导关系说明",
+      "location": "页面内容整体检视",
+      "statement": "经全页检视，舆情向客诉传导的关联（部分用户直接引用视频说法打进电话）未在本页直接呈现。本页仅并列展示了舆情数据与客服数据，但未用文字或图示明确指出两者之间的传导链条。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "注意有部分用户是直接引用了那条视频的说法打进来的，说明视频的传播已经影响到实际客诉了"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页未出现声明草稿原文及修改建议",
+      "location": "页面内容整体检视",
+      "statement": "经全页检视，声明草稿原文'我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利'及其修改建议（36小时复核未完前提、措辞过满风险、'追究法律责任'可能被解读为店大欺客）未在本页呈现。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "草稿写的是'我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利'...这两点务必在修改建议里体现出来"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页未出现分级响应机制的等级划分、触发信号与对应动作",
+      "location": "页面内容整体检视",
+      "statement": "经全页检视，分级响应机制的具体内容（事态等级、触发信号、对应动作）未在本页呈现。本页仅有'按48小时行动清单分工配合'的笼统表述。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制也得有"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

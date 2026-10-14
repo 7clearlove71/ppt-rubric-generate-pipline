@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "P2用柱状图呈现两年带动农户数与月增收总额，双轴标注清晰，图例区分“户”与“万元·测算”；P5用流程图呈现三方利益联结与5步兑付，箭头与层级引导阅读；P6用柱状图+表格双通道呈现户数与增收测算，表格行列标题完整；P7用三栏递进式时间轴呈现三年规划，数字突出、支撑动作与前置依赖层级分明；P8用饼图+对应表呈现资金五项构成，饼图标注金额与占比，表格逐项对应阶段与产出。整体视觉路径从P2总览→P3-P4问题与价值→P5-P6方案→P7-P8规划与资金→P9保障，符合“问题—价值—方案—保障”的评审逻辑，阅读路径清晰。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 27013,
+    "total_tokens": 27211,
+    "completion_tokens": 198,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.295,
+  "attempts": 1
+}

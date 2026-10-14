@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A的判定将第9页单页内部的标题-表格数量不一致（标题写'四类风险'但表格列三类风险）定性为'narrative_disconnection'，但本标准scope为'全篇结构与页面衔接'，owned_failure_mode定义明确为'页面或模块之间缺乏承接'。单页内部标题与内容数量不匹配属于该页内部信息一致性问题，不在本条'页间衔接'范畴内。然而，该判定差异不影响A、B之间的答案一致性：A被判no、B被判yes，两者答案本就不同，不存在同一标准下答案冲突需要翻转的情况。A的no判定虽可能归属标准适用过宽，但不构成与B的实质冲突（B无对应第9页问题，且B全篇结构连贯性确实成立）。因此无需触发改判。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 22978,
+    "total_tokens": 23161,
+    "completion_tokens": 183,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 55.158,
+  "attempts": 1
+}

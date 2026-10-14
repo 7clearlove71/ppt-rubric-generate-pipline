@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "整体结构清晰：封面导入（页1）→ 四天观察总览与三个方向预告（页2）→ 按主题分三层展开：空心化（页3）、记忆断层（页4）、建筑与人群（页5）、保护与开发错位（页6）→ 总结待验证项与下一步（页7）。单页信息量控制得当，以关键词、短句、数字和图示为主，无大段文字堆砌。7页篇幅适合一次沙龙口头分享，既覆盖四天田野要点，又留有讲解空间，不过于单薄或臃肿。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23710,
+    "total_tokens": 23855,
+    "completion_tokens": 145,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.645,
+  "attempts": 1
+}

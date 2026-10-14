@@ -1,0 +1,17 @@
+{
+  "validator_version": 6,
+  "api_requests": 0,
+  "cases": {
+    "01": [
+      "R05: exact count thresholds absent from original source quotes: ['至少两项']; use source-grounded or qualitative conditions"
+    ],
+    "02": [
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q03: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R09']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R10']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q06: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R12', 'R15']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q07: duplicate explicit scoring in fulfillment ['R05'] and correctness ['R13', 'R14', 'R15']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ]
+  },
+  "note": "Original approved/failed artifacts are preserved; current export and judge enforce the upgraded validator."
+}

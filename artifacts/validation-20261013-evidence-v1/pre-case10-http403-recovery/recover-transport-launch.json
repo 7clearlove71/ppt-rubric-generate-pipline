@@ -1,0 +1,29 @@
+{
+  "stage": "recover-transport",
+  "cases": [
+    "06",
+    "09",
+    "10"
+  ],
+  "remaining_provider_requests": 410,
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-m",
+    "ppt_rubric",
+    "judge",
+    "--cases",
+    "06,09,10",
+    "--config",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/judge-config.json",
+    "--out",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/judgments",
+    "--workers",
+    "1",
+    "--max-api-requests",
+    "410",
+    "--rubrics",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/rubrics"
+  ],
+  "authorization": "authorization.json",
+  "plan": "recover-transport-plan.json"
+}

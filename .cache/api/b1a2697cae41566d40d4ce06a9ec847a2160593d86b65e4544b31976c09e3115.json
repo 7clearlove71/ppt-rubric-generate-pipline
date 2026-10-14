@@ -1,0 +1,128 @@
+{
+  "parsed": {
+    "page": 10,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "FINIS",
+        "location": "页面上方居中",
+        "statement": "可见装饰性结束标记，橙色小字",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "谢谢聆听——欢迎指正、补充线索与\"拆台\"",
+        "location": "页面中上部，大标题",
+        "statement": "标题文字分两行排版，\"补充线\"在第一行末尾，\"索与'拆台'\"在第二行。从放大图可见，第一行\"补充线\"的\"线\"字与第二行\"索与\"的\"索\"字在垂直方向相邻，但属于正常的换行排版，无实际笔画遮挡。文字清晰可读。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "谢谢各位听完这份只有四天的驻村笔记——这是一份中期田野笔记的分享，不是研究结论。欢迎指正、补充线索与当场\"拆台\"，线索可在沙龙现场投递。四天的笔记只够提出问题，接下来靠多方核验。",
+        "location": "页面中部，说明文字",
+        "statement": "正文段落分两行排版，第一行以\"当场\"结尾，第二行以\"拆台\"开头。从放大图可见，\"当场\"与\"拆台\"之间为正常换行，引号完整，无笔画重叠遮挡。文字为灰色，与浅色背景对比度适中，可读。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来，别下定论"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "驻村田野记录者",
+        "location": "页面下方偏右",
+        "statement": "署名信息",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "驻村第 1–4 日 · 初步观察，存疑待考",
+        "location": "页面底部，署名下方",
+        "statement": "可见\"存疑待考\"标注，与需求中\"存疑的地方标出来\"的要求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "1-4",
+            "unit": "日",
+            "subject": "驻村时间",
+            "denominator": "不适用",
+            "time_origin": "Day1"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "这是一份中期田野笔记的分享，不是研究结论",
+        "location": "页面中部正文",
+        "statement": "作品明确声明内容为中期笔记分享而非研究结论，体现不确定性意识，与需求\"别下定论\"一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "别下定论"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "四天的笔记只够提出问题，接下来靠多方核验",
+        "location": "页面中部正文末尾",
+        "statement": "作品明确表述四天笔记仅够提出问题，需多方核验，进一步强化不确定性边界",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "待考，得多问几个人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4",
+            "unit": "天",
+            "subject": "笔记时长",
+            "denominator": "不适用",
+            "time_origin": "Day1"
+          }
+        ],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5670,
+    "total_tokens": 6545,
+    "completion_tokens": 875,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 59.719,
+  "attempts": 1
+}

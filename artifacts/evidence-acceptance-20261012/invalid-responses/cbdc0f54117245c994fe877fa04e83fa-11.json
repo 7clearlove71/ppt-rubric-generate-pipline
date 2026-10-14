@@ -1,0 +1,43 @@
+{
+  "answer": "no",
+  "pages": [
+    1,
+    2,
+    4
+  ],
+  "evidence": "经逐页核对原始图像与局部放大图，确认存在以下真实叠印缺陷：第1页绿色'同比'文字与金色'亿'字发生笔画相交重叠，绿色'同'字左竖与金色'亿'字左竖重叠、绿色'比'字斜笔与金色'亿'字横折弯钩交叉，导致两字互相遮挡；第2页同样出现绿色'同比'与金色'亿'的上下叠层关系，'亿'字笔画穿过'同'字内部，绿色文字完全覆盖金黄色文字；第4页超大号深蓝色'月'字与下方正文'最难的那个月，账上现金只够发两个月工资；但团队没有一个人退缩。'发生严重叠印，'月'字占据正文区域导致正文首字'最'及后续文字被大面积遮挡，且'月'字底部与'但'字顶部相交。上述均为真实不可读问题，违反visual_readability标准。",
+  "evidence_ids": [
+    "p1_overlap_fe92d10a01",
+    "p2_overlap_54471eb5c8",
+    "p4_overlap_41b880fea8",
+    "p4_overlap_7ce6f90a6d"
+  ],
+  "resolutions": [],
+  "inspection_resolutions": [
+    {
+      "inspection_id": "p1_overlap_fe92d10a01",
+      "relation_confirmed": true,
+      "defect_present": true,
+      "reason": "局部放大图清晰显示绿色'同比'位于上层、金色'亿'位于下层，'同'字左竖与'亿'字左竖笔画相交，'比'字斜笔与'亿'字横折弯钩交叉，金色'亿'字从绿色文字笔画间隙和下方穿出，形成真实叠压遮挡，导致两字均难以完整辨识，构成visual_readability缺陷。"
+    },
+    {
+      "inspection_id": "p2_overlap_54471eb5c8",
+      "relation_confirmed": true,
+      "defect_present": true,
+      "reason": "局部放大图确认绿色'同比'位于上层、金黄色'亿'位于下层，'亿'字左竖穿过'同'字内部，'比'字左竖与'亿'字横折弯钩交叉，绿色文字完全覆盖金黄色文字，形成上下叠层遮挡，导致文字不可完整阅读，构成visual_readability缺陷。"
+    }
+  ],
+  "additional_observations": [
+    {
+      "page": 4,
+      "quote": "超大号深蓝色'月'字与正文'最难的那个月，账上现金只够发两个月工资；但团队没有一个人退缩。'发生叠印",
+      "location": "页面中部偏左，大号'月'字区域与正文起始区域",
+      "statement": "第4页使用超大号装饰性'月'字（深蓝色）与下方正文段落直接重叠，'月'字占据正文首行空间，导致正文首字'最'被完全遮挡，且'月'字底部笔画与第二行首字'但'的顶部相交，正文段落无法完整阅读。这是真实的内容遮挡，非仅bbox相交的候选情况。",
+      "kind": "fact",
+      "failure_mode": "visual_readability",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

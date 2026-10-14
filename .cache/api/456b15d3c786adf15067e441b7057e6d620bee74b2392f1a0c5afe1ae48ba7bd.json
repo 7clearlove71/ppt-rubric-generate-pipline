@@ -1,0 +1,33 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      5,
+      7
+    ],
+    "evidence": "投资回报测算模块中，第5页标题明确写'投入120万元'，第5页右侧底部高亮框及第7页右侧决策要点均写'一次性投入约120万元'。第7页技术改造线写'批准120万元预算'。所有出现处均保留'约'字或等价不确定性表述（'约120万元'），未写成确定值'120万整''恰好120万'，也未省略'约'字。数值正确，数量级正确，符合用户原始素材'投入约120万'的表述。",
+    "evidence_ids": [
+      "p5_e1",
+      "p5_e16",
+      "p7_e1",
+      "p7_e8"
+    ],
+    "resolutions": [],
+    "additional_observations": [],
+    "inspection_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 44672,
+    "total_tokens": 44870,
+    "completion_tokens": 198,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 111.176,
+  "attempts": 1
+}

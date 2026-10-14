@@ -1,0 +1,388 @@
+{
+  "parsed": {
+    "page": 8,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "植入式电子皮肤的器件- 生物界面：柔性电极、封装与信号链的一体化设计",
+        "location": "页面顶部标题区域",
+        "statement": "页面主题为植入式电子皮肤的器件-生物界面设计，涉及柔性电极、封装与信号链，与柔性电子主题一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "柔性电子电极阻抗典型区间 0.1–2 kΩ @1 kHz，阻抗随频率变化",
+        "location": "页面上部左侧信息卡片",
+        "statement": "展示柔性电子电极阻抗参数，但未提及prompt要求的关键事实『与三甲医院合作植入式电子皮肤已进入临床试验阶段』中的合作方层级和临床阶段状态",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0.1–2",
+            "unit": "kΩ",
+            "subject": "柔性电子电极阻抗典型区间",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "高密度柔性阵列规格 529 通道 电极间距 300 μm，多尺寸寻优",
+        "location": "页面上部中间偏左信息卡片",
+        "statement": "展示高密度柔性阵列技术参数，未涉及prompt给定的三项关键事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "529",
+            "unit": "通道",
+            "subject": "高密度柔性阵列通道数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "300",
+            "unit": "μm",
+            "subject": "电极间距",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "单电感链路供电与传数 3.39 Mbps 13.56 MHz，功率传输效率 70%",
+        "location": "页面上部中间偏右信息卡片",
+        "statement": "展示单电感链路技术参数，未涉及prompt给定的三项关键事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "3.39",
+            "unit": "Mbps",
+            "subject": "单电感链路传输速率",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "13.56",
+            "unit": "MHz",
+            "subject": "工作频率",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "70",
+            "unit": "%",
+            "subject": "功率传输效率",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "可拉伸柔性电极在体记录 超 8 个月 256 通道，猕猴脑内稳定记录",
+        "location": "页面上部右侧信息卡片",
+        "statement": "展示可拉伸柔性电极在体记录时长与通道数，提及动物实验（猕猴脑内），但未明确提及prompt要求的『与三甲医院合作』及『已进入临床试验阶段』",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "超 8",
+            "unit": "个月",
+            "subject": "可拉伸柔性电极在体记录时长",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "256",
+            "unit": "通道",
+            "subject": "在体记录通道数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "封装层有效杨氏模量的公开对标带",
+        "location": "页面中部左侧图表标题",
+        "statement": "展示封装层有效杨氏模量对比图表，包含多种材料的模量数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "PI / 派瑞林 C / SU-8 超薄封装 GPa 量级",
+        "location": "图表中上部横条",
+        "statement": "PI/派瑞林C/SU-8封装模量在GPa量级",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "未说明具体数值",
+            "unit": "GPa",
+            "subject": "PI/派瑞林C/SU-8超薄封装有效杨氏模量",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "PDMS 基底 低至 1 MPa",
+        "location": "图表中上部第二条横条",
+        "statement": "PDMS基底模量低至1 MPa",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "1",
+            "unit": "MPa",
+            "subject": "PDMS基底有效杨氏模量",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "6 μm 褶皱派瑞林（热退火） 356 kPa",
+        "location": "图表中部第三条横条",
+        "statement": "6μm褶皱派瑞林模量为356 kPa",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "6",
+            "unit": "μm",
+            "subject": "褶皱派瑞林厚度",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "356",
+            "unit": "kPa",
+            "subject": "6μm褶皱派瑞林有效杨氏模量",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "超顺从 MEA 1–10 kPa",
+        "location": "图表下部第四条横条",
+        "statement": "超顺从MEA模量在1-10 kPa范围",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "1–10",
+            "unit": "kPa",
+            "subject": "超顺从MEA有效杨氏模量",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "柔性 MEMS 微电极的行业定义为弹性模量 <10 GPa 、厚度 <200 μm ；超顺从 MEA 的 1–10 kPa 量级用于匹配神经组织。",
+        "location": "页面左下角说明文字",
+        "statement": "说明柔性MEMS微电极行业定义参数，包含模量和厚度阈值",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "10",
+            "unit": "GPa",
+            "subject": "柔性MEMS微电极弹性模量上限",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "200",
+            "unit": "μm",
+            "subject": "柔性MEMS微电极厚度上限",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：Y Zhou 生物相容性封装综述、Nature Biomedical Engineering 、USC Zhao Group 、Wiley BioResearch 、Chen 2023 、科技日报；均为公开文献对标口径",
+        "location": "页面底部来源标注",
+        "statement": "标注数据来源为公开文献，未提及prompt要求的三甲医院合作信息",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "柔性电极、互连与低阻抗界面 微结构 + 高容性涂层把界面阻抗压低一个量级：微针阵列归一化接触阻抗低至 0.98 kΩ·cm² @1 kHz ；柔性阵列顺应脑回与脑沟形貌维持稳定接触，可拉伸设计降低机械损伤与胶质瘢痕。",
+        "location": "页面右侧上部文本框",
+        "statement": "描述柔性电极与低阻抗界面技术细节，包含具体阻抗数值",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0.98",
+            "unit": "kΩ·cm²",
+            "subject": "微针阵列归一化接触阻抗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "阻抗评估与封装验收判据 阻抗须给出频率曲线，并与前端噪声、电极面积联合评估；派瑞林可通过 ISO 10993 认证，最低组合为细胞毒性与刺激致敏；封装验收需同时给出 WVTR （g/m²/day ）与长期浸泡后阻抗漂移。",
+        "location": "页面右侧中部文本框",
+        "statement": "描述阻抗评估与封装验收标准，提及ISO 10993认证和WVTR指标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "未说明",
+            "unit": "g/m²/day",
+            "subject": "WVTR",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "信号链功耗取舍与触觉功能终点 低功耗工作点 125 kbps @1 mW ，完整神经接口约 100 mW ，32–128 Mbps 因功耗过高不适合长期植入；高密度触觉阵列已实现 500 μm 图案与盲文点的亚毫米纹理重建，是双向刺激/ 记录的临床功能标尺。",
+        "location": "页面右侧下部文本框",
+        "statement": "描述信号链功耗参数与触觉功能终点，提及临床功能标尺但未明确说明临床试验阶段",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "125",
+            "unit": "kbps",
+            "subject": "低功耗工作点传输速率",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "1",
+            "unit": "mW",
+            "subject": "低功耗工作点功耗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "约 100",
+            "unit": "mW",
+            "subject": "完整神经接口功耗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "32–128",
+            "unit": "Mbps",
+            "subject": "过高功耗传输速率范围",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "500",
+            "unit": "μm",
+            "subject": "高密度触觉阵列图案尺寸",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "m μ",
+        "location": "p8_overlap_887d9fe4c9局部放大区域：高密度触觉阵列500μm处",
+        "statement": "局部放大图显示'500 μm'中μ和m为正常上下排列的希腊字母μ与拉丁字母m组合，形成标准单位符号μm，矩形相交但字形无实际叠印遮挡，属于正常排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "m μ",
+        "location": "p8_overlap_a2d6293120局部放大区域：电极间距300μm处",
+        "statement": "局部放大图显示'300 μm'中μ和m为正常上下排列形成标准单位符号μm，矩形相交但字形无实际叠印遮挡，属于正常排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "柔性 MEMS 微电极的行业定义为弹性模量 <10 GPa 、厚度 <200 μ",
+        "location": "p8_overlap_f03d3492bb局部放大区域",
+        "statement": "局部放大图显示'<200 μm'中段落文本末尾的μ与下一行开头的m属于正常的跨行单位排版，非字形叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "m μ",
+        "location": "p8_overlap_473159095b局部放大区域",
+        "statement": "局部放大图显示'<200 μm'中μ和m为正常上下排列形成标准单位符号μm，属于正常排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": " Mbps 因功耗过高不适合长期植入；高密度触觉阵列已实现 500 μ",
+        "location": "p8_overlap_d8bbe3d41b局部放大区域",
+        "statement": "局部放大图显示'500 μm'中μ和m为正常上下排列形成标准单位符号μm，属于正常排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 8655,
+    "total_tokens": 11970,
+    "completion_tokens": 3315,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 66.08,
+  "attempts": 1
+}

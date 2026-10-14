@@ -1,0 +1,315 @@
+{
+  "page": 6,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "3 号线空载能耗四线最高：零投入管理改进压缩待机电费",
+      "location": "页面顶部标题",
+      "statement": "页面标题明确聚焦3号线空载能耗问题，与用户需求中'3号线虽然单位能耗不高0.48，但空载能耗偏高，待机状态下每小时还跑12kWh，说明停机流程不规范，这块也要提一句'的要求对应",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "3号线虽然单位能耗不高0.48，但空载能耗偏高，待机状态下每小时还跑12kWh，说明停机流程不规范，这块也要提一句"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "四线待机空载能耗对比",
+      "location": "左侧图表标题",
+      "statement": "图表呈现四条产线空载能耗对比，包含1号线8、2号线6、3号线12、4号线5，与用户给定数据一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "1号线 / 80 / 68 / 0.85 / 8\n2号线 / 95 / 49 / 0.52 / 6\n3号线 / 70 / 34 / 0.48 / 12\n4号线 / 60 / 31 / 0.52 / 5"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "8",
+          "unit": "kWh/h",
+          "subject": "1号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "6",
+          "unit": "kWh/h",
+          "subject": "2号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "12",
+          "unit": "kWh/h",
+          "subject": "3号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "5",
+          "unit": "kWh/h",
+          "subject": "4号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "单位：kWh/h · 3 号线为四线之最，是4 号线的 2.4 倍",
+      "location": "左侧图表副标题",
+      "statement": "标注3号线为四线最高，并给出与4号线的倍数关系。12÷5=2.4，该倍数计算正确",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "3号线 / 70 / 34 / 0.48 / 12\n4号线 / 60 / 31 / 0.52 / 5"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "2.4",
+          "unit": "倍",
+          "subject": "3号线相对4号线空载能耗倍数",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "divide",
+          "left": "12",
+          "right": "5",
+          "reported": "2.4",
+          "left_unit": "kWh/h",
+          "right_unit": "kWh/h",
+          "reported_unit": "倍",
+          "left_quote": "3号线 / 70 / 34 / 0.48 / 12",
+          "right_quote": "4号线 / 60 / 31 / 0.52 / 5",
+          "reported_quote": "是4 号线的 2.4 倍",
+          "relation_quote": "3 号线为四线之最",
+          "meaning": "3号线空载能耗为4号线的2.4倍"
+        }
+      ]
+    },
+    {
+      "quote": "3 号线待机每小时仍跑 12 kWh （1 号线 8 、2 号线 6 、4 号线 5 ），指向停机流程不规范",
+      "location": "图表下方说明文字",
+      "statement": "明确提及3号线待机12kWh，并列示其他产线数值，直接归因于'停机流程不规范'，与用户要求一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "待机状态下每小时还跑12kWh，说明停机流程不规范"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "0.48",
+      "location": "右侧'现象与根因'板块",
+      "statement": "3号线单位能耗0.48kWh/件，标注为'四线最优'，与用户给定数据一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "3号线 / 70 / 34 / 0.48 / 12"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.48",
+          "unit": "kWh/件",
+          "subject": "3号线单位能耗",
+          "denominator": "件",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "12",
+      "location": "右侧'现象与根因'板块，红色高亮",
+      "statement": "3号线待机空载12kWh/h，标注为'四线之最'，视觉强调突出",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "3号线 / 70 / 34 / 0.48 / 12"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "12",
+          "unit": "kWh/h",
+          "subject": "3号线待机空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "约9 元",
+      "location": "右侧'现象与根因'板块",
+      "statement": "每小时空载浪费金额，标注'按0.75元/kWh'测算。12×0.75=9元，计算正确",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "工业电价0.75元/kWh"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "3号线 / 70 / 34 / 0.48 / 12"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "约9",
+          "unit": "元",
+          "subject": "3号线每小时空载浪费金额",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "multiply",
+          "left": "12",
+          "right": "0.75",
+          "reported": "约9",
+          "left_unit": "kWh/h",
+          "right_unit": "元/kWh",
+          "reported_unit": "元",
+          "left_quote": "3号线 / 70 / 34 / 0.48 / 12",
+          "right_quote": "工业电价0.75元/kWh",
+          "reported_quote": "约9 元",
+          "relation_quote": "每小时空载浪费 · 按0.75 元/kWh",
+          "meaning": "3号线每小时空载能耗按工业电价计算的浪费金额"
+        }
+      ]
+    },
+    {
+      "quote": "生产环节效率没有问题，问题出在非生产时段——停机流程不规范，「该停未停、该断未断」的浪费长期累积。",
+      "location": "右侧'现象与根因'板块说明文字",
+      "statement": "明确将问题归因于'停机流程不规范'，与用户要求一致。'该停未停、该断未断'为作品演绎表述，核心归因正确",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "说明停机流程不规范"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "规范停机与待机标准作业流程（SOP）",
+      "location": "右侧改进方向01",
+      "statement": "提出管理改进措施，属于合理建议范畴，未引入用户未给定的新增事实",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "明确非生产时段停机、断电与预热要求",
+      "location": "右侧改进方向02",
+      "statement": "提出管理改进措施，属于合理建议范畴",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "能耗监控看板异常告警",
+      "location": "右侧改进方向03",
+      "statement": "提出管理改进措施，属于合理建议范畴",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "与 1 号线液压系统技改形成「技术改造 + 管理改进」两条腿走路的完整方案",
+      "location": "页面底部总结框",
+      "statement": "将3号线管理改进与1号线液压系统技改并提，形成完整方案框架。此页未展开1号线液压系统具体测算，但建立了两线并行的结构关联",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "如果更换液压系统投入约120万"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "数据来源：一个月产线设备能耗实测数据（用户素材）；空载浪费按工业电价 0.75 元/kWh 测算",
+      "location": "页面左下角",
+      "statement": "明确标注数据来源和电价口径，与用户给定信息一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "工业电价0.75元/kWh"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "产线设备能耗数据我拉了一个月的"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "单位能耗 kWh/ 件 · 四线最优",
+      "location": "右侧'现象与根因'板块，p6_t23与p6_t24区域",
+      "statement": "视觉检查：'单位能耗 kWh/ 件 · 四线最'与'优'为上下两行文字，bbox有微小交集[380.24, 120.11, 387.24, 122.22]，但放大图显示为正常换行排版，'优'字位于第二行起始，无实际笔画遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "每小时空载浪费 · 按0.75 元/kWh",
+      "location": "右侧'现象与根因'板块，p6_t28与p6_t29区域",
+      "statement": "视觉检查：'每小时空载浪费 · 按0.75'与'元/kWh'为上下两行文字，bbox有微小交集[594.0, 120.11, 619.94, 122.22]，但放大图显示为正常换行排版，'元/kWh'位于第二行起始，无实际笔画遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "生产环节效率没有问题，问题出在非生产时段——停机流程不规范，「该停未停、该断未断」的浪费长期累积。",
+      "location": "右侧'现象与根因'板块，p6_t30与p6_t31区域",
+      "statement": "视觉检查：两行文字为连续段落换行，bbox有微小交集[380.24, 148.87, 515.39, 151.57]，但放大图显示为正常行间距排版，无实际笔画遮挡，文字清晰可读",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

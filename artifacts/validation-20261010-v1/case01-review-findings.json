@@ -1,0 +1,26 @@
+{
+  "automated_scores": {
+    "A": 94,
+    "B": 100
+  },
+  "human_winner": "A",
+  "automated_winner": "B",
+  "judge_defects": [
+    {
+      "criterion": "R11",
+      "candidate": "B",
+      "finding": "Judge treats source-unprovided internal data described as unpublished as acceptable, despite the rubric explicitly rejecting internal-data self-attribution as sufficient evidence."
+    },
+    {
+      "criterion": "R13",
+      "candidate": "A",
+      "finding": "Judge may treat illustrative technical-depth examples as mandatory rather than evaluating actual engineering content; requires calibration."
+    }
+  ],
+  "human_reason_caveat": {
+    "page": 10,
+    "finding": "AI calibration and multicenter platform are in future target columns, not completed results. Wireless signal-chain prototype is in the completed-measurement column and is not given in source. Preserve original human winner and reason; annotate this factual distinction."
+  },
+  "verified_slide": "01/B/page-010.png",
+  "status": "diagnostic_only_no_manual_score_override"
+}

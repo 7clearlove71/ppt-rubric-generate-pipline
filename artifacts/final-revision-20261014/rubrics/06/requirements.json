@@ -1,0 +1,99 @@
+{
+  "task_summary": "为政府评审组制作老旧小区改造工作汇报PPT，按用户给定的五部分纲目以公文口径把内容填实、填规范。",
+  "source_policy": "已知：PPT用途（老旧小区改造工作汇报）、受众（政府评审组）、五部分纲目标题、公文语体要求及四条内容规则（文题对应、数据口径统一、问题与资金/满意度呼应、标题措辞规范）。来源未提供任何实际项目数据（如完工率、资金到位率、满意度具体数值），允许按公文惯例补全合理、自洽的示例数据，但全部具体数值均为待确认项，需以真实项目台账为准；不得将补全的数据当作来源给定事实。",
+  "requirements": [
+    {
+      "id": "Q01",
+      "kind": "presentation",
+      "text": "整体面向政府评审组，内容按公文口径填实、填规范，符合政府评审场合的正式表达定位",
+      "source_ids": [
+        "src_8b0d0de3ff7cab9f3b9ed44e"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q02",
+      "kind": "deliverable",
+      "text": "包含“改造任务完成情况”部分，并按公文汇报方式呈现该模块实质内容",
+      "source_ids": [
+        "src_c2b1b99fe227b0a340198aa7",
+        "src_8b0d0de3ff7cab9f3b9ed44e"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q03",
+      "kind": "deliverable",
+      "text": "包含“资金使用情况”部分，并按公文汇报方式呈现该模块实质内容",
+      "source_ids": [
+        "src_46c228fe0db0f22ca4962d46",
+        "src_8b0d0de3ff7cab9f3b9ed44e"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q04",
+      "kind": "deliverable",
+      "text": "包含“居民满意度”部分，并按公文汇报方式呈现该模块实质内容",
+      "source_ids": [
+        "src_e9f3ff0689c712ef197f1e47",
+        "src_8b0d0de3ff7cab9f3b9ed44e"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q05",
+      "kind": "deliverable",
+      "text": "包含“存在问题”部分，呈现具体问题内容",
+      "source_ids": [
+        "src_284acaa536910356a811fdb2"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q06",
+      "kind": "deliverable",
+      "text": "包含“下一步计划”部分，呈现后续工作安排",
+      "source_ids": [
+        "src_78a06cafb3e75f80431be9d3"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q07",
+      "kind": "presentation",
+      "text": "每个小标题下的内容须与标题本身对应，不出现文不对题或跨模块内容混装",
+      "source_ids": [
+        "src_c384938f7338a65ed021df27"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q08",
+      "kind": "presentation",
+      "text": "数据类表述（如完工率、资金到位率、满意度等）在全篇前后统一口径，量化数据保持一致的表达单位，不在百分比与笼统说法之间随意切换",
+      "source_ids": [
+        "src_c384938f7338a65ed021df27"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q09",
+      "kind": "deliverable",
+      "text": "存在问题部分须具体、不写虚，且与前面资金使用情况、居民满意度两块内容形成可识别的呼应对应关系，使评审组能看出问题来源；本项仅检查已呈现内容之间的对应关系，资金或满意度模块本身的缺失由Q03、Q04负责，不重复计为本项缺陷",
+      "source_ids": [
+        "src_c384938f7338a65ed021df27"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q10",
+      "kind": "presentation",
+      "text": "小标题措辞规范、符合公文语体，不使用口语化说法",
+      "source_ids": [
+        "src_c384938f7338a65ed021df27"
+      ],
+      "importance": 2
+    }
+  ]
+}

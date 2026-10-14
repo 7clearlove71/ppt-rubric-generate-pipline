@@ -1,0 +1,44 @@
+[
+  {
+    "request_id": 1,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "fdf3ecbacf3541e5fb122224baef75fb459c3e5d933dcaab800ea10aeea33e62",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1995,
+      "total_tokens": 2012,
+      "completion_tokens": 17,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 5.594
+  },
+  {
+    "request_id": 2,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "520f459d97ab95907888d1c88d79de55f5b9387d6e535820b7ea9f21b7856ed9",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2001,
+      "total_tokens": 2018,
+      "completion_tokens": 17,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 5.172
+  }
+]

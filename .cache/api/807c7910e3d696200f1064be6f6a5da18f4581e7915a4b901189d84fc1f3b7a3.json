@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A与B均判定为yes，且均基于充分的页面证据。",
+      "两者在区分已完成事实与未来规划方面采用了不同但等效的策略：A依赖页面标题措辞（'2026-2028''下一步''计划'）及明确的'情景数据'/'情景内容'注释；B依赖颜色编码图例（灰色=已完成实测，蓝色=团队目标）与模块标题标注（'团队目标（自定）'）。",
+      "两种策略均满足criterion要求——通过可识别的标识（措辞、颜色、注释）使专家受众能够区分既有成果与未来规划，不构成标准漂移。",
+      "B的判定覆盖全篇13页，A仅聚焦第11-12页，但两者在重叠页面（11-12页）的判定逻辑无冲突：A的p11_e1/p11_e6/p11_e13与B的p10_e8/p12_e2/p12_e4/p12_e12均指向同一事实——未来规划内容有明确标识。",
+      "B的p9_e20/p9_e21标记了topic_mismatch和eskin_clinical_fact，但此为其他标准（topic_relevance、fabricated_facts等）的考量范围，不在本条fact_vs_speculation的scope内；且B的verdict已明确排除该页混淆问题，因其未将外部项目误标为团队成果。",
+      "A的verdict中'情景数据'注释将92%良率、10万次弯曲标注为'衔接基础'，B的p12_e12注释将相同事实标注为'团队自有数据'，两者均明确区分了这些已完成事实与2026-2028规划目标，不存在事实与推测的混淆。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 42623,
+    "total_tokens": 43011,
+    "completion_tokens": 388,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 62.572,
+  "attempts": 1
+}

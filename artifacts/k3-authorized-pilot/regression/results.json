@@ -1,0 +1,279 @@
+[
+  {
+    "id": "valid-flexible-design",
+    "expected_approved": true,
+    "structural_errors": [],
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "未发现有依据的反例"
+    },
+    "approved": true,
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "rubric覆盖了全部明确需求：工位领取、考勤说明、24小时激活时限（含等价表达与起算点）、新员工受众及页数/模板/配色自由。各条目可独立评判，无重复计分、无无依据硬条件，占位与常识处理符合协议。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "valid-equivalent-units",
+    "expected_approved": true,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01",
+            "R02",
+            "R03",
+            "R05"
+          ],
+          "reason": "账号激活（Q01对应需求中的账号激活模块）未在rubric中作为独立交付内容覆盖，仅在R03中检查时限事实；若候选完全缺失账号激活说明但时限正确，无法扣分。",
+          "fix": "在G01新增一条：PPT包含可辨识的账号激活说明，允许通用流程或标注待补充，不要求虚构具体系统或负责人。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "账号激活作为三大交付模块之一缺少独立覆盖，其余条目设计合理；补充该条目后可通过。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": false
+  },
+  {
+    "id": "invalid-font-threshold",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R06"
+          ],
+          "reason": "要求“每一页正文字体至少28磅”为用户未要求的硬性无依据阈值，且用户明确不限制模板与配色，属于反向推导出的硬条件",
+          "fix": "改为可观察的阅读质量判据，如“正文与背景对比清晰、字号在常规演示距离下可读，无文字溢出或重叠”，不设固定磅值"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": []
+      },
+      "summary": "需求覆盖基本完整，但R06引入无来源的28磅硬阈值，违反“不限制模板与配色”及禁止无依据硬条件的规定，需修正后通过。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-extra-module",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R02"
+          ],
+          "reason": "“必须同时包含考勤说明与至少一整页网络安全培训”将用户要求的考勤说明与未要求的网络安全培训捆绑，新增无来源硬条件。",
+          "fix": "仅保留“PPT中包含可辨识的考勤说明”；删除网络安全培训要求，或另设不扣分建议项。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R02把考勤说明与无来源的网络安全整页要求捆绑，需修正；其余覆盖与判据基本有效。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-candidate-style",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R06"
+          ],
+          "reason": "“必须照候选A的黑底金字模板制作并采用同样封面布局”依赖候选身份且违反“不限制页数、模板与配色”，属于无依据硬条件。",
+          "fix": "改为可观察的视觉质量判据，如：文字与背景对比清晰、版式整洁、信息层级易读；不得指定特定模板、配色或引用候选身份。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": []
+      },
+      "summary": "R06违反用户明确的不限模板要求并依赖候选身份，必须修改；其余条目覆盖与判定语义基本有效。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-duplicate-fact",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R03",
+            "R04"
+          ],
+          "reason": "R04在integrity维度重复检查R03已覆盖的“24小时激活”事实（缺失或写错均不通过），同一缺陷被correctness与integrity双重扣分。",
+          "fix": "删除R04，或将其改为检查PPT是否虚构了来源未提供的具体政策细节（如具体考勤时间、处罚细则、负责人姓名等）。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03",
+          "R04"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R03与R04对同一关键事实重复计分，违反协议；其余要求覆盖完整、判据可观察，删除或改写R04后可通过。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-demand-invention",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01"
+          ],
+          "reason": "要求“至少一位具名负责人及其真实电话号码”且无占位，超出用户仅要求“工位领取说明”的范围，属于无来源硬条件并排斥合理占位。",
+          "fix": "改为：PPT包含可辨识的工位领取说明；可呈现通用流程或明确标注待补充的负责人/地点，不要求虚构姓名或电话。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "除R01存在无依据的硬性真实信息要求外，其余条目总体覆盖需求且可独立评判；修正R01后可通过。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  }
+]

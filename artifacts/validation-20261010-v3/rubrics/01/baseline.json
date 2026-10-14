@@ -1,0 +1,267 @@
+{
+  "groups": [
+    {
+      "id": "G01",
+      "dimension": "fulfillment",
+      "importance": 3,
+      "rationale": "需求明确要求的三项进展是报告核心内容，其覆盖与展开程度决定任务目标是否达成"
+    },
+    {
+      "id": "G02",
+      "dimension": "fulfillment",
+      "importance": 3,
+      "rationale": "需求明确要求包含技术路线图与下一步计划，属于交付范围的关键模块"
+    },
+    {
+      "id": "G03",
+      "dimension": "fulfillment",
+      "importance": 2,
+      "rationale": "年会特邀报告这一场景定位是需求给定的作品目标"
+    },
+    {
+      "id": "G04",
+      "dimension": "correctness",
+      "importance": 3,
+      "rationale": "用户给定的关键事实与数字必须准确呈现，是正确性维度的核心"
+    },
+    {
+      "id": "G05",
+      "dimension": "correctness",
+      "importance": 2,
+      "rationale": "补充技术信息与推导的自洽性影响报告可信度"
+    },
+    {
+      "id": "G06",
+      "dimension": "integrity",
+      "importance": 2,
+      "rationale": "报告允许合理扩展，但新增断言不得虚构具体事实冒充真实结果"
+    },
+    {
+      "id": "G07",
+      "dimension": "integrity",
+      "importance": 1,
+      "rationale": "用户未给定的信息边界需要被恰当处理"
+    },
+    {
+      "id": "G08",
+      "dimension": "narrative",
+      "importance": 2,
+      "rationale": "专家受众适配与20分钟报告的内容组织是需求给定的表达目标"
+    },
+    {
+      "id": "G09",
+      "dimension": "visual",
+      "importance": 2,
+      "rationale": "作为专家报告演示材料，可读性与视觉信息表达是必要质量"
+    }
+  ],
+  "items": [
+    {
+      "id": "R01",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q01",
+        "Q02"
+      ],
+      "basis": "explicit",
+      "scope": "可拉伸传感器阵列相关页面，不限定位置",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT将可拉伸传感器阵列量产良率提升作为近三年进展之一呈现，且不止于罗列数字：对该进展有实质性展开（如良率提升的技术原因、工艺改进、量产规模或应用意义中的至少一方面）。仅出现一行数字而无任何展开记 no；允许不同的展开角度与表述方式。"
+    },
+    {
+      "id": "R02",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q01",
+        "Q03"
+      ],
+      "basis": "explicit",
+      "scope": "柔性OLED器件相关页面，不限定位置",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT将柔性OLED器件弯曲10万次无衰减作为近三年进展之一呈现，且有实质性展开（如测试条件、器件结构设计、性能指标或应用价值中的至少一方面）。仅孤立出现数字而无任何展开记 no。"
+    },
+    {
+      "id": "R03",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q01",
+        "Q04"
+      ],
+      "basis": "explicit",
+      "scope": "植入式电子皮肤相关页面，不限定位置",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT将与三甲医院合作的植入式电子皮肤进入临床试验作为近三年进展之一呈现，且有实质性展开（如器件功能、合作形式、试验目标或临床意义中的至少一方面）。仅一句话带过而无任何展开记 no。"
+    },
+    {
+      "id": "R04",
+      "group_id": "G02",
+      "importance": 3,
+      "source_refs": [
+        "Q07"
+      ],
+      "basis": "explicit",
+      "scope": "技术路线图模块，不限定位置与形式",
+      "evidence_mode": "both",
+      "judge_prompt": "PPT包含可辨识的技术路线图：以结构化方式（时间轴、阶段流程、分栏路径或等价形式）呈现团队技术发展的路径，且路线内容与所述三项进展相关联（如从当前进展延伸到未来方向）。仅在文字中提及“路线图”一词而无结构化呈现记 no；路线图的具体图形形式不限。"
+    },
+    {
+      "id": "R05",
+      "group_id": "G02",
+      "importance": 3,
+      "source_refs": [
+        "Q08"
+      ],
+      "basis": "explicit",
+      "scope": "下一步计划模块，不限定位置",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT包含明确的下一步计划：面向未来的具体工作安排或目标（如后续研发方向、量产推进、临床推进、时间节点或里程碑中的至少两项），而非一句空泛的“继续努力”。计划内容可与路线图合并呈现，只要未来工作部分可辨识即算满足。"
+    },
+    {
+      "id": "R06",
+      "group_id": "G03",
+      "importance": 2,
+      "source_refs": [
+        "Q01"
+      ],
+      "basis": "explicit",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT整体定位为年会特邀报告：有明确的报告主题与标题页或开场页，内容聚焦“柔性电子团队近三年进展”这一主线，全篇围绕该主线组织，不偏离为产品宣传、科普介绍或其他无关主题。"
+    },
+    {
+      "id": "R07",
+      "group_id": "G04",
+      "importance": 3,
+      "source_refs": [
+        "Q02"
+      ],
+      "basis": "explicit",
+      "scope": "出现良率数据的任意位置",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT中可拉伸传感器阵列量产良率的事实准确：起点为78%、提升至92%，两个数值均出现且无篡改（如写成75%→95%、提升20个百分点等错误表述均不通过）。以图表、文字或图示呈现均可；该事实完全缺失也记 no。"
+    },
+    {
+      "id": "R08",
+      "group_id": "G04",
+      "importance": 3,
+      "source_refs": [
+        "Q03"
+      ],
+      "basis": "explicit",
+      "scope": "出现OLED弯曲测试数据的任意位置",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT中柔性OLED器件弯曲测试的事实准确：弯曲次数为10万次（或等价的100,000次/10^5次），且结论为无衰减（或性能无下降等等价表述）。数值被夸大或缩小、结论被改为“轻微衰减”等均不通过；该事实完全缺失也记 no。"
+    },
+    {
+      "id": "R09",
+      "group_id": "G04",
+      "importance": 3,
+      "source_refs": [
+        "Q04"
+      ],
+      "basis": "explicit",
+      "scope": "出现电子皮肤合作与临床信息的任意位置",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT中植入式电子皮肤的事实准确：合作方为三甲医院（未给定具体医院名，写“三甲医院”或明确标注为示例的名称均可），状态为已进入临床试验阶段。将状态改写为“已获批上市”“已完成临床试验”等超出原事实的表述不通过；该事实完全缺失也记 no。"
+    },
+    {
+      "id": "R10",
+      "group_id": "G05",
+      "importance": 1,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT中用户未给定的补充信息与推导在全篇保持一致：同一技术参数、时间范围（近三年）、术语在不同页面间不互相矛盾；若出现百分比变化、倍数等衍生计算，计算结果与所给数据一致。本条不评判用户已给定三项事实本身的准确性。"
+    },
+    {
+      "id": "R11",
+      "group_id": "G06",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇新增内容",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT未虚构具体事实冒充真实成果：不编造用户未提供的具体医院名称、患者人数、临床试验分期（如I期/II期）、论文数量、经费金额、获奖信息、具体团队成员姓名等并以确定事实口吻呈现。以“计划”“预期”“目标”等措辞表述的未来设想，或明确标注为示意/示例的内容不算虚构。"
+    },
+    {
+      "id": "R12",
+      "group_id": "G07",
+      "importance": 1,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "对用户未给定的信息处理得当：若出现具体数据占位或示意（如路线图中的未来指标、待补的合作细节），以占位符、示例标注或目标口吻呈现，使读者能区分给定事实与合理演绎；不要求所有一般性技术背景常识标注来源。"
+    },
+    {
+      "id": "R13",
+      "group_id": "G08",
+      "importance": 2,
+      "source_refs": [
+        "Q05"
+      ],
+      "basis": "explicit",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "内容深度匹配领域内专家受众：包含专业术语与技术性内容（如材料、器件结构、工艺、性能机理层面的讨论），而非仅面向公众的科普化浅层表述；不要求页面标注“专家”字样。全文均为口号式宣传而无技术实质记 no。"
+    },
+    {
+      "id": "R14",
+      "group_id": "G08",
+      "importance": 2,
+      "source_refs": [
+        "Q06"
+      ],
+      "basis": "explicit",
+      "scope": "全篇",
+      "evidence_mode": "both",
+      "judge_prompt": "内容体量与20分钟口头报告匹配：全篇有足以支撑约20分钟讲解的论述展开（三项进展、路线图与计划均有实质内容），同时不过度膨胀到明显无法在20分钟内讲完（如数十页高密度文字）。不要求页面标注时长；不依据固定页数阈值判断，按信息密度与讲解负荷综合判断。"
+    },
+    {
+      "id": "R15",
+      "group_id": "G08",
+      "importance": 1,
+      "source_refs": [
+        "Q01"
+      ],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "叙事结构清晰：存在可辨识的开场（主题引入）、主体（进展展开）与收尾（路线图/计划/总结），阅读顺序合理，各部分内容之间有过渡或逻辑关联，而非内容随机堆叠。"
+    },
+    {
+      "id": "R16",
+      "group_id": "G09",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "visual",
+      "judge_prompt": "文字可读性达标：正文与标题字号对比清晰、正文字号在投影场景下可辨认，文字与背景对比度足够，无大面积文字被图形遮挡或溢出页面边界的情况。"
+    },
+    {
+      "id": "R17",
+      "group_id": "G09",
+      "importance": 1,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "visual",
+      "judge_prompt": "视觉层级与阅读路径明确：每页有清晰的主次关系（标题、要点、支撑内容可区分），关键数据在视觉上可被快速定位；单页信息密度适中，不把整段文字无层次地堆满页面。允许不同的版式风格。"
+    },
+    {
+      "id": "R18",
+      "group_id": "G09",
+      "importance": 1,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "含数据或路线内容的页面",
+      "evidence_mode": "visual",
+      "judge_prompt": "视觉元素服务于信息表达：若使用图表、图示呈现数据或路线，其类型与内容匹配（如趋势用趋势类图形、流程用流程类图形），图形标注足以让读者理解含义；若全篇未使用任何数据图表，则仅检查装饰性元素不干扰内容阅读，不因缺少图表本身扣分。"
+    }
+  ]
+}

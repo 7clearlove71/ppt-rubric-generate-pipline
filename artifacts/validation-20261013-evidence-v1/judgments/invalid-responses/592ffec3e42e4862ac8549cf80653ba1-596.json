@@ -1,0 +1,275 @@
+{
+  "page": 2,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "厘清事实与传播链，锁定 48 小时防升级窗口",
+      "location": "页面顶部标题",
+      "statement": "页面标题明确包含48小时窗口概念",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "防升级窗口",
+          "denominator": "不适用",
+          "time_origin": "6月10日视频发布后"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "6 月 10 日 测评博主发布视频质疑产品有安全隐患",
+      "location": "时间线第一节点",
+      "statement": "素材给定日期、事件主体、质疑主题均准确呈现",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "6月10日起某测评博主发视频质疑我们产品有安全隐患"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "6月10日",
+          "unit": "日期",
+          "subject": "视频发布",
+          "denominator": "不适用",
+          "time_origin": "事件起点"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "T+24 小时 转发破万；评论区负面情绪约72% ；已有3 个垂类KOL 转发",
+      "location": "时间线第二节点",
+      "statement": "传播量级（转发破万）、负面情绪占比（约72%）、垂类KOL数量（3个）均保留约数限定，与素材一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "视频发布后24小时内转发破万,评论区负面情绪占比约72%...已有3个垂类KOL开始转发"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "约72",
+          "unit": "%",
+          "subject": "评论区负面情绪占比",
+          "denominator": "不适用",
+          "time_origin": "T+24小时"
+        },
+        {
+          "value": "3",
+          "unit": "个",
+          "subject": "垂类KOL",
+          "denominator": "不适用",
+          "time_origin": "T+24小时"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "T+36 小时（预计） 技术复核结论预计进入可得窗口",
+      "location": "时间线第三节点",
+      "statement": "技术复核预计36小时与素材一致，但表述为\"结论预计进入可得窗口\"，素材原文为\"预计还需要36小时才能出结论\"",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "技术复核",
+          "denominator": "不适用",
+          "time_origin": "T+0"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "T+48 小时 如无有效回应，可能升级为抵制",
+      "location": "时间线第四节点",
+      "statement": "48小时关键窗口及升级判断准确呈现，与素材一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "有效回应窗口",
+          "denominator": "不适用",
+          "time_origin": "T+0"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "传播链 触发 → 扩散 → 待复核 → 防升级",
+      "location": "页面右上区域",
+      "statement": "以流程图形式呈现传播阶段，未直接引用素材原文\"质疑→抵制\"的表述，但逻辑框架合理",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "已核实事实 24 小时内转发破万；评论区负面情绪约72% ；已有3 个垂类KOL 转发；尚无权威媒体跟进。",
+      "location": "已核实事实卡片",
+      "statement": "已核实事实包含转发破万、负面情绪约72%、3个垂类KOL转发、尚无权威媒体跟进，素材关键要素齐全，保留\"约\"字限定",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "评论区负面情绪占比约72%...已有3个垂类KOL开始转发...还没有权威媒体跟进"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "约72",
+          "unit": "%",
+          "subject": "负面情绪",
+          "denominator": "不适用",
+          "time_origin": "T+24小时"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "待复核事项 技术复核预计还需36 小时；指控逐句真伪、检测证据、批次核对结果、产品参数核对结果、客服与退换数据待复核。",
+      "location": "待复核事项卡片",
+      "statement": "待复核事项中\"客服与退换数据待复核\"为素材未明确列出的新增项，素材仅提及技术复核预计36小时；但\"客服与退换数据\"可视为对素材二客服来电统计的合理延伸，整体可识别为建议性补充",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "技术复核",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "当前处于扩散前夜的质疑期：若48 小时内无有效回应，风险可能从质疑升级为抵制。",
+      "location": "页面底部红色强调条",
+      "statement": "明确呈现48小时窗口及质疑升级判断，与素材一致；\"扩散前夜的质疑期\"为合理概括",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "目前情绪是质疑为主...48小时内如果不做有效回应,可能从质疑升级为抵制"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "有效回应窗口",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "前12 小时应完成事实边界确认、统一口径、优先客服通道和监测看板，不能等待复核完成后才回应。",
+      "location": "页面底部行动建议",
+      "statement": "\"前12小时\"为新增时间节点，素材未给定此具体时限；该建议可识别为新增建议而非冒充素材给定事实",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "12",
+          "unit": "小时",
+          "subject": "行动完成时限",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "来源：[ 核心材料] ；数据有限，基于用户素材；用户素材数值均待业务系统复核。",
+      "location": "页面左下角",
+      "statement": "明确标注数据来源及待复核状态，有助于区分素材事实与待核实信息",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "24 小时内转发破万；评论区负面情绪约72% ；已有3 个垂类KOL 转发；尚无权威媒体跟进。",
+      "location": "已核实事实卡片，局部放大图p2_overlap_d328a5f71e",
+      "statement": "经局部放大核查，p2_t20与p2_t21为上下相邻行排版，实际字形无叠印遮挡，可读性正常",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "技术复核预计还需36 小时；指控逐句真伪、检测证据、批次核对结果、产品参数核对结果、客服与退换数据待复核。",
+      "location": "待复核事项卡片，局部放大图p2_overlap_d5829d84b4",
+      "statement": "经局部放大核查，p2_t23与p2_t24为上下相邻行排版，实际字形无叠印遮挡，可读性正常",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "当前处于扩散前夜的质疑期：若48 小时内无有效回应，风险可能从质疑升级为抵制。",
+      "location": "底部红色强调条，局部放大图p2_overlap_c885546184",
+      "statement": "经局部放大核查，p2_t25与p2_t26为左右衔接排版（红色标题与灰色正文），矩形相交处为排版间距，实际字形无叠印遮挡，可读性正常",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "T+36 小时（预计） 技术复核结论预计进入可得窗口",
+      "location": "时间线第三节点",
+      "statement": "素材原文为\"预计还需要36小时才能出结论\"，页面表述为\"结论预计进入可得窗口\"，语义基本一致但\"可得窗口\"为稍转述表达；需注意与素材中\"36小时才能出结论\"的精确对应关系",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

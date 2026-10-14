@@ -1,0 +1,31 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "PPT具备完整立项汇报结构：封面页（p1）明确主题'产线设备能耗分析与节能改造立项建议'及汇报主线'能耗对标→异常深挖→投资测算→立项建议'；p2呈现四线能耗对标与差距分解；p3锁定1号线液压系统老化主因；p4展开损失机理与改造措施；p5完成120万元投资回报测算（约18个月回本）及敏感性分析；p6补充3号线空载能耗问题与SOP建议；p7汇总决策请求、分批路线图与监测机制；p8结尾页重申立项请求。内容自洽成篇，数据、诊断、测算、建议闭环，符合'轻量立项汇报'体量。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23317,
+    "total_tokens": 23505,
+    "completion_tokens": 188,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.17,
+  "attempts": 1
+}

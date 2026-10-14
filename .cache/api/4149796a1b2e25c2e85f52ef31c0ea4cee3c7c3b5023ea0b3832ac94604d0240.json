@@ -1,0 +1,200 @@
+{
+  "parsed": {
+    "page": 1,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "年会特邀报告 · 20 分钟",
+        "location": "页面上部居中，p1_t1区域",
+        "statement": "可见事实：页面标注报告类型为年会特邀报告，时长20分钟，与需求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年会特邀报告PPT"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "20",
+            "unit": "分钟",
+            "subject": "报告时长",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "柔性电子团队近三年研究进展",
+        "location": "页面中部大标题，p1_t2区域",
+        "statement": "可见事实：主标题明确主题为柔性电子团队近三年研究进展，与需求主题一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "柔性电子团队近三年进展"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "（2023–2025 ）",
+        "location": "主标题下方，p1_t3区域",
+        "statement": "可见事实：时间范围标注为2023–2025，对应近三年时间范围",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "近三年进展"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2023-2025",
+            "unit": "年",
+            "subject": "时间范围",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "可拉伸传感器阵列量产良率 78%→92% · 柔性 OLED 弯曲 10 万次无衰减 · 植入式电子皮肤进入临床试验",
+        "location": "页面中下部，p1_t4区域",
+        "statement": "可见事实：三项关键成果以摘要形式完整呈现，数值与方向与需求一致。注意：本页仅列出关键词与数值，未展开实质技术细节；'植入式电子皮肤进入临床试验'未明确体现'与三甲医院合作'这一合作方层级信息",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "可拉伸传感器阵列量产良率从78%提升至92%；柔性OLED器件弯曲10万次无衰减；与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "78",
+            "unit": "%",
+            "subject": "可拉伸传感器阵列量产良率（起始值）",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "92",
+            "unit": "%",
+            "subject": "可拉伸传感器阵列量产良率（当前值）",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "10",
+            "unit": "万次",
+            "subject": "柔性OLED弯曲次数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "柔性电子团队 · 汇报对象：柔性电子 / 生物电子 / 柔性显示领域专家",
+        "location": "页面左下角，p1_t6区域",
+        "statement": "可见事实：明确标注汇报对象为领域内专家，与需求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "汇报对象：领域内专家"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "了解更多 ›",
+        "location": "页面中部偏下，p1_t5区域",
+        "statement": "可见现象：页面存在蓝色按钮样式文字'了解更多 ›'，带有交互元素外观，在静态PPT中可能暗示超链接或后续内容跳转，但本页为封面页，此元素作为视觉装饰或导航提示存在",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "页面整体布局：白底黑字，标题居中，信息自上而下层级为报告类型→主标题→时间范围→摘要要点→交互按钮→汇报信息",
+        "location": "整体页面",
+        "statement": "视觉表现：页面布局简洁，信息层级清晰，无文字叠印、遮挡或裁切现象。text_overlap_candidates为空，各文字区域bbox无相交。无数据图表，故不涉及chart_label_integrity",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页未出现技术路线图内容",
+        "location": "整体页面",
+        "statement": "可见事实：作为封面页，本页未包含技术路线图模块，该需求需后续页面核查",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "含技术路线图与下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页未出现下一步计划内容",
+        "location": "整体页面",
+        "statement": "可见事实：作为封面页，本页未包含下一步计划模块，该需求需后续页面核查",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "含技术路线图与下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "植入式电子皮肤进入临床试验",
+        "location": "页面中下部，p1_t4区域",
+        "statement": "待核实信息：摘要文字为'植入式电子皮肤进入临床试验'，与需求原文'与三甲医院合作植入式电子皮肤已进入临床试验阶段'相比，'与三甲医院合作'这一合作方层级信息未在本页体现。当前无法判断是封面摘要省略还是全篇缺失，需后续页面复核",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 4540,
+    "total_tokens": 5665,
+    "completion_tokens": 1125,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 200.471,
+  "attempts": 3
+}

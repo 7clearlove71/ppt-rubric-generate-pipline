@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "text_seen": [
+      "临床试验阶段：工程化闭环成形",
+      "欢迎就工艺、验证与临床转化开展合作交流"
+    ],
+    "overlapping": true,
+    "overlap_objects": [
+      "第1行\"临床试验阶段：工程化闭环成形\"与第2行\"欢迎就工艺、验证与临床转化开展合作交流\"存在笔画相交"
+    ],
+    "description": "两行黑色中文文字，第1行在上，第2行在下。第2行文字向上侵入第1行文字区域，导致两行文字笔画实际相交重叠，特别是\"欢迎就工艺\"与上方\"临床试验阶段\"之间、\"验证与临床转化\"与上方\"工程化闭环成形\"之间存在明显的字形交叠。背景为白色。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 290,
+    "total_tokens": 458,
+    "completion_tokens": 168,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 6.158,
+  "attempts": 1
+}

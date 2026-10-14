@@ -1,0 +1,137 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "R06: judge_prompt references other rubric ids or internal requirement ids ['R09', 'R11']; each criterion must be independently judgeable",
+      "R09: judge_prompt references other rubric ids or internal requirement ids ['R06', 'R07', 'R08', 'R10', 'R11']; each criterion must be independently judgeable",
+      "R11: judge_prompt references other rubric ids or internal requirement ids ['R06', 'R07', 'R08', 'R09', 'R10']; each criterion must be independently judgeable",
+      "Every criterion needs an owned failure mode"
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 1,
+    "structural_errors": [],
+    "normalizations": [],
+    "review": {
+      "approved": true,
+      "issues": [],
+      "summary": "rubric逐项覆盖全部需求：结构(R01)、核心发现(R02)、原因(R03)、独立测算(R04)、3号线(R05)、产线数据(R06)、投入约120万(R07)、约18个月及口径(R08)、ROI可复算与电价(R09)、标杆约0.45(R10)；integrity/narrative/visual条目边界清晰。failure_modes单一owner、三类视觉缺陷用固定id、reasoning_validity归属R09，无重复计分、无无依据硬条件。复核测算：120万/(0.85-0.5)×80万×0.75≈5.7月，与18个月存在差距，但用户给定'大概18个月'属给定事实，R09允许假设改造后水平并复算验证，处理合理，不构成rubric缺陷。",
+      "coverage": {
+        "Q01": [
+          "R01"
+        ],
+        "Q02": [
+          "R02"
+        ],
+        "Q03": [
+          "R03"
+        ],
+        "Q04a": [
+          "R04"
+        ],
+        "Q04b": [
+          "R07"
+        ],
+        "Q04c": [
+          "R08"
+        ],
+        "Q04d": [
+          "R09"
+        ],
+        "Q05": [
+          "R05"
+        ],
+        "Q06": [
+          "R01"
+        ],
+        "Q07a": [
+          "R06"
+        ],
+        "Q07b": [
+          "R06"
+        ],
+        "Q07c": [
+          "R06"
+        ],
+        "Q07d": [
+          "R06"
+        ],
+        "Q07e": [
+          "R06"
+        ],
+        "Q08": [
+          "R09"
+        ],
+        "Q09": [
+          "R10"
+        ]
+      },
+      "reported_coverage": {
+        "Q01": [
+          "R01"
+        ],
+        "Q02": [
+          "R02"
+        ],
+        "Q03": [
+          "R03"
+        ],
+        "Q04a": [
+          "R04"
+        ],
+        "Q04b": [
+          "R07"
+        ],
+        "Q04c": [
+          "R08"
+        ],
+        "Q04d": [
+          "R09"
+        ],
+        "Q05": [
+          "R05"
+        ],
+        "Q06": [
+          "R01"
+        ],
+        "Q07a": [
+          "R06"
+        ],
+        "Q07b": [
+          "R06"
+        ],
+        "Q07c": [
+          "R06"
+        ],
+        "Q07d": [
+          "R06"
+        ],
+        "Q07e": [
+          "R06"
+        ],
+        "Q08": [
+          "R09"
+        ],
+        "Q09": [
+          "R10"
+        ]
+      }
+    },
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "未发现有依据的反例",
+      "coverage": {},
+      "reported_coverage": {}
+    }
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "case": "09",
+  "status": "bounded_scoring_finished_incomplete",
+  "evidence_complete": {
+    "A": true,
+    "B": true
+  },
+  "initial_verdicts_known": 30,
+  "score_intervals": {
+    "A": [
+      90.71428571428571,
+      95.71428571428571
+    ],
+    "B": [
+      79.375,
+      88.75
+    ]
+  },
+  "unresolved": {
+    "A": {
+      "weight": 5,
+      "criteria": [
+        "R10"
+      ],
+      "reason": "Consistency reviewer confuses candidate-local page numbers and promotes B's title evidence into a challenge against A."
+    },
+    "B": {
+      "weight": 9.375,
+      "criteria": [
+        "R04"
+      ],
+      "reason": "Reviewer changes interpretation between per-page repetition and whole-deck coverage across bounded reviews; conflict remains."
+    }
+  },
+  "consistency": {
+    "passed": 12,
+    "unavailable": 1,
+    "unresolved": 2,
+    "total": 15
+  },
+  "human_label": "undecided",
+  "excluded_from_agreement": true,
+  "additional_semantic_repair_this_round": false,
+  "no_manual_score_edits": true
+}

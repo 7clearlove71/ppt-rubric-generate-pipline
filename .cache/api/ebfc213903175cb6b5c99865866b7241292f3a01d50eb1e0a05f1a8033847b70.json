@@ -1,0 +1,286 @@
+{
+  "parsed": {
+    "page": 4,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "非遗分量：2018 年获批省级，三重价值可核查",
+        "location": "页面顶部标题区域",
+        "statement": "页面主标题明确包含用户要求的'2018年获批省级'关键事实，并点明'三重价值'框架",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "文化价值这块要能体现出省级非遗认定的分量(2018年获批省级非遗)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2018",
+            "unit": "年",
+            "subject": "省级非遗认定年份",
+            "denominator": "不适用",
+            "time_origin": "2018年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2018 年获批省级代表性项目（本项目）",
+        "location": "省级认定层级说明区域，橙色高亮条带内",
+        "statement": "明确标注本项目于2018年获省级非遗认定，与用户给定事实一致；使用'本项目'字样避免与背景参照混淆",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "2018年获批省级非遗"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2018",
+            "unit": "年",
+            "subject": "本项目获批省级代表性项目时间",
+            "denominator": "不适用",
+            "time_origin": "2018年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "认定层级：国家—省—市—县四级名录",
+        "location": "页面上部，标题下方",
+        "statement": "建立四级名录体系框架，将本项目定位在省级层级，体现省级认定的制度分量",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本项目处于第二级",
+        "location": "四级名录右侧，橙色文字",
+        "statement": "明确标注本项目在四级体系中的位置（省级为第二级），辅助理解认定分量",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "省级认定程序：四环节闭环，文件与公示记录可核",
+        "location": "省级层级说明下方",
+        "statement": "列出省级认定的四个程序环节（材料审核与实地复核、专家评审、社会公示、省级人民政府批准公布），强调可核查性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "1557 项、3610 个子项，五批次（背景参照）",
+        "location": "国家级层级说明下方，灰色小字",
+        "statement": "国家级非遗数据明确标注'背景参照'，与本项目区分，避免混淆认定层级",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "1557",
+            "unit": "项",
+            "subject": "国家级非遗项目数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "3610",
+            "unit": "个子项",
+            "subject": "国家级非遗子项数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "技艺体系：四阶段工序链条",
+        "location": "页面中部偏左",
+        "statement": "展示竹编技艺的四阶段工序（选竹伐竹→刮青分篾分层→编织→收口定型），但视觉呈现上与上方'省级认定程序'区域的文字存在明显叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "选竹伐竹 → 刮青分篾分层 → 编织 → 收口定型",
+        "location": "页面中部工序链条横向排列区域",
+        "statement": "四阶段工序链条横向展示，各阶段下方有细分工序说明；但整个工序链条区域与上方'省级认定程序'的'03 社会公示''04 省级人民政府批准公布'等文字发生视觉重叠，从放大图可见'技艺体系：四阶段工序链条'标题与'03''社会公示'等文字笔画交叉叠印",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "公开口径为四川文旅厅8 道、文旅中国7 道工序；本项目实际工序名称与数量以申报材料为准，不虚构本地独有工序。",
+        "location": "工序链条下方，灰色说明文字",
+        "statement": "明确标注工序数量参照外部公开口径，并声明本项目以实际申报材料为准，不虚构，保持事实边界清晰",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "8",
+            "unit": "道",
+            "subject": "四川文旅厅公开口径工序数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "7",
+            "unit": "道",
+            "subject": "文旅中国公开口径工序数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "三重价值：逐条对应政策接口",
+        "location": "页面中下部",
+        "statement": "标题建立'三重价值'框架，但视觉呈现上与上方'市级'层级说明的'一般从县级名录中遴选产生'文字存在叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "文化认同价值 / 地方名片价值 / 产业转化价值",
+        "location": "三重价值区域，横向三栏布局",
+        "statement": "三重价值分别对应：文化认同价值（六代传承集体记忆）、地方名片价值（县域文旅叙事）、产业转化价值（非遗工坊硬条件），体现省级非遗认定的多重政策接口",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "文化价值这块要能体现出省级非遗认定的分量"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "六代传承的集体记忆与乡土认同，对应真实性、整体性、传承性",
+        "location": "文化认同价值栏",
+        "statement": "提及'六代传承'，与用户给定的'传了6代'一致，但此处用于文化价值论证而非项目背景陈述",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "这门手艺在我们那儿传了6代逾150年"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "6",
+            "unit": "代",
+            "subject": "传承代数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "结论：省级认定为项目合规性与扶持必要性提供制度依据，对应非遗工坊遴选认定与县级乡村振兴项目库入库要求；认定层级说明它值得保，机制说明它如何带动农户。",
+        "location": "页面下部结论区域",
+        "statement": "结论段落明确将省级认定与'非遗工坊遴选认定''县级乡村振兴项目库入库'等政策要求对接，并回应'带动农户'机制，与项目申报目标一致；但视觉呈现上与上方'县级'层级说明的'本级直接申报受理'文字存在轻微叠印",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "来源：《中华人民共和国非物质文化遗产法》、中国非物质文化遗产网／中国非物质文化遗产数字博物馆、湖北省与安徽省文化和旅游厅通知、广东省非遗申报指南、文旅部非遗工坊认定通知、四川文旅厅眉山竹编非遗技艺、文旅中国非遗工坊竹编培训；本项目2018 年获批省级口径逐字沿用，名录编号、批次文号与代表性传承人姓名以申报材料为准，国家级项目数据仅作背景参照。",
+        "location": "页面底部来源注释",
+        "statement": "详细列明法规与公开来源，明确标注'本项目2018年获批省级口径逐字沿用'及'国家级项目数据仅作背景参照'，保持事实边界清晰，未将背景参照冒充为本项目事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "技艺体系：四阶段工序链条 与 03/社会公示/原则上从市级名录中遴选产生 等文字的叠印",
+        "location": "页面中部区域，放大图p4_overlap_0df7fed1c7/p4_overlap_0fbd551b5d/p4_overlap_97d331d49c等",
+        "statement": "从局部放大图可见，'技艺体系：四阶段工序链条'标题及'选竹伐竹'等工序文字，与上方省级认定程序区域的'03''社会公示''原则上从市级名录中遴选产生'等文字发生真实的笔画叠印，黑色标题文字覆盖在灰色程序文字之上，造成可读性影响",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "三重价值：逐条对应政策接口 与 一般从县级名录中遴选产生 的叠印",
+        "location": "页面中下部，放大图p4_overlap_c91a5b9b5f",
+        "statement": "从局部放大图可见，'三重价值：逐条对应政策接口'标题与上方市级层级说明的'一般从县级名录中遴选产生'文字发生笔画叠印，黑色标题覆盖灰色说明文字",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "结论 与 本级直接申报受理 的叠印",
+        "location": "页面下部，放大图p4_overlap_40cb927f16",
+        "statement": "从局部放大图可见，'结论'标签与上方县级层级说明的'本级直接申报受理'文字发生轻微笔画叠印，橙色'结论'覆盖在灰色文字上",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "六代传承的集体记忆与乡土认同... 与 县级文化主管部门评审... 的叠印",
+        "location": "页面下部左侧，放大图p4_overlap_e03deafb27",
+        "statement": "从局部放大图可见，'六代传承的集体记忆与乡土认同，对应真实性、整体性、传承性'文字与上方县级层级说明的'县级文化主管部门评审、县级人民政府公布'文字发生笔画叠印，两行文字交叉重叠",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "工序名称取公开可核查口径 / 省级身份可直接进入县域文旅与工坊申报叙事",
+        "location": "页面右侧边缘，灰色小字",
+        "statement": "右侧边缘有两处灰色提示文字，分别对应工序体系区域和三重价值区域，作为补充说明",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 14134,
+    "total_tokens": 16949,
+    "completion_tokens": 2815,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 59.877,
+  "attempts": 1
+}

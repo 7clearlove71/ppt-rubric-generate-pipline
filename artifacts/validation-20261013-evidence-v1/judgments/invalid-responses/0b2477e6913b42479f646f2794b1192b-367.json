@@ -1,0 +1,96 @@
+{
+  "page": 10,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "FINIS",
+      "location": "页面上方居中",
+      "statement": "可见装饰性结束标记，拉丁语'终'之意，用于标识演示结束",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "谢谢聆听——欢迎指正、补充线索与\"拆台\"",
+      "location": "页面中上部大标题",
+      "statement": "主标题分两行排版：第一行'谢谢聆听——欢迎指正、补充线'，第二行'索与\"拆台\"'。从放大图观察，'线'字与'索'字为正常换行衔接，无笔画重叠遮挡，属于跨行断词而非叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "谢谢各位听完这份只有四天的驻村笔记——这是一份中期田野笔记的分享，不是研究结论。欢迎指正、补充线索与当场\"拆台\"，线索可在沙龙现场投递。四天的笔记只够提出问题，接下来靠多方核验。",
+      "location": "页面中部说明文字",
+      "statement": "正文说明明确标注'不是研究结论''只够提出问题''接下来靠多方核验'，体现存疑待考态度，与原文'存疑的地方标出来，别下定论'要求一致。从放大图观察，两行文字为正常段落换行，无笔画重叠",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "4",
+          "unit": "天",
+          "subject": "驻村笔记天数",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "驻村田野记录者",
+      "location": "页面下部",
+      "statement": "署名信息，无具体人名，未出现编造身份",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "驻村第 1–4 日 · 初步观察，存疑待考",
+      "location": "页面底部副标题",
+      "statement": "明确标注'初步观察，存疑待考'，与原文'初步感受'定位及'存疑'要求一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来,别下定论。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "1–4",
+          "unit": "日",
+          "subject": "驻村时间范围",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体为浅米色背景，标题黑色，FINIS为赭红色，底部有赭红色圆点装饰",
+      "location": "全局视觉",
+      "statement": "视觉风格简洁，留白充分，配色与古村落田野主题无违和感，信息层级通过字号差异可辨识",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "R05: exact count thresholds absent from original source quotes: ['至少两项']; use source-grounded or qualitative conditions"
+    ],
+    "normalizations": [
+      {
+        "removed_item": "R01",
+        "source_ref": "Q02",
+        "retained_items": [
+          "R07"
+        ],
+        "separately_covered_context_refs": [
+          "Q01"
+        ],
+        "reason": "Exact single-source ownership duplicated between fulfillment and correctness"
+      },
+      {
+        "removed_item": "R02",
+        "source_ref": "Q03",
+        "retained_items": [
+          "R08"
+        ],
+        "separately_covered_context_refs": [
+          "Q01"
+        ],
+        "reason": "Exact single-source ownership duplicated between fulfillment and correctness"
+      },
+      {
+        "removed_item": "R03",
+        "source_ref": "Q04",
+        "retained_items": [
+          "R09"
+        ],
+        "separately_covered_context_refs": [
+          "Q01"
+        ],
+        "reason": "Exact single-source ownership duplicated between fulfillment and correctness"
+      }
+    ],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 1,
+    "structural_errors": [],
+    "normalizations": [],
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R06",
+          "R15"
+        ],
+        "Q02": [
+          "R07"
+        ],
+        "Q03": [
+          "R08"
+        ],
+        "Q04": [
+          "R09"
+        ],
+        "Q05": [
+          "R13"
+        ],
+        "Q06": [
+          "R14"
+        ],
+        "Q07": [
+          "R04"
+        ],
+        "Q08": [
+          "R05"
+        ]
+      },
+      "summary": "rubric完整覆盖全部8项需求：三项关键事实（78%→92%、10万次无衰减、三甲医院合作临床试验）各由独立correctness条目检查存在且准确，技术路线图与下一步计划由fulfillment条目覆盖，专家受众与20分钟时长由narrative条目覆盖。质量条目均有可观察判据，未虚构页数/字号/模板等硬条件，无重复计分，条件缺席语义明确（如R18对无图表情形的处理）。各条目可独立评判，允许等价表述与不同有效设计。"
+    },
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "未发现有依据的反例"
+    }
+  }
+]

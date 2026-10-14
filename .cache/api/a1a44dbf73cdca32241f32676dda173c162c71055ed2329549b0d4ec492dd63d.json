@@ -1,0 +1,31 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      4
+    ],
+    "evidence": "本PPT仅在第4页使用了数据图表（柱状图）。经独立核对原图：该柱状图有完整的Y轴刻度标签（0/25/50/75/100）且带单位含义（百分比良率），X轴类别标签完整（\"三年前\"、\"现在\"），数据标签完整（78%、92%），无NaN等残留，所有标签均清晰可读、未被遮挡、对比度足够。其余页面未使用数据图表，本条自然满足。所有text_overlap_candidates及local enlarged view中的bbox交集仅为渲染文本几何的候选相交，经查看实际图像均不构成标签遮挡或不可读缺陷。",
+    "evidence_ids": [
+      "p4_e2",
+      "p4_e3",
+      "p4_e7"
+    ],
+    "resolutions": [],
+    "inspection_resolutions": [],
+    "additional_observations": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 78622,
+    "total_tokens": 78802,
+    "completion_tokens": 180,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 101.043,
+  "attempts": 2
+}

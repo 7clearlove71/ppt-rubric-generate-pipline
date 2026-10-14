@@ -1,0 +1,23 @@
+{
+  "case": "02",
+  "candidate": "A",
+  "request_ids": [
+    179,
+    180,
+    181
+  ],
+  "status": "initial_verdict_recovered",
+  "format_errors": [
+    "missing quantities/calculations arrays in new observations",
+    "unregistered evidence reference after arrays repaired"
+  ],
+  "semantic_concern": "Reasons relabel actual overlap as visual_hierarchy despite unique-owner boundary; do not silently normalize invalid replies into accepted scores. Full raw responses remain preserved.",
+  "action": "Preserve bounded independent and consistency scoring without manual edits; report remaining semantic ownership concern. Request202 succeeds but only cites the previously registered crop IDs, so online success alone does not prove causal effect of expanded geometry registration; raw181 offline replay covers that case.",
+  "pacing_observation": "Requests 178 through 188 had no HTTP 429; this is a limited observed window, not a verified provider rate limit.",
+  "criterion_ids": [
+    "R15"
+  ],
+  "recovery_request_id": 202,
+  "recovery_answer": "no",
+  "recovery_at": "2026-10-13T07:19:48.217834+00:00"
+}

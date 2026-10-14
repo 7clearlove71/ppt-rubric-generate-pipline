@@ -1,0 +1,244 @@
+[
+  {
+    "request_id": 1,
+    "invocation_id": "e1ccf2ad7512474c8ebcc2849c0160da",
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "3761b6a5a654555278a67d9537b83097346aca5cd6c5317f72ca029275cb4002",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 48,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 48
+      },
+      "prompt_tokens": 7165,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 7165
+      },
+      "total_tokens": 7213
+    },
+    "elapsed_seconds": 2.749
+  },
+  {
+    "request_id": 2,
+    "invocation_id": "e1ccf2ad7512474c8ebcc2849c0160da",
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "aec0500537fc8d96e3574880f7eadb096366b8345c4549ce5672e00cf4c416c6",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 151,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 151
+      },
+      "prompt_tokens": 7253,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 7253
+      },
+      "total_tokens": 7404
+    },
+    "elapsed_seconds": 4.759
+  },
+  {
+    "request_id": 3,
+    "invocation_id": "e1ccf2ad7512474c8ebcc2849c0160da",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "749a24efa837e30bcc7e038b1a5acfcab0d034fb5d5cd89d43d932455a2a88e4",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 4528,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 4528
+      },
+      "prompt_tokens": 8627,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 8627
+      },
+      "total_tokens": 13155
+    },
+    "elapsed_seconds": 58.258
+  },
+  {
+    "request_id": 4,
+    "invocation_id": "e1ccf2ad7512474c8ebcc2849c0160da",
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "eb81c158e1e820faeeb2182e3271f35dfe4e4970bd73b2b99ffb2776ec4719d8",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 58,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 58
+      },
+      "prompt_tokens": 7167,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "text_tokens": 7167
+      },
+      "total_tokens": 7225
+    },
+    "elapsed_seconds": 3.601
+  },
+  {
+    "request_id": 5,
+    "invocation_id": "e1ccf2ad7512474c8ebcc2849c0160da",
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "420e09d2d093c6744cda27203a58e71fed7aee9b782611e36f074284349a48f9",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 178,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 178
+      },
+      "prompt_tokens": 7255,
+      "prompt_tokens_details": {
+        "cached_tokens": 4096,
+        "text_tokens": 7255
+      },
+      "total_tokens": 7433
+    },
+    "elapsed_seconds": 7.377
+  },
+  {
+    "request_id": 6,
+    "invocation_id": "e1ccf2ad7512474c8ebcc2849c0160da",
+    "role": "generator",
+    "model": "kimi-k3",
+    "cache_key": "1f19b03ab309756d9ed6349e885a21c7f19f019748056ea3b848ece5f058dadb",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 3608,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3608
+      },
+      "prompt_tokens": 8656,
+      "prompt_tokens_details": {
+        "cached_tokens": 5120,
+        "text_tokens": 8656
+      },
+      "total_tokens": 12264
+    },
+    "elapsed_seconds": 52.356
+  },
+  {
+    "request_id": 7,
+    "invocation_id": "e1ccf2ad7512474c8ebcc2849c0160da",
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "b8486419ae2d6751580e61c0f16c6ea79308e819b5301373c2d88f79186535dd",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 101
+      },
+      "prompt_tokens": 6512,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 6512
+      },
+      "total_tokens": 6613
+    },
+    "elapsed_seconds": 4.087
+  },
+  {
+    "request_id": 8,
+    "invocation_id": "e1ccf2ad7512474c8ebcc2849c0160da",
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "cfd768aa46bd98cf1fdd2fed539c0d611b0db61b83b274bb02b6baf5c38ac87d",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 331,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 331
+      },
+      "prompt_tokens": 6600,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 6600
+      },
+      "total_tokens": 6931
+    },
+    "elapsed_seconds": 9.242
+  },
+  {
+    "request_id": 9,
+    "invocation_id": "33f2685ec85640629115ea2039611f9d",
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "953f2c154ff8c3c1ad38751f2919a1242fa78d15b5ee3594f3c944171fef0822",
+    "attempt": 1,
+    "status": "success",
+    "validation_feedback": false,
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 50,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 50
+      },
+      "prompt_tokens": 6573,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 6573
+      },
+      "total_tokens": 6623
+    },
+    "elapsed_seconds": 2.518
+  },
+  {
+    "request_id": 10,
+    "invocation_id": "33f2685ec85640629115ea2039611f9d",
+    "role": "reviewer",
+    "model": "kimi-k3",
+    "cache_key": "dd41ae1b9b0442435c6c00273cb67686faf77ba0c4513674a6c531383847c635",
+    "attempt": 1,
+    "status": "success",
+    "validation_feedback": false,
+    "http_status": 200,
+    "usage": {
+      "completion_tokens": 21,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 21
+      },
+      "prompt_tokens": 6699,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 6699
+      },
+      "total_tokens": 6720
+    },
+    "elapsed_seconds": 2.269
+  }
+]

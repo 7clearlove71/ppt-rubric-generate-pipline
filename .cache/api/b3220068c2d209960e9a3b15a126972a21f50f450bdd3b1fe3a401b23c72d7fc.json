@@ -1,0 +1,249 @@
+{
+  "parsed": {
+    "page": 8,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "请求批准并启动48小时响应",
+        "location": "页面上部中央大标题",
+        "statement": "本页为汇报收尾页，核心主张是请求管理层批准启动48小时响应机制，并强调'先稳事实、稳用户、稳业务，再基于36小时复核结论升级处置'",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应，可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "响应窗口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "48小时 响应窗口 执行路线图覆盖0—48小时",
+        "location": "页面左上部指标卡",
+        "statement": "明确呈现48小时响应窗口，与素材中'48小时内如果不做有效回应，可能从质疑升级为抵制'的时间窗口一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应，可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "响应窗口",
+            "denominator": "不适用",
+            "time_origin": "0"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "36小时 技术复核 复核结论公布前进展更新",
+        "location": "页面中上部指标卡",
+        "statement": "明确呈现36小时技术复核周期，与素材中'预计还需要36小时才能出结论'一致，且提示'复核结论公布前进展更新'，体现了复核未完前提",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2小时 联动看板 管理层确认趋势频率",
+        "location": "页面中上部指标卡",
+        "statement": "新增'2小时联动看板'机制，建议管理层每2小时确认趋势频率，属于建议性预案设计，可识别为新增建议而非素材给定事实",
+        "kind": "proposal",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2",
+            "unit": "小时",
+            "subject": "联动看板趋势确认频率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "5项 决策请求 今晚批准跨部门方案",
+        "location": "页面右上部指标卡",
+        "statement": "提出5项决策请求，要求'今晚批准跨部门方案'，属于建议性行动呼吁",
+        "kind": "proposal",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "今晚得把PPT攒出来"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "5",
+            "unit": "项",
+            "subject": "决策请求",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "REPORTER 危机响应小组联络人 会后指定",
+        "location": "页面左下部",
+        "statement": "报告人信息栏，显示联络人'会后指定'，属于待确定事项",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "DEPARTMENT 跨部门危机小组 公关·技术·客服·电商·法务",
+        "location": "页面中下部",
+        "statement": "明确跨部门危机小组组成，包含公关、技术、客服、电商、法务五个部门，体现跨部门协同",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "DATE 2026年6月 管理层决策会",
+        "location": "页面右下部",
+        "statement": "日期标注为'2026年6月'，属于新增时间信息，素材未给定具体年份，仅提及'6月10日起'及'今晚''明天一早'等相对时间",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "6月10日起"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "年份",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "6",
+            "unit": "月",
+            "subject": "月份",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "48小时/36小时/2小时/5项 与 响应窗口/技术复核/联动看板/决策请求 的上下排列",
+        "location": "页面中部四个指标卡",
+        "statement": "经局部放大图核查，数字大字与下方标签文字为上下层级排版，非真实叠印遮挡。'48小时'与'响应窗口'、'36小时'与'技术复核'、'2小时'与'联动看板'、'5项'与'决策请求'均为大字标题+小字说明的标准组合设计，字形笔画无实际相交",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "产品安全舆情危机应对与管理层决策汇报 | 第8页·共8页",
+        "location": "页面顶部",
+        "statement": "本页为第8页（末页），页面标题与封面一致，页码显示共8页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "8",
+            "unit": "页",
+            "subject": "当前页码",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "8",
+            "unit": "页",
+            "subject": "总页数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2026年6月·管理层决策会",
+        "location": "页面右下角页脚",
+        "statement": "页脚重复日期与会议信息，与页面中部DATE字段一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "先稳事实、稳用户、稳业务，再基于36小时复核结论升级处置",
+        "location": "标题下方副标题",
+        "statement": "该表述将'稳事实、稳用户、稳业务'作为优先动作，'36小时复核结论'作为后续升级依据，逻辑上体现了复核未完不急于下定论的策略，但未直接呈现素材中声明草稿'话说得这么满'的风险点，属于策略总结层面的表述",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "在这个节骨眼上把话说得这么满，万一复核发现确有问题会非常被动"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 7360,
+    "total_tokens": 8730,
+    "completion_tokens": 1370,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 150.019,
+  "attempts": 2
+}

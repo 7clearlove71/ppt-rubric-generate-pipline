@@ -1,0 +1,435 @@
+{
+  "page": 5,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "1 号线改造投资回报测算：投入120 万元，年节省电费252-288 万元",
+      "location": "页面顶部标题区域",
+      "statement": "标题明确呈现1号线改造投资回报测算，投入金额120万元，年节省电费区间252-288万元",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "如果更换液压系统投入约120万,按当前产量和电价,大概18个月能收回成本"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "120",
+          "unit": "万元",
+          "subject": "更换液压系统投入",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "当前（0.85 kWh/ 件）",
+      "location": "柱状图左侧x轴标签",
+      "statement": "图表显示1号线当前单位能耗0.85 kWh/件，对应月用电68万kWh",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "1号线 / 80 / 68 / 0.85 / 8"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.85",
+          "unit": "kWh/件",
+          "subject": "1号线单位能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "68",
+          "unit": "万kWh",
+          "subject": "1号线月用电",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "口径一（降至0.45 ）",
+      "location": "柱状图中间x轴标签",
+      "statement": "图表展示改造后降至行业标杆0.45 kWh/件的测算口径，对应月用电36万kWh",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "行业标杆单位能耗约0.45kWh/件"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.45",
+          "unit": "kWh/件",
+          "subject": "行业标杆单位能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "口径二（降至0.5 ）",
+      "location": "柱状图右侧x轴标签",
+      "statement": "图表展示改造后降至0.5 kWh/件的保守测算口径，对应月用电40万kWh",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "0.5",
+          "unit": "kWh/件",
+          "subject": "保守测算口径单位能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "口径一 · 降至行业标杆 0.45 kWh/ 件\n月省电 32 万kWh · 月省电费 24 万元\n年节省电费 约288 万元，为收益上限\n纯电费口径回本约5 个月（120 万元 ÷ 月省24 万元）",
+      "location": "页面右侧上部测算说明区域",
+      "statement": "口径一详细测算：月省电32万kWh，月省电费24万元，年节省电费约288万元，纯电费口径回本约5个月",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "工业电价0.75元/kWh"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "32",
+          "unit": "万kWh",
+          "subject": "口径一月省电",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "24",
+          "unit": "万元",
+          "subject": "口径一月省电费",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "288",
+          "unit": "万元",
+          "subject": "口径一年节省电费",
+          "denominator": "不适用",
+          "time_origin": "年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "multiply",
+          "left": "32",
+          "right": "0.75",
+          "reported": "24",
+          "left_unit": "万kWh",
+          "right_unit": "元/kWh",
+          "reported_unit": "万元",
+          "left_quote": "月省电 32 万kWh",
+          "right_quote": "工业电价0.75元/kWh",
+          "reported_quote": "月省电费 24 万元",
+          "relation_quote": "月省电 32 万kWh · 月省电费 24 万元",
+          "meaning": "月省电乘以电价得月省电费"
+        },
+        {
+          "operation": "multiply",
+          "left": "24",
+          "right": "12",
+          "reported": "288",
+          "left_unit": "万元",
+          "right_unit": "月",
+          "reported_unit": "万元",
+          "left_quote": "月省电费 24 万元",
+          "right_quote": "未说明（12个月为常规年换算）",
+          "reported_quote": "年节省电费 约288 万元",
+          "relation_quote": "年节省电费 约288 万元",
+          "meaning": "月省电费乘以12个月得年节省电费"
+        },
+        {
+          "operation": "divide",
+          "left": "120",
+          "right": "24",
+          "reported": "5",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "个月",
+          "left_quote": "投入120 万元",
+          "right_quote": "月省24 万元",
+          "reported_quote": "纯电费口径回本约5 个月",
+          "relation_quote": "纯电费口径回本约5 个月（120 万元 ÷ 月省24 万元）",
+          "meaning": "投入金额除以月节省电费得回本周期"
+        }
+      ]
+    },
+    {
+      "quote": "口径二 · 降至 0.5 kWh/ 件\n月省电 28 万kWh · 月省电费 约21 万元\n年节省电费 约252 万元，仍为投入的两倍以上\n回收期约5-6 个月（120 万元 ÷ 月省21 万元）",
+      "location": "页面右侧中部测算说明区域",
+      "statement": "口径二详细测算：月省电28万kWh，月省电费约21万元，年节省电费约252万元，回收期约5-6个月",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "工业电价0.75元/kWh"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "28",
+          "unit": "万kWh",
+          "subject": "口径二月省电",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "21",
+          "unit": "万元",
+          "subject": "口径二月省电费",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "252",
+          "unit": "万元",
+          "subject": "口径二年节省电费",
+          "denominator": "不适用",
+          "time_origin": "年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "multiply",
+          "left": "28",
+          "right": "0.75",
+          "reported": "21",
+          "left_unit": "万kWh",
+          "right_unit": "元/kWh",
+          "reported_unit": "万元",
+          "left_quote": "月省电 28 万kWh",
+          "right_quote": "工业电价0.75元/kWh",
+          "reported_quote": "月省电费 约21 万元",
+          "relation_quote": "月省电 28 万kWh · 月省电费 约21 万元",
+          "meaning": "月省电乘以电价得月省电费，结果标注约"
+        },
+        {
+          "operation": "multiply",
+          "left": "21",
+          "right": "12",
+          "reported": "252",
+          "left_unit": "万元",
+          "right_unit": "月",
+          "reported_unit": "万元",
+          "left_quote": "月省电费 约21 万元",
+          "right_quote": "未说明（12个月为常规年换算）",
+          "reported_quote": "年节省电费 约252 万元",
+          "relation_quote": "年节省电费 约252 万元",
+          "meaning": "月省电费乘以12个月得年节省电费"
+        },
+        {
+          "operation": "divide",
+          "left": "120",
+          "right": "21",
+          "reported": "5.71",
+          "left_unit": "万元",
+          "right_unit": "万元",
+          "reported_unit": "个月",
+          "left_quote": "120 万元",
+          "right_quote": "月省21 万元",
+          "reported_quote": "回收期约5-6 个月",
+          "relation_quote": "回收期约5-6 个月（120 万元 ÷ 月省21 万元）",
+          "meaning": "投入金额除以月节省电费得回收期约5.71个月，展示为5-6个月"
+        }
+      ]
+    },
+    {
+      "quote": "保守口径约18 个月收回成本\n计入施工停产损失与投产爬坡期节能打折后回收期约18 个月；年\n节省电费252-288 万元区间内投资均可行，回报清晰、风险可\n控，具备立项价值。",
+      "location": "页面右侧下部绿色边框强调区域",
+      "statement": "保守口径明确回收期约18个月，并说明已计入施工停产损失与投产爬坡期节能打折因素；年节省电费252-288万元区间内投资均可行",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "大概18个月能收回成本"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "18",
+          "unit": "个月",
+          "subject": "保守口径回收期",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "测算口径：月产量80 万件 · 单位能耗0.85 kWh/ 件 · 工业电价0.75 元/kWh ，参数均来自1 号线实际运行数据",
+      "location": "柱状图下方说明文字",
+      "statement": "明确测算口径包含月产量80万件、单位能耗0.85 kWh/件、工业电价0.75元/kWh，参数来源说明为1号线实际运行数据",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "1号线 / 80 / 68 / 0.85 / 8\n工业电价0.75元/kWh"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "80",
+          "unit": "万件",
+          "subject": "月产量",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "0.85",
+          "unit": "kWh/件",
+          "subject": "单位能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "0.75",
+          "unit": "元/kWh",
+          "subject": "工业电价",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "数据来源：用户素材（1 号线能耗实测数据与改造投资测算）；测算口径：月产量80 万件、工业电价0.75 元/kWh ；回收期已计入施工停产与爬坡期保守因素",
+      "location": "页面底部来源说明",
+      "statement": "数据来源标注为用户素材，测算口径再次确认月产量80万件和工业电价0.75元/kWh，并说明回收期已计入施工停产与爬坡期保守因素",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "工业电价0.75元/kWh"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "月用电（万kWh ）",
+      "location": "柱状图y轴标题区域",
+      "statement": "y轴标题为月用电（万kWh），与数值标签68万kWh存在微小bbox交集（fraction 0.0181），但放大图显示为正常相邻排版，无真实字形遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "计入施工停产损失与投产爬坡期节能打折后回收期约18 个月；年\n节省电费252-288 万元区间内投资均可行，回报清晰、风险可\n控，具备立项价值。",
+      "location": "页面右侧下部绿色边框区域内",
+      "statement": "三行文字之间存在bbox交集（p5_t38与p5_t39，p5_t39与p5_t40），放大图显示为正常上下换行排版，行间距紧凑但无真实字形叠印遮挡，文字均可读",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "年节省电费 约288 万元，为收益上限",
+      "location": "口径一测算区域",
+      "statement": "年节省电费与约288万元之间bbox微交（fraction 0.0011），放大图显示为正常相邻排版，无真实遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "年节省电费 约252 万元，仍为投入的两倍以上",
+      "location": "口径二测算区域",
+      "statement": "年节省电费与约252万元之间bbox微交（fraction 0.0011），放大图显示为正常相邻排版，无真实遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "32 万kWh · 月省电费 24 万元",
+      "location": "口径一测算区域",
+      "statement": "32万kWh与月省电费之间bbox微交（fraction 0.0004），放大图显示为正常相邻排版，无真实遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "28 万kWh · 月省电费 约21 万元",
+      "location": "口径二测算区域",
+      "statement": "28万kWh与月省电费之间bbox微交（fraction 0.0004），放大图显示为正常相邻排版，无真实遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "月省电费 约21 万元",
+      "location": "口径二测算区域",
+      "statement": "月省电费与约21万元之间bbox微交（fraction 0.0007），放大图显示为正常相邻排版，无真实遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "约288 万元，为收益上限",
+      "location": "口径一测算区域",
+      "statement": "约288万元与为收益上限之间bbox微交（fraction 0.0002），放大图显示为正常相邻排版，无真实遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "约252 万元，仍为投入的两倍以上",
+      "location": "口径二测算区域",
+      "statement": "约252万元与仍为投入的两倍以上之间bbox微交（fraction 0.0002），放大图显示为正常相邻排版，无真实遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "月用电（万kWh ）",
+      "location": "柱状图y轴标题区域",
+      "statement": "y轴标题与刻度值70之间存在bbox微交（fraction 0.0059），放大图显示为正常相邻排版，无真实遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

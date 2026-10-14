@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "text_seen": [
+      "按月产 80 万件、电价 0.75 元/kWh 测算；降至标杆月用电仅需 36 万 kWh。"
+    ],
+    "overlapping": false,
+    "overlap_objects": [],
+    "description": "白色文字位于深灰/黑色背景上，文字呈单行水平排列，无重叠或相交的字形。文字包含中文、数字、单位符号和标点，整体清晰可辨，无遮挡。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 290,
+    "total_tokens": 385,
+    "completion_tokens": 95,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 105.975,
+  "attempts": 1
+}

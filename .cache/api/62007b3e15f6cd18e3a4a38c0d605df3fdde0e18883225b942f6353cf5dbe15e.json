@@ -1,0 +1,192 @@
+{
+  "parsed": {
+    "page": 7,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "先补证，再下判断",
+        "location": "页面顶部标题区域",
+        "statement": "页面标题，呈现收束性定位",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "把四个田野片段收敛成三条后续方向，同时保留不确定项。",
+        "location": "标题下方副标题",
+        "statement": "明确说明本页功能：将四天笔记收敛为三条后续方向，并保留不确定项",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "01 空心化 / 老宅存量 / 居住不足一半 / 代际外出",
+        "location": "左侧卡片",
+        "statement": "第一方向'空心化'及其三个支撑要点：老宅存量、居住不足一半、代际外出。其中'居住不足一半'对应原文'住人不到一半'，'代际外出'对应'年轻人外出打工'。未出现'留守多为老人'的显式表述。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "未说明",
+            "unit": "栋",
+            "subject": "老宅存量",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "02 记忆断层 / 祭祀频率下降 / 族谱重写 / 口述需核验",
+        "location": "中间卡片",
+        "statement": "第二方向'记忆断层'及其三个要点：祭祀频率下降（对应原文祭祖由每年变为三年一次）、族谱重写（对应族谱被烧后凭记忆补写）、口述需核验（对应待考提示）。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "祠堂以前每年清明祭祖,现在三年一次。有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "03 开发错位 / 仿古街投入 / 本体缺资金 / 治理待追问",
+        "location": "右侧卡片",
+        "statement": "第三方向'开发错位'及其三个要点：仿古街投入（对应新修仿古街）、本体缺资金（对应老宅保护没钱投）、治理待追问（对应矛盾典型）。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "TO BE VERIFIED / 待考：族谱焚毁与重写细节；\"外姓人建造\"来源。",
+        "location": "页面中下部红色边框区域",
+        "statement": "显式标注两处存疑信息：族谱焚毁与重写细节（对应Day2族谱待考）、\"外姓人建造\"来源（对应Day3木雕来历说不清）。使用'待考'字样及英文'TO BE VERIFIED'进行视觉标识。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "村民说是\"外姓人\"建的,来历说不清。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "NEXT STEP / 多访谈几位老人，交叉比对说法；再谈结论。",
+        "location": "页面下部金色边框区域",
+        "statement": "明确下一步行动建议，对应原文'得多问几个人'和'待考'要求，未下定论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "——待考,得多问几个人。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "田野初察 · 第 07 / 07 页",
+        "location": "页面底部",
+        "statement": "页码标识，显示为第7页共7页，本页为末页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "7",
+            "unit": "页",
+            "subject": "当前页码",
+            "denominator": "7",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "0/1/2/3 数字与标题文字叠印",
+        "location": "三个卡片顶部编号区域",
+        "statement": "视觉现象：编号数字（0,1,2,3）与对应标题文字（空心化/记忆断层/开发错位）存在设计意图上的重叠排版。根据局部放大图，数字'1'与'空心化'的'空'字、数字'2'与'记忆断层'的'记'字、数字'3'与'开发错位'的'开'字有笔画交叠，但标题文字整体仍可辨识。此为装饰性设计叠印，非意外遮挡。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "空心化、记忆断层、开发错位",
+        "location": "三个卡片标题",
+        "statement": "三点初步感受全部出现，且以'后续方向'形式呈现（卡片标题+支撑要点），符合'收敛成三条后续方向'的页面功能说明",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "代际外出",
+        "location": "左侧卡片第三行",
+        "statement": "该表述为'年轻人外出打工'的概括，但原文'留守多为老人'未在本页显式出现，仅在'空心化'主题下间接隐含",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年轻人外出打工,留守多为老人。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 8063,
+    "total_tokens": 9630,
+    "completion_tokens": 1567,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 119.608,
+  "attempts": 1
+}

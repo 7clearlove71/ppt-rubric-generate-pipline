@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-14",
+  "purpose": "Development-only local visual component regression; no deck preference judgment.",
+  "ground_truth_author": "Codex subagent visual inspection using view_image; not a new human reannotation",
+  "scope": {
+    "dev_cases": [
+      "05",
+      "06",
+      "09"
+    ],
+    "holdout_labels_read": false,
+    "external_model_api_calls": 0,
+    "historical_labels_modified": false,
+    "images_modified": false
+  },
+  "ground_truth_values": [
+    "overlap",
+    "no_overlap",
+    "uncertain"
+  ],
+  "method": "Read existing QA provenance, inspect each original image with view_image at original detail, then record only directly observable text relationships. Do not treat prior model answers or text-box intersections as ground truth.",
+  "render_identity": {
+    "05/B": {
+      "sha256": "80cd57d0b7963d83c76ef5e203b076ef1935b0b2ae6f73e370e0a3dc55860fbb",
+      "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+      "soffice": "/Users/liangyuanzhi/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+      "dpi": 150,
+      "backend": "pymupdf",
+      "pymupdf": "1.26.5",
+      "render_version": 2,
+      "font_inventory": "58062b64b7cf6fea132ccf7d6900c1f24560784331fb5329d28580a11dc60212"
+    },
+    "06/B": {
+      "sha256": "89d5a717096231d5d33c5867fb1b28518bc28123a56d27e41fce640cbc0ce9f3",
+      "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+      "soffice": "/Users/liangyuanzhi/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+      "dpi": 150,
+      "backend": "pymupdf",
+      "pymupdf": "1.26.5",
+      "render_version": 2,
+      "font_inventory": "58062b64b7cf6fea132ccf7d6900c1f24560784331fb5329d28580a11dc60212"
+    },
+    "09/B": {
+      "sha256": "571421f8ffcb0308e6a682e509d087589d4796a6ef3d62b1babccfe6def7d744",
+      "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+      "soffice": "/Users/liangyuanzhi/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+      "dpi": 150,
+      "backend": "pymupdf",
+      "pymupdf": "1.26.5",
+      "render_version": 2,
+      "font_inventory": "58062b64b7cf6fea132ccf7d6900c1f24560784331fb5329d28580a11dc60212"
+    }
+  },
+  "blind_regression_policy": {
+    "model_input_allowlist": [
+      "id",
+      "image_path"
+    ],
+    "never_send_to_model": [
+      "ground_truth",
+      "observable_text_relationships",
+      "source_artifacts",
+      "case_id",
+      "candidate_id",
+      "limits",
+      "historical model answer"
+    ],
+    "expected_labels_are_comparison_only": true,
+    "note": "Use only neutral image labels and images with the frozen visual prompt; evaluate expected overlap offline after all responses are recorded."
+  },
+  "summary": {
+    "samples": 4,
+    "overlap": 3,
+    "no_overlap": 1,
+    "uncertain": 0
+  },
+  "samples": [
+    {
+      "id": "local-01",
+      "case_id": "05",
+      "candidate_id": "B",
+      "page": 5,
+      "image_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/visual-focus-v1/546987ca8ada50408d9d3e850ee9a5e827a4c3cb27473aa7f4c3f14ba2108fbe.png",
+      "image": {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/visual-focus-v1/546987ca8ada50408d9d3e850ee9a5e827a4c3cb27473aa7f4c3f14ba2108fbe.png",
+        "sha256": "f530d5d22e57cb5cd2beed818f504c3d7328e365109fafd850dbe2b7864900ba",
+        "width": 783,
+        "height": 124
+      },
+      "original_page": {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/page-005.png",
+        "sha256": "b8b7232aff5a935fe8be4d3ee972e9233b803fcbfcab2fce1dae4f5a1594a307",
+        "width": 1500,
+        "height": 844
+      },
+      "source_artifacts": [
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/case05-final-qa.json",
+          "sha256": "abc4167a6cc8450e4625f9373d6b685042bc0ffcb4149207d321bea41d73ed16"
+        }
+      ],
+      "viewed_images": [
+        "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/visual-focus-v1/546987ca8ada50408d9d3e850ee9a5e827a4c3cb27473aa7f4c3f14ba2108fbe.png",
+        "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/page-005.png"
+      ],
+      "ground_truth": "overlap",
+      "ground_truth_scope": "仅指定局部及其原页对应位置，不推断其余页面。",
+      "observable_text_relationships": [
+        "黑底区域的大号白色“存疑核心：‘外姓人’是谁，来历说不清”与另一组较小灰色文字处于同一垂直带。",
+        "在白色“存疑核心”左段可直接看到灰色字笔画从白色文字之间及上方穿过，两个文字对象实际叠印；不是相邻两行的留白较窄。",
+        "部分灰色字已被白色字遮挡，本记录不借文字层补全其完整原句。"
+      ],
+      "limits": [
+        "不能据此确认人工记录所称至少7页重叠。",
+        "仅确认文字叠印，不判断内容正确性或整体候选优劣。"
+      ]
+    },
+    {
+      "id": "local-02",
+      "case_id": "06",
+      "candidate_id": "B",
+      "page": 6,
+      "image_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/visual-focus-v1/a42a8246f7e514f09fc3c5e65d4e6e675de0d54987d849fccfe001de753278ce.png",
+      "image": {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/visual-focus-v1/a42a8246f7e514f09fc3c5e65d4e6e675de0d54987d849fccfe001de753278ce.png",
+        "sha256": "5b90655a6ca1b6cd9a36aa15e36b65ae1df687288d9e93a8daead5e31ea9a262",
+        "width": 804,
+        "height": 153
+      },
+      "original_page": {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-006.png",
+        "sha256": "d2a46481fcb2f67d17773b32779ad44ab28463c3c0df0aa2e62420b8cf998e09",
+        "width": 2001,
+        "height": 1125
+      },
+      "source_artifacts": [
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/case06-final-qa.json",
+          "sha256": "4a9e1abdeccf4be33d5a2d98b94ae2998db22acc5a0393fbce6338143fd912d6"
+        },
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/judgments/06/B-evidence.json",
+          "sha256": "68a18aba451f52e67a81c7c7635410ac18cd7ed3d665bfbe264f73291bf64aaf"
+        }
+      ],
+      "source_region_id": "p6_overlap_a08e5908e9",
+      "source_pdf_rect": [
+        97.04000091552734,
+        272.07000732421875,
+        297.7900085449219,
+        310.1499938964844
+      ],
+      "viewed_images": [
+        "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/visual-focus-v1/a42a8246f7e514f09fc3c5e65d4e6e675de0d54987d849fccfe001de753278ce.png",
+        "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-006.png"
+      ],
+      "ground_truth": "overlap",
+      "ground_truth_scope": "给定局部图及第6页问题01正文尾行。",
+      "observable_text_relationships": [
+        "深灰正文尾行“低于基础类与完善类。”与红色对应说明处于同一水平带。",
+        "局部图中红色“完工率92.6%”等字样横穿深灰正文，多个红色、灰色笔画在同一位置相交。",
+        "整页图还显示红色对应说明与灰色76.5%、91.2%、93.5%所在尾行叠印；本回归输入只使用既有问题01局部。"
+      ],
+      "limits": [
+        "只为当前LibreOffice渲染建立局部预期；不说明PowerPoint渲染也相同。",
+        "不把一次叠印分别作为可读性与层级两次缺陷计数。"
+      ]
+    },
+    {
+      "id": "local-03",
+      "case_id": "06",
+      "candidate_id": "B",
+      "page": 7,
+      "image_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-007.png",
+      "image": {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-007.png",
+        "sha256": "7546c3bdd0f69345fb0746fe44858a416f13baf83fd905be85811b561cfec328",
+        "width": 2001,
+        "height": 1125
+      },
+      "original_page": {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-007.png",
+        "sha256": "7546c3bdd0f69345fb0746fe44858a416f13baf83fd905be85811b561cfec328",
+        "width": 2001,
+        "height": 1125
+      },
+      "source_artifacts": [
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/case06-final-qa.json",
+          "sha256": "4a9e1abdeccf4be33d5a2d98b94ae2998db22acc5a0393fbce6338143fd912d6"
+        },
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/judgments/06/B.json",
+          "sha256": "7badb09fc68013e2bd5d4b1291fe9be37c2ff674f91f05acca41f7a6bb5c9b25"
+        }
+      ],
+      "viewed_images": [
+        "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-007.png"
+      ],
+      "ground_truth": "overlap",
+      "ground_truth_scope": "所供第7页图像内明确可见的文字关系；重点为问题01、02、03尾行。",
+      "observable_text_relationships": [
+        "左上措施01尾行的深灰“达到100.0%。”与红色“〔对应问题（一）｜责任：…”实际叠印，红色说明横穿灰色数字。",
+        "右上措施02尾行的深灰“提升至90.0%以上，…”与红色对应问题（二）责任说明叠印。",
+        "左下措施03的深灰“长效维护机制满意率提升至”一行与红色对应问题（三）责任说明叠印。",
+        "右下措施04的红色说明和上方灰色“满意率提升至90.0%。”之间有可见间距；不把所有红色说明一概标为重叠。"
+      ],
+      "limits": [
+        "未新造裁剪，使用已存在原页图；预期只验证是否存在实际文字叠印。",
+        "不作整份PPT得分或胜负判断。"
+      ]
+    },
+    {
+      "id": "local-04",
+      "case_id": "09",
+      "candidate_id": "B",
+      "page": 4,
+      "image_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-004.png",
+      "image": {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-004.png",
+        "sha256": "017df97898c6b6098f82a3915bed748f89143b6b636e67bf3af193f1ff5dcf43",
+        "width": 1500,
+        "height": 844
+      },
+      "original_page": {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-004.png",
+        "sha256": "017df97898c6b6098f82a3915bed748f89143b6b636e67bf3af193f1ff5dcf43",
+        "width": 1500,
+        "height": 844
+      },
+      "source_artifacts": [
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/evidence-acceptance-20261012/v9/negative-control.json",
+          "sha256": "1f4ae3caf7725d650c41248fe5f5eafdcde8427f7011676f84c2ea9944d9683f"
+        }
+      ],
+      "viewed_images": [
+        "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-004.png"
+      ],
+      "ground_truth": "no_overlap",
+      "ground_truth_scope": "历史已通过无重叠负例的同一第4页图；重点检查图表上方标签及柱顶数字与相邻文字。",
+      "observable_text_relationships": [
+        "左侧图表上方的红色“裁员0人”标签与“+90人/≈+28.1%（测算）”标签为相邻独立框，中间留有空白，没有字形交叉。",
+        "左侧“320人”“410人”和右侧“104万元”“102万元”分别位于各自柱顶上方，数值、柱体与其他文字没有叠印。",
+        "顶部说明、两张图表、底部结论和来源行各占独立区域；本次查看未见文字笔画相交。"
+      ],
+      "limits": [
+        "仅是此页可见文字重叠的负例，不保证事实、推理或其他页面合格。",
+        "旧模型无重叠结论仅用于选例，本次预期根据实际view_image重新观察。"
+      ]
+    }
+  ]
+}

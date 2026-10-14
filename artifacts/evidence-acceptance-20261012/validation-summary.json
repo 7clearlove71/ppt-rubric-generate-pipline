@@ -1,0 +1,59 @@
+{
+  "status": "component_repairs_verified_with_remaining_semantic_limits",
+  "case_id": "09",
+  "prompt_version": "2026-10-13.10",
+  "rubric_validator_version": 10,
+  "judge_validator_version": 7,
+  "visual": {
+    "online_prompt_version": "2026-10-13.9",
+    "answer": "no",
+    "online_transport": "response_received",
+    "original_validation": "failed_unregistered_crop_citations",
+    "final_validation": "offline_replay_passed_unchanged_model_response",
+    "output": "v10-replay/A-R14-result.json",
+    "residual": "Page 4 obstruction extent overstated; not all narrative details accurate."
+  },
+  "reasoning": {
+    "online_prompt_version": "2026-10-13.8",
+    "answer": "no",
+    "output": "v8/B-R09-result.json",
+    "six_calculation_observations_rejected": true,
+    "real_causal_issues_retained": true,
+    "residual": "Verbose explanation revisits rejected hypotheses."
+  },
+  "neutral_vision": {
+    "positive_crops": 2,
+    "positive_correct": 2,
+    "negative_pages": 1,
+    "negative_correct": 1,
+    "not_a_statistical_accuracy_estimate": true
+  },
+  "full_deck_scores": false,
+  "human_agreement": null,
+  "holdout_run": false,
+  "offline_tests": {
+    "passed": 128,
+    "log": "tests-final.txt"
+  },
+  "budget": {
+    "status": "closed",
+    "provider": "maas",
+    "request_cap": 12,
+    "actual_requests": 12,
+    "remaining_not_reusable": 0,
+    "reported_total_tokens": 396372,
+    "missing_usage_requests": [],
+    "status_counts": {
+      "success": 10,
+      "failed": 2
+    },
+    "journal": "requests.json",
+    "offline_replay_additional_requests": 0,
+    "reason": "Bounded acceptance probes completed; no old balance reused."
+  },
+  "limitations": [
+    "Final prompt .10 not called online; final parser validated using unchanged actual .9 response.",
+    "Full generation/score/compare cycle remains unrun.",
+    "No new Bailian bulk authorization."
+  ]
+}

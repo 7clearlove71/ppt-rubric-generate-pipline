@@ -1,0 +1,202 @@
+[
+  {
+    "role": "judge",
+    "cache_key": "0b1aac7ac94be5d0db9857b9db2b87d1a9a0878e04948fc6a56d84b59ae2aa50",
+    "cached": false,
+    "invocation_id": "3da4921964a54f7f9d9f011e77282426",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 44442,
+      "total_tokens": 45663,
+      "completion_tokens": 1221,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 37.2,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "32d29a77be837cef31d124e7acbab453e9ca9755bf053d0710411ead4d139e7e",
+    "cached": false,
+    "invocation_id": "3da4921964a54f7f9d9f011e77282426",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 39612,
+      "total_tokens": 41313,
+      "completion_tokens": 1701,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 73.618,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "a4b07b5378f1ae283b34981f1b29d47982f35457abad5d89a246953fd124df5d",
+    "cached": false,
+    "invocation_id": "29827bb9ca7b4a1081e377cdcceef428",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 54246,
+      "total_tokens": 54854,
+      "completion_tokens": 608,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 21.909,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "dba3665f971e9644965bd64bcb38a01b82a9810d7f44b8cb8dad5d8d47361545",
+    "cached": false,
+    "invocation_id": "29827bb9ca7b4a1081e377cdcceef428",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 39811,
+      "total_tokens": 41844,
+      "completion_tokens": 2033,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 88.675,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "628468656b386b28e0552766b38abab0a49529f3102405905a076622ec8f45dd",
+    "cached": false,
+    "invocation_id": "d2684ed48e7c425e92345ea6fa562bda",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 481,
+      "total_tokens": 623,
+      "completion_tokens": 142,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.485,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "383b57a11b7c8c84d1eaadf1f71338abafc3cf20e15f98188f337f46b658910d",
+    "cached": false,
+    "invocation_id": "0596fc268a3748638296784884b15699",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 516,
+      "total_tokens": 663,
+      "completion_tokens": 147,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.502,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "61f42dc631ed6d858bb5b5f999b533349fd0fe1e26accc560eaf84a6659bf12b",
+    "cached": false,
+    "invocation_id": "0596fc268a3748638296784884b15699",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 539,
+      "total_tokens": 682,
+      "completion_tokens": 143,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 60.019,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "9a2b4bcb68339e894893053b25d11d6c6579deb6ebc927c7d026366bfe88ed9b",
+    "cached": false,
+    "invocation_id": "0596fc268a3748638296784884b15699",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 54985,
+      "total_tokens": 56047,
+      "completion_tokens": 1062,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 148.194,
+    "attempts": 2
+  },
+  {
+    "role": "judge",
+    "cache_key": "d72d82e59a767376c5441e8f2a9a9a707770abd4b14cde73fdbb8a91477f43a9",
+    "cached": false,
+    "invocation_id": "0596fc268a3748638296784884b15699",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 40089,
+      "total_tokens": 42370,
+      "completion_tokens": 2281,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 86.939,
+    "attempts": 1
+  },
+  {
+    "role": "judge",
+    "cache_key": "e3eac35956b1c06983c26935fe5403cd97ef8a60e74a0ccfb9a49416413176d5",
+    "cached": false,
+    "invocation_id": "cbdc0f54117245c994fe877fa04e83fa",
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 1799,
+      "total_tokens": 2389,
+      "completion_tokens": 590,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 50.004,
+    "attempts": 1
+  }
+]

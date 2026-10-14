@@ -1,0 +1,361 @@
+{
+  "groups": [
+    {
+      "id": "G01",
+      "dimension": "fulfillment",
+      "importance": 3,
+      "rationale": "节能改造立项用途与三段式结构是任务核心交付范围",
+      "score": 18.0
+    },
+    {
+      "id": "G02",
+      "dimension": "fulfillment",
+      "importance": 2,
+      "rationale": "3号线空载问题与行业标杆参照为用户明确要求的次级模块",
+      "score": 12.0
+    },
+    {
+      "id": "G03",
+      "dimension": "correctness",
+      "importance": 3,
+      "rationale": "产线数据、电价、投资与回本周期等关键数字是立项决策依据，必须准确",
+      "score": 15.0
+    },
+    {
+      "id": "G04",
+      "dimension": "correctness",
+      "importance": 2,
+      "rationale": "ROI测算过程的可复算性、中间步骤准确性与口径一致性",
+      "score": 10.0
+    },
+    {
+      "id": "G05",
+      "dimension": "integrity",
+      "importance": 3,
+      "rationale": "区分给定事实、推导与假设，不虚构数据背景",
+      "score": 15.0
+    },
+    {
+      "id": "G06",
+      "dimension": "narrative",
+      "importance": 3,
+      "rationale": "立项汇报的叙事逻辑、信息主次与受众适配",
+      "score": 15.0
+    },
+    {
+      "id": "G07",
+      "dimension": "visual",
+      "importance": 2,
+      "rationale": "数据对比与测算信息的可读性、图表完整性与视觉表达",
+      "score": 15.0
+    }
+  ],
+  "items": [
+    {
+      "id": "R01",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q01",
+        "Q06"
+      ],
+      "basis": "explicit",
+      "scope": "全篇结构",
+      "evidence_mode": "both",
+      "judge_prompt": "PPT整体遵循'先四条产线能耗对比→再聚焦1号线深挖原因→最后落到节能改造投资回报测算'的叙事顺序，且三个模块均实际存在。允许对比与结论在同一页或分页呈现，允许在深挖与测算之间穿插合理过渡（如诊断过程、方案说明），但对比、深挖、投资回报三个环节缺一不可、顺序不得颠倒（如先讲投资回报再摆对比则不通过）。",
+      "dimension": "fulfillment",
+      "score": 6.75
+    },
+    {
+      "id": "R02",
+      "group_id": "G01",
+      "importance": 2,
+      "source_refs": [
+        "Q01"
+      ],
+      "basis": "explicit",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "作品是一份可直接用于节能改造立项汇报的完整PPT：有明确的主题定位（围绕产线能耗与节能改造立项），内容自洽成篇，而非零散数据堆砌或仅有标题的骨架。页数不作硬性要求，内容体量与'做几页'的轻量立项汇报相称即可。",
+      "dimension": "fulfillment",
+      "score": 4.5
+    },
+    {
+      "id": "R03",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q02",
+        "Q03"
+      ],
+      "basis": "explicit",
+      "scope": "1号线深挖模块",
+      "evidence_mode": "both",
+      "judge_prompt": "PPT将1号线作为核心发现单独突出：明确指出1号线单位产品能耗0.85kWh/件、显著高于其他产线约0.5的水平，并说明排查结论为液压系统老化导致效率下降。两个要素（能耗异常+液压系统老化归因）均须出现；仅罗列数据而未点明1号线异常，或只讲异常未给出液压系统归因，均不通过。",
+      "dimension": "fulfillment",
+      "score": 6.75
+    },
+    {
+      "id": "R05",
+      "group_id": "G02",
+      "importance": 2,
+      "source_refs": [
+        "Q05"
+      ],
+      "basis": "explicit",
+      "scope": "3号线相关内容",
+      "evidence_mode": "text",
+      "judge_prompt": "PPT提及3号线的空载问题：3号线单位能耗不高（0.48kWh/件）但空载能耗偏高，待机状态每小时12kWh，并指出这反映停机流程不规范（或等价表述，如停机管理存在改进空间、建议规范停机流程）。'单位能耗不高但空载偏高'的反差与'12kWh/h'必须出现；归因表述允许等价说法。允许适当展开量化与改进建议，但对空载损失的量化若引入用户未给定的参数（如月待机小时数）须标注为假设，未标注的不通过。",
+      "dimension": "fulfillment",
+      "score": 8.0
+    },
+    {
+      "id": "R06",
+      "group_id": "G02",
+      "importance": 1,
+      "source_refs": [
+        "Q09"
+      ],
+      "basis": "explicit",
+      "scope": "任意位置",
+      "evidence_mode": "both",
+      "judge_prompt": "PPT包含行业标杆单位能耗约0.45kWh/件作为参照，并用于对照（如与四条产线单位能耗对比、作为改造目标参考、或以参考线形式叠加在图表上）。数值须为0.45kWh/件；只写'对标行业先进'而无具体数值不通过。",
+      "dimension": "fulfillment",
+      "score": 4.0
+    },
+    {
+      "id": "R07",
+      "group_id": "G03",
+      "importance": 3,
+      "source_refs": [
+        "Q07"
+      ],
+      "basis": "explicit",
+      "scope": "产线数据呈现处",
+      "evidence_mode": "both",
+      "judge_prompt": "四条产线的给定数据在PPT中呈现且数值准确、归属正确（数据对齐）：1号线月产量80万件、月用电68万kWh、单位能耗0.85kWh/件、空载能耗8kWh/h；2号线95万件、49万kWh、0.52、6；3号线70万件、34万kWh、0.48、12；4号线60万件、31万kWh、0.52、5。允许以表格、图表或要点形式呈现，允许四舍五入到与给定一致的精度；出现数值写错、张冠李戴（如把3号线空载12安到1号线）则不通过。若仅部分指标未展示（如未展示月产量）但展示的数值均正确，可视为满足；核心指标单位能耗与空载能耗须正确。若数据以图表呈现但分类标签无法辨认（如渲染为NaN、undefined等残留），导致数据与产线无法对应，按数据归属无法确认处理，不通过。",
+      "dimension": "correctness",
+      "score": 7.5
+    },
+    {
+      "id": "R08",
+      "group_id": "G03",
+      "importance": 3,
+      "source_refs": [
+        "Q04",
+        "Q08"
+      ],
+      "basis": "explicit",
+      "scope": "投资回报测算模块",
+      "evidence_mode": "text",
+      "judge_prompt": "投资回报测算中使用的关键给定参数准确：工业电价0.75元/kWh、改造投入约120万元、回本周期约18个月，三者均以给定数值出现且未被篡改（如电价写成0.65或0.8、投入写成100万、回本写成12个月均不通过）。",
+      "dimension": "correctness",
+      "score": 7.5
+    },
+    {
+      "id": "R09",
+      "group_id": "G04",
+      "importance": 2,
+      "source_refs": [
+        "Q04",
+        "Q07",
+        "Q08"
+      ],
+      "basis": "explicit",
+      "scope": "投资回报测算模块",
+      "evidence_mode": "text",
+      "judge_prompt": "测算的内部算术可复算且一致：作品展示的每一步乘除运算结果正确（如月节省金额、120万÷月节省的商），中间步骤不得出现算术错误（如120÷6.6写成18.2这类精度错误也算不通过）；最终回本月数须与自身中间步骤自洽——若中间步骤算出约6个月而结论为约18个月，必须有量化或可明确识别的口径调整说明（且该说明符合假设标注要求），无任何说明直接跳跃的不通过。",
+      "dimension": "correctness",
+      "score": 5.0
+    },
+    {
+      "id": "R10",
+      "group_id": "G04",
+      "importance": 1,
+      "source_refs": [
+        "Q07"
+      ],
+      "basis": "explicit",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "除投资回报测算外，作品中其他由给定数据派生的数字（如各线月电费、四线合计用电、产量或用电占比、与标杆0.45的差距百分比、空载每小时浪费金额）计算正确，且与给定原始数据一致。未做此类派生计算时不扣分（视为满足）；做了但算错则不通过。",
+      "dimension": "correctness",
+      "score": 2.5
+    },
+    {
+      "id": "R11",
+      "group_id": "G04",
+      "importance": 1,
+      "source_refs": [
+        "Q04"
+      ],
+      "basis": "explicit",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "同一关键数字（如回本周期、月节省金额）在不同页面出现时措辞与口径一致；'约18个月'与'18个月以内'这类限定词的增减会改变承诺含义，跨页引用时须保持统一，出现口径漂移则不通过。",
+      "dimension": "correctness",
+      "score": 2.5
+    },
+    {
+      "id": "R12",
+      "group_id": "G05",
+      "importance": 3,
+      "source_refs": [
+        "Q04"
+      ],
+      "basis": "explicit",
+      "scope": "投资回报测算模块",
+      "evidence_mode": "text",
+      "judge_prompt": "测算中用户未给定的参数或调节因素（如改造后1号线单位能耗降至什么水平、施工停产损失、投产爬坡期节能打折、年运行小时数）若以具体内容出现，必须被明确标注为假设或测算口径，而非与用户给定事实混同呈现；为对齐给定结论而引入的调节项不得以既成事实的口吻出现。判断要点：能找到'假设''按…测算''预计''估算'等区分性表述，或假设值与给定值在版式/文字上可区分。若作品直接采用用户给定的18个月结论而未自造中间假设，视为满足。",
+      "dimension": "integrity",
+      "score": 7.5
+    },
+    {
+      "id": "R13",
+      "group_id": "G05",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "作品不虚构用户未提供的事实性背景信息：包括但不限于具体产品类型、数据对应的具体年月、工厂/车间/部门名称、汇报人署名、设备品牌型号、历史能耗趋势。封面或尾页的汇报人、部门、日期等若用户未提供，应使用通用占位或省略；把虚构的具体背景（如具体年月、具体部门名）写得像既定事实则不通过。允许标注清楚的假设、合理建议与行业常识性背景。",
+      "dimension": "integrity",
+      "score": 5.0
+    },
+    {
+      "id": "R14",
+      "group_id": "G05",
+      "importance": 1,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "用户给定事实之外的补充性表述（如节能改造的一般性收益、停机流程规范化的管理建议、液压系统老化的常见表现、改造效果的覆盖范围说明）与给定数据和领域常识一致，不与给定事实矛盾，不夸大收益，且建议部分可被识别为建议而非已发生的事实。",
+      "dimension": "integrity",
+      "score": 2.5
+    },
+    {
+      "id": "R15",
+      "group_id": "G06",
+      "importance": 2,
+      "source_refs": [
+        "Q01",
+        "Q06"
+      ],
+      "basis": "explicit",
+      "scope": "全篇",
+      "evidence_mode": "both",
+      "judge_prompt": "叙事符合立项汇报场景：从数据现状到问题定位再到投资决策，结论与建议指向明确（如建议批准1号线液压系统更换、同步规范3号线停机流程），读者能顺畅回答'问题在哪、为什么、花多少钱、多久回本'。各模块之间有承接（如由对比引出1号线异常、由归因引出改造方案），而非互不关联的拼贴。",
+      "dimension": "narrative",
+      "score": 10.0
+    },
+    {
+      "id": "R16",
+      "group_id": "G06",
+      "importance": 1,
+      "source_refs": [
+        "Q02",
+        "Q05"
+      ],
+      "basis": "explicit",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "信息主次分明：1号线及其投资回报是篇幅与视觉上的重心；3号线空载问题作为次要发现简要呈现（符合'提一句'的定位），允许适当展开量化与建议，但篇幅与视觉权重应明显低于核心主线——若次级内容占据整页以上且与主线并列呈现、权重接近核心发现，则不通过。行业标杆作为参照出现但不展开成独立章节。",
+      "dimension": "narrative",
+      "score": 5.0
+    },
+    {
+      "id": "R17",
+      "group_id": "G07",
+      "importance": 2,
+      "source_refs": [
+        "Q06",
+        "Q07"
+      ],
+      "basis": "explicit",
+      "scope": "产线对比模块",
+      "evidence_mode": "visual",
+      "judge_prompt": "四条产线的能耗对比以易于横向比较的方式呈现（表格、条形图、对比卡片等均可），读者一眼能看出1号线单位能耗显著高于其他三线——例如通过对1号线的视觉强调（高亮、色彩、排序）或清晰的数值并列。若对比信息散落在多处需要读者自行拼凑，或所有产线一视同仁毫无重点，则不通过。",
+      "dimension": "visual",
+      "score": 4.285714285714286
+    },
+    {
+      "id": "R18",
+      "group_id": "G07",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "visual",
+      "judge_prompt": "整体可读性：文字与背景对比充足、正文字号在投影场景下可辨认、单页信息密度适中（关键数字不被大段文字淹没）；不得出现大面积文字重叠、相互遮挡或溢出导致关键信息无法辨认的情况，图表与周边文字应有足够空间各自清晰可读。存在上述严重可读性问题时，即使内容正确也不通过。",
+      "dimension": "visual",
+      "score": 4.285714285714286
+    },
+    {
+      "id": "R19",
+      "group_id": "G07",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇图表",
+      "evidence_mode": "visual",
+      "judge_prompt": "作品若使用图表，其坐标轴、分类标签、图例、数据标签与单位标注须完整渲染且可读：不得出现NaN、undefined、占位符等渲染残留导致数据归属无法辨认；图表标题与单位（如kWh、万元、个月）应清晰可辨，单位符号书写规范（如kWh而非KWH）。未使用图表的页面不因缺少这些元素扣分；图表存在但不影响数据归属理解的小瑕疵（如刻度略稀疏）不视为不通过。",
+      "dimension": "visual",
+      "score": 4.285714285714286
+    },
+    {
+      "id": "R20",
+      "group_id": "G07",
+      "importance": 1,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "visual",
+      "judge_prompt": "视觉层级服务阅读路径：每页有明确的标题或结论句，重点数字（如0.85、120万、18个月）在视觉上可快速定位；全篇配色与版式风格统一，不强制特定配色或模板，允许不同设计风格，但不得出现风格杂乱到干扰阅读的情况。",
+      "dimension": "visual",
+      "score": 2.142857142857143
+    }
+  ],
+  "schema_version": 1,
+  "status": "approved",
+  "case_id": "03",
+  "signature": "25aec71fc7d5a7faf102af8876df6fe0bf8b97731ad295d18b20dd2dd1f53940",
+  "provenance": {
+    "case_id": "03",
+    "prompt_version": "2026-10-10.4",
+    "prompt_fingerprint": "bf1a0fdc0778829205ceeb8ecbfe471da148e65b4e01840b23075c664fe41dd8",
+    "validator_version": 6,
+    "config_hash": "a57872690792e5c7fa3bafb4f6b4a35dd98f005b2877585df04f6b9003d6d9f1",
+    "source_hash": "f4fbe496938af45cad16c8fb8616de42b1a84452abcfae3f9afc4e5273f6c6eb",
+    "candidates": {
+      "A": {
+        "sha256": "955fb1fa5c1c8faeeba214060bf4fe806e799bb49babaa47a714ab0ae8701bda",
+        "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+        "soffice": "/Users/liangyuanzhi/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+        "dpi": 150,
+        "backend": "pymupdf",
+        "pymupdf": "1.26.5",
+        "render_version": 2,
+        "font_inventory": "58062b64b7cf6fea132ccf7d6900c1f24560784331fb5329d28580a11dc60212"
+      },
+      "B": {
+        "sha256": "d8af8a113e8b8cca0e2f822d21cfd91de13a4eaa5d915251ab087cbb50980e99",
+        "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+        "soffice": "/Users/liangyuanzhi/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+        "dpi": 150,
+        "backend": "pymupdf",
+        "pymupdf": "1.26.5",
+        "render_version": 2,
+        "font_inventory": "58062b64b7cf6fea132ccf7d6900c1f24560784331fb5329d28580a11dc60212"
+      }
+    }
+  },
+  "dimension_weights": {
+    "fulfillment": 30,
+    "correctness": 25,
+    "integrity": 15,
+    "narrative": 15,
+    "visual": 15
+  },
+  "rubric_hash": "b05ad61b9fdbb51f892bf54e5d4a28106ea12f1177004a82fd54b61f68d78c62"
+}

@@ -1,0 +1,89 @@
+{
+  "stage": "formal_judging_in_progress",
+  "evidence": {
+    "A": {
+      "complete": true,
+      "pages": 13
+    },
+    "B": {
+      "complete": true,
+      "pages": 13
+    }
+  },
+  "spot_checks": [
+    {
+      "candidate": "A",
+      "page": 13,
+      "finding": "Rendered crop visibly shows two text lines intersecting, agreeing with independent observation."
+    },
+    {
+      "candidate": "B",
+      "page": 2,
+      "pending_check": "Judge must distinguish background benchmark values from task-specified achievements; no expected score injected."
+    },
+    {
+      "candidate": "A",
+      "criterion": "R14",
+      "answer": "no",
+      "qa": "The actual supplied crop confirms line overlap. Some named character-to-character pairs in the explanation do not match horizontal positions; severity is overstated. Keep original verdict and note semantic explanation limitation. This is not a measured visual recall result.",
+      "raw_answer_modified": false
+    },
+    {
+      "candidate": "A",
+      "criteria": [
+        "R02",
+        "R04",
+        "R07"
+      ],
+      "qa": "Judge rejects page-local missing-content claims after finding required information elsewhere in the deck."
+    },
+    {
+      "candidate": "B",
+      "criteria": [
+        "R02",
+        "R03",
+        "R07"
+      ],
+      "qa": "Formal judge correctly rejects page02 background figures as contradictions of required team facts; cross-page coverage permitted."
+    },
+    {
+      "candidate": "B",
+      "criterion": "R06",
+      "answer": "no",
+      "qa": "Potential scope overreach: a clinical comparison page is called topic_mismatch despite whole-deck scope. Preserve for cross-candidate review, then inspect source/page; no score changed."
+    },
+    {
+      "candidate": "A",
+      "criterion": "R15",
+      "answer": "yes",
+      "qa": "Required inspection output now valid. Explanation falsely denies the confirmed page13 overlap, although overlap is explicitly excluded from this hierarchy criterion. Verdict scope and rationale accuracy must be reported separately; do not claim all explanations correct."
+    }
+  ],
+  "format_retry_cause": {
+    "requests": [
+      29,
+      30,
+      36
+    ],
+    "field": "unit",
+    "model_emitted_key": "单位",
+    "recovered_by_existing_retries": true
+  },
+  "pipeline_changes_during_run": true,
+  "human_labels_used_for_qa": false,
+  "actual_maas_requests_at_checkpoint": 39,
+  "visual_contract_retries": {
+    "requests": [
+      54,
+      55,
+      56
+    ],
+    "outcomes": [
+      "extra supplied crop falsely listed as independently inspected",
+      "inspection IDs duplicated into ordinary resolutions",
+      "recovered through third allowed attempt"
+    ],
+    "last_status": "success"
+  },
+  "contract_repair": "contract-repair.json"
+}

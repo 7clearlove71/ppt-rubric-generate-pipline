@@ -1,0 +1,48 @@
+{
+  "phase": "discarded v2.2 free-design baseline",
+  "cases": {
+    "03": {
+      "status": "approved",
+      "items": 13,
+      "version": "2026-10-14.contract-v2.2",
+      "rubric_hash": "06c220b49406f518542fe40b4bbaee9b3aa57d57f90da5cb0b3260fc96d9adbd"
+    },
+    "05": {
+      "status": "approved",
+      "items": 14,
+      "version": "2026-10-14.contract-v2.2",
+      "rubric_hash": "7a5486201552ab1842108495f479bfb0591f900fd73812d86e0ea4f2fb93acac"
+    },
+    "02": {
+      "status": "approved",
+      "items": 16,
+      "version": "2026-10-14.contract-v2.2",
+      "rubric_hash": "f7a049f3a59ffaa23afb4ba5009a41d6bb8f7e3c90b8bcc76ab73ea608ed413d"
+    },
+    "10": {
+      "status": "approved",
+      "items": 15,
+      "version": "2026-10-14.contract-v2.2",
+      "rubric_hash": "6a1033b49c0cd101023a411eb6058f72a4f71902a387c6ca8855e53c287abd3d"
+    },
+    "09": {
+      "status": "approved",
+      "items": 16,
+      "version": "2026-10-14.contract-v2.2",
+      "rubric_hash": "c6d3f20c696b34d5f09c9d47f9f7265a72e463b7e8817fcd26e3da20f13af487"
+    },
+    "01": {
+      "status": "approved",
+      "items": 12,
+      "version": "2026-10-14.contract-v2.2",
+      "rubric_hash": "481eec093d3315a39b6c287ba66169487d98a2fc41c7f6b1f73c0694987e69ed"
+    },
+    "06": {
+      "status": "approved",
+      "items": 14,
+      "version": "2026-10-14.contract-v2.2",
+      "rubric_hash": "fa022a56eebbe8438e1377e3ff91d00ff01a27ee9e705be3fbdab52f295c11ea"
+    }
+  },
+  "eligibility": "Not used for final scoring; source-only independent QA found semantic defects despite automated approval."
+}

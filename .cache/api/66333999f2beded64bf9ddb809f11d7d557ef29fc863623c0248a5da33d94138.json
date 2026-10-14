@@ -1,0 +1,39 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      7
+    ],
+    "evidence": "第7页（资金用途页）明确列出了五项资金投向：厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万，并在每一项下方用文字标注了与三年规划的具体对应关系：厂房建设对应第一年建成800平米竹编工坊，设备采购对应第二年扩产至年产10万件，培训经费对应第一年培训50名编织人员，品牌推广对应第三年品牌建设与入驻电商平台。左侧环形图与右侧列表形成互补，条目级映射清晰，无与规划完全无关的大额支出项，也未出现仅笼统声称对应而无具体映射的情况。",
+    "evidence_ids": [
+      "p7_e1",
+      "p7_e2",
+      "p7_e3",
+      "p7_e4",
+      "p7_e5",
+      "p7_e6",
+      "p7_e7",
+      "p7_e8",
+      "p7_e9",
+      "p7_e10",
+      "p7_e11"
+    ],
+    "resolutions": [],
+    "additional_observations": [],
+    "inspection_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 30860,
+    "total_tokens": 31071,
+    "completion_tokens": 211,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 118.172,
+  "attempts": 1
+}

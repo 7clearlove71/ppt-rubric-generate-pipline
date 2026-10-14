@@ -1,0 +1,102 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      6,
+      7
+    ],
+    "evidence": "第6页和第7页存在多处正文与红色标注文字的实际叠印，导致阅读路径混乱、信息层级冲突，评审组难以快速区分正文结论与对应关系提示。具体包括：第6页中'76.5%'与红色标注'〔对应第一部分：完工率'叠印（p6_overlap_c650de81d3局部放大图显示'76.5%'的'5%'笔画与红色标注的'〔对应'发生相交）；'91.2%'与红色标注'〔对应第三部分：长效维护机制满意率'叠印（p6_overlap_5d36c1cd59局部放大图显示'91.2%'的'1.2%'与红色标注起笔处重叠）；'93.5%'与红色标注'〔对应第三部分：需求匹配满意率'叠印（p6_overlap_e72bdce6f3局部放大图显示'93.5%'的'3.5%'与红色标注'〔对应'相交）。第7页中'100.0%'与红色标注'〔对应问题（一）｜责任：市住建局改造办、属地街道〕'叠印（p7_overlap_7e1ff231d9局部放大图显示'100.0%'的'0.0%'与红色标注'〔对应'重叠）；'90.0%'与红色标注'〔对应问题（二）｜责任：市财政局、市住建局〕'叠印（p7_overlap_dc3257bdf8局部放大图显示'90.0%'的'0.0%'与红色标注'〔对应'重叠）；'长效维护机制满意率提升至'与红色标注'〔对应问题（三）｜责任：属地街道、市住建局〕'叠印（p7_overlap_242da0dfed局部放大图显示'长'字起笔与红色标注'〔'相交）。这些叠印并非单纯的bbox候选相交，而是实际字形笔画重叠，造成正文数据与对应标注在同一空间竞争，破坏了视觉层级和阅读路径。",
+    "evidence_ids": [
+      "p6_overlap_c650de81d3",
+      "p6_overlap_5d36c1cd59",
+      "p6_overlap_e72bdce6f3",
+      "p7_overlap_7e1ff231d9",
+      "p7_overlap_dc3257bdf8",
+      "p7_overlap_242da0dfed"
+    ],
+    "resolutions": [],
+    "inspection_resolutions": [],
+    "additional_observations": [
+      {
+        "page": 6,
+        "quote": "76.5%与红色标注〔对应第一部分：完工率 92.6% 、在建 5 个〕发生笔画重叠",
+        "location": "第6页左上象限问题01下方",
+        "statement": "正文'76.5%'与红色对应标注文字实际叠印，导致数据与标注难以区分",
+        "kind": "visual",
+        "failure_mode": "visual_hierarchy",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 6,
+        "quote": "91.2%与红色标注〔对应第三部分：长效维护机制满意率 82.7% 〕发生笔画重叠",
+        "location": "第6页左下象限问题03下方",
+        "statement": "正文'91.2%'与红色对应标注文字实际叠印，句号与标注起笔相交",
+        "kind": "visual",
+        "failure_mode": "visual_hierarchy",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 6,
+        "quote": "93.5%与红色标注〔对应第三部分：需求匹配满意率 86.1% 〕发生笔画重叠",
+        "location": "第6页右下象限问题04下方",
+        "statement": "正文'93.5%'与红色对应标注文字实际叠印，数字与标注起笔相交",
+        "kind": "visual",
+        "failure_mode": "visual_hierarchy",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 7,
+        "quote": "100.0%与红色标注〔对应问题（一）｜责任：市住建局改造办、属地街道〕发生笔画重叠",
+        "location": "第7页左上象限措施01下方",
+        "statement": "正文'100.0%'与红色对应标注文字实际叠印，百分号与标注括号相交",
+        "kind": "visual",
+        "failure_mode": "visual_hierarchy",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 7,
+        "quote": "90.0%与红色标注〔对应问题（二）｜责任：市财政局、市住建局〕发生笔画重叠",
+        "location": "第7页右上象限措施02下方",
+        "statement": "正文'90.0%'与红色对应标注文字实际叠印，百分号与标注括号相交",
+        "kind": "visual",
+        "failure_mode": "visual_hierarchy",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 7,
+        "quote": "长效维护机制满意率提升至与红色标注〔对应问题（三）｜责任：属地街道、市住建局〕发生笔画重叠",
+        "location": "第7页左下象限措施03下方",
+        "statement": "正文'长效维护机制满意率提升至'与红色对应标注文字实际叠印，'长'字与标注括号相交",
+        "kind": "visual",
+        "failure_mode": "visual_hierarchy",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 70314,
+    "total_tokens": 71407,
+    "completion_tokens": 1093,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 110.182,
+  "attempts": 1
+}

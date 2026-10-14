@@ -1,0 +1,191 @@
+[
+  {
+    "request_id": 1,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "3f6b01ce14781d094ed1497df8ba2946058f12358c6ede32d10f6ed9892ed2e2",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3019,
+      "total_tokens": 3383,
+      "completion_tokens": 364,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 10.377
+  },
+  {
+    "request_id": 2,
+    "role": "generator",
+    "model": "glm-5.2",
+    "cache_key": "b64d07bf2fc93abba6d675715eace10a693f484bd4cd49f855dc908a19ed0a78",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 4574,
+      "total_tokens": 6460,
+      "completion_tokens": 1886,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 43.163
+  },
+  {
+    "request_id": 3,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "c224a2cfb55001104d4eab10ecfd0b3d077b6d9584414f9997773de418cd9bef",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3306,
+      "total_tokens": 3511,
+      "completion_tokens": 205,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 6.202
+  },
+  {
+    "request_id": 4,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "1c7ba6a549e05c306cb859cbc5f33cd260b47110bde463922f77ae22211c16ab",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3049,
+      "total_tokens": 3531,
+      "completion_tokens": 482,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 13.139
+  },
+  {
+    "request_id": 5,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "4e2cd27eecf185ddbbc99207673bd4412b44729cc09c4c25102a136a48e7a033",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3839,
+      "total_tokens": 4485,
+      "completion_tokens": 646,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 18.769
+  },
+  {
+    "request_id": 6,
+    "role": "generator",
+    "model": "glm-5.2",
+    "cache_key": "229dc46d9ff8338305cd0735eca0ef0dbec060ba76d6578f0b7f68ba48cc4ece",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 5761,
+      "total_tokens": 7690,
+      "completion_tokens": 1929,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 43.865
+  },
+  {
+    "request_id": 7,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "8a5751bed637a1cadd08bb70db2aa0a15d8dd203e36292d683b6224f06359cc8",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3983,
+      "total_tokens": 4110,
+      "completion_tokens": 127,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 4.495
+  },
+  {
+    "request_id": 8,
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "b220bee73faa6a8596720089fe0cc0f4e895895d3d331362cdfc916941c8a6ba",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 3727,
+      "total_tokens": 4598,
+      "completion_tokens": 871,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 24.109
+  },
+  {
+    "request_id": 9,
+    "role": "generator",
+    "model": "glm-5.2",
+    "cache_key": "a18f1dc3e05eaea3031d07f65830d35754b579c166a69cddafc4fe911e836569",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 5887,
+      "total_tokens": 7735,
+      "completion_tokens": 1848,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 42.427
+  }
+]

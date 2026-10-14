@@ -1,0 +1,31 @@
+{
+  "status": "authorized",
+  "bailian": {
+    "authorized_cap": 120,
+    "actual_requests": 0,
+    "remaining_requests": 120,
+    "journals": [
+      "rubrics/requests.json"
+    ],
+    "status_counts": {},
+    "reported_tokens": 0,
+    "usage_missing_requests": 0,
+    "currency_cost_estimate": null
+  },
+  "maas": {
+    "authorized_cap": 900,
+    "actual_requests": 106,
+    "remaining_requests": 794,
+    "journals": [
+      "judgments/requests.json"
+    ],
+    "status_counts": {
+      "success": 77,
+      "failed": 28,
+      "started": 1
+    },
+    "reported_tokens": 3491092,
+    "usage_missing_requests": 5,
+    "currency_cost_estimate": null
+  }
+}

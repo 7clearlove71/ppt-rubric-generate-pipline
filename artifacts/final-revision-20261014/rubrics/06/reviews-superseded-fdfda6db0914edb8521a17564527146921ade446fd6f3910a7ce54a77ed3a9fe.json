@@ -1,0 +1,10 @@
+[
+  {
+    "revision": 0,
+    "review": {
+      "approved": true,
+      "issues": [],
+      "summary": "rubric与来源、requirements、fixed criteria一致，无实质错误。各条目边界清晰，无双重扣分；通过条件与例外相容；未强制额外阈值；允许合理假设与示意数据；视觉标准分工明确；未编造问题。"
+    }
+  }
+]

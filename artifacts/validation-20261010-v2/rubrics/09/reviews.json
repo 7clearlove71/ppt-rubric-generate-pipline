@@ -1,0 +1,84 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "G02: empty scoring group",
+      "Q01: duplicate explicit scoring in fulfillment ['R01', 'R03'] and correctness ['R06']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 1,
+    "structural_errors": [
+      "Q01: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R06']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 2,
+    "structural_errors": [],
+    "normalizations": [],
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R01",
+          "R08",
+          "R10"
+        ],
+        "Q02": [
+          "R02",
+          "R08",
+          "R10"
+        ],
+        "Q03": [
+          "R05",
+          "R07"
+        ],
+        "Q04": [
+          "R04",
+          "R06",
+          "R07"
+        ],
+        "Q05": [
+          "R12",
+          "R14",
+          "R15"
+        ],
+        "Q06": [
+          "R09"
+        ],
+        "Q07": [
+          "R13"
+        ],
+        "Q08": [
+          "R03",
+          "R11"
+        ]
+      },
+      "summary": "rubric整体合规：8项需求均有实质覆盖，关键数据与叙事要素由correctness条目承担存在且准确的检查，融合、诚信、叙事、视觉各维度分工清晰，未发现重复计分、无依据硬阈值或虚构来源要求。R01/R02均涉数据支撑叙事但分别考核整体融合与情怀落数两个不同目标，判据可区分；R07明确允许标注清楚的派生测算，未排斥合理常识与占位；R11/R14/R15均有可观察判据且允许多种有效实现。"
+    },
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "未发现有依据的反例"
+    }
+  }
+]

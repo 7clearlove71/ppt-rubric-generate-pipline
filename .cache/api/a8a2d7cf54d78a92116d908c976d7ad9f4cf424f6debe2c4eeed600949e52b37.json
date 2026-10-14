@@ -1,0 +1,95 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 1,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "页眉'2026年6月/管理层决策会'、主标题'产品安全舆情危机应对与管理层决策汇报'、副标题'48小时决策窗口内的事实、影响、声明与行动路线'、正文行及'48小时/事实/危机应对'三张卡片内大小文字均清晰可辨，无叠印、截断、对比不足或NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "封面层级清晰：页眉→汇报目标→主标题→副标题→说明行→三张并列卡片，主次与并列关系明确，阅读顺序唯一，无错误对应",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "标题、左侧时间线四个节点（6月10日/T+24/T+36/T+48小时）及描述、右侧'传播链'四个节点框与箭头、'已核实事实''待复核事项'正文、底部质疑期提示条及来源小字均可辨认；局部放大图确认'已核实事实'两段文字仅正常换行，无叠印或截断",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "左列时间线与右列传播链+事实/待复核事项形成清晰两栏分区，传播链用框+箭头编码方向，底部整宽结论条收束，主次、并列与阅读顺序明确，无错误对应",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              3
+            ],
+            "evidence": "顶部四张KPI卡片（局部放大确认'破万/视频在24小时内转发''40通/近三天相关来电'数字与单位仅邻近无叠印）、左侧舆情侧/客服侧/经营侧文字、条形图类别标签与条端数值72.0%/60.0%/35.0%/15.0%均可读；但'影响量化指标（%）'图X轴刻度标签'0.0% 20.0% 40.0% 60.0% 80.0%'实际相互叠印粘连（图底部'0.0%20.0%40.0%60.0%80.0%'处相邻标签笔画相接），需猜读",
+            "defect": {
+              "key": "doc_c81ec5f76a0855b17040f5a2/page3/影响量化指标图X轴刻度标签",
+              "description": "'影响量化指标（%）'条形图X轴五个刻度标签（0.0%/20.0%/40.0%/60.0%/80.0%）在图底部相互叠印粘连，相邻标签笔画相接，轴刻度不可直接辨认需猜读"
+            }
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "在内容可读前提下组织清晰：标题下四张KPI卡片并列，左列舆情侧/客服侧/经营侧三块与右侧量化图两栏对应，底部联动看板指标条收束，阅读顺序与主次关系明确；轴标签叠印属可读性问题，不在本条重复处罚",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 4557,
+    "completion_tokens_details": {
+      "reasoning_tokens": 3815,
+      "text_tokens": 742
+    },
+    "prompt_tokens": 6674,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 5488,
+      "text_tokens": 1186
+    },
+    "total_tokens": 11231
+  },
+  "elapsed_seconds": 120.01,
+  "attempts": 1
+}

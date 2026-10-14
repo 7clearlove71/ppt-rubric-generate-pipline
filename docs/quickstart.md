@@ -1,6 +1,6 @@
 # 安装与快速开始
 
-当前发布的是研究工具，协议为 contract-v2.3，尚未通过生产质量验收。先用离线示例验证安装，再用自己的数据与 API 凭据生成和评分。本文命令均从仓库根目录执行，适用于 macOS/Linux；Windows 建议使用 WSL。
+当前发布的是研究工具，协议为 contract-v2.3，尚未通过生产质量验收。先用离线示例验证安装；继续原项目请按 [新机接续](new-machine.md) 迁移清单，再配置自己的 API 凭据。本文命令均从仓库根目录执行，适用于 macOS/Linux；Windows 建议使用 WSL。
 
 ## 1. 安装
 
@@ -104,7 +104,7 @@ python -m ppt_rubric contract export \
 
 ## 常见问题
 
-- **找不到 manifest**：先 ingest 自己的数据，公开仓库不含原始评测集。
+- **找不到 manifest**：原项目运行 `python scripts/prepare_new_machine.py` 并使用 `--manifest data/manifest-local.json`；自备数据先 ingest。
 - **找不到 soffice / 字体变化**：配置本机 LibreOffice 路径及字体，并抽查渲染页；字体替代可能改变布局。
 - **401/403 或模型不存在**：检查供应商域名、账户权限、模型名称与对应环境变量，不向他人发送密钥。
 - **429、超时或输出校验失败**：保留日志，查看限流/传输熔断；核算已有消费后才恢复。失败或模型分歧不应通过无限重试消除。

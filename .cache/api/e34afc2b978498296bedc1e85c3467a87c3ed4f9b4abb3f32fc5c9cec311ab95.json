@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "evidence": "行业标杆0.45 kWh/件在多处明确出现并用于对照：① 页2柱状图以绿色虚线标注\"行业标杆 0.45\"，与四线单位能耗0.85/0.52/0.48/0.52直接对比，且文字说明\"标杆 0.45\"；② 页3标题区写明\"1号线单位能耗0.85 kWh/件达标杆1.89倍\"，图表同样以绿色虚线标出标杆0.45；③ 页4右侧\"行业标杆参照\"明确写\"0.45 kWh/件\"；④ 页5底部数据来源注明\"行业标杆 0.45 kWh/件\"，且诚实边界指出改造后0.74仍高于标杆0.45；⑤ 页7立项后目标写\"逐步向标杆 0.45 kWh/件收敛\"。数值精确为0.45 kWh/件，且均以参照线或文字对照形式用于分析。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23321,
+    "total_tokens": 23562,
+    "completion_tokens": 241,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.75,
+  "attempts": 1
+}

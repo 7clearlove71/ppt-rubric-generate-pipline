@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "text_seen": [
+      "省级文旅主管部门评审、省级人民政府公",
+      "技艺体系：四阶段工序链条",
+      "选竹伐竹"
+    ],
+    "overlapping": true,
+    "overlap_objects": [
+      "省级文旅主管部门评审、省级人民政府公与技艺体系：四阶段工序链条有笔画相交"
+    ],
+    "description": "图像包含三层文字。最上层为浅灰色文字'省级文旅主管部门评审、省级人民政府公'。中间层为黑色粗体文字'技艺体系：四阶段工序链条'，与上层浅灰色文字在垂直方向上有明显重叠，黑色笔画穿过浅灰色文字区域，形成相交。最下层为黑色文字'选竹伐竹'，位于中间层文字左下方，与中间层文字无笔画相交。右下角有一块灰色圆角矩形区域。背景为浅米色。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 225,
+    "total_tokens": 390,
+    "completion_tokens": 165,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 4.696,
+  "attempts": 1
+}

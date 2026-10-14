@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "全篇使用图表的页面均满足R19要求。页2-7的所有图表：坐标轴（如页2纵轴'kWh/件'、横轴'1-4号线'；页5横轴'月份'、纵轴'万元'）、分类标签（产线编号、敏感性情形）、图例（颜色说明、线型说明）、数据标签（0.85/0.52等数值及百分比）均完整可读；单位标注规范使用'kWh/件''万kWh/月''万元''个月'等，kWh书写正确（非KWH）。未发现NaN、undefined、占位符等渲染残留。页1、8无图表，不适用本条。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 24809,
+    "total_tokens": 24987,
+    "completion_tokens": 178,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 16.244,
+  "attempts": 1
+}

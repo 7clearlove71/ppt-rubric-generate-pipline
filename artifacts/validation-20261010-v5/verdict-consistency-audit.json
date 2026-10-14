@@ -1,0 +1,15 @@
+{
+  "scope": "completed reports only",
+  "policy": "Diagnostic flags require review; raw scores unchanged. Absence of a flag does not prove semantic consistency.",
+  "flags": [
+    {
+      "file": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261010-v3/judgments/03/B.json",
+      "case_id": "03",
+      "candidate_id": "B",
+      "rubric_id": "R13",
+      "answer": "yes",
+      "evidence": "封面页（页1）与尾页（页8）的汇报单位使用\"设备与能源管理部门\"，日期使用\"2026年9月\"，均为用户未提供的虚构具体信息，且未以假设/占位形式标注，写得像既定事实（如\"汇报单位：设备与能源管理部门\"\"2026年9月\"）。这违反了R13关于不虚构用户未提供的具体背景信息的要求。其他页面也存在类似问题（如页2-7的\"数据来源\"标注\"一个月四条产线能耗实测数据\"虽与prompt一致，但页脚等位置的日期、部门名仍属虚构）。因此全篇存在虚构具体背景信息且未作占位说明的情况，本条判no。",
+      "finding": "explicit_no_in_evidence_with_structured_yes"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      {
+        "type": "clarification",
+        "text": "两个候选的verdict均判定为yes（通过），且判定依据与criterion的排除规则一致：均将'换来''支撑''验证'等表述认定为合理关联，而非确定唯一因果；均未发现'完全由'等强因果断言或单年数据包装成趋势/排名的证据。A的判定更侧重逐页引用原文标注与视觉箭头是否构成因果暗示；B的判定更侧重修辞反证与逻辑限定词（'支撑增长质量''前置条件''共同验证'）的解读。两者对同一类表述（如'靠''换来'）的定性一致——均视为合理关联而非过度因果，不存在会改变yes/no答案的实质冲突。",
+        "evidence_refs": {
+          "A": [
+            "p5_e1",
+            "p5_e13",
+            "p6_e1",
+            "p7_e1",
+            "p7_e2",
+            "p7_e18"
+          ],
+          "B": [
+            "p5_e1",
+            "p3_e1",
+            "p3_e24",
+            "p6_e14",
+            "p7_e1",
+            "p7_e18"
+          ]
+        }
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 49011,
+    "total_tokens": 49245,
+    "completion_tokens": 234,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 245.335,
+  "attempts": 2
+}

@@ -1,0 +1,339 @@
+{
+  "parsed": {
+    "page": 5,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "资金到位 38520 万元、到位率 90.0% ，已支出 33127 万元、执行率 86.0% ，账面积余 5393 万元。",
+        "location": "页面上部，标题下方",
+        "statement": "页面顶部汇总句呈现资金核心数据，与右侧关键指标面板及底部公式说明形成三重呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "38520",
+            "unit": "万元",
+            "subject": "资金到位",
+            "denominator": "不适用",
+            "time_origin": "2026年8月31日"
+          },
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "到位率",
+            "denominator": "计划总投资",
+            "time_origin": "2026年8月31日"
+          },
+          {
+            "value": "33127",
+            "unit": "万元",
+            "subject": "已支出",
+            "denominator": "不适用",
+            "time_origin": "2026年8月31日"
+          },
+          {
+            "value": "86.0",
+            "unit": "%",
+            "subject": "执行率",
+            "denominator": "实际到位",
+            "time_origin": "2026年8月31日"
+          },
+          {
+            "value": "5393",
+            "unit": "万元",
+            "subject": "账面积余",
+            "denominator": "不适用",
+            "time_origin": "2026年8月31日"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "计划总投资 42800 万元",
+        "location": "右侧关键指标面板第一行",
+        "statement": "计划总投资额明确标注，含四级财政及社会、居民出资的口径说明",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "42800",
+            "unit": "万元",
+            "subject": "计划总投资",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "到位率 90.0% ，缺口 4280 万元",
+        "location": "右侧关键指标面板第二行",
+        "statement": "到位缺口4280万元与计划总投资42800万元、实际到位38520万元的数值关系可验证：42800-38520=4280",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "4280",
+            "unit": "万元",
+            "subject": "到位缺口",
+            "denominator": "不适用",
+            "time_origin": "2026年8月31日"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "42800",
+            "right": "38520",
+            "reported": "4280",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "万元",
+            "left_quote": "计划总投资 42800 万元",
+            "right_quote": "实际到位资金 38520 万元",
+            "reported_quote": "到位率 90.0% ，缺口 4280 万元",
+            "relation_quote": "缺口",
+            "meaning": "计划总投资减实际到位等于到位缺口"
+          }
+        ]
+      },
+      {
+        "quote": "支出执行率 86.0%",
+        "location": "右侧关键指标面板第三行",
+        "statement": "支出执行率基于已支出33127万元除以实际到位38520万元计算，结果可验证",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "86.0",
+            "unit": "%",
+            "subject": "支出执行率",
+            "denominator": "实际到位",
+            "time_origin": "2026年8月31日"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "33127",
+            "right": "38520",
+            "reported": "86.0",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "%",
+            "left_quote": "已支出资金 33127 万元",
+            "right_quote": "实际到位资金 38520 万元",
+            "reported_quote": "支出执行率 86.0%",
+            "relation_quote": "支出执行率＝已支出 ÷ 实际到位 ×100%",
+            "meaning": "已支出占实际到位的百分比"
+          }
+        ]
+      },
+      {
+        "quote": "结余率 14.0%",
+        "location": "右侧关键指标面板第四行",
+        "statement": "结余率基于账面积余5393万元除以实际到位38520万元计算，5393÷38520≈14.0%",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "14.0",
+            "unit": "%",
+            "subject": "结余率",
+            "denominator": "实际到位",
+            "time_origin": "2026年8月31日"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "5393",
+            "right": "38520",
+            "reported": "14.0",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "%",
+            "left_quote": "账面积余资金 5393 万元",
+            "right_quote": "实际到位资金 38520 万元",
+            "reported_quote": "结余率 14.0%",
+            "relation_quote": "结余率＝账面积余 ÷ 实际到位 ×100%",
+            "meaning": "账面积余占实际到位的百分比"
+          }
+        ]
+      },
+      {
+        "quote": "户均投入 1.9 万元 按已到位资金 ÷ 已完成户数计算",
+        "location": "右侧关键指标面板第五行",
+        "statement": "户均投入给出计算口径但未提供已完成户数具体数值，无法在本页独立验证1.9万元的计算过程",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "1.9",
+            "unit": "万元",
+            "subject": "户均投入",
+            "denominator": "已完成户数",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "比率口径（全篇一致）：资金到位率＝实际到位 ÷ 计划总投资 ×100% ＝ 90.0% ；支出执行率＝已支出 ÷ 实际到位 ×100% ＝ 86.0% ；结余率＝账面积余 ÷ 实际到位 ×100% ＝ 14.0% 。金额单位为万元，比率保留一位小数。",
+        "location": "页面底部注释区域",
+        "statement": "底部明确声明比率口径全篇一致，并给出三个比率的计算公式、结果及单位精度说明，与右侧关键指标面板完全对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：专项资金决算表、财政拨付台账",
+        "location": "页面左下角",
+        "statement": "数据来源标注为专项资金决算表和财政拨付台账",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据截至 2026 年 8 月 31 日 · 比率保留一位小数 · 情景数据",
+        "location": "页面右下角",
+        "statement": "数据截止时间明确为2026年8月31日，并标注情景数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "二、资金使用情况 ｜ 05 / 13",
+        "location": "页面右上角",
+        "statement": "页面标识为第二部分资金使用情况，页码5/13，与需求中的第二个纲目对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#2 资金使用情况"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "情景数据",
+        "location": "页面右下角，与数据截至时间同行",
+        "statement": "页面右下角明确标注情景数据，提示本页数值为假设性数据而非实际统计数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "×100% ＝ 90.0% ；支出执行率",
+        "location": "底部公式注释行，局部放大视图p5_overlap_de119bdf1f/p5_overlap_e462bf1400/p5_overlap_fce797e6cc区域",
+        "statement": "经局部放大核查，底部两行注释文字存在上下行紧密排版，×100%、90.0%等符号与下一行首字在垂直方向有极小间距，但笔画未实际重叠，属于正常行距范围内的相邻排版，不构成真实遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "比率口径（全篇一致）：资金到位率＝实际到位 ÷ 结余率＝账面积余 ÷ 实际到位 ×100% ＝ 14.0% 。",
+        "location": "底部公式注释行，局部放大视图p5_overlap_0f2bb1525e/p5_overlap_2dbdec398d/p5_overlap_9e994c45ad区域",
+        "statement": "经局部放大核查，第一行结尾的÷、×100%、14.0%等字符与第二行首字在垂直投影上有微小重叠区域，但实际字形笔画未发生叠印，属于两行文字bbox因行距紧凑而产生的相交，不构成真实遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "42800 / -4280 / 38520 / -33127 / 5393",
+        "location": "页面中部瀑布图/柱状图区域",
+        "statement": "图表展示计划总投资42800、到位缺口-4280、实际到位38520、已支出-33127、账面积余5393五个节点，数值标签清晰可读，颜色区分明确（正值深蓝、负值红色）",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "42800",
+            "unit": "万元",
+            "subject": "计划总投资",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "-4280",
+            "unit": "万元",
+            "subject": "到位缺口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "38520",
+            "unit": "万元",
+            "subject": "实际到位",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "-33127",
+            "unit": "万元",
+            "subject": "已支出",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "5393",
+            "unit": "万元",
+            "subject": "账面积余",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "资金到位与支出执行总体情况",
+        "location": "页面主标题",
+        "statement": "标题为公文风格，准确概括本页内容，与右上角小标题资金使用情况一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 12003,
+    "total_tokens": 14800,
+    "completion_tokens": 2797,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 96.282,
+  "attempts": 1
+}

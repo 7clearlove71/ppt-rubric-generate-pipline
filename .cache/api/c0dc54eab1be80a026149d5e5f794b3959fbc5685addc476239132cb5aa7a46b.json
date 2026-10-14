@@ -1,0 +1,293 @@
+{
+  "parsed": {
+    "page": 7,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "正是那段日子，让我们脱胎换骨",
+        "location": "页面顶部大标题",
+        "statement": "标题直接引用老板讲话原文核心结论，结论前置，无铺垫寒暄",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "「如今回头看，正是那段日子让我们脱胎换骨。」——老板年度讲话原文",
+        "location": "标题下方引用标注",
+        "statement": "明确标注引用来源为老板年度讲话原文，与源文一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "年初 行业寒冬",
+        "location": "左下角，折线起点附近",
+        "statement": "呈现老板叙事五要素之一'行业寒冬'，位于时间线起点",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年初行业寒冬"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "最难月 · 账上现金 仅够 2 个月工资",
+        "location": "折线中段偏左，深色圆点上方",
+        "statement": "呈现老板叙事五要素之一'最难那个月账上现金只够发两个月工资'，数值'2个月'与源文一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "最难那个月账上现金只够发两个月工资"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2",
+            "unit": "个月",
+            "subject": "账上现金可发工资时长",
+            "denominator": "不适用",
+            "time_origin": "最难月份"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "全年营收 4.2 亿 · +26%",
+        "location": "折线中段，金色圆点下方",
+        "statement": "核心数据'全年营收4.2亿同比+26%'完整呈现，数值与源文一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "26",
+            "unit": "%",
+            "subject": "营收同比增长率",
+            "denominator": "不适用",
+            "time_origin": "同比"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "研发占比 14% · 专利 +18 员工 410 人 · 续约 91%",
+        "location": "页面右下方，'今日家底'标签下方",
+        "statement": "集中呈现四项核心数据：研发占比14%（源文为'从9%提到14%'，此处仅呈现终点值14%）、专利+18项、员工410人、续约率91%。数值均与源文一致，但研发占比的起点9%未直接呈现",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%，新增专利18项，员工320涨到410人，客户续约率91%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "14",
+            "unit": "%",
+            "subject": "研发投入占比",
+            "denominator": "不适用",
+            "time_origin": "当前/年末"
+          },
+          {
+            "value": "18",
+            "unit": "项",
+            "subject": "新增专利",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "员工人数",
+            "denominator": "不适用",
+            "time_origin": "当前/年末"
+          },
+          {
+            "value": "91",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "今日家底",
+        "location": "页面右上方，折线终点附近",
+        "statement": "标签性文字，指示折线终点为当前状态，无具体数值",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "2026 年度大会 · 开场汇报",
+        "location": "页面左下角页脚",
+        "statement": "页脚信息，包含年份2026（源文未提供，属新增具体年份）、会议性质",
+        "kind": "fact",
+        "failure_mode": "fabricated_facts",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年会开场那个PPT"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "年度大会年份",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "07 / 08",
+        "location": "页面右下角页脚",
+        "statement": "页码显示为第7页共8页，表明文档共8页",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "折线从左下向右上延伸，途经四个标记点（年初-行业寒冬、最难月-2个月工资、全年营收4.2亿、今日家底）",
+        "location": "页面中部，贯穿左右的金色折线",
+        "statement": "视觉设计采用时间线/增长曲线形式，将叙事节点与数据节点串联在同一视觉路径上，体现'那段日子'到'今日家底'的演变过程",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "员工 410 人 · 续约 91%",
+        "location": "右下数据块",
+        "statement": "源文员工数据为'320涨到410人'，此处仅呈现终点值410人，起点320人未呈现；但源文要求'数据得能接得上老板讲的话'，该页作为'脱胎换骨'的结果展示，省略起点在单页语境中可理解",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "320",
+            "unit": "人",
+            "subject": "员工年初人数",
+            "denominator": "不适用",
+            "time_origin": "年初"
+          },
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "员工年末人数",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "excess_over_baseline_percent",
+            "left": "320",
+            "right": "28.125",
+            "reported": "90",
+            "meaning": "员工从320增至410，增加90人，增幅约28.125%"
+          }
+        ]
+      },
+      {
+        "quote": "研发占比 14%",
+        "location": "右下数据块",
+        "statement": "源文为'研发投入占比从9%提到14%'，此处仅呈现终点值14%，未呈现起点9%及提升过程。但'提升5个百分点'的变化未明示",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "9",
+            "unit": "%",
+            "subject": "研发投入占比年初值",
+            "denominator": "不适用",
+            "time_origin": "年初"
+          },
+          {
+            "value": "14",
+            "unit": "%",
+            "subject": "研发投入占比年末值",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "14",
+            "right": "9",
+            "reported": "5",
+            "meaning": "研发投入占比提升5个百分点"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5146,
+    "total_tokens": 7289,
+    "completion_tokens": 2143,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 43.501,
+  "attempts": 1
+}

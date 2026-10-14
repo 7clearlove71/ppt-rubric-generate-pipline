@@ -1,0 +1,703 @@
+{
+  "parsed": {
+    "page": 8,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "资金用途：280 万元五项构成，合计校验一致",
+        "location": "页面上部标题区域",
+        "statement": "页面标题明确呈现资金用途模块，总投资280万元与五项分项构成",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "资金用途(总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "280",
+            "unit": "万元",
+            "subject": "总投资",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "总投资280 万元＝厂房建设120 ＋设备采购60 ＋培训经费30 ＋品牌推广40 ＋流动资金30 万元，五项合计校验一致，并逐项对应三年规划产出。",
+        "location": "标题下方说明文字",
+        "statement": "正文明确列出五项资金分项及合计校验，并声明与三年规划逐项对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "资金用途(总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "280",
+            "unit": "万元",
+            "subject": "总投资",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "120",
+            "unit": "万元",
+            "subject": "厂房建设",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "60",
+            "unit": "万元",
+            "subject": "设备采购",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "30",
+            "unit": "万元",
+            "subject": "培训经费",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "40",
+            "unit": "万元",
+            "subject": "品牌推广",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "30",
+            "unit": "万元",
+            "subject": "流动资金",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "left": "120",
+            "right": "60",
+            "reported": "180",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "万元",
+            "left_quote": "厂房建设120",
+            "right_quote": "设备采购60",
+            "reported_quote": "120+60+30+40+30 ＝280 万元",
+            "relation_quote": "总投资280 万元＝厂房建设120 ＋设备采购60 ＋培训经费30 ＋品牌推广40 ＋流动资金30 万元",
+            "meaning": "五项分项加总等于总投资"
+          }
+        ]
+      },
+      {
+        "quote": "厂房建设 120 万元 42.9%",
+        "location": "环形图右侧标签",
+        "statement": "环形图标签显示厂房建设120万元，占比42.9%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "厂房建设120万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "万元",
+            "subject": "厂房建设",
+            "denominator": "280",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "42.9",
+            "unit": "%",
+            "subject": "厂房建设占比",
+            "denominator": "280",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "120",
+            "right": "280",
+            "reported": "42.9",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "%",
+            "left_quote": "厂房建设120",
+            "right_quote": "总投资280 万元",
+            "reported_quote": "120 万元 42.9%",
+            "relation_quote": "占比为金额÷280 万元的算术测算值，四舍五入保留一位小数后合计100.0%",
+            "meaning": "厂房建设占总投资的百分比"
+          }
+        ]
+      },
+      {
+        "quote": "设备采购 60 万元 21.4%",
+        "location": "环形图左下标签",
+        "statement": "环形图标签显示设备采购60万元，占比21.4%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "设备采购60万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "60",
+            "unit": "万元",
+            "subject": "设备采购",
+            "denominator": "280",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "21.4",
+            "unit": "%",
+            "subject": "设备采购占比",
+            "denominator": "280",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "60",
+            "right": "280",
+            "reported": "21.4",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "%",
+            "left_quote": "设备采购60",
+            "right_quote": "总投资280 万元",
+            "reported_quote": "60 万元 21.4%",
+            "relation_quote": "占比为金额÷280 万元的算术测算值，四舍五入保留一位小数后合计100.0%",
+            "meaning": "设备采购占总投资的百分比"
+          }
+        ]
+      },
+      {
+        "quote": "品牌推广 40 万元 14.3%",
+        "location": "环形图左下标签",
+        "statement": "环形图标签显示品牌推广40万元，占比14.3%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "品牌推广40万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "万元",
+            "subject": "品牌推广",
+            "denominator": "280",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "14.3",
+            "unit": "%",
+            "subject": "品牌推广占比",
+            "denominator": "280",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "40",
+            "right": "280",
+            "reported": "14.3",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "%",
+            "left_quote": "品牌推广40",
+            "right_quote": "总投资280 万元",
+            "reported_quote": "40 万元 14.3%",
+            "relation_quote": "占比为金额÷280 万元的算术测算值，四舍五入保留一位小数后合计100.0%",
+            "meaning": "品牌推广占总投资的百分比"
+          }
+        ]
+      },
+      {
+        "quote": "培训经费 30 万元 10.7%",
+        "location": "环形图左上标签",
+        "statement": "环形图标签显示培训经费30万元，占比10.7%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "培训经费30万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "30",
+            "unit": "万元",
+            "subject": "培训经费",
+            "denominator": "280",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "10.7",
+            "unit": "%",
+            "subject": "培训经费占比",
+            "denominator": "280",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "30",
+            "right": "280",
+            "reported": "10.7",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "%",
+            "left_quote": "培训经费30",
+            "right_quote": "总投资280 万元",
+            "reported_quote": "30 万元 10.7%",
+            "relation_quote": "占比为金额÷280 万元的算术测算值，四舍五入保留一位小数后合计100.0%",
+            "meaning": "培训经费占总投资的百分比"
+          }
+        ]
+      },
+      {
+        "quote": "流动资金 30 万元 10.7%",
+        "location": "环形图上方标签",
+        "statement": "环形图标签显示流动资金30万元，占比10.7%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "流动资金30万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "30",
+            "unit": "万元",
+            "subject": "流动资金",
+            "denominator": "280",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "10.7",
+            "unit": "%",
+            "subject": "流动资金占比",
+            "denominator": "280",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "30",
+            "right": "280",
+            "reported": "10.7",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "%",
+            "left_quote": "流动资金30",
+            "right_quote": "总投资280 万元",
+            "reported_quote": "30 万元 10.7%",
+            "relation_quote": "占比为金额÷280 万元的算术测算值，四舍五入保留一位小数后合计100.0%",
+            "meaning": "流动资金占总投资的百分比"
+          }
+        ]
+      },
+      {
+        "quote": "120+60+30+40+30 ＝280 万元（合计一致）",
+        "location": "环形图下方左侧",
+        "statement": "显式算术校验五项合计等于总投资280万元",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "280",
+            "unit": "万元",
+            "subject": "五项合计",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "left": "120",
+            "right": "60",
+            "reported": "280",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "万元",
+            "left_quote": "120",
+            "right_quote": "60",
+            "reported_quote": "120+60+30+40+30 ＝280 万元",
+            "relation_quote": "（合计一致）",
+            "meaning": "五项分项加总验证"
+          }
+        ]
+      },
+      {
+        "quote": "占比为测算值，保留一位小数并四舍五入，合计100.0%",
+        "location": "环形图下方说明",
+        "statement": "占比合计声明为100.0%，但42.9%+21.4%+14.3%+10.7%+10.7%=100.0%，四舍五入后合计正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "资金用途(总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "100.0",
+            "unit": "%",
+            "subject": "占比合计",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "left": "42.9",
+            "right": "21.4",
+            "reported": "100.0",
+            "left_unit": "%",
+            "right_unit": "%",
+            "reported_unit": "%",
+            "left_quote": "42.9%",
+            "right_quote": "21.4%",
+            "reported_quote": "合计100.0%",
+            "relation_quote": "占比为测算值，保留一位小数并四舍五入，合计100.0%",
+            "meaning": "占比合计验证"
+          }
+        ]
+      },
+      {
+        "quote": "资金—规划逐项对应表",
+        "location": "页面中下部表格标题",
+        "statement": "表格标题明确资金与规划的逐项对应关系",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "资金用途(总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万)这块要跟前面规划对得上"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "厂房建设 120 万元 第一年 800 ㎡工坊建成投用，形成生产阵地与培训场所",
+        "location": "表格第一行",
+        "statement": "厂房建设120万元对应第一年，产出800㎡工坊，与用户给定规划一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第一年建工坊800平米+培训50人"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "厂房建设120万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "万元",
+            "subject": "厂房建设",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "800",
+            "unit": "㎡",
+            "subject": "工坊面积",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "设备采购 60 万元 第一年进场、第二年扩产 支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+        "location": "表格第二行",
+        "statement": "设备采购60万元对应第一二年，产出支撑年产量10万件，与用户给定第二年扩产至10万件一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第二年扩产能至年产量10万件"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "设备采购60万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "60",
+            "unit": "万元",
+            "subject": "设备采购",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "10",
+            "unit": "万件",
+            "subject": "年产量",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "培训经费 30 万元 第一年为主、延续第二年 培训50 人，支撑计件农户由60 户扩至120 户",
+        "location": "表格第三行",
+        "statement": "培训经费30万元对应第一二年，培训50人，支撑农户从60户扩至120户，与用户给定一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第一年建工坊800平米+培训50人"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "顺带把预计带动的农户数(首期60户第二年扩至120户)"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "培训经费30万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "30",
+            "unit": "万元",
+            "subject": "培训经费",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "50",
+            "unit": "人",
+            "subject": "培训人数",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          },
+          {
+            "value": "60",
+            "unit": "户",
+            "subject": "首期带动农户",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "第二年带动农户",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "品牌推广 40 万元 第三年 品牌包装设计与电商平台入驻运营，形成市场出口",
+        "location": "表格第四行",
+        "statement": "品牌推广40万元对应第三年，产出品牌与电商入驻，与用户给定第三年做品牌入驻电商平台一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第三年做品牌入驻电商平台"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "品牌推广40万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "万元",
+            "subject": "品牌推广",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "流动资金 30 万元 三年滚动 原料统一采购与按件计酬按月兑付周转，保障不断链",
+        "location": "表格第五行",
+        "statement": "流动资金30万元对应三年滚动，支持原料采购与按件计酬兑付，与带动农户模式一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "流动资金30万"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "合作社统一采购原料和培训、农户在家编织按件计酬"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "30",
+            "unit": "万元",
+            "subject": "流动资金",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "阵地 → 产能 → 能力 → 市场 → 周转",
+        "location": "表格右上角",
+        "statement": "以箭头链概括五项资金对应的递进逻辑，与三年规划递进关系一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "整体逻辑得严丝合缝，每一页之间不能脱节"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "资金管理与合规 专账核算 按进度拨付 验收后结算 留存凭证",
+        "location": "表格下方",
+        "statement": "增加资金管理合规性说明，适配政府评审场景",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。",
+        "location": "资金管理说明下方",
+        "statement": "引用文旅部工坊认定通知作为合规参照，但标注为参照口径而非既定事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：申报口径给定值（总投资280 万元；厂房120 ／设备60 ／培训30 ／品牌40 ／流动资金30 万元）；占比为金额÷280 万元的算术测算值，四舍五入保留一位小数后合计100.0% ；合规口径参照文旅部工坊认定通知与县级衔接资金管理要求。",
+        "location": "页面底部来源说明",
+        "statement": "明确标注数据来源为申报口径给定值，占比测算方法，合规口径为参照",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "资金用途(总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "280",
+            "unit": "万元",
+            "subject": "总投资",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "100.0",
+            "unit": "%",
+            "subject": "占比合计",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "重叠文字视觉现象：局部放大图显示表格区域多行文字存在严重叠印，如'第一年为主、延续第二年'与'第三年'、'培训经费'与'品牌推广'、'40万元'与'30万元'等文字笔画相互覆盖，形成不可辨识的混合字形",
+        "location": "表格主体区域（y约293-343）",
+        "statement": "text_overlap_candidates中大量span对（如p8_t36/p8_t40、p8_t34/p8_t38、p8_t39/p8_t43等）在局部放大图中证实为真实文字叠印，非仅bbox相交；多行数据垂直方向严重重叠导致内容不可读",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "表格列标题与数据行重叠：'资金项/金额/对应阶段/形成的实物/能力产出'等表头与下方第一行数据'厂房建设/120万元/第一年/800㎡工坊...'发生垂直方向叠印",
+        "location": "表格表头与首行数据交界区域（y约286-310）",
+        "statement": "p8_t25/p8_t46、p8_t26/p8_t46等overlap候选在放大图中显示表头文字与数据行重叠，加剧可读性问题",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "环形图标签位置：'厂房建设 120万元 42.9%'位于环形图右侧，'设备采购 60万元 21.4%'位于左下，'品牌推广 40万元 14.3%'位于左下偏上，'培训经费 30万元 10.7%'位于左上，'流动资金 30万元 10.7%'位于上方",
+        "location": "页面中上部环形图周围",
+        "statement": "环形图各分项标签分布于图周，与图例色块对应，无轴标签缺失问题",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 20371,
+    "total_tokens": 24212,
+    "completion_tokens": 3841,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 245.368,
+  "attempts": 2
+}

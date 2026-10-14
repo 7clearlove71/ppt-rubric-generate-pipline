@@ -1,0 +1,793 @@
+{
+  "case_id": "03",
+  "candidate_id": "A",
+  "candidate_hash": "955fb1fa5c1c8faeeba214060bf4fe806e799bb49babaa47a714ab0ae8701bda",
+  "rubric_hash": "911846a1eaa76abee94f26802b0f0c9e2ac0929945ce0fe4748fb082fb56549c",
+  "judge_model": "kimi-k2.6",
+  "config_hash": "24595b336250f3ece09503b5031707b800a3aedb3f0361e6b0292eed624c5b24",
+  "judge_validator_version": 12,
+  "evaluation_protocol": "evidence_v1",
+  "ownership_conflicts": [
+    {
+      "page": 7,
+      "quote": "回收期约18个月以内",
+      "location": "右侧决策要点回顾区域第四行",
+      "rubric_ids": [
+        "R11",
+        "R12"
+      ]
+    }
+  ],
+  "consistency_summary": {
+    "skipped": 0,
+    "unavailable": 2,
+    "unresolved": 1,
+    "passed": 13,
+    "status": "incomplete"
+  },
+  "judge_prompt_fingerprint": "65c66a384549c1f030b1a7975252f08aa9110355bd1f1667c6cb515e0ac2cfe2",
+  "summary": {
+    "status": "incomplete",
+    "score": null,
+    "score_lower": 61.07142857142857,
+    "score_upper": 76.07142857142857,
+    "unresolved_weight": 15.0,
+    "dimensions": {
+      "correctness": {
+        "earned": 16.07142857142857,
+        "possible": 25.0,
+        "unresolved": 0
+      },
+      "fulfillment": {
+        "earned": 30.0,
+        "possible": 30.0,
+        "unresolved": 0
+      },
+      "integrity": {
+        "earned": 0,
+        "possible": 15.0,
+        "unresolved": 15.0
+      },
+      "narrative": {
+        "earned": 7.5,
+        "possible": 15.0,
+        "unresolved": 0
+      },
+      "visual": {
+        "earned": 7.5,
+        "possible": 15.0,
+        "unresolved": 0
+      }
+    }
+  },
+  "verdicts": [
+    {
+      "rubric_id": "R01",
+      "answer": "yes",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "evidence": "经逐页核查，作品完整包含用户指定的三段式叙事结构，且顺序正确：\n\n1. 四条产线能耗对比模块：第2页（Slide 2）标题为'一个月产线能耗全景：四线月用电182万kWh，月电费约136.5万元'，左侧图表呈现四线对比（月产量/月用电量/单位能耗），包含1-4号线全部数据（80/68/0.85、95/49/0.52、70/34/0.48、60/31/0.52），右侧关键发现01-04条总结四线差异；第3页（Slide 3）进一步以行业标杆0.45进行四线单位能耗对标，强化对比分析。该模块存在且数据完整。\n\n2. 1号线深挖模块：第4页（Slide 4）标题为'根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'，包含四线能耗横向对比图表（虽X轴标签显示NaN，但数据标签0.85/0.52/0.48/0.52及空载能耗8/6/12/5可辨识），右侧明确呈现'数据异常发现→根因锁定：液压系统老化→解决路径：整机更换'的完整深挖逻辑，并指出1号线高能耗主因是负载运行效率损失而非待机浪费。该模块存在且原因分析完整。\n\n3. 投资回报测算模块：第5页（Slide 5）标题为'1号线改造投资回报测算：投入120万元，年节省电费252-288万元'，明确呈现投入120万元、两种口径（降至0.45/0.5）的月省电/月省电费/年节省电费、纯电费回本周期（5-5.6个月）及保守口径约18个月收回成本，底部标注测算口径（月产量80万件、电价0.75元/kWh）。该模块存在且计算框架完整。\n\n模块顺序为：第2-3页（四线对比）→第4页（1号线深挖）→第5页（投资回报测算），符合用户要求的'先呈现四条产线能耗对比，再聚焦1号线深挖，最后落到节能改造投资回报测算'的叙事顺序。第6页3号线空载问题、第7页立项建议、第8页结束页为补充或收尾内容，不影响三段式核心结构的完整性。作品整体可用于节能改造立项场景。",
+      "evidence_ids": [
+        "p2_e1",
+        "p2_e2",
+        "p2_e3",
+        "p2_e4",
+        "p2_e5",
+        "p2_e6",
+        "p2_e10",
+        "p3_e1",
+        "p3_e2",
+        "p3_e13",
+        "p4_e1",
+        "p4_e11",
+        "p4_e12",
+        "p4_e14",
+        "p4_e16",
+        "p5_e1",
+        "p5_e16",
+        "p5_e17",
+        "p5_e18",
+        "p7_e1",
+        "p7_e23"
+      ],
+      "failure_ids": [],
+      "resolutions": [],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R02",
+      "answer": "yes",
+      "pages": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "evidence": "第2页图表中1号线单位能耗0.85以橙色折线高亮显示，明显高于其他三线0.48-0.52，右侧关键发现01明确文字表述'能效分化明显，1号线是洼地'，并给出倍数关系'约为其余三线（0.48-0.52）的1.6-1.8倍'；第3页1号线柱状图以红色单独高亮，高度显著高于绿色柱的其他三线，右侧信息面板明确标注'1号线：唯一显著能耗洼地'及'超标杆约89%'；第4页右侧数据异常发现文本框明确表述'1号线单位能耗0.85 kWh/件，远高于其他产线的0.5左右'；第7页左侧柱状图1号线现状0.85以红色高亮，与绿色标杆0.45、浅绿目标0.5形成强烈视觉对比，右侧决策要点回顾明确'1号线单位能耗0.85 kWh/件，超行业标杆约89%'。多页面通过颜色区分（红vs绿）、文字倍数说明、'唯一显著能耗洼地'定性标签等方式，使1号线异常高值在对比中高度可辨识。",
+      "evidence_ids": [
+        "p2_e7",
+        "p2_e10",
+        "p3_e3",
+        "p3_e13",
+        "p4_e11",
+        "p7_e3",
+        "p7_e6"
+      ],
+      "failure_ids": [],
+      "resolutions": [],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R03",
+      "answer": "yes",
+      "pages": [
+        4
+      ],
+      "evidence": "第4页为1号线深挖模块，页面顶部标题明确表述'根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'；右侧'根因锁定：液压系统老化'板块进一步说明'现场排查确认液压系统老化导致效率下降——液压元件磨损使能量转换损失增大，同等产出下耗电上升'；底部流程图也呈现'根因锁定→液压系统老化→解决路径→整机更换液压系统'的完整逻辑链。这些表述均明确将1号线能耗偏高归因于液压系统老化导致的效率下降，与用户给定原因完全一致，且出现在1号线深挖模块（第4页）中，满足scope要求。",
+      "evidence_ids": [
+        "p4_e1",
+        "p4_e12",
+        "p4_e13",
+        "p4_e16"
+      ],
+      "failure_ids": [],
+      "resolutions": [],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R04",
+      "answer": "yes",
+      "pages": [
+        5
+      ],
+      "evidence": "第5页为独立的“1号线改造投资回报测算”页面，页面主标题明确为“1号线改造投资回报测算：投入120万元，年节省电费252-288万元”。该页包含完整的独立测算单元：左侧为“1号线月用电对比：改造前后测算（万kWh）”柱状图，展示当前68万kWh、口径一36万kWh、口径二40万kWh；右侧分为“口径一·降至行业标杆0.45 kWh/件”和“口径二·降至0.5 kWh/件”两个独立测算板块，分别列明月省电32/28万kWh、月省电费24/21万元、年节省电费288/252万元、纯电费口径回本约5个月/5-6个月；底部高亮框单独呈现“保守口径约18个月收回成本”的核心结论，并说明已计入施工停产损失与投产爬坡期节能打折。整个第5页在视觉和标题上均清晰可辨识为独立的投资回报测算单元，投入、节省、回本等关键要素完整呈现于同一页面，未零散混入其他模块。",
+      "evidence_ids": [
+        "p5_e1",
+        "p5_e2",
+        "p5_e3",
+        "p5_e4",
+        "p5_e5",
+        "p5_e6",
+        "p5_e7",
+        "p5_e8",
+        "p5_e9",
+        "p5_e10",
+        "p5_e11",
+        "p5_e12",
+        "p5_e13",
+        "p5_e14",
+        "p5_e15",
+        "p5_e16",
+        "p5_e17",
+        "p5_e18",
+        "p5_e19"
+      ],
+      "failure_ids": [],
+      "resolutions": [],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R05",
+      "answer": "yes",
+      "pages": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "evidence": "经逐页核查，3号线空载能耗偏高的问题现象与停机流程不规范的归因在PPT多处出现，满足要求：\n\n1. 第2页关键发现04明确写出\"3号线单耗最优但空载最高\"，呈现\"单位能耗0.48 kWh/件四线最优，空载能耗12 kWh/h为四线之最，待机管理有改进空间\"（p2_e13）。此处提及现象但未明确归因于\"停机流程不规范\"。\n\n2. 第4页右侧数据异常发现文本明确列出\"3号线为12 kWh/h\"（p4_e11），并指出3号线空载能耗最高，但此处仅作为对比数据出现，未将3号线空载能耗偏高归因于停机流程不规范（p4_e23为ledger记录的待核查项）。\n\n3. 第6页为3号线空载能耗专题页：标题\"3号线空载能耗四线最高：零投入管理改进压缩待机电费\"（p6_e1）；图表下方说明文字明确写出\"3号线待机每小时仍跑12 kWh（1号线8、2号线6、4号线5），指向停机流程不规范\"（p6_e8）；右侧\"现象与根因\"区域明确写出\"停机流程不规范，「该停未停、该断未断」的浪费长期累积\"（p6_e12）。此页完整包含问题现象（空载12 kWh/h，四线最高）与归因（停机流程不规范）。\n\n4. 第7页右下角管理改进线区域写出\"3号线试点停机流程规范化\"（p7_e12），隐含了停机流程不规范的归因。\n\n综上，第6页完整、明确地同时呈现了3号线空载能耗偏高的现象与停机流程不规范的归因，满足criterion要求。第4页p4_e23的ledger观察认为\"归因语句缺失\"，但经核查原图，第4页确实仅提及3号线空载数值未明确归因；然而该缺陷已被第6页的完整呈现所弥补，且criterion允许\"分散在不同位置\"。因此本条判定为完全满足。",
+      "evidence_ids": [
+        "p2_e13",
+        "p4_e11",
+        "p6_e1",
+        "p6_e8",
+        "p6_e12",
+        "p7_e12"
+      ],
+      "failure_ids": [],
+      "resolutions": [
+        {
+          "evidence_id": "p4_e23",
+          "defect_present": false,
+          "reason": "经核查第4页原图，右侧数据异常发现文本确实仅将3号线空载12 kWh/h作为对比数据提及，未明确写出'停机流程不规范'的归因语句。但criterion允许问题现象与归因分散在不同位置，且第6页已完整呈现两者（p6_e8现象+p6_e12归因）。因此第4页单独不构成'line3_issue_incomplete'缺陷，全篇整体已满足要求。",
+          "decision": "reject"
+        }
+      ],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R06",
+      "answer": "yes",
+      "pages": [
+        2,
+        4,
+        6
+      ],
+      "evidence": "逐页核对四条产线的四项核心指标：\n\n- 第2页（对比模块主页面）：图表明确展示1号线80万件/68万kWh/0.85 kWh/件、2号线95万件/49万kWh/0.52 kWh/件、3号线70万件/34万kWh/0.48 kWh/件、4号线60万件/31万kWh/0.52 kWh/件，四项指标与产线一一对应，数值与sources完全一致（p2_e3-p2_e6）。右侧关键发现04提及3号线空载能耗12 kWh/h为四线之最（p2_e13）。\n\n- 第4页（1号线深挖页面）：图表展示四线单位能耗与空载能耗双柱对比，绿色柱标注0.85/0.52/0.48/0.52（p4_e3-p4_e6），橙色柱标注空载能耗8/6/12/5（p4_e7-p4_e10），四项指标完整且对应正确。X轴虽显示NaN残留（p4_e2），但柱状图数据标签仍可通过数值位置推断产线顺序，数据本身未错位。\n\n- 第6页（3号线空载专题页面）：图表明确标注1号线8 kWh/h、2号线6 kWh/h、3号线12 kWh/h、4号线5 kWh/h（p6_e4-p6_e7），空载能耗数据完整对应。\n\n- 第3页、第5页、第7页等页面虽非完整四线表格，但引用的单线数据均与sources一致，无错位或缺失。\n\n全篇未出现产线数据数值错误、指标错位或四项指标缺失的情况。",
+      "evidence_ids": [
+        "p2_e3",
+        "p2_e4",
+        "p2_e5",
+        "p2_e6",
+        "p2_e13",
+        "p4_e3",
+        "p4_e4",
+        "p4_e5",
+        "p4_e6",
+        "p4_e7",
+        "p4_e8",
+        "p4_e9",
+        "p4_e10",
+        "p6_e4",
+        "p6_e5",
+        "p6_e6",
+        "p6_e7"
+      ],
+      "failure_ids": [],
+      "resolutions": [],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R07",
+      "answer": "no",
+      "pages": [
+        5,
+        7
+      ],
+      "evidence": "第5页标题'投入 120 万元'（p5_e1）及第7页标题'批准 1 号线液压系统改造 120 万元投资'（p7_e1）、技术改造线'批准 120 万元预算'（p7_e8中的'批准 120 万元预算'部分）均将投入金额表述为确定值'120 万元'，未保留'约'字不确定性限定。虽然第5页右侧底部高亮框'保守口径约 18 个月收回成本'附近及第7页决策要点回顾中'一次性投入约 120 万元'保留了'约'字，但同页标题及关键位置出现多次无'约'的确定值表述。依据criterion'不得写成确定值''丢失约等不确定性限定而写成确定值'，单页出现'120万元'确定值即构成investment_figure_distortion。",
+      "evidence_ids": [
+        "p5_e1",
+        "p7_e1",
+        "p7_e8",
+        "p5_R07_direct_290b8b6fd759",
+        "p7_R07_direct_b43f2707f4dd",
+        "p7_R07_direct_553e9a36f7d7"
+      ],
+      "failure_ids": [
+        "p5_R07_direct_290b8b6fd759",
+        "p7_R07_direct_b43f2707f4dd",
+        "p7_R07_direct_553e9a36f7d7"
+      ],
+      "resolutions": [
+        {
+          "evidence_id": "p5_R07_direct_290b8b6fd759",
+          "decision": "confirm",
+          "reason": "第5页标题将液压系统投入金额表述为确定值'120 万元'，未保留用户原始要求中的'约'字不确定性限定，构成investment_figure_distortion"
+        },
+        {
+          "evidence_id": "p7_R07_direct_b43f2707f4dd",
+          "decision": "confirm",
+          "reason": "第7页标题将液压系统投入金额表述为确定值'120 万元投资'，未保留'约'字不确定性限定，构成investment_figure_distortion"
+        },
+        {
+          "evidence_id": "p7_R07_direct_553e9a36f7d7",
+          "decision": "confirm",
+          "reason": "第7页技术改造线将投入金额表述为确定值'120 万元预算'，未保留'约'字不确定性限定，构成investment_figure_distortion"
+        }
+      ],
+      "registered_evidence": [
+        {
+          "page": 5,
+          "quote": "投入 120 万元",
+          "location": "页面上部标题区域",
+          "statement": "第5页标题将液压系统投入金额表述为确定值'120 万元'，未保留用户原始要求中的'约'字不确定性限定，构成investment_figure_distortion",
+          "kind": "fact",
+          "failure_mode": "investment_figure_distortion",
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "如果更换液压系统投入约120万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "120",
+              "unit": "万元",
+              "subject": "液压系统改造投入",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p5_R07_direct_290b8b6fd759",
+          "failure_mode_origin": "direct_judge_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "page": 7,
+          "quote": "批准 1 号线液压系统改造 120 万元投资",
+          "location": "页面顶部标题区域",
+          "statement": "第7页标题将液压系统投入金额表述为确定值'120 万元投资'，未保留'约'字不确定性限定，构成investment_figure_distortion",
+          "kind": "fact",
+          "failure_mode": "investment_figure_distortion",
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "如果更换液压系统投入约120万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "120",
+              "unit": "万元",
+              "subject": "液压系统改造投入",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_R07_direct_b43f2707f4dd",
+          "failure_mode_origin": "direct_judge_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "page": 7,
+          "quote": "批准 120 万元预算",
+          "location": "右侧技术改造线区域",
+          "statement": "第7页技术改造线将投入金额表述为确定值'120 万元预算'，未保留'约'字不确定性限定，构成investment_figure_distortion",
+          "kind": "fact",
+          "failure_mode": "investment_figure_distortion",
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "如果更换液压系统投入约120万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "120",
+              "unit": "万元",
+              "subject": "液压系统改造投入",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_R07_direct_553e9a36f7d7",
+          "failure_mode_origin": "direct_judge_observation",
+          "arithmetic_checks": []
+        }
+      ],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R08",
+      "answer": "yes",
+      "pages": [
+        5,
+        7
+      ],
+      "evidence": "第5页投资回报测算模块中，右侧底部高亮框明确呈现“保守口径约18个月收回成本”，正文进一步说明“计入施工停产损失与投产爬坡期节能打折后回收期约18个月”，且页面底部标注“测算口径：月产量80万件·单位能耗0.85 kWh/件·工业电价0.75元/kWh，参数均来自1号线实际运行数据”，完整包含时间（约18个月）与口径（当前产量和电价）两个要素。第7页总结页右侧决策要点回顾中再次确认“回收期约18个月以内”，结合第5页已明确披露的测算口径，跨页构成完整信息。两处表述均为“约18个月”的等价形式，符合用户要求的“大概18个月”语义。",
+      "evidence_ids": [
+        "p5_e16",
+        "p5_e17",
+        "p5_e18",
+        "p5_e19",
+        "p7_e9",
+        "p7_e11"
+      ],
+      "failure_ids": [],
+      "resolutions": [],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R09",
+      "answer": "yes",
+      "pages": [
+        5
+      ],
+      "evidence": "第5页为投资回报测算独立模块，完整展示了ROI测算过程。电价明确采用0.75元/kWh（p5_e18、p5_e19）。投入金额120万元清晰呈现（p5_e1）。关键中间步骤完整可复算：口径一（降至行业标杆0.45 kWh/件）：月省电32万kWh = (0.85-0.45)×80万件，月省电费24万元 = 32×0.75，年节省电费288万元 = 24×12，纯电费口径回本5个月 = 120÷24（p5_e9、p5_e11）；口径二（降至0.5 kWh/件）：月省电28万kWh = (0.85-0.5)×80万件，月省电费约21万元 = 28×0.75，年节省电费252万元 = 21×12，回收期约5-6个月 = 120÷21≈5.71（p5_e13、p5_e15）。两个测算口径的差异有明确的桥接说明：改造后单位能耗目标不同（0.45 vs 0.5），导致月省电差额4万kWh、月省电费差额3万元。最终保守口径约18个月收回成本，并明确说明已计入施工停产损失与投产爬坡期节能打折等保守因素（p5_e16、p5_e17），给出了从纯电费口径（5-6个月）到保守口径（约18个月）的定性衔接解释。测算公式与数据均来自1号线实际运行数据（月产量80万件、单位能耗0.85 kWh/件、电价0.75元/kWh），观众可独立复算验证18个月的合理性。",
+      "evidence_ids": [
+        "p5_e1",
+        "p5_e9",
+        "p5_e11",
+        "p5_e13",
+        "p5_e15",
+        "p5_e16",
+        "p5_e17",
+        "p5_e18",
+        "p5_e19"
+      ],
+      "failure_ids": [],
+      "resolutions": [],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R10",
+      "answer": "no",
+      "pages": [
+        3,
+        7
+      ],
+      "evidence": "第3页标题区'对标行业标杆 0.45 kWh/ 件'、图表右侧'行业标杆 0.45'、第7页左侧柱状图'行业标杆'柱顶标注'0.45'及'0.45'作为行业标杆数值呈现时，均未保留用户原始要求中的'约'字不确定性限定。用户原始数据明确为'行业标杆单位能耗约0.45kWh/件'，而作品在多处将标杆值写成确定值'0.45'，丢失'约'的不确定性表述。虽然第3页图表副标题有'虚线为行业标杆 0.45'，但'虚线'修饰的是图表表现形式而非数值本身的不确定性，不构成'约0.45'的等价表述。第7页'行业标杆'作为柱状图类别标签直接标注0.45，同样为确定值呈现。此缺陷属于benchmark_distortion：行业标杆单位能耗未呈现为约0.45kWh/件，丢失了'约'等不确定性限定而写成确定值。",
+      "evidence_ids": [
+        "p3_e1",
+        "p3_e7",
+        "p7_e4",
+        "p7_e22",
+        "p7_R10_direct_3623635e886d"
+      ],
+      "failure_ids": [
+        "p3_e1",
+        "p3_e7",
+        "p7_R10_direct_3623635e886d"
+      ],
+      "resolutions": [
+        {
+          "evidence_id": "p3_e1",
+          "decision": "confirm",
+          "reason": "行业标杆数值写作'0.45'，未保留用户原始数据中的'约'字，呈现为确定值而非约数"
+        },
+        {
+          "evidence_id": "p3_e7",
+          "decision": "confirm",
+          "reason": "行业标杆标注为'0.45'，未保留'约'的不确定性限定，写成确定值"
+        },
+        {
+          "evidence_id": "p7_R10_direct_3623635e886d",
+          "decision": "confirm",
+          "reason": "行业标杆数值直接标注为确定值'0.45'，未保留用户原始数据中的'约'字"
+        }
+      ],
+      "registered_evidence": [
+        {
+          "page": 3,
+          "quote": "对标行业标杆 0.45 kWh/ 件：1 号线超标杆 89%，2/3/4 号线已接近标杆",
+          "location": "页面顶部标题区",
+          "statement": "行业标杆数值写作'0.45'，未保留用户原始数据中的'约'字，呈现为确定值而非约数",
+          "kind": "fact",
+          "failure_mode": "benchmark_distortion",
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "行业标杆单位能耗约0.45kWh/件"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e1",
+          "failure_mode_origin": "direct_judge_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "page": 3,
+          "quote": "行业标杆 0.45",
+          "location": "图表右侧橙色虚线标注",
+          "statement": "行业标杆标注为'0.45'，未保留'约'的不确定性限定，写成确定值",
+          "kind": "fact",
+          "failure_mode": "benchmark_distortion",
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "行业标杆单位能耗约0.45kWh/件"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e7",
+          "failure_mode_origin": "direct_judge_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "page": 7,
+          "quote": "0.45",
+          "location": "左侧柱状图绿色柱子顶部，标注为'行业标杆'",
+          "statement": "行业标杆数值直接标注为确定值'0.45'，未保留用户原始数据中的'约'字",
+          "kind": "fact",
+          "failure_mode": "benchmark_distortion",
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "行业标杆单位能耗约0.45kWh/件"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p7_R10_direct_3623635e886d",
+          "failure_mode_origin": "direct_judge_observation",
+          "arithmetic_checks": []
+        }
+      ],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R11",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Same visible defect confirmed by multiple criteria; ownership unresolved",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R12",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Same visible defect confirmed by multiple criteria; ownership unresolved",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R13",
+      "answer": "yes",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "evidence": "全篇8页中，第2-7页均包含面向立项决策者的实质内容支撑：\n\n1. 核心发现（第2-3页）：第2页以组合图表呈现四线月产量/月用电量/单位能耗对比，关键发现区用4条结构化结论展开1号线能耗洼地、产量电量倒挂、3号线空载最高等现象，每条均附数据支撑；第3页进一步对标行业标杆0.45，量化1号线超标杆89%、绝对差距0.40，并给出降至标杆和降至0.5保守情景的月多耗电及电费测算。\n\n2. 原因分析（第4页）：标题即锁定\"1号线液压系统老化导致效率下降\"，右侧分\"数据异常发现→根因锁定→解决路径\"三层展开，数据异常发现区对比各线单位能耗与空载能耗，明确指出\"高能耗主因是负载运行效率损失，而非待机浪费\"；根因锁定区解释液压系统老化机理；解决路径区给出\"整机更换\"建议并预告下一页投资回报测算。底部流程图完整呈现排查逻辑链。\n\n3. 投资回报测算（第5页）：标题明确\"投入120万元，年节省电费252-288万元\"。图表展示当前68万kWh、口径一36万kWh、口径二40万kWh的改造前后对比。右侧分口径一（降至0.45）和口径二（降至0.5）详细列示月省电、月省电费、年节省电费、纯电费口径回本周期，并设高亮框说明\"保守口径约18个月收回成本\"已计入施工停产损失与投产爬坡期节能打折。测算口径明确标注月产量80万件、单位能耗0.85、电价0.75元/kWh。\n\n4. 3号线问题补充（第6页）：独立一页聚焦3号线空载能耗12kWh/h为四线最高，图表对比四线空载能耗，右侧\"现象与根因\"区明确归因\"停机流程不规范\"，并列示零投资/低投入的三条管理改进方向。与1号线技改形成\"技术改造+管理改进\"完整方案。\n\n5. 总结页（第7页）：决策要点回顾以问题-根因-方案-回报四行结构化呈现，左侧图表对标现状/行业标杆/验收目标，右下角分技术改造线和管理改进线给出具体立项建议。\n\n各模块均有数据图表、量化测算、因果说明和方案建议支撑，无仅标题或一句话带过的情况。封面页（第1页）和结束页（第8页）为正常结构衔接，不构成冗余阻碍。",
+      "evidence_ids": [
+        "p2_e1",
+        "p2_e2",
+        "p2_e10",
+        "p2_e11",
+        "p2_e12",
+        "p2_e13",
+        "p3_e1",
+        "p3_e13",
+        "p3_e14",
+        "p3_e15",
+        "p3_e17",
+        "p4_e1",
+        "p4_e11",
+        "p4_e12",
+        "p4_e13",
+        "p4_e14",
+        "p4_e16",
+        "p5_e1",
+        "p5_e5",
+        "p5_e6",
+        "p5_e7",
+        "p5_e9",
+        "p5_e10",
+        "p5_e11",
+        "p5_e13",
+        "p5_e14",
+        "p5_e15",
+        "p5_e16",
+        "p5_e17",
+        "p6_e1",
+        "p6_e2",
+        "p6_e6",
+        "p6_e8",
+        "p6_e12",
+        "p7_e1",
+        "p7_e6",
+        "p7_e7",
+        "p7_e8",
+        "p7_e9"
+      ],
+      "failure_ids": [],
+      "resolutions": [],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R14",
+      "answer": "no",
+      "pages": [
+        5,
+        7
+      ],
+      "evidence": "用户原始表述为'大概18个月能收回成本'，作品在p5和p7两处将其改写为'约18个月以内'。'大概18个月'是不确定性的点估计，表示大约18个月左右；添加'以内'后变为方向性上限估计，暗示实际回收期不超过18个月，改变了原意的不确定性范围，构成expression_inconsistency。此外，p7将行业标杆'约0.45kWh/件'呈现为'0.45'，丢失了'约'的不确定性限定，但该处为数值呈现而非结论转述，且p3标题同样使用'0.45'，全篇对标杆值的处理一致，不单独构成缺陷。主要缺陷为'18个月'相关表述擅自加入'以内'改变原意。",
+      "evidence_ids": [
+        "p5_e16",
+        "p5_e17",
+        "p7_e9",
+        "p7_e11",
+        "p7_e21"
+      ],
+      "failure_ids": [
+        "p5_e16"
+      ],
+      "resolutions": [
+        {
+          "evidence_id": "p5_e16",
+          "decision": "confirm",
+          "reason": "用户原始表述为'大概18个月能收回成本'，作品改写为'保守口径约18个月收回成本'，此处虽未加'以内'，但'保守口径'为作品新增修饰，与p7的'约18个月以内'形成同一模块内的口径不一致"
+        }
+      ],
+      "registered_evidence": [
+        {
+          "page": 5,
+          "quote": "保守口径约 18 个月收回成本",
+          "location": "页面右侧底部高亮框标题",
+          "statement": "用户原始表述为'大概18个月能收回成本'，作品改写为'保守口径约18个月收回成本'，此处虽未加'以内'，但'保守口径'为作品新增修饰，与p7的'约18个月以内'形成同一模块内的口径不一致",
+          "kind": "fact",
+          "failure_mode": "expression_inconsistency",
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "大概18个月能收回成本"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "18",
+              "unit": "月",
+              "subject": "回本周期",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p5_e16",
+          "failure_mode_origin": "direct_judge_observation",
+          "arithmetic_checks": []
+        }
+      ],
+      "inspection_resolutions": []
+    },
+    {
+      "rubric_id": "R15",
+      "answer": "no",
+      "pages": [
+        4
+      ],
+      "evidence": "第4页图表X轴下方，四个产线名称（1号线、2号线、3号线、4号线）正下方各出现一个\"NaN\"残留标签（对应rendered_text_geometry中的p4_t16、p4_t17、p4_t18、p4_t19，bbox分别为[81.47, 275.87, 98.16, 287.74]、[168.07, 275.87, 184.75, 287.74]、[254.69, 275.87, 271.38, 287.74]、[341.32, 275.87, 358.01, 287.74]）。从Slide 4原始图像可直接观察到，在四个产线数据柱下方、X轴产线名称正下方的位置，明确显示\"NaN\"白色文字，属于图表分类/轴标签区域的NaN残留，直接违反chart_label_integrity标准。该缺陷为实际图像中可辨识的真实问题，非提取错误。",
+      "evidence_ids": [
+        "p4_R15_direct_fb98cddaa33b",
+        "p4_t16",
+        "p4_t17",
+        "p4_t18",
+        "p4_t19"
+      ],
+      "failure_ids": [
+        "p4_R15_direct_fb98cddaa33b"
+      ],
+      "resolutions": [
+        {
+          "evidence_id": "p4_R15_direct_fb98cddaa33b",
+          "defect_present": true,
+          "reason": "从Slide 4原始图像直接核实：图表X轴区域四个产线名称下方均出现\"NaN\"白色文字残留，位于数据柱正下方、与X轴对齐位置。rendered_text_geometry中p4_t16至p4_t19的bbox坐标与图像实际位置一致，文字内容\"NaN\"清晰可辨。该残留属于图表分类/轴标签缺陷，符合chart_label_integrity定义。",
+          "decision": "confirm"
+        }
+      ],
+      "registered_evidence": [
+        {
+          "page": 4,
+          "quote": "NaN",
+          "location": "图表X轴下方，1-4号线名称正下方各一个",
+          "statement": "第4页四线能耗横向对比图表中，X轴四个产线名称下方均出现'NaN'残留标签，与图表数据柱下方对齐，属于图表分类/轴标签的NaN残留",
+          "kind": "visual",
+          "failure_mode": "chart_label_integrity",
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_R15_direct_fb98cddaa33b",
+          "failure_mode_origin": "direct_judge_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "id": "p4_t16",
+          "page": 4,
+          "quote": "NaN",
+          "location": "PDF text rectangle [81.47, 275.87, 98.16, 287.74]",
+          "kind": "visual",
+          "failure_mode": null,
+          "failure_mode_origin": "image_region",
+          "statement": "Supplied original-page geometry reference; not an independent inspection or confirmed defect.",
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "arithmetic_checks": []
+        },
+        {
+          "id": "p4_t17",
+          "page": 4,
+          "quote": "NaN",
+          "location": "PDF text rectangle [168.07, 275.87, 184.75, 287.74]",
+          "kind": "visual",
+          "failure_mode": null,
+          "failure_mode_origin": "image_region",
+          "statement": "Supplied original-page geometry reference; not an independent inspection or confirmed defect.",
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "arithmetic_checks": []
+        },
+        {
+          "id": "p4_t18",
+          "page": 4,
+          "quote": "NaN",
+          "location": "PDF text rectangle [254.69, 275.87, 271.38, 287.74]",
+          "kind": "visual",
+          "failure_mode": null,
+          "failure_mode_origin": "image_region",
+          "statement": "Supplied original-page geometry reference; not an independent inspection or confirmed defect.",
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "arithmetic_checks": []
+        },
+        {
+          "id": "p4_t19",
+          "page": 4,
+          "quote": "NaN",
+          "location": "PDF text rectangle [341.32, 275.87, 358.01, 287.74]",
+          "kind": "visual",
+          "failure_mode": null,
+          "failure_mode_origin": "image_region",
+          "statement": "Supplied original-page geometry reference; not an independent inspection or confirmed defect.",
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "arithmetic_checks": []
+        }
+      ],
+      "inspection_resolutions": [
+        {
+          "inspection_id": "p3_overlap_038de22750",
+          "relation_confirmed": false,
+          "defect_present": false,
+          "reason": "从局部放大图核实：p3_t35与p3_t36为上下两行文字（\"按月产80万件、电价0.75元/kWh测算；降至标杆月用电仅需36万\"与\"kWh。\"），实际渲染为完整连贯的一句，两行之间有正常行间距，无笔画相交或遮挡。bounding box垂直方向有微小重叠仅为排版行距紧凑所致，不构成真实叠印缺陷。"
+        },
+        {
+          "inspection_id": "p2_overlap_0582ebacc3",
+          "relation_confirmed": false,
+          "defect_present": false,
+          "reason": "从局部放大图核实：p2_t50与p2_t51为\"单位能耗0.85kWh/件，约为其余三线（0.48-0.52）的1.6-1.8\"与\"倍。\"，实际为标题下的两行说明文字，第二行仅一字\"倍。\"与第一行左对齐。两行之间有正常垂直间距，无笔画相交，文字清晰可读。bounding box重叠为行尾与行首的排版间距，不构成真实叠印。"
+        }
+      ]
+    },
+    {
+      "rubric_id": "R16",
+      "answer": "yes",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "evidence": "经逐页核查，全篇信息组织与视觉层级表现如下：\n\n1. 重点信息视觉强调充分：1号线异常高值（0.85 kWh/件）在第2页以橙色折线点突出、第3页以红色柱状图单独高亮并配红色文字\"超标杆约89%·绝对差距0.40\"、第4页以绿色柱（单位能耗）与橙色柱（空载能耗）双柱对比、第7页以红色柱单独呈现现状0.85；投资回报结论（120万投入、18个月回本、252-288万元年节省）在第5页以右侧高亮框绿色边框\"保守口径约18个月收回成本\"作为视觉锚点，第7页以\"决策要点回顾\"四行结构化呈现。重点信息均通过位置（页面核心区域）、字号（标题级）、颜色（红色=异常/高亮、绿色=标杆/收益、橙色=警示）获得明确强调。\n\n2. 阅读路径清晰：整体遵循\"封面→全景对比→标杆对标→根因深挖→投资回报测算→管理改进补充→立项建议总结→结束\"的递进逻辑，每页内部采用\"标题→图表→关键发现/测算口径→数据来源\"的固定阅读顺序，符合用户要求的三段式叙事结构。\n\n3. 信息密度适中：第2页左右分栏（图表+关键发现+汇总卡片）、第3页左图右析、第4页左图右逻辑链、第5页左图右测算、第6页左图右根因与改进、第7页左图右决策要点，均无过度拥挤或空洞。各页留白合理，数据标签可读。\n\n4. 同一对象颜色编码一致：1号线单位能耗0.85在全篇均以红色/橙色强调（p2橙色折线点、p3红色柱、p4绿色柱标签但数值白色突出、p5红色柱、p7红色柱），2/3/4号线单位能耗均以绿色柱呈现，行业标杆0.45均以橙色虚线/绿色柱标注，空载能耗均以橙色柱（p4、p6）呈现。无同一颜色跨页指向不同对象造成误读的情况。\n\n5. 无时间轴类图表，不存在时间轴标签与刻度对应问题。\n\n6. 局部放大图核实：p2_overlap_0582ebacc3、p3_overlap_038de22750、p4系列overlap等候选交集均为文本行内正常换行或相邻文本框的微小bbox重叠，实际图像中无字形相交或内容遮挡，不构成视觉层级缺陷。\n\n综上，本条规定的信息组织与视觉层级要求完全满足。",
+      "evidence_ids": [
+        "p2_e10",
+        "p2_e13",
+        "p3_e1",
+        "p3_e13",
+        "p3_e16",
+        "p4_e1",
+        "p4_e11",
+        "p4_e12",
+        "p4_e14",
+        "p4_e16",
+        "p5_e1",
+        "p5_e16",
+        "p5_e17",
+        "p6_e1",
+        "p6_e12",
+        "p7_e1",
+        "p7_e6",
+        "p7_e8",
+        "p7_e9",
+        "p7_e14"
+      ],
+      "failure_ids": [],
+      "resolutions": [],
+      "registered_evidence": [],
+      "inspection_resolutions": []
+    }
+  ]
+}

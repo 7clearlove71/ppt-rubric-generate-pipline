@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A与候选B均判定为yes，且均基于分散在不同页面的证据满足现象+归因的双重要求。A依赖第6页完整呈现（p6_e8现象+p6_e12归因），B依赖第6页完整呈现（p6_e1标题含现象+p6_e9/p6_e10/p6_e11归因）。两者证据分布和详细程度不同，但均符合criterion允许分散在不同位置的条件，无实质冲突。",
+      "候选B的verdict中reject了p3_e21的ledger缺陷标记，理由与A的p4_e23处理逻辑一致：单页未完整呈现不构成全篇缺陷，因其他页面已补足。两候选对分散呈现规则的理解一致。",
+      "两候选对3号线数值准确性均不纳入本条判断，符合criterion排除项。",
+      "A的verdict提到第7页p7_e12隐含归因，B的verdict提到第7页p7_e11进一步巩固归因，但两者均不以第7页作为满足本条的核心依据，核心依据均为第6页，无实质分歧。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 39928,
+    "total_tokens": 40166,
+    "completion_tokens": 238,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 121.977,
+  "attempts": 1
+}

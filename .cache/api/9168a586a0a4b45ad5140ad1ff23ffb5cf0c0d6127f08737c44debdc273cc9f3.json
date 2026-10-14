@@ -1,0 +1,32 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      4
+    ],
+    "evidence": "第4页为1号线深挖模块，页面顶部标题明确表述'根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'；右侧'根因锁定：液压系统老化'板块进一步说明'现场排查确认液压系统老化导致效率下降——液压元件磨损使能量转换损失增大，同等产出下耗电上升'；底部流程图也呈现'根因锁定→液压系统老化→解决路径→整机更换液压系统'的完整逻辑链。这些表述均明确将1号线能耗偏高归因于液压系统老化导致的效率下降，与用户给定原因完全一致，且出现在1号线深挖模块（第4页）中，满足scope要求。",
+    "evidence_ids": [
+      "p4_e1",
+      "p4_e12",
+      "p4_e13",
+      "p4_e16"
+    ],
+    "resolutions": [],
+    "additional_observations": [],
+    "inspection_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 44644,
+    "total_tokens": 44864,
+    "completion_tokens": 220,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 115.999,
+  "attempts": 1
+}

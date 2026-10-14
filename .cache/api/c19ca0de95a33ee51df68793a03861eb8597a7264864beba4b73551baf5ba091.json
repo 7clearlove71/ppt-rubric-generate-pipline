@@ -1,0 +1,65 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R02",
+        "R15"
+      ],
+      "Q02": [
+        "R01",
+        "R03"
+      ],
+      "Q03": [
+        "R04"
+      ],
+      "Q04": [
+        "R05",
+        "R12"
+      ],
+      "Q05": [
+        "R06"
+      ],
+      "Q06": [
+        "R07",
+        "R12"
+      ],
+      "Q07": [
+        "R08"
+      ],
+      "Q08": [
+        "R09",
+        "R12"
+      ],
+      "Q09": [
+        "R10",
+        "R13"
+      ],
+      "Q10": [
+        "R11"
+      ],
+      "Q11": [
+        "R15",
+        "R16"
+      ]
+    },
+    "summary": "rubric完整覆盖11项需求：四块结构与融合逻辑由R01-R03承担，关键事实与数字由R04-R11逐条核验且保留约数与不确定性（R12），复核未决与禁止虚构由R13-R14把控，管理层叙事与可视化质量由R15-R19覆盖。各条独立可判、无重复计分、无无依据硬条件，允许等价表述与合理建议。通过。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 251,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 251
+    },
+    "prompt_tokens": 5615,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 5615
+    },
+    "total_tokens": 5866
+  },
+  "elapsed_seconds": 7.956,
+  "attempts": 1
+}

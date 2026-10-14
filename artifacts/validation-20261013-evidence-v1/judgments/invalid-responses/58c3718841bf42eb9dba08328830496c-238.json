@@ -1,0 +1,375 @@
+{
+  "page": 6,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "3 号线空载能耗四线最高：零投入管理改进压缩待机电费",
+      "location": "页面顶部标题",
+      "statement": "页面主题为3号线空载能耗问题及零投入管理改进方案",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "3号线虽然单位能耗不高0.48,但空载能耗偏高,待机状态下每小时还跑12kWh,说明停机流程不规范,这块也要提一句"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "四线待机空载能耗对比",
+      "location": "左侧图表标题",
+      "statement": "柱状图展示四条产线空载能耗对比，3号线用红色柱突出显示",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "单位：kWh/h · 3 号线为四线之最，是4 号线的 2.4 倍",
+      "location": "图表副标题",
+      "statement": "图表单位标注为kWh/h，并给出3号线与4号线的倍数关系",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "空载能耗(kWh/h)\n1号线 / 80 / 68 / 0.85 / 8\n2号线 / 95 / 49 / 0.52 / 6\n3号线 / 70 / 34 / 0.48 / 12\n4号线 / 60 / 31 / 0.52 / 5"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "12",
+          "unit": "kWh/h",
+          "subject": "3号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "5",
+          "unit": "kWh/h",
+          "subject": "4号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "ratio_percent",
+          "left": "12",
+          "right": "5",
+          "reported": "240",
+          "left_unit": "kWh/h",
+          "right_unit": "kWh/h",
+          "reported_unit": "%",
+          "left_quote": "12",
+          "right_quote": "5",
+          "reported_quote": "2.4 倍",
+          "relation_quote": "是4 号线的 2.4 倍",
+          "meaning": "3号线空载能耗为4号线的2.4倍"
+        }
+      ]
+    },
+    {
+      "quote": "8",
+      "location": "1号线柱状图数据标签",
+      "statement": "1号线空载能耗为8 kWh/h，与给定数据一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "1号线 / 80 / 68 / 0.85 / 8"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "8",
+          "unit": "kWh/h",
+          "subject": "1号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "6",
+      "location": "2号线柱状图数据标签",
+      "statement": "2号线空载能耗为6 kWh/h，与给定数据一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "2号线 / 95 / 49 / 0.52 / 6"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "6",
+          "unit": "kWh/h",
+          "subject": "2号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "12",
+      "location": "3号线柱状图数据标签",
+      "statement": "3号线空载能耗为12 kWh/h，与给定数据一致，且用红色柱体视觉强调",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "3号线 / 70 / 34 / 0.48 / 12"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "12",
+          "unit": "kWh/h",
+          "subject": "3号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "5",
+      "location": "4号线柱状图数据标签",
+      "statement": "4号线空载能耗为5 kWh/h，与给定数据一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "4号线 / 60 / 31 / 0.52 / 5"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "5",
+          "unit": "kWh/h",
+          "subject": "4号线空载能耗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "3 号线待机每小时仍跑 12 kWh （1 号线 8 、2 号线 6 、4 号线 5 ），指向停机流程不规范",
+      "location": "图表下方说明文字",
+      "statement": "明确列出四条线空载能耗数值，并将3号线问题归因于停机流程不规范",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "待机状态下每小时还跑12kWh,说明停机流程不规范"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "0.48",
+      "location": "右侧现象与根因区域",
+      "statement": "3号线单位能耗0.48 kWh/件，与给定数据一致，标注为四线最优",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "3号线 / 70 / 34 / 0.48 / 12"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.48",
+          "unit": "kWh/件",
+          "subject": "3号线单位能耗",
+          "denominator": "件",
+          "time_origin": "月"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "单位能耗 kWh/ 件 · 四线最优",
+      "location": "0.48下方说明文字，分两行显示",
+      "statement": "说明文字分'单位能耗 kWh/ 件 · 四线最'和'优'两行显示，视觉上是换行排版而非叠印遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "12",
+      "location": "待机空载数值，红色显示",
+      "statement": "3号线待机空载12 kWh/h，标注为四线之最，用红色强调异常",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "12",
+          "unit": "kWh/h",
+          "subject": "3号线待机空载",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "约9 元",
+      "location": "每小时空载浪费金额",
+      "statement": "3号线每小时空载浪费约9元，按0.75元/kWh计算",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "工业电价0.75元/kWh"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "9",
+          "unit": "元",
+          "subject": "3号线每小时空载浪费金额",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "multiply",
+          "left": "12",
+          "right": "0.75",
+          "reported": "9",
+          "left_unit": "kWh/h",
+          "right_unit": "元/kWh",
+          "reported_unit": "元",
+          "left_quote": "12",
+          "right_quote": "0.75",
+          "reported_quote": "约9 元",
+          "relation_quote": "每小时空载浪费 · 按0.75 元/kWh",
+          "meaning": "3号线每小时空载能耗12kWh乘以电价0.75元/kWh得到约9元"
+        }
+      ]
+    },
+    {
+      "quote": "每小时空载浪费 · 按0.75 元/kWh",
+      "location": "约9元下方说明文字，分两行显示",
+      "statement": "说明文字分'每小时空载浪费 · 按0.75'和'元/kWh'两行显示，视觉上是换行排版而非叠印遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "生产环节效率没有问题，问题出在非生产时段——停机流程不规范，「该停未停、该断未断」的浪费长期累积。",
+      "location": "现象与根因区域说明文字，分两行显示",
+      "statement": "将3号线空载能耗问题归因于停机流程不规范，与用户需求一致；文字分上下两行是正常换行排版",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "说明停机流程不规范"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "改进方向 · 零投资/ 低投入管理改进",
+      "location": "改进措施标题",
+      "statement": "提出零投资/低投入的管理改进方向，与页面主题一致",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "规范停机与待机标准作业流程（SOP ）",
+      "location": "改进措施01",
+      "statement": "具体管理改进措施：规范停机与待机SOP",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "明确非生产时段停机、断电与预热要求",
+      "location": "改进措施02",
+      "statement": "具体管理改进措施：明确非生产时段操作要求",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "能耗监控看板异常告警",
+      "location": "改进措施03",
+      "statement": "具体管理改进措施：能耗监控与异常告警",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "与 1 号线液压系统技改形成「技术改造 + 管理改进」两条腿走路的完整方案",
+      "location": "页面底部总结语",
+      "statement": "将3号线管理改进与1号线液压系统技改并列为完整方案，体现用户要求的整体结构",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "整体结构上先把四条线的能耗对比摆出来,再聚焦1号线做深挖,最后落到节能改造的投资回报测算"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "数据来源：一个月产线设备能耗实测数据（用户素材）；空载浪费按工业电价 0.75 元/kWh 测算",
+      "location": "页面底部数据来源说明",
+      "statement": "明确数据来源为一个月实测数据，电价采用0.75元/kWh，与用户需求一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "产线设备能耗数据我拉了一个月的\n工业电价0.75元/kWh"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.75",
+          "unit": "元/kWh",
+          "subject": "工业电价",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "evidence": "PPT具备完整演示文稿结构：封面页（页1，含标题、副标题、田野记录者信息）、内容模块按天/主题划分（页2为四日行迹总览与证据地图，页3-6分别展开Day1-Day4的具体观察，页7为三条主线总结，页8为9条存疑项清单，页9为开放议题与线索征集，页10为结束页）。每页均有标题层级、信息卡片、视觉化图表（如页3的居住状态示意区间、页8的表格），并采用统一的配色与排版风格，明显经过结构化演示文稿设计，非原文直接搬运。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 28836,
+    "total_tokens": 29005,
+    "completion_tokens": 169,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 23.306,
+  "attempts": 1
+}

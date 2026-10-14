@@ -1,0 +1,100 @@
+{
+  "cases": [
+    {
+      "case_id": "10",
+      "A": {
+        "status": "incomplete",
+        "score": null,
+        "score_lower": 0,
+        "score_upper": 100.0,
+        "unresolved_weight": 100.0,
+        "dimensions": {
+          "correctness": {
+            "earned": 0,
+            "possible": 25.0,
+            "unresolved": 25.0
+          },
+          "fulfillment": {
+            "earned": 0,
+            "possible": 30.0,
+            "unresolved": 30.0
+          },
+          "integrity": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          },
+          "narrative": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          },
+          "visual": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          }
+        }
+      },
+      "B": {
+        "status": "incomplete",
+        "score": null,
+        "score_lower": 0,
+        "score_upper": 100.0,
+        "unresolved_weight": 100.0,
+        "dimensions": {
+          "correctness": {
+            "earned": 0,
+            "possible": 25.0,
+            "unresolved": 25.0
+          },
+          "fulfillment": {
+            "earned": 0,
+            "possible": 30.0,
+            "unresolved": 30.0
+          },
+          "integrity": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          },
+          "narrative": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          },
+          "visual": {
+            "earned": 0,
+            "possible": 15.0,
+            "unresolved": 15.0
+          }
+        }
+      },
+      "status": "incomplete"
+    }
+  ],
+  "status_counts": {
+    "incomplete": 1
+  },
+  "total_cases": 1,
+  "approved_fraction": 0.0,
+  "logical_cache_hits": 394,
+  "models": {
+    "kimi-k2.6": {
+      "http_attempts": 607,
+      "failed_attempts": 168,
+      "reported_prompt_tokens": 20385895,
+      "reported_completion_tokens": 870989,
+      "reported_total_tokens": 21256884,
+      "usage_missing_attempts": 16
+    }
+  },
+  "attempt_journal_available": true,
+  "usage_scope": "Cumulative journals for this output directory; includes resumed invocations.",
+  "usage_caveat": null,
+  "failed_or_incomplete_cases": [
+    "10"
+  ],
+  "human_agreement": null,
+  "acceptance": "Automated operational report only; no human alignment claim."
+}

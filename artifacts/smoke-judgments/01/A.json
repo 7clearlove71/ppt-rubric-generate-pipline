@@ -1,0 +1,56 @@
+{
+  "case_id": "01",
+  "candidate_id": "A",
+  "candidate_hash": "3a234381e88d3ce745e1e1976597dfca656e66f1b6bd7e150e8b2003fe32980e",
+  "rubric_hash": "19faef189f19226ee11bc8603b334e4750fa2c23f8536588edfbf04a169eec12",
+  "judge_model": "kimi-k2.6",
+  "config_hash": "103670322926922f0b612f655178ab47eb31a3174efb4a919895651175c34bb4",
+  "summary": {
+    "status": "incomplete",
+    "score": null,
+    "score_lower": 3.0681818181818183,
+    "score_upper": 100.0,
+    "unresolved_weight": 96.93181818181819,
+    "dimensions": {
+      "correctness": {
+        "earned": 0,
+        "possible": 25.0,
+        "unresolved": 25.0
+      },
+      "fulfillment": {
+        "earned": 3.0681818181818183,
+        "possible": 30.0,
+        "unresolved": 26.93181818181818
+      },
+      "integrity": {
+        "earned": 0,
+        "possible": 15.000000000000002,
+        "unresolved": 15.000000000000002
+      },
+      "narrative": {
+        "earned": 0,
+        "possible": 15.0,
+        "unresolved": 15.0
+      },
+      "visual": {
+        "earned": 0,
+        "possible": 15.0,
+        "unresolved": 15.0
+      }
+    }
+  },
+  "verdicts": [
+    {
+      "rubric_id": "R01",
+      "answer": "yes",
+      "pages": [
+        2,
+        3,
+        4,
+        10,
+        13
+      ],
+      "evidence": "第2页目录明确列出'量产良率 78% → 92%'；第3页总览以大字呈现'92%'量产良率；第4页标题为'良率从 78% 到 92%'，柱状图对比显示'三年前 78%'与'现在 92%'，并标注'良率提升14个百分点'；第10页表格中可拉伸传感器阵列关键指标为'量产良率 92%'；第13页结语回顾'78% → 92% 量产良率'。两个数值及提升关系在多处准确呈现。"
+    }
+  ]
+}

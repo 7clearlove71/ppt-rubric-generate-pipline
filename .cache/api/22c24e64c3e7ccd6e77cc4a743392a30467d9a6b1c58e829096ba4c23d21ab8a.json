@@ -1,0 +1,441 @@
+{
+  "parsed": {
+    "page": 10,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "老旧小区改造工作情况汇报",
+        "location": "页面左上角标题栏",
+        "statement": "页面标题，与汇报主题一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "老旧小区改造工作汇报的PPT"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "四、存在问题 ｜ 10 / 13",
+        "location": "页面右上角导航栏",
+        "statement": "当前为第10页，属于'存在问题'板块（需求中第4个纲目），页面编号显示为第10页共13页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#4 存在问题"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "存在问题（一）：资金筹措与支出进度",
+        "location": "页面主标题区域",
+        "statement": "本页聚焦资金类问题，标题为公文式表述，符合'存在问题'板块定位",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存在问题那部分不要写虚的,要能看出跟前面资金和满意度两块是呼应的"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "两个资金类问题均由 P05 、 P06 数据直接导出：到位率 90.0% 与执行率 86.0% 的落差即为症结。",
+        "location": "标题下方说明文字",
+        "statement": "明确指出问题数据来源于P05、P06页面，建立与前面资金板块的数据呼应关系，符合需求中'问题要跟前面资金板块呼应'的要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "要能看出跟前面资金和满意度两块是呼应的、有对应关系的"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "资金到位率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "86.0",
+            "unit": "%",
+            "subject": "资金执行率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "问题一 资金筹措渠道未闭合， 4280 万元缺口集中于三类渠道",
+        "location": "第一问题标题区",
+        "statement": "问题一标题，具体指出资金缺口金额和性质，非空泛表述",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "4280",
+            "unit": "万元",
+            "subject": "资金缺口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "P06 ｜区级配套 81.8% （缺口 2140 万元） P06 ｜社会资本 73.0% （缺口 1140 万元） P06 ｜居民出资 65.8% （缺口 1000 万元）",
+        "location": "问题一数据溯源行",
+        "statement": "三类渠道到位率及各自缺口数据，均标注来源P06，数据可溯源。区级配套2140+社会资本1140+居民出资1000=4280万元，与标题4280万元缺口一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "81.8",
+            "unit": "%",
+            "subject": "区级配套到位率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "2140",
+            "unit": "万元",
+            "subject": "区级配套缺口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "73.0",
+            "unit": "%",
+            "subject": "社会资本到位率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "1140",
+            "unit": "万元",
+            "subject": "社会资本缺口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "65.8",
+            "unit": "%",
+            "subject": "居民出资到位率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "1000",
+            "unit": "万元",
+            "subject": "居民出资缺口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "left": "2140",
+            "right": "1140",
+            "reported": "4280",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "万元",
+            "left_quote": "缺口 2140 万元",
+            "right_quote": "缺口 1140 万元",
+            "reported_quote": "4280 万元缺口",
+            "relation_quote": "缺口集中于三类渠道",
+            "meaning": "三类渠道缺口加总验证"
+          }
+        ]
+      },
+      {
+        "quote": "主要表现 区级配套、社会资本、居民出资三类渠道到位率均低于 90.0% ， 三级财政资金已 100.0% 到位，缺口全部来自上述三类渠道。",
+        "location": "问题一主要表现区域",
+        "statement": "具体表现描述，将三类渠道与90%基准比较，并说明三级财政资金100%到位，形成对比，问题指向明确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "到位率基准",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "100.0",
+            "unit": "%",
+            "subject": "三级财政资金到位率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "影响 5 个在建小区尾款、 24 部电梯补贴暂无法拨付，直接影响完工率与居民满意度。",
+        "location": "问题一影响区域",
+        "statement": "影响描述具体，涉及5个小区、24部电梯，并明确关联'完工率与居民满意度'，与需求中要求跟满意度板块呼应一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "要能看出跟前面资金和满意度两块是呼应的"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "5",
+            "unit": "个",
+            "subject": "在建小区",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "24",
+            "unit": "部",
+            "subject": "电梯补贴",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "问题二 支出进度滞后于资金到位， 5393 万元结余未形成实物工作量",
+        "location": "第二问题标题区",
+        "statement": "问题二标题，指出支出进度滞后及具体结余金额，非空泛表述",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "5393",
+            "unit": "万元",
+            "subject": "账面积余",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "P05 ｜支出执行率 86.0% （低于到位率 90.0% ） P06 ｜提升类支出执行率 75.9% （结余 1579 万元）",
+        "location": "问题二数据溯源行",
+        "statement": "支出执行率数据标注来源P05，提升类支出执行率标注来源P06，数据可溯源",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "86.0",
+            "unit": "%",
+            "subject": "支出执行率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "到位率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "75.9",
+            "unit": "%",
+            "subject": "提升类支出执行率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "1579",
+            "unit": "万元",
+            "subject": "提升类结余",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "已到位 38520 万元中仅支出 33127 万元，账面积余 5393 万元， 其中 3236 万元因竣工结算审计未完成暂不能拨付。",
+        "location": "问题二主要表现区域",
+        "statement": "具体数据描述支出与结余情况，38520-33127=5393，结余金额与标题一致；并说明3236万元不能拨付的具体原因（竣工结算审计未完成）",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "38520",
+            "unit": "万元",
+            "subject": "已到位资金",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "33127",
+            "unit": "万元",
+            "subject": "已支出资金",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "5393",
+            "unit": "万元",
+            "subject": "账面积余",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "3236",
+            "unit": "万元",
+            "subject": "因审计未完成暂不能拨付金额",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "38520",
+            "right": "33127",
+            "reported": "5393",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "万元",
+            "left_quote": "已到位 38520 万元",
+            "right_quote": "仅支出 33127 万元",
+            "reported_quote": "账面积余 5393 万元",
+            "relation_quote": "支出进度滞后于资金到位",
+            "meaning": "到位资金减去已支出资金验证结余"
+          }
+        ]
+      },
+      {
+        "quote": "提升类支出执行率仅 75.9% ，直接拖累社区服务 及养老托幼设施 79.2% 的完成率（见 P04 ）。",
+        "location": "问题二影响区域",
+        "statement": "影响描述具体，将提升类支出执行率75.9%与养老托幼设施完成率79.2%关联，并标注来源P04，建立与前面改造任务完成情况（P04）的呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "要能看出跟前面资金和满意度两块是呼应的"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "75.9",
+            "unit": "%",
+            "subject": "提升类支出执行率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "79.2",
+            "unit": "%",
+            "subject": "养老托幼设施完成率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "问题来源： P05 资金到位与支出执行、 P06 资金来源与支出构成明细",
+        "location": "页面左下角",
+        "statement": "明确标注问题数据来源P05、P06，增强可追溯性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据截至 2026 年 8 月 31 日 · 比率保留一位小数 · 情景数 据",
+        "location": "页面右下角注释",
+        "statement": "数据截止时间明确（2026年8月31日），比率精度说明（保留一位小数），但末尾'情景数 据'存在换行分割，'情景数据'应为完整词组，被拆分为'情景数'（行末）和'据'（下一行开头）",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "数据截止年份",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "8",
+            "unit": "月",
+            "subject": "数据截止月份",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "31",
+            "unit": "日",
+            "subject": "数据截止日期",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "情景数 据",
+        "location": "页面右下角最后一行",
+        "statement": "视觉观察：'情景数据'一词被换行分割为'情景数'和'据'，'据'字单独出现在下一行起始位置，形成视觉上的不连贯。根据text_geometry，p10_t105为'情景数'，p10_t106为'据'，两者y坐标不同（492.44 vs 506.84），属于换行排版，非文字叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "问题一/问题二 标签样式",
+        "location": "页面左侧问题编号区域",
+        "statement": "视觉观察：'问题一''问题二'采用深色底白字标签样式，与右侧内容形成清晰的层级区分，信息组织有序",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 10568,
+    "total_tokens": 13075,
+    "completion_tokens": 2507,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 99.926,
+  "attempts": 1
+}

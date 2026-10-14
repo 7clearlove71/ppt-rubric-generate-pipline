@@ -1,0 +1,50 @@
+{
+  "answer": "yes",
+  "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "evidence": "逐页核查所有原始图像与局部放大图，确认：1）所有页面文字与图形内容清晰可辨识，无实际笔画相交的遮挡；2）text_overlap_candidates中的候选对均为上标/下标排版（如10⁻⁵、3×10⁻⁵、με等）或极小间距的相邻字符（如M1与后续文字），属于正常数学/单位排版，不构成视觉不可读；3）局部放大图确认这些区域文字完整、对比度正常；4）无内容超出页面边界导致裁切；5）无深色文字配深色背景或浅色文字配浅色背景等对比度不足问题；6）正文字号在演示场景下可辨识。inspection_resolutions中两个required_inspection均确认无实际缺陷。全篇无影响阅读的遮挡、裁切或对比度问题。",
+  "evidence_ids": [
+    "p1_e1",
+    "p2_e1",
+    "p3_e1",
+    "p4_e1",
+    "p5_e1",
+    "p6_e1",
+    "p7_e1",
+    "p8_e1",
+    "p9_e1",
+    "p10_e1",
+    "p11_e1",
+    "p12_e1",
+    "p13_e1"
+  ],
+  "resolutions": [],
+  "inspection_resolutions": [
+    {
+      "inspection_id": "p5_overlap_a39fe7d438",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示该区域的'με（光纤光栅标定，量级参照）'为正常上下两行文字排版，上行末尾'重'字被截断属于行尾换行，非遮挡；μ与ε为希腊字母组合，与右侧中文括号内容无笔画相交，背景为浅灰色，对比度充足，不构成visual_readability缺陷。"
+    },
+    {
+      "inspection_id": "p6_overlap_4e42a6f720",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'3×10⁻⁵'为完整科学计数法数字，蓝色矩形（图表元素）与文字之间有明确间距，无笔画相交；上标'-5'为正常排版，非遮挡。文字清晰可读，背景白色对比度充足，不构成visual_readability缺陷。"
+    }
+  ],
+  "additional_observations": []
+}

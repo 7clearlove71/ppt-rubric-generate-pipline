@@ -1,0 +1,62 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "经全篇核查，存在多处将源文未提供的年份\"2026\"作为事实性信息冒充呈现的情况。具体包括：第1页左上角\"2026 年度大会·开场汇报\"（p1_e2）、第2页左下角页脚\"2026 年度大会·开场汇报\"（p2_e5）、第3页左下角页脚\"2026 年度大会·开场汇报\"（p3_e6）、第4页左下角页脚\"2026 年度大会·开场汇报\"（p4_e6）、第5页左下角页脚\"2026 年度大会·开场汇报\"（p5_e4，已标记为fabricated_facts）、第6页左下角页脚\"2026 年度大会·开场汇报\"（p6_e7，已标记为fabricated_facts）、第7页左下角页脚\"2026 年度大会·开场汇报\"（p7_e8，已标记为fabricated_facts）、第8页左下角页脚\"2026 年度大会·开场汇报\"（p8_e7）。源文prompt仅提及\"年会开场那个PPT\"，未提供任何具体年份信息，\"2026\"属于候选作品自行新增的具体年份数据，并冒充事实呈现，符合fabricated_facts定义。此外，第3页底部\"行业在收缩，我们在加码\"中的\"行业在收缩\"属于对\"行业寒冬\"的合理演绎，不构成虚构事实；各页数据均与源文一致，无其他虚构数据、金额、月份、公司名或否定式断言。",
+    "evidence_ids": [
+      "p1_e2",
+      "p2_e5",
+      "p3_e6",
+      "p4_e6",
+      "p5_e4",
+      "p6_e7",
+      "p7_e8",
+      "p8_e7"
+    ],
+    "failure_ids": [
+      "p5_e4",
+      "p6_e7",
+      "p7_e8"
+    ],
+    "resolutions": [
+      {
+        "evidence_id": "p5_e4",
+        "decision": "confirm",
+        "reason": "第5页页脚明确标注'2026 年度大会·开场汇报'，源文prompt仅说'年会开场那个PPT'，未提供任何年份信息。'2026'为候选作品自行新增的具体年份，且未标注为占位、示意或测算，直接冒充事实呈现，符合fabricated_facts定义。"
+      },
+      {
+        "evidence_id": "p6_e7",
+        "decision": "confirm",
+        "reason": "第6页页脚同样标注'2026 年度大会·开场汇报'，与p5_e4同理，源文未提供年份，'2026'属新增具体年份数据并冒充事实，确认构成fabricated_facts。"
+      },
+      {
+        "evidence_id": "p7_e8",
+        "decision": "confirm",
+        "reason": "第7页页脚同样标注'2026 年度大会·开场汇报'，与p5_e4、p6_e7同理，源文未提供年份，'2026'属新增具体年份数据并冒充事实，确认构成fabricated_facts。"
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 36199,
+    "total_tokens": 36850,
+    "completion_tokens": 651,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 54.885,
+  "attempts": 2
+}

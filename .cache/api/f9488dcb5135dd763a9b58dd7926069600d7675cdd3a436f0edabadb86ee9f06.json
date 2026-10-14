@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A与B均判定为yes，但B的verdict中对第6页科学计数法上标排版的解释（'提取器将上标“⁻”识别为独立span导致bbox相交，但局部放大图确认实际渲染为完整科学计数法……非标签缺陷'）属于对提取器局限性的合理说明，不改变答案。该说明仅为增强可信度，不构成与A的实质冲突。",
+      "候选B覆盖的含图表页面远多于A（A仅第4页，B为第2-9、11-12页），但标准明确'若未使用任何数据图表，本条自然满足'，因此A的'仅第4页有图'与B的'多页有图'均可在各自语境下成立，不触发答案翻转。",
+      "两候选在'标签完整且可读'的判定上结论一致，无实质冲突。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35225,
+    "total_tokens": 35421,
+    "completion_tokens": 196,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 57.672,
+  "attempts": 1
+}

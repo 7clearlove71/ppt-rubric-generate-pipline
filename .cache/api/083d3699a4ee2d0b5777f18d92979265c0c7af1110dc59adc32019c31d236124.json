@@ -1,0 +1,532 @@
+{
+  "parsed": {
+    "page": 6,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "执行48 小时路线图，36 小时技术复核前不抢跑结论",
+        "location": "页面顶部标题",
+        "statement": "页面标题明确提及48小时时间窗口和36小时技术复核节点",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "响应路线图总时长",
+            "denominator": "不适用",
+            "time_origin": "事件发生后"
+          },
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核预计完成时间",
+            "denominator": "不适用",
+            "time_origin": "事件发生后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "0—48 小时五阶段窗口",
+        "location": "标题下方副标题",
+        "statement": "将48小时划分为五个阶段：0-4、4-8、8-24、24-36、36-48小时",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "覆盖部门：管理层、公关、技术、客服、电商、法务",
+        "location": "副标题右侧",
+        "statement": "列明六个覆盖部门，与素材中提到的部门一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "舆情监测那边"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "客服"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "公关部"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "0—4 小时 / 4 / 管理层确认二级响应，指定总负责人，成立六部门响应小组",
+        "location": "甘特图第一行及下方卡片",
+        "statement": "第一阶段时长4小时，动作为确认响应、指定负责人、成立小组",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "4",
+            "unit": "小时",
+            "subject": "第一阶段时长",
+            "denominator": "不适用",
+            "time_origin": "事件发生后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "4—8 小时 / 4 / 批准并发布事实边界内声明，客服统一口径，建立舆情与退单看板",
+        "location": "甘特图第二行及下方卡片",
+        "statement": "第二阶段时长4小时，包含声明发布、客服口径统一、建立看板",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "4",
+            "unit": "小时",
+            "subject": "第二阶段时长",
+            "denominator": "不适用",
+            "time_origin": "事件发生后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "8—24 小时 / 16 / 持续监测转发、负面情绪、来电、退单；技术集中复核，准备媒体问询口径",
+        "location": "甘特图第三行及下方卡片",
+        "statement": "第三阶段时长16小时，包含持续监测和技术复核",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "转发破万"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "负面情绪占比约72%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "近三天相关来电大概40通"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "16",
+            "unit": "小时",
+            "subject": "第三阶段时长",
+            "denominator": "不适用",
+            "time_origin": "事件发生后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "24—36 小时 / 12 / 技术复核进入结论窗口；按发现/未发现问题分支准备处理方案",
+        "location": "甘特图第四行及下方卡片",
+        "statement": "第四阶段时长12小时，技术复核进入结论窗口，按两种分支准备方案",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "小时",
+            "subject": "第四阶段时长",
+            "denominator": "不适用",
+            "time_origin": "事件发生后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "36—48 小时 / 12 / 公布复核进展或最终说明，处理高优先级客诉与退单，复盘传播与业务恢复",
+        "location": "甘特图第五行及下方卡片",
+        "statement": "第五阶段时长12小时，公布复核结果、处理客诉、复盘恢复",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "小时",
+            "subject": "第五阶段时长",
+            "denominator": "不适用",
+            "time_origin": "事件发生后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "不发布过满结论",
+        "location": "4-8小时卡片底部",
+        "statement": "明确提示不发布过满结论，对应素材中关于措辞过满的风险提醒",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "复核结论前不定性",
+        "location": "24-36小时卡片底部",
+        "statement": "明确提示复核结论前不定性，对应素材中36小时复核未完的前提",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "有问题立即升级，无问题避免攻击性表述",
+        "location": "36-48小时卡片底部",
+        "statement": "提示避免攻击性表述，对应素材中关于'追究法律责任'可能被解读为店大欺客的担忧",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "另外\"追究法律责任\"这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "0—4 小时",
+        "location": "甘特图左侧第一行标签",
+        "statement": "时间区间标签，与右侧X轴刻度0对齐",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "4—8 小时",
+        "location": "甘特图左侧第二行标签",
+        "statement": "时间区间标签，与右侧X轴刻度4对齐",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "8—24 小时",
+        "location": "甘特图左侧第三行标签",
+        "statement": "时间区间标签，与右侧X轴刻度8-24区间对齐，跨度16小时",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "24—36 小时",
+        "location": "甘特图左侧第四行标签",
+        "statement": "时间区间标签，与右侧X轴刻度24对齐",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "36—48 小时",
+        "location": "甘特图左侧第五行标签",
+        "statement": "时间区间标签，与右侧X轴刻度36对齐",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "来源：用户核心材料；数据有限，基于用户素材。",
+        "location": "页面左下角",
+        "statement": "数据来源标注，承认数据有限性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "管理层确认二级响应，指定总负责人，成立六部门响应小组",
+        "location": "0-4小时卡片内",
+        "statement": "响应机制内容，包含总负责人和六部门小组",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "响应决议 · 总负责人 · 小组名单 / 明确指挥链和汇报关系",
+        "location": "0-4小时卡片内",
+        "statement": "输出物和行动要点",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "批准并发布事实边界内声明，客服统一口径，建立舆情与退单看板",
+        "location": "4-8小时卡片内",
+        "statement": "响应机制内容，包含声明、口径、看板建立",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "临时声明 · 客服话术 · 联动看板 / 不发布过满结论",
+        "location": "4-8小时卡片内",
+        "statement": "输出物和行动要点，强调不发布过满结论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "持续监测转发、负面情绪、来电、退单；技术集中复核，准备媒体问询口径",
+        "location": "8-24小时卡片内",
+        "statement": "响应机制内容，包含监测指标和技术复核",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "监测简报 · 复核记录 · 媒体口径 / 以看板统一判断口径",
+        "location": "8-24小时卡片内",
+        "statement": "输出物和行动要点",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "技术复核进入结论窗口；按发现/未发现问题分支准备处理方案",
+        "location": "24-36小时卡片内",
+        "statement": "响应机制内容，按两种分支准备方案",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "复核结论 · 升级或披露预案 / 复核结论前不定性",
+        "location": "24-36小时卡片内",
+        "statement": "输出物和行动要点，强调复核结论前不定性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "公布复核进展或最终说明，处理高优先级客诉与退单，复盘传播与业务恢复",
+        "location": "36-48小时卡片内",
+        "statement": "响应机制内容，包含复核公布、客诉处理、复盘恢复",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "更新声明 · 客诉处理结果 · 复盘记录 / 有问题立即升级，无问题避免攻击性表述",
+        "location": "36-48小时卡片内",
+        "statement": "输出物和行动要点，强调避免攻击性表述",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "0 / 12 / 24 / 36 / 48 / 小时",
+        "location": "甘特图底部X轴",
+        "statement": "时间轴刻度从0到48小时，终点标注'小时'单位",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "4 / 4 / 16 / 12 / 12",
+        "location": "甘特图各阶段条形右侧数字",
+        "statement": "各阶段时长数值标注，与左侧区间标签一致",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "4",
+            "unit": "小时",
+            "subject": "第一阶段时长",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "4",
+            "unit": "小时",
+            "subject": "第二阶段时长",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "16",
+            "unit": "小时",
+            "subject": "第三阶段时长",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "12",
+            "unit": "小时",
+            "subject": "第四阶段时长",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "12",
+            "unit": "小时",
+            "subject": "第五阶段时长",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "add",
+            "left": "4",
+            "right": "4",
+            "reported": "8",
+            "left_unit": "小时",
+            "right_unit": "小时",
+            "reported_unit": "小时",
+            "left_quote": "4",
+            "right_quote": "4",
+            "reported_quote": "8—24 小时",
+            "relation_quote": "0—4 小时 / 4—8 小时 / 8—24 小时",
+            "meaning": "前两阶段累计8小时，第三阶段从第8小时开始"
+          },
+          {
+            "operation": "add",
+            "left": "8",
+            "right": "16",
+            "reported": "24",
+            "left_unit": "小时",
+            "right_unit": "小时",
+            "reported_unit": "小时",
+            "left_quote": "4—8 小时",
+            "right_quote": "16",
+            "reported_quote": "24—36 小时",
+            "relation_quote": "8—24 小时 / 24—36 小时",
+            "meaning": "前三阶段累计24小时，第四阶段从第24小时开始"
+          },
+          {
+            "operation": "add",
+            "left": "24",
+            "right": "12",
+            "reported": "36",
+            "left_unit": "小时",
+            "right_unit": "小时",
+            "reported_unit": "小时",
+            "left_quote": "24—36 小时",
+            "right_quote": "12",
+            "reported_quote": "36—48 小时",
+            "relation_quote": "24—36 小时 / 36—48 小时",
+            "meaning": "前四阶段累计36小时，第五阶段从第36小时开始"
+          },
+          {
+            "operation": "add",
+            "left": "36",
+            "right": "12",
+            "reported": "48",
+            "left_unit": "小时",
+            "right_unit": "小时",
+            "reported_unit": "小时",
+            "left_quote": "36—48 小时",
+            "right_quote": "12",
+            "reported_quote": "48",
+            "relation_quote": "36—48 小时 / 0—48 小时五阶段窗口",
+            "meaning": "五阶段累计48小时，与总窗口一致"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 12586,
+    "total_tokens": 16716,
+    "completion_tokens": 4130,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 258.348,
+  "attempts": 2
+}

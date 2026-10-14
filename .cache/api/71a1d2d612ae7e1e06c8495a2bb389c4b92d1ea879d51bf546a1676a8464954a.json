@@ -1,0 +1,144 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "经逐页核查，发现以下未经用户给定、未标注为假设/估算/待核实的具体事实被冒充为已知：\n\n1. **改造后单位能耗0.74 kWh/件**（p4, p5, p7多次出现）：用户未提供该数值，作品未在任何位置标注此为假设或估算，而是以\"约0.74\"\"≈0.74\"形式直接呈现为测算结果，实质是未经支持的新增事实被冒充已知。\n\n2. **液压系统占1号线电耗45%、老化损失约29%（约8.8万kWh/月）**（p3, p4, p5, p7）：用户未提供液压系统占比、老化损失比例及具体损失电量。作品在p4底部标注\"45%电耗占比与29%老化损失为工程估算\"，但p3、p5、p7等页面直接引用这些数值进行后续计算和结论呈现，未在首次出现或关键引用位置明确标注假设性质，构成未经支持的新增事实被冒充已知。\n\n3. **3号线月待机约240小时**（p6）：用户未提供该数值。作品在p6标注\"（假设口径）\"，但仅在标题区小字标注，正文计算中直接作为前提使用，标注位置不够显明；且该假设是具体数值，属于用户未给定的具体事实。\n\n4. **3号线改善后目标6 kWh/h**（p6, p7）：用户未提供该目标值。作品直接引用2号线空载能耗作为对标目标，但未标注此为假设或待核实目标，在p7监测机制中直接列为验证指标。\n\n5. **日期\"2026年9月\"**（p1, p8）：用户未提供任何日期信息。作品在p1、p8直接标注为\"DOC · 2026年9月\"\"2026年9月\"，未标注为假设或自行设定，冒充为文档真实时间。\n\n6. **设备寿命10年**（p5, p7）：用户未提供。作品在p5直接用于计算\"按10年设备寿命，回收期后约8.5年累计净收益约673万元\"，p7风险区引用，未标注假设来源。\n\n7. **回收期敏感性区间16.5–25.3个月的具体数值**（p5, p7）：用户未提供这些具体参数。作品在p5呈现完整敏感性表格，未说明各情形参数假设来源，直接作为测算结果呈现。\n\n8. **批准后2周内完成方案细化与停机窗口排期**（p8）：用户未提供该时间计划。作品在p8直接作为决策请求后的行动项呈现，未标注为建议或假设。\n\n以上缺陷均属于\"未经支持的新增事实被冒充已知\"，符合unsupported_assertion定义。",
+    "evidence_ids": [
+      "p1_e8",
+      "p4_e20",
+      "p4_e48",
+      "p5_e2",
+      "p5_e10",
+      "p6_e13",
+      "p6_e14",
+      "p7_e10",
+      "p7_e11",
+      "p7_e14",
+      "p8_e5"
+    ],
+    "resolutions": [],
+    "additional_observations": [
+      {
+        "page": 4,
+        "quote": "单位能耗 kWh/件（改造前 → 后）0.85 → 约 0.74",
+        "location": "右侧板块改造效果预期",
+        "statement": "改造后单位能耗0.74 kWh/件为用户未给定的具体数值，未在首次出现位置明确标注为假设或估算，直接用于后续月节电量、年收益等所有测算",
+        "kind": "fact",
+        "failure_mode": "unsupported_assertion",
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0.74",
+            "unit": "kWh/件",
+            "subject": "1号线改造后预估单位能耗",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 5,
+        "quote": "① 单位能耗改善 ≈ 0.74 kWh/件 / 0.85 - 0.11，降幅约 13%",
+        "location": "页面上部左侧指标卡片①",
+        "statement": "将p4出现的0.74 kWh/件作为测算前提直接引用，未重新标注假设性质，形成未经支持事实的跨页累积冒充",
+        "kind": "fact",
+        "failure_mode": "unsupported_assertion",
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0.74",
+            "unit": "kWh/件",
+            "subject": "改造后1号线单位能耗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 7,
+        "quote": "0.85 → 约 0.74 kWh/件，连续偏离即复盘",
+        "location": "监测与验证机制区",
+        "statement": "将用户未给定的0.74 kWh/件直接列为立项后监测验证的基准目标值，未标注为假设或待实测确认，冒充为已确定的验证标准",
+        "kind": "fact",
+        "failure_mode": "unsupported_assertion",
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0.74",
+            "unit": "kWh/件",
+            "subject": "1号线改造后目标单位能耗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 7,
+        "quote": "3 号线 12 → 6 kWh/h，检验 SOP 落地",
+        "location": "监测与验证机制区",
+        "statement": "3号线空载改善目标6 kWh/h为用户未给定的具体数值，直接列为验证指标，未标注为假设或对标假设",
+        "kind": "fact",
+        "failure_mode": "unsupported_assertion",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "3号线 / 70 / 34 / 0.48 / 12"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "6",
+            "unit": "kWh/h",
+            "subject": "3号线目标空载能耗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 8,
+        "quote": "批准后 2 周内完成方案细化与停机窗口排期",
+        "location": "决策请求下方，灰色文字",
+        "statement": "用户未给定的具体实施时间计划（2周），未标注为建议、假设或待确认，直接作为决策请求后的行动项呈现",
+        "kind": "fact",
+        "failure_mode": "unsupported_assertion",
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2",
+            "unit": "周",
+            "subject": "方案细化与停机窗口排期时间",
+            "denominator": "不适用",
+            "time_origin": "批准后"
+          }
+        ],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 53607,
+    "total_tokens": 55172,
+    "completion_tokens": 1565,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 143.399,
+  "attempts": 1
+}

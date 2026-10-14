@@ -1,0 +1,29 @@
+{
+  "stage": "gate_complete",
+  "prompt_version": "2026-10-13.12",
+  "functional_acceptance": {
+    "complete_candidates": 2,
+    "criteria_per_candidate": 15,
+    "unresolved_weight": 0,
+    "real_A_page13_overlap_retained": true,
+    "overlap_not_charged_to_hierarchy": true,
+    "visual_reference_contract_recovered": true,
+    "given_facts_background_distinction_checked": true
+  },
+  "semantic_acceptance": "not established",
+  "consistency_audit": {
+    "passed": 13,
+    "unavailable": 2,
+    "unresolved": 0,
+    "details": "R06 and R14 reviewer outputs rejected; no unvalidated challenge applied"
+  },
+  "known_limitations": [
+    "B R09 wrongly denies the visible comparator heading; same-page neutral context did not reliably correct the anchored reasoning",
+    "B R06 scope judgment requires further semantic audit; failed reviewer confuses candidate-local page numbers",
+    "A R14 overstates some character-level overlap details; A R15 falsely denies overlap outside its own ownership"
+  ],
+  "expansion_decision": "Proceed with authorized empirical measurement using frozen .12 after complete 01 scoring; retain limitations and report semantic quality separately from score completeness and human agreement. This is not production-quality approval.",
+  "human_labels_used_in_model_inputs": false,
+  "further_adaptive_pipeline_changes_this_round": false,
+  "shared_budget": "shared-budget.json"
+}

@@ -1,0 +1,38 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": [
+        "R06"
+      ]
+    },
+    "summary": "审核通过。rubric共6条，覆盖全部5项需求，无重复惩罚问题。各条目来源依据清晰，边界独立，可单独判断。R03将24小时与1天视为等价表述，符合用户原意且条件明确；R04对未提供信息的处理规则合理，允许占位与建议；R06仅要求可辨识的对比与可读性，不强制固定风格。未发现影响有效性的error。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 2463,
+    "total_tokens": 2597,
+    "completion_tokens": 134,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 4.653,
+  "attempts": 1
+}

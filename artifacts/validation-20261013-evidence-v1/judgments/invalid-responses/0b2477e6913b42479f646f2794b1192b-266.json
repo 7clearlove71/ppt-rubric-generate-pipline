@@ -1,0 +1,619 @@
+{
+  "page": 3,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "1 号线单位能耗 0.85 kWh/ 件达标杆 1.89 倍、比 2 号线高 63% ，排查后主因锁定液压系统老化",
+      "location": "页面顶部大标题区域",
+      "statement": "页面标题明确呈现1号线单位能耗0.85kWh/件，并与标杆、2号线做对比，同时指出排查后主因为液压系统老化",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "核心发现是1号线的单位产品能耗0.85kWh/件,远高于其他产线的0.5左右,排查下来主要是1号线的液压系统老化导致效率下降"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.85",
+          "unit": "kWh/件",
+          "subject": "1号线单位能耗",
+          "denominator": "件",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "四线单位能耗对标",
+      "location": "左上方图表标题",
+      "statement": "存在四条产线单位能耗对比图表模块",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "0.85",
+      "location": "柱状图1号线柱体上方",
+      "statement": "1号线单位能耗0.85以红色高柱突出显示，数值标注于柱顶",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "1号线 / 80 / 68 / 0.85 / 8"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.85",
+          "unit": "kWh/件",
+          "subject": "1号线单位能耗",
+          "denominator": "件",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "0.52",
+      "location": "柱状图2号线柱体上方",
+      "statement": "2号线单位能耗0.52以绿色柱显示",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "2号线 / 95 / 49 / 0.52 / 6"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.52",
+          "unit": "kWh/件",
+          "subject": "2号线单位能耗",
+          "denominator": "件",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "0.48",
+      "location": "柱状图3号线柱体上方",
+      "statement": "3号线单位能耗0.48以绿色柱显示，为四线中最低",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "3号线 / 70 / 34 / 0.48 / 12"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.48",
+          "unit": "kWh/件",
+          "subject": "3号线单位能耗",
+          "denominator": "件",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "0.52",
+      "location": "柱状图4号线柱体上方",
+      "statement": "4号线单位能耗0.52以绿色柱显示",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "4号线 / 60 / 31 / 0.52 / 5"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.52",
+          "unit": "kWh/件",
+          "subject": "4号线单位能耗",
+          "denominator": "件",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "行业标杆 0.45",
+      "location": "柱状图右侧橙色参考线及标注",
+      "statement": "行业标杆单位能耗约0.45kWh/件以橙色水平线标注，但标注中丢失了'约'字",
+      "kind": "fact",
+      "failure_mode": "benchmark_distortion",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "行业标杆单位能耗约0.45kWh/件"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0.45",
+          "unit": "kWh/件",
+          "subject": "行业标杆单位能耗",
+          "denominator": "件",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "1 号线 = 标杆 1.89 倍 · 高于 2 号线 63%",
+      "location": "图表右上角补充说明",
+      "statement": "明确量化1号线与标杆、2号线的差距，提供视觉和文字双重强调",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "1.89",
+          "unit": "倍",
+          "subject": "1号线相对标杆倍数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "63",
+          "unit": "%",
+          "subject": "1号线高于2号线幅度",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "ratio_percent",
+          "left": "0.85",
+          "right": "0.45",
+          "reported": "189",
+          "left_unit": "kWh/件",
+          "right_unit": "kWh/件",
+          "reported_unit": "%",
+          "left_quote": "1 号线 0.85",
+          "right_quote": "行业标杆 0.45",
+          "reported_quote": "1 号线 = 标杆 1.89 倍",
+          "relation_quote": "1 号线 = 标杆 1.89 倍",
+          "meaning": "1号线单位能耗是标杆的1.89倍，即189%"
+        },
+        {
+          "operation": "growth_percent",
+          "left": "0.85",
+          "right": "0.52",
+          "reported": "63",
+          "left_unit": "kWh/件",
+          "right_unit": "kWh/件",
+          "reported_unit": "%",
+          "left_quote": "1 号线 0.85",
+          "right_quote": "2 号线 0.52",
+          "reported_quote": "高于 2 号线 63%",
+          "relation_quote": "高于 2 号线 63%",
+          "meaning": "1号线比2号线高63%"
+        }
+      ]
+    },
+    {
+      "quote": "四步诊断链 · 判定依据与结论",
+      "location": "页面中部左侧，绿色标题",
+      "statement": "存在四步诊断的深挖模块，对1号线异常做归因分析",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "① 产量归一化对比",
+      "location": "诊断链第一步标题",
+      "statement": "第一步排除产量因素，确认异常与规模无关",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "以单位能耗而非总电耗对标四线与行业标杆：1 号线 0.85 ，2 号线 0.52 、3 号线 0.48 、4 号线 0.52 ；1 号线月产量 80 万件并非最高（2 号线 95 万件最高）。",
+      "location": "诊断链第一步内容",
+      "statement": "明确列出四线单位能耗数据，并指出1号线产量80万件非最高，2号线95万件最高",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "1号线 / 80 / 68 / 0.85 / 8\n2号线 / 95 / 49 / 0.52 / 6\n3号线 / 70 / 34 / 0.48 / 12\n4号线 / 60 / 31 / 0.52 / 5"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "80",
+          "unit": "万件",
+          "subject": "1号线月产量",
+          "denominator": "不适用",
+          "time_origin": "月"
+        },
+        {
+          "value": "95",
+          "unit": "万件",
+          "subject": "2号线月产量",
+          "denominator": "不适用",
+          "time_origin": "月"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "结论：异常成立，且与规模、负荷无关。",
+      "location": "诊断链第一步结论",
+      "statement": "第一步结论确认异常成立",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "② 分时段 / 分设备电耗拆分",
+      "location": "诊断链第二步标题",
+      "statement": "第二步进行电耗拆分分析",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "拆生产态与待机态、主设备与辅机：1 号线空载 8 kWh/h 高于 2 号线 6 、4 号线 5 （四线均值 7.75 ）；液压系统约占该线电耗 45% 、约 30.6 万 kWh/ 月。",
+      "location": "诊断链第二步内容",
+      "statement": "给出1号线空载8kWh/h，并对比2号线6、4号线5；同时给出液压系统占比45%约30.6万kWh/月。注意：用户原始数据中3号线空载为12kWh/h，但此处未提及3号线空载数据",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "1号线 / 80 / 68 / 0.85 / 8\n2号线 / 95 / 49 / 0.52 / 6\n4号线 / 60 / 31 / 0.52 / 5"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "8",
+          "unit": "kWh/h",
+          "subject": "1号线空载能耗",
+          "denominator": "小时",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "6",
+          "unit": "kWh/h",
+          "subject": "2号线空载能耗",
+          "denominator": "小时",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "5",
+          "unit": "kWh/h",
+          "subject": "4号线空载能耗",
+          "denominator": "小时",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "45",
+          "unit": "%",
+          "subject": "液压系统占该线电耗比例",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "30.6",
+          "unit": "万kWh/月",
+          "subject": "液压系统月电耗",
+          "denominator": "月",
+          "time_origin": "月"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "percent_of",
+          "left": "68",
+          "right": "45",
+          "reported": "30.6",
+          "left_unit": "万kWh/月",
+          "right_unit": "%",
+          "reported_unit": "万kWh/月",
+          "left_quote": "月用电(万kWh) 68",
+          "right_quote": "液压系统约占该线电耗 45%",
+          "reported_quote": "约 30.6 万 kWh/ 月",
+          "relation_quote": "液压系统约占该线电耗 45% 、约 30.6 万 kWh/ 月",
+          "meaning": "68万kWh的45%为30.6万kWh，计算一致"
+        }
+      ]
+    },
+    {
+      "quote": "结论：液压为最大单项，待机偏高为次要线索。",
+      "location": "诊断链第二步结论",
+      "statement": "结论指出液压为最大单项，待机偏高为次要线索",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "③ 现场巡检与实测",
+      "location": "诊断链第三步标题",
+      "statement": "第三步为现场巡检与实测",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "逐项检查油温、系统压力波动、泵组异响、泄漏点与溢流阀设定（素材仅给出排查项目清单，未提供逐项实测读数）。",
+      "location": "诊断链第三步内容",
+      "statement": "说明素材仅给出排查项目清单，未提供逐项实测读数，属于诚实标注信息边界",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "结论：征兆指向液压回路容积效率下降、溢流损失上升。",
+      "location": "诊断链第三步结论",
+      "statement": "结论指向液压回路问题",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "④ 锁定主要损失源",
+      "location": "诊断链第四步标题",
+      "statement": "第四步锁定主要损失源",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "归集液压分项电耗与老化增量，交叉验证前三步：液压系统占该线电耗约 45% （约 30.6 万 kWh/ 月），老化致其能耗高出正常水平约 29% （测算）。",
+      "location": "诊断链第四步内容",
+      "statement": "给出液压系统占比及老化导致能耗高出正常约29%，标注为测算",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "29",
+          "unit": "%",
+          "subject": "老化致能耗高出正常水平",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "结论：主因锁定为液压系统老化。",
+      "location": "诊断链第四步结论",
+      "statement": "最终结论明确将主因锁定为液压系统老化，与用户给定原因一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "排查下来主要是1号线的液压系统老化导致效率下降"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "待机 / 辅机未卸载",
+      "location": "底部排除项区域，橙色标签",
+      "statement": "将待机/辅机未卸载列为辅助线索，并提及1号线空载8kWh/h高于2号线6、4号线5",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "1号线 / 80 / 68 / 0.85 / 8\n2号线 / 95 / 49 / 0.52 / 6\n4号线 / 60 / 31 / 0.52 / 5"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "8",
+          "unit": "kWh/h",
+          "subject": "1号线空载能耗",
+          "denominator": "小时",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "6",
+          "unit": "kWh/h",
+          "subject": "2号线空载能耗",
+          "denominator": "小时",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "5",
+          "unit": "kWh/h",
+          "subject": "4号线空载能耗",
+          "denominator": "小时",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "空载 8 kWh/h 高于 2 号线 6 、4 号线 5 ，均值 7.75 ；量级有限，保留为改善线索",
+      "location": "待机/辅机未卸载详情",
+      "statement": "说明空载能耗量级有限，保留为改善线索。注意：未提及3号线空载12kWh/h的数据，用户原始数据中3号线空载能耗最高",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "3号线 / 70 / 34 / 0.48 / 12"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "12",
+          "unit": "kWh/h",
+          "subject": "3号线空载能耗",
+          "denominator": "小时",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "液压系统老化",
+      "location": "底部锁定主因区域，绿色高亮框",
+      "statement": "将液压系统老化作为锁定主因，以绿色高亮框突出显示",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "排查下来主要是1号线的液压系统老化导致效率下降"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "占该线电耗约 45% 、约 30.6 万 kWh/ 月，老化致高出正常约 29% （测算）",
+      "location": "液压系统老化详情",
+      "statement": "给出液压系统占比及老化增量，标注'测算'",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "45",
+          "unit": "%",
+          "subject": "液压系统占该线电耗比例",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "30.6",
+          "unit": "万kWh/月",
+          "subject": "液压系统月电耗",
+          "denominator": "月",
+          "time_origin": "月"
+        },
+        {
+          "value": "29",
+          "unit": "%",
+          "subject": "老化致能耗高出正常水平",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "本页完成异常确认与主因定位，液压老化机理与改造投资测算见下页。",
+      "location": "页面底部说明文字",
+      "statement": "明确说明本页完成异常确认与主因定位，投资回报测算在下页，符合用户三段式结构中的第二段（深挖）定位",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "整体结构上先把四条线的能耗对比摆出来,再聚焦1号线做深挖,最后落到节能改造的投资回报测算"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "标注\"测算\"者为工程派生口径，待改造前后分项计量实测确认",
+      "location": "页面底部数据来源说明",
+      "statement": "对测算数据诚实标注为工程派生口径，待实测确认，属于合理的信息边界标注",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "四步诊断链 · 判定依据与结论",
+      "location": "页面中部，与纵轴0.5刻度线区域",
+      "statement": "视觉观察：绿色标题文字'四步诊断链 · 判定依据与结论'与左侧纵轴'0.5'刻度及红色1号线柱体底部区域存在垂直方向接近。根据局部放大图p3_overlap_9fd0950262，'0.5'标签bbox[34.07,202.2,46.28,214.07]与标题bbox[16.87,210.82,110.73,221.32]在y方向有微小交集[210.82,214.07]，但x方向34.07-46.28与16.87-110.73有重叠。实际图像中'0.5'为灰色小字，标题为绿色大字，位于不同图层，无真实笔画遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "① 产量归一化对比",
+      "location": "诊断链第一步，与纵轴0.25区域",
+      "statement": "视觉观察：'①'圆形标记和'产量归一化对比'文字与左侧纵轴0.25刻度区域相邻。根据局部放大图，圆形标记①与'0.25'有垂直接近，但实际为左右排版，无真实叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "② 分时段 / 分设备电耗拆分",
+      "location": "诊断链第二步标题区域",
+      "statement": "视觉观察：根据局部放大图p3_overlap_9630fb3867、p3_overlap_9cd1e59977、p3_overlap_10d8073d9d、p3_overlap_6ef72f099c，第二步标题'②'和'分时段/分设备电耗拆分'与第一步内容文字在垂直方向有bbox交集。实际图像显示为上下模块的相邻排版，绿色圆形标记②位于左侧，标题文字'分时段/分设备电耗拆分'为白色，与上方第一步结论文字'结论：异常成立，且与规模、负荷无关。'为换行相邻关系，无真实文字笔画叠印。第一步内容文字末尾与第二步标题起始有正常段落间距",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "1 号线 / 2 号线 / 3 号线 / 4 号线",
+      "location": "柱状图底部x轴标签",
+      "statement": "视觉观察：根据局部放大图p3_overlap_05b5536975、p3_overlap_165003b190、p3_overlap_1fd31056d7、p3_overlap_e896bcbad6，x轴产线标签（白色文字）与下方第三步'现场巡检与实测'内容文字（灰色）在垂直方向有bbox交集。实际图像中，产线标签位于图表底部深色区域，下方诊断链内容位于独立卡片区域，两者为上下相邻模块的正常排版，无真实文字笔画遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "0",
+      "location": "纵轴原点标签",
+      "statement": "视觉观察：'0'标签与下方'③ 现场巡检与实测'标题区域有垂直接近。根据局部放大图p3_overlap_9fdafbae5d，'0'bbox[41.36,255.35,46.34,267.22]与'现场巡检与实测'bbox[32.23,250.87,90.36,262.86]有交集。实际图像中'0'为左侧纵轴小字，'现场巡检与实测'为右侧绿色标题，两者水平位置不同，无真实叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "四步诊断链 · 判定依据与结论 / ① / 产量归一化对比",
+      "location": "诊断链标题与第一步区域",
+      "statement": "视觉观察：根据局部放大图p3_overlap_ae9a25d492和p3_overlap_bb67f3a360，'四步诊断链 · 判定依据与结论'与'①'及'产量归一化对比'有bbox交集。实际图像显示为同一模块内的层级结构：绿色大标题在上方，绿色圆形标记①和白色小标题'产量归一化对比'在下方，为正常的信息层级排版，标题与序号有设计上的视觉关联，非意外叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

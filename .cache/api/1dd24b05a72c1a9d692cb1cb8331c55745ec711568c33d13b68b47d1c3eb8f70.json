@@ -1,0 +1,88 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "存在多处推理有效性和算术问题：1) p4_e3 人员增幅计算错误：90÷320=28.125%，但作品标注为≈+28.1%（测算），而arithmetic_check显示computed为19.74%，存在明显计算错误；2) p5_e5 上年研发投入标注为≈3,000万元（测算），但按源文给定全年营收4.2亿同比+26%推算上年营收≈3.33亿，3.33亿×9%=2997万≈3000万，但arithmetic_check显示computed为2880，matches_reported_precision为false，说明计算口径有问题；3) p5_e7 研发增量2,880万÷营收增量8,667万≈33.2%，作品标注≈33%，但arithmetic_check显示computed为0.3329...，matches_reported_precision为false，存在精度问题；4) p5_e13 上年研发投入计算：3.33亿×9%，arithmetic_check显示computed为29.97（单位应为百万即2997万），与reported的3000万在精度上存在差异；5) p5_e15 本年度研发投入4.2亿×14%=5880万，arithmetic_check显示computed为58.8（单位亿），matches_reported_precision为false；6) p6_e9 期初研发投入额：若按全年营收4.2亿×9%=3780万，与所示3000万有780万差距，虽可通过上年营收3.33亿×9%≈3000万解释，但该推算依赖未明示的上年营收假设，跨页口径不一致（p5用3.33亿×9%≈3000万，但p6未明确此口径）；7) p6_e17 3.333亿×9%=29997万≈3000万，arithmetic_check显示computed为29.997，matches_reported_precision为false；8) p7_e9 每新增3元营收1元投回研发≈33%，但1÷3=33.33...%，作品标注33%，arithmetic_check显示matches_reported_precision为false，且该因果表述将研发增量与营收增量直接挂钩，属于源文未证明的强因果推论。",
+    "evidence_ids": [
+      "p4_e3",
+      "p5_e5",
+      "p5_e7",
+      "p5_e13",
+      "p5_e15",
+      "p6_e9",
+      "p6_e17",
+      "p7_e9"
+    ],
+    "failure_ids": [
+      "p4_e3",
+      "p5_e5",
+      "p5_e7",
+      "p5_e13",
+      "p5_e15",
+      "p6_e9",
+      "p6_e17",
+      "p7_e9"
+    ],
+    "resolutions": [
+      {
+        "evidence_id": "p4_e3",
+        "decision": "confirm",
+        "reason": "人员增幅计算存在错误。作品标注'人员增幅≈+28.1%（测算）'，但ledger中arithmetic_checks显示computed为19.74%，与reported的28.1%严重不符，属于衍生计算错误。"
+      },
+      {
+        "evidence_id": "p5_e5",
+        "decision": "confirm",
+        "reason": "上年研发投入标注为≈3,000万元（测算），但arithmetic_checks显示computed为2880，matches_reported_precision为false。虽可通过3.33亿×9%≈3000万解释，但图表中上年柱状图直接标注≈3,000万元，与4.2亿×9%=3780万存在跨页口径不一致问题（p6_e9也涉及此矛盾）。"
+      },
+      {
+        "evidence_id": "p5_e7",
+        "decision": "confirm",
+        "reason": "研发增量占营收增量比例计算：2880÷8667≈33.23%，作品标注≈33%，但arithmetic_checks显示matches_reported_precision为false，精度不足。更关键的是，该指标将研发增量与营收增量建立直接比例关系，属于源文未提供的因果推论。"
+      },
+      {
+        "evidence_id": "p5_e13",
+        "decision": "confirm",
+        "reason": "脚注中上年研发投入≈3,000万元（3.33亿×9%），但arithmetic_checks显示3.33×9=29.97（即2997万），与3000万存在精度差异，且该推算依赖上年营收≈3.33亿的假设，未在页内充分说明。"
+      },
+      {
+        "evidence_id": "p5_e15",
+        "decision": "confirm",
+        "reason": "本年度研发投入5,880万元，按4.2亿×14%计算应为5880万，但arithmetic_checks显示computed为58.8（单位亿），matches_reported_precision为false，存在单位换算或精度标注问题。"
+      },
+      {
+        "evidence_id": "p6_e9",
+        "decision": "confirm",
+        "reason": "期初研发投入额≈3,000万与源文给定数据口径不一致。若按全年营收4.2亿×9%=3780万，与3000万有780万差距；虽可通过上年营收3.33亿×9%≈3000万解释，但该推算依赖未明示的上年营收假设，与p5口径部分一致但跨页未统一说明，存在推理有效性问题。同时arithmetic_checks显示3.33×9%=29.97（2997万），与3000万存在精度差异。"
+      },
+      {
+        "evidence_id": "p6_e17",
+        "decision": "confirm",
+        "reason": "上年营收3.333亿×9%=29997万≈3000万，arithmetic_checks显示computed为29.997，matches_reported_precision为false，存在精度问题。且该推算依赖上年营收的反推假设，未在页内明示，与p5的口径虽一致但均未充分披露假设前提。"
+      },
+      {
+        "evidence_id": "p7_e9",
+        "decision": "confirm",
+        "reason": "作品标注'每新增3元营收，就有1元投回研发（≈33%，测算）'，但1÷3=33.33...%，arithmetic_checks显示matches_reported_precision为false。更严重的是，该表述将研发增量与营收增量建立直接因果比例关系，使用'就有'等强因果措辞，属于源文未证明的因果断言，违反'源文未证明因果时，不以强因果措辞包装数据关系'的要求。"
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 40778,
+    "total_tokens": 42215,
+    "completion_tokens": 1437,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 40.181,
+  "attempts": 1
+}

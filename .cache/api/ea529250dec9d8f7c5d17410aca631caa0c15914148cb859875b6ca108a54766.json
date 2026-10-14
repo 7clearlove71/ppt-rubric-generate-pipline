@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "叙事顺序完全遵循要求：第2页为四条产线能耗对比（月产量/月用电量/单位能耗全景，关键发现01-04）；第3页延续对比并引入行业标杆对标；第4页聚焦1号线深挖根因（液压系统老化导致效率下降）；第5页落到节能改造投资回报测算（投入120万、回收期约18个月）；第6页补充3号线空载管理改进作为合理过渡；第7页综合立项建议。三个核心模块（对比→深挖→投资回报）均实际存在且顺序未颠倒，中间穿插的标杆对标、根因诊断、3号线管理改进属于合理过渡，不破坏主叙事链条。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 19700,
+    "total_tokens": 19878,
+    "completion_tokens": 178,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.146,
+  "attempts": 1
+}

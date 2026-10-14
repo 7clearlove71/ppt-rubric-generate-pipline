@@ -1,0 +1,69 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 7,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "标题、副标题'总投资 280 万元 · 资金构成'、单位'金额单位：万元'、环形图五项引线标签（厂房建设120万/设备采购60万/品牌推广40万/培训经费30万/流动资金30万）、右侧五张卡片的金额与占比（42.9%/21.4%/14.3%/10.7%/10.7%）及对应说明、底部数据来源均清晰可辨，无重叠、截断或NaN残留；金额合计与占比数值一致",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "标题在上，左侧环形图与右侧五张对应卡片分区明确，卡片按金额降序排列与图表类别一一对应，阅读路径（标题→图表→逐项卡片→来源）清晰，编码未造成错误对应",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 8,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "'FINIS'、主标题'恳请立项支持'、正文两行（局部放大图确认'让百年竹编技艺薪火相传……予以立项支持。'完整清晰无遮挡）、底部'项目申报单位 2026年9月 · 非遗竹编工坊产业扶持项目评审汇报'均可辨认，无截断或叠印",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页居中层级：FINIS→主标题→装饰线→正文→底部单位信息，主次分明，合理留白符合结束页特征，阅读顺序唯一明确",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 659,
+    "completion_tokens_details": {
+      "reasoning_tokens": 259,
+      "text_tokens": 400
+    },
+    "prompt_tokens": 4428,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3458,
+      "text_tokens": 970
+    },
+    "total_tokens": 5087
+  },
+  "elapsed_seconds": 140.356,
+  "attempts": 1
+}

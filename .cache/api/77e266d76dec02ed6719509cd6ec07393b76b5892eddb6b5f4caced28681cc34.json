@@ -1,0 +1,49 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 13,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              13
+            ],
+            "evidence": "右侧深蓝'请示事项'框内，第三项'支持管线单位共建共担'正文末行白字'入市级文件，明确付费节点与比例。'与金色结束语'以上请示事项，请予审议。'在同一高度实际叠印（局部放大图可见金白两组文字笔画互相压盖），导致两行文字均需猜读，存在信息损失。其余标题、序号、正文、页眉页脚均可读。",
+            "defect": {
+              "key": "doc_1b9acf410ec5ee41f3bc3019/page13/请示事项第三项正文与金色结束语叠印",
+              "description": "右栏深蓝框底部，第三项正文'入市级文件，明确付费节点与比例。'与金色文字'以上请示事项，请予审议。'实际重叠压盖，两处文字相互遮挡、难以辨认。"
+            }
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              13
+            ],
+            "evidence": "页面组织清晰：页眉、主标题'长效机制与请示事项'、导语、左右两栏（左'建立长效机制'序号1-4，右'请示事项'一至三）层级与主次明确，阅读顺序可确定；底部结束语与页脚位置合理。第三项正文与金色结束语的叠印属遮挡问题，已在V_READ计分，按例外条款不在本条重复处罚。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 1330,
+    "completion_tokens_details": {
+      "reasoning_tokens": 989,
+      "text_tokens": 341
+    },
+    "prompt_tokens": 4039,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3125,
+      "text_tokens": 914
+    },
+    "total_tokens": 5369
+  },
+  "elapsed_seconds": 260.694,
+  "attempts": 1
+}

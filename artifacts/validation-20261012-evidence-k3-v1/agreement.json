@@ -1,0 +1,47 @@
+{
+  "split": "dev",
+  "tie_margin": 3.0,
+  "n": 0,
+  "matches": 0,
+  "total_cases": 7,
+  "decided_labels": 6,
+  "evaluation_coverage": 0.0,
+  "all_decided_cases_evaluated": false,
+  "all_cases_comparable": false,
+  "matched_fraction_of_decided_labels": 0.0,
+  "agreement": null,
+  "wilson_95_interval": null,
+  "human_ties": 0,
+  "predicted_ties": 0,
+  "cases": [],
+  "skipped": [
+    {
+      "case_id": "01",
+      "reason": "incomplete automated evaluation"
+    },
+    {
+      "case_id": "02",
+      "reason": "incomplete automated evaluation"
+    },
+    {
+      "case_id": "03",
+      "reason": "incomplete automated evaluation"
+    },
+    {
+      "case_id": "05",
+      "reason": "incomplete automated evaluation"
+    },
+    {
+      "case_id": "06",
+      "reason": "incomplete automated evaluation"
+    },
+    {
+      "case_id": "09",
+      "reason": "human undecided"
+    },
+    {
+      "case_id": "10",
+      "reason": "incomplete automated evaluation"
+    }
+  ]
+}

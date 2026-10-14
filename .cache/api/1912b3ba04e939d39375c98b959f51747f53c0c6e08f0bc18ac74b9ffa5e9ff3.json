@@ -1,0 +1,126 @@
+{
+  "parsed": {
+    "verdicts": [
+      {
+        "rubric_id": "R_Q01",
+        "answer": "yes",
+        "pages": [
+          2,
+          4,
+          6
+        ],
+        "evidence": "Page 2 presents the four-line comparison with exact values: 1号线 80万件/68万kWh/0.85 kWh/件, 2号线 95万件/49万kWh/0.52 kWh/件, 3号线 70万件/34万kWh/0.48 kWh/件, 4号线 60万件/31万kWh/0.52 kWh/件. Page 4 shows空载能耗: 1号线8, 2号线6, 3号线12, 4号线5. Page 6 reconfirms 3号线空载12 kWh/h. The core finding is highlighted on page 2: '1号线是洼地 单位能耗0.85 kWh/件，约为其余三线（0.48-0.52）的1.6-1.8倍.' All data matches source catalog src_174da649339240d00804ab0f through src_088ada1ab22d5049ba57d957.",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q02",
+        "answer": "yes",
+        "pages": [
+          4
+        ],
+        "evidence": "Page 4 explicitly states in title: '根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'. The '根因锁定' section confirms: '现场排查确认液压系统老化导致效率下降——液压元件磨损使能量转换损失增大'. This directly matches source prompt requirement (src_3fecb88711b00ca960c2cb91).",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q03",
+        "answer": "yes",
+        "pages": [
+          5,
+          7
+        ],
+        "evidence": "Page 5 presents complete ROI calculation:投入120万元, with two测算口径. 口径一: 降至0.45 kWh/件, 月省电32万kWh, 月省电费24万元, 年节省约288万元, 纯电费回本约5个月. 口径二: 降至0.5 kWh/件, 月省电28万kWh, 月省电费约21万元, 年节省约252万元, 回收期约5-6个月. Critically, the conservative口径 states: '计入施工停产损失与投产爬坡期节能打折后回收期约18个月'. This matches source requirement of '大概18个月能收回成本' (src_3fecb88711b00ca960c2cb91). Page 7 reconfirms '回收期约18个月以内'. The测算过程 is clearly presented with visible calculation steps.",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q04",
+        "answer": "yes",
+        "pages": [
+          2,
+          6
+        ],
+        "evidence": "Page 2 key finding 04 states: '3号线单耗最优但空载最高 单位能耗0.48 kWh/件四线最优，空载能耗12 kWh/h为四线之最，待机管理有改进空间.' Page 6 dedicates full page to this issue with title '3号线空载能耗四线最高：零投入管理改进压缩待机电费', showing '0.48 单位能耗 kWh/件·四线最优' and '12 待机空载 kWh/h·四线之最', and explicitly states '停机流程不规范'. Matches source prompt exactly (src_3fecb88711b00ca960c2cb91).",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q05",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "Structure follows required sequence: Page 2 presents four-line能耗对比 (四条线的能耗对比摆出来). Pages 3-4 focus on 1号线深挖 (聚焦1号线做深挖) with标杆对标 and根因排查. Pages 5-7 present节能改造投资回报测算 with 120万投入 and 18-month回收期. The flow is: 四线对比 → 1号线深挖 → 投资回报测算, exactly as specified in source prompt (src_3fecb88711b00ca960c2cb91).",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q06",
+        "answer": "yes",
+        "pages": [
+          3,
+          5,
+          7
+        ],
+        "evidence": "Page 3 shows '行业标杆 0.45' as horizontal dashed line on chart, with text '对标行业标杆0.45 kWh/件：1号线超标杆89%，2/3/4号线已接近标杆'. Page 5 references '降至行业标杆 0.45 kWh/件'. Page 7 shows '行业标杆 0.45' in chart. Value 0.45 kWh/件 is accurate per source src_624e5d89a92f6fbecfcd2a96.",
+        "defect": null
+      },
+      {
+        "rubric_id": "C_REASON",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          5
+        ],
+        "evidence": "Calculations are consistent and arithmetically correct. Page 2: 182万kWh × 0.75元/kWh = 136.5万元 monthly, ×12 = 1638万元 yearly - correct. Page 3: 1号线 0.85 vs标杆0.45, 差距0.40, (0.40/0.45)≈89% - correct approximation. Page 5: 口径一 80万件×(0.85-0.45)=32万kWh monthly saving, ×0.75=24万元, ×12=288万元 yearly - correct. 口径二 80万件×(0.85-0.5)=28万kWh, ×0.75=21万元, ×12=252万元 - correct. 120万÷24万=5 months, 120万÷21万≈5.7 months - correct. Conservative 18-month回收期 with explicit note about施工停产损失与爬坡期打折 - reasonable assumption, not a calculation error. No circular reasoning or false causation claims.",
+        "defect": null
+      },
+      {
+        "rubric_id": "I_BOUNDARY",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "All新增 assertions are properly scoped. Page 2 '数据来源：产线能耗月度数据（用户素材，最近一个月实测）' and '月电费按工业电价0.75元/kWh测算...为推导值'. Page 3 '数据来源：产线能耗数据（单源口径，无外部交叉验证）'. Page 4 '根因结论来自现场排查，均为用户素材口径，未做外部检索验证'. Page 5 '数据来源：用户素材'. Page 6 '数据来源：一个月产线设备能耗实测数据（用户素材）'. The '行业标杆0.45' is treated as reference benchmark, not claimed as verified. Management improvement suggestions on page 6 are framed as '改进方向·零投资/低投入管理改进' - clearly labeled as recommendations. No新增 facts are presented as established truths without boundary markers.",
+        "defect": null
+      },
+      {
+        "rubric_id": "N_FLOW",
+        "answer": "yes",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence": "Content organization is coherent and supports the立项审批 purpose. Sequence: title → 四线能耗全景对比 → 1号线标杆对标 → 1号线根因排查 → 投资回报测算 → 3号线管理改进 → 立项建议总结 → closing. Logical progression from data presentation to analysis to recommendation. No irrelevant information堆积, no自相割裂表达, no无意义重复. The 3号线 content on page 6 is positioned after 1号线投资回报测算 but before final recommendation, forming complementary '技术改造+管理改进' complete proposal - a valid structural choice that enhances rather than obstructs task understanding.",
+        "defect": null
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 21782,
+    "total_tokens": 23628,
+    "completion_tokens": 1846,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 54.155,
+  "attempts": 1
+}

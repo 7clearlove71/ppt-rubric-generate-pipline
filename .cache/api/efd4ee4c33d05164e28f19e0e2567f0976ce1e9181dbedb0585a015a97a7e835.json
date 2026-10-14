@@ -1,0 +1,37 @@
+{
+  "parsed": {
+    "consistent": false,
+    "issues": [
+      {
+        "reason": "两候选对第7页（A候选）/第6页（B候选）的时序叙事页是否构成buried_conclusion的判定标准不一致。A候选第7页采用时间线形式，标题\"正是那段日子，让我们脱胎换骨\"已给出核心结论，时间线是对\"那段日子\"到\"今日家底\"演变过程的视觉化呈现，A判定为\"结论先行后的过程回顾\"而非buried_conclusion。B候选第6页标题\"现金只够发2个月工资的那60天，我们没有裁员、没有砍研发、没有一个人退缩\"同样呈现困境叙事过程，但B未将其视为时间线/过程回顾结构，而是直接判定为\"结论先行的困境叙事\"。两页结构本质相似：均以标题给出核心判断，下方以信息卡片/时间线节点展开支撑。A对时间线形式额外进行了\"结论先行后的过程回顾\"的豁免论证，而B对同类结构未进行同等形式的豁免分析，直接认定标题即结论。更关键的是，A候选在verdict中明确提及\"consistency_feedback中关于候选A/B对收束页、总览页判定逻辑差异的争议\"，表明存在已知争议点，但A选择独立按criterion字面要求执行；而B候选verdict中同样提及\"consistency_feedback中关于候选A/B对第7/6页时序叙事结构的争议\"，但B的判定结果与A相反（B认为两页均不构成buried_conclusion，但未说明A的第7页时间线是否应同等豁免）。实际差异在于：A对第7页进行了\"时间线=结论先行后的过程回顾\"的积极辩护，而B对第6页未进行同等辩护，两候选对\"过程回顾式时间线\"与\"困境叙事标题+信息卡片\"的结构分类标准不一致，导致同一标准buried_conclusion的适用边界在不同候选间存在漂移。",
+        "evidence_refs": {
+          "A": [
+            "p7_e1",
+            "p7_e3",
+            "p7_e4",
+            "p7_e5",
+            "p7_e6"
+          ],
+          "B": [
+            "p6_e1",
+            "p6_e13"
+          ]
+        }
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 11277,
+    "total_tokens": 11733,
+    "completion_tokens": 456,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 11.025,
+  "attempts": 1
+}

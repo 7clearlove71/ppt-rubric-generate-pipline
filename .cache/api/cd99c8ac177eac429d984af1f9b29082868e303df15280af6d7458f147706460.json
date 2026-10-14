@@ -1,0 +1,47 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R06"
+        ],
+        "reason": "要求“每一页正文字体至少28磅”为用户未要求的硬性无依据阈值，且用户明确不限制模板与配色，属于反向推导出的硬条件",
+        "fix": "改为可观察的阅读质量判据，如“正文与背景对比清晰、字号在常规演示距离下可读，无文字溢出或重叠”，不设固定磅值"
+      }
+    ],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": []
+    },
+    "summary": "需求覆盖基本完整，但R06引入无来源的28磅硬阈值，违反“不限制模板与配色”及禁止无依据硬条件的规定，需修正后通过。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 170,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 170
+    },
+    "prompt_tokens": 1820,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "text_tokens": 1820
+    },
+    "total_tokens": 1990
+  },
+  "elapsed_seconds": 5.12,
+  "attempts": 1
+}

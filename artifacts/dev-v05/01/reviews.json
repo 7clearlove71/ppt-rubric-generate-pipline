@@ -1,0 +1,61 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "R09: unknown source refs"
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    }
+  },
+  {
+    "revision": 1,
+    "structural_errors": [],
+    "normalizations": [],
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R01"
+        ],
+        "Q02": [
+          "R02",
+          "R12"
+        ],
+        "Q03": [
+          "R05"
+        ],
+        "Q04": [
+          "R06"
+        ],
+        "Q05": [
+          "R07",
+          "R09"
+        ],
+        "Q06": [
+          "R10"
+        ],
+        "Q07": [
+          "R11"
+        ],
+        "Q08": [
+          "R03",
+          "R08",
+          "R12"
+        ],
+        "Q09": [
+          "R04",
+          "R08",
+          "R12"
+        ]
+      },
+      "summary": "rubric通过审核。各需求均有实质覆盖，关键事实数字与限定词在correctness维度独立检查（R05-R07），fulfillment覆盖范围与模块（R02-R04），无重复计分。未新增页数/字号/模板等硬条件。R08-R09的integrity边界条件在用户未提供具体细节时自然生效，判定语义明确。各条目可独立评判，允许等价表述与不同有效实现。"
+    }
+  }
+]

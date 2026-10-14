@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      3
+    ],
+    "evidence": "第3页图表数据标签将用户素材中的约数系统性精确化：图表标签显示\"72.0%\"\"60.0%\"\"35.0%\"\"15.0%\"，而正文描述为\"负面情绪约72%\"\"退货退款约60%\"\"要求官方说明约35%\"\"退单量较平时增加约15%\"，图表与正文口径不一致。此外，第2页、第3页、第5页正文均保留\"约72%\"\"约15%\"等约数表述，但第3页图表标签的精确化小数形式（如72.0%）抹除了信息边界，违反rubric要求。同一数据跨页出现时，图表标签的精确化表达与正文约数表述形成系统性不一致。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 19066,
+    "total_tokens": 19247,
+    "completion_tokens": 181,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 18.491,
+  "attempts": 1
+}

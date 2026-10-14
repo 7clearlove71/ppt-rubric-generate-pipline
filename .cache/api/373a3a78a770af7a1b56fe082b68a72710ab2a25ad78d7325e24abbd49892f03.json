@@ -1,0 +1,130 @@
+{
+  "parsed": {
+    "page": 1,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "寒冬淬火 逆势生长",
+        "location": "页面左侧大标题",
+        "statement": "封面/开场页标题，采用四字短语组合，简洁有力，呼应源文'行业寒冬'与'逆势'语境",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "风格上走正式汇报风格——每页一个核心观点配关键数据支撑、结论先行不铺垫寒暄、标题简洁有力"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "2026 年度大会 · 开场汇报",
+        "location": "页面左上角",
+        "statement": "场景标注，明确年会开场定位",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年会开场那个PPT"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "年度大会",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "全年营收 4.2 亿 同比 +26%",
+        "location": "页面右侧数据区",
+        "statement": "核心数据呈现：营收4.2亿与同比+26%并列展示，数值与源文一致，单位使用'亿'",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "26",
+            "unit": "%",
+            "subject": "营收同比增长率",
+            "denominator": "上年同期",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "内部汇报 · 请勿外传",
+        "location": "页面左下角",
+        "statement": "页脚标注，属合规提示，不影响内容结构",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "页面整体布局：左侧大标题+右侧单组数据，无其他文字段落",
+        "location": "整体视觉",
+        "statement": "作为封面/开场页，仅呈现一个核心数据（营收4.2亿/+26%），未同时承载多个观点，不构成信息过载；但未出现研发投入、员工数等其他数据，此为封面页的功能选择",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "每页一个核心观点配关键数据支撑"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "标题'寒冬淬火 逆势生长'中'淬火'与'脱胎换骨'语义关联",
+        "location": "标题文字",
+        "statement": "标题隐喻与源文老板叙事中的'脱胎换骨'形成呼应，属于合理的语义演绎，未新增源文未提供的事实",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5146,
+    "total_tokens": 5747,
+    "completion_tokens": 601,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 16.888,
+  "attempts": 1
+}

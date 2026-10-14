@@ -1,0 +1,248 @@
+{
+  "page": 7,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "今晚批准五项决策，用闭环监控守住风险窗口",
+      "location": "页面上方标题",
+      "statement": "本页为决策建议页，包含五项决策表格及风险监控清单",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "决策 / 今晚批准内容 / 会后需补充的字段",
+      "location": "左侧表格表头",
+      "statement": "三列表格结构：决策类别、今晚可批准内容、会后需补充字段",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "响应组织 / 启动二级响应并组建跨部门小组 / 小组负责人、成员部门、值守时间、决策权限",
+      "location": "表格第一行",
+      "statement": "提出二级响应及跨部门小组，但未说明二级响应的触发条件及具体构成",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "对外沟通 / 事实边界内临时声明，并按36小时更新 / 声明审批人、事实边界清单、更新触发条件",
+      "location": "表格第二行",
+      "statement": "提及36小时更新，与素材中技术复核预计36小时出结论对应；提到'事实边界内'但未明确展示复核未完的前提",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "技术复核预计完成时间/声明更新时间",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "客户处置 / 优先客服与退换方案 / 客服增援人数、退换适用范围、预算上限",
+      "location": "表格第三行",
+      "statement": "提及客服与退换，但未直接引用素材中客服来电约40通、退货退款约60%、要求官方说明约35%、电商退单增约15%等具体数据",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "闭环监控 / 舆情/客诉/退单联动看板，每2小时汇报 / 看板责任人、指标阈值、异常触发动作",
+      "location": "表格第四行",
+      "statement": "建立联动看板，监测频率为每2小时；素材未给定2小时频率，此为新增建议",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "2",
+          "unit": "小时",
+          "subject": "汇报频率",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "升级机制 / 授权三级与四级升级 / 升级触发条件、可授权人员、升级后资源",
+      "location": "表格第五行，'授权三级与四级升级'为红色文字",
+      "statement": "提及三级与四级升级，但未在本页或可见范围内说明各级响应的具体触发条件、信号标准及对应动作；与R03缺陷边界相关但需结合全篇判断",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "风险监控清单 / 转发量与负面情绪 / 权威媒体跟进 / KOL扩散 / 相关来电 / 退单量 / 技术复核结论 / 平台或监管介入 / 声明反馈",
+      "location": "页面右侧监控清单",
+      "statement": "8项监控指标，涵盖舆情、媒体、KOL、客诉、退单、技术、监管、声明反馈维度；与素材中的关注点基本对应",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "若48小时内无有效回应，风险将从质疑转向抵制；若技术复核确认问题，必须立即切换至召回、补偿、整改和监管沟通路径。",
+      "location": "页面右下角说明文字",
+      "statement": "明确保留48小时窗口及'质疑转向抵制'的判断；明确技术复核确认问题后的切换路径",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "有效回应窗口期",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "资料来源：用户素材，待验证",
+      "location": "页面左下角",
+      "statement": "标注数据来源及待验证状态",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "升级触发条件、可授权人员、升级后资源",
+      "location": "局部放大图p7_overlap_2f9fd5522a",
+      "statement": "两行文字为上下换行排版，'升'与'级后资源'为正常断行，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "客服增援人数、退换适用范围、预算上限",
+      "location": "局部放大图p7_overlap_45c9b74212",
+      "statement": "两行文字为上下换行排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "复核确认问题，必须立即切换至召回、补偿、整改和监管沟通路径。",
+      "location": "局部放大图p7_overlap_b6a0fb0619",
+      "statement": "两行文字为上下换行排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "看板责任人、指标阈值、异常触发动作",
+      "location": "局部放大图p7_overlap_b8fca32ebc",
+      "statement": "两行文字为上下换行排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "若48小时内无有效回应，风险将从质疑转向抵制；若技术复核确认问题，必须立即切换至召回、补偿、整改和监管",
+      "location": "局部放大图p7_overlap_d447da771d",
+      "statement": "两行文字为上下换行排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "小组负责人、成员部门、值守时间、决策权限",
+      "location": "局部放大图p7_overlap_225e579a97",
+      "statement": "两行文字为上下换行排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "声明审批人、事实边界清单、更新触发条件",
+      "location": "局部放大图p7_overlap_a29db28095",
+      "statement": "两行文字为上下换行排版，无真实字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "事实边界内临时声明",
+      "location": "表格'对外沟通'行",
+      "statement": "本页未直接呈现声明草稿原文，也未明确体现'追究法律责任'措辞可能被解读为店大欺客、激化对立的具体修改建议；由于本页为决策页而非声明修改建议页，需结合全篇判断R09是否满足",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "草稿写的是'我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利'"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "'追究法律责任'这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立,这两点务必在修改建议里体现出来"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "舆情/客诉/退单联动看板",
+      "location": "表格'闭环监控'行",
+      "statement": "本页提及舆情、客诉、退单联动，但未明确表述'部分用户直接引用视频说法'这一传导关系；由于本页为决策页，需结合全篇判断R08是否满足",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有部分用户是直接引用了那条视频的说法打进来的,说明视频的传播已经影响到实际客诉了"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "generator_model": "kimi-k3",
+  "vision_model": "kimi-k3",
+  "reviewer_model": "kimi-k3",
+  "judge_model": "kimi-k3",
+  "keychain_service": "codex.alibaba-bailian.api-key",
+  "keychain_account": "codex",
+  "trust_env_proxy": false,
+  "timeout_seconds": 180,
+  "max_retries": 1,
+  "max_output_tokens": 16000,
+  "request_options": {
+    "enable_thinking": false
+  },
+  "api_concurrency": 1,
+  "max_revisions": 2,
+  "dpi": 150,
+  "pdf_backend": "pymupdf",
+  "soffice": "/Users/liangyuanzhi/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+  "font_dirs": [
+    "/System/Library/Fonts",
+    "/Library/Fonts",
+    "/Users/liangyuanzhi/Library/Fonts"
+  ],
+  "dimension_weights": {
+    "fulfillment": 30,
+    "correctness": 25,
+    "integrity": 15,
+    "narrative": 15,
+    "visual": 15
+  },
+  "max_case_text_chars": 100000,
+  "max_images_per_request": 60,
+  "tie_margin": 3.0,
+  "min_request_interval_seconds": 20,
+  "rate_limit_backoff_seconds": 30,
+  "max_consecutive_rate_limits": 3,
+  "evaluation_protocol": "evidence_v1",
+  "max_api_requests": 12,
+  "max_source_refinements": 1,
+  "reviser_model": "kimi-k3",
+  "source_refinement_reviser_role": "reviser",
+  "role_request_options": {
+    "reviser": {
+      "enable_thinking": true
+    }
+  },
+  "pipeline_stage": "rubric",
+  "role_timeout_seconds": {
+    "reviser": 600
+  },
+  "audit_reviser_role": "reviser"
+}

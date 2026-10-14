@@ -1,0 +1,69 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 7,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "标题、决策表格三列（决策/今晚批准内容/会后需补充的字段）五行文字均清晰可辨，红色高亮'授权三级与四级升级'可读；右侧'风险监控清单'8个条目及下方说明文字完整可读；底部资料来源小字可辨，无重叠、截断或NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "标题居上，左侧决策表与右侧风险监控清单左右分区明确，表头红色条与数据行层级清晰，右侧清单两列网格排列整齐，阅读顺序为标题→左表→右清单，对应关系无歧义",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 8,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "页眉、红色大标题'请求批准并启动 48 小时响应'、副标题均可读；四个指标数字与单位经局部图核实清晰（'48 小时/响应窗口'、'36 小时/技术复核'、'5 项/决策请求'），下方说明小字及REPORTER/DEPARTMENT/DATE底部信息均可辨认，无遮挡或截断",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "页眉—大标题—副标题—四个并列指标—底部署名信息自上而下层级分明，四个指标等距并列、各自数字与标签上下对应关系明确，阅读路径清晰无歧义",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 579,
+    "completion_tokens_details": {
+      "reasoning_tokens": 199,
+      "text_tokens": 380
+    },
+    "prompt_tokens": 4764,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3637,
+      "text_tokens": 1127
+    },
+    "total_tokens": 5343
+  },
+  "elapsed_seconds": 18.416,
+  "attempts": 1
+}

@@ -1,0 +1,106 @@
+{
+  "rows": [
+    {
+      "case": "01",
+      "candidate": "A",
+      "pages": 13,
+      "primary_logical_calls": 6,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "01",
+      "candidate": "B",
+      "pages": 13,
+      "primary_logical_calls": 6,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "02",
+      "candidate": "A",
+      "pages": 10,
+      "primary_logical_calls": 5,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "02",
+      "candidate": "B",
+      "pages": 8,
+      "primary_logical_calls": 4,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "03",
+      "candidate": "A",
+      "pages": 8,
+      "primary_logical_calls": 4,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "03",
+      "candidate": "B",
+      "pages": 8,
+      "primary_logical_calls": 4,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "05",
+      "candidate": "A",
+      "pages": 7,
+      "primary_logical_calls": 4,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "05",
+      "candidate": "B",
+      "pages": 10,
+      "primary_logical_calls": 5,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "06",
+      "candidate": "A",
+      "pages": 13,
+      "primary_logical_calls": 6,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "06",
+      "candidate": "B",
+      "pages": 8,
+      "primary_logical_calls": 4,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "09",
+      "candidate": "A",
+      "pages": 8,
+      "primary_logical_calls": 4,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "09",
+      "candidate": "B",
+      "pages": 8,
+      "primary_logical_calls": 4,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "10",
+      "candidate": "A",
+      "pages": 8,
+      "primary_logical_calls": 4,
+      "verification_logical_calls": 1
+    },
+    {
+      "case": "10",
+      "candidate": "B",
+      "pages": 8,
+      "primary_logical_calls": 4,
+      "verification_logical_calls": 1
+    }
+  ],
+  "total_pages": 130,
+  "primary_logical_calls": 64,
+  "verification_logical_calls": 14,
+  "notes": "Cold-cache estimate for currently approved suites; retries add actual attempts; no candidate content is interpreted."
+}

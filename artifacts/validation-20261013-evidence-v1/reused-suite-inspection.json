@@ -1,0 +1,24 @@
+{
+  "01": {
+    "errors": [],
+    "rubric_hash": "7a64b7e988957373f9b6018bb598a5418877ce5b4bd3e1ae8fcf5cf01944b245",
+    "rubric_items": 15,
+    "provenance": {
+      "origin": "artifacts/source-ownership-pilot01-20261012/01",
+      "rubric_sha256": "e01035d8d2b7b7afd05f9290531c454cf229b75da70562f35c6f939fe88b51e7",
+      "historical_api_calls_not_counted_as_new": true
+    },
+    "weight_sum": 100.0
+  },
+  "06": {
+    "errors": [],
+    "rubric_hash": "bda10b89253109df330e767fa88ce54fb1eeddb2c970e23ab00d32ccb8b25ec2",
+    "rubric_items": 13,
+    "provenance": {
+      "origin": "artifacts/evidence-fix-20261012/recheck06/06",
+      "rubric_sha256": "3cc756cdabad87404c9e3082932cd4553d6e2de3860e2684b3d2242b1d6749ce",
+      "historical_api_calls_not_counted_as_new": true
+    },
+    "weight_sum": 100.0
+  }
+}

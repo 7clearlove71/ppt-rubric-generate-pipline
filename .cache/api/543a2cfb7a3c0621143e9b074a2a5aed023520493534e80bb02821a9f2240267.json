@@ -1,0 +1,323 @@
+{
+  "parsed": {
+    "page": 2,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "四日行迹：一份只有四天的田野笔记，能说什么、不能说什么",
+        "location": "页面上部大标题",
+        "statement": "页面标题，表明本页为证据来源与边界说明页，不下结论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Day1 进村。现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。",
+        "location": "来源原文Day1段落",
+        "statement": "Day1四项核心事实：约40栋、住人不到一半、年轻人外出打工、留守多为老人，在页面中以'现存明清老宅约40栋，住人不到一半'呈现，'年轻人外出打工，留守多为老人'未在本页直接引用但属于Day1笔记内容",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day1 进村。现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "栋",
+            "subject": "明清老宅",
+            "denominator": "不适用",
+            "time_origin": "Day1"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "Day2 访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。",
+        "location": "来源原文Day2段落",
+        "statement": "Day2核心事实：祭祖由每年清明变为三年一次；老人称族谱文革被烧一部分、现版本凭记忆补写。页面中'祠堂以前每年清明祭祖，现在三年一次'完整呈现，族谱文革被烧信息未在本页直接引用",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day2 访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Day3 民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。",
+        "location": "来源原文Day3段落",
+        "statement": "Day3三项信息：民居多为天井院落式、几栋木雕风格明显不同、村民称系外姓人所建且来历说不清。页面中完整呈现'几栋木雕风格明显不同，村民说是'外姓人'建的，来历说不清'，天井院落式作为小标题'民居形制·天井院落式'呈现",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day3 民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Day4 村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。",
+        "location": "来源原文Day4段落",
+        "statement": "Day4三项信息：旅游开发新修仿古街、老宅本体保护缺乏资金、保护与开发矛盾。页面中'村里搞旅游开发，新修了仿古街，老宅本体保护反而没钱投'完整呈现，'矛盾挺典型'未直接引用但信息隐含",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day4 村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。",
+        "location": "来源原文初步感受段落",
+        "statement": "三点初步感受：空心化、文化记忆断层、保护与开发错位。页面中'三条待验主线'下列出'空心化''文化记忆断层''保护与开发错位'，并标注'不排序、不取舍''并列待验→存疑清单·线索征集'，体现其作为初步感受/后续方向的定位而非定论",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "存疑的地方标出来,别下定论。",
+        "location": "来源原文要求段落",
+        "statement": "用户要求存疑处标出、不下定论。页面中多处使用待核标注：Day1'（估算/口述，待核）'、Day2'（口述，起始年份不详，待核）'、Day3'（笔记原词，未逐栋建档）'，底部'来源'栏注明'数值均为估算/口述，待核·初步观察，存疑待考'，符合存疑标注要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来,别下定论。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。",
+        "location": "来源原文Day2段落族谱部分",
+        "statement": "族谱待考信息：文革被烧一部分、现版本凭记忆补写——待考。该信息在本页未直接引用呈现，本页Day2卡片仅呈现祭祖频率变化，未呈现族谱文革被烧及待考标注。此为用户给定事实，需核查是否在其他页呈现",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "村民说是\"外姓人\"建的,来历说不清",
+        "location": "来源原文Day3段落",
+        "statement": "木雕来历存疑信息：村民称外姓人所建、来历说不清。页面中完整呈现'村民说是'外姓人'建的，来历说不清'，并附加标注'（笔记原词，未逐栋建档）'，属于显式存疑标识",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "村民说是\"外姓人\"建的,来历说不清。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p2_t13与p2_t14 bbox相交：'现存明清老宅约40 栋，住人不到一'与'半'",
+        "location": "Day1卡片文字区域",
+        "statement": "放大图显示'半'字位于第一行末尾'不到一'下方，形成正常换行排版，无真实字形叠印或遮挡，属于跨行文本的正常行尾-行首衔接",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p2_t19与p2_t20 bbox相交：'祠堂以前每年清明祭祖，现在三年一'与'次'",
+        "location": "Day2卡片文字区域",
+        "statement": "放大图显示'次'字位于第一行末尾'三年一'下方，形成正常换行排版，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p2_t25与p2_t26 bbox相交：'几栋木雕风格明显不同，村民说是'与'‘外姓人’建的，来历说不清'",
+        "location": "Day3卡片文字区域",
+        "statement": "放大图显示第二行以'‘外姓人’建的'开头，第一行以'村民说是'结尾，形成正常换行排版，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p2_t32与p2_t33 bbox相交：'村里搞旅游开发，新修了仿古街，老'与'宅本体保护反而没钱投'",
+        "location": "Day4卡片文字区域",
+        "statement": "放大图显示'宅本体保护反而没钱投'位于第一行末尾'老'字下方，形成正常换行排版，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p2_t26与p2_t28 bbox相交：'‘外姓人’建的，来历说不清'与'词，未逐栋建档'",
+        "location": "Day3卡片文字区域",
+        "statement": "放大图显示'（笔记原词，未逐栋建档）'为灰色括号标注，位于引文右侧及下方，与引文'来历说不清'末尾存在水平相邻排版，无真实字形叠印或遮挡，属于标注与正文的正常相邻布局",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p2_t50与p2_t51 bbox相交：'笔记分层《如何做田野笔记》· 参与观察时长门槛'与'Fetterman · 三角互证 Denzin · 立档调查口径'",
+        "location": "方法论参照区域",
+        "statement": "放大图显示两行文本为上下正常换行关系，第一行以'门槛'结尾，第二行以'Fetterman'开头，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p2_t51与p2_t52 bbox相交：'Fetterman · 三角互证 Denzin · 立档调查口径'与'《中国传统村落立档调查田野手册》'",
+        "location": "方法论参照区域",
+        "statement": "放大图显示两行文本为上下正常换行关系，第二行以'口径'结尾，第三行以《中国传统村落立档调查田野手册》开头，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p2_t42与p2_t43 bbox相交：'三条待验主线'与'（不排序、不取舍）'",
+        "location": "页面中部偏右标题区域",
+        "statement": "放大图显示'（不排序、不取舍）'为灰色括号标注，紧跟在'三条待验主线'右侧，水平相邻排版，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p2_t36与p2_t37 bbox相交：'驻村仅 4 天、未多方交叉，全篇为'与'初步观察，而非研究结论'",
+        "location": "页面左下边界说明区域",
+        "statement": "放大图显示'初步观察，而非研究结论'为红色强调文本，紧跟前半句'全篇为'之后形成完整句子，水平相邻排版，无真实字形叠印或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "四天驻村笔记拼出一张证据地图：本页只交代证据从哪来、能核到什么程度、边界在哪里，不下任何结论。",
+        "location": "页面副标题",
+        "statement": "页面自我定位声明，明确本页功能为证据来源与边界说明，不下结论，与用户需求'存疑的地方标出来，别下定论'一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来,别下定论。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "可核验程度：高、中、低、中偏低",
+        "location": "页面右上角图例及四卡片评级标记",
+        "statement": "四卡片分别标注核验程度：Day1'中偏低'、Day2'低'、Day3'中'、Day4'中'，图例说明'可核验程度'三级分类，属于作品自创的证据质量评级体系，非原文给定信息",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本次分享的边界：驻村仅4天、未多方交叉，全篇为初步观察，而非研究结论；未做系统测绘与逐栋建档；未查族谱原件、地方志与碑刻；未与村委及开发方核实；未做扩样多源访谈与交叉验证",
+        "location": "页面左下边界说明框",
+        "statement": "明确列举五项研究局限，强化'初步观察，而非研究结论'的定位，符合用户'别下定论'要求，未出现冒充事实的具体信息",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来,别下定论。"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4",
+            "unit": "天",
+            "subject": "驻村时长",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "方法论参照：笔记分层《如何做田野笔记》·参与观察时长门槛 Fetterman·三角互证 Denzin·立档调查口径《中国传统村落立档调查田野手册》；仅作方法论对照，非本村事实",
+        "location": "页面右下方法论框",
+        "statement": "引入外部方法论文献作为参照框架，明确标注'仅作方法论对照，非本村事实'，未将其冒充为本村事实，符合要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "来源：用户田野笔记 Day1—Day4 ｜可核验程度评级依据笔记自述，非结论｜数值均为估算/口述，待核·初步观察，存疑待考",
+        "location": "页面底部来源说明栏",
+        "statement": "底部来源声明，明确所有数值为估算/口述待核，强调初步观察、存疑待考，与用户需求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来,别下定论。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 11688,
+    "total_tokens": 14654,
+    "completion_tokens": 2966,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 276.664,
+  "attempts": 2
+}

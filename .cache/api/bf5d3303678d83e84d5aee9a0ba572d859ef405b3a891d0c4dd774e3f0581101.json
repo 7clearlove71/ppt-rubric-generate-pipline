@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      5,
+      7
+    ],
+    "evidence": "页5写\"保守口径约18个月收回成本\"，页7写\"回收期约18个月以内\"。\"约18个月\"是近似承诺，\"18个月以内\"是上限承诺，口径明显漂移。页5的\"约5-6个月\"与页7的\"18个月以内\"差异更大，前者为纯电费口径，后者为保守口径，但页7未标注\"保守口径\"字样，直接写\"回收期约18个月以内\"，与页5的\"约18个月\"在措辞和限定精度上不一致。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 19452,
+    "total_tokens": 19587,
+    "completion_tokens": 135,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 14.641,
+  "attempts": 1
+}

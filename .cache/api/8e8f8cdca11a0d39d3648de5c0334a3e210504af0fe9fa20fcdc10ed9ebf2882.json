@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      {
+        "note": "候选A对P4、P8、P9的叠印判定与候选B对对应页面的无缺陷判定存在表面差异，但经核查双方证据：候选B的P4实际对应候选A的P4（文化价值页），候选B的P7对应候选A的P8（资金用途页），候选B的P8为致谢页无对应。候选B未提供P9证据。双方审查的页面范围与编号不完全对齐，且候选B的判定基于8页、候选A基于10页，无法建立同一物理页面的直接对照。候选A的叠印证据来自direct_judge_observation的局部放大图确认，候选B的no-defect结论基于对bbox intersection的排除；但候选B未覆盖P9，且其P7（对应候选A P8）的判定未引用与候选A相同的放大图证据，属于证据缺失而非结论冲突。在现有证据下，无法确认双方对同一可视区域做出了相反的实质性判定，不构成需翻转的实质冲突。"
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 33256,
+    "total_tokens": 33482,
+    "completion_tokens": 226,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 88.743,
+  "attempts": 1
+}

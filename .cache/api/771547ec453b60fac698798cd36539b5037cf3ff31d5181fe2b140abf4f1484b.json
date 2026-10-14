@@ -1,0 +1,35 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      9
+    ],
+    "evidence": "第9页标题为\"四类风险有防控\"，但风险防控表实际只列出三类风险（技艺断代、市场与订单、原料与品控），而页面底部保障机制却列出四类（组织、制度、监督、持续）。标题声称\"四类风险\"与表格实际三类风险数量不匹配，且保障机制的四类与风险类别的三类形成逻辑不对应，构成叙事链条上的断裂。",
+    "evidence_ids": [
+      "p9_e32"
+    ],
+    "resolutions": [
+      {
+        "evidence_id": "p9_e32",
+        "defect_present": true,
+        "reason": "第9页标题明确写\"四类风险有防控\"，但风险防控表主体仅列出三类风险类别（技艺断代风险、市场与订单风险、原料与品控风险），第四类风险未在表中明确列出。同时页面底部列出\"组织保障、制度保障、监督保障、持续保障\"四类保障机制，形成\"三类风险配四类保障\"的数量错位。这种标题与内容的不一致、风险类别与保障机制数量的不对应，构成论证链条的逻辑断裂，妨碍评审读者顺畅跟随。该缺陷属于narrative_disconnection，归属本条。"
+      }
+    ],
+    "additional_observations": [],
+    "inspection_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 57655,
+    "total_tokens": 57917,
+    "completion_tokens": 262,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 92.275,
+  "attempts": 2
+}

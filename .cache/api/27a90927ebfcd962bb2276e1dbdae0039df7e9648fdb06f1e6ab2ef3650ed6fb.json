@@ -1,0 +1,56 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "逐页检查全部8页原始图片及提供的局部放大图，所有正文与图形内容均清晰可读，无真实遮挡、裁切或对比不足问题。具体核验如下：\n\n1. 第1页：标题、数据卡片（4.2亿元/14%/410人）、来源声明等所有文字清晰，红色数字与灰色说明文字上下排列有间距，无笔画相交。text_overlap_candidates中的p1_t15/p1_t17等交集仅为bbox微触（fraction 0.151以下），实际图像中数字与标签分属不同行，无遮挡。\n\n2. 第2页：五个数据卡片、引言、脚注等全部可读。text_overlap_candidates中p2_t14/p2_t15等行内换行导致的bbox微触（fraction 0.1701），实际为同一文本块的自然换行，非遮挡。\n\n3. 第3页：柱状图、环形图、结论文字均清晰。纵轴数字与\"亿元\"单位、环形图91%/9%标签均无相交遮挡。text_overlap_candidates中p3_t31/p3_t32等行内换行微触，不构成真实缺陷。\n\n4. 第4页：左右两个柱状图及标签、标题区文字全部清晰可读。\"裁员0人\"红色大字与下方说明文字有明确间距，无遮挡。\n\n5. 第5页：组合图、右侧数据卡片、底部四列指标全部清晰。局部放大图p5_overlap_ad1dc6367c显示脚注文字虽跨两行但清晰可读，无笔画相交。text_overlap_candidates中p5_t51/p5_t52为脚注自然换行，fraction 0.1726，不构成遮挡。\n\n6. 第6页：标题、时间轴、三栏数据全部清晰。局部放大图p6_overlap_51651cbc10显示标题\"现金只够发2个月工资的那60天，我们没有裁员、没有砍研发、没有一个人退缩\"分两行但清晰可读，无笔画相交。三栏内数字与说明文字均有间距。\n\n7. 第7页：五项指标卡片、闭环箭头、右侧抓手全部清晰。局部放大图p7_overlap_0cb8b14a88、p7_overlap_83347efa01、p7_overlap_e8d0a7c955、p7_overlap_79ab8b615d、p7_overlap_9a19c6aa9e、p7_overlap_d2ad91a2c1均显示对应文字为自然换行或上下排列，笔画清晰独立，无真实遮挡。\n\n8. 第8页：大标题、四列数据、底部信息栏全部清晰。局部放大图p8_overlap_6069da2f6a、p8_overlap_df6f3afcd9、p8_overlap_dff78a8655、p8_overlap_0f1f86b2a7及visual_inspections确认：红色数字与红色/灰色单位字横向排列有间距，灰色标签位于下方，所有文字笔画清晰独立，无重叠。inspection_resolutions中两个required_inspection均确认relation_confirmed=false（无真实遮挡）。\n\n所有页面文字与背景对比度充足，字号在投影距离下可读，无内容超出边界被裁切。",
+    "evidence_ids": [
+      "p1_e1",
+      "p2_e1",
+      "p3_e1",
+      "p4_e1",
+      "p5_e1",
+      "p6_e1",
+      "p7_e1",
+      "p8_e1"
+    ],
+    "resolutions": [],
+    "inspection_resolutions": [
+      {
+        "inspection_id": "p8_overlap_6069da2f6a",
+        "relation_confirmed": false,
+        "defect_present": false,
+        "reason": "局部放大图清晰显示：红色'410'与红色'人'横向排列，两者间距明显，笔画无接触；灰色'团队规模'位于下方，与上方红色文字无相交。text_overlap_candidates的bbox微触源于渲染坐标中数字下沿与标签上沿的极小重叠（fraction 0.2101），但实际字形区域不相交，不构成visual_readability定义的遮挡缺陷。"
+      },
+      {
+        "inspection_id": "p8_overlap_df6f3afcd9",
+        "relation_confirmed": false,
+        "defect_present": false,
+        "reason": "局部放大图清晰显示：红色大字'4.2亿元'位于上方，灰色小字'全年营收'位于正下方偏左，两行文字有清晰间距，无任何笔画或字形相交。背景为纯白色，对比充足。bbox微触为渲染坐标误差，不构成真实遮挡。"
+      }
+    ],
+    "additional_observations": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 71168,
+    "total_tokens": 72226,
+    "completion_tokens": 1058,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 123.834,
+  "attempts": 1
+}

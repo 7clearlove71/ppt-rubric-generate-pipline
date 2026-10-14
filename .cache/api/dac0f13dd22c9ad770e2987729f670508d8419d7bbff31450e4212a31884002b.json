@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      1,
+      2,
+      6,
+      7,
+      8
+    ],
+    "evidence": "存在多处面向制作者的过程批注直接上屏，无法直接作为年会PPT使用：①第1页底部\"汇报对象：公司全体员工与管理层 场合：年会开场\"、第8页底部\"REPORTER 全体同仁 / DEPARTMENT 年度经营回顾 / DATE 年会当日\"为典型模板占位栏位；②多页显著位置标注\"老板致辞原话\"\"老板年会致辞\"\"老板讲话\"等制作说明（第2页、第6页、第7页），如第6页标题下方直接写\"——老板年会致辞原话\"；③第1页、第8页底部\"数据来源：全年经营数据与老板年会致辞\"\"派生指标均标注'测算'，无外部来源\"等数据来源说明文字出现在观众可见区域。这些制作痕迹和过程批注充斥页面，不符合可直接上台使用的成品标准。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 20066,
+    "total_tokens": 20274,
+    "completion_tokens": 208,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.236,
+  "attempts": 1
+}

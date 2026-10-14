@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      4
+    ],
+    "evidence": "P2「02 客服来电」明确写「部分用户直接引用那条视频的说法打进来」，并标注素材二；P3时间线「T0+24h→近三天」节点下重复该交叉印证，且以箭头连接「视频传播→客服来电→电商退单」传导链；P4「舆情到经营传导链」再次列示该节点并注明「来电直接引用视频说法·[客服来电]」。三处均将视频传播与实际客诉建立因果关联，满足rubric要求。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 22655,
+    "total_tokens": 22784,
+    "completion_tokens": 129,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.069,
+  "attempts": 1
+}

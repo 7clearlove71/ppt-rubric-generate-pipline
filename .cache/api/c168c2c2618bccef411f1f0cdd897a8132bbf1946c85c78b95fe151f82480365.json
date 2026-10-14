@@ -1,0 +1,34 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "evidence": "全篇13页，内容聚焦三项核心进展（良率78%→92%、柔性OLED弯曲10万次、植入式电子皮肤临床试验），每页信息密度适中且结构清晰：第2-3页行业背景与成果总览、第4-7页分述良率提升机理与OLED可靠性证据链、第8-9页植入式电子皮肤技术界面与临床路径、第10-12页技术路线图与下一步计划。单页以图表+要点形式呈现，无过度密集的独立论证模块需逐条展开；专家受众下，12页有效内容支撑20分钟讲解（约1.5-2分钟/页），体量匹配。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35534,
+    "total_tokens": 35716,
+    "completion_tokens": 182,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 16.601,
+  "attempts": 1
+}

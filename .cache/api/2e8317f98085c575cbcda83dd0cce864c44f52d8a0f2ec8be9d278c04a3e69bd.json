@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      6
+    ],
+    "evidence": "第2页四线对比明细中列明\"3号线 0.48 kWh/件 产量70万件·用电34万kWh·空载12 kWh/h\"，已呈现单位能耗不高但空载数据。第6页专页聚焦3号线，标题即点明\"3号线单位能耗最低0.48但空载高达12 kWh/h\"；正文①反差事实明确\"单位能耗0.48 kWh/件—四线最低\"与\"空载能耗12 kWh/h—四线最高\"；②问题定位指出\"不在生产，在停机/待机\"，根因为\"缺少统一停机顺序、辅机断电/卸载清单\"；③量化测算标注\"月待机约240小时（日历720小时的约1/3）\"为估算假设，并给出年节约电费约1.3万元。反差事实、12 kWh/h数值、停机流程不规范归因均完整呈现，且未标注假设的参数仅涉及量化改善中的待机时长，该假设已明确标注。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23378,
+    "total_tokens": 23634,
+    "completion_tokens": 256,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.924,
+  "attempts": 1
+}

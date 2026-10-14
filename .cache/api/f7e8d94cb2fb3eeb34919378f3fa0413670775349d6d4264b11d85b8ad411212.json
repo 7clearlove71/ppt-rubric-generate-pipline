@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      7
+    ],
+    "evidence": "P2申报要点栏与底部黑条明确列示：'第一年建成800㎡工坊并培训50人｜第二年年产量扩至10万件｜第三年打造品牌、入驻电商平台'。P7三年规划页以三级台阶形式完整复现：第一年'建阵地'800㎡+50人培训，第二年'扩产能'10万件/年+120户，第三年'树品牌拓渠道'含'自有品牌'与'电商平台入驻'两项。数值、年度归属及要素均无错位或遗漏，与用户给定需求逐字一致。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 26987,
+    "total_tokens": 27120,
+    "completion_tokens": 133,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 18.281,
+  "attempts": 1
+}

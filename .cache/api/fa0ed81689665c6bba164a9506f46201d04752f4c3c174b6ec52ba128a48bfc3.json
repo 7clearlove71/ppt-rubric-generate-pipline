@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      10
+    ],
+    "evidence": "第10页标题为\"技术路线图：材料—器件—系统—临床四级演进，2026–2028 里程碑已明确\"，采用泳道矩阵形式呈现：左侧为四级泳道（材料层、器件层、系统层、临床/产业层），横向按时间轴分为\"2023–2025 已完成（实测）\"、\"2026 目标\"、\"2027 目标\"、\"2028 目标\"四列。内容明确衔接三项已有进展：器件层\"良率 92%·弯曲 10 万次\"对应可拉伸传感器阵列量产良率78%→92%与柔性OLED弯曲10万次无衰减；临床/产业层\"进入临床试验阶段\"对应植入式电子皮肤进入临床试验。该页为结构化、可辨识的技术路线图，满足rubric要求。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35081,
+    "total_tokens": 35270,
+    "completion_tokens": 189,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 46.819,
+  "attempts": 2
+}

@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A与B均判定为yes，且均完整呈现了‘公司+合作社+农户’三方分工：公司负责设计与销售、合作社统一采购原料和培训、农户在家编织按件计酬，并将计酬机制与预期增收水平（人均月增收约1800元）建立了清晰关联。",
+      "两候选在呈现形式上略有差异：A采用流程图+权责对照表+5步兑付流程图，B采用三栏结构+深色区块突出+柱状图延伸测算，但均满足‘用文字、流程图、结构图等任一形式呈现均可’的 criterion 要求。",
+      "两候选均未出现模式名称缺失、任一方职责缺失或错误对应、农户收益逻辑不清等应记no的情形，结论一致，不存在实质冲突。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 13542,
+    "total_tokens": 13712,
+    "completion_tokens": 170,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 123.64,
+  "attempts": 1
+}

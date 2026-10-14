@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "全篇按\"事实时间线→影响评估→声明修改建议→分级响应机制→决策请求\"的决策导向顺序展开。P1封面即点明\"现状同步/风险研判/方案建议/决策请求\"四段结构；P2-P3建立事实时间线与传导链；P4做四维影响分级；P5专页给出声明草稿修改建议（逐句诊断+改写方向+发布时序）；P6设计三级响应机制；P7将行动清单落到部门与时点，并设四项待决策事项（D1-D4）附建议与后果，供管理层当场勾选；P8收尾再次聚焦\"请拍板\"。叙事主线清晰，从现状到待决策事项完整闭环，符合管理层危机汇报逻辑。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 22696,
+    "total_tokens": 22883,
+    "completion_tokens": 187,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 13.566,
+  "attempts": 1
+}

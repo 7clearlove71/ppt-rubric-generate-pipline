@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      4
+    ],
+    "evidence": "幻灯片4标题为\"非遗分量：2018年获批省级，三重价值可核查\"，明确呈现\"2018年获批省级\"（年份2018、级别省级）。正文以\"认定层级：国家—省—市—县四级名录\"展开，说明\"本项目处于第二级\"，并以四环节闭环程序、三重价值（文化认同价值、地方名片价值、产业转化价值）对省级认定的分量进行实质阐述，非仅列名头。来源标注\"本项目2018年获批省级口径逐字沿用\"。完全满足rubric要求。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 26994,
+    "total_tokens": 27128,
+    "completion_tokens": 134,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 22.217,
+  "attempts": 1
+}

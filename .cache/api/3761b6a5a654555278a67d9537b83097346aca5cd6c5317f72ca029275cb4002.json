@@ -1,0 +1,44 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "rubric实质覆盖全部六项需求，缺陷归属单一、边界清晰，无重复计分或无依据硬条件，failure_modes完整且与正文一致。",
+    "coverage": {
+      "Q01": [
+        "R03",
+        "R10"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R04"
+      ],
+      "Q05": [
+        "R05"
+      ],
+      "Q06": [
+        "R09"
+      ]
+    }
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 48,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 48
+    },
+    "prompt_tokens": 7165,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 7165
+    },
+    "total_tokens": 7213
+  },
+  "elapsed_seconds": 2.748,
+  "attempts": 1
+}

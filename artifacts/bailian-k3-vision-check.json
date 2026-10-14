@@ -1,0 +1,33 @@
+{
+  "result": {
+    "title": "从实验室到临床",
+    "facts": [
+      "柔性电子的工程化三年",
+      "近三年·三条主线：01 可拉伸传感器阵列、02 柔性 OLED 器件、03 植入式电子皮肤"
+    ]
+  },
+  "usage": [
+    {
+      "role": "vision",
+      "cache_key": "865279cc4aba9f912d86bfbd0068ef831beffe1df190744227a46879f35fd986",
+      "cached": false,
+      "model": "kimi-k3",
+      "usage": {
+        "completion_tokens": 49,
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "text_tokens": 49
+        },
+        "prompt_tokens": 3035,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2957,
+          "text_tokens": 78
+        },
+        "total_tokens": 3084
+      },
+      "elapsed_seconds": 2.765,
+      "attempts": 1
+    }
+  ]
+}

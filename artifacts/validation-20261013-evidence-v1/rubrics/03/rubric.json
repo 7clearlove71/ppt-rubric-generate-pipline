@@ -1,0 +1,412 @@
+{
+  "groups": [
+    {
+      "id": "G01",
+      "dimension": "fulfillment",
+      "importance": 3,
+      "rationale": "节能改造立项的核心交付目标：完整呈现用户指定的叙事结构（对比→深挖→投资回报）与必要内容模块",
+      "score": 30.0
+    },
+    {
+      "id": "G02",
+      "dimension": "correctness",
+      "importance": 3,
+      "rationale": "用户给定的关键事实与数字（产线数据、电价、投入、回本周期、行业标杆）必须准确，且ROI测算需可复算",
+      "score": 25.0
+    },
+    {
+      "id": "G03",
+      "dimension": "integrity",
+      "importance": 2,
+      "rationale": "不虚构用户未给定的具体事实，对假设与推导清晰标注，保留'约'等不确定性表述",
+      "score": 15.0
+    },
+    {
+      "id": "G04",
+      "dimension": "narrative",
+      "importance": 2,
+      "rationale": "结构清晰、受众适配（立项决策者）、信息展开充分",
+      "score": 15.0
+    },
+    {
+      "id": "G05",
+      "dimension": "visual",
+      "importance": 2,
+      "rationale": "可读性、视觉层级与信息表达质量",
+      "score": 15.0
+    }
+  ],
+  "items": [
+    {
+      "id": "R01",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q01",
+        "Q06"
+      ],
+      "basis": "explicit",
+      "scope": "全篇结构与交付范围",
+      "evidence_mode": "both",
+      "judge_prompt": "PPT整体结构遵循用户指定的叙事顺序：先呈现四条产线的能耗对比（含各产线多项指标），再聚焦1号线做深挖（原因分析），最后落到节能改造的投资回报测算。三个模块均存在且顺序正确，作品可用于节能改造立项场景。允许各模块内部有不同布局，不要求固定页数。\n\n【程序附加的缺陷归属边界】\nmissing_narrative_module：用户指定的三段式叙事（四条产线能耗对比→1号线深挖→投资回报测算）中任一模块缺失，或模块顺序与该指定顺序明显颠倒，导致立项用途受损\n排除：模块内部的布局与页面划分方式；模块内单条事实或数值的准确性",
+      "dimension": "fulfillment",
+      "score": 6.428571428571429
+    },
+    {
+      "id": "R02",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q02"
+      ],
+      "basis": "explicit",
+      "scope": "对比模块或核心发现页",
+      "evidence_mode": "both",
+      "judge_prompt": "核心发现被突出传达：观众能从呈现中明确识别1号线的单位产品能耗显著高于其他产线（约0.5水平）。可通过视觉强调（颜色、字号、位置）或文字说明体现这一对比关系，不要求逐字复述'远高于'，但需让1号线的异常高值在对比中可辨识。本条只判断对比关系是否被呈现与强调，具体数值是否准确由数据准确性标准负责。\n\n【程序附加的缺陷归属边界】\ncore_finding_not_conveyed：观众无法从对比呈现中识别1号线单位能耗显著高于其他产线这一核心发现：缺少产线间对比呈现，或1号线的异常高值未获得任何视觉或文字层面的可辨识强调\n排除：具体能耗数值本身的引用错误（属事实准确性）；配色、字体等风格偏好",
+      "dimension": "fulfillment",
+      "score": 6.428571428571429
+    },
+    {
+      "id": "R03",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q03"
+      ],
+      "basis": "explicit",
+      "scope": "1号线深挖模块",
+      "evidence_mode": "text",
+      "judge_prompt": "说明1号线能耗高的原因是液压系统老化导致效率下降。允许等价表述（如'液压系统效率低''设备老化导致能效下降'），但需明确指向液压系统作为主要原因，而非泛泛归因或指向无关原因。\n\n【程序附加的缺陷归属边界】\ncause_explanation_missing：未将1号线能耗偏高归因于液压系统老化导致的效率下降，或将原因指向与液压系统无关的其他因素\n排除：对老化机理的补充细节是否充分（属内容展开程度）；深挖模块的排版形式",
+      "dimension": "fulfillment",
+      "score": 6.428571428571429
+    },
+    {
+      "id": "R04",
+      "group_id": "G01",
+      "importance": 3,
+      "source_refs": [
+        "Q04a"
+      ],
+      "basis": "explicit",
+      "scope": "投资回报测算模块",
+      "evidence_mode": "both",
+      "judge_prompt": "将1号线更换液压系统的经济账作为独立测算内容单独呈现，而非零散语句混杂在其他内容中。可以是独立页面、独立板块或独立的图表/表格区域，需在视觉或标题上可辨识为独立的测算单元。本条只判断呈现形式是否独立，测算数值与推导正确性由测算有效性标准负责。\n\n【程序附加的缺陷归属边界】\ncalculation_not_standalone：更换液压系统的经济账未形成可独立辨识的测算单元，投入、节省、回本等内容仅作为零散语句混入其他模块\n排除：测算数值与推导过程本身的正确性（属推论有效性）；独立单元采用页面、板块或图表中的哪种形式",
+      "dimension": "fulfillment",
+      "score": 6.428571428571429
+    },
+    {
+      "id": "R05",
+      "group_id": "G01",
+      "importance": 2,
+      "source_refs": [
+        "Q05"
+      ],
+      "basis": "explicit",
+      "scope": "对比模块或问题汇总页",
+      "evidence_mode": "text",
+      "judge_prompt": "提及3号线的问题：虽然单位能耗不高，但空载能耗偏高（待机状态仍在耗电），并归因于停机流程不规范。问题现象与流程归因均需出现，允许分散在不同位置。本条只判断该问题是否被提及与归因，3号线各项数值是否准确由数据准确性标准负责，是否进一步量化空载损失不作要求。\n\n【程序附加的缺陷归属边界】\nline3_issue_incomplete：3号线空载能耗偏高的问题未被提及，或虽提及现象但未归因于停机流程不规范\n排除：3号线各项数值本身的引用错误（属事实准确性）；是否对空载损失做进一步量化测算",
+      "dimension": "fulfillment",
+      "score": 4.285714285714286
+    },
+    {
+      "id": "R06",
+      "group_id": "G02",
+      "importance": 3,
+      "source_refs": [
+        "Q07a",
+        "Q07b",
+        "Q07c",
+        "Q07d",
+        "Q07e"
+      ],
+      "basis": "explicit",
+      "scope": "对比模块的数据表格或图表",
+      "evidence_mode": "both",
+      "judge_prompt": "四条产线的数据完整且对齐：每条产线的月产量（万件）、月用电（万kWh）、单位能耗（kWh/件）、空载能耗（kWh/h）四项指标与产线一一对应，不错位、不缺失。具体数值：1号线80/68/0.85/8，2号线95/49/0.52/6，3号线70/34/0.48/12，4号线60/31/0.52/5。允许表格、图表或图文结合形式，但需能逐项核对。基于这些给定数据再做推导时算错，不属于本条，而属推论有效性缺陷。\n\n【程序附加的缺陷归属边界】\nproduction_data_distortion：任一产线的月产量、月用电、单位能耗、空载能耗数值与用户给定数据不符、缺失，或指标与产线错位对应\n排除：基于给定数据做推导时算错（属推论有效性）；用户未给定的新增信息未标注假设（属新增事实边界）",
+      "dimension": "correctness",
+      "score": 5.357142857142857
+    },
+    {
+      "id": "R07",
+      "group_id": "G02",
+      "importance": 3,
+      "source_refs": [
+        "Q04b"
+      ],
+      "basis": "explicit",
+      "scope": "投资回报测算模块",
+      "evidence_mode": "text",
+      "judge_prompt": "更换液压系统的投入金额准确呈现为约120万，保留'约'的不确定性表述。允许等价表述如'约120万元''预计120万左右'，不得写成'120万整''恰好120万'或省略'约'字。回本周期数值是否正确不由本条负责。\n\n【程序附加的缺陷归属边界】\ninvestment_figure_distortion：更换液压系统投入金额未呈现为约120万：数值错误、数量级错误，或丢失'约'等不确定性限定而写成确定值\n排除：回本周期数值问题；利用该投入做推导时的计算错误（属推论有效性）",
+      "dimension": "correctness",
+      "score": 5.357142857142857
+    },
+    {
+      "id": "R08",
+      "group_id": "G02",
+      "importance": 3,
+      "source_refs": [
+        "Q04c"
+      ],
+      "basis": "explicit",
+      "scope": "投资回报测算模块",
+      "evidence_mode": "text",
+      "judge_prompt": "回本周期准确呈现为大概18个月，且明确其测算口径是按当前产量和电价。允许等价表述如'约18个月''预计18个月左右''按现有产量和电价约1.5年收回'，需同时包含时间（约18个月）与口径（当前产量和电价）两个要素。投入金额是否正确不由本条负责。\n\n【程序附加的缺陷归属边界】\npayback_figure_distortion：回本周期未呈现为大概/约18个月，或未说明其测算口径为按当前产量和电价\n排除：投入金额数值问题；推导过程中的计算错误（属推论有效性）",
+      "dimension": "correctness",
+      "score": 5.357142857142857
+    },
+    {
+      "id": "R09",
+      "group_id": "G02",
+      "importance": 3,
+      "source_refs": [
+        "Q04d",
+        "Q08"
+      ],
+      "basis": "explicit",
+      "scope": "投资回报测算模块",
+      "evidence_mode": "both",
+      "judge_prompt": "ROI测算过程完整可复算且电价口径正确：电价采用0.75元/kWh；需展示投入（约120万）、节省来源（改造后单位能耗下降带来的电费节省）、回本周期（约18个月）之间的计算关系。允许自行假设改造后的单位能耗水平（如降至0.5或0.45），但需明确标注为假设；需展示关键中间步骤（如月节省电费=（改造前单位能耗-改造后单位能耗）×月产量×电价），使观众能复算验证18个月的合理性。不要求精确等于18个月，允许正确的四舍五入与等价单位换算。若呈现多个测算口径（如纯电费口径与含保守调整的口径），各口径之间的差异应有可复算的桥接说明（如保守调整项的具体金额或系数），避免给出相互矛盾又无解释的数字。若引入停产损失、爬坡期等补充因素解释结论变化，应给出量化衔接而非只列名词。用户给定事实（产线数据、投入、回本结论）本身引错不由本条负责。\n\n【程序附加的缺陷归属边界】\nelectricity_price_misused：ROI测算未采用0.75元/kWh的工业电价：电价数值写错、缺失，或测算实际使用了其他电价口径\n排除：电价以外的用户给定事实引用错误（属事实准确性）；节省与回本推导的运算错误（属推论有效性）\nreasoning_validity：算术、比较和推论缺陷：节省金额、回本周期等推导中分子/分母、对象与期间可比性、时间窗口起点一致性存在问题，计算结果算错，因果或比较缺乏依据，或多个测算口径间的差异缺乏可复算的桥接说明；补充因素只列名词而无量化衔接\n排除：用户给定事实的引用或改写错误（属事实准确性）；新增假设未标注（属新增事实边界）；未做额外推导本身不构成缺陷",
+      "dimension": "correctness",
+      "score": 5.357142857142857
+    },
+    {
+      "id": "R10",
+      "group_id": "G02",
+      "importance": 2,
+      "source_refs": [
+        "Q09"
+      ],
+      "basis": "explicit",
+      "scope": "对比模块或深挖模块",
+      "evidence_mode": "text",
+      "judge_prompt": "包含行业标杆单位能耗约0.45kWh/件作为参照，保留'约'的不确定性表述。允许等价表述如'行业先进水平约0.45''标杆值0.45左右'，不得省略'约'字或写成'行业标杆就是0.45'。与标杆差距的推导是否算错不由本条负责。\n\n【程序附加的缺陷归属边界】\nbenchmark_distortion：行业标杆单位能耗未呈现为约0.45kWh/件：数值错误，或丢失'约'等不确定性限定而写成确定值\n排除：各产线自身数据的引用错误（属事实准确性）；与标杆差距的推导算错（属推论有效性）",
+      "dimension": "correctness",
+      "score": 3.5714285714285716
+    },
+    {
+      "id": "R11",
+      "group_id": "G03",
+      "importance": 3,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "不虚构用户未给定的具体事实。用户未提供的信息（如改造后能达到的具体单位能耗、年空载小时数、数据月份、产品类型、设备型号、供应商、施工周期、设备构成明细、老化原因细分等）若出现，需明确标注为假设、估算或待核实，不得冒充用户给定事实或已确认结果。允许基于给定数据的合理推导（如月电费、能耗差值），但推导过程需可追溯；允许与领域常识一致的一般性建议（如规范停机流程），不视为虚构。用户给定事实被引错或改写不属于本条，而属事实准确性缺陷；推导算错属于推论有效性缺陷。\n\n【程序附加的缺陷归属边界】\nunsupported_assertion：未经支持的新增事实被冒充已知：用户未给定的具体数值、日期、名称、设备型号、构成明细、改造后效果等未标注为假设、估算或待核实\n排除：用户给定事实的引用或改写错误（属事实准确性）；推导计算错误（属推论有效性）；与领域常识一致的一般性建议",
+      "dimension": "integrity",
+      "score": 9.0
+    },
+    {
+      "id": "R12",
+      "group_id": "G03",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "用户未给定的补充假设与推导结果在全篇保持一致。例如：若假设改造后单位能耗降至某值，则全篇引用该假设时需一致；若计算月节省电费，则各页引用的节省金额需一致。允许明确说明的时间进展或口径变化。当全厂口径的派生指标与单项立项口径并存时，应在引用处明确区分口径范围，避免汇总指标被误读为本次改造方案的直接收益。用户给定事实本身的准确性不由本条负责。\n\n【程序附加的缺陷归属边界】\ncross_page_inconsistency：用户未给定的补充假设或推导结果在不同页面间取值不一致，或不同口径的派生指标混用且未在引用处区分范围\n排除：用户给定事实本身的准确性；明确说明的时间进展或口径变化",
+      "dimension": "integrity",
+      "score": 6.0
+    },
+    {
+      "id": "R13",
+      "group_id": "G04",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "both",
+      "judge_prompt": "受众适配：面向节能改造立项决策者，信息展开充分。核心发现、原因分析、投资回报测算均需有实质内容支撑（如数据呈现、原因说明、测算步骤），而非仅标题或一句话带过；允许合理的背景回顾或章节衔接，但冗余不应阻碍决策信息的获取。能从内容体量判断其适合口头汇报支撑，不据静态页面推算精确时长。\n\n【程序附加的缺陷归属边界】\ninsufficient_substance：核心发现、原因分析或投资回报测算仅有标题或一句话带过，缺乏支撑立项决策的实质展开；或冗余内容明显阻碍决策信息获取\n排除：合理的背景回顾与章节衔接；对汇报时长的主观偏好",
+      "dimension": "narrative",
+      "score": 7.5
+    },
+    {
+      "id": "R14",
+      "group_id": "G04",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "text",
+      "judge_prompt": "表达清晰一致：标题、正文、图表标签使用规范中文，术语一致（如'单位能耗''空载能耗''回本周期'），全篇计量单位写法统一（如kWh大小写一致）；允许使用'kWh/件''度/件'等等价单位但需全篇统一。转述用户给定的测算结论时保持语义一致，避免擅自加入'以内''以上'等改变原意的限定词。数值本身的准确性不由本条负责。\n\n【程序附加的缺陷归属边界】\nexpression_inconsistency：术语或计量单位写法全篇不统一，或转述用户给定结论时擅自加入'以内''以上'等改变原意的限定词，造成歧义或自相矛盾\n排除：数值本身的准确性（属事实准确性）；页面遮挡、裁切等可读性问题",
+      "dimension": "narrative",
+      "score": 7.5
+    },
+    {
+      "id": "R15",
+      "group_id": "G05",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "visual",
+      "judge_prompt": "正文与图形内容真实可读：无遮挡、裁切、对比度不足等导致不可读的问题；文本能提取不代表可读，需检查实际渲染效果。图表标签（坐标轴、图例、单位、数据标签）完整且可读，无NaN等残留；图表内的标注文字（含旋转排布的标注）应与数据元素保持可读间距，不与坐标轴、数据线或其他标签重叠。风格偏好（如配色、字体选择）不作为错误。\n\n【程序附加的缺陷归属边界】\nchart_label_integrity：图表分类/轴/图例/单位标签缺失、NaN等残留、标签本身不可读\n排除：正文文字遮挡、信息层级问题\nvisual_readability：正文/图形内容的遮挡、裁切、对比等真实不可读问题，排除图表标签缺陷\n排除：图表标签缺失或不可读、信息组织与重点定位问题",
+      "dimension": "visual",
+      "score": 7.5
+    },
+    {
+      "id": "R16",
+      "group_id": "G05",
+      "importance": 2,
+      "source_refs": [],
+      "basis": "quality",
+      "scope": "全篇",
+      "evidence_mode": "visual",
+      "judge_prompt": "信息组织与视觉层级合理：在内容可读前提下，重点信息（如1号线异常高值、投资回报结论）通过位置、字号、颜色等方式获得视觉强调；阅读路径清晰，信息密度适中，不过度拥挤或空洞。同一对象（如某条产线）在全篇图表中的颜色编码应保持一致，避免同一颜色在不同页面指向不同对象造成误读。时间轴类图表的任务标签应与轴刻度清晰对应且不溢出页面边缘。允许合理的风格多样性。已属于遮挡、裁切或图表标签错误的同一缺陷不在本条重复扣分。\n\n【程序附加的缺陷归属边界】\nvisual_hierarchy：在内容可读前提下的信息组织与重点定位缺陷：重点信息未获强调、阅读路径混乱、信息密度失衡、同一对象跨页颜色编码不一致、时间轴标签与刻度对应不清\n排除：遮挡、裁切、图表标签缺陷",
+      "dimension": "visual",
+      "score": 7.5
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "missing_narrative_module",
+      "owner": "R01",
+      "definition": "用户指定的三段式叙事（四条产线能耗对比→1号线深挖→投资回报测算）中任一模块缺失，或模块顺序与该指定顺序明显颠倒，导致立项用途受损",
+      "exclusions": "模块内部的布局与页面划分方式；模块内单条事实或数值的准确性"
+    },
+    {
+      "id": "core_finding_not_conveyed",
+      "owner": "R02",
+      "definition": "观众无法从对比呈现中识别1号线单位能耗显著高于其他产线这一核心发现：缺少产线间对比呈现，或1号线的异常高值未获得任何视觉或文字层面的可辨识强调",
+      "exclusions": "具体能耗数值本身的引用错误（属事实准确性）；配色、字体等风格偏好"
+    },
+    {
+      "id": "cause_explanation_missing",
+      "owner": "R03",
+      "definition": "未将1号线能耗偏高归因于液压系统老化导致的效率下降，或将原因指向与液压系统无关的其他因素",
+      "exclusions": "对老化机理的补充细节是否充分（属内容展开程度）；深挖模块的排版形式"
+    },
+    {
+      "id": "calculation_not_standalone",
+      "owner": "R04",
+      "definition": "更换液压系统的经济账未形成可独立辨识的测算单元，投入、节省、回本等内容仅作为零散语句混入其他模块",
+      "exclusions": "测算数值与推导过程本身的正确性（属推论有效性）；独立单元采用页面、板块或图表中的哪种形式"
+    },
+    {
+      "id": "line3_issue_incomplete",
+      "owner": "R05",
+      "definition": "3号线空载能耗偏高的问题未被提及，或虽提及现象但未归因于停机流程不规范",
+      "exclusions": "3号线各项数值本身的引用错误（属事实准确性）；是否对空载损失做进一步量化测算"
+    },
+    {
+      "id": "production_data_distortion",
+      "owner": "R06",
+      "definition": "任一产线的月产量、月用电、单位能耗、空载能耗数值与用户给定数据不符、缺失，或指标与产线错位对应",
+      "exclusions": "基于给定数据做推导时算错（属推论有效性）；用户未给定的新增信息未标注假设（属新增事实边界）"
+    },
+    {
+      "id": "investment_figure_distortion",
+      "owner": "R07",
+      "definition": "更换液压系统投入金额未呈现为约120万：数值错误、数量级错误，或丢失'约'等不确定性限定而写成确定值",
+      "exclusions": "回本周期数值问题；利用该投入做推导时的计算错误（属推论有效性）"
+    },
+    {
+      "id": "payback_figure_distortion",
+      "owner": "R08",
+      "definition": "回本周期未呈现为大概/约18个月，或未说明其测算口径为按当前产量和电价",
+      "exclusions": "投入金额数值问题；推导过程中的计算错误（属推论有效性）"
+    },
+    {
+      "id": "electricity_price_misused",
+      "owner": "R09",
+      "definition": "ROI测算未采用0.75元/kWh的工业电价：电价数值写错、缺失，或测算实际使用了其他电价口径",
+      "exclusions": "电价以外的用户给定事实引用错误（属事实准确性）；节省与回本推导的运算错误（属推论有效性）"
+    },
+    {
+      "id": "reasoning_validity",
+      "owner": "R09",
+      "definition": "算术、比较和推论缺陷：节省金额、回本周期等推导中分子/分母、对象与期间可比性、时间窗口起点一致性存在问题，计算结果算错，因果或比较缺乏依据，或多个测算口径间的差异缺乏可复算的桥接说明；补充因素只列名词而无量化衔接",
+      "exclusions": "用户给定事实的引用或改写错误（属事实准确性）；新增假设未标注（属新增事实边界）；未做额外推导本身不构成缺陷"
+    },
+    {
+      "id": "benchmark_distortion",
+      "owner": "R10",
+      "definition": "行业标杆单位能耗未呈现为约0.45kWh/件：数值错误，或丢失'约'等不确定性限定而写成确定值",
+      "exclusions": "各产线自身数据的引用错误（属事实准确性）；与标杆差距的推导算错（属推论有效性）"
+    },
+    {
+      "id": "unsupported_assertion",
+      "owner": "R11",
+      "definition": "未经支持的新增事实被冒充已知：用户未给定的具体数值、日期、名称、设备型号、构成明细、改造后效果等未标注为假设、估算或待核实",
+      "exclusions": "用户给定事实的引用或改写错误（属事实准确性）；推导计算错误（属推论有效性）；与领域常识一致的一般性建议"
+    },
+    {
+      "id": "cross_page_inconsistency",
+      "owner": "R12",
+      "definition": "用户未给定的补充假设或推导结果在不同页面间取值不一致，或不同口径的派生指标混用且未在引用处区分范围",
+      "exclusions": "用户给定事实本身的准确性；明确说明的时间进展或口径变化"
+    },
+    {
+      "id": "insufficient_substance",
+      "owner": "R13",
+      "definition": "核心发现、原因分析或投资回报测算仅有标题或一句话带过，缺乏支撑立项决策的实质展开；或冗余内容明显阻碍决策信息获取",
+      "exclusions": "合理的背景回顾与章节衔接；对汇报时长的主观偏好"
+    },
+    {
+      "id": "expression_inconsistency",
+      "owner": "R14",
+      "definition": "术语或计量单位写法全篇不统一，或转述用户给定结论时擅自加入'以内''以上'等改变原意的限定词，造成歧义或自相矛盾",
+      "exclusions": "数值本身的准确性（属事实准确性）；页面遮挡、裁切等可读性问题"
+    },
+    {
+      "id": "chart_label_integrity",
+      "owner": "R15",
+      "definition": "图表分类/轴/图例/单位标签缺失、NaN等残留、标签本身不可读",
+      "exclusions": "正文文字遮挡、信息层级问题"
+    },
+    {
+      "id": "visual_readability",
+      "owner": "R15",
+      "definition": "正文/图形内容的遮挡、裁切、对比等真实不可读问题，排除图表标签缺陷",
+      "exclusions": "图表标签缺失或不可读、信息组织与重点定位问题"
+    },
+    {
+      "id": "visual_hierarchy",
+      "owner": "R16",
+      "definition": "在内容可读前提下的信息组织与重点定位缺陷：重点信息未获强调、阅读路径混乱、信息密度失衡、同一对象跨页颜色编码不一致、时间轴标签与刻度对应不清",
+      "exclusions": "遮挡、裁切、图表标签缺陷"
+    }
+  ],
+  "evaluation_protocol": "evidence_v1",
+  "schema_version": 1,
+  "status": "approved",
+  "case_id": "03",
+  "signature": "e2608bc304fbd9e2252209da6430a6f422b48ad7f0f7b17a51e56baf5d4e9f49",
+  "provenance": {
+    "case_id": "03",
+    "prompt_version": "2026-10-13.12",
+    "prompt_fingerprint": "cc9c672f49f7297d97ee45b067082025c757615a219ad3645818dc03b1961393",
+    "validator_version": 10,
+    "config_hash": "e25ba23fbd5b3801c5aff0070134071f4bf919dc836416ba86cd0c0577bd0483",
+    "source_hash": "f4fbe496938af45cad16c8fb8616de42b1a84452abcfae3f9afc4e5273f6c6eb",
+    "candidates": {
+      "A": {
+        "sha256": "955fb1fa5c1c8faeeba214060bf4fe806e799bb49babaa47a714ab0ae8701bda",
+        "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+        "soffice": "/Users/liangyuanzhi/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+        "dpi": 150,
+        "backend": "pymupdf",
+        "pymupdf": "1.26.5",
+        "render_version": 2,
+        "font_inventory": "58062b64b7cf6fea132ccf7d6900c1f24560784331fb5329d28580a11dc60212"
+      },
+      "B": {
+        "sha256": "d8af8a113e8b8cca0e2f822d21cfd91de13a4eaa5d915251ab087cbb50980e99",
+        "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+        "soffice": "/Users/liangyuanzhi/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+        "dpi": 150,
+        "backend": "pymupdf",
+        "pymupdf": "1.26.5",
+        "render_version": 2,
+        "font_inventory": "58062b64b7cf6fea132ccf7d6900c1f24560784331fb5329d28580a11dc60212"
+      }
+    }
+  },
+  "dimension_weights": {
+    "fulfillment": 30,
+    "correctness": 25,
+    "integrity": 15,
+    "narrative": 15,
+    "visual": 15
+  },
+  "rubric_hash": "911846a1eaa76abee94f26802b0f0c9e2ac0929945ce0fe4748fb082fb56549c"
+}

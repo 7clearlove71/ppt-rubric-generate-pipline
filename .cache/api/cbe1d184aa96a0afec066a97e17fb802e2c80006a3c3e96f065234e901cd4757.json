@@ -1,0 +1,498 @@
+{
+  "parsed": {
+    "page": 2,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "汇报纲目与统一口径",
+        "location": "页面上部大标题",
+        "statement": "本页为目录/口径说明页，标题明确为汇报纲目与统一口径",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#1 改造任务完成情况\n#2 资金使用情况\n#3 居民满意度\n#4 存在问题\n#5 下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "五项纲目依次汇报，全篇共用一套统计口径与一套判定阈值，各页数据可逐格核对。",
+        "location": "标题下方说明文字",
+        "statement": "页面自述全篇共用一套统计口径与判定阈值，承诺各页数据可逐格核对",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据期间 2023 年 1 月—2026 年 8 月",
+        "location": "左侧汇报说明区域",
+        "statement": "数据期间设定为2023年1月至2026年8月，时间跨度约44个月",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2023",
+            "unit": "年",
+            "subject": "数据起始时间",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "数据截止时间",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据截至 2026 年 8 月 31 日",
+        "location": "左侧汇报说明区域下方",
+        "statement": "数据截至日期为2026年8月31日，与数据期间截止月份一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "数据截至日期",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "统计口径（全篇一致） 各项比率＝完成（到位、支出、满意）数 ÷ 计划（到位）数 × 100%",
+        "location": "左侧汇报说明区域",
+        "statement": "全篇统计口径统一公式：各项比率=完成数÷计划数×100%，适用于到位、支出、满意等多场景",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "判定阈值（全篇一致） ≥95% 达标 90%（含）—95% 基本达标 ＜90% 滞后／短板",
+        "location": "左侧汇报说明区域下方",
+        "statement": "三色判定阈值体系：≥95%达标（绿色）、90%-95%基本达标（橙色）、<90%滞后/短板（红色），全篇一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "95",
+            "unit": "%",
+            "subject": "达标阈值下限",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "90",
+            "unit": "%",
+            "subject": "基本达标阈值下限",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "一、改造任务完成情况",
+        "location": "右侧第一纲目",
+        "statement": "第一纲目标题与需求要求的#1改造任务完成情况对应，使用公文式序号\"一、\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#1 改造任务完成情况"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "口径：完成率＝完成数÷计划数×100% ｜ 小区完工率 92.6%（63／68个）",
+        "location": "第一纲目下方",
+        "statement": "小区完工率92.6%，63/68个，按公式计算63÷68≈92.647%，保留一位小数为92.6%，计算正确；按阈值判定为\"基本达标\"（橙色区间90%-95%）",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "92.6",
+            "unit": "%",
+            "subject": "小区完工率",
+            "denominator": "68个",
+            "time_origin": "2026年8月31日"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "63",
+            "right": "68",
+            "reported": "92.6",
+            "left_unit": "个",
+            "right_unit": "个",
+            "reported_unit": "%",
+            "left_quote": "63",
+            "right_quote": "68个",
+            "reported_quote": "92.6%",
+            "relation_quote": "完成率＝完成数÷计划数×100%",
+            "meaning": "63÷68×100%≈92.6%，保留一位小数"
+          }
+        ]
+      },
+      {
+        "quote": "P03—P04",
+        "location": "第一纲目右侧页码标注",
+        "statement": "改造任务完成情况对应P03-P04页，页码标注清晰",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "二、资金使用情况",
+        "location": "右侧第二纲目",
+        "statement": "第二纲目标题与需求要求的#2资金使用情况对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#2 资金使用情况"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "口径：到位率＝到位数÷计划总投资；支出执行率＝已支出÷已到位 ｜ 90.0%、86.0%",
+        "location": "第二纲目下方",
+        "statement": "资金到位率90.0%（基本达标，橙色区间），支出执行率86.0%（滞后/短板，红色区间<90%）；两个指标口径区分明确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "资金到位率",
+            "denominator": "计划总投资",
+            "time_origin": "2026年8月31日"
+          },
+          {
+            "value": "86.0",
+            "unit": "%",
+            "subject": "支出执行率",
+            "denominator": "已到位资金",
+            "time_origin": "2026年8月31日"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "P05—P06",
+        "location": "第二纲目右侧页码标注",
+        "statement": "资金使用情况对应P05-P06页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "三、居民满意度",
+        "location": "右侧第三纲目",
+        "statement": "第三纲目标题与需求要求的#3居民满意度对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#3 居民满意度"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "口径：满意度＝（满意＋基本满意）÷有效问卷×100% ｜ 93.8%、诉求办结率 85.7%",
+        "location": "第三纲目下方",
+        "statement": "满意度93.8%（基本达标，橙色区间），诉求办结率85.7%（滞后/短板，红色区间<90%）；满意度口径明确包含\"满意+基本满意\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "93.8",
+            "unit": "%",
+            "subject": "居民满意度",
+            "denominator": "有效问卷",
+            "time_origin": "2026年8月31日"
+          },
+          {
+            "value": "85.7",
+            "unit": "%",
+            "subject": "诉求办结率",
+            "denominator": "未说明",
+            "time_origin": "2026年8月31日"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "P07—P09",
+        "location": "第三纲目右侧页码标注",
+        "statement": "居民满意度对应P07-P09页，跨3页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "四、存在问题",
+        "location": "右侧第四纲目",
+        "statement": "第四纲目标题与需求要求的#4存在问题对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#4 存在问题"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "口径：每项问题标注数据出处页与具体比率 ｜ 五个问题，全部回溯至第二、第三部分",
+        "location": "第四纲目下方",
+        "statement": "存在问题板块明确承诺：每项问题标注数据出处页与具体比率，五个问题全部回溯至第二、第三部分（资金、满意度），与需求要求的\"能一眼看出问题从哪儿来\"呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存在问题那部分不要写虚的,要能看出跟前面资金和满意度两块是呼应的、有对应关系的,评审组一眼要能看出问题是从哪儿来的"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "P10—P11",
+        "location": "第四纲目右侧页码标注",
+        "statement": "存在问题对应P10-P11页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "五、下一步计划",
+        "location": "右侧第五纲目",
+        "statement": "第五纲目标题与需求要求的#5下一步计划对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#5 下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "口径：目标值以\"现状 → 目标\"表述 ｜ 七项措施、三项提请审议事项",
+        "location": "第五纲目下方",
+        "statement": "下一步计划采用\"现状→目标\"表述格式，明确七项措施、三项提请审议事项，结构清晰",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "P12—P13",
+        "location": "第五纲目右侧页码标注",
+        "statement": "下一步计划对应P12-P13页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：改造工作台账、专项资金决算表、第三方满意度调查",
+        "location": "页面底部左侧",
+        "statement": "数据来源列出三类：改造工作台账、专项资金决算表、第三方满意度调查，与五个纲目对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据截至 2026 年 8 月 31 日 · 比率保留一位小数 · 情景数据",
+        "location": "页面底部右侧",
+        "statement": "底部再次确认数据截至日期、比率保留一位小数、标注\"情景数据\"；\"情景数据\"暗示部分数据可能为模拟/假设性质",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "老旧小区改造工作情况汇报",
+        "location": "页面左上角",
+        "statement": "页面左上角标题确认主题为老旧小区改造工作情况汇报，未偏离主题",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "老旧小区改造工作汇报的PPT"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "汇报纲要 ｜ 02 / 13",
+        "location": "页面右上角",
+        "statement": "右上角标注\"汇报纲要\"及页码02/13，本页为第2页共13页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "标 ＜",
+        "location": "左下角判定阈值区域，放大图可见\"标\"与\"＜\"字形笔画存在视觉接触",
+        "statement": "视觉检查：\"标\"（基本达标）与\"＜\"（滞后/短板符号）在放大图中显示为上下相邻行，字形笔画有接触，属于排版紧凑导致的视觉现象，需judge判断是否构成真实遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "8 月 / 数据截至",
+        "location": "左侧数据期间区域，\"8月\"与\"数据截至\"上下相邻",
+        "statement": "视觉检查：\"8月\"与下方\"数据截至\"为正常段落换行排版，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "日 / 统计口径（全篇一致）",
+        "location": "左侧数据截至日期下方，\"日\"与\"统计口径\"上下相邻",
+        "statement": "视觉检查：\"日\"与下方\"统计口径（全篇一致）\"为正常段落换行排版，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "一、改造任务完成情况 / 口径：完成率＝完成数÷计划数×100%",
+        "location": "右侧第一纲目区域，标题与口径说明上下相邻",
+        "statement": "视觉检查：大标题与下方口径说明行间距正常，无真实字形遮挡；多个overlap候选均为标题下沿与说明文字上沿的矩形相交，实际笔画未重叠",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "二、资金使用情况 / 口径：到位率＝到位数÷计划总投资...",
+        "location": "右侧第二纲目区域，标题与口径说明上下相邻",
+        "statement": "视觉检查：大标题与下方口径说明行间距正常，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "三、居民满意度 / 口径：满意度＝（满意＋基本满意）÷有效问卷×100%",
+        "location": "右侧第三纲目区域，标题与口径说明上下相邻",
+        "statement": "视觉检查：大标题与下方口径说明行间距正常，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "五、下一步计划 / 口径：目标值以\"现状 → 目标\"表述...",
+        "location": "右侧第五纲目区域，标题与口径说明上下相邻",
+        "statement": "视觉检查：大标题与下方口径说明行间距正常，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 15525,
+    "total_tokens": 18622,
+    "completion_tokens": 3097,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 276.883,
+  "attempts": 2
+}

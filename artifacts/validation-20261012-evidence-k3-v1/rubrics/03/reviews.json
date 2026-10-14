@@ -1,0 +1,70 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "Q07: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q08: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "R07: definition and exclusions must appear verbatim in judge_prompt",
+      "R10: definition and exclusions must appear verbatim in judge_prompt",
+      "R11: definition and exclusions must appear verbatim in judge_prompt",
+      "R12: definition and exclusions must appear verbatim in judge_prompt",
+      "R14: definition and exclusions must appear verbatim in judge_prompt"
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 1,
+    "structural_errors": [
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R07', 'R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q05: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q09: duplicate explicit scoring in fulfillment ['R05'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "R07: definition and exclusions must appear verbatim in judge_prompt",
+      "R10: definition and exclusions must appear verbatim in judge_prompt",
+      "R11: definition and exclusions must appear verbatim in judge_prompt",
+      "R12: definition and exclusions must appear verbatim in judge_prompt",
+      "R14: definition and exclusions must appear verbatim in judge_prompt"
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 2,
+    "structural_errors": [
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R07', 'R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q05: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q09: duplicate explicit scoring in fulfillment ['R05'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "R07: definition and exclusions must appear verbatim in judge_prompt",
+      "R10: definition and exclusions must appear verbatim in judge_prompt",
+      "R11: definition and exclusions must appear verbatim in judge_prompt",
+      "R12: definition and exclusions must appear verbatim in judge_prompt",
+      "R14: definition and exclusions must appear verbatim in judge_prompt"
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  }
+]

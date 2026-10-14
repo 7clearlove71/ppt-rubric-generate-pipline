@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-13T04:02:55.179169+00:00",
+  "from": "2026-10-13.11",
+  "to": "2026-10-13.12",
+  "changes": [
+    "Same-page neutral evidence accompanies verdict citations in consistency review",
+    "Reviewer checks missing-label and source-attribution premises against supplied context"
+  ],
+  "unchanged": [
+    "rubric criteria/weights",
+    "initial judge input and prompt",
+    "page evidence and visual inspection inputs",
+    "one-repair consistency bound",
+    "API models, pacing, shared caps"
+  ],
+  "reason": "Observed actual slide and raw ledger p9_e8/p9_e19 contradict no-comparison-label premise; diagnosis recorded before first comparison result was read",
+  "not_an_agreement_optimization": true,
+  "prior_case_agreement": {
+    "n": 1,
+    "matches": 1
+  },
+  "offline_tests": {
+    "passed": 131,
+    "warnings": 6
+  },
+  "actual_maas_before_resume": 106,
+  "remaining_maas": 794,
+  "bounded_recovery": "One complete gate recovery for this general review-context fix. Keep failures and do not hand-edit scores.",
+  "canonical_journals": [
+    "rubrics/requests.json",
+    "judgments/requests.json"
+  ]
+}

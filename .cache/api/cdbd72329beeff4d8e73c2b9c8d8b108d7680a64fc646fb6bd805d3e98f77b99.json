@@ -1,0 +1,431 @@
+{
+  "parsed": {
+    "page": 8,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "把每一个“待考”摊在桌面上：9 条存疑项，各自的信息源、待验证问题与核验方法一览",
+        "location": "页面上部标题区域",
+        "statement": "页面主标题，明确将9条存疑项摊开呈现，呼应需求中“存疑的地方标出来，别下定论”",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来，别下定论。"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "9",
+            "unit": "条",
+            "subject": "存疑项",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "本页无结论 · 9 条均为单一信息源，未经交叉验证",
+        "location": "标题下方右侧",
+        "statement": "页面明确标注无结论，9条均为单一信息源未经交叉验证，符合需求中不下定论的要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来，别下定论。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S1 “现存明清老宅约40 栋” 估算· 待核",
+        "location": "表格第一行，存疑点列",
+        "statement": "S1引用Day1原文“现存明清老宅约40栋”并标注“估算·待核”，保留原文数值与不确定性标记",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "现存明清老宅约40栋"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "待考,得多问几个人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "栋",
+            "subject": "明清老宅",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "S2 “住人不到一半” 目测· 待核",
+        "location": "表格第二行，存疑点列",
+        "statement": "S2引用Day1原文“住人不到一半”并标注“目测·待核”，保留原文表述与不确定性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "住人不到一半"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S3 “年轻人外出打工，留守多为老人” 印象· 无数据",
+        "location": "表格第三行，存疑点列",
+        "statement": "S3引用Day1原文“年轻人外出打工,留守多为老人”并标注“印象·无数据”，保留原文核心事实并标明数据缺失",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年轻人外出打工,留守多为老人"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S4 “祠堂以前每年清明祭祖，现在三年一次” 口述· 待核",
+        "location": "表格第四行，存疑点列",
+        "statement": "S4引用Day2原文“祠堂以前每年清明祭祖,现在三年一次”并标注“口述·待核”，保留频率对比与不确定性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "祠堂以前每年清明祭祖,现在三年一次"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S5 “族谱文革烧了一部分” 口述· 待核",
+        "location": "表格第五行，存疑点列",
+        "statement": "S5引用Day2原文“族谱文革烧了一部分”并标注“口述·待核”，保留受损时期与不确定性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "族谱文革烧了一部分"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S6 “现在版本是后来凭记忆补的” 笔记自标待考",
+        "location": "表格第六行，存疑点列",
+        "statement": "S6引用Day2原文“现在版本是后来凭记忆补的——待考”并标注“笔记自标待考”，明确保留原文自有的待考标记",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "现在版本是后来凭记忆补的——待考,得多问几个人"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S7 “几栋木雕风格明显不同” 观感· 待核",
+        "location": "表格第七行，存疑点列",
+        "statement": "S7引用Day3原文“几栋木雕风格明显不同”并标注“观感·待核”，保留原文观察与不确定性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "几栋木雕风格明显不同"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S8 “村民说是‘外姓人’建的，来历说不清” 叙事· 未证实",
+        "location": "表格第八行，存疑点列",
+        "statement": "S8引用Day3原文“村民说是\"外姓人\"建的,来历说不清”并标注“叙事·未证实”，保留原文传闻属性与未知状态",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "村民说是\"外姓人\"建的,来历说不清"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S9 “新修了仿古街，老宅本体保护反而没钱投” 印象· 未查证",
+        "location": "表格第九行，存疑点列",
+        "statement": "S9引用Day4原文“新修了仿古街,老宅本体保护反而没钱投”并标注“印象·未查证”，保留原文矛盾描述与不确定性",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "核验完成前不发布任何结论性表述 · 本页无结论：“约40 栋”“不到一半”为单次目测估算，“三年一次”“凭记忆补的”为单一口述，均未经交叉验证；引用只使用笔记原文措辞 · 优先级按是否影响三条主线成立排序，不按是否容易查证排序 · 来源：用户田野笔记 Day1—Day4 ；核验计划阶段与时间窗为本研究计划安排，非笔记事实",
+        "location": "页面底部注释区域",
+        "statement": "底部注释明确声明核验完成前不发布结论性表述、引用只使用笔记原文措辞、三条主线排序，并区分笔记事实与研究计划安排，严格遵循需求中“别下定论”“存疑的地方标出来”的要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来,别下定论。"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段一 第二轮驻村（复测 + 扩样访谈）",
+        "location": "页面右侧计划区域第一阶段标题",
+        "statement": "下一步核验计划第一阶段，提出第二轮驻村复测与扩样访谈，属于作品自行延伸的研究计划安排，非笔记原文事实",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段二 档案与文献检索（族谱/ 碑刻/ 方志/ 规划）",
+        "location": "页面右侧计划区域第二阶段标题",
+        "statement": "下一步核验计划第二阶段，提出档案文献检索，属于作品自行延伸的研究计划安排，非笔记原文事实",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段三 专家辨识与部门访谈",
+        "location": "页面右侧计划区域第三阶段标题",
+        "statement": "下一步核验计划第三阶段，提出专家辨识与部门访谈，属于作品自行延伸的研究计划安排，非笔记原文事实",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段四 多源交叉验证与命题收敛",
+        "location": "页面右侧计划区域第四阶段标题",
+        "statement": "下一步核验计划第四阶段，提出多源交叉验证与命题收敛，属于作品自行延伸的研究计划安排，非笔记原文事实",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "主线一· 三",
+        "location": "S1优先级列",
+        "statement": "S1标注关联主线一与主线三，将Day1事实与初步感受方向建立联系",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "主线一",
+        "location": "S2、S3优先级列",
+        "statement": "S2、S3标注关联主线一（空心化），将Day1事实与初步感受方向建立联系",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "主线二",
+        "location": "S4、S5、S6、S8优先级列",
+        "statement": "S4-S6、S8标注关联主线二（文化记忆断层），将Day2-Day3事实与初步感受方向建立联系",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "主线二· 三",
+        "location": "S7优先级列",
+        "statement": "S7标注关联主线二与主线三，将Day3事实与初步感受方向建立联系",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "主线三",
+        "location": "S9优先级列",
+        "statement": "S9标注关联主线三（保护与开发错位），将Day4事实与初步感受方向建立联系",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段一/阶段二/阶段三/阶段四标签与对应时间窗、目标、产出文字在垂直方向相邻排列，标签底色为深色圆角矩形，时间窗为灰色小字，目标与产出为常规字号",
+        "location": "页面右侧计划区域各阶段",
+        "statement": "右侧四阶段计划的视觉呈现：阶段标签与时间窗、目标、产出在垂直方向紧密排列，局部放大图显示阶段标签（如\"阶段二\"）与时间窗文字（如\"时间窗 · 驻村后 1—2 个月内\"）存在垂直相邻关系，但无实际笔画遮挡，属于正常排版换行；阶段标签采用深色圆角矩形背景，与浅色时间窗文字形成层级区分",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "核验动作列中多处文字跨行显示，如\"逐栋编号建台账，下一轮驻村复/测比对\"",
+        "location": "表格核验动作列多行",
+        "statement": "核验动作列中多个条目因栏宽限制自动换行，如\"逐栋编号建台账，下一轮驻村复\"与\"测比对\"分为两行，属于表格内正常文本换行，非叠印或遮挡；放大图验证无实际笔画重叠",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "表格底部注释文字分为两行显示，第一行以\"核验完成前不发布任何结论性表述\"开头，第二行以\"三条主线成立排序\"开头",
+        "location": "页面底部注释区域",
+        "statement": "底部注释文字因行宽分为两行显示，第一行与第二行在水平方向连续，属于正常段落换行；放大图验证无实际笔画重叠或遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S3信息源列显示\"无数据\"以红色标注，S9信息源列同样显示\"无数据\"以红色标注",
+        "location": "表格S3、S9行信息源列",
+        "statement": "S3（年轻人外出打工）与S9（保护与开发矛盾）的信息源明确标注\"无数据\"并以红色突出，诚实标示数据缺失状态，符合需求中存疑标注的要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来,别下定论。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S4信息源列显示\"口述‘几位老人’·人数未记\"",
+        "location": "表格S4行信息源列",
+        "statement": "S4明确标注口述来源为\"几位老人\"且\"人数未记\"，诚实标示信息源局限，符合存疑标注要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S5信息源列显示\"口述‘有老人说’·单一转述\"",
+        "location": "表格S5行信息源列",
+        "statement": "S5明确标注口述来源为\"有老人说\"且为\"单一转述\"，诚实标示信息源局限，符合存疑标注要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S8信息源列显示\"口述村民转述·人数未记\"",
+        "location": "表格S8行信息源列",
+        "statement": "S8明确标注来源为\"口述村民转述\"且\"人数未记\"，诚实标示信息源局限，符合存疑标注要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "村民说是\"外姓人\"建的,来历说不清"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 20541,
+    "total_tokens": 23575,
+    "completion_tokens": 3034,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 183.745,
+  "attempts": 2
+}

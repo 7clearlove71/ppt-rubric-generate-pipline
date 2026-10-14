@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A、B均判定为yes，结论一致。两者均围绕县级非遗竹编工坊产业扶持项目申报展开完整评审汇报，主题锁定、内容服务于文旅局和乡村振兴办评审目的，构成连贯申报叙事，非通用模板或占位草稿。候选A为10页，候选B为8页，页数差异不改变本条判定结果。个别模块深度或结构差异（如A的P4视觉叠印、B的页数较少）由对应专项条目负责，不属于本条'主题跑题、通用模板、占位草稿、整体单薄'范畴。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 51967,
+    "total_tokens": 52097,
+    "completion_tokens": 130,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 103.852,
+  "attempts": 1
+}

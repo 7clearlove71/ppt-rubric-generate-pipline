@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "第2页关键发现01明确'能效分化明显，1号线是洼地，单位能耗0.85 kWh/件，约为其余三线（0.48-0.52）的1.6-1.8倍'，直接点明1号线异常高能耗。第3页标题'1号线超标杆89%'，突出1号线为'唯一显著能耗洼地'。第4页标题'根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'，正文明确'现场排查确认液压系统老化导致效率下降——液压元件磨损使能量转换损失增大'，完成液压系统老化归因。第5-7页持续围绕1号线展开投资回报测算与立项建议。两个要素（能耗异常+液压系统老化归因）均完整呈现。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 19699,
+    "total_tokens": 19894,
+    "completion_tokens": 195,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 21.58,
+  "attempts": 1
+}

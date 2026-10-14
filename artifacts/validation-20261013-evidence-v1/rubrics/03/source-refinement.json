@@ -1,0 +1,51 @@
+{
+  "round": 1,
+  "targets": [
+    "Q04",
+    "Q07",
+    "Q09"
+  ],
+  "original_hash": "6ba34ffe30883f4d167f4762d0498ee971936befaf66d1f428ce0e7a158e3d1e",
+  "refined_hash": "0aef39b837231929813cbd4867081f282d58cfaa5b53e25520005ef523ef9a39",
+  "refinement_map": {
+    "Q01": [
+      "Q01"
+    ],
+    "Q02": [
+      "Q02"
+    ],
+    "Q03": [
+      "Q03"
+    ],
+    "Q04": [
+      "Q04a",
+      "Q04b",
+      "Q04c",
+      "Q04d"
+    ],
+    "Q05": [
+      "Q05"
+    ],
+    "Q06": [
+      "Q06"
+    ],
+    "Q07": [
+      "Q07a",
+      "Q07b",
+      "Q07c",
+      "Q07d",
+      "Q07e"
+    ],
+    "Q08": [
+      "Q08"
+    ],
+    "Q09": [
+      "Q09"
+    ]
+  },
+  "trigger_errors": [
+    "Q07: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R05']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+    "Q04: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R05', 'R06']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+    "Q09: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R05']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+  ]
+}

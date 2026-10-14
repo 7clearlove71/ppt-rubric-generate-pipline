@@ -1,0 +1,434 @@
+{
+  "parsed": {
+    "page": 6,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "三级响应机制以“复核是否发现问题”分流，当前立即执行一级响应",
+        "location": "页面上方标题区域",
+        "statement": "本页为分级响应机制板块，标题明确以技术复核结果作为分流主轴，并标注当前处于一级响应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "分级响应机制也得有"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "L1 质疑期（现在在这里） → L2 升级响应 → L3 严重响应",
+        "location": "标题下方流程指示",
+        "statement": "呈现三级响应的递进关系，并明确标注当前所处阶段为L1质疑期",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "分流主轴：技术复核是否发现问题（预计还需36 小时）｜次轴：舆情烈度",
+        "location": "流程指示右侧",
+        "statement": "明确分流主轴为技术复核结果，次轴为舆情烈度；36小时复核时间来源于素材三",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "内部备注里技术复核还没做完,预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核预计所需时间",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "级别、触发条件、关键动作、责任方、时限",
+        "location": "左侧表格表头",
+        "statement": "表格采用五级表头结构，包含级别、触发条件、关键动作、责任方、时限五个维度",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "L1 质疑期响应 现在在这里",
+        "location": "表格第一行级别列",
+        "statement": "L1级别明确标注为'质疑期响应'，并高亮'现在在这里'指示当前状态",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "情绪以质疑为主；尚无权威媒体跟进；仅3 个垂类KOL 转发；近三天约40 通来电；退单量较平时多约15%",
+        "location": "表格L1行触发条件列",
+        "statement": "L1触发条件整合了素材一的舆情现状（情绪、权威媒体、KOL转发）与素材二的客服数据（40通来电、退单增15%），并保留'约'字限定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "评论区负面情绪占比约72%,话题主要集中在“是否虚标”和“售后甩锅”这两个点上,目前情绪是质疑为主,还没有权威媒体跟进,但已有3个垂类KOL开始转发"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "近三天相关来电大概40通"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3",
+            "unit": "个",
+            "subject": "垂类KOL转发数量",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "40",
+            "unit": "通",
+            "subject": "近三天相关来电",
+            "denominator": "不适用",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "15",
+            "unit": "%",
+            "subject": "电商退单量增幅",
+            "denominator": "平时",
+            "time_origin": "当前 vs 平时"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "48 小时内发第一段态度声明（不含事实结论）；客服统一话术承接退货退款约60%、要官方说明约35%；建舆情与退单量双看板；对3 个垂类KOL 一对一沟通；法务意见仅内部保留",
+        "location": "表格L1行关键动作列",
+        "statement": "L1关键动作包含48小时时限声明、客服话术（含60%退货退款和35%官方说明诉求）、双看板建立、KOL沟通、法务意见内部保留；保留'约'字限定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "诉求集中在退货退款(约60%)和要官方说明(约35%)"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "已有3个垂类KOL开始转发,有进一步发酵的苗头"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "第一段态度声明时限",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "60",
+            "unit": "%",
+            "subject": "退货退款诉求占比",
+            "denominator": "相关来电总量",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "35",
+            "unit": "%",
+            "subject": "要官方说明诉求占比",
+            "denominator": "相关来电总量",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "归口：公关部；配合：客服部、电商部、技术部、法务部",
+        "location": "表格L1行责任方列",
+        "statement": "L1责任分工明确，公关部归口，四部门配合",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "0–48 小时完成第一段发布与话术上线；技术复核按预计还需36 小时收口；看板即时建立",
+        "location": "表格L1行时限列",
+        "statement": "L1时限明确，0-48小时完成发布与话术，36小时技术复核收口，看板即时建立",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "第一段发布与话术上线时限",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核收口时限",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "L2 升级响应 需公关部研判＋管理层确认",
+        "location": "表格第二行级别列",
+        "statement": "L2级别标注为'升级响应'，需公关部研判加管理层确认",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "①出现权威媒体跟进；②负面情绪占比高于约72% 基线并出现抵制号召；建议阈值约85% 或出现“抵制/ 退货潮”话题词，待管理层确认 ③垂类KOL 由3 个继续扩散；建议阈值8 个以上，待管理层确认",
+        "location": "表格L2行触发条件列",
+        "statement": "L2触发条件包含三个信号：权威媒体跟进、负面情绪超72%基线（建议阈值85%）、KOL由3个扩散（建议阈值8个）；阈值标注为建议值且注明待管理层确认；保留'约'字限定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "评论区负面情绪占比约72%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "已有3个垂类KOL开始转发,有进一步发酵的苗头"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "72",
+            "unit": "%",
+            "subject": "负面情绪占比基线",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "85",
+            "unit": "%",
+            "subject": "建议阈值",
+            "denominator": "不适用",
+            "time_origin": "建议值"
+          },
+          {
+            "value": "3",
+            "unit": "个",
+            "subject": "垂类KOL当前数量",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "8",
+            "unit": "个",
+            "subject": "建议阈值",
+            "denominator": "不适用",
+            "time_origin": "建议值"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "三问判定流程 依次三问，指向对应级别",
+        "location": "页面右侧上方",
+        "statement": "右侧设置三问判定流程作为辅助决策工具，依次三问指向对应级别",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第一问 技术复核是否发现问题？ 确有安全隐患/ 确有问题 → 直接 L3 发现局部问题 → L2 尚未出结论或无问题 → 进入第二问",
+        "location": "右侧第一问区域",
+        "statement": "第一问以技术复核结果为分流点：确有问题直接L3，局部问题L2，无结论/无问题进入第二问",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第二问 是否有权威媒体跟进？ 有 → L2（叠加抵制号召或大规模投诉 → L3） 尚无 → 进入第三问",
+        "location": "右侧第二问区域",
+        "statement": "第二问以权威媒体跟进为判断点：有则L2（叠加抵制号召或大规模投诉则L3），尚无进入第三问",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第三问 48 小时内是否已有效回应？ 已发第一段态度声明且话术统一 → 维持 L1（现在在这里） 未有效回应、情绪由质疑转向抵制 → 升 L2",
+        "location": "右侧第三问区域",
+        "statement": "第三问以48小时内是否有效回应为判断点：已回应则维持L1，未回应且情绪转向抵制则升L2；明确标注'现在在这里'",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "有效回应判断窗口",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：素材一· 舆情监测负面话题摘要、素材二· 近三天客服来电统计要点、素材三· 公关部连夜赶的声明草稿；分级四栏与升降级授权为本页机制设计，括注阈值为内部设定的建议阈值（待管理层确认）",
+        "location": "页面底部注释区域",
+        "statement": "底部明确标注数据来源为三份素材，并说明分级四栏、升降级授权、括注阈值为页面机制设计，建议阈值待管理层确认；该注释与L2触发条件文字存在bbox相交",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "舆情监测那边出的负面话题摘要"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "这三天客服来电统计的要点"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "公关部连夜赶的声明草稿"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "②负面情绪占比高于约72% 基线并出现抵制号召；",
+        "location": "L2触发条件区域与底部注释重叠处",
+        "statement": "经局部放大图核查，L2触发条件第②条文字'②负面情绪占比高于约72% 基线并出现抵制号召；'与底部注释文字'数据来源：素材一· 舆情监测负面话题摘要、素材二· 近三天客服来电统计要点、素材三· 公关部连夜赶的声明草稿；分级四栏与升降级授权为本页机制设计，括注阈值为内部设定的建议阈值（待管理层确认）'存在bbox高度重叠（fraction_of_smaller_bbox=0.8856），但放大图显示两行文字为上下紧邻排版，底部注释为灰色斜体小字位于L2表格下方，实际无笔画遮挡，属于页面底部正常排版的相邻行，不构成真实文字叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "48 小时内发第一段态度声明（不含事实结论）；客服统一话术承接退货退款约60%、要官方说明约35%；建舆情与退单量双看板；对3 个垂类KOL 一对一沟通；法务意见仅内部保留",
+        "location": "L1关键动作区域",
+        "statement": "经局部放大图核查，'48 小时'与'内部保留'存在微小bbox相交（fraction=0.1726），但放大图显示'48 小时内发...'为正常行内文字，'内部保留'为下一行独立短语，实际无笔画遮挡，属于表格单元格内的正常换行排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "已发第一段态度声明且话术统一 → 维持 L1（现在在这里）",
+        "location": "右侧第三问区域",
+        "statement": "经局部放大图核查，'已发第一段态度声明且话术统一 → '与'维持 L1（现在在这里）'存在微小bbox相交（fraction=0.1726），但放大图显示为正常行内连续排版，箭头后接红色高亮的'维持 L1'，实际无笔画遮挡，属于正常行内接续",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "未有效回应、情绪由质疑转向抵制 → 升 L2",
+        "location": "右侧第三问区域",
+        "statement": "经局部放大图核查，'未有效回应、情绪由质疑转向抵制 → '与'升 L2'存在微小bbox相交（fraction=0.1726），但放大图显示为正常行内连续排版，箭头后接红色高亮的'升 L2'，实际无笔画遮挡，属于正常行内接续",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "尚未出结论或无问题 → 进入第二问",
+        "location": "右侧第一问区域",
+        "statement": "经局部放大图核查，'尚未出结论或无问题 → 进入第'与'二问'存在微小bbox相交（fraction=0.1718），但放大图显示为正常换行排版，'二问'为第二行开头，实际无笔画遮挡，属于正常换行",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第三问 48 小时内是否已有效回应？",
+        "location": "右侧第三问标题区域",
+        "statement": "经局部放大图核查，'第三问 48 小时内是否已有效回'与'应？'存在微小bbox相交（fraction=0.1716），但放大图显示为正常换行排版，'应？'为第二行末尾，实际无笔画遮挡，属于正常换行",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "三问判定流程 依次三问，指向对应级别",
+        "location": "右侧标题区域",
+        "statement": "经局部放大图核查，'三问判定流程'与'别'存在微小bbox相交（fraction=0.1588），但放大图显示'三问判定流程'为标题行，'别'为下一行'依次三问，指向对应级别'的末尾字，实际无笔画遮挡，属于正常上下行排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "有 → L2（叠加抵制号召或大规模投诉 → L3）",
+        "location": "右侧第二问区域",
+        "statement": "经局部放大图核查，'有 → '与'诉 → '存在微小bbox相交（fraction=0.1726），但放大图显示为上下两行独立内容（'有 → L2'与'诉 → L3'），实际无笔画遮挡，属于正常换行排版；同理'L2'与'L3'的bbox相交（fraction=0.1726）也为上下行正常排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 13569,
+    "total_tokens": 16849,
+    "completion_tokens": 3280,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 337.47,
+  "attempts": 3
+}

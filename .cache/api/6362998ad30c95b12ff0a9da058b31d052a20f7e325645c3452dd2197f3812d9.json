@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      5
+    ],
+    "evidence": "P5完整呈现两点实质内容：(1)硬伤一指出\"技术复核还没做完、预计还需36小时才出结论，草稿却已断言'均符合国家标准''与事实不符'，属无证据定性；复核一旦反转，公司从'被质疑方'变'说谎方'\"，并给出改写方向\"改为过程性承诺\"；(2)硬伤二指出\"'保留追究法律责任的权利'会被解读为店大欺客、激化对立\"，并给出\"整句删除、不对外表述\"的改写方向。两点均明确覆盖，非泛泛润色。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 22723,
+    "total_tokens": 22860,
+    "completion_tokens": 137,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.528,
+  "attempts": 1
+}

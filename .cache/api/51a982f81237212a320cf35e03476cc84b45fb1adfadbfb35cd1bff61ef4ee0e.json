@@ -1,0 +1,47 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R06"
+        ],
+        "reason": "Q05原文为“不限制页数、模板与配色”，R06却要求“必须照候选A的黑底金字模板制作并采用同样封面布局，与候选B相似则不通过”，与来源完全相反。",
+        "fix": "将R06改为允许不同页数、模板与配色，删除对候选A/B特定模板和封面布局的硬性要求。"
+      }
+    ],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": [
+        "R06"
+      ]
+    },
+    "summary": "R01-R05基本合理，但R06将“不限制模板与配色”反向推导为强制候选A的黑底金字模板，属无依据硬条件且与来源矛盾，需修正。"
+  },
+  "model": "glm-5.2",
+  "usage": {
+    "prompt_tokens": 1857,
+    "total_tokens": 2035,
+    "completion_tokens": 178,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 7.43,
+  "attempts": 1
+}

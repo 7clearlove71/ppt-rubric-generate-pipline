@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "text_seen": [
+      "当前建议判定",
+      "扩散期中风险",
+      "当前建议进入二级（扩散期）"
+    ],
+    "overlapping": false,
+    "overlap_objects": [],
+    "description": "图像包含三行文字，呈上下排列。第一行和第三行为灰色小字，第二行为红色大字。三行文字之间有明显间距，无笔画相交。背景为纯白色。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 385,
+    "total_tokens": 476,
+    "completion_tokens": 91,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 24.652,
+  "attempts": 1
+}

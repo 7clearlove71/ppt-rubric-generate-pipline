@@ -1,0 +1,76 @@
+{
+  "answer": "yes",
+  "pages": [
+    4
+  ],
+  "evidence": "本PPT仅在第4页使用了数据图表（柱状图）。经核查：该柱状图有完整的纵轴刻度标签（0、25、50、75、100），横轴有类别标签（\"三年前\"、\"现在\"），柱子顶部有数据标签（78%、92%），无NaN等残留，所有标签清晰可读、未被遮挡、对比度充足。其余页面未使用数据图表，本条自然满足。",
+  "evidence_ids": [
+    "p4_e2",
+    "p4_e3",
+    "p4_e7"
+  ],
+  "resolutions": [],
+  "additional_observations": [],
+  "inspection_resolutions": [
+    {
+      "inspection_id": "p13_overlap_d672f40e72",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'·'与'欢迎就工艺、验证与临床转化开展合作交流'为上下两行独立文本，无实际笔画相交或遮挡，仅为bbox垂直邻近，不构成chart_label_integrity缺陷"
+    },
+    {
+      "inspection_id": "p13_overlap_b60d4822ce",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'工程化闭环成形'与'欢迎就工艺、验证与临床转化开展合作交流'为上下两行独立文本，无实际笔画相交或遮挡，仅为bbox垂直邻近，不构成chart_label_integrity缺陷"
+    },
+    {
+      "inspection_id": "p13_overlap_8f4bd447d7",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'临床试验阶段'与'欢迎就工艺、验证与临床转化开展合作交流'为上下两行独立文本，无实际笔画相交或遮挡，仅为bbox垂直邻近，不构成chart_label_integrity缺陷"
+    },
+    {
+      "inspection_id": "p9_overlap_04f252d115",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'阵列供给与可靠性验证，共同托举植入式器件进入'与'临床'为同一行连续文本，'临床'为正常换色高亮，无实际笔画相交或遮挡，不构成chart_label_integrity缺陷"
+    },
+    {
+      "inspection_id": "p12_overlap_2e38f9d59d",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'三个合作切口：'与'工艺'为同一行连续文本，无实际笔画相交或遮挡，不构成chart_label_integrity缺陷"
+    },
+    {
+      "inspection_id": "p5_overlap_982ee3f8b1",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'批量交付与成本可控'与'的轨道'为同一行连续文本，无实际笔画相交或遮挡，不构成chart_label_integrity缺陷"
+    },
+    {
+      "inspection_id": "p7_overlap_a2e9acbdb0",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'验证结果支持器件进入'与'应用评估'为同一行连续文本，'应用评估'为正常换色高亮，无实际笔画相交或遮挡，不构成chart_label_integrity缺陷"
+    },
+    {
+      "inspection_id": "p8_overlap_e5b3a5a183",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'植入式电子皮肤的'与'临床转化通道已打开'为同一行连续文本，'临床转化通道已打开'为正常换色高亮，无实际笔画相交或遮挡，不构成chart_label_integrity缺陷"
+    },
+    {
+      "inspection_id": "p11_overlap_d306941b18",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'三阶段推进：先'与'固化工艺'为同一行连续文本，'固化工艺'为正常换色高亮，无实际笔画相交或遮挡，不构成chart_label_integrity缺陷"
+    },
+    {
+      "inspection_id": "p5_overlap_6687ccddbe",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'，阵列才有资格进入'与'批量交付与成本可控'为同一行连续文本，无实际笔画相交或遮挡，不构成chart_label_integrity缺陷"
+    }
+  ]
+}

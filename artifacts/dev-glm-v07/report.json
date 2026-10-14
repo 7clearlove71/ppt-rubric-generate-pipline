@@ -1,0 +1,51 @@
+{
+  "cases": [
+    {
+      "case_id": "01",
+      "status": "approved",
+      "items": 14,
+      "score_sum": 100.0,
+      "review_rounds": 2,
+      "semantic_reviews": 1,
+      "counterexample_reviews": 1
+    },
+    {
+      "case_id": "02",
+      "status": "error",
+      "error_type": "ProviderError",
+      "message": "API request budget reached; increase only within the authorized scope"
+    }
+  ],
+  "status_counts": {
+    "approved": 1,
+    "error": 1
+  },
+  "total_cases": 2,
+  "approved_fraction": 0.5,
+  "logical_cache_hits": 5,
+  "models": {
+    "kimi-k2.6": {
+      "http_attempts": 6,
+      "failed_attempts": 3,
+      "reported_prompt_tokens": 202792,
+      "reported_completion_tokens": 7890,
+      "reported_total_tokens": 210682,
+      "usage_missing_attempts": 0
+    },
+    "glm-5.2": {
+      "http_attempts": 8,
+      "failed_attempts": 2,
+      "reported_prompt_tokens": 38531,
+      "reported_completion_tokens": 6641,
+      "reported_total_tokens": 45172,
+      "usage_missing_attempts": 0
+    }
+  },
+  "attempt_journal_available": true,
+  "usage_caveat": null,
+  "failed_or_incomplete_cases": [
+    "02"
+  ],
+  "human_agreement": null,
+  "acceptance": "Automated operational report only; no human alignment claim."
+}

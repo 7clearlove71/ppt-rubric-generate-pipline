@@ -1,0 +1,56 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R01"
+      ],
+      "Q02": [
+        "R02",
+        "R12"
+      ],
+      "Q03": [
+        "R05"
+      ],
+      "Q04": [
+        "R06"
+      ],
+      "Q05": [
+        "R07",
+        "R09"
+      ],
+      "Q06": [
+        "R10"
+      ],
+      "Q07": [
+        "R11"
+      ],
+      "Q08": [
+        "R03",
+        "R08",
+        "R12"
+      ],
+      "Q09": [
+        "R04",
+        "R08",
+        "R12"
+      ]
+    },
+    "summary": "rubric通过审核。各需求均有实质覆盖，关键事实数字与限定词在correctness维度独立检查（R05-R07），fulfillment覆盖范围与模块（R02-R04），无重复计分。未新增页数/字号/模板等硬条件。R08-R09的integrity边界条件在用户未提供具体细节时自然生效，判定语义明确。各条目可独立评判，允许等价表述与不同有效实现。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 3276,
+    "total_tokens": 3454,
+    "completion_tokens": 178,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 5.291,
+  "attempts": 1
+}

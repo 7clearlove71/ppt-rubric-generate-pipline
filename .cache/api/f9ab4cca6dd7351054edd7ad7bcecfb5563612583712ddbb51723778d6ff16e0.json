@@ -1,0 +1,749 @@
+{
+  "parsed": {
+    "page": 3,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "对标行业标杆 0.45 kWh/ 件：1 号线超标杆 89%，2/3/4 号线已接近标杆",
+        "location": "页面顶部标题区",
+        "statement": "页面标题明确呈现行业标杆0.45 kWh/件，并指出1号线超标杆89%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.45",
+            "unit": "kWh/件",
+            "subject": "行业标杆单位能耗",
+            "denominator": "件",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "89",
+            "unit": "%",
+            "subject": "1号线超标杆幅度",
+            "denominator": "标杆值",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "0.85",
+            "right": "0.45",
+            "reported": "89",
+            "left_unit": "kWh/件",
+            "right_unit": "kWh/件",
+            "reported_unit": "%",
+            "left_quote": "0.85",
+            "right_quote": "0.45",
+            "reported_quote": "89%",
+            "relation_quote": "1 号线超标杆 89%",
+            "meaning": "1号线单位能耗相对行业标杆的超出百分比"
+          }
+        ]
+      },
+      {
+        "quote": "四线单位能耗对标 单位 kWh/ 件 · 虚线为行业标杆 0.45",
+        "location": "图表标题区",
+        "statement": "柱状图展示四条产线单位能耗对比，Y轴单位kWh/件，X轴为1-4号线",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "/ 月产量(万件) / 月用电(万kWh) / 单位能耗(kWh/件) / 空载能耗(kWh/h)\n1号线 / 80 / 68 / 0.85 / 8\n2号线 / 95 / 49 / 0.52 / 6\n3号线 / 70 / 34 / 0.48 / 12\n4号线 / 60 / 31 / 0.52 / 5"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.85",
+            "unit": "kWh/件",
+            "subject": "1号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          },
+          {
+            "value": "0.52",
+            "unit": "kWh/件",
+            "subject": "2号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          },
+          {
+            "value": "0.48",
+            "unit": "kWh/件",
+            "subject": "3号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          },
+          {
+            "value": "0.52",
+            "unit": "kWh/件",
+            "subject": "4号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "1 号线 0.85",
+        "location": "柱状图第1柱",
+        "statement": "1号线柱状图为红色，高度显著高于其他产线，数值0.85标注于柱顶",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.85",
+            "unit": "kWh/件",
+            "subject": "1号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2 号线 0.52",
+        "location": "柱状图第2柱",
+        "statement": "2号线柱状图为绿色，数值0.52",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "2号线 / 95 / 49 / 0.52 / 6"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.52",
+            "unit": "kWh/件",
+            "subject": "2号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "3 号线 0.48",
+        "location": "柱状图第3柱",
+        "statement": "3号线柱状图为绿色，数值0.48，为四线最低",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "3号线 / 70 / 34 / 0.48 / 12"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.48",
+            "unit": "kWh/件",
+            "subject": "3号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "4 号线 0.52",
+        "location": "柱状图第4柱",
+        "statement": "4号线柱状图为绿色，数值0.52",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "4号线 / 60 / 31 / 0.52 / 5"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.52",
+            "unit": "kWh/件",
+            "subject": "4号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "行业标杆 0.45",
+        "location": "图表右侧橙色虚线标注",
+        "statement": "橙色虚线及文字标注行业标杆0.45 kWh/件，横跨图表",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.45",
+            "unit": "kWh/件",
+            "subject": "行业标杆单位能耗",
+            "denominator": "件",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2/3/4 号线：已接近标杆",
+        "location": "右侧信息面板上部",
+        "statement": "2/3/4号线归类为已接近标杆，优化空间有限",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "2 号线 0.52 kWh/ 件 超标杆约16%",
+        "location": "右侧信息面板",
+        "statement": "2号线超标杆约16%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "2号线 / 95 / 49 / 0.52 / 6"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "16",
+            "unit": "%",
+            "subject": "2号线超标杆幅度",
+            "denominator": "标杆值",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "0.52",
+            "right": "0.45",
+            "reported": "16",
+            "left_unit": "kWh/件",
+            "right_unit": "kWh/件",
+            "reported_unit": "%",
+            "left_quote": "0.52",
+            "right_quote": "0.45",
+            "reported_quote": "约16%",
+            "relation_quote": "超标杆约16%",
+            "meaning": "2号线单位能耗相对标杆的超出百分比，精确值约15.6%"
+          }
+        ]
+      },
+      {
+        "quote": "3 号线 0.48 kWh/ 件 四线最优 · 超标杆约7%-8%",
+        "location": "右侧信息面板",
+        "statement": "3号线被称为四线最优，超标杆约7%-8%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "3号线 / 70 / 34 / 0.48 / 12"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "7-8",
+            "unit": "%",
+            "subject": "3号线超标杆幅度",
+            "denominator": "标杆值",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "0.48",
+            "right": "0.45",
+            "reported": "7-8",
+            "left_unit": "kWh/件",
+            "right_unit": "kWh/件",
+            "reported_unit": "%",
+            "left_quote": "0.48",
+            "right_quote": "0.45",
+            "reported_quote": "约7%-8%",
+            "relation_quote": "超标杆约7%-8%",
+            "meaning": "3号线单位能耗相对标杆的超出百分比，精确值约6.7%"
+          }
+        ]
+      },
+      {
+        "quote": "4 号线 0.52 kWh/ 件 超标杆约16%",
+        "location": "右侧信息面板",
+        "statement": "4号线超标杆约16%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "4号线 / 60 / 31 / 0.52 / 5"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "16",
+            "unit": "%",
+            "subject": "4号线超标杆幅度",
+            "denominator": "标杆值",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "0.52",
+            "right": "0.45",
+            "reported": "16",
+            "left_unit": "kWh/件",
+            "right_unit": "kWh/件",
+            "reported_unit": "%",
+            "left_quote": "0.52",
+            "right_quote": "0.45",
+            "reported_quote": "约16%",
+            "relation_quote": "超标杆约16%",
+            "meaning": "4号线单位能耗相对标杆的超出百分比"
+          }
+        ]
+      },
+      {
+        "quote": "三线优化空间有限，改造收益难以覆盖投入。",
+        "location": "右侧信息面板",
+        "statement": "对2/3/4号线改造价值做出负面判断",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "1 号线：唯一显著能耗洼地 0.85 kWh/ 件 超标杆约89% · 绝对差距0.40",
+        "location": "右侧信息面板下部",
+        "statement": "1号线被定位为唯一显著能耗洼地，强调0.85 kWh/件、超标杆约89%、绝对差距0.40",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "核心发现是1号线的单位产品能耗0.85kWh/件,远高于其他产线的0.5左右"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.85",
+            "unit": "kWh/件",
+            "subject": "1号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          },
+          {
+            "value": "89",
+            "unit": "%",
+            "subject": "1号线超标杆幅度",
+            "denominator": "标杆值",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "0.40",
+            "unit": "kWh/件",
+            "subject": "1号线与标杆绝对差距",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "0.85",
+            "right": "0.45",
+            "reported": "0.40",
+            "left_unit": "kWh/件",
+            "right_unit": "kWh/件",
+            "reported_unit": "kWh/件",
+            "left_quote": "0.85",
+            "right_quote": "0.45",
+            "reported_quote": "0.40",
+            "relation_quote": "绝对差距0.40",
+            "meaning": "1号线单位能耗与行业标杆的绝对差值"
+          }
+        ]
+      },
+      {
+        "quote": "降至标杆 0.45 月多耗电 32 万kWh · 约24 万元",
+        "location": "右侧信息面板",
+        "statement": "假设1号线降至标杆0.45，月多耗电32万kWh，约24万元",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "工业电价0.75元/kWh"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "32",
+            "unit": "万kWh",
+            "subject": "1号线月多耗电量（降至标杆情景）",
+            "denominator": "月",
+            "time_origin": "当前"
+          },
+          {
+            "value": "24",
+            "unit": "万元",
+            "subject": "1号线月多耗电成本（降至标杆情景）",
+            "denominator": "月",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "32",
+            "right": "0.75",
+            "reported": "24",
+            "left_unit": "万kWh",
+            "right_unit": "元/kWh",
+            "reported_unit": "万元",
+            "left_quote": "32 万kWh",
+            "right_quote": "0.75 元/kWh",
+            "reported_quote": "约24 万元",
+            "relation_quote": "月多耗电 32 万kWh · 约24 万元",
+            "meaning": "按当前电价计算月多耗电成本"
+          }
+        ]
+      },
+      {
+        "quote": "降至 0.5 （保守） 月多耗电 28 万kWh · 约21 万元",
+        "location": "右侧信息面板",
+        "statement": "假设1号线保守降至0.5，月多耗电28万kWh，约21万元",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "工业电价0.75元/kWh"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "28",
+            "unit": "万kWh",
+            "subject": "1号线月多耗电量（降至0.5保守情景）",
+            "denominator": "月",
+            "time_origin": "当前"
+          },
+          {
+            "value": "21",
+            "unit": "万元",
+            "subject": "1号线月多耗电成本（降至0.5保守情景）",
+            "denominator": "月",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "28",
+            "right": "0.75",
+            "reported": "21",
+            "left_unit": "万kWh",
+            "right_unit": "元/kWh",
+            "reported_unit": "万元",
+            "left_quote": "28 万kWh",
+            "right_quote": "0.75 元/kWh",
+            "reported_quote": "约21 万元",
+            "relation_quote": "月多耗电 28 万kWh · 约21 万元",
+            "meaning": "保守情景下月多耗电成本"
+          }
+        ]
+      },
+      {
+        "quote": "按月产80 万件、电价 0.75 元/kWh 测算；降至标杆月用电仅需 36 万 kWh 。",
+        "location": "右侧信息面板底部，经局部放大确认可读",
+        "statement": "测算口径说明：月产80万件、电价0.75元/kWh；降至标杆月用电36万kWh",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "工业电价0.75元/kWh"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "80",
+            "unit": "万件",
+            "subject": "1号线月产量",
+            "denominator": "月",
+            "time_origin": "当前"
+          },
+          {
+            "value": "0.75",
+            "unit": "元/kWh",
+            "subject": "工业电价",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "36",
+            "unit": "万kWh",
+            "subject": "1号线降至标杆后月用电",
+            "denominator": "月",
+            "time_origin": "假设情景"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "80",
+            "right": "0.45",
+            "reported": "36",
+            "left_unit": "万件",
+            "right_unit": "kWh/件",
+            "reported_unit": "万kWh",
+            "left_quote": "80 万件",
+            "right_quote": "0.45",
+            "reported_quote": "36 万",
+            "relation_quote": "降至标杆月用电仅需 36 万 kWh",
+            "meaning": "按标杆单位能耗计算的理论月用电量"
+          }
+        ]
+      },
+      {
+        "quote": "节能改造的优先级与最大价值点明确指向 1 号线",
+        "location": "页面底部结论区",
+        "statement": "结论明确指向1号线为节能改造优先目标",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：产线能耗数据（单源口径，无外部交叉验证）；电价换算系数 0.75 元/kWh · 2026 年9 月汇报期",
+        "location": "页面左下角来源标注",
+        "statement": "数据来源标注含电价0.75元/kWh及2026年9月汇报期",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "工业电价0.75元/kWh"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.75",
+            "unit": "元/kWh",
+            "subject": "电价换算系数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "汇报期年份",
+            "denominator": "不适用",
+            "time_origin": "2026年9月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2026 年9 月汇报期",
+        "location": "数据来源标注",
+        "statement": "出现用户未给定的2026年9月时间信息，未标注为假设",
+        "kind": "assumption",
+        "failure_mode": "unsupported_assertion",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "产线设备能耗数据我拉了一个月的,节能改造立项要用"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "汇报期年份",
+            "denominator": "不适用",
+            "time_origin": "2026年9月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "0.85 kWh/ 件 超标杆约89%",
+        "location": "右侧信息面板",
+        "statement": "标题写'超标杆89%'，但精确计算(0.85-0.45)/0.45=88.89%，约89%可接受；但若按ratio_percent定义left÷right=0.85/0.45=188.89%，即超标杆88.89个百分点或189%的标杆值。此处'超标杆约89%'表述为增长百分比口径，与精确值88.89%基本一致",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "89",
+            "unit": "%",
+            "subject": "1号线超标杆幅度",
+            "denominator": "标杆值",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "growth_percent",
+            "left": "0.85",
+            "right": "0.45",
+            "reported": "89",
+            "left_unit": "kWh/件",
+            "right_unit": "kWh/件",
+            "reported_unit": "%",
+            "left_quote": "0.85",
+            "right_quote": "0.45",
+            "reported_quote": "约89%",
+            "relation_quote": "超标杆约89%",
+            "meaning": "(0.85-0.45)/0.45≈88.89%，四舍五入为89%"
+          }
+        ]
+      },
+      {
+        "quote": "p3_t35与p3_t36的bbox相交区域[446.0, 282.22, 469.16, 284.34]",
+        "location": "右侧信息面板底部注释行",
+        "statement": "经局部放大图核查，'36 万'与'kWh 。'为正常换行排版，'万'字结尾与'kWh'开头在同一行末行首位置，无实际字形叠印或遮挡，属于正常文本换行",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "3 号线 0.48 kWh/ 件 四线最优 · 超标杆约7%-8%",
+        "location": "右侧信息面板",
+        "statement": "本页提及3号线单位能耗0.48为四线最优，但未提及3号线空载能耗12kWh/h偏高及停机流程不规范问题",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "3号线虽然单位能耗不高0.48,但空载能耗偏高,待机状态下每小时还跑12kWh,说明停机流程不规范,这块也要提一句"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.48",
+            "unit": "kWh/件",
+            "subject": "3号线单位能耗",
+            "denominator": "件",
+            "time_origin": "月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "1 号线：唯一显著能耗洼地",
+        "location": "右侧信息面板",
+        "statement": "本页聚焦1号线能耗对比和差距量化，但未提及1号线能耗偏高的原因——液压系统老化导致效率下降",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "排查下来主要是1号线的液压系统老化导致效率下降,这个要单独拎出来算一笔账"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "如果更换液压系统投入约120万,按当前产量和电价,大概18个月能收回成本",
+        "location": "用户需求（本页未出现）",
+        "statement": "本页未出现更换液压系统投入约120万及18个月回本周期的投资回报测算内容",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如果更换液压系统投入约120万,按当前产量和电价,大概18个月能收回成本,这笔账要在PPT里算清楚"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "万元",
+            "subject": "更换液压系统投入",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "18",
+            "unit": "月",
+            "subject": "回本周期",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 7019,
+    "total_tokens": 12478,
+    "completion_tokens": 5459,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 159.12,
+  "attempts": 1
+}

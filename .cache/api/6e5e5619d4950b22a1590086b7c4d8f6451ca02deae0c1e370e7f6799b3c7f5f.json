@@ -1,0 +1,327 @@
+{
+  "parsed": {
+    "page": 4,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "Day2 访谈记录：祠堂祭祖由“每年清明”改为“三年一次”，族谱“文革烧了一部分、现版本凭记忆补写”——单一信息源口述，待考",
+        "location": "页顶标题区域",
+        "statement": "标题明确包含Day2两项核心事实：祭祖频率由每年清明变为三年一次；族谱文革被烧一部分、现版本凭记忆补写。同时标注“单一信息源口述，待考”的存疑提示。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day2 访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "每年清明一次",
+            "unit": "次",
+            "subject": "以前祠堂祭祖频率",
+            "denominator": "年",
+            "time_origin": "以前"
+          },
+          {
+            "value": "三年一次",
+            "unit": "次",
+            "subject": "现在祠堂祭祖频率",
+            "denominator": "三年",
+            "time_origin": "现在（访谈当时）"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "“祠堂以前每年清明祭祖，现在三年一次。”",
+        "location": "左侧深色引用块第一行",
+        "statement": "访谈原声逐字引用，与原文Day2记录一致，未改变频率对比关系。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "祠堂以前每年清明祭祖,现在三年一次。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "“族谱文革烧了一部分，现在版本是后来凭记忆补的。”",
+        "location": "左侧深色引用块第二行",
+        "statement": "访谈原声逐字引用，保留了“文革”时期、受损方式（烧了一部分）及补写方式（凭记忆补），与原文一致。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "族谱文革烧了一部分,现在版本是后来凭记忆补的"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "——待考，得多问几个人",
+        "location": "引用块下方橙色标注",
+        "statement": "原文批注完整保留，以橙色高亮呈现，构成显式存疑标记。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "——待考,得多问几个人"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "口述，待核 · 非时序曲线",
+        "location": "刻度A下方及刻度B下方",
+        "statement": "两处均以橙色标注“口述，待核”，配合“非时序曲线”提示数据性质，构成对信息源可靠性的显式存疑标识。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "未知，待考",
+        "location": "刻度A与刻度B之间的上方",
+        "statement": "对中间过程的未知状态进行显式标注，使用橙色“待考”字样。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "信息源：访谈几位老人中的口述，未逐条交叉验证",
+        "location": "引用块右侧两行小字",
+        "statement": "两次重复标注信息源性质及未交叉验证状态，强化存疑提示。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "以上为待验证的说法，不是本村已确证的历史事件",
+        "location": "引用块右下灰色小字",
+        "statement": "明确否定确证性，将内容定性为待验证说法，符合存疑要求。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "B · 族谱焚毁与补写 —— 记忆性叙述，仍属待验证的说法",
+        "location": "右侧信息性质区分区",
+        "statement": "将族谱信息定性为“记忆性叙述，仍属待验证的说法”，未改写为已考证结论。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "核验路径：「外部参照」族谱版本学考辨（序跋、版式、字体、纸张、印数、补页）＋多方访谈；世系段落须逐段标注可信度，不整体采信也不整体否定",
+        "location": "右侧B项下方",
+        "statement": "提供具体核验方法，强调不整体采信也不整体否定，保持开放性。",
+        "kind": "proposal",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "频率下降的并列可能解释 · 开放问题，不下定论，五条并列无主次排序",
+        "location": "页中偏下橙色标题",
+        "statement": "明确声明“不下定论”，并列五条可能解释且无主次排序，符合开放问题处理。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "以上任一条目前都无本村证据支持，也未被排除",
+        "location": "五条解释上方右侧灰色小字",
+        "statement": "对并列解释的证据状态进行限定，避免过度推断。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页为中期田野分享，所有陈述为初步观察与待验证假设；引用块逐字取自田野笔记 Day2 ，未加修饰。",
+        "location": "页底脚注",
+        "statement": "全页定性声明，明确为初步观察与待验证假设，强调引用未加修饰。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t16与p4_t17：信息源：访谈几位老人中的 / 口述，未逐条交叉验证；p4_t20与p4_t21：信息源：访谈几位老人中的 / 口述，未逐条交叉验证",
+        "location": "引用块右侧信息源标注区",
+        "statement": "两组span在PDF几何中存在bbox相交（intersection区域y方向极小），但局部放大图显示为上下两行正常排版，第二行缩进起始，无真实字形叠印或遮挡。属于相邻行排版而非文字重叠。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t27与p4_t28：核验路径...多 / 人分别回忆（三角互证）",
+        "location": "右侧A项核验路径区",
+        "statement": "bbox相交但放大图显示为正常换行排版，第一行以“多”结尾，第二行以“人分别回忆”开头，构成完整词语“多人分别回忆”，无真实遮挡。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t30与p4_t31：核验路径...世 / 系段落须逐段标注可信度...",
+        "location": "右侧B项核验路径区",
+        "statement": "bbox相交但放大图显示为正常换行，第一行以“世”结尾，第二行以“系段落”开头，构成“世系段落”，为正常跨行词语，无真实遮挡。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t40与p4_t41：祭产、族田、值年轮祭若已松弛，集中祭祀 / 难以为继（可检验变量 · 「外部参照」）",
+        "location": "下方第三列解释卡片",
+        "statement": "bbox相交但放大图显示为正常换行排版，无真实字形叠印。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t43与p4_t44：不同时期公共环境的影响，需查地方志、碑 / 记与账簿后再判断",
+        "location": "下方第四列解释卡片",
+        "statement": "bbox相交但放大图显示为正常换行，“碑记”为跨行词语，无真实遮挡。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t46与p4_t47：受访者或仅描述个别年份，另有墓祭、家祭 / 等未被记录",
+        "location": "下方第五列解释卡片",
+        "statement": "bbox相交但放大图显示为正常换行，无真实字形叠印。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t1与p4_t2：Day2 访谈记录...文革烧了 / 一部分、现版本凭记忆补写...",
+        "location": "页顶标题区",
+        "statement": "bbox相交但放大图显示为正常换行，标题跨两行连续阅读，无真实遮挡。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t18与p4_t19：“族谱文革烧了一部分，现在版本是后来凭记忆补 / 的。”",
+        "location": "左侧引用块第二段",
+        "statement": "bbox相交但放大图显示为正常换行，“补的”为跨行词语，无真实字形叠印。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t4与p4_t5：我们听到的是一段记忆，不是一份档案：两枚刻度 / 之间的那些年，暂时留白",
+        "location": "左侧“祠堂集中祭祖频率”下方说明文字",
+        "statement": "bbox相交但放大图显示为正常换行排版，两行文字上下排列清晰可读，无真实遮挡。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t6与p4_t7：刻度 A · 以前（清明）/ 每年清明一次",
+        "location": "左侧刻度A卡片",
+        "statement": "bbox相交但放大图显示为标题与正文的正常层级排版，无真实字形叠印。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t7与p4_t8：每年清明一次 / 口述，待核 · 非时序曲线",
+        "location": "左侧刻度A卡片",
+        "statement": "bbox相交但放大图显示为大字正文与小字标注的正常层级关系，无真实遮挡。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t11与p4_t12：刻度 B · 现在（访谈当时）/ 三年一次",
+        "location": "右侧刻度B卡片",
+        "statement": "bbox相交但放大图显示为标题与正文的正常层级排版，无真实遮挡。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t12与p4_t13：三年一次 / 口述，待核 · 非时序曲线",
+        "location": "右侧刻度B卡片",
+        "statement": "bbox相交但放大图显示为大字正文与小字标注的正常层级关系，无真实遮挡。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p4_t22与p4_t23：笔记原批注：/ ——待考，得多问几个人",
+        "location": "引用块下方标注区",
+        "statement": "bbox极小相交（fraction_of_smaller_bbox仅0.0007），放大图显示“笔记原批注：”与橙色“——待考”为左右相邻排版，无真实字形叠印。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 11773,
+    "total_tokens": 14247,
+    "completion_tokens": 2474,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 73.154,
+  "attempts": 1
+}

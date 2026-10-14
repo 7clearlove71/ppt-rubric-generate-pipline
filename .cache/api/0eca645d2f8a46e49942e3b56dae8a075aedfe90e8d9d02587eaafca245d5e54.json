@@ -1,0 +1,101 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R12"
+        ],
+        "reason": "R12的source_refs引用\"prompt\"，但requirements中不存在id为\"prompt\"的条目。requirements中的source_id字段值为\"prompt\"，但条目id为Q01-Q09。source_refs应引用具体的Q条目id，而非source_id字符串。",
+        "fix": "将R12的source_refs从[\"prompt\"]修改为[\"Q02\",\"Q08\",\"Q09\"]或删除source_refs（因该条basis为explicit但无直接对应需求条目，可改为basis: inferred或留空source_refs）。"
+      },
+      {
+        "severity": "error",
+        "item_ids": [
+          "R17"
+        ],
+        "reason": "R17的judge_prompt中'缺乏任何视觉数据呈现辅助时本条不通过'与source_refs和basis存在矛盾。该条basis为explicit，但source_refs为空数组[]，且Q03、Q04并未要求可视化呈现（仅要求'需呈现'相关事实）。judge_prompt将'鼓励'的可选做法变成了强制通过的硬性条件，且与source_policy中'三项进展数据未要求具体呈现形式（文字/图表），可合理建议用图表辅助但不应虚构强制图表类型或数量'直接冲突。",
+        "fix": "修改judge_prompt，将'缺乏任何视觉数据呈现辅助时本条不通过'改为'若使用图表辅助则须数据准确、图表类型恰当；若仅用文字呈现则不因此扣分'，或将basis改为quality并调整importance以匹配其建议性定位。"
+      },
+      {
+        "severity": "warning",
+        "item_ids": [
+          "R11"
+        ],
+        "reason": "R11的source_refs为[\"Q08\",\"Q09\"]，但judge_prompt中判断条件涉及'技术路线图与下一步计划中如包含来源未给定的具体技术细节'，而Q08、Q09仅要求'含技术路线图'和'含下一步计划'，并未提供任何具体内容作为'未给定'的参照基准。该条实际执行时缺乏可对比的明确来源内容，'未给定'的判断标准模糊。",
+        "fix": "在judge_prompt中明确'来源未给定'的判定基准为prompt中未出现任何技术路线具体节点、时间节点或目标指标，或补充说明以合理规划/待补数据形式呈现即可接受。"
+      },
+      {
+        "severity": "warning",
+        "item_ids": [
+          "R14"
+        ],
+        "reason": "R14的judge_prompt要求'按内容模块数量与讲解负荷合理判断'20分钟体量，但未提供任何可操作的定性或定量参照标准。'不过度稀疏''不过度冗长'缺乏边界定义，不同judge可能产生显著分歧。",
+        "fix": "补充可观察的定性标准，例如'包含封面、进展回顾（2-3项）、技术路线图、下一步计划、致谢等核心模块，单页信息承载量适配演讲者每页1-2分钟的讲解节奏'，或明确说明允许合理风格差异。"
+      },
+      {
+        "severity": "warning",
+        "item_ids": [
+          "R19"
+        ],
+        "reason": "R19的importance为1，且basis为quality，但judge_prompt中'不应保留网页模板中的可点击导航按钮等交互残留元素'的判定条件过于具体且狭窄。该条将一种可能的视觉问题（导航按钮）作为唯一判定对象，未覆盖其他同样影响演示纯粹性的元素（如编辑模式标记、批注框、未关闭的输入法候选窗等），且与任务核心目标关联较弱。",
+        "fix": "扩展judge_prompt为'PPT页面中不应保留网页模板交互元素、编辑模式标记或其他非演示状态残留，确保现场投影的纯粹性'，或考虑删除该条因其对核心任务影响有限。"
+      }
+    ],
+    "coverage": {
+      "Q01": [
+        "R01"
+      ],
+      "Q02": [
+        "R02",
+        "R15"
+      ],
+      "Q03": [
+        "R03",
+        "R08",
+        "R17"
+      ],
+      "Q04": [
+        "R04",
+        "R09",
+        "R17"
+      ],
+      "Q05": [
+        "R05",
+        "R10"
+      ],
+      "Q06": [
+        "R13"
+      ],
+      "Q07": [
+        "R14"
+      ],
+      "Q08": [
+        "R06",
+        "R11",
+        "R15"
+      ],
+      "Q09": [
+        "R07",
+        "R11",
+        "R15"
+      ]
+    },
+    "summary": "rubric存在1项error和3项warning。核心问题：R12存在source_refs引用错误（引用source_id而非item_id）；R17将可选可视化建议错误提升为强制通过条件，与source_policy冲突。R11、R14、R19存在可判断性不足或范围过窄问题。修正后可批准。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 3817,
+    "total_tokens": 4729,
+    "completion_tokens": 912,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 27.264,
+  "attempts": 1
+}

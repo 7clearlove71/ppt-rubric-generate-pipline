@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      6,
+      7,
+      8
+    ],
+    "evidence": "页2明确写“若48小时内无有效回应，风险可能从质疑升级为抵制”，并标注“当前处于扩散前夜的质疑期”。页6标题含“36小时技术复核前不抢跑结论”，0—48小时五阶段窗口中36—48小时节点写“有问题立即升级，无问题避免攻击性表述”。页7风险监控清单写“若48小时内无有效回应，风险将从质疑转向抵制”。页8写“48小时响应窗口”“先稳事实、稳用户、稳业务，再基于36小时复核结论升级处置”。48小时窗口及升级风险判断在多处清晰呈现，符合rubric要求。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 18990,
+    "total_tokens": 19145,
+    "completion_tokens": 155,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.201,
+  "attempts": 1
+}

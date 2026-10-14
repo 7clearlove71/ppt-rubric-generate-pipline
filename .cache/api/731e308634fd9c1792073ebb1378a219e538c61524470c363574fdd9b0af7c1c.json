@@ -1,0 +1,58 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R01",
+        "R08",
+        "R10"
+      ],
+      "Q02": [
+        "R06",
+        "R08",
+        "R10"
+      ],
+      "Q03": [
+        "R05",
+        "R07"
+      ],
+      "Q04": [
+        "R04",
+        "R07"
+      ],
+      "Q05": [
+        "R12",
+        "R14",
+        "R15"
+      ],
+      "Q06": [
+        "R09"
+      ],
+      "Q07": [
+        "R13"
+      ],
+      "Q08": [
+        "R03",
+        "R11"
+      ]
+    },
+    "summary": "rubric完整覆盖八项需求：数据准确性归correctness单点检查（R04），叙事忠实（R05）与融合呈现（R01/R06/R10）分属不同质量目标无重复计分；诚信边界（R07/R08）允许标注清楚的派生值与合理演绎，未虚构页数/配色等硬条件；风格要求（R09/R12-R15）均有可观察判据且允许不同有效实现。R02移除说明合理，无结构性缺陷。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 199,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 199
+    },
+    "prompt_tokens": 4696,
+    "prompt_tokens_details": {
+      "cached_tokens": 4096,
+      "text_tokens": 4696
+    },
+    "total_tokens": 4895
+  },
+  "elapsed_seconds": 25.155,
+  "attempts": 3
+}

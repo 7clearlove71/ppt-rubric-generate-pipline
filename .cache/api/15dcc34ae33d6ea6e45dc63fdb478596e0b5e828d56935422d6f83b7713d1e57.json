@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "PPT具备完整演示文稿结构：封面页（p1）含标题'明清老宅村·四日田野初察'、副标题与主题句；目录/总览页（p2）以时间轴串联四天观察并提炼三层方向；第3-6页按主题分模块展开（空心化/记忆断层/建筑风格/保护错位），每页有独立标题、视觉化数据呈现（如'40'、'<1/2'）与结构化卡片；总结页（p7）收敛为三条后续方向并标注待考项。内容经重新组织为'现象-问题-待证'的递进逻辑，非原文直接搬运。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23696,
+    "total_tokens": 23864,
+    "completion_tokens": 168,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 18.062,
+  "attempts": 1
+}

@@ -1,0 +1,48 @@
+{
+  "phase": "closed",
+  "unified_exec_session_id": 37642,
+  "controller_command": "python3 artifacts/validation-20261013-evidence-v1/control.py recover-transport",
+  "prompt_version": "2026-10-13.12",
+  "all_rubrics_approved": true,
+  "generation_actual_requests": 56,
+  "maas_requests_before_current_launch": 592,
+  "api_caps": {
+    "bailian": 120,
+    "maas": 900
+  },
+  "judge_role_timeout_seconds": 600,
+  "config_file": "judge-config.json",
+  "canonical_journals": [
+    "rubrics/requests.json",
+    "judgments/requests.json"
+  ],
+  "authorization_status": "closed",
+  "stage_exit_file": "recover-transport-exit.json",
+  "updated_at": "2026-10-13T21:34:55.021799+00:00",
+  "min_request_interval_seconds": 120,
+  "prevent_idle_sleep_while_process_active": true,
+  "judge_validator_version": 13,
+  "completed_cases_retained": [
+    "01",
+    "02",
+    "05",
+    "06"
+  ],
+  "bounded_scoring_finished_cases": [
+    "01",
+    "02",
+    "03",
+    "05",
+    "06",
+    "09",
+    "10"
+  ],
+  "current_case": null,
+  "maas_requests_after_case03": 338,
+  "maas_requests_after_case05": 421,
+  "maas_requests_after_case06": 496,
+  "maas_requests_after_case09": 576,
+  "worker_active": false,
+  "complete_candidates": 8,
+  "maas_requests_after_case10": 607
+}

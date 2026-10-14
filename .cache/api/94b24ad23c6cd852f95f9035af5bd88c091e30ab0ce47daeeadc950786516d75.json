@@ -1,0 +1,362 @@
+{
+  "parsed": {
+    "page": 3,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "打通舆情与客服退单数据，量化影响并联动预警",
+        "location": "页顶标题",
+        "statement": "本页标题明确指向影响评估与数据联动，属于四块结构中的影响评估板块",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "破万 / 视频在24 小时内转发",
+        "location": "左上指标卡",
+        "statement": "可见事实：转发量指标卡，大数字'破万'配说明文字。bbox相交但放大图显示为上下层级排版，无真实叠印",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "视频发布后24小时内转发破万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "破万",
+            "unit": "次",
+            "subject": "24小时内转发量",
+            "denominator": "不适用",
+            "time_origin": "视频发布后24小时内"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "3 个 / KOL 转发",
+        "location": "左中指标卡",
+        "statement": "可见事实：KOL转发数量指标卡。放大图显示'3'、'个'、'KOL转发'为正常上下层级排版，无真实叠印",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "已有3个垂类KOL开始转发"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3",
+            "unit": "个",
+            "subject": "垂类KOL转发数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "40 通 / 近三天相关来电",
+        "location": "右中指标卡",
+        "statement": "可见事实：来电量指标卡。放大图显示为正常上下层级排版，无真实叠印",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "近三天相关来电大概40通"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "通",
+            "subject": "近三天相关来电",
+            "denominator": "不适用",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "15% / 电商退单量较平时增加",
+        "location": "右上指标卡",
+        "statement": "可见事实：退单增幅指标卡。放大图显示为正常上下层级排版，无真实叠印",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "15",
+            "unit": "%",
+            "subject": "电商退单量增幅",
+            "denominator": "平时退单量",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "舆情侧 / 视频传播破万、负面情绪约72% 、3 个KOL 转发，风险仍在扩散",
+        "location": "左侧中部文本块",
+        "statement": "可见事实：舆情侧总结，保留'约72%'限定词，提及3个KOL转发及风险扩散",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "评论区负面情绪占比约72%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "约72",
+            "unit": "%",
+            "subject": "负面情绪占比",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "客服侧 / 近三天相关来电约40 通，其中退货退款约60% 、要求官方说明约35% ，且部分用户直接引用视频说法",
+        "location": "左侧中下部文本块",
+        "statement": "可见事实：客服侧总结，保留全部约数限定词，明确提及'部分用户直接引用视频说法'，体现舆情到客诉的传导关系",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "近三天相关来电大概40通,诉求集中在退货退款(约60%)和要官方说明(约35%),注意有部分用户是直接引用了那条视频的说法打进来的"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "约40",
+            "unit": "通",
+            "subject": "近三天相关来电",
+            "denominator": "不适用",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "约60",
+            "unit": "%",
+            "subject": "退货退款诉求占比",
+            "denominator": "相关来电总量",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "约35",
+            "unit": "%",
+            "subject": "要求官方说明诉求占比",
+            "denominator": "相关来电总量",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "经营侧 / 电商渠道退单量较平时增加约15%",
+        "location": "左侧下部文本块",
+        "statement": "可见事实：经营侧总结，保留'约15%'限定词",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "约15",
+            "unit": "%",
+            "subject": "电商渠道退单量增幅",
+            "denominator": "平时退单量",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "影响量化指标（% ）",
+        "location": "右侧图表标题",
+        "statement": "可见事实：右侧横向条形图标题，展示四项百分比指标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "72.0%",
+        "location": "右侧图表-舆情负面情绪条形",
+        "statement": "可见事实：图表数据标签显示'72.0%'，但素材原文为'约72%'。图表精确化呈现，丢失'约'限定",
+        "kind": "fact",
+        "failure_mode": "uncertainty_erasure",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "评论区负面情绪占比约72%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "72.0",
+            "unit": "%",
+            "subject": "负面情绪占比",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "60.0%",
+        "location": "右侧图表-退货退款诉求条形",
+        "statement": "可见事实：图表数据标签显示'60.0%'，但素材原文为'约60%'。图表精确化呈现，丢失'约'限定",
+        "kind": "fact",
+        "failure_mode": "uncertainty_erasure",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "诉求集中在退货退款(约60%)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "60.0",
+            "unit": "%",
+            "subject": "退货退款诉求占比",
+            "denominator": "相关来电总量",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "35.0%",
+        "location": "右侧图表-要官方说明诉求条形",
+        "statement": "可见事实：图表数据标签显示'35.0%'，但素材原文为'约35%'。图表精确化呈现，丢失'约'限定",
+        "kind": "fact",
+        "failure_mode": "uncertainty_erasure",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "要官方说明(约35%)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "35.0",
+            "unit": "%",
+            "subject": "要求官方说明诉求占比",
+            "denominator": "相关来电总量",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "15.0%",
+        "location": "右侧图表-电商退单量较平时增加条形",
+        "statement": "可见事实：图表数据标签显示'15.0%'，但素材原文为'约15%'。图表精确化呈现，丢失'约'限定",
+        "kind": "fact",
+        "failure_mode": "uncertainty_erasure",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "15.0",
+            "unit": "%",
+            "subject": "电商退单量增幅",
+            "denominator": "平时退单量",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "0.0%20.0%40.0%60.0%80.0%",
+        "location": "右侧图表X轴刻度",
+        "statement": "可见事实：X轴刻度标签密集连排显示为'0.0%20.0%40.0%60.0%80.0%'，缺少间隔空格或逗号分隔，可读性受影响",
+        "kind": "visual",
+        "failure_mode": "chart_label_integrity",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "联动看板指标：转发、负面情绪、来电量、退款量、话题热度和权威媒体信号；管理层每2 小时确认一次趋势",
+        "location": "页底文本条",
+        "statement": "可见事实：新增监测机制建议，含'每2小时确认一次趋势'。该时间频率为作品新增建议，非素材给定事实，但表述为建议句式，可识别为建议",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2",
+            "unit": "小时",
+            "subject": "管理层确认趋势频率",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据有限，基于用户素材；用户素材，待验证。",
+        "location": "页底左下角小字",
+        "statement": "可见事实：免责声明，标注数据来源和待验证状态",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "近三天相关来电约40 通，其中退货退款约60% 、要求官方说明约35% ，且部分用户直接引用视频说法",
+        "location": "客服侧文本块",
+        "statement": "可见事实：明确建立舆情到客诉的传导关联，'部分用户直接引用视频说法'",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "注意有部分用户是直接引用了那条视频的说法打进来的,说明视频的传播已经影响到实际客诉了"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 9379,
+    "total_tokens": 11373,
+    "completion_tokens": 1994,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 89.425,
+  "attempts": 1
+}

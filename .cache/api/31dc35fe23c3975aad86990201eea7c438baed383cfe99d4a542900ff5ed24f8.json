@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      8,
+      10,
+      13
+    ],
+    "evidence": "第8页标题明确写「与三甲医院合作，植入式电子皮肤进入临床试验」，正文再次确认「团队与三甲医院联合推进植入式电子皮肤的临床验证」，阶段箭头图中「临床试验」标为当前阶段；第10页表格中植入式电子皮肤一行的关键指标为「进入临床试验」、验证层级为「临床验证」、应用阶段为「临床转化」；第13页结语处写「临床试验 三甲医院合作推进」。所有涉及该事实的位置均准确表述为「三甲医院」合作、「进入临床试验阶段」，未出现「已获批上市」「已完成临床试验」等超出原事实的改写，也未缺失该事实。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 41654,
+    "total_tokens": 41805,
+    "completion_tokens": 151,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 16.393,
+  "attempts": 1
+}

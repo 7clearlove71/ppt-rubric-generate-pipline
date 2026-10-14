@@ -1,0 +1,99 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R06",
+          "R11"
+        ],
+        "reason": "R06与R11对'存在问题部分'的缺陷划分存在重复风险：vague_problem_statement要求'指向具体指标'，problem_source_mismatch要求'与前文可辨识对应'，同一'未指向具体指标'的缺陷可能同时触发两条。",
+        "fix": "将R11限定为'仅检查是否使用虚泛套话（如'工作推进有难度'），不涉及是否指向具体指标；R06负责'是否与前文指标形成可辨识对应'，两者分属'表达形式'与'逻辑关联'。"
+      },
+      {
+        "severity": "error",
+        "item_ids": [
+          "R08"
+        ],
+        "reason": "R08要求'标注宜贯穿含该等数据的页面'，将'标注方式'从'显著方式'扩展为页面级贯穿要求，新增用户未指定的硬条件。",
+        "fix": "将judge_prompt中'标注宜贯穿含该等数据的页面'改为'须在首次出现该数据的位置或该页显著标注'，移除页面级贯穿要求。"
+      },
+      {
+        "severity": "error",
+        "item_ids": [
+          "R03"
+        ],
+        "reason": "R03的empty_section_placeholder与R10的content_title_mismatch在'内容混装'场景下可能重复：若某板块仅写其他板块内容，R03可能判'空泛套话'，R10判'混装'，同一缺陷被双重处罚。",
+        "fix": "在R03 exclusions中增加'本类不扣内容归属错误（如内容混装至其他板块）'，明确R03仅负责'该板块下无实质内容'，混装由R10负责。"
+      },
+      {
+        "severity": "error",
+        "item_ids": [
+          "R05",
+          "R07"
+        ],
+        "reason": "R05的data_caliber_inconsistency已含'分母与计算方式不一致'，R07的reasoning_validity也含'比率分子分母不匹配'，同一分母错误可能被两条重复处罚。",
+        "fix": "在R07 exclusions中增加'分母与计算方式不一致且未显性区分由数据口径条目负责'，或在R05 exclusions中明确'比率计算错误由推理条目负责'，建议前者：R05负责'口径定义'，R07负责'运算执行'。"
+      },
+      {
+        "severity": "warning",
+        "item_ids": [
+          "R06"
+        ],
+        "reason": "R06 judge_prompt'若问题部分未涉及资金与满意度则不适用本条'的判定语义不够明确：'未涉及'是仅指完全不提，还是提及但非主要？",
+        "fix": "明确为'若存在问题部分完全未提及资金或满意度相关事项，则本条自然满足'。"
+      },
+      {
+        "severity": "warning",
+        "item_ids": [
+          "R02"
+        ],
+        "reason": "R02允许'等价公文表述'但未给出判定示例边界，'资金拨付与使用情况'与'资金使用情况'的等价性较明确，但'居民满意度'改为'群众评价反馈'是否等价存歧义。",
+        "fix": "在judge_prompt中补充示例：'如居民满意度可写作群众满意度测评、居民评价情况等，但不得改为民生福祉改善等泛化表述'。"
+      }
+    ],
+    "coverage": {
+      "Q01": [
+        "R01",
+        "R08"
+      ],
+      "Q02": [
+        "R03",
+        "R13"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R10"
+      ],
+      "Q05": [
+        "R05"
+      ],
+      "Q06": [
+        "R06",
+        "R09",
+        "R11"
+      ],
+      "Q07": [
+        "R12"
+      ]
+    },
+    "summary": "存在3项error：R06/R11缺陷边界重叠、R08新增页面级标注硬条件、R03/R10重复处罚风险、R05/R07分母错误重复；2项warning。需修正后方可批准。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5660,
+    "total_tokens": 6415,
+    "completion_tokens": 755,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 21.827,
+  "attempts": 1
+}

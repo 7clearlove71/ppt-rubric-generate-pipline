@@ -1,0 +1,39 @@
+{
+  "consistent": false,
+  "issues": [
+    {
+      "reason": "候选A将第4页X轴下方的\"NaN\"残留判定为chart_label_integrity缺陷并给出no；候选B将第3页绿色圆形序号与文字重叠、第6页纵轴刻度\"6\"与\"7.75\"重叠判定为visual_readability缺陷并给出no。两者判定的缺陷类型归属存在实质冲突：候选A的\"NaN\"残留位于图表分类/轴标签区域，按criterion应归属chart_label_integrity；候选B的第3页重叠涉及绿色序号背景与文字叠印、第6页涉及纵轴刻度与参考线标注重叠，按criterion应归属visual_readability。然而，关键冲突在于：候选B的第6页缺陷\"纵轴刻度'6'与参考线标注'7.75'发生数字重叠\"实际上属于\"图表标签（坐标轴、图例、单位、数据标签）\"范畴，按【程序附加的缺陷归属边界】应被排除在visual_readability之外、归入chart_label_integrity。候选B将其作为visual_readability缺陷并据此给出no，与候选A对同类图表标签区域问题（NaN残留）的chart_label_integrity归属形成标准适用不一致。更具体地说，候选B的p6_R15_direct_9fae83992415描述\"纵轴刻度值'6'与灰色参考线标注'7.75'...影响两个数值的独立辨识\"，这明确属于\"图表标签...重叠\"问题，按criterion正文应属chart_label_integrity（\"图表分类/轴/图例/单位标签缺失...标签本身不可读\"），而visual_readability的排除项明确包括\"图表标签缺失或不可读\"。候选B错误地将此缺陷归入visual_readability，若按正确归属应重新评估该缺陷是否单独构成no；同时候选A正确识别了chart_label_integrity但仅涉及单一页面。两候选在\"图表轴标签区域的可读性问题应归属chart_label_integrity还是visual_readability\"上存在实质标准适用冲突，可能改变至少一个候选的答案构成（如候选B若剔除错误归属的p6缺陷后，是否仍有足够缺陷维持no）。",
+      "rule_quote": "chart_label_integrity：图表分类/轴/图例/单位标签缺失、NaN等残留、标签本身不可读；排除：正文文字遮挡、信息层级问题。visual_readability：正文/图形内容的遮挡、裁切、对比等真实不可读问题，排除图表标签缺陷；排除：图表标签缺失或不可读、信息组织与重点定位问题",
+      "evidence_refs": {
+        "A": [
+          "p4_R15_direct_fb98cddaa33b",
+          "p4_t16",
+          "p4_t17",
+          "p4_t18",
+          "p4_t19"
+        ],
+        "B": [
+          "p6_R15_direct_9fae83992415",
+          "p6_overlap_924da900d5",
+          "p6_overlap_7522399665"
+        ]
+      },
+      "observed_answers": {
+        "A": "no",
+        "B": "no"
+      },
+      "verdict_quotes": {
+        "A": "第4页图表X轴下方，四个产线名称（1号线、2号线、3号线、4号线）正下方各出现一个\"NaN\"残留标签...属于图表分类/轴标签区域的NaN残留，直接违反chart_label_integrity标准",
+        "B": "第6页图表中'6'与'7.75'数字发生重叠，实际渲染后'6'与下方'7.75'的笔画相交，影响数值读取。这些属于visual_readability范畴的真实缺陷"
+      },
+      "expected_answers": {
+        "B": "yes"
+      }
+    }
+  ],
+  "notes": [
+    "候选B第3页的缺陷p3_R15_direct_40e710068c4e（绿色圆形序号与文字重叠）归属visual_readability基本合理，因绿色圆形序号属于装饰性/流程性图形元素而非图表坐标轴/图例/单位标签，但具体边界仍有讨论空间。",
+    "候选A的NaN残留判定为chart_label_integrity符合标准；候选B若仅保留第3页visual_readability缺陷而剔除第6页错误归属缺陷，是否仍构成no需独立重判，但当前证据不足以直接推翻其no结论，故仅将第6页缺陷归属错误作为标准适用冲突提出。",
+    "两候选的evidence中均包含大量标注为\"A candidate bounding-box intersection, not a confirmed defect\"的overlap条目，这些未确认缺陷不应作为判定依据，但两候选的verdict均未直接依赖这些未确认条目。"
+  ]
+}

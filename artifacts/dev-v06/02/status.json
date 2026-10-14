@@ -1,0 +1,5 @@
+{
+  "status": "quality_failed",
+  "signature": "8cd77c5dac18809c61c4cdd8e61fee4c0c2f7513a93dab69036cd82cd489a8c6",
+  "reason": "Automated review did not pass within the revision budget"
+}

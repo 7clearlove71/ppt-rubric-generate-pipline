@@ -1,0 +1,31 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "全篇关键数字口径一致。回本周期：封面页'约18个月收回成本'（p1）、p5标题'约18个月收回成本'、p5正文'≈18个月'及'120万元÷6.6≈18.2个月'、p7标题'约18个月回本'、p8'约18个月收回成本'，均统一为'约18个月'，未出现'18个月以内'等改变承诺的限定词。月节省金额：p5'月节约电费6.6万元'、p7'6.6万元月节约电费'一致。投资额120万元、单位能耗0.85→0.74、月节电量8.8万kWh等关键数字跨页均保持统一，无口径漂移。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23306,
+    "total_tokens": 23506,
+    "completion_tokens": 200,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 15.006,
+  "attempts": 1
+}

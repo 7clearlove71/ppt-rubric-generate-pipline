@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-10",
+  "status": "completed",
+  "user_confirmation": "批准本轮百炼最多120次请求",
+  "bailian_limit": 120,
+  "maas_judge_limit": 300,
+  "case_ids": [
+    "01",
+    "02",
+    "03",
+    "05",
+    "06",
+    "09",
+    "10"
+  ],
+  "holdout_allowed": false,
+  "scope": "Frozen current-version generation/audit, including configured automatic revisions, then complete MaaS judge and human comparison; requests include retries and resumed commands",
+  "final_bailian_requests": 76,
+  "final_maas_requests": 284
+}

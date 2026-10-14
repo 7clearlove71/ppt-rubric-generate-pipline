@@ -1,0 +1,18 @@
+{
+  "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2a50e2453306906ae709c0f6f461c89b179cfc421702fb54fc137ea59172cce7/visual-focus-v1/e847cb49a8cd252b96963e0105fb9306c1ba7bc181efd0806053ee5447dc25d0.png",
+  "prompt": "客观读取图片，仅输出JSON：{\"text_seen\":[\"逐字转录实际能看到的文字\"],\"overlapping\":true或false,\"overlap_objects\":[\"若有实际字形相交，列出对象\"],\"description\":\"描述实际可见的空间关系与颜色；不猜图外内容\"}。文字框可能相交不等于笔画相交，以实际图像为准。",
+  "result": {
+    "text_seen": [
+      "同",
+      "比",
+      "亿"
+    ],
+    "overlapping": true,
+    "overlap_objects": [
+      "绿色'同'与金色'亿'在左侧竖笔及横笔区域相交",
+      "绿色'比'与金色'亿'在中间斜笔区域相交"
+    ],
+    "description": "绿色文字'同比'位于上层，金色文字'亿'位于下层。绿色'同'在左，绿色'比'在右，金色'亿'贯穿两者下方及中间。绿色笔画与金色笔画在多处实际相交重叠，绿色覆盖于金色之上。背景为纯白色。"
+  },
+  "cumulative_requests": 5
+}

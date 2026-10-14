@@ -1,0 +1,272 @@
+{
+  "parsed": {
+    "groups": [
+      {
+        "id": "G01",
+        "dimension": "fulfillment",
+        "importance": 3,
+        "rationale": "本组重要性来自任务核心目标：节能改造立项交付范围与三段结构落实。"
+      },
+      {
+        "id": "G02",
+        "dimension": "correctness",
+        "importance": 3,
+        "rationale": "本组重要性来自关键事实与投资回报测算的正确性，立项决策依赖可复算数据。"
+      },
+      {
+        "id": "G03",
+        "dimension": "integrity",
+        "importance": 2,
+        "rationale": "本组重要性来自信息边界与不确定性保留，避免虚构数据冒充立项依据。"
+      },
+      {
+        "id": "G04",
+        "dimension": "narrative",
+        "importance": 2,
+        "rationale": "本组重要性来自立项汇报的叙事推进与受众适配。"
+      },
+      {
+        "id": "G05",
+        "dimension": "visual",
+        "importance": 2,
+        "rationale": "本组重要性来自能耗对比与测算账的可读呈现。"
+      }
+    ],
+    "items": [
+      {
+        "id": "R01",
+        "group_id": "G01",
+        "importance": 3,
+        "source_refs": [
+          "Q01"
+        ],
+        "basis": "explicit",
+        "scope": "全篇",
+        "evidence_mode": "text",
+        "judge_prompt": "PPT面向节能改造立项，基于一个月产线设备能耗数据制作；存在能耗对比、1号线深挖、投资回报测算等必要内容模块。缺少任一必要模块不通过。"
+      },
+      {
+        "id": "R02",
+        "group_id": "G01",
+        "importance": 3,
+        "source_refs": [
+          "Q02"
+        ],
+        "basis": "explicit",
+        "scope": "全篇结构",
+        "evidence_mode": "text",
+        "judge_prompt": "整体结构按“四条产线能耗对比→聚焦1号线深挖→节能改造投资回报测算”三段顺序推进，三段内容均可辨识且顺序符合该安排。顺序颠倒或缺少某段不通过。"
+      },
+      {
+        "id": "R03",
+        "group_id": "G01",
+        "importance": 2,
+        "source_refs": [
+          "Q04"
+        ],
+        "basis": "explicit",
+        "scope": "1号线深挖部分",
+        "evidence_mode": "text",
+        "judge_prompt": "对1号线单独拎出液压系统老化问题并算一笔改造账，包含原因分析与投资回报测算内容。仅提原因不算账或仅算账不提原因不通过。"
+      },
+      {
+        "id": "R04",
+        "group_id": "G01",
+        "importance": 2,
+        "source_refs": [
+          "Q06"
+        ],
+        "basis": "explicit",
+        "scope": "3号线相关内容",
+        "evidence_mode": "text",
+        "judge_prompt": "提及3号线空载能耗偏高、待机状态下每小时跑12kWh及停机流程不规范的问题。未提及3号线问题不通过。"
+      },
+      {
+        "id": "R05",
+        "group_id": "G01",
+        "importance": 1,
+        "source_refs": [
+          "Q09"
+        ],
+        "basis": "explicit",
+        "scope": "能耗对比或标杆参照处",
+        "evidence_mode": "text",
+        "judge_prompt": "将行业标杆单位能耗约0.45kWh/件作为参照信息呈现。未出现该标杆参照不通过。"
+      },
+      {
+        "id": "R06",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q07"
+        ],
+        "basis": "explicit",
+        "scope": "能耗对比数据处",
+        "evidence_mode": "both",
+        "judge_prompt": "四条产线数据准确呈现：1号线月产量80万件、月用电68万kWh、单位能耗0.85kWh/件、空载能耗8kWh/h；2号线95、49、0.52、6；3号线70、34、0.48、12；4号线60、31、0.52、5。任一数值或单位错误、缺失不通过。"
+      },
+      {
+        "id": "R07",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q03"
+        ],
+        "basis": "explicit",
+        "scope": "核心发现处",
+        "evidence_mode": "text",
+        "judge_prompt": "核心发现表述1号线单位产品能耗0.85kWh/件，远高于其他产线的0.5左右。该事实存在且数值准确，缺失或写错不通过。"
+      },
+      {
+        "id": "R08",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q08"
+        ],
+        "basis": "explicit",
+        "scope": "ROI测算处",
+        "evidence_mode": "text",
+        "judge_prompt": "工业电价0.75元/kWh在ROI计算中使用并呈现。缺失或数值错误不通过。"
+      },
+      {
+        "id": "R09",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q05"
+        ],
+        "basis": "explicit",
+        "scope": "投资回报测算处",
+        "evidence_mode": "both",
+        "judge_prompt": "投资回报测算包含：更换液压系统投入约120万，按当前产量和电价计算，大概18个月能收回成本。该结论存在且数值准确。缺失或写错投入金额、回收期不通过。"
+      },
+      {
+        "id": "R10",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q05",
+          "Q07",
+          "Q08"
+        ],
+        "basis": "explicit",
+        "scope": "投资回报测算推导",
+        "evidence_mode": "both",
+        "judge_prompt": "投资回报测算的推论有效：节能金额/ROI的计算中分子分母可比、电价与产量口径一致、时间窗口起点一致，因果与比较有依据。补充因素（如液压系统老化导致的能耗差额、电价、产量）能量化解释结论变化，仅列“成本/风险/爬坡期”等词不是量化衔接。推论不成立、循环论证或把条件结论说成实测结果不通过。未使用推导时自然满足。"
+      },
+      {
+        "id": "R11",
+        "group_id": "G03",
+        "importance": 2,
+        "source_refs": [
+          "Q05"
+        ],
+        "basis": "explicit",
+        "scope": "投资回报测算处",
+        "evidence_mode": "text",
+        "judge_prompt": "回收期保留“大概18个月”的估算性质，不写成精确实测值；投入金额保留“约120万”的估算语气。将估算写成精确结论不通过。"
+      },
+      {
+        "id": "R12",
+        "group_id": "G03",
+        "importance": 2,
+        "source_refs": [
+          "Q01"
+        ],
+        "basis": "quality",
+        "scope": "全篇新增信息",
+        "evidence_mode": "text",
+        "judge_prompt": "用户未给定的补充信息（如具体节能金额、月度节电量等推导结果）与各处一致，且不冒充用户已知事实；新增断言若为推导结果应可复算或明确标注为假设。同一指标跨页的对象、资金性质、时间与完成状态须一致。虚构无来源的具体产线信息、公司名、日期或把推导结果说成原始数据不通过。"
+      },
+      {
+        "id": "R13",
+        "group_id": "G04",
+        "importance": 2,
+        "source_refs": [
+          "Q02"
+        ],
+        "basis": "explicit",
+        "scope": "全篇叙事",
+        "evidence_mode": "text",
+        "judge_prompt": "叙事从对比发现问题、聚焦1号线深挖原因、到投资回报测算落地，逻辑连贯无阻碍立项用途的冗余或跳跃。合理回顾与章节衔接不重复扣分。叙事断裂或冗余阻碍理解不通过。"
+      },
+      {
+        "id": "R14",
+        "group_id": "G04",
+        "importance": 2,
+        "source_refs": [
+          "Q01"
+        ],
+        "basis": "quality",
+        "scope": "全篇",
+        "evidence_mode": "text",
+        "judge_prompt": "内容适配立项汇报受众：关键发现、原因、投资回报账可辨识且论述展开充分，支撑立项决策。关键论证缺失或未展开不通过。"
+      },
+      {
+        "id": "R15",
+        "group_id": "G05",
+        "importance": 2,
+        "source_refs": [
+          "Q02"
+        ],
+        "basis": "quality",
+        "scope": "全篇",
+        "evidence_mode": "visual",
+        "judge_prompt": "正文与图形内容无遮挡、裁切、对比不足等真实不可读问题（visual_readability）。图表分类/轴/图例/单位标签完整可读，无NaN等残留（chart_label_integrity）。在内容可读前提下信息组织与重点定位清晰（visual_hierarchy）。存在任一类缺陷不通过。"
+      }
+    ],
+    "failure_modes": [
+      {
+        "id": "visual_readability",
+        "owner": "R15",
+        "definition": "正文/图形内容的遮挡、裁切、对比等真实不可读问题。",
+        "exclusions": "排除图表标签缺失/NaN残留及信息组织层级问题。"
+      },
+      {
+        "id": "chart_label_integrity",
+        "owner": "R15",
+        "definition": "图表分类/轴/图例/单位标签缺失、NaN等残留、标签本身不可读。",
+        "exclusions": "相同标签缺陷不再计入正文可读性或视觉层级。"
+      },
+      {
+        "id": "visual_hierarchy",
+        "owner": "R15",
+        "definition": "在内容可读前提下的信息组织与重点定位缺陷。",
+        "exclusions": "排除已经属于遮挡/裁切/标签错误的同一缺陷。"
+      },
+      {
+        "id": "reasoning_validity",
+        "owner": "R10",
+        "definition": "适用的算术、比较和推论缺陷：节能金额/ROI计算中分子分母不可比、电价与产量口径不一致、时间窗口起点不一致、因果与比较无依据、循环论证或把条件结论说成实测结果。",
+        "exclusions": "不重复处罚已由关键事实条目负责的同一数值错误；未使用推导时自然满足。"
+      },
+      {
+        "id": "unsupported_fact_assertion",
+        "owner": "R12",
+        "definition": "未经支持的新增事实被冒充已知，或推导结果说成原始数据，或跨页同一指标口径不一致。",
+        "exclusions": "不重复处罚已由关键事实条目负责的同一原事实改写错误。"
+      },
+      {
+        "id": "estimate_precision_falsification",
+        "owner": "R11",
+        "definition": "将估算性质的回收期或投入金额写成精确实测值。",
+        "exclusions": "不重复处罚数值本身错误的correctness条目。"
+      }
+    ]
+  },
+  "model": "glm-5.2",
+  "usage": {
+    "prompt_tokens": 3638,
+    "total_tokens": 5946,
+    "completion_tokens": 2308,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 130.452,
+  "attempts": 2
+}

@@ -1,0 +1,11 @@
+{
+  "generated": 7,
+  "approved": 5,
+  "quality_failed": [
+    "02",
+    "05"
+  ],
+  "bailian_requests": 48,
+  "status": "baseline_generation_failed_coverage_gate",
+  "reason": "Both failed suites retained overlapping existence and correctness checks after two automatic revisions; original artifacts and source preserved."
+}

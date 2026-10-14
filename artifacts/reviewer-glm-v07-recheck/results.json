@@ -1,0 +1,274 @@
+[
+  {
+    "id": "valid-flexible-design",
+    "expected_approved": true,
+    "structural_errors": [],
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "rubric各条目语义边界清晰，未发现重复计分或越权结构要求。"
+    },
+    "approved": true,
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "五项需求均有对应rubric覆盖，关键事实24小时激活时限由R03在correctness独立检查，未与fulfillment重复计分。R04/R06为通用质量条目且允许source_refs为空，未新增页数、字号等无依据硬条件。各条可独立评判，判据可观察且允许多种有效实现，协议合规。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "valid-equivalent-units",
+    "expected_approved": true,
+    "structural_errors": [],
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "各rubric条目语义独立，无重复计分；未发现对页数、模板、配色或来源标记方式的越权结构要求。"
+    },
+    "approved": true,
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "rubric覆盖全部五项需求，事实条目存在且准确归correctness，交付范围归fulfillment，未新增无依据硬条件，无重复计分，各条可独立评判。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-font-threshold",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R06"
+          ],
+          "reason": "“不限制页数、模板与配色”被反向推导为“正文字体必须至少28磅”硬阈值，且明确排斥清晰可读的实际效果，属无依据新增硬条件。",
+          "fix": "改为基于可读性的通用视觉判据，如“正文应清晰可读、层级分明”，允许不同字号与配色实现，不设固定磅值下限。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R01–R05覆盖需求且判据合理，但R06将“不限模板配色”反向推导为28磅硬阈值并排斥实际可读性，属无依据硬条件，需修正。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-extra-module",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R02"
+          ],
+          "reason": "judge_prompt要求「至少一整页网络安全培训」，但sources中无此需求，属于新增用户未要求的硬性交付模块。",
+          "fix": "删除「至少一整页网络安全培训」的强制要求，仅保留与Q03对应的考勤说明覆盖判定。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R02在考勤说明之外捆绑了无来源的网络安全培训硬条件，构成无依据新增要求，需修正；其余条目与需求对应合理。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-candidate-style",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R06"
+          ],
+          "reason": "Q05原文为“不限制页数、模板与配色”，R06却要求“必须照候选A的黑底金字模板制作并采用同样封面布局，与候选B相似则不通过”，与来源完全相反。",
+          "fix": "将R06改为允许不同页数、模板与配色，删除对候选A/B特定模板和封面布局的硬性要求。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R01-R05基本合理，但R06将“不限制模板与配色”反向推导为强制候选A的黑底金字模板，属无依据硬条件且与来源矛盾，需修正。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-duplicate-fact",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R04"
+          ],
+          "reason": "R04在integrity维度重复检查账号24小时激活事实的存在与准确性，与R03(correctness)构成双重扣分；同一事实缺失/错误已被R03覆盖。",
+          "fix": "将R04改为通用诚信约束（如不得虚构用户未要求的额外成果/数据），删除对24小时激活时限的存在与准确性判定，避免与R03重复。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "需求覆盖完整，R01/R02/R03/R05/R06判定独立且无无依据硬阈值；R04与R03对同一事实重复计分，需修正后方可通过。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-demand-invention",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01"
+          ],
+          "reason": "要求“至少一位具名负责人及其真实电话号码，不得使用占位”，但用户需求未提供任何负责人或电话，属无依据硬条件，排斥合理占位。",
+          "fix": "改为要求工位领取说明可辨识即可，允许占位/待补/通用描述，不强制真实姓名与电话。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R01无依据要求真实负责人与电话并禁止占位，与来源和R04诚信规则冲突，需error修正；其余条目覆盖合理、无重复计分。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  }
+]

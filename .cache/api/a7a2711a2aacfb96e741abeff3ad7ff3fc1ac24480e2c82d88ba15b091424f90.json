@@ -1,0 +1,32 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "evidence": "全篇措辞正式稳健，以申报口径、测算、参照等区分事实层级，无网络化用语或营销腔。标题用\"申报评审汇报\"\"恳请评审指导\"等公文语境表达；数据均标注来源与限定条件（如\"给定口径\"\"测算\"\"参照\"）；政策要点正面回应：P3-P4讲保护传承与省级非遗认定，P5-P6讲\"公司+合作社+农户\"联农带农机制，P7-P8讲三年规划与280万元资金逐项对应，P9讲投入产出考核与风险防控。未见\"爆款\"\"颠覆\"\"极致\"等宣传词汇，亦无口语化表达。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 26986,
+    "total_tokens": 27159,
+    "completion_tokens": 173,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.663,
+  "attempts": 1
+}

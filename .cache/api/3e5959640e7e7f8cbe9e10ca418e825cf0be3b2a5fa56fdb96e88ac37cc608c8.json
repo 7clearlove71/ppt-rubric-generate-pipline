@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1
+    ],
+    "evidence": "幻灯片1明确显示'年会特邀报告 · 20 分钟'作为标题前缀，正文大标题为'柔性电子团队近三年研究进展（2023–2025）'，底部标注'柔性电子团队 · 年会特邀报告（2023–2025 研究进展）'，整体结构包含封面、行业背景、核心成果展示、技术拆解、对标验证、临床路径、技术路线图、下一步计划及致谢页，完全符合年会特邀报告PPT的形态特征。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35033,
+    "total_tokens": 35152,
+    "completion_tokens": 119,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 49.569,
+  "attempts": 2
+}

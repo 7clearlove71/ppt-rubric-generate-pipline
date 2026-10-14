@@ -1,0 +1,514 @@
+{
+  "parsed": {
+    "page": 7,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "正是那段日子让我们脱胎换骨：五项指标共同验证了这条路",
+        "location": "页顶标题区域",
+        "statement": "本页标题直接引用老板原话核心句「正是那段日子让我们脱胎换骨」，并明确点出「五项指标共同验证」，属于结论先行的有力标题",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "「如今回头看，正是那段日子让我们脱胎换骨」——老板年会致辞原话",
+        "location": "标题下方左侧引用栏",
+        "statement": "直接标注老板原话出处，建立叙事与数据的引用关系，避免空泛口号",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "闭环：投入 → 技术资产 → 团队 → 客户 → 营收 → 再投入",
+        "location": "标题下方右侧",
+        "statement": "用流程图形式呈现五项指标的因果闭环，将情怀叙事转化为可追踪的业务逻辑",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "研发投入 9% → 14%",
+        "location": "左上数据卡片",
+        "statement": "源文给定数据：研发投入占比从9%提升到14%，变化方向正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "9%→14%",
+            "unit": "%",
+            "subject": "研发投入占比",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "投入额 ≈3,000 万元 → 5,880 万元，+96%（测算）",
+        "location": "左上数据卡片下方小字",
+        "statement": "作品给出的派生测算：基于9%→14%和4.2亿营收，推算上年研发投入≈3.33亿×9%≈3,000万，本年≈4.2亿×14%=5,880万，增幅(5880-3000)/3000=96%。数字可复算，标注「测算」",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3000",
+            "unit": "万元",
+            "subject": "上年研发投入额",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          },
+          {
+            "value": "5880",
+            "unit": "万元",
+            "subject": "本年研发投入额",
+            "denominator": "不适用",
+            "time_origin": "本年"
+          },
+          {
+            "value": "96%",
+            "unit": "%",
+            "subject": "研发投入额增幅",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "growth_percent",
+            "left": "5880",
+            "right": "3000",
+            "reported": "96",
+            "left_unit": "万元",
+            "right_unit": "万元",
+            "reported_unit": "%",
+            "left_quote": "投入额 ≈3,000 万元 → 5,880 万",
+            "right_quote": "投入额 ≈3,000 万元 → 5,880 万",
+            "reported_quote": "+96% （测算）",
+            "relation_quote": "元，+96% （测算）",
+            "meaning": "研发投入额从约3000万元增长到5880万元，增幅约96%"
+          }
+        ]
+      },
+      {
+        "quote": "新增专利 18 项",
+        "location": "中上数据卡片",
+        "statement": "源文给定数据：新增专利18项，数值正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "新增专利18项"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "18",
+            "unit": "项",
+            "subject": "新增专利",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "平均每 327 万元研发投入产出 1 项（测算）",
+        "location": "中上数据卡片下方小字",
+        "statement": "作品派生测算：5880万÷18项≈326.67万/项，四舍五入为327万/项。标注「测算」",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "327",
+            "unit": "万元/项",
+            "subject": "平均每项专利研发投入",
+            "denominator": "1项",
+            "time_origin": "本年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "5880",
+            "right": "18",
+            "reported": "327",
+            "left_unit": "万元",
+            "right_unit": "项",
+            "reported_unit": "万元/项",
+            "left_quote": "投入额 ≈3,000 万元 → 5,880 万",
+            "right_quote": "18 项",
+            "reported_quote": "平均每 327 万元研发投入产出 1 项",
+            "relation_quote": "平均每 327 万元研发投入产出 1 项",
+            "meaning": "本年研发投入5880万元，新增专利18项，平均每项约327万元"
+          }
+        ]
+      },
+      {
+        "quote": "团队 410 人",
+        "location": "右上数据卡片",
+        "statement": "源文给定数据：员工涨到410人，数值正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "员工人数",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "裁员 0 人、净增 90 人、+28.1%（测算）",
+        "location": "右上数据卡片下方小字",
+        "statement": "作品派生测算：410-320=90人净增，90/320=28.125%≈28.1%。「裁员0人」呼应老板「没有裁员」原话。标注「测算」",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "咬牙没有裁员反而加大了研发投入"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0",
+            "unit": "人",
+            "subject": "裁员人数",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "90",
+            "unit": "人",
+            "subject": "净增人数",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "28.1%",
+            "unit": "%",
+            "subject": "员工人数增幅",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "410",
+            "right": "320",
+            "reported": "90",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "人",
+            "left_quote": "410 人",
+            "right_quote": "员工320涨到410人",
+            "reported_quote": "净增 90 人",
+            "relation_quote": "裁员 0 人、净增 90 人、+28.1%",
+            "meaning": "从320人增长到410人，净增90人"
+          },
+          {
+            "operation": "growth_percent",
+            "left": "410",
+            "right": "320",
+            "reported": "28.1",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "%",
+            "left_quote": "410 人",
+            "right_quote": "员工320涨到410人",
+            "reported_quote": "+28.1%",
+            "relation_quote": "裁员 0 人、净增 90 人、+28.1%",
+            "meaning": "员工人数从320人增长到410人，增幅约28.1%"
+          }
+        ]
+      },
+      {
+        "quote": "营收 4.2 亿元",
+        "location": "左下数据卡片",
+        "statement": "源文给定数据：全年营收4.2亿，数值正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿元",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "同比 +26%；上年 ≈3.33 亿元（测算）",
+        "location": "左下数据卡片下方小字",
+        "statement": "源文给定同比+26%，作品推算上年营收：4.2÷1.26≈3.333...亿，标注≈3.33亿。标注「测算」",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "26%",
+            "unit": "%",
+            "subject": "营收同比增幅",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          },
+          {
+            "value": "3.33",
+            "unit": "亿元",
+            "subject": "上年营收",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "growth_percent",
+            "left": "4.2",
+            "right": "3.33",
+            "reported": "26",
+            "left_unit": "亿元",
+            "right_unit": "亿元",
+            "reported_unit": "%",
+            "left_quote": "4.2 亿元",
+            "right_quote": "上年 ≈3.33 亿元（测算）",
+            "reported_quote": "同比 +26%",
+            "relation_quote": "同比 +26% ；上年 ≈3.33 亿元（测算）",
+            "meaning": "上年营收约3.33亿元，本年4.2亿元，同比增长约26%"
+          }
+        ]
+      },
+      {
+        "quote": "客户续约率 91%",
+        "location": "右下数据卡片",
+        "statement": "源文给定数据：客户续约率91%，数值正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "91%",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "流失率 9%（测算），客户以续约投票确认",
+        "location": "右下数据卡片下方小字",
+        "statement": "作品派生测算：100%-91%=9%流失率。将续约行为与「团队没有一个人退缩」的叙事形成呼应，客户用续约「投票」确认团队坚持的价值",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "团队没有一个人退缩"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "9%",
+            "unit": "%",
+            "subject": "客户流失率",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "100",
+            "right": "91",
+            "reported": "9",
+            "left_unit": "%",
+            "right_unit": "%",
+            "reported_unit": "%",
+            "left_quote": "91%",
+            "right_quote": "91%",
+            "reported_quote": "流失率 9% （测算）",
+            "relation_quote": "流失率 9% （测算），客户以续约投票确认",
+            "meaning": "续约率91%，对应流失率9%"
+          }
+        ]
+      },
+      {
+        "quote": "每新增 3 元营收，就有 1 元投回研发（≈33%，测算）",
+        "location": "中央下方小字",
+        "statement": "作品派生测算：5880万÷4.2亿=14%，或从占比角度理解研发投入占营收14%，即约1/7≈14.3%，而非33%。此处「每新增3元营收就有1元投回研发」与33%的表述存在口径疑问：若指研发投入占营收比，应为14%；若指增量部分的比例关系，需更多假设。数字关系待核实，但作品明确标注「测算」",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "33%",
+            "unit": "%",
+            "subject": "研发占营收比例（待核实口径）",
+            "denominator": "不适用",
+            "time_origin": "本年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "下一程：三个方向性抓手 只给方向，不立数字军令状",
+        "location": "页面右侧区域",
+        "statement": "页面包含未来方向性内容，但明确标注「只给方向，不立数字军令状」，且各抓手均注明「本年度既成事实，不承诺具体目标」「不给倍数目标」，属于合理的前瞻性收尾，未虚构具体目标数字",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：公司全年经营数据与老板年会致辞；标注「测算」者为派生指标；本页只给方向，不含下一年度目标数字。",
+        "location": "页底来源说明",
+        "statement": "明确标注数据来源和测算性质，对派生指标进行说明，符合数据透明性要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "「如今回头看，正是那段日子让我们脱胎换骨」",
+        "location": "页底中央引用",
+        "statement": "再次引用老板原话，与页顶标题呼应，形成首尾闭环",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "任一项单独看都不足以说明脱胎换骨，五项互证才成立",
+        "location": "页底右侧",
+        "statement": "明确表达「五项互证」的核心观点，将情怀表述与具体数字绑定，避免空泛",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "研发投入 9% → 14%",
+        "location": "左上数据卡片，红色大字",
+        "statement": "视觉层级：核心数据用红色(#d33941)大号字体突出，说明文字用灰色(#898989)小字，层级清晰",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "text_overlap_candidates中p7_t22/p7_t23、p7_t27/p7_t28、p7_t32/p7_t33等多组候选",
+        "location": "各数据卡片下方小字区域",
+        "statement": "经局部放大图核查，所有候选交集均为上下换行排版的自然相邻（如「（测算）」换行至第二行），无真实字形叠印或遮挡。文字笔画清晰可读",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p7_t15「团队」与p7_t16「410 人」bbox相交fraction=0.0138",
+        "location": "右上数据卡片",
+        "statement": "经局部放大图核查，「团队」为灰色小标题，「410 人」为红色大号数字，上下排列无笔画重叠，属于正常层级排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p7_t2「如今回头看...」与p7_t3「——老板年会致辞原话」bbox相交fraction=0.0019",
+        "location": "标题下方引用栏",
+        "statement": "经局部放大图核查，引号结束位置与破折号起始位置几乎相接但无笔画重叠，属于正常连续排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 10321,
+    "total_tokens": 13395,
+    "completion_tokens": 3074,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 78.883,
+  "attempts": 1
+}

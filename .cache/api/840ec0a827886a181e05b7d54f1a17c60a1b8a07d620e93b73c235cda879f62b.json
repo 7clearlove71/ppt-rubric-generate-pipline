@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2
+    ],
+    "evidence": "第2页标题及内容完整呈现全部五项要素：'六代传承逾百年的竹编技艺仅存12位师傅'对应6代、逾150年、12位师傅；四个数据卡片分别标注'6代·代际传承谱系''150年逾·传承历史跨度''12位·在世从业师傅''62岁·师傅平均年龄'；页面同时以'面临失传危机''抢救窗口：等不得'强调失传风险。数值与prompt要求完全一致，'150年逾'属于允许的等价写法（逾150年/150余年）。无缺失、无改动、无张冠李戴。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 17445,
+    "total_tokens": 17587,
+    "completion_tokens": 142,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.674,
+  "attempts": 1
+}

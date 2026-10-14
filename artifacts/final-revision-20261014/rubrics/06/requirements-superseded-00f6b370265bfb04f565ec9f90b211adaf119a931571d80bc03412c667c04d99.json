@@ -1,0 +1,96 @@
+{
+  "task_summary": "按用户给定的五部分纲目，为政府评审组制作老旧小区改造工作汇报PPT，按公文口径填实、填规范",
+  "source_policy": "已知（来自用户指令）：汇报主题为老旧小区改造工作；固定纲目五部分（改造任务完成情况、资金使用情况、居民满意度、存在问题、下一步计划）；受众为政府评审组；整体须公文口径、措辞规范；须满足文题对应、数据口径统一、问题与资金/满意度呼应等硬性表达要求。待确认：各模块的具体业务数据（完工率、资金到位率、资金额度、满意度数值、问题实例、计划安排等）来源未提供，属实际工作数据，需由填报方据实填入并核实。允许补充：在缺乏真实数据时可给出合理示意性内容，但须全文口径一致、文题对应，不得虚构权威出处或把示意数据冒充真实核定数据。",
+  "requirements": [
+    {
+      "id": "Q01",
+      "kind": "deliverable",
+      "text": "PPT须包含“改造任务完成情况”部分并填实该模块内容",
+      "source_ids": [
+        "src_c2b1b99fe227b0a340198aa7"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q02",
+      "kind": "deliverable",
+      "text": "PPT须包含“资金使用情况”部分并填实该模块内容",
+      "source_ids": [
+        "src_46c228fe0db0f22ca4962d46"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q03",
+      "kind": "deliverable",
+      "text": "PPT须包含“居民满意度”部分并填实该模块内容",
+      "source_ids": [
+        "src_e9f3ff0689c712ef197f1e47"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q04",
+      "kind": "deliverable",
+      "text": "PPT须包含“存在问题”部分并填实该模块内容",
+      "source_ids": [
+        "src_284acaa536910356a811fdb2"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q05",
+      "kind": "deliverable",
+      "text": "PPT须包含“下一步计划”部分并填实该模块内容",
+      "source_ids": [
+        "src_78a06cafb3e75f80431be9d3"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q06",
+      "kind": "presentation",
+      "text": "每个小标题下的内容须与标题本身对应，不得出现文不对题、内容混装",
+      "source_ids": [
+        "src_c384938f7338a65ed021df27"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q07",
+      "kind": "presentation",
+      "text": "数据类表述（如完工率、资金到位率、满意度等）前后须统一口径，不得时而用百分比、时而用笼统说法",
+      "source_ids": [
+        "src_c384938f7338a65ed021df27"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q08",
+      "kind": "deliverable",
+      "text": "“存在问题”部分须具体写实、不写虚的，与前述资金使用、居民满意度两部分形成可识别的呼应对应关系，使评审组能看出问题来源",
+      "source_ids": [
+        "src_c384938f7338a65ed021df27"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q09",
+      "kind": "presentation",
+      "text": "小标题措辞须端正规范、符合公文语体，不得使用口语化说法",
+      "source_ids": [
+        "src_c384938f7338a65ed021df27"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q10",
+      "kind": "presentation",
+      "text": "整体面向政府评审组汇报，全文按公文口径撰写，内容填实、填规范",
+      "source_ids": [
+        "src_8b0d0de3ff7cab9f3b9ed44e"
+      ],
+      "importance": 2
+    }
+  ]
+}

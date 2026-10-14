@@ -1,0 +1,7 @@
+{
+  "already_used": 60,
+  "remaining": 20,
+  "maximum_recovery_passes": 1,
+  "change": "Explicit per-criterion required visual resolution pages; unchanged rubric and scoring prompts; successful nonvisual/page checks reused.",
+  "archive_is_snapshot_not_additional_requests": true
+}

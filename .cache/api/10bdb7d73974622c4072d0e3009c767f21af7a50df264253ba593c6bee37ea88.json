@@ -1,0 +1,95 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 4,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              4
+            ],
+            "evidence": "表格'改造内容'列第2行'光纤及5G覆盖'换行后，末字'盖'与下一行'加装电梯'的'加'字实际笔画相交叠印（见局部放大图），两字互相压叠，需猜读；其余表头、数字、单位、图例及页脚均可辨认。",
+            "defect": {
+              "key": "doc_1b9acf410ec5ee41f3bc3019/page/4/改造内容列-光纤及5G覆盖之盖与加装电梯文字叠印",
+              "description": "'光纤及5G覆盖'换行后的'盖'字与下一行'加装电梯'首字重叠叠印，两处文字笔画相交，影响辨认。"
+            }
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              4
+            ],
+            "evidence": "标题、要点条、明细表、图例与页脚层级清晰；表格按基础设施类/完善类/提升类分组，完成率与进度状态用绿/黄/红编码并有图例对应，阅读顺序明确。上述文字叠印属可读性问题，不在本条重复计。",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 5,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              5
+            ],
+            "evidence": "瀑布图各柱数值（42800、-4280、38520、-33127、5393）、类别标签（计划总投资/到位缺口/实际到位/已支出/账面积余）、右侧关键指标及单位万元、底部比率口径两行脚注均可辨认；局部放大图显示脚注两行间距紧凑但字形完整、无笔画相交，无截断或NaN残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              5
+            ],
+            "evidence": "左侧瀑布图与右侧关键指标面板主次分明，图表数值与右侧指标一一对应，标题—要点—图表—脚注阅读顺序清晰，红蓝编码区分增/减项且不产生错误对应。",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 6,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              6
+            ],
+            "evidence": "主表类别/项目/计划数/执行数/执行率/差额各列及单位万元清晰可辨，红绿数字对比充分；右侧资金监管与结余资金构成各条目文字、图标无压字，底部表内口径脚注与数据来源小字均可读，无截断或NaN。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              6
+            ],
+            "evidence": "标题—要点—左表右栏结构清晰；表格按资金来源/资金支出分组，小计行加粗突出，执行率用红绿编码区分达标与否，右侧监管事项分条配图标排列，对应关系与阅读顺序明确。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 2084,
+    "completion_tokens_details": {
+      "reasoning_tokens": 1436,
+      "text_tokens": 648
+    },
+    "prompt_tokens": 10512,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 9342,
+      "text_tokens": 1170
+    },
+    "total_tokens": 12596
+  },
+  "elapsed_seconds": 184.176,
+  "attempts": 1
+}

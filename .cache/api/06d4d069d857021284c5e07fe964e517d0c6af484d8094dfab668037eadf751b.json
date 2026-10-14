@@ -1,0 +1,21 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "Requirements完整覆盖全部来源目标，无遗漏、无额外强制义务、无不当拆分重复；rubric与固定质量库条目边界清晰，排除条件有效防重复扣分，分数分配正确；无成立反例。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 12064,
+    "total_tokens": 16629,
+    "completion_tokens": 4565,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4508
+    }
+  },
+  "elapsed_seconds": 187.343,
+  "attempts": 1
+}

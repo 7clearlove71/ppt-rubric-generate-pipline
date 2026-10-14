@@ -1,0 +1,9 @@
+{
+  "previous_requests": 17,
+  "request_cap": 13,
+  "cases": [
+    "01",
+    "02"
+  ],
+  "regression_passed": true
+}

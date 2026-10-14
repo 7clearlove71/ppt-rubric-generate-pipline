@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "text_seen": [
+      "410",
+      "人",
+      "团队规模"
+    ],
+    "overlapping": false,
+    "overlap_objects": [],
+    "description": "红色数字'410'与红色汉字'人'横向排列于上方，两者间距明显无接触；灰色汉字'团队规模'位于下方，与上方红色文字无相交。所有文字笔画清晰独立，无重叠。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 213,
+    "total_tokens": 288,
+    "completion_tokens": 75,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 90.255,
+  "attempts": 1
+}

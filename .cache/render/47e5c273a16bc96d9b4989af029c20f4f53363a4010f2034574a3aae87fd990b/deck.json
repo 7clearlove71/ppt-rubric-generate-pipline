@@ -1,0 +1,105 @@
+{
+  "identity": {
+    "sha256": "3a234381e88d3ce745e1e1976597dfca656e66f1b6bd7e150e8b2003fe32980e",
+    "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5",
+    "soffice": "/Users/liangyuanzhi/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+    "dpi": 150,
+    "backend": "pymupdf",
+    "pymupdf": "1.26.5",
+    "render_version": 1
+  },
+  "pdf": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/slides.pdf",
+  "slides": [
+    {
+      "page": 1,
+      "text": "年会特邀报告 · 20 分钟\n从实验室到临床\n柔性电子的工程化三年\n柔性电子团队\n近三年研究进展 · 汇报对象：领域内专家\n近三年 · 三条主线\n01\n可拉伸传感器阵列\n02\n柔性 OLED 器件\n03\n植入式电子皮肤",
+      "hidden": false,
+      "rendered_text": "年会特邀报告 ·  2 0  分钟\n从实验室到临床\n柔性电子的工程化三年\n柔性电子团队\n近三年研究进展 · 汇报对象：领域内专家\n近三年 · 三条主线\n01\n可拉伸传感器阵列\n02\n柔性 OLED 器件\n03\n植入式电子皮肤\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-001.png"
+    },
+    {
+      "page": 2,
+      "text": "20 分钟，五个部分\n01\n三年进展总览\n三大突破一页看清\n02\n可拉伸传感器阵列\n量产良率 78% → 92%\n03\n柔性 OLED 器件\n弯曲 10 万次无衰减\n04\n植入式电子皮肤\n与三甲医院合作，进入临床试验\n05\n技术路线图与下一步计划\n未来三年的推进方向与三个动作\n柔性电子团队 · 年会特邀报告\n02 / 13",
+      "hidden": false,
+      "rendered_text": "20 分钟，五个部分\n01\n三年进展总览\n三大突破一页看清\n02\n可拉伸传感器阵列\n量产良率 78% → 92%\n03\n柔性 OLED 器件\n弯曲 10 万次无衰减\n04\n植入式电子皮肤\n与三甲医院合作，进入临床试验\n05\n技术路线图与下一步计划\n未来三年的推进方向与三个动作\n柔性电子团队 · 年会特邀报告\n02 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-002.png"
+    },
+    {
+      "page": 3,
+      "text": "三条主线，三年之内全部跨过工程化门槛\n可拉伸传感器阵列\n92%\n量产良率 · 量产工艺已稳定\n柔性 OLED 器件\n100,000\n次弯曲 · 性能无衰减\n植入式电子皮肤\n临床试验\n已进入临床试验阶段\n材料 — 器件 — 系统 — 应用，工程化闭环已成形\n柔性电子团队 · 年会特邀报告\n03 / 13",
+      "hidden": false,
+      "rendered_text": "三条主线，三年之内全部跨过工程化门槛\n可拉伸传感器阵列\n92%\n量产良率 · 量产工艺已稳定\n柔性 OLED 器件\n100,000\n次弯曲 · 性能无衰减\n植入式电子皮肤\n临床试验\n已进入临床试验阶段\n材料 — 器件 — 系统 — 应用，工程化闭环已成形\n柔性电子团队 · 年会特邀报告\n03 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-003.png"
+    },
+    {
+      "page": 4,
+      "text": "良率从 78% 到 92%：量产工艺跨过稳定门槛\n100\n75\n50\n25\n0\n78%\n三年前\n92%\n现在\n良率提升 14 个百分点\n不良率由 22% 降至 8%相对下降约 64%\n从「能做」走向「能量产」\n注：近三年量产良率（团队量产线数据）\n柔性电子团队 · 年会特邀报告\n04 / 13",
+      "hidden": false,
+      "rendered_text": "良率从 78% 到 92% ：量产工艺跨过稳定门槛\n100\n75\n50\n25\n0\n78%\n三年前\n92%\n现在\n良率提升 14 个百分点\n不良率由 22% 降至 8%\n相对下降约 64%\n从「能做」走向\n「能量产」\n注：近三年量产良率（团队量产线数据）\n柔性电子团队 · 年会特邀报告\n04 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-004.png"
+    },
+    {
+      "page": 5,
+      "text": "92% 不是终点，而是规模化的入场券\n良率越过 90%，阵列才有资格进入批量交付与成本可控的轨道\n成本结构\n不良率每降一档，单位成本显著改善（工程通识解读，不引具体数字）\n工艺可复制\n参数窗口收窄到可固化，产线可交接\n下游可用\n阵列规模交付成为传感系统与电子皮肤的供给基础\n柔性电子团队 · 年会特邀报告\n05 / 13",
+      "hidden": false,
+      "rendered_text": "92% 不是终点，而是规模化的入场券\n良率越过 90% ，阵列才有资格进入批量交付与成本可控的轨道\n成本结构\n不良率每降一档，单位成本显著改善（工程通识解读，不引具体数字）\n工艺可复制\n参数窗口收窄到可固化，产线可交接\n下游可用\n阵列规模交付成为传感系统与电子皮肤的供给基础\n柔性电子团队 · 年会特邀报告\n05 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-005.png"
+    },
+    {
+      "page": 6,
+      "text": "弯曲 100,000 次，性能零衰减\n可靠性验证 · 反复弯曲\n100,000\n次弯曲循环\n性能零衰减\n验证判据\n关键性能参数在循环前后无衰减\n工程意义\n折叠与贴合形态下的长寿命可用性得到验证\n注：团队可靠性测试结论（柔性 OLED 器件）\n柔性电子团队 · 年会特邀报告\n06 / 13",
+      "hidden": false,
+      "rendered_text": "弯曲 100,000 次，性能零衰减\n可靠性验证 · 反复弯曲\n100,000\n次弯曲循环\n性能零衰减\n验证判据\n关键性能参数在\n循环前后无衰减\n工程意义\n折叠与贴合形态下的\n长寿命可用性得到验证\n注：团队可靠性测试结论（柔性 OLED 器件）\n柔性电子团队 · 年会特邀报告\n06 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-006.png"
+    },
+    {
+      "page": 7,
+      "text": "这一结论如何被验证\n01\n弯曲条件\n弯曲形态与频率构成测试剖面\n02\n循环规模\n累计 100,000 次弯曲循环\n03\n衰减判据\n循环前后关键性能无衰减\n验证结果支持器件进入应用评估\n注：验证框架三要素为方法学通识表述，不涉具体弯曲半径与频率数值\n柔性电子团队 · 年会特邀报告\n07 / 13",
+      "hidden": false,
+      "rendered_text": "这一结论如何被验证\n01\n弯曲条件\n弯曲形态与频率\n构成测试剖面\n02\n循环规模\n累计 100,000 次\n弯曲循环\n03\n衰减判据\n循环前后关键性能\n无衰减\n验证结果支持器件进入应用评估\n注：验证框架三要素为方法学通识表述，不涉具体弯曲半径与频率数值\n柔性电子团队 · 年会特邀报告\n07 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-007.png"
+    },
+    {
+      "page": 8,
+      "text": "与三甲医院合作，植入式电子皮肤进入临床试验\n▼ 当前阶段\n规划\n实验室研究\n验证\n临床试验\n临床应用\n三甲医院合作\n团队与三甲医院联合推进植入式电子皮肤的临床验证\n植入式电子皮肤的临床转化通道已打开\n注：当前临床试验阶段为既定事实，阶段序列为通识框架\n柔性电子团队 · 年会特邀报告\n08 / 13",
+      "hidden": false,
+      "rendered_text": "与三甲医院合作，植入式电子皮肤进入临床试验\n 当前阶段\n▼\n规划\n实验室研究\n验证\n临床试验\n临床应用\n三甲医院合作\n团队与三甲医院联合推进植入式电子皮肤的临床验证\n植入式电子皮肤的临床转化通道已打开\n注：当前临床试验阶段为既定事实，阶段序列为通识框架\n柔性电子团队 · 年会特邀报告\n08 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-008.png"
+    },
+    {
+      "page": 9,
+      "text": "三条主线在临床汇合\n可拉伸阵列\n传感单元的规模化供给\n可靠性方法\n临床级器件的验证范式\n植入式电子皮肤\n临床试验阶段\n阵列供给与可靠性验证，共同托举植入式器件进入临床\n柔性电子团队 · 年会特邀报告\n09 / 13",
+      "hidden": false,
+      "rendered_text": "三条主线在临床汇合\n可拉伸阵列\n传感单元的规模化供给\n可靠性方法\n临床级器件的验证范式\n植入式电子皮肤\n临床试验阶段\n阵列供给与可靠性验证，共同托举植入式器件进入临床\n柔性电子团队 · 年会特邀报告\n09 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-009.png"
+    },
+    {
+      "page": 10,
+      "text": "三条主线的成熟度对照\n主线\n关键指标\n验证层级\n应用阶段\n可拉伸传感器阵列\n量产良率 92%\n量产验证\n规模化交付\n柔性 OLED 器件\n弯曲 100,000 次无衰减\n可靠性验证\n应用评估\n植入式电子皮肤\n进入临床试验\n临床验证\n临床转化\n三条主线处于不同的成熟度阶梯，共同构成工程化闭环\n柔性电子团队 · 年会特邀报告\n10 / 13",
+      "hidden": false,
+      "rendered_text": "三条主线的成熟度对照\n主线\n关键指标\n验证层级\n应用阶段\n可拉伸传感器阵列\n量产良率 92%\n量产验证\n规模化交付\n柔性 OLED 器件\n弯曲 100,000 次无衰减\n可靠性验证\n应用评估\n植入式电子皮肤\n进入临床试验\n临床验证\n临床转化\n三条主线处于不同的成熟度阶梯，共同构成工程化闭环\n柔性电子团队 · 年会特邀报告\n10 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-010.png"
+    },
+    {
+      "page": 11,
+      "text": "2026–2028：从工程化走向规模临床应用\n现在\n2026\n工艺与验证固化\n良率工艺窗口固化可靠性协议标准化\n2027\n系统与集成\n阵列—器件—皮肤系统级集成与验证\n2028\n临床与规模\n临床推进与规模化交付衔接当前临床试验阶段\n情景数据：阶段划分与各阶段目标为团队规划，衔接 92% 良率、10 万次弯曲与当前临床试验阶段\n三阶段推进：先固化工艺，再集成系统，最后拓展临床\n柔性电子团队 · 年会特邀报告\n11 / 13",
+      "hidden": false,
+      "rendered_text": "2026–2028 ：从工程化走向规模临床应用\n现在\n2026\n工艺与验证固化\n良率工艺窗口固化\n可靠性协议标准化\n2027\n系统与集成\n阵列—器件—皮肤\n系统级集成与验证\n2028\n临床与规模\n临床推进与规模化交付\n衔接当前临床试验阶段\n情景数据：阶段划分与各阶段目标为团队规划，衔接 92% 良率、10 万次弯曲与当前临床试验阶段\n三阶段推进：先固化工艺，再集成系统，最后拓展临床\n柔性电子团队 · 年会特邀报告\n11 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-011.png"
+    },
+    {
+      "page": 12,
+      "text": "下一步：三条线的三个动作\n计划一 · 传感主线\n良率工艺固化\n工艺窗口固化与产线交接产能扩展支撑规模交付\n计划二 · 显示主线\n验证体系标准化\n弯曲疲劳协议标准化向应用评估推进\n计划三 · 医疗主线\n临床推进与迭代\n临床试验持续推进临床反馈驱动器件迭代\n三个合作切口：工艺 · 验证方法 · 临床转化\n欢迎会后就合作方向展开交流\n情景内容：三项计划为团队规划性表述，衔接既有成果\n柔性电子团队 · 年会特邀报告\n12 / 13",
+      "hidden": false,
+      "rendered_text": "下一步：三条线的三个动作\n计划一 · 传感主线\n良率工艺固化\n工艺窗口固化与产线交接\n产能扩展支撑规模交付\n计划二 · 显示主线\n验证体系标准化\n弯曲疲劳协议标准化\n向应用评估推进\n计划三 · 医疗主线\n临床推进与迭代\n临床试验持续推进\n临床反馈驱动器件迭代\n三个合作切口：工艺 · 验证方法 · 临床转化\n欢迎会后就合作方向展开交流\n情景内容：三项计划为团队规划性表述，衔接既有成果\n柔性电子团队 · 年会特邀报告\n12 / 13\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-012.png"
+    },
+    {
+      "page": 13,
+      "text": "结语\n三年，从实验室到临床\n78% → 92% 量产良率 · 100,000 次弯曲无衰减临床试验阶段 · 工程化闭环成形\n欢迎就工艺、验证与临床转化开展合作交流\n柔性电子团队 · 2026 年会特邀报告\n三大成果回顾\n92%\n量产良率\n100,000 次\n弯曲无衰减\n临床试验\n三甲医院合作推进",
+      "hidden": false,
+      "rendered_text": "结语\n三年，从实验室到临床\n78% → 92% 量产良率 · 100,000 次弯曲无衰减\n临床试验阶段 · 工程化闭环成形\n欢迎就工艺、验证与临床转化开展合作交流\n柔性电子团队 · 2026 年会特邀报告\n三大成果回顾\n92%\n量产良率\n100,000 次\n弯曲无衰减\n临床试验\n三甲医院合作推进\n",
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/47e5c273a16bc96d9b4989af029c20f4f53363a4010f2034574a3aae87fd990b/page-013.png"
+    }
+  ]
+}

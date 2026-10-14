@@ -1,0 +1,60 @@
+{
+  "parsed": {
+    "consistent": false,
+    "issues": [
+      {
+        "reason": "候选A将P8、P9的PDF渲染换行导致的bbox微小重叠判定为\"多行文字严重叠印\"\"关键资金分项对应关系无法直接阅读\"的实质性视觉缺陷，但候选B对同类型证据（p2_overlap_33bf5c5141、p4_overlap_fa47ac414e、p4_overlap_7a199f660b、p6_overlap_7a1989a2cf、p3_overlap_1e75079544、p4_overlap_5a948ead3f、p4_overlap_78c545da46、p6_overlap_0f61fbae4d、p6_overlap_355647b24e、p6_overlap_a3874512f2、p8_overlap_4befb882b4）经独立核验后均确认为\"正常换行\"\"bounding-box intersection does not establish a defect\"，且候选A自身evidence中p8_overlap_39d3ae07e1至p8_overlap_a72d49ca17共10条证据的statement也明确标注\"A candidate bounding-box intersection, not a confirmed defect\"。候选A的verdict将未确认的候选交叠直接认定为\"严重重叠覆盖\"\"无法独立辨识\"，而候选B对同源同类现象给出了yes结论，两者在\"PDF渲染换行bbox重叠是否等于真实视觉叠印遮挡\"这一关键判定标准上存在实质冲突。该冲突直接影响答案：若按候选B的核验标准，候选A的P8、P9缺陷不成立，其no答案应翻转为yes。",
+        "rule_quote": "正文或图形内容存在遮挡、裁切出界、对比不足、字号过小或同页多模块交叠压盖等真实不可读问题",
+        "evidence_refs": {
+          "A": [
+            "p8_overlap_a6a1b443b8",
+            "p8_R13_direct_b8f4874206f5",
+            "p9_R13_direct_e638e9236dd1"
+          ],
+          "B": [
+            "p2_overlap_33bf5c5141",
+            "p4_overlap_fa47ac414e",
+            "p4_overlap_7a199f660b",
+            "p6_overlap_7a1989a2cf",
+            "p3_overlap_1e75079544",
+            "p4_overlap_5a948ead3f",
+            "p4_overlap_78c545da46",
+            "p6_overlap_0f61fbae4d",
+            "p6_overlap_355647b24e",
+            "p6_overlap_a3874512f2",
+            "p8_overlap_4befb882b4"
+          ]
+        },
+        "observed_answers": {
+          "A": "no",
+          "B": "yes"
+        },
+        "verdict_quotes": {
+          "A": "第8页表格多行文字严重叠印，资金项、金额、阶段、产出等关键信息互相覆盖；第9页投入产出表与下方文化传承效益/农户增收效益/风险防控表区域文字多层叠印，'厂房建设''设备采购''培训经费'等资金项与产出描述、风险类别等内容交错覆盖，无法辨识",
+          "B": "所有text_overlap_candidates经图像核实均为PDF渲染换行导致的bbox微小重叠，非真实视觉叠印；文字与背景对比度充足，字号在汇报投影场景下可读"
+        },
+        "expected_answers": {
+          "A": "yes"
+        }
+      }
+    ],
+    "notes": [
+      "候选A的P4缺陷（p4_overlap_0df7fed1c7）为独立观察证据，与候选B无直接对应页，不在本条冲突范围内；本条仅针对P8、P9的叠印判定标准冲突",
+      "候选A evidence中p8_overlap_39d3ae07e1等10条标注为'candidate bounding-box intersection, not a confirmed defect'的证据，与其verdict中'严重重叠覆盖'的定性存在内部不一致，但此为候选A内部问题，本条冲突聚焦于A与B之间的标准漂移"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 33328,
+    "total_tokens": 34127,
+    "completion_tokens": 799,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 252.827,
+  "attempts": 2
+}

@@ -1,0 +1,545 @@
+{
+  "parsed": {
+    "page": 7,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "立项建议：批准1 号线液压系统改造120 万元投资，同步实施3 号线停机管理改进",
+        "location": "页面顶部标题区域",
+        "statement": "标题包含120万元投资金额及3号线停机管理改进，与用户需求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如果更换液压系统投入约120万"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "3号线虽然单位能耗不高0.48,但空载能耗偏高,待机状态下每小时还跑12kWh,说明停机流程不规范,这块也要提一句"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "万元",
+            "subject": "液压系统改造投入",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "1 号线单位能耗对标：现状 / 行业标杆 / 验收目标（kWh/ 件）",
+        "location": "左侧图表上方标题",
+        "statement": "图表标题明确标注对比维度为现状、行业标杆、验收目标，单位kWh/件",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "核心发现是1号线的单位产品能耗0.85kWh/件,远高于其他产线的0.5左右"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "0.85",
+        "location": "左侧柱状图红色柱子顶部",
+        "statement": "1号线现状单位能耗0.85 kWh/件，与用户给定数据一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.85",
+            "unit": "kWh/件",
+            "subject": "1号线单位能耗现状",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "0.45",
+        "location": "左侧柱状图绿色柱子顶部",
+        "statement": "行业标杆单位能耗0.45 kWh/件，与用户给定数据一致，但丢失了'约'的不确定性限定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.45",
+            "unit": "kWh/件",
+            "subject": "行业标杆单位能耗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "0.5",
+        "location": "左侧柱状图浅绿色柱子顶部",
+        "statement": "改造后验收目标0.5 kWh/件，用户原始需求中未明确给出验收目标值，此为作品新增信息",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "其他产线的0.5左右"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.5",
+            "unit": "kWh/件",
+            "subject": "改造后验收目标",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "问题 1 号线单位能耗0.85 kWh/ 件，超行业标杆约89%",
+        "location": "右侧决策要点回顾区域第一行",
+        "statement": "1号线单位能耗0.85 kWh/件，超行业标杆约89%。计算验证：(0.85-0.45)/0.45=0.888...≈89%，计算正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.85",
+            "unit": "kWh/件",
+            "subject": "1号线单位能耗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "89",
+            "unit": "%",
+            "subject": "超行业标杆幅度",
+            "denominator": "行业标杆0.45",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "growth_percent",
+            "left": "0.85",
+            "right": "0.45",
+            "reported": "89",
+            "left_unit": "kWh/件",
+            "right_unit": "kWh/件",
+            "reported_unit": "%",
+            "left_quote": "1号线 / 80 / 68 / 0.85 / 8",
+            "right_quote": "行业标杆单位能耗约0.45kWh/件",
+            "reported_quote": "超行业标杆约89%",
+            "relation_quote": "问题 1 号线单位能耗0.85 kWh/ 件，超行业标杆约89%",
+            "meaning": "1号线单位能耗相比行业标杆的增长百分比"
+          }
+        ]
+      },
+      {
+        "quote": "根因 液压系统老化导致效率下降，拉高单位能耗",
+        "location": "右侧决策要点回顾区域第二行",
+        "statement": "明确将1号线能耗偏高归因于液压系统老化导致效率下降，与用户需求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "排查下来主要是1号线的液压系统老化导致效率下降"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "方案 整机更换1 号线液压系统，一次性投入约120 万元",
+        "location": "右侧决策要点回顾区域第三行",
+        "statement": "方案明确为整机更换液压系统，投入约120万元，保留了'约'的不确定性限定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "如果更换液压系统投入约120万"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "万元",
+            "subject": "液压系统更换投入",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "回报 年节省电费约252-288 万元，回收期约18 个月以内",
+        "location": "右侧决策要点回顾区域第四行",
+        "statement": "回报表述为年节省电费约252-288万元，回收期约18个月以内。用户原始需求为'大概18个月能收回成本'，此处添加了'以内'限定词，改变了原意的不确定性范围",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "大概18个月能收回成本"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "252-288",
+            "unit": "万元",
+            "subject": "年节省电费",
+            "denominator": "不适用",
+            "time_origin": "年"
+          },
+          {
+            "value": "18",
+            "unit": "月",
+            "subject": "回收期",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "年节省电费约252-288 万元",
+        "location": "右侧决策要点回顾区域及左下角预期总收益区域",
+        "statement": "年节省电费252-288万元。用户原始需求未直接给出此数值，需验证：按1号线月产量80万件，单位能耗从0.85降至0.45-0.5 kWh/件，月用电减少(0.85-0.45)*80万=32万kWh至(0.85-0.5)*80万=28万kWh，年节省电量336万kWh至384万kWh，按0.75元/kWh计算为252-288万元/年。计算正确，但此推导为作品给出，非用户直接给定",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "工业电价0.75元/kWh"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "252-288",
+            "unit": "万元",
+            "subject": "年节省电费",
+            "denominator": "不适用",
+            "time_origin": "年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "28",
+            "right": "12",
+            "reported": "336",
+            "left_unit": "万kWh/月",
+            "right_unit": "月",
+            "reported_unit": "万kWh/年",
+            "left_quote": "1号线 / 80 / 68 / 0.85 / 8",
+            "right_quote": "未说明",
+            "reported_quote": "未说明",
+            "relation_quote": "年节省电费约252-288 万元",
+            "meaning": "按低限节省计算年电量（需电价换算）"
+          }
+        ]
+      },
+      {
+        "quote": "回收期约18 个月以内",
+        "location": "右侧决策要点回顾区域第四行",
+        "statement": "回收期表述为'约18个月以内'，用户原始需求为'大概18个月能收回成本'。添加'以内'改变了原意，将点估计变为上限估计",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "大概18个月能收回成本"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "18",
+            "unit": "月",
+            "subject": "回收期",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "3 号线试点停机流程规范化，验证后推广全厂",
+        "location": "右下角管理改进线区域",
+        "statement": "3号线停机流程规范化被提及，与用户需求一致，但仅提及'停机流程规范化'，未明确出现'停机流程不规范'的归因表述",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "3号线虽然单位能耗不高0.48,但空载能耗偏高,待机状态下每小时还跑12kWh,说明停机流程不规范,这块也要提一句"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "kWh/h",
+            "subject": "3号线空载能耗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "零资本投入的流程改进，与技术改造形成双线并行、互补降险",
+        "location": "右下角管理改进线区域第二行",
+        "statement": "强调3号线改进为零资本投入，与120万技术改造形成对比",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "安排生产淡季施工以压降停产损失；改造后以0.45-0.5 kWh/ 件为验收目标",
+        "location": "右侧技术改造线区域第二行",
+        "statement": "验收目标0.45-0.5 kWh/件，其中0.45对应行业标杆，0.5对应其他产线水平。用户未明确给出验收目标，此为作品推导",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "其他产线的0.5左右"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.45-0.5",
+            "unit": "kWh/件",
+            "subject": "改造后验收目标",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "预期总收益：1 号线技改年节省电费约252-288 万元，叠加停机管理零投入节约，显著降低全厂年电费基数（当前约1638 万元/ 年）",
+        "location": "左下角预期总收益区域",
+        "statement": "全厂年电费基数约1638万元/年。验证：各产线月用电总和=68+49+34+31=182万kWh/月，年用电2184万kWh，按0.75元/kWh计算为1638万元/年。计算正确",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "1号线 / 80 / 68 / 0.85 / 8"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "2号线 / 95 / 49 / 0.52 / 6"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "3号线 / 70 / 34 / 0.48 / 12"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "4号线 / 60 / 31 / 0.52 / 5"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "工业电价0.75元/kWh"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "1638",
+            "unit": "万元/年",
+            "subject": "全厂年电费基数",
+            "denominator": "不适用",
+            "time_origin": "年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "multiply",
+            "left": "182",
+            "right": "12",
+            "reported": "2184",
+            "left_unit": "万kWh/月",
+            "right_unit": "月",
+            "reported_unit": "万kWh/年",
+            "left_quote": "1号线 / 80 / 68 / 0.85 / 8",
+            "right_quote": "未说明",
+            "reported_quote": "未说明",
+            "relation_quote": "当前约1638 万元/ 年",
+            "meaning": "全厂年用电量计算"
+          }
+        ]
+      },
+      {
+        "quote": "数据来源：一个月产线设备能耗实测数据与改造投资回报测算（用户素材）",
+        "location": "页面左下角",
+        "statement": "数据来源标注为一个月实测数据，与用户给定一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "产线设备能耗数据我拉了一个月的"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "kWh/ 件与0.9的包围框存在极微小交集[43.17, 129.92, 53.4, 129.96]",
+        "location": "左侧Y轴标签区域",
+        "statement": "经局部放大图核查，'kWh/件'标签与'0.9'刻度线标签为上下相邻排版，无实际笔画遮挡，属于正常图表轴标签布局",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "预期总收益：与1638 万元/ 年的包围框存在部分交集[26.5, 314.68, 68.29, 316.79]",
+        "location": "左下角预期总收益区域",
+        "statement": "经局部放大图核查，'预期总收益：'绿色标签与下方'1638 万元/ 年）'为上下两行文字，因行距较小导致包围框相交，但实际无笔画重叠，属于正常紧凑排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "立项建议：批准1 号线液压系统改造120 万元投资，同步实施3 号线停机管理改进",
+        "location": "页面顶部标题区域",
+        "statement": "经局部放大图核查，标题'改进'二字换行至第二行，与第一行末尾'改'字形成同一词语的正常换行，包围框因跨行存在交集，无实际遮挡问题",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "1 号线技改年节省电费约252-288 万元...与1638 万元/ 年的包围框存在微小交集[69.93, 314.68, 79.74, 316.79]",
+        "location": "左下角预期总收益区域",
+        "statement": "经局部放大图核查，第一行末尾'（当前约'与第二行开头'1638'为跨行连续文本，包围框因换行存在微小交集，属于正常文本流布局，无遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "回收期约18 个月以内",
+        "location": "右侧决策要点回顾区域",
+        "statement": "用户原始表述为'大概18个月能收回成本'，作品改写为'约18个月以内'，添加了'以内'限定词，将不确定的点估计变为有方向性的上限估计，存在expression_inconsistency嫌疑",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "大概18个月能收回成本"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "行业标杆0.45",
+        "location": "左侧柱状图",
+        "statement": "用户原始数据为'行业标杆单位能耗约0.45kWh/件'，作品呈现为'0.45'，丢失了'约'的不确定性限定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "行业标杆单位能耗约0.45kWh/件"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0.45",
+            "unit": "kWh/件",
+            "subject": "行业标杆单位能耗",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "本页为总结/结论页，包含1号线深挖、投资回报测算、3号线问题提及",
+        "location": "整页结构",
+        "statement": "本页位于第7页，作为整体结构中的总结页，包含用户要求的三段式中的两个模块（1号线深挖、投资回报测算）及3号线问题，但四条产线能耗对比模块在本页未出现，需结合前页判断整体结构完整性",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "整体结构上先把四条线的能耗对比摆出来,再聚焦1号线做深挖,最后落到节能改造的投资回报测算"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 7649,
+    "total_tokens": 12476,
+    "completion_tokens": 4827,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 131.943,
+  "attempts": 1
+}

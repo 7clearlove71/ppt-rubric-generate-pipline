@@ -1,0 +1,216 @@
+{
+  "parsed": {
+    "page": 6,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "留下的人，赢得了 91% 的续约",
+        "location": "页面顶部标题区域",
+        "statement": "页面核心标题，将员工留存与客户续约率关联，融合叙事与数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "91",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "320 → 410 人",
+        "location": "页面左侧数据展示区",
+        "statement": "员工人数从320增长到410，与源文数据一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "320",
+            "unit": "人",
+            "subject": "期初员工人数",
+            "denominator": "不适用",
+            "time_origin": "年初"
+          },
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "期末员工人数",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "全年 +90 人 · 零裁员",
+        "location": "320→410人下方说明文字",
+        "statement": "作品给出净增90人的计算结果，并标注零裁员；但源文仅说'没有裁员'，未明确给出净增90人这一数字",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "90",
+            "unit": "人",
+            "subject": "全年净增员工",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "410",
+            "right": "320",
+            "reported": "90",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "人",
+            "left_quote": "410",
+            "right_quote": "320",
+            "reported_quote": "+90",
+            "relation_quote": "全年 +90 人",
+            "meaning": "期末员工数减期初员工数"
+          }
+        ]
+      },
+      {
+        "quote": "零裁员",
+        "location": "员工人数数据下方",
+        "statement": "作品使用'零裁员'表述，源文为'没有裁员'，语义一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "咬牙没有裁员反而加大了研发投入"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "91%",
+        "location": "页面右侧客户续约率数据展示区",
+        "statement": "客户续约率数据，与源文一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "客户续约率91%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "91",
+            "unit": "%",
+            "subject": "客户续约率",
+            "denominator": "不适用",
+            "time_origin": "全年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "客户用续约投票",
+        "location": "91%下方说明文字",
+        "statement": "将续约率转化为叙事性表达，建立客户行为与员工付出的关联",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "这份成绩，属于每一位没有退缩的人",
+        "location": "页面底部灰色横幅区域",
+        "statement": "直接引用老板讲话中'团队没有一个人退缩'的核心叙事要素，与数据形成呼应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "团队没有一个人退缩"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "2026 年度大会 · 开场汇报",
+        "location": "页面左下角",
+        "statement": "页脚标注会议名称和用途，年份2026未在源文出现，属于作品设定",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "06 / 08",
+        "location": "页面右下角",
+        "statement": "页码标注，表明当前为第6页共8页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "员工人数 320 → 410 人 全年 +90 人 · 零裁员 / 客户续约率 91% 客户用续约投票",
+        "location": "页面中部左右分栏区域",
+        "statement": "页面同时呈现员工增长和续约率两个数据模块，但共享同一标题'留下的人，赢得了91%的续约'，员工人数数据作为支撑'留下的人'的论据，整体围绕'人员稳定带来客户信任'这一核心观点展开，未出现多观点堆砌",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "页面整体布局",
+        "location": "全页",
+        "statement": "视觉检查：标题、数据、说明文字分层清晰，无文字叠印或遮挡现象；数字使用大字号突出显示，符合正式汇报风格；颜色对比度充足，所有文字均可辨识",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6402,
+    "total_tokens": 7910,
+    "completion_tokens": 1508,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 107.925,
+  "attempts": 1
+}

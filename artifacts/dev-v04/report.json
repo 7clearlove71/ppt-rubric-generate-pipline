@@ -1,0 +1,48 @@
+{
+  "cases": [
+    {
+      "case_id": "01",
+      "status": "quality_failed",
+      "items": 0,
+      "review_rounds": 3,
+      "semantic_reviews": 2
+    },
+    {
+      "case_id": "02",
+      "status": "approved",
+      "items": 17,
+      "score_sum": 100.00000000000001,
+      "review_rounds": 1,
+      "semantic_reviews": 1
+    }
+  ],
+  "status_counts": {
+    "quality_failed": 1,
+    "approved": 1
+  },
+  "total_cases": 2,
+  "approved_fraction": 0.5,
+  "logical_cache_hits": 1,
+  "models": {
+    "glm-5.2": {
+      "http_attempts": 7,
+      "failed_attempts": 0,
+      "reported_prompt_tokens": 31125,
+      "reported_completion_tokens": 13412,
+      "reported_total_tokens": 44537,
+      "usage_missing_attempts": 0
+    },
+    "kimi-k2.6": {
+      "http_attempts": 7,
+      "failed_attempts": 0,
+      "reported_prompt_tokens": 143845,
+      "reported_completion_tokens": 9514,
+      "reported_total_tokens": 153359,
+      "usage_missing_attempts": 0
+    }
+  },
+  "attempt_journal_available": false,
+  "usage_caveat": "Legacy log: failed-call usage may be missing.",
+  "human_agreement": null,
+  "acceptance": "Automated operational report only; no human alignment claim."
+}

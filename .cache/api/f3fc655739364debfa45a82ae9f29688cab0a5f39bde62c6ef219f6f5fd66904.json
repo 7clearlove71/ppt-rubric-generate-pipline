@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "text_seen": [
+      "007元",
+      "镇年集市场、连续第5年",
+      "捐赠10万元建成朝阳村"
+    ],
+    "overlapping": true,
+    "overlap_objects": [
+      "红色数字\"007元\"与下方黑色文字\"镇年集市场\"在垂直方向重叠",
+      "红色印章/标记与黑色文字在顶部区域重叠"
+    ],
+    "description": "图像显示三层文字叠加：最上方是红色文字/数字（含\"007元\"），中间和下方是黑色中文文字。红色文字位于顶部，与下方黑色文字存在垂直方向的重叠覆盖关系。黑色文字为两行，第一行\"镇年集市场、连续第5年\"，第二行\"捐赠10万元建成朝阳村\"。整体为文档或印刷品的局部截图，背景为白色/浅灰色，文字有模糊和重叠现象。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 181,
+    "total_tokens": 378,
+    "completion_tokens": 197,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 62.717,
+  "attempts": 1
+}

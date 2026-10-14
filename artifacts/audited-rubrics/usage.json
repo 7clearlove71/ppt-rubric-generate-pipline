@@ -1,0 +1,107 @@
+[
+  {
+    "role": "reviewer",
+    "cache_key": "7aa977ef24f63cef0220c900a245b44a887920ac3901553719c456efdf4da0da",
+    "cached": false,
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 824,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 824
+      },
+      "prompt_tokens": 5791,
+      "prompt_tokens_details": {
+        "cached_tokens": 5120,
+        "text_tokens": 5791
+      },
+      "total_tokens": 6615
+    },
+    "elapsed_seconds": 16.641,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "84add429d5714061369e04e1f4a16e33887110c8af5d4be9283ea12c991c29ab",
+    "cached": false,
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3714,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3714
+      },
+      "prompt_tokens": 6635,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "text_tokens": 6635
+      },
+      "total_tokens": 10349
+    },
+    "elapsed_seconds": 56.211,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "fd6f4295cf97b6845666854e03aba3e6be2bc275449519cd31b6d2ef04b53d35",
+    "cached": false,
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1184,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1184
+      },
+      "prompt_tokens": 6152,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 6152
+      },
+      "total_tokens": 7336
+    },
+    "elapsed_seconds": 22.819,
+    "attempts": 1
+  },
+  {
+    "role": "generator",
+    "cache_key": "b1e8a3f3984732a1b4ea9b269bdb291a7651691e695465f10b9dc5200c054203",
+    "cached": false,
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 3741,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 3741
+      },
+      "prompt_tokens": 7352,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "text_tokens": 7352
+      },
+      "total_tokens": 11093
+    },
+    "elapsed_seconds": 51.858,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "bec1a211b9736cf7aa9f18574c0f2d765df8a956e7c7807d56c9dbfb3435ed01",
+    "cached": false,
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 663,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 663
+      },
+      "prompt_tokens": 6179,
+      "prompt_tokens_details": {
+        "cached_tokens": 2048,
+        "text_tokens": 6179
+      },
+      "total_tokens": 6842
+    },
+    "elapsed_seconds": 16.496,
+    "attempts": 1
+  }
+]

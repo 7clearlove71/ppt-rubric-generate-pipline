@@ -1,0 +1,22 @@
+{
+  "provider": "ModelArts MaaS",
+  "request_cap": 900,
+  "actual_requests": 50,
+  "remaining_requests": 850,
+  "stages": {
+    "rubrics": 50,
+    "judgments": 0
+  },
+  "statuses": {
+    "success": 23,
+    "failed": 27
+  },
+  "reported_usage": {
+    "prompt_tokens": 939461,
+    "completion_tokens": 94867,
+    "total_tokens": 1034328
+  },
+  "usage_missing_requests": 0,
+  "bailian_requests": 0,
+  "cost_estimate": null
+}

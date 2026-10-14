@@ -1,0 +1,252 @@
+{
+  "complete": false,
+  "pages": [
+    {
+      "page": 1,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 2,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 3,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 4,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 5,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 6,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 7,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    },
+    {
+      "page": 8,
+      "complete": false,
+      "observations": [],
+      "infrastructure_error": "ProviderError"
+    }
+  ],
+  "ledger": [
+    {
+      "id": "p3_overlap_038de22750",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_038de22750; text spans ['p3_t35', 'p3_t36']: ['按月产80 万件、电价 0.75 元/kWh 测算；降至标杆月用电仅需 36 万', 'kWh 。']. Original PDF rectangle [438.0, 265.8299865722656, 677.4299926757812, 300.7300109863281]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [438.0, 265.8299865722656, 677.4299926757812, 300.7300109863281]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p2_overlap_0582ebacc3",
+      "page": 2,
+      "quote": "Slide 2 local enlarged view p2_overlap_0582ebacc3; text spans ['p2_t50', 'p2_t51']: ['单位能耗0.85 kWh/ 件，约为其余三线（0.48-0.52 ）的1.6-1.8', '倍。']. Original PDF rectangle [455.3800048828125, 202.7899932861328, 675.8699951171875, 237.67999267578125]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [455.3800048828125, 202.7899932861328, 675.8699951171875, 237.67999267578125]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_1a6aff76b8",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_1a6aff76b8; text spans ['p4_t52', 'p4_t53']: ['件症状，无法恢复整体系统能量转换效率，为下一页投资回报测算提供', '技术口径。']. Original PDF rectangle [435.1099853515625, 273.3999938964844, 699.8599853515625, 310.9700012207031]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 273.3999938964844, 699.8599853515625, 310.9700012207031]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_2e64dc4e6d",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_2e64dc4e6d; text spans ['p4_t37', 'p4_t38']: ['，远高于其他产线的 0.5 左右；空载', '能耗 8 kWh/h 并非四线最高（3 号线为 12 kWh/h ），高能耗主因']. Original PDF rectangle [435.1099853515625, 89.73999786376953, 694.8400268554688, 127.30999755859375]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 89.73999786376953, 694.8400268554688, 127.30999755859375]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_4efeb48dac",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_4efeb48dac; text spans ['p4_t49', 'p4_t52']: ['处置建议为', '件症状，无法恢复整体系统能量转换效率，为下一页投资回报测算提供']. Original PDF rectangle [435.1099853515625, 263.82000732421875, 699.8599853515625, 301.3900146484375]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 263.82000732421875, 699.8599853515625, 301.3900146484375]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_6049a43043",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_6049a43043; text spans ['p4_t38', 'p4_t41']: ['能耗 8 kWh/h 并非四线最高（3 号线为 12 kWh/h ），高能耗主因', '，而非待机浪费。']. Original PDF rectangle [435.1099853515625, 99.31999969482422, 694.8400268554688, 136.88999938964844]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 99.31999969482422, 694.8400268554688, 136.88999938964844]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_61068d5ae6",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_61068d5ae6; text spans ['p4_t45', 'p4_t47']: ['损失增大', '据特征相互印证。']. Original PDF rectangle [435.1099853515625, 186.3699951171875, 515.27001953125, 223.9499969482422]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 186.3699951171875, 515.27001953125, 223.9499969482422]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_6ce7977a37",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_6ce7977a37; text spans ['p4_t50', 'p4_t52']: ['整机更换液压系统', '件症状，无法恢复整体系统能量转换效率，为下一页投资回报测算提供']. Original PDF rectangle [435.1099853515625, 263.82000732421875, 699.8599853515625, 301.3900146484375]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 263.82000732421875, 699.8599853515625, 301.3900146484375]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_77eaad3466",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_77eaad3466; text spans ['p4_t38', 'p4_t39']: ['能耗 8 kWh/h 并非四线最高（3 号线为 12 kWh/h ），高能耗主因', '是']. Original PDF rectangle [435.1099853515625, 99.31999969482422, 694.8400268554688, 136.88999938964844]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 99.31999969482422, 694.8400268554688, 136.88999938964844]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_8c5723b08f",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_8c5723b08f; text spans ['p4_t36', 'p4_t38']: ['0.85 kWh/ 件', '能耗 8 kWh/h 并非四线最高（3 号线为 12 kWh/h ），高能耗主因']. Original PDF rectangle [435.1099853515625, 89.73999786376953, 694.8400268554688, 127.30999755859375]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 89.73999786376953, 694.8400268554688, 127.30999755859375]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_b9ebd026ce",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_b9ebd026ce; text spans ['p4_t35', 'p4_t38']: ['1 号线单位能耗 ', '能耗 8 kWh/h 并非四线最高（3 号线为 12 kWh/h ），高能耗主因']. Original PDF rectangle [435.1099853515625, 89.73999786376953, 694.8400268554688, 127.30999755859375]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 89.73999786376953, 694.8400268554688, 127.30999755859375]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_ca8a5e0ec1",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_ca8a5e0ec1; text spans ['p4_t38', 'p4_t40']: ['能耗 8 kWh/h 并非四线最高（3 号线为 12 kWh/h ），高能耗主因', '负载运行效率损失']. Original PDF rectangle [435.1099853515625, 99.31999969482422, 694.8400268554688, 136.88999938964844]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [435.1099853515625, 99.31999969482422, 694.8400268554688, 136.88999938964844]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    }
+  ],
+  "visual_inspections": [
+    {
+      "id": "p3_overlap_038de22750",
+      "page": 3,
+      "rect": [
+        438.0,
+        265.8299865722656,
+        677.4299926757812,
+        300.7300109863281
+      ],
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f2c1f18676bdedf2f84f38e56979447cd72a580a1d845961859f05e97342677/visual-focus-v1/328d6a76ac37ddaf19bcee5c73e184670558b35e4bd7a5f97c532dab4166cc2c.png",
+      "status": "unavailable",
+      "error_type": "ProviderError"
+    },
+    {
+      "id": "p2_overlap_0582ebacc3",
+      "page": 2,
+      "rect": [
+        455.3800048828125,
+        202.7899932861328,
+        675.8699951171875,
+        237.67999267578125
+      ],
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f2c1f18676bdedf2f84f38e56979447cd72a580a1d845961859f05e97342677/visual-focus-v1/7fc939b263d11823363afe265a623f0faef490a04214982755c22c1460ef53d9.png",
+      "status": "unavailable",
+      "error_type": "ProviderError"
+    }
+  ],
+  "page_visual_claims_policy": "diagnostic_only_for_visual_criteria"
+}

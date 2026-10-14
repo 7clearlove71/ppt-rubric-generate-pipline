@@ -1,0 +1,379 @@
+{
+  "parsed": {
+    "page": 4,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "行业寒冬里我们裁了 0 个人，反而多了 90 个人",
+        "location": "页面顶部标题区域",
+        "statement": "本页核心观点：以0裁员+增员90人作为主题，直接回应老板讲话中'咬牙没有裁员'的叙事",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "这一年我们走得不容易，年初行业寒冬，咬牙没有裁员反而加大了研发投入"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0",
+            "unit": "人",
+            "subject": "裁员人数",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          },
+          {
+            "value": "90",
+            "unit": "人",
+            "subject": "净增人数",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "裁员 0 人",
+        "location": "左上视觉强调区，红色大字",
+        "statement": "视觉化强调0裁员，与老板讲话'咬牙没有裁员'形成对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "咬牙没有裁员"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "0",
+            "unit": "人",
+            "subject": "裁员人数",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "核心队伍完整保留，为研发加注提供人的基础",
+        "location": "'裁员 0 人'下方说明文字",
+        "statement": "将不裁员与研发投入战略建立关联，呼应'加大研发投入'",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "咬牙没有裁员反而加大了研发投入"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "老板讲话：\"咬牙没有裁员\"\"但团队没有一个人退缩\"",
+        "location": "右上引用框",
+        "statement": "直接引用老板原话，建立叙事与数据的锚定关系",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "老板稿子里原话说，这一年我们走得不容易，年初行业寒冬，咬牙没有裁员反而加大了研发投入，最难那个月账上现金只够发两个月工资，但团队没有一个人退缩，如今回头看正是那段日子让我们脱胎换骨"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "年初行业寒冬，行业普遍在减人，我们在加人：员工 320 人 → 410 人（净增 90 人，测算）",
+        "location": "右上引用框下方说明文字",
+        "statement": "将行业背景（寒冬、普遍减人）与本公司增员数据并置，形成对比叙事；标注'测算'表明净增90人为派生计算",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年初行业寒冬，咬牙没有裁员反而加大了研发投入"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "320",
+            "unit": "人",
+            "subject": "上年员工人数",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          },
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "本年度员工人数",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          },
+          {
+            "value": "90",
+            "unit": "人",
+            "subject": "净增人数",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "410",
+            "right": "320",
+            "reported": "90",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "人",
+            "left_quote": "员工 320 人 → 410 人（净增 90 人，测算）",
+            "right_quote": "员工 320 人 → 410 人（净增 90 人，测算）",
+            "reported_quote": "净增 90 人，测算",
+            "relation_quote": "员工 320 人 → 410 人（净增 90 人，测算）",
+            "meaning": "净增人数=本年度−上年度"
+          }
+        ]
+      },
+      {
+        "quote": "人员增幅 ≈ +28.1% （测算）与营收同比 +26% 几乎同频，扩张没有失控",
+        "location": "右上说明文字第二行",
+        "statement": "将人员增幅与营收增幅并置对比，得出'扩张没有失控'的结论；+28.1%为派生指标，标注'测算'",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "28.1",
+            "unit": "%",
+            "subject": "人员增幅",
+            "denominator": "320人",
+            "time_origin": "本年度同比上年"
+          },
+          {
+            "value": "26",
+            "unit": "%",
+            "subject": "营收同比增幅",
+            "denominator": "上年营收",
+            "time_origin": "本年度同比上年"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "growth_percent",
+            "left": "90",
+            "right": "320",
+            "reported": "28.1",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "%",
+            "left_quote": "净增 90 人，测算",
+            "right_quote": "员工 320 人 → 410 人",
+            "reported_quote": "人员增幅 ≈ +28.1% （测算）",
+            "relation_quote": "人员增幅 ≈ +28.1% （测算）与营收同比 +26% 几乎同频，扩张没有失控",
+            "meaning": "人员增长率=净增人数÷上年基数"
+          }
+        ]
+      },
+      {
+        "quote": "员工人数（人）",
+        "location": "左下图表标题",
+        "statement": "左侧柱状图主题：员工人数对比",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "上年 320 人 / 本年度 410 人",
+        "location": "左下柱状图数据标签",
+        "statement": "图表直接呈现320→410人的变化，与源数据一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "320",
+            "unit": "人",
+            "subject": "上年员工人数",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          },
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "本年度员工人数",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "人均营收（万元/ 人）",
+        "location": "右下图表标题",
+        "statement": "右侧柱状图主题：人均营收对比，为源数据未直接给出的派生指标",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "上年 104 万元 / 本年度 102 万元",
+        "location": "右下柱状图数据标签",
+        "statement": "人均营收数据：上年约104万元/人，本年度约102万元/人。此数据为派生计算，源数据未直接提供营收总额用于复算人均值",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "104",
+            "unit": "万元/人",
+            "subject": "上年人均营收",
+            "denominator": "不适用",
+            "time_origin": "上年"
+          },
+          {
+            "value": "102",
+            "unit": "万元/人",
+            "subject": "本年度人均营收",
+            "denominator": "不适用",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "divide",
+            "left": "42000",
+            "right": "320",
+            "reported": "104",
+            "left_unit": "万元",
+            "right_unit": "人",
+            "reported_unit": "万元/人",
+            "left_quote": "全年营收4.2亿",
+            "right_quote": "员工320涨到410人",
+            "reported_quote": "104 万元",
+            "relation_quote": "人均营收（万元/ 人）",
+            "meaning": "若4.2亿为上年营收，则上年人均=42000÷320≈131.25，与标注104不符；若4.2亿为本年度营收，则本年度人均=42000÷410≈102.4，与102接近。数据口径待核实：源数据未明确4.2亿对应年份"
+          }
+        ]
+      },
+      {
+        "quote": "基本持平 · 人效未被摊薄（测算）",
+        "location": "右下图表右上角标签",
+        "statement": "对人均营收微降2万元的定性判断：'基本持平'，并得出'人效未被摊薄'结论，标注'测算'",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "净增 28% 人员的同时人均产出基本持平，扩张没有摊薄人效。",
+        "location": "页面底部总结条",
+        "statement": "结论先行，将人员增长与人效稳定结合，回应'一页一观点'要求",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "28",
+            "unit": "%",
+            "subject": "人员净增比例",
+            "denominator": "上年基数",
+            "time_origin": "本年度"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：公司全年经营数据与老板年会致辞；标注\"测算\"者为派生指标：净增 90 人（410 − 320 ）、+28.1% （90 ÷ 320 ）、人均营收 ≈104 → ≈102 万元/ 人。",
+        "location": "页面底部脚注",
+        "statement": "明确标注数据来源和测算方法，增强可信度；但人均营收的分子（各年营收总额）未在源数据中明确对应年份",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "410",
+            "right": "320",
+            "reported": "90",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "人",
+            "left_quote": "410 − 320",
+            "right_quote": "410 − 320",
+            "reported_quote": "净增 90 人（410 − 320 ）",
+            "relation_quote": "净增 90 人（410 − 320 ）",
+            "meaning": "净增人数计算"
+          },
+          {
+            "operation": "growth_percent",
+            "left": "90",
+            "right": "320",
+            "reported": "28.1",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "%",
+            "left_quote": "90 ÷ 320",
+            "right_quote": "90 ÷ 320",
+            "reported_quote": "+28.1% （90 ÷ 320 ）",
+            "relation_quote": "+28.1% （90 ÷ 320 ）",
+            "meaning": "人员增长率计算"
+          }
+        ]
+      },
+      {
+        "quote": "裁员 0 人 / 核心队伍完整保留，为研发加注提供人的基础",
+        "location": "左上区域，span p4_t23与p4_t24",
+        "statement": "视觉检查：p4_t23（'裁员 0 人'）bbox为[29.25,77.88,152.76,117.0]，p4_t24（'核心队伍完整保留，为研发加注提供人的基础'）bbox为[29.25,115.86,209.43,128.91]，两框在y方向有微小重叠（29.25-152.76 vs 29.25-209.43在x方向，115.86-117.0 vs 115.86-128.91在y方向）。局部放大图显示：'裁员 0 人'为大号红色字体，'核心队伍完整保留...'为较小的灰色字体位于其正下方，实际字形无遮挡，属于正常的上下层级排版关系，非叠印缺陷",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6376,
+    "total_tokens": 8713,
+    "completion_tokens": 2337,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 97.132,
+  "attempts": 1
+}

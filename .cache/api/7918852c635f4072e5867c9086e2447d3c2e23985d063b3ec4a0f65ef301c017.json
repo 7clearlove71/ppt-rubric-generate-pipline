@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "两个候选作品均判定为yes，且依据充分。A作品通过第2页总览、第3-6页分主题专页、第7页总结卡片的三层结构呈现三点初步感受；B作品通过第1页副标题、第2页'三条待验主线'、第7页三栏结构、第8页存疑清单关联、第9页开放议题的多层结构呈现。两者均完整保留'空心化''文化记忆断层''保护与开发错位'三个要点（允许等价措辞如'记忆断层''开发错位'），且均明确维持'初步感受/后续方向/待验证命题'的定性定位，未写成最终结论。判定标准一致，无实质冲突。B作品篇幅更长、结构更复杂，但这是对同一标准的超额满足而非标准漂移。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 28067,
+    "total_tokens": 28261,
+    "completion_tokens": 194,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 116.479,
+  "attempts": 1
+}

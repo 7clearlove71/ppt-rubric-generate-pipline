@@ -1,0 +1,392 @@
+{
+  "page": 6,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "执行48 小时路线图，36 小时技术复核前不抢跑结论",
+      "location": "页顶标题",
+      "statement": "本页主题为48小时执行路线图，明确提及36小时技术复核前不抢跑结论，与素材三声明草稿修改建议中的36小时复核未完前提存在呼应",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "预计还需要36小时才能出结论;在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "执行路线图总时长",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        },
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "技术复核",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "0—48 小时五阶段窗口",
+      "location": "左上副标题",
+      "statement": "将48小时划分为五个阶段：0-4小时、4-8小时、8-24小时、24-36小时、36-48小时",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "五阶段窗口总时长",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "覆盖部门：管理层、公关、技术、客服、电商、法务",
+      "location": "右上说明文字",
+      "statement": "列明六个覆盖部门，与素材三内部备注涉及部门及素材二客服、电商渠道信息存在对应",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "舆情监测那边出的负面话题摘要、这三天客服来电统计的要点、还有公关部连夜赶的声明草稿"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "0—4 小时 / 4 / 4—8 小时 / 4 / 8—24 小时 / 16 / 24—36 小时 / 12 / 36—48 小时 / 12",
+      "location": "左侧甘特图式时间条及右侧数字标注",
+      "statement": "各阶段时长标注为：0-4小时=4小时，4-8小时=4小时，8-24小时=16小时，24-36小时=12小时，36-48小时=12小时；各阶段时长之和为4+4+16+12+12=48小时，与总标题一致。注意8-24小时阶段标注数字为16，但实际时间跨度为16小时（24-8=16），数字正确；24-36小时标注为12（36-24=12），36-48小时标注为12（48-36=12）。但视觉呈现上，各阶段色块长度与标注数字的比例关系需结合图像判断：0-4小时和4-8小时均标注为4，色块长度应相等；8-24小时标注16，色块应最长；24-36和36-48均标注12，色块长度应相等且介于4与16之间。从图像观察，8-24小时的红色色块明显长于其他阶段，但24-36小时和36-48小时的深色色块长度相近，与12小时的标注一致。然而0-4小时和4-8小时的色块在图像中似乎共用同一视觉起点或存在重叠，需进一步确认。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "4",
+          "unit": "小时",
+          "subject": "0-4小时阶段时长",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        },
+        {
+          "value": "4",
+          "unit": "小时",
+          "subject": "4-8小时阶段时长",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        },
+        {
+          "value": "16",
+          "unit": "小时",
+          "subject": "8-24小时阶段时长",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        },
+        {
+          "value": "12",
+          "unit": "小时",
+          "subject": "24-36小时阶段时长",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        },
+        {
+          "value": "12",
+          "unit": "小时",
+          "subject": "36-48小时阶段时长",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "add",
+          "left": "4",
+          "right": "4",
+          "reported": "8",
+          "left_unit": "小时",
+          "right_unit": "小时",
+          "reported_unit": "小时",
+          "left_quote": "0—4 小时 / 4",
+          "right_quote": "4—8 小时 / 4",
+          "reported_quote": "0—4 小时 / 4 / 4—8 小时 / 4",
+          "relation_quote": "0—48 小时五阶段窗口",
+          "meaning": "前两阶段合计8小时"
+        }
+      ]
+    },
+    {
+      "quote": "0 / 12 / 24 / 36 / 48 / 小时",
+      "location": "底部X轴时间刻度",
+      "statement": "横轴刻度从0到48小时，间隔12小时标注，单位标注为\"小时\"，位于最右侧。注意\"小时\"标签与48数字之间有一定间距，但未出现遮挡。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "0",
+          "unit": "小时",
+          "subject": "时间轴起点",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        },
+        {
+          "value": "12",
+          "unit": "小时",
+          "subject": "时间轴刻度",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        },
+        {
+          "value": "24",
+          "unit": "小时",
+          "subject": "时间轴刻度",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        },
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "时间轴刻度",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        },
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "时间轴终点",
+          "denominator": "不适用",
+          "time_origin": "事件发生后"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "管理层确认二级响应，指定总负责人，成立六部门响应小组",
+      "location": "0-4小时阶段内容卡片",
+      "statement": "第一阶段动作：确认二级响应、指定总负责人、成立六部门小组。此处出现\"二级响应\"级别判定，但素材中未明确提及\"二级响应\"这一分级命名，属于作品新增的分级命名。需关注是否属于unsupported_assertion或合理预案设计。从上下文看，这是响应机制设计的一部分，可识别为建议/预案。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制也得有"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "批准并发布事实边界内声明，客服统一口径，建立舆情与退单看板",
+      "location": "4-8小时阶段内容卡片",
+      "statement": "第二阶段动作：发布事实边界内声明、客服统一口径、建立看板。其中\"事实边界内声明\"与素材三\"把话说得这么满\"的修改建议存在呼应，体现不抢跑结论的原则。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "不发布过满结论",
+      "location": "4-8小时阶段底部提示",
+      "statement": "明确提示不发布过满结论，与素材三声明草稿修改建议直接对应。但素材三还提及\"追究法律责任\"措辞风险（店大欺客、激化对立），本页未在可见区域明确出现该具体指向的修改建议。",
+      "kind": "fact",
+      "failure_mode": "statement_revision_missing",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "另外\"追究法律责任\"这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立,这两点务必在修改建议里体现出来,不是随便改改措辞就行"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "持续监测转发、负面情绪、来电、退单；技术集中复核，准备媒体问询口径",
+      "location": "8-24小时阶段内容卡片",
+      "statement": "第三阶段动作：监测多项指标、技术复核、准备媒体口径。其中\"来电\"\"退单\"与素材二客服来电、电商退单数据对应，\"负面情绪\"\"转发\"与素材一舆情监测对应。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "近三天相关来电大概40通,诉求集中在退货退款(约60%)和要官方说明(约35%)...电商渠道的退单量也比平时多了约15%"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "视频发布后24小时内转发破万,评论区负面情绪占比约72%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "技术复核进入结论窗口；按发现/未发现问题分支准备处理方案",
+      "location": "24-36小时阶段内容卡片",
+      "statement": "第四阶段动作：技术复核结论窗口、分支准备方案。明确\"复核结论前不定性\"，与36小时复核时间线对应。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "公布复核进展或最终说明，处理高优先级客诉与退单，复盘传播与业务恢复",
+      "location": "36-48小时阶段内容卡片",
+      "statement": "第五阶段动作：公布进展/说明、处理客诉退单、复盘恢复。注意\"最终说明\"可能隐含确定性结论，但结合前文\"复核结论前不定性\"，此处应理解为有条件地公布。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "有问题立即升级，无问题避免攻击性表述",
+      "location": "36-48小时阶段底部提示",
+      "statement": "提示避免攻击性表述，与素材三\"追究法律责任\"措辞风险存在弱对应，但未明确指向\"店大欺客、激化对立\"的具体风险表述，也未呈现草稿原文作为修改对象。",
+      "kind": "inference",
+      "failure_mode": "statement_revision_missing",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "另外\"追究法律责任\"这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立,这两点务必在修改建议里体现出来,不是随便改改措辞就行"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "来源：用户核心材料；数据有限，基于用户素材。",
+      "location": "页底左下角来源标注",
+      "statement": "注明数据来源为用户核心材料，承认数据有限。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "text_overlap_candidates中多组候选对的intersection fraction约0.17，且local enlarged views显示实际为上下相邻行的正常排版衔接，非真实字形叠印遮挡",
+      "location": "多个候选对经放大图核查",
+      "statement": "经核查local enlarged views，p6_overlap_dd6f57151a（管理层确认.../负责人...）、p6_overlap_9faf525fe8（客服统一.../单看板）、p6_overlap_038f9aadd9（电、退单.../备媒体...）、p6_overlap_fa12cacfc0（现/未.../方案）、p6_overlap_59b6822702（理高优先.../传播与...）等候选对，实际为行间距正常的上下相邻文本，无真实笔画遮挡。bbox相交源于渲染行框的微小重叠，非可读性问题。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p6_t12与p6_t13均为\"4\"，intersection fraction 0.1039；p6_t15与p6_t16均为\"12\"，intersection fraction 0.1039",
+      "location": "甘特图数字标注区域",
+      "statement": "两个\"4\"字和两个\"12\"字的bbox存在微小相交，从图像观察，这是同一数值在不同行重复标注（0-4小时=4，4-8小时=4；24-36小时=12，36-48小时=12），实际为垂直方向相邻排列，无真实叠印遮挡。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p6_t2与p6_t3（0-4小时/4-8小时）、p6_t3与p6_t4（4-8小时/8-24小时）等时间标签intersection fraction仅0.027",
+      "location": "左侧时间标签区域",
+      "statement": "时间标签行框存在微小相交，实际为正常行距排版，无遮挡。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页为\"分级响应机制\"板块，但标题表述为\"执行48小时路线图\"，内容以时间阶段为主线，而非传统的等级（如一级/二级/三级）触发条件设计",
+      "location": "整体结构判断",
+      "statement": "用户要求\"分级响应机制\"，本页实际呈现为\"时间分阶段响应路线图\"，虽有\"二级响应\"字样，但整体机制以时间窗口为主线，未明确区分事态等级（如轻度质疑/中度发酵/重度危机）及各级触发信号。需关注是否满足response_mechanism_vague。从可见内容看，各阶段有具体动作，但触发条件以时间到达为主，而非事态指标（如转发量、负面情绪占比、权威媒体跟进等）。",
+      "kind": "inference",
+      "failure_mode": "response_mechanism_vague",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制也得有"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制只有口号式表态，未区分事态等级，或各级缺少触发信号与对应动作"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "48小时关键窗口判断在本页标题出现，但未明确出现\"质疑升级为抵制\"的紧迫性表述",
+      "location": "标题及内容整体",
+      "statement": "标题\"执行48小时路线图，36小时技术复核前不抢跑结论\"体现了48小时窗口和36小时复核节点，但未明确素材一所述\"48小时内如果不做有效回应,可能从质疑升级为抵制\"这一升级判断。需关注time_window_missing。",
+      "kind": "inference",
+      "failure_mode": "time_window_missing",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "关键窗口",
+          "denominator": "不适用",
+          "time_origin": "视频发布后"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "本页未出现素材二客服来电40通、退货退款约60%、官方说明约35%、电商退单增约15%的具体数值",
+      "location": "8-24小时阶段内容卡片",
+      "statement": "8-24小时阶段提及\"来电、退单\"但未给出具体数值，未出现素材二的约40通、约60%、约35%、约15%等数据。这些数值可能在其他页呈现，本页作为分级响应机制板块未纳入影响评估数据。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "近三天相关来电大概40通,诉求集中在退货退款(约60%)和要官方说明(约35%)...电商渠道的退单量也比平时多了约15%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页未出现素材一负面情绪约72%、两个焦点话题（是否虚标/售后甩锅）、3个垂类KOL转发等具体舆情数据",
+      "location": "8-24小时阶段内容卡片",
+      "statement": "8-24小时阶段提及\"负面情绪、转发\"但未给出具体数值或焦点话题，未出现素材一的约72%、是否虚标、售后甩锅、3个KOL等。这些数值可能在其他页呈现。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "评论区负面情绪占比约72%,话题主要集中在\"是否虚标\"和\"售后甩锅\"这两个点上...已有3个垂类KOL开始转发"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

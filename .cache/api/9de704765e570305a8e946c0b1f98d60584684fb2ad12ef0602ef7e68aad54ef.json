@@ -1,0 +1,83 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R16"
+        ],
+        "reason": "judge_prompt中标签名称拼写错误：\"chart_label3label;int'integrity\"应为\"chart_label_integrity\"，导致缺陷id与prompt无法匹配，评审边界失效。",
+        "fix": "将R16的judge_prompt末尾修正为\"chart_label_integrity：图表分类/轴/图例/单位标签缺失、NaN等残留、标签本身不可读。相同标签缺陷不再计入正文可读性或视觉层级。\""
+      },
+      {
+        "severity": "error",
+        "item_ids": [
+          "R06",
+          "R11"
+        ],
+        "reason": "R06与R11对Q06的'存在问题呼应关系'存在重复划分：R06检查'对应关系/可追溯'，R11检查'呼应关系可辨识'，二者实质重叠，同一缺陷'问题与资金/满意度无对应'会被双扣。",
+        "fix": "合并为单一条目，或明确切分：R06负责'问题是否涉及资金/满意度'的存在性对应，R11负责'问题表述是否具体不虚'，删除'呼应关系'重复表述。"
+      },
+      {
+        "severity": "error",
+        "item_ids": [
+          "R03",
+          "R10"
+        ],
+        "reason": "R03检查'空泛套话替代全部实质内容'，R10检查'文不对题或内容混装'，但R03的exclusions说'不扣数据虚构'，未排除'内容混装'；若某板块用其他板块内容填充，可同时触发两缺陷，存在重复。",
+        "fix": "R03明确exclusions增加'不扣内容混装或文不对题'，将内容归属问题完全划归R10。"
+      },
+      {
+        "severity": "warning",
+        "item_ids": [
+          "R05"
+        ],
+        "reason": "R05要求'相同列名/轴名须确保分母与计算方式一致'，但用户仅要求'前后统一口径'，未限定到图表列名层级；该细化属于合理扩展，非硬性错误。",
+        "fix": "保留当前表述，无需修改。"
+      }
+    ],
+    "coverage": {
+      "Q01": [
+        "R01",
+        "R08"
+      ],
+      "Q02": [
+        "R03",
+        "R13"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R10"
+      ],
+      "Q05": [
+        "R05"
+      ],
+      "Q06": [
+        "R06",
+        "R09",
+        "R11"
+      ],
+      "Q07": [
+        "R12"
+      ]
+    },
+    "summary": "存在1处拼写错误导致缺陷标识失效，2处重复扣分风险需消除边界重叠，1处条目间exclusions不完善。修正后可批准。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5616,
+    "total_tokens": 6126,
+    "completion_tokens": 510,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 14.319,
+  "attempts": 1
+}

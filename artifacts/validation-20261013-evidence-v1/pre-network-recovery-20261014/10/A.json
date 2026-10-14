@@ -1,0 +1,199 @@
+{
+  "case_id": "10",
+  "candidate_id": "A",
+  "candidate_hash": "242a9d3ba2a2d72d1c6d19e4dbd74586ec20fe5aa3bf002834961a0722d25250",
+  "rubric_hash": "c557630520bb69cf2165559788100be85b38e1d75db8ffa87d82f30fb444c0fb",
+  "judge_model": "kimi-k2.6",
+  "config_hash": "5420d5d1442c66e609cdfada4acac64af643aea4a4c7ddeb3a261183a78f857d",
+  "judge_validator_version": 13,
+  "evaluation_protocol": "evidence_v1",
+  "ownership_conflicts": [],
+  "consistency_summary": {
+    "skipped": 16,
+    "unavailable": 0,
+    "unresolved": 0,
+    "passed": 0,
+    "status": "incomplete"
+  },
+  "judge_prompt_fingerprint": "65c66a384549c1f030b1a7975252f08aa9110355bd1f1667c6cb515e0ac2cfe2",
+  "summary": {
+    "status": "incomplete",
+    "score": null,
+    "score_lower": 0,
+    "score_upper": 100.0,
+    "unresolved_weight": 100.0,
+    "dimensions": {
+      "correctness": {
+        "earned": 0,
+        "possible": 25.0,
+        "unresolved": 25.0
+      },
+      "fulfillment": {
+        "earned": 0,
+        "possible": 30.0,
+        "unresolved": 30.0
+      },
+      "integrity": {
+        "earned": 0,
+        "possible": 15.0,
+        "unresolved": 15.0
+      },
+      "narrative": {
+        "earned": 0,
+        "possible": 15.0,
+        "unresolved": 15.0
+      },
+      "visual": {
+        "earned": 0,
+        "possible": 15.0,
+        "unresolved": 15.0
+      }
+    }
+  },
+  "verdicts": [
+    {
+      "rubric_id": "R01",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R02",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R03",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R04",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R05",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R06",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R07",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R08",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R09",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R10",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R11",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R12",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R13",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R14",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R15",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    },
+    {
+      "rubric_id": "R16",
+      "answer": "unknown",
+      "pages": [],
+      "evidence": "Evidence collection incomplete",
+      "evidence_ids": [],
+      "failure_ids": [],
+      "resolutions": []
+    }
+  ]
+}

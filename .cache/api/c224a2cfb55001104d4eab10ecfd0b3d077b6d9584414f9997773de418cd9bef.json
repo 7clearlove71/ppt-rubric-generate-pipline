@@ -1,0 +1,56 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R01"
+      ],
+      "Q02": [
+        "R02",
+        "R12"
+      ],
+      "Q03": [
+        "R05"
+      ],
+      "Q04": [
+        "R06"
+      ],
+      "Q05": [
+        "R07",
+        "R09"
+      ],
+      "Q06": [
+        "R10"
+      ],
+      "Q07": [
+        "R11"
+      ],
+      "Q08": [
+        "R03",
+        "R08",
+        "R12"
+      ],
+      "Q09": [
+        "R04",
+        "R08",
+        "R12"
+      ]
+    },
+    "summary": "rubric质检通过。14条评分项完整覆盖9项需求，无重复计分，无新增无来源硬条件，各条可独立评判。关键事实（R05-R07）由correctness维度独立检查存在且准确，fulfillment维度不重复检查；路线图与计划允许整合呈现（R12），符合协议要求。integrity维度合理约束虚构边界（R08-R09），visual维度仅设通用质量判据（R13-R14），未强制特定实现。evidence_mode使用合理，R03要求both用于确认路径结构真实可见。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 3306,
+    "total_tokens": 3511,
+    "completion_tokens": 205,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 6.204,
+  "attempts": 1
+}

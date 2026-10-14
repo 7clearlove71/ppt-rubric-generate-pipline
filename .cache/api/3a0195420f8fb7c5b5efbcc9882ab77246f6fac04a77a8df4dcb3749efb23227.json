@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "标题使用'改造任务完成情况''资金使用情况''居民满意度''存在问题''下一步计划'等规范公文表述（页2、3、4、5、6、7）。正文采用'推进''落实''拨付''整改''挂图作战''竣工验收''压实责任''分渠道月度通报'等公文用语（页3、4、6、7）。全文未出现'搞定''老百姓都挺高兴''钱不太够花'等口语化表达，语体端正。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 28342,
+    "total_tokens": 28470,
+    "completion_tokens": 128,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.138,
+  "attempts": 1
+}

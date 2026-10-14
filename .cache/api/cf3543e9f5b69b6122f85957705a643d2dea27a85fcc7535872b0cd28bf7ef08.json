@@ -1,0 +1,57 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "evidence": "经逐页核查全部13张幻灯片，五个既定纲目均作为独立章节或明确板块存在：\n1. 改造任务完成情况：P1底部纲目栏、P2右侧第一纲目（P03-P04）、P3-P4页面标题\"一、改造任务完成情况\"；\n2. 资金使用情况：P1底部纲目栏、P2右侧第二纲目（P05-P06）、P5-P6页面标题\"二、资金使用情况\"；\n3. 居民满意度：P1底部纲目栏、P2右侧第三纲目（P07-P09）、P7-P9页面标题\"三、居民满意度\"；\n4. 存在问题：P1底部纲目栏、P2右侧第四纲目（P10-P11）、P10-P11页面标题\"四、存在问题\"；\n5. 下一步计划：P1底部纲目栏、P2右侧第五纲目（P12-P13）、P12-P13页面标题\"五、下一步计划\"。\n五个板块无一缺失，均使用公文式序号\"一、\"\"二、\"等规范表述，与需求要求的五个纲目完全一致。",
+    "evidence_ids": [
+      "p1_e6",
+      "p2_e7",
+      "p2_e10",
+      "p2_e13",
+      "p2_e16",
+      "p2_e19",
+      "p3_e2",
+      "p4_e2",
+      "p5_e10",
+      "p6_e2",
+      "p7_e1",
+      "p8_e2",
+      "p9_e2",
+      "p10_e2",
+      "p11_e1",
+      "p12_e2",
+      "p13_e1"
+    ],
+    "resolutions": [],
+    "additional_observations": [],
+    "inspection_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 87644,
+    "total_tokens": 88032,
+    "completion_tokens": 388,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 129.59,
+  "attempts": 1
+}

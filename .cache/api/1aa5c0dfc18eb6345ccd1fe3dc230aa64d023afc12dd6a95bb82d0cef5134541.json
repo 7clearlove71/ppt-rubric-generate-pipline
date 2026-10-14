@@ -1,0 +1,100 @@
+{
+  "parsed": {
+    "page": 8,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "城镇老旧小区改造",
+        "location": "页面左侧竖排红色背景区域，白色文字",
+        "statement": "页面左侧竖排显示主题标题，由八个单字组成：城、镇、老、旧、小、区、改、造。文字为白色，位于深红色背景条上。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "以上汇报完毕，请评审组审阅。",
+        "location": "页面中上部偏右，黑色文字",
+        "statement": "结束语，明确指向评审组，符合公文汇报格式。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "给政府评审组看的"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "市住房和城乡建设局",
+        "location": "页面右侧中部，灰色文字",
+        "statement": "落款单位名称，未标明具体城市名称，使用通用表述'市住房和城乡建设局'。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "二〇二六年九月",
+        "location": "页面右侧中下部，灰色文字，位于落款单位下方",
+        "statement": "落款时间，使用中文数字'二〇二六年九月'。该时间节点为具体年份，但prompt未提供任何关于2026年的时间信息。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "落款时间",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "恳请评审组对汇报内容提出指导意见。",
+        "location": "页面左下部，灰色文字",
+        "statement": "补充敬语，再次指向评审组，语气符合公文规范。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "给政府评审组看的"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "页面整体布局：左侧约1/4为深红色竖条背景配白色主题文字，右侧约3/4为白色背景配黑色/灰色文字",
+        "location": "整页",
+        "statement": "视觉布局简洁，信息密度低，作为结尾页风格统一。无文字叠印、遮挡或裁切现象。所有文字清晰可辨。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5844,
+    "total_tokens": 6348,
+    "completion_tokens": 504,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 58.807,
+  "attempts": 1
+}

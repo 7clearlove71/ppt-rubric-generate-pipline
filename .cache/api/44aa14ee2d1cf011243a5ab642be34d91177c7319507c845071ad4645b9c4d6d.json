@@ -1,0 +1,47 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R01"
+        ],
+        "reason": "R01要求'具名负责人及其真实电话号码'，但来源仅要求'工位领取'说明，未要求具体人名电话。'不得使用占位'排斥了合理规划做法，且与R04允许占位矛盾。",
+        "fix": "将R01改为'工位领取说明包含领取流程、地点或对接方式等必要信息，允许通用描述或待补充标注'，与R04保持一致。"
+      }
+    ],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": [
+        "R06"
+      ]
+    },
+    "summary": "R01新增无来源的硬门槛（真实姓名电话、禁止占位），与R04冲突，构成无依据要求。其余条目覆盖完整、语义清晰、无重复计分，维度分配合理。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 1824,
+    "total_tokens": 2059,
+    "completion_tokens": 235,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 6.564,
+  "attempts": 1
+}

@@ -1,0 +1,269 @@
+{
+  "page": 1,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "走过寒冬，脱胎换骨",
+      "location": "页面中上部大标题",
+      "statement": "页面核心标题直接呈现老板致辞中的关键情感词汇'寒冬'与'脱胎换骨'，与数据板块形成同页并置",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "这一年我们走得不容易，年初行业寒冬……如今回头看正是那段日子让我们脱胎换骨"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "4.2 亿元 / 全年营收 / 同比增长 26%",
+      "location": "页面左下数据卡片",
+      "statement": "源文给定全年营收4.2亿元及同比增幅26%被完整呈现，数值与单位正确",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "全年营收4.2亿同比+26%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "4.2",
+          "unit": "亿元",
+          "subject": "全年营收",
+          "denominator": "不适用",
+          "time_origin": "全年"
+        },
+        {
+          "value": "26",
+          "unit": "%",
+          "subject": "同比增长",
+          "denominator": "上年全年营收",
+          "time_origin": "全年"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "14% / 研发投入占比 / 由 9% 提升，+5 个百分点（测算）",
+      "location": "页面中下数据卡片",
+      "statement": "源文给定研发投入占比从9%提到14%被完整呈现，并标注派生指标'+5个百分点'及'测算'说明",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "研发投入占比从9%提到14%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "14",
+          "unit": "%",
+          "subject": "研发投入占比",
+          "denominator": "营收",
+          "time_origin": "全年"
+        },
+        {
+          "value": "9",
+          "unit": "%",
+          "subject": "研发投入占比（基准）",
+          "denominator": "营收",
+          "time_origin": "上年"
+        },
+        {
+          "value": "5",
+          "unit": "个百分点",
+          "subject": "占比提升幅度",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "subtract",
+          "left": "14",
+          "right": "9",
+          "reported": "5",
+          "left_unit": "%",
+          "right_unit": "%",
+          "reported_unit": "个百分点",
+          "left_quote": "14 %",
+          "right_quote": "由 9% 提升",
+          "reported_quote": "+5 个百分点（测算）",
+          "relation_quote": "由 9% 提升，+5 个百分点（测算）",
+          "meaning": "研发投入占比百分点差"
+        }
+      ]
+    },
+    {
+      "quote": "410 人 / 团队规模 / 净增 90 人，裁员 0 人（测算）",
+      "location": "页面右下数据卡片",
+      "statement": "源文给定员工320涨到410人被呈现为410人当前值，并派生'净增90人'及'裁员0人'，均标注'测算'。'裁员0人'属于源文'没有裁员'的量化转述，但源文未给出320人基数，此处未在本页直接呈现320人",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "员工320涨到410人"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "咬牙没有裁员反而加大了研发投入"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "410",
+          "unit": "人",
+          "subject": "团队规模",
+          "denominator": "不适用",
+          "time_origin": "当前/年末"
+        },
+        {
+          "value": "90",
+          "unit": "人",
+          "subject": "净增人数",
+          "denominator": "不适用",
+          "time_origin": "全年"
+        },
+        {
+          "value": "0",
+          "unit": "人",
+          "subject": "裁员人数",
+          "denominator": "不适用",
+          "time_origin": "全年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "subtract",
+          "left": "410",
+          "right": "320",
+          "reported": "90",
+          "left_unit": "人",
+          "right_unit": "人",
+          "reported_unit": "人",
+          "left_quote": "410 人",
+          "right_quote": "员工320涨到410人",
+          "reported_quote": "净增 90 人",
+          "relation_quote": "净增 90 人，裁员 0 人（测算）",
+          "meaning": "团队规模净增量，但320人基数未在本页直接标出"
+        }
+      ]
+    },
+    {
+      "quote": "这一年我们走得不容易（老板致辞原话）",
+      "location": "标题下方小字",
+      "statement": "直接引用老板致辞原话并标注来源，建立叙事与数据的引用关系",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "这一年我们走得不容易"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本汇报全部数据来自公司全年经营数据、老板年会致辞、派生指标测算口径，未引用任何外部来源，派生数字均标注\"测算\"",
+      "location": "页面中部说明文字",
+      "statement": "作品主动声明数据来源边界，派生指标均标注'测算'，未引入外部来源",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "数据那边，全年营收4.2亿同比+26%，研发投入占比从9%提到14%，新增专利18项，员工320涨到410人，客户续约率91%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "新增专利18项、客户续约率91%",
+      "location": "本页可见内容检查",
+      "statement": "源文给定的五项关键数据中，本页仅呈现了4.2亿元、+26%、9%→14%、410人四项（含派生指标），'新增专利18项'与'客户续约率91%'两项关键数据在本页未出现",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "新增专利18项，员工320涨到410人，客户续约率91%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "行业寒冬、不裁员反加大研发投入、现金只够发两个月工资、无人退缩",
+      "location": "本页可见内容检查",
+      "statement": "老板讲话核心要素中，'行业寒冬''不裁员反加大研发投入'在标题/数据卡片中间接体现，但'最难那个月账上现金只够发两个月工资''团队没有一个人退缩'的具体叙事在本页未直接呈现",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年初行业寒冬，咬牙没有裁员反而加大了研发投入，最难那个月账上现金只够发两个月工资，但团队没有一个人退缩"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "4.2 / 全年营收 区域放大图",
+      "location": "左下数据卡片局部放大",
+      "statement": "经放大核查，'4.2'大数字与下方'全年营收'标签为上下相邻排版，无真实字形笔画重叠，数字底部与标签顶部有明确间距，不构成遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "14 / 研发投入占比 区域放大图",
+      "location": "中下数据卡片局部放大",
+      "statement": "经放大核查，'14'大数字与下方'研发投入占比'标签为上下相邻排版，无真实字形笔画重叠，数字底部与标签顶部有明确间距，不构成遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "410 / 团队规模 区域放大图",
+      "location": "右下数据卡片局部放大",
+      "statement": "经放大核查，'410'大数字与下方'团队规模'标签为上下相邻排版，无真实字形笔画重叠，数字底部与标签顶部有明确间距，不构成遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "顿号相邻文字区域系列放大图",
+      "location": "中部说明文字局部放大",
+      "statement": "经系列放大核查，'公司全年经营数据、''老板年会致辞、''派生指标测算口径，'等处的顿号/逗号与相邻文字为正常横向排版衔接，矩形边界微相交但字形笔画无实际叠印，不构成遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体为白底黑字红强调色的简洁设计，大标题+三卡片数据+来源说明+页脚信息的层级结构",
+      "location": "页面整体视觉",
+      "statement": "视觉风格趋向正式汇报，标题、核心数据、说明文字之间通过字号/颜色形成可辨识的层级区分，无明显的风格杂乱或装饰干扰",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

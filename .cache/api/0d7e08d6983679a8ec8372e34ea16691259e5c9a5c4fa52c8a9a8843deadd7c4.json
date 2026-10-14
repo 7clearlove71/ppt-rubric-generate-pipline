@@ -1,0 +1,21 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "经检验，rubric无重复计分或越权要求。R01-R03分别对应独立需求模块，R04为通用诚信约束，R05-R06为合理质量边界，均未引入超出用户要求的结构阈值或标记方式。无实质反例可构造。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 1589,
+    "total_tokens": 1670,
+    "completion_tokens": 81,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 33.321,
+  "attempts": 2
+}

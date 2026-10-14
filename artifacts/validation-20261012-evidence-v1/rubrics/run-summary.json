@@ -1,0 +1,35 @@
+{
+  "01": {
+    "status": "error",
+    "error_type": "ProviderError",
+    "message": "Call failed after 3 attempts (ValueError)"
+  },
+  "02": {
+    "status": "quality_failed",
+    "items": 0
+  },
+  "03": {
+    "status": "error",
+    "error_type": "ProviderError",
+    "message": "Call failed after 3 attempts (ValueError)"
+  },
+  "05": {
+    "status": "error",
+    "error_type": "ProviderError",
+    "message": "Call failed after 3 attempts (ValueError)"
+  },
+  "06": {
+    "status": "quality_failed",
+    "items": 0
+  },
+  "09": {
+    "status": "error",
+    "error_type": "ProviderError",
+    "message": "Call failed after 3 attempts (ValueError)"
+  },
+  "10": {
+    "status": "error",
+    "error_type": "ProviderError",
+    "message": "Call failed after 3 attempts (JSONDecodeError)"
+  }
+}

@@ -1,0 +1,637 @@
+{
+  "parsed": {
+    "page": 7,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "48 小时行动清单落到部门与时点，请管理层当场拍板四项决策",
+        "location": "页面上部标题区域",
+        "statement": "页面标题明确48小时行动清单，要求管理层当场拍板四项决策D1-D4",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "行动窗口",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "0–6 小时 / 6–24 小时 / 24–36 小时 / 36–48 小时",
+        "location": "页面左侧时间轴区域",
+        "statement": "将48小时划分为四个时间段：0-6小时、6-24小时、24-36小时、36-48小时，每个时段标注任务数量与主题",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "A1 公关部 改写声明第一段，删净3 处“说满”表述",
+        "location": "0-6小时时段第一行",
+        "statement": "行动A1指定公关部改写声明第一段，删除3处'说满'表述，对应素材中'内部备注里技术复核还没做完'和'把话说得这么满'的风险",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "内部备注里技术复核还没做完，预计还需要36小时才能出结论;在这个节骨眼上把话说得这么满，万一复核发现确有问题会非常被动"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3",
+            "unit": "处",
+            "subject": "说满表述",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "A2 法务部 强硬措辞不对外，法务手段转内部保留",
+        "location": "0-6小时时段第二行",
+        "statement": "行动A2指定法务部将强硬措辞转为内部保留，不对外发布，对应素材中'追究法律责任'这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "另外“追究法律责任”这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立，这两点务必在修改建议里体现出来"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "A3 管理层 当场拍板D1–D4 ，勾选“同意· 不同意”",
+        "location": "0-6小时时段第三行",
+        "statement": "行动A3要求管理层当场对D1-D4四项决策进行勾选同意或不同意，体现决策机制",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "A1–A3 散会即启动，否则A4 发布时点逼近48 小时窗口临界点",
+        "location": "0-6小时时段右侧提示",
+        "statement": "提示A1-A3需散会即启动，否则A4发布时点将逼近48小时窗口临界点，体现紧迫性",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应，可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "窗口临界点",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "A4 公关部 48 小时窗口内发布第一段态度声明",
+        "location": "6-24小时时段第一行",
+        "statement": "行动A4要求公关部在48小时窗口内发布第一段态度声明，体现时间窗口约束",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应，可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "窗口期",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "A5 客服部 话术上线，约40 通来电按约60% ／约35% 分流",
+        "location": "6-24小时时段第二行",
+        "statement": "行动A5指定客服部上线话术，按约40通来电的约60%退货退款和约35%要官方说明进行分流处理，保留了素材中的约数限定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "近三天相关来电大概40通,诉求集中在退货退款(约60%)和要官方说明(约35%)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "约40",
+            "unit": "通",
+            "subject": "来电数量",
+            "denominator": "不适用",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "约60",
+            "unit": "%",
+            "subject": "退货退款诉求占比",
+            "denominator": "来电总量",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "约35",
+            "unit": "%",
+            "subject": "要官方说明诉求占比",
+            "denominator": "来电总量",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "A6 电商部 退单量看板上线，基线较平时多约15%",
+        "location": "6-24小时时段第三行",
+        "statement": "行动A6指定电商部上线退单量看板，基线较平时多约15%，保留了素材中的约数限定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "约15",
+            "unit": "%",
+            "subject": "退单量增长",
+            "denominator": "平时基线",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "A7 管理层 定发言人归口（建议值，待管理层确认）",
+        "location": "6-24小时时段第四行",
+        "statement": "行动A7建议管理层确定发言人归口，标注为建议值待确认，未冒充既定事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "A8 技术部 技术复核收口，预计还需36 小时",
+        "location": "24-36小时时段第一行",
+        "statement": "行动A8指定技术部完成技术复核收口，预计还需36小时，与素材中技术复核预计还需36小时一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "内部备注里技术复核还没做完，预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核剩余时间",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "关键节点一 · 技术复核预计还需36 小时",
+        "location": "24-36小时时段右侧红色标注",
+        "statement": "关键节点一标注技术复核预计还需36小时，与A8和素材一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核剩余时间",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "A9 公关部 备好第二段两版口径，含致歉整改版",
+        "location": "24-36小时时段第二行",
+        "statement": "行动A9要求公关部备好第二段两版口径，包含致歉整改版，为复核结论做准备",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "A10 法务部 两版口径发布前合规预审（建议值，待管理层确认）",
+        "location": "24-36小时时段第三行",
+        "statement": "行动A10建议法务部进行两版口径发布前合规预审，标注为建议值待确认",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "A11 公关部+ 管理层 结论一出即发布第二段结论声明",
+        "location": "36-48小时时段第一行",
+        "statement": "行动A11指定公关部和管理层在技术复核结论一出即发布第二段结论声明，体现两段式声明策略",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "在这个节骨眼上把话说得这么满，万一复核发现确有问题会非常被动"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "A12 公关部 3 个垂类KOL 一对一沟通，监测权威媒体跟进",
+        "location": "36-48小时时段第二行",
+        "statement": "行动A12指定公关部对3个垂类KOL进行一对一沟通并监测权威媒体跟进，与素材中'已有3个垂类KOL开始转发'和'还没有权威媒体跟进'对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "还没有权威媒体跟进，但已有3个垂类KOL开始转发"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3",
+            "unit": "个",
+            "subject": "垂类KOL",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "A13 管理层+ 公关部 按P6 判定是否由L1 升至L2",
+        "location": "36-48小时时段第三行",
+        "statement": "行动A13指定管理层和公关部按P6判定是否由L1升至L2，体现分级响应机制",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "关键节点二 · 48 小时窗口临界点，或从质疑升级为抵制",
+        "location": "36-48小时时段右侧红色标注",
+        "statement": "关键节点二标注48小时窗口临界点，或从质疑升级为抵制，与素材中48小时窗口判断完全一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "这个时间窗口很关键，48小时内如果不做有效回应，可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "窗口临界点",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "D1 事项 采用两段式，不等复核还需36 小时先发第一段态度声明 / 建议 同意；公关部先发第一段，只表态度不下事实结论 / 后果 窗口失守：48 小时内未有效回应，或从质疑升级为抵制",
+        "location": "页面下部左侧第一个决策卡",
+        "statement": "决策D1建议采用两段式声明，不等36小时复核先发第一段态度声明，明确后果为48小时窗口失守可能从质疑升级为抵制，保留了'约'数限定",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "预计还需要36小时才能出结论"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应，可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "复核所需时间",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          },
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "窗口期",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "D2 事项 删除草稿3 处“说满”与强硬表述 / 建议 同意删除；措辞不对外，法务手段转内部保留 / 后果 复核若有问题极度被动；负面情绪约72% 下易被指店大欺客",
+        "location": "页面下部左侧第二个决策卡",
+        "statement": "决策D2建议删除3处'说满'与强硬表述，明确后果为复核有问题将极度被动，负面情绪约72%下易被指店大欺客，保留了约数限定",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "评论区负面情绪占比约72%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "“追究法律责任”这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "约72",
+            "unit": "%",
+            "subject": "负面情绪占比",
+            "denominator": "评论总量",
+            "time_origin": "视频发布后24小时内"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "D3 事项 授权开放退货退款通道并定统一答复时限 / 建议 同意；承接约60% 诉求，对约35% 要说明者定时限 / 后果 约40 通来电延续引用视频，退单多约15% 缺口扩大",
+        "location": "页面下部右侧第二个决策卡",
+        "statement": "决策D3建议授权开放退货退款通道，承接约60%诉求，对约35%要说明者定时限，后果为约40通来电延续引用视频、退单多约15%缺口扩大，全部保留约数限定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "近三天相关来电大概40通,诉求集中在退货退款(约60%)和要官方说明(约35%)"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "有部分用户是直接引用了那条视频的说法打进来的"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "约60",
+            "unit": "%",
+            "subject": "退货退款诉求占比",
+            "denominator": "来电总量",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "约35",
+            "unit": "%",
+            "subject": "要官方说明诉求占比",
+            "denominator": "来电总量",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "约40",
+            "unit": "通",
+            "subject": "来电数量",
+            "denominator": "不适用",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "约15",
+            "unit": "%",
+            "subject": "退单量增长",
+            "denominator": "平时基线",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "D4 事项 预置L2 ／L3 升级授权，明确发言人归口 / 建议 同意；L2 管理层出面，L3 致歉整改口径归口公关部 / 后果 升级需再上会致二次延误；权威媒体或3 个KOL 扩散即落后",
+        "location": "页面下部右侧第一个决策卡",
+        "statement": "决策D4建议预置L2/L3升级授权，明确发言人归口，L2管理层出面，L3致歉整改口径归口公关部，后果为升级需再上会致二次延误，权威媒体或3个KOL扩散即落后",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "还没有权威媒体跟进，但已有3个垂类KOL开始转发，有进一步发酵的苗头"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3",
+            "unit": "个",
+            "subject": "垂类KOL",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "同意□ 不同意□",
+        "location": "每个决策卡右上角",
+        "statement": "四个决策卡均设有'同意□ 不同意□'勾选框，供管理层当场勾选决策",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：舆情摘要 / 客服来电 / 声明草稿（3 个内部来源）；时间块划分、部门分工、答复时限与发言人归口均为建议值（待管理层确认），素材未给出的钟点与日期一律不补造",
+        "location": "页面底部注释",
+        "statement": "底部注释明确数据来源为三个内部来源，并声明时间块划分、部门分工、答复时限与发言人归口均为建议值待管理层确认，素材未给出的钟点与日期一律不补造，符合不编造素材外信息的要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "态度声明 / 24–36 小时",
+        "location": "A4卡片下方与24-36小时时段标签区域",
+        "statement": "视觉现象：'态度声明'文字区域与'24-36 小时'时段标签存在bbox相交（intersection [22.48, 138.97, 57.94, 146.14]），但放大图显示为相邻排版而非真实字形叠印，'态度声明'位于A4卡片内，'24-36 小时'为下一时段标题，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "小时 / 36–48 小时",
+        "location": "A8卡片下方与36-48小时时段标签区域",
+        "statement": "视觉现象：'小时'文字区域与'36-48 小时'时段标签存在bbox相交（intersection [22.48, 174.97, 39.92, 182.14]），但放大图显示为相邻排版而非真实字形叠印，'小时'为A8卡片内文字，'36-48 小时'为下一时段标题，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "“说满”表述 / 6–24 小时",
+        "location": "A1卡片下方与6-24小时时段标签区域",
+        "statement": "视觉现象：'“说满”表述'文字区域与'6-24 小时'时段标签存在bbox相交（intersection [22.48, 102.97, 68.07, 110.14]），但放大图显示为相邻排版而非真实字形叠印，'“说满”表述'位于A1卡片内，'6-24 小时'为下一时段标题，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "3 条· 态度与流程 / 公关部",
+        "location": "A1卡片内标签与部门名称区域",
+        "statement": "视觉现象：'3 条· 态度与流程'与'公关部'存在bbox相交（intersection [35.89, 86.26, 62.91, 90.29]），但放大图显示为正常行内排版，'3 条· 态度与流程'为灰色小字标签，'公关部'为红色部门名称，位于同一卡片标题行，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "4 条· 发声与承接 / 公关部",
+        "location": "A4卡片内标签与部门名称区域",
+        "statement": "视觉现象：'4 条· 发声与承接'与'公关部'存在bbox相交（intersection [37.42, 122.26, 64.44, 126.29]），但放大图显示为正常行内排版，'4 条· 发声与承接'为灰色小字标签，'公关部'为红色部门名称，位于同一卡片标题行，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "3 条· 复核收口 / 技术部",
+        "location": "A8卡片内标签与部门名称区域",
+        "statement": "视觉现象：'3 条· 复核收口'与'技术部'存在bbox相交（intersection [37.36, 158.26, 64.39, 162.29]），但放大图显示为正常行内排版，'3 条· 复核收口'为灰色小字标签，'技术部'为红色部门名称，位于同一卡片标题行，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "3 条· 结论落地 / A11",
+        "location": "A11卡片内标签与编号区域",
+        "statement": "视觉现象：'3 条· 结论落地'与'A11'存在bbox相交（intersection [22.48, 194.26, 35.76, 198.29]），但放大图显示为正常行内排版，'3 条· 结论落地'为灰色小字标签，'A11'为红色编号，位于同一卡片标题行，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "4 条· 发声与承接 / A4",
+        "location": "A4卡片内标签与编号区域",
+        "statement": "视觉现象：'4 条· 发声与承接'与'A4'存在bbox相交（intersection [22.48, 122.26, 33.24, 126.29]），但放大图显示为正常行内排版，'4 条· 发声与承接'为灰色小字标签，'A4'为红色编号，位于同一卡片标题行，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "3 条· 复核收口 / A8",
+        "location": "A8卡片内标签与编号区域",
+        "statement": "视觉现象：'3 条· 复核收口'与'A8'存在bbox相交（intersection [22.48, 158.26, 33.18, 162.29]），但放大图显示为正常行内排版，'3 条· 复核收口'为灰色小字标签，'A8'为红色编号，位于同一卡片标题行，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "3 条· 态度与流程 / A1",
+        "location": "A1卡片内标签与编号区域",
+        "statement": "视觉现象：'3 条· 态度与流程'与'A1'存在bbox相交（intersection [22.48, 86.26, 31.7, 90.29]），但放大图显示为正常行内排版，'3 条· 态度与流程'为灰色小字标签，'A1'为红色编号，位于同一卡片标题行，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "3 条· 结论落地 / 公关部+ 管理层",
+        "location": "A11卡片内标签与部门名称区域",
+        "statement": "视觉现象：'3 条· 结论落地'与'公关部+ 管理层'存在bbox相交（intersection [39.94, 194.26, 69.68, 198.29]），但放大图显示为正常行内排版，'3 条· 结论落地'为灰色小字标签，'公关部+ 管理层'为红色部门名称，位于同一卡片标题行，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "后果 / 或从质疑升级为抵制",
+        "location": "D1决策卡后果区域",
+        "statement": "视觉现象：'后果'与'或从质疑升级为抵制'存在bbox相交（intersection [23.61, 318.84, 41.62, 321.07]），但放大图显示为正常段落排版，'后果'为红色小标题，'或从质疑升级为抵制'为正文，位于同一卡片内上下相邻，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "窗口失守：48 小时 / 内未有效回应， / 或从质疑升级为抵制",
+        "location": "D1决策卡后果正文区域",
+        "statement": "视觉现象：D1决策卡后果区域文字'窗口失守：48 小时内未有效回应，或从质疑升级为抵制'存在多处bbox相交（'窗口失守：'与'或从质疑升级为抵制'、'48 小时'与'或从质疑升级为抵制'等），但放大图显示为正常行内与换行排版，'48 小时'为红色强调文字，整体为连贯语句，无实际遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 25591,
+    "total_tokens": 32171,
+    "completion_tokens": 6580,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 305.721,
+  "attempts": 2
+}

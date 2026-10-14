@@ -1,0 +1,150 @@
+{
+  "parsed": {
+    "page": 4,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "最难时，现金只够发两个月工资",
+        "location": "页面上部标题",
+        "statement": "标题直接呈现老板叙事核心要素'现金只够发两个月工资'，简洁有力，结论先行",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "最难那个月账上现金只够发两个月工资"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "2 个 / 月",
+        "location": "页面左侧大字",
+        "statement": "视觉化强调'两个月'这一关键数字，数字'2'以金色突出，'月'字被部分遮挡但仍可辨识",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "账上现金只够发两个月工资"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2",
+            "unit": "个月",
+            "subject": "现金可支撑工资发放时长",
+            "denominator": "不适用",
+            "time_origin": "最难的那个月"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "最难的那个月，账上现金只够发两个月工资；但团队没有一个人退缩。",
+        "location": "页面左中部正文",
+        "statement": "完整复现老板叙事两个要素：现金紧张与团队不退缩，文字清晰可读",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "最难那个月账上现金只够发两个月工资，但团队没有一个人退缩"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "如今回头看：全年营收 4.2 亿 · 同比 +26%",
+        "location": "页面右下角",
+        "statement": "以'如今回头看'建立叙事与数据的时序衔接，将困境叙事与成果数据关联，呈现全年营收4.2亿及同比+26%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "全年营收4.2亿同比+26%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "4.2",
+            "unit": "亿",
+            "subject": "全年营收",
+            "denominator": "不适用",
+            "time_origin": "全年/未说明具体年份"
+          },
+          {
+            "value": "26",
+            "unit": "%",
+            "subject": "营收同比增长率",
+            "denominator": "不适用",
+            "time_origin": "同比"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "折线图（无坐标轴、无数据标签、无图例）",
+        "location": "页面右侧中部",
+        "statement": "右侧有一条金色折线，呈先降后升趋势，与'最难时'到'如今回头看'的叙事转折呼应，但缺乏任何坐标轴、数据点、图例或单位标签，无法读取具体数值",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "2026 年度大会 · 开场汇报 / 04 / 08",
+        "location": "页面底部",
+        "statement": "页脚信息完整，页码显示为第4页共8页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "页面仅呈现'现金两个月'单一叙事要素，未出现研发投入、员工人数、专利数等其他数据",
+        "location": "整页内容分布",
+        "statement": "本页聚焦单一核心观点'最难时的现金困境与团队坚守'，配以关键数字'2个月'和成果锚点'4.2亿/+26%'，符合'每页一个核心观点配关键数据支撑'的要求；其他数据未在本页出现属合理编排，不构成本页缺陷",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "每页一个核心观点配关键数据支撑"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "折线图无标签",
+        "location": "页面右侧图表区域",
+        "statement": "右侧折线图无任何坐标轴、数据标签、图例或单位说明，属于chart_label_integrity范畴的缺失，但failure_modes中R16-chart_label_integrity未在提供的缺陷列表中（提供的缺陷列表含R01-R17，但R16存在），需记录",
+        "kind": "visual",
+        "failure_mode": "chart_label_integrity",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5146,
+    "total_tokens": 6004,
+    "completion_tokens": 858,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.107,
+  "attempts": 1
+}

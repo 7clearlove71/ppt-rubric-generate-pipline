@@ -1,0 +1,41 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      4,
+      5,
+      7
+    ],
+    "evidence": "经逐页核查，两处存疑信息均有显式可辨识标注：\n\n1. 族谱待考（'待考、需多问几人核实'）：\n- 第2页DAY 2卡片中以红色文字标注'族谱存疑'（p2_e4, p2_e7）；\n- 第4页右侧卡片底部以红色文字明确标注'待考：需多问几位老人'（p4_e4, p4_e5），与原文'——待考,得多问几个人'完全对应；\n- 第7页底部红色边框区域汇总标注'待考：族谱焚毁与重写细节'（p7_e6）。\n\n2. 木雕建筑'来历说不清'：\n- 第2页DAY 3卡片中以红色文字标注'木雕差异'（p2_e5, p2_e8），作为存疑视觉标识；\n- 第5页右侧卡片直接呈现'来历说不清'原文（p5_e9），并以红色标签按钮标注'待考'（p5_e10）；\n- 第5页底部明确声明'暂不认定\"外姓人建造\"，需比对建筑细部、老人口述与地方文献'（p5_e12）；\n- 第7页底部红色边框区域汇总标注'\"外姓人建造\"来源'（p7_e6）。\n\n两处存疑信息均采用就地标注（红色文字/标签）与汇总清单（第7页TO BE VERIFIED区域）结合的形式，显式可辨识，满足criterion要求。",
+    "evidence_ids": [
+      "p2_e4",
+      "p2_e7",
+      "p2_e5",
+      "p2_e8",
+      "p4_e4",
+      "p4_e5",
+      "p5_e9",
+      "p5_e10",
+      "p5_e12",
+      "p7_e6"
+    ],
+    "resolutions": [],
+    "additional_observations": [],
+    "inspection_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35255,
+    "total_tokens": 35722,
+    "completion_tokens": 467,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 116.252,
+  "attempts": 1
+}

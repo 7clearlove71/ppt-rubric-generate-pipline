@@ -1,0 +1,2437 @@
+{
+  "split": "dev",
+  "cases": [
+    {
+      "case_id": "01",
+      "rubric_status": "approved",
+      "candidates": {
+        "A": {
+          "primary": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 12,
+              "no": 1
+            },
+            "V_LAYOUT": {
+              "yes": 13
+            }
+          },
+          "ownership_conflicts": []
+        },
+        "B": {
+          "primary": {
+            "status": "complete",
+            "score": 100.0,
+            "score_lower": 100.0,
+            "score_upper": 100.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 100.0,
+            "score_lower": 100.0,
+            "score_upper": 100.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 13
+            },
+            "V_LAYOUT": {
+              "yes": 13
+            }
+          },
+          "ownership_conflicts": []
+        }
+      },
+      "rubric_items": 13,
+      "rubric_hash": "da3003c33e53ea80ccd4960e3f24f569b34bed7d6b3299da9d3fca039ea8e20f",
+      "combined_interval_preference": {
+        "prediction": "B",
+        "difference_interval": [
+          -10.0,
+          -10.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "primary_preference": {
+        "prediction": "B",
+        "difference_interval": [
+          -10.0,
+          -10.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "weight_sensitivity": {
+        "policy": "All 32 corners of independently multiplied 0.8/1.2 dimension weights, renormalized to 100",
+        "corner_count": 32,
+        "factors": [
+          0.8,
+          1.2
+        ],
+        "tie_margin": 3,
+        "outcomes": {
+          "B": 32
+        },
+        "stable": true
+      },
+      "human_label": "A",
+      "robust_interval_match": false,
+      "single_assessor_match": false
+    },
+    {
+      "case_id": "02",
+      "rubric_status": "approved",
+      "candidates": {
+        "A": {
+          "primary": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 7,
+              "no": 3
+            },
+            "V_LAYOUT": {
+              "yes": 10
+            }
+          },
+          "ownership_conflicts": []
+        },
+        "B": {
+          "primary": {
+            "status": "complete",
+            "score": 100.0,
+            "score_lower": 100.0,
+            "score_upper": 100.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 100.0,
+            "score_lower": 100.0,
+            "score_upper": 100.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 8
+            },
+            "V_LAYOUT": {
+              "yes": 8
+            }
+          },
+          "ownership_conflicts": []
+        }
+      },
+      "rubric_items": 19,
+      "rubric_hash": "852225638817312fbb0a1124e6cf900b30fb55e9594dfa9d23d3657498ebd9b2",
+      "combined_interval_preference": {
+        "prediction": "B",
+        "difference_interval": [
+          -10.0,
+          -10.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "primary_preference": {
+        "prediction": "B",
+        "difference_interval": [
+          -10.0,
+          -10.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "weight_sensitivity": {
+        "policy": "All 32 corners of independently multiplied 0.8/1.2 dimension weights, renormalized to 100",
+        "corner_count": 32,
+        "factors": [
+          0.8,
+          1.2
+        ],
+        "tie_margin": 3,
+        "outcomes": {
+          "B": 32
+        },
+        "stable": true
+      },
+      "human_label": "B",
+      "robust_interval_match": true,
+      "single_assessor_match": true
+    },
+    {
+      "case_id": "03",
+      "rubric_status": "approved",
+      "candidates": {
+        "A": {
+          "primary": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.000000000000004,
+                "possible": 25.000000000000004,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.000000000000004,
+                "possible": 25.000000000000004,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 7,
+              "no": 1
+            },
+            "V_LAYOUT": {
+              "yes": 8
+            }
+          },
+          "ownership_conflicts": []
+        },
+        "B": {
+          "primary": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.000000000000004,
+                "possible": 25.000000000000004,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.000000000000004,
+                "possible": 25.000000000000004,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 5,
+              "no": 3
+            },
+            "V_LAYOUT": {
+              "yes": 8
+            }
+          },
+          "ownership_conflicts": []
+        }
+      },
+      "rubric_items": 11,
+      "rubric_hash": "eb3f512a841427e081554b4f03d725303187db792348eb9f3a277a57b42b5dc5",
+      "combined_interval_preference": {
+        "prediction": "tie",
+        "difference_interval": [
+          0.0,
+          0.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "primary_preference": {
+        "prediction": "tie",
+        "difference_interval": [
+          0.0,
+          0.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "weight_sensitivity": {
+        "policy": "All 32 corners of independently multiplied 0.8/1.2 dimension weights, renormalized to 100",
+        "corner_count": 32,
+        "factors": [
+          0.8,
+          1.2
+        ],
+        "tie_margin": 3,
+        "outcomes": {
+          "tie": 32
+        },
+        "stable": true
+      },
+      "human_label": "tie",
+      "robust_interval_match": true,
+      "single_assessor_match": true
+    },
+    {
+      "case_id": "05",
+      "rubric_status": "approved",
+      "candidates": {
+        "A": {
+          "primary": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 5,
+              "no": 2
+            },
+            "V_LAYOUT": {
+              "yes": 7
+            }
+          },
+          "ownership_conflicts": []
+        },
+        "B": {
+          "primary": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 9,
+              "no": 1
+            },
+            "V_LAYOUT": {
+              "yes": 10
+            }
+          },
+          "ownership_conflicts": []
+        }
+      },
+      "rubric_items": 14,
+      "rubric_hash": "4130edcbbd6181953d0c889adb575e406dd1c51b1f0e5b79d30689e6797926ab",
+      "combined_interval_preference": {
+        "prediction": "tie",
+        "difference_interval": [
+          0.0,
+          0.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "primary_preference": {
+        "prediction": "tie",
+        "difference_interval": [
+          0.0,
+          0.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "weight_sensitivity": {
+        "policy": "All 32 corners of independently multiplied 0.8/1.2 dimension weights, renormalized to 100",
+        "corner_count": 32,
+        "factors": [
+          0.8,
+          1.2
+        ],
+        "tie_margin": 3,
+        "outcomes": {
+          "tie": 32
+        },
+        "stable": true
+      },
+      "human_label": "tie",
+      "robust_interval_match": true,
+      "single_assessor_match": true
+    },
+    {
+      "case_id": "06",
+      "rubric_status": "approved",
+      "candidates": {
+        "A": {
+          "primary": {
+            "status": "complete",
+            "score": 65.0,
+            "score_lower": 65.0,
+            "score_upper": 65.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "incomplete",
+            "score": null,
+            "score_lower": 65.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 25.0,
+            "dimensions": {
+              "correctness": {
+                "earned": 0,
+                "possible": 25.0,
+                "unresolved": 25.0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 8,
+              "no": 5
+            },
+            "V_LAYOUT": {
+              "yes": 13
+            }
+          },
+          "ownership_conflicts": []
+        },
+        "B": {
+          "primary": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 6,
+              "no": 2
+            },
+            "V_LAYOUT": {
+              "yes": 8
+            }
+          },
+          "ownership_conflicts": []
+        }
+      },
+      "rubric_items": 15,
+      "rubric_hash": "48f7f352d53b69c4fd90e565eb3fdfb12c81deed73dc60dbd0a7240d48a6f054",
+      "combined_interval_preference": {
+        "prediction": null,
+        "difference_interval": [
+          -25.0,
+          0.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "unresolved",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "primary_preference": {
+        "prediction": "B",
+        "difference_interval": [
+          -25.0,
+          -25.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "weight_sensitivity": {
+        "policy": "All 32 corners of independently multiplied 0.8/1.2 dimension weights, renormalized to 100",
+        "corner_count": 32,
+        "factors": [
+          0.8,
+          1.2
+        ],
+        "tie_margin": 3,
+        "outcomes": {
+          "unresolved": 32
+        },
+        "stable": false
+      },
+      "human_label": "B",
+      "robust_interval_match": null,
+      "single_assessor_match": true
+    },
+    {
+      "case_id": "09",
+      "rubric_status": "approved",
+      "candidates": {
+        "A": {
+          "primary": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 7,
+              "no": 1
+            },
+            "V_LAYOUT": {
+              "yes": 8
+            }
+          },
+          "ownership_conflicts": []
+        },
+        "B": {
+          "primary": {
+            "status": "complete",
+            "score": 100.0,
+            "score_lower": 100.0,
+            "score_upper": 100.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 100.0,
+            "score_lower": 100.0,
+            "score_upper": 100.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.0,
+                "possible": 25.0,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 8
+            },
+            "V_LAYOUT": {
+              "yes": 8
+            }
+          },
+          "ownership_conflicts": []
+        }
+      },
+      "rubric_items": 17,
+      "rubric_hash": "20ba03f22aea5fe8349eb49d6b05c6ad4a0e44bdd70b2fd50677d32e27a446cb",
+      "combined_interval_preference": {
+        "prediction": "B",
+        "difference_interval": [
+          -10.0,
+          -10.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "primary_preference": {
+        "prediction": "B",
+        "difference_interval": [
+          -10.0,
+          -10.0
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "weight_sensitivity": {
+        "policy": "All 32 corners of independently multiplied 0.8/1.2 dimension weights, renormalized to 100",
+        "corner_count": 32,
+        "factors": [
+          0.8,
+          1.2
+        ],
+        "tie_margin": 3,
+        "outcomes": {
+          "B": 32
+        },
+        "stable": true
+      }
+    },
+    {
+      "case_id": "10",
+      "rubric_status": "approved",
+      "candidates": {
+        "A": {
+          "primary": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.000000000000004,
+                "possible": 25.000000000000004,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "complete",
+            "score": 90.0,
+            "score_lower": 90.0,
+            "score_upper": 90.0,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 25.000000000000004,
+                "possible": 25.000000000000004,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 6,
+              "no": 2
+            },
+            "V_LAYOUT": {
+              "yes": 8
+            }
+          },
+          "ownership_conflicts": []
+        },
+        "B": {
+          "primary": {
+            "status": "complete",
+            "score": 87.05882352941177,
+            "score_lower": 87.05882352941177,
+            "score_upper": 87.05882352941177,
+            "unresolved_weight": 0,
+            "dimensions": {
+              "correctness": {
+                "earned": 22.058823529411768,
+                "possible": 25.000000000000004,
+                "unresolved": 0
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "combined": {
+            "status": "incomplete",
+            "score": null,
+            "score_lower": 87.05882352941177,
+            "score_upper": 90.0,
+            "unresolved_weight": 2.9411764705882355,
+            "dimensions": {
+              "correctness": {
+                "earned": 22.058823529411768,
+                "possible": 25.000000000000004,
+                "unresolved": 2.9411764705882355
+              },
+              "fulfillment": {
+                "earned": 30.0,
+                "possible": 30.0,
+                "unresolved": 0
+              },
+              "integrity": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "narrative": {
+                "earned": 15.0,
+                "possible": 15.0,
+                "unresolved": 0
+              },
+              "visual": {
+                "earned": 5.0,
+                "possible": 15.0,
+                "unresolved": 0
+              }
+            }
+          },
+          "visual_page_answers": {
+            "V_READ": {
+              "yes": 7,
+              "no": 1
+            },
+            "V_LAYOUT": {
+              "yes": 8
+            }
+          },
+          "ownership_conflicts": []
+        }
+      },
+      "rubric_items": 20,
+      "rubric_hash": "1564a066c36e7f880f02b2d8819bd8e2f57bab3c63806c8340bbc572976b754d",
+      "combined_interval_preference": {
+        "prediction": "tie",
+        "difference_interval": [
+          0.0,
+          2.941176470588232
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "primary_preference": {
+        "prediction": "tie",
+        "difference_interval": [
+          2.941176470588232,
+          2.941176470588232
+        ],
+        "tie_margin": 3,
+        "floating_point_tolerance": 1e-09,
+        "status": "robust_to_unresolved_items",
+        "candidate_order": [
+          "A",
+          "B"
+        ]
+      },
+      "weight_sensitivity": {
+        "policy": "All 32 corners of independently multiplied 0.8/1.2 dimension weights, renormalized to 100",
+        "corner_count": 32,
+        "factors": [
+          0.8,
+          1.2
+        ],
+        "tie_margin": 3,
+        "outcomes": {
+          "tie": 17,
+          "unresolved": 15
+        },
+        "stable": false
+      },
+      "human_label": "B",
+      "robust_interval_match": false,
+      "single_assessor_match": false
+    }
+  ],
+  "counts": {
+    "rubrics_approved": 7,
+    "primary_complete": 14,
+    "combined_complete": 12
+  },
+  "total_cases": 7,
+  "total_decks": 14,
+  "independent_content_answers": {
+    "independent_agreement": 188,
+    "independent_disagreement": 2
+  },
+  "accounting": {
+    "models": {
+      "kimi-k3": {
+        "requests": 106,
+        "statuses": {
+          "failed": 12,
+          "success": 94
+        },
+        "reported_tokens": 1400930,
+        "missing_usage": 1,
+        "failure_stages": {
+          "schema_validation": 7,
+          "output_parse": 4
+        }
+      },
+      "kimi-k2.6": {
+        "requests": 35,
+        "statuses": {
+          "success": 34,
+          "failed": 1
+        },
+        "reported_tokens": 673529,
+        "missing_usage": 0,
+        "failure_stages": {
+          "schema_validation": 1
+        }
+      }
+    },
+    "journals": [
+      {
+        "path": "artifacts/final-revision-20261014/rubrics/primary-api/requests.json",
+        "requests": 28,
+        "unique_requests": 28
+      },
+      {
+        "path": "artifacts/final-revision-20261014/rubrics/verification-api/requests.json",
+        "requests": 17,
+        "unique_requests": 17
+      },
+      {
+        "path": "artifacts/final-revision-20261014/judgments/primary-api/requests.json",
+        "requests": 74,
+        "unique_requests": 74
+      },
+      {
+        "path": "artifacts/final-revision-20261014/judgments/verification-api/requests.json",
+        "requests": 14,
+        "unique_requests": 14
+      },
+      {
+        "path": "artifacts/final-revision-20261014/local-regression/primary-api/requests.json",
+        "requests": 4,
+        "unique_requests": 4
+      },
+      {
+        "path": "artifacts/final-revision-20261014/local-regression/verification-api/requests.json",
+        "requests": 4,
+        "unique_requests": 4
+      }
+    ],
+    "excluded_duplicate_attempts": [],
+    "total_unique_requests": 141,
+    "cost_estimate": null,
+    "missing_usage_policy": "Unknown, never zero. A started entry counts as an actual attempt; audit interruption separately."
+  },
+  "interpretation": [
+    "Primary score is one model judgment, not verified truth.",
+    "Combined scores retain independent model disagreements as intervals; local visuals may be singly assessed.",
+    "Robust interval preference is not a complete score, and partial coverage is reported explicitly.",
+    "Human preference is a comparison target, not the oracle for factual correctness."
+  ],
+  "source_semantic_qa": {
+    "status": "complete",
+    "source_file": "artifacts/final-revision-20261014/final-source-semantic-qa.json",
+    "source_digest": "cfa9123ac0a19cfbca1e30ea31b0fd1006771b60ee85080e60ccc4ad8e3ba150",
+    "evidence_kind": "codex_source_semantic_review",
+    "audit_status": "complete",
+    "limitations": [
+      "This is a Codex source-semantic review, not new human annotation or factual ground truth.",
+      "No confirmed counterexample does not establish exhaustive semantic correctness.",
+      "QA findings never alter automatic approval, scores, case selection, or agreement denominators.",
+      "The reviewing agent encountered development human labels in an earlier separate audit; this is source-evidence-only reasoning, not a claim of a reviewer who has never seen labels.",
+      "No candidate or new score is used as a counterexample. Hypothetical verdicts are analytic applications, not model executions.",
+      "No confirmed counterexample found does not establish exhaustive semantic correctness. The frozen pipeline is not revised based on this audit."
+    ],
+    "cases": [
+      {
+        "case_id": "01",
+        "audit_status": "reviewed_no_confirmed_material_counterexample",
+        "rubric_hash": "da3003c33e53ea80ccd4960e3f24f569b34bed7d6b3299da9d3fca039ea8e20f",
+        "rubric_hash_verified": true,
+        "findings": []
+      },
+      {
+        "case_id": "02",
+        "audit_status": "reviewed_no_confirmed_material_counterexample",
+        "rubric_hash": "852225638817312fbb0a1124e6cf900b30fb55e9594dfa9d23d3657498ebd9b2",
+        "rubric_hash_verified": true,
+        "findings": []
+      },
+      {
+        "case_id": "03",
+        "audit_status": "reviewed_with_confirmed_material_findings",
+        "rubric_hash": "eb3f512a841427e081554b4f03d725303187db792348eb9f3a277a57b42b5dc5",
+        "rubric_hash_verified": true,
+        "findings": [
+          {
+            "id": "03-F01",
+            "type": "duplicate_fact_ownership",
+            "severity": "material",
+            "criteria": [
+              "R_Q01",
+              "R_Q04"
+            ],
+            "consequence": "单一3号线空载数值错误可同时损失约11.36分（6.818+4.545）；确定性编译仍继承需求提取中的事实重叠。",
+            "qualification": "这里确认的是契约允许重复失败，不声称任何真实候选或judge已发生双扣。",
+            "counterexample_probe": "03-shared-idle-fact"
+          },
+          {
+            "id": "03-F02",
+            "type": "internal_applicability_conflict",
+            "severity": "material",
+            "criteria": [
+              "R_Q06"
+            ],
+            "consequence": "未引用标杆时，条件性正文与无条件存在前缀冲突，2.273分判定不稳定。",
+            "qualification": "不把来源是否强制展示该背景值另作独立越权结论；已确认的是最终契约内部条件冲突。",
+            "counterexample_probe": "03-benchmark-conditional"
+          }
+        ]
+      },
+      {
+        "case_id": "05",
+        "audit_status": "reviewed_with_confirmed_material_findings",
+        "rubric_hash": "4130edcbbd6181953d0c889adb575e406dd1c51b1f0e5b79d30689e6797926ab",
+        "rubric_hash_verified": true,
+        "findings": [
+          {
+            "id": "05-F01",
+            "type": "duplicate_uncertainty_ownership",
+            "severity": "material",
+            "criteria": [
+              "R_Q04",
+              "R_Q05",
+              "R_Q08"
+            ],
+            "consequence": "同一族谱状态升级可同时损失约14.77分（5.769+9）；木雕状态升级可同时损失约12.85分（3.846+9）。固定库排除已生效，但需求之间仍双重拥有同一不确定性。",
+            "qualification": "只确认冻结契约的重复归属；未读取或断言真实候选/模型出现这些改动。",
+            "counterexample_probe": "05-genealogy-boundary"
+          }
+        ]
+      },
+      {
+        "case_id": "06",
+        "audit_status": "reviewed_with_confirmed_material_findings",
+        "rubric_hash": "48f7f352d53b69c4fd90e565eb3fdfb12c81deed73dc60dbd0a7240d48a6f054",
+        "rubric_hash_verified": true,
+        "findings": [
+          {
+            "id": "06-F01",
+            "type": "duplicate_style_ownership",
+            "severity": "material",
+            "criteria": [
+              "R_Q01",
+              "R_Q02"
+            ],
+            "consequence": "同一明显违背政府评审公文定位的模块表达缺陷可同时扣R_Q01约2.727分与R_Q02的5分。Q03/Q04具有相同公文表达限定，存在同构责任边界。",
+            "qualification": "该反例限于足够明显的正式定位破坏；不声称单个轻度口语标题必然让整体风格失败，也不声称真实候选已触发双扣。",
+            "counterexample_probe": "06-style-owner"
+          }
+        ]
+      },
+      {
+        "case_id": "09",
+        "audit_status": "reviewed_no_confirmed_material_counterexample",
+        "rubric_hash": "20ba03f22aea5fe8349eb49d6b05c6ad4a0e44bdd70b2fd50677d32e27a446cb",
+        "rubric_hash_verified": true,
+        "findings": []
+      },
+      {
+        "case_id": "10",
+        "audit_status": "reviewed_with_confirmed_material_findings",
+        "rubric_hash": "1564a066c36e7f880f02b2d8819bd8e2f57bab3c63806c8340bbc572976b754d",
+        "rubric_hash_verified": true,
+        "findings": [
+          {
+            "id": "10-F01",
+            "type": "uncovered_explicit_structure_order",
+            "severity": "material",
+            "criteria": [
+              "R_Q01",
+              "R_Q02",
+              "R_Q15"
+            ],
+            "consequence": "完整准确的演示可在先影响评估、后事实时间线时仍满足全部显式契约；来源指定的两模块顺序没有评分所有者。",
+            "qualification": "时间线内部事件顺序与PPT模块出现先后不同；不据一般连贯性擅自补写最终标准。",
+            "counterexample_probe": "10-module-order"
+          }
+        ]
+      }
+    ],
+    "target_cases": [
+      "01",
+      "02",
+      "03",
+      "05",
+      "06",
+      "09",
+      "10"
+    ],
+    "target_version": "2026-10-14.contract-v2.3",
+    "method": "Apply the complete compiled pass conditions and exclusions to source-only minimal hypothetical presentations; verify coverage, unsupported obligations, duplicate penalties and granularity. Do not infer defect from repeated wording alone.",
+    "scope": {
+      "reviewed_inputs": [
+        "source-catalog.json",
+        "requirements.json",
+        "rubric.json",
+        "reviews.json"
+      ],
+      "candidate_files_read_in_this_audit": false,
+      "scores_read_in_this_audit": false,
+      "human_labels_read_in_this_audit": false,
+      "holdout_labels_read": false,
+      "external_model_api_calls": 0,
+      "code_or_published_artifacts_changed": false
+    },
+    "summary": {
+      "report_cases": 7,
+      "reviewed_cases": 7,
+      "coverage": 1.0,
+      "cases_with_confirmed_material_findings": 4,
+      "case_ids_with_confirmed_material_findings": [
+        "03",
+        "05",
+        "06",
+        "10"
+      ],
+      "confirmed_material_findings": 5,
+      "cases_without_confirmed_counterexample": [
+        "01",
+        "02",
+        "09"
+      ],
+      "unreviewed_cases": [],
+      "conclusion_status": "final_for_declared_scope"
+    }
+  },
+  "human_reliability": {
+    "schema_version": 1,
+    "manifest_id": "e77757ab216960926c369a4e24bdd43f979cb999c281022a5181ffa267980c27",
+    "split": "dev",
+    "comparison_only": true,
+    "policy": "Canonical choices preserved; no winner inferred from reasons; missing protocol evidence is unknown; evidence references are not opened or verified.",
+    "summary": {
+      "selected_cases": 7,
+      "canonical_label_records": 7,
+      "effective_decided_cases": 6,
+      "ties": 2,
+      "undecided": 1,
+      "unlabeled": 0,
+      "single_observed_record_cases": 7,
+      "multiple_named_reviewer_cases": 0,
+      "documented_blinded_cases": 0,
+      "documented_repeated_cases": 0,
+      "inter_rater_reliability": null,
+      "inter_rater_reliability_reason": "Canonical labels and provenance do not establish independent raw repeated ratings."
+    },
+    "cases": [
+      {
+        "case_id": "01",
+        "canonical_label": {
+          "winner": "A",
+          "label_status": "decided"
+        },
+        "facts": {
+          "candidate_hashes_match_manifest": true,
+          "canonical_source": {
+            "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/01/评测人_zxm.md",
+            "sha256": "4b4dd06e1f7d44be2af35e9fab4aa2c98c36815271e008be4d61b9a9143b85a0"
+          },
+          "reviewer_to_manifest": {
+            "A": "A",
+            "B": "B"
+          },
+          "observed_review_record_count": 1,
+          "observed_named_reviewer_count": 1,
+          "reviewer_count_basis": "canonical_import_record",
+          "review_records": [
+            {
+              "reviewer": "zxm· 2026-10-08",
+              "source": {
+                "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/01/评测人_zxm.md",
+                "sha256": "4b4dd06e1f7d44be2af35e9fab4aa2c98c36815271e008be4d61b9a9143b85a0"
+              }
+            }
+          ],
+          "protocol_documentation": {
+            "blindness": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "independent_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "repeat_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "same_render": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            }
+          },
+          "tie_semantics": null
+        },
+        "unknowns": [
+          "blindness",
+          "independent_review",
+          "repeat_review",
+          "same_render",
+          "tie_semantics",
+          "unobserved_reviewers",
+          "evidence_independently_verified"
+        ]
+      },
+      {
+        "case_id": "02",
+        "canonical_label": {
+          "winner": "B",
+          "label_status": "decided"
+        },
+        "facts": {
+          "candidate_hashes_match_manifest": true,
+          "canonical_source": {
+            "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/02/评测人_zxm.md",
+            "sha256": "89058bfd8d9c689bfabe230ef71c44a35cdc558524a58a27ed298e121c074364"
+          },
+          "reviewer_to_manifest": {
+            "A": "B",
+            "B": "A"
+          },
+          "observed_review_record_count": 1,
+          "observed_named_reviewer_count": 1,
+          "reviewer_count_basis": "canonical_import_record",
+          "review_records": [
+            {
+              "reviewer": "zxm· 2026-10-08",
+              "source": {
+                "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/02/评测人_zxm.md",
+                "sha256": "89058bfd8d9c689bfabe230ef71c44a35cdc558524a58a27ed298e121c074364"
+              }
+            }
+          ],
+          "protocol_documentation": {
+            "blindness": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "independent_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "repeat_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "same_render": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            }
+          },
+          "tie_semantics": null
+        },
+        "unknowns": [
+          "blindness",
+          "independent_review",
+          "repeat_review",
+          "same_render",
+          "tie_semantics",
+          "unobserved_reviewers",
+          "evidence_independently_verified"
+        ]
+      },
+      {
+        "case_id": "03",
+        "canonical_label": {
+          "winner": "tie",
+          "label_status": "decided"
+        },
+        "facts": {
+          "candidate_hashes_match_manifest": true,
+          "canonical_source": {
+            "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/03/评测人_zxm.md",
+            "sha256": "3f5f434d85bc280701babde8bc2ae2e71120edaf857a496d8e35f199974e9aa9"
+          },
+          "reviewer_to_manifest": {
+            "A": "A",
+            "B": "B"
+          },
+          "observed_review_record_count": 1,
+          "observed_named_reviewer_count": 1,
+          "reviewer_count_basis": "canonical_import_record",
+          "review_records": [
+            {
+              "reviewer": "zxm· 2026-10-08",
+              "source": {
+                "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/03/评测人_zxm.md",
+                "sha256": "3f5f434d85bc280701babde8bc2ae2e71120edaf857a496d8e35f199974e9aa9"
+              }
+            }
+          ],
+          "protocol_documentation": {
+            "blindness": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "independent_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "repeat_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "same_render": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            }
+          },
+          "tie_semantics": null
+        },
+        "unknowns": [
+          "blindness",
+          "independent_review",
+          "repeat_review",
+          "same_render",
+          "tie_semantics",
+          "unobserved_reviewers",
+          "evidence_independently_verified"
+        ]
+      },
+      {
+        "case_id": "05",
+        "canonical_label": {
+          "winner": "tie",
+          "label_status": "decided"
+        },
+        "facts": {
+          "candidate_hashes_match_manifest": true,
+          "canonical_source": {
+            "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/05/评测人_zxm.md",
+            "sha256": "4f67f3bd309370677da5acce731d2707b3bd29ac93b8cf4c2256734e9256a20e"
+          },
+          "reviewer_to_manifest": {
+            "A": "A",
+            "B": "B"
+          },
+          "observed_review_record_count": 1,
+          "observed_named_reviewer_count": 1,
+          "reviewer_count_basis": "canonical_import_record",
+          "review_records": [
+            {
+              "reviewer": "zxm· 2026-10-08",
+              "source": {
+                "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/05/评测人_zxm.md",
+                "sha256": "4f67f3bd309370677da5acce731d2707b3bd29ac93b8cf4c2256734e9256a20e"
+              }
+            }
+          ],
+          "protocol_documentation": {
+            "blindness": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "independent_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "repeat_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "same_render": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            }
+          },
+          "tie_semantics": null
+        },
+        "unknowns": [
+          "blindness",
+          "independent_review",
+          "repeat_review",
+          "same_render",
+          "tie_semantics",
+          "unobserved_reviewers",
+          "evidence_independently_verified"
+        ]
+      },
+      {
+        "case_id": "06",
+        "canonical_label": {
+          "winner": "B",
+          "label_status": "decided"
+        },
+        "facts": {
+          "candidate_hashes_match_manifest": true,
+          "canonical_source": {
+            "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/06/评测人_ldl.md",
+            "sha256": "9a5616deff3a2b59e342cd5c3029cf8ef0c8fae5192aec48da4110d277f05e38"
+          },
+          "reviewer_to_manifest": {
+            "A": "A",
+            "B": "B"
+          },
+          "observed_review_record_count": 1,
+          "observed_named_reviewer_count": 1,
+          "reviewer_count_basis": "canonical_import_record",
+          "review_records": [
+            {
+              "reviewer": "ldl，2026-10-08",
+              "source": {
+                "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/06/评测人_ldl.md",
+                "sha256": "9a5616deff3a2b59e342cd5c3029cf8ef0c8fae5192aec48da4110d277f05e38"
+              }
+            }
+          ],
+          "protocol_documentation": {
+            "blindness": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "independent_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "repeat_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "same_render": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            }
+          },
+          "tie_semantics": null
+        },
+        "unknowns": [
+          "blindness",
+          "independent_review",
+          "repeat_review",
+          "same_render",
+          "tie_semantics",
+          "unobserved_reviewers",
+          "evidence_independently_verified"
+        ]
+      },
+      {
+        "case_id": "09",
+        "canonical_label": {
+          "winner": null,
+          "label_status": "undecided"
+        },
+        "facts": {
+          "candidate_hashes_match_manifest": true,
+          "canonical_source": {
+            "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/09/评测人_ldl.md",
+            "sha256": "1afdea36389b9ad17ef270cdf0e718321f30388c78b7e02cfd3ecb86403b7017"
+          },
+          "reviewer_to_manifest": {
+            "A": "B",
+            "B": "A"
+          },
+          "observed_review_record_count": 1,
+          "observed_named_reviewer_count": 1,
+          "reviewer_count_basis": "canonical_import_record",
+          "review_records": [
+            {
+              "reviewer": "ldl，2026-10-08",
+              "source": {
+                "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/09/评测人_ldl.md",
+                "sha256": "1afdea36389b9ad17ef270cdf0e718321f30388c78b7e02cfd3ecb86403b7017"
+              }
+            }
+          ],
+          "protocol_documentation": {
+            "blindness": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "independent_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "repeat_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "same_render": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            }
+          },
+          "tie_semantics": null
+        },
+        "unknowns": [
+          "blindness",
+          "independent_review",
+          "repeat_review",
+          "same_render",
+          "tie_semantics",
+          "unobserved_reviewers",
+          "evidence_independently_verified"
+        ]
+      },
+      {
+        "case_id": "10",
+        "canonical_label": {
+          "winner": "B",
+          "label_status": "decided"
+        },
+        "facts": {
+          "candidate_hashes_match_manifest": true,
+          "canonical_source": {
+            "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/10/评测人_ldl.md",
+            "sha256": "409de155cf12238aa41eeea7473b05e01c6bb40d11a7ba80bbb1c060ae9d2e9d"
+          },
+          "reviewer_to_manifest": {
+            "A": "A",
+            "B": "B"
+          },
+          "observed_review_record_count": 1,
+          "observed_named_reviewer_count": 1,
+          "reviewer_count_basis": "canonical_import_record",
+          "review_records": [
+            {
+              "reviewer": "ldl，2026-10-08",
+              "source": {
+                "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/data/10_top_sample_20261010/10/评测人_ldl.md",
+                "sha256": "409de155cf12238aa41eeea7473b05e01c6bb40d11a7ba80bbb1c060ae9d2e9d"
+              }
+            }
+          ],
+          "protocol_documentation": {
+            "blindness": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "independent_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "repeat_review": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            },
+            "same_render": {
+              "status": "unknown",
+              "documented": false,
+              "evidence": []
+            }
+          },
+          "tie_semantics": null
+        },
+        "unknowns": [
+          "blindness",
+          "independent_review",
+          "repeat_review",
+          "same_render",
+          "tie_semantics",
+          "unobserved_reviewers",
+          "evidence_independently_verified"
+        ]
+      }
+    ]
+  },
+  "complete_score_agreement": {
+    "split": "dev",
+    "tie_margin": 3.0,
+    "n": 4,
+    "matches": 3,
+    "consistency_audited_n": 0,
+    "consistency_audited_agreement": null,
+    "total_cases": 7,
+    "decided_labels": 6,
+    "evaluation_coverage": 0.6666666666666666,
+    "all_decided_cases_evaluated": false,
+    "all_cases_comparable": false,
+    "matched_fraction_of_decided_labels": 0.5,
+    "agreement": 0.75,
+    "wilson_95_interval": [
+      0.3006360524426366,
+      0.9544139373553637
+    ],
+    "human_ties": 2,
+    "predicted_ties": 2,
+    "cases": [
+      {
+        "case_id": "01",
+        "human": "A",
+        "predicted": "B",
+        "consistency_reviews": {
+          "A": null,
+          "B": null
+        },
+        "scores": {
+          "A": 90.0,
+          "B": 100.0
+        },
+        "difference": -10.0,
+        "match": false,
+        "reasons": "面向领域内专家，证据边界比信息量更影响可信度。A 的主线集中、三个核心数据准确呈现、对推断有标注，适合 20 分钟报告。B 虽然补充了更多技术细节和行业图表，但把素材没有的团队系统成果（无线信号链、AI 标定、多中心平台）写成了\"已完成（实测）\"，跨口径并列后隐含领先判断——这些问题面向专家会被当场质疑，比信息量不足更致命。",
+        "reviewer_to_manifest": {
+          "A": "A",
+          "B": "B"
+        },
+        "reasons_candidate_ids": "reviewer A/B; translate with reviewer_to_manifest"
+      },
+      {
+        "case_id": "02",
+        "human": "B",
+        "predicted": "B",
+        "consistency_reviews": {
+          "A": null,
+          "B": null
+        },
+        "scores": {
+          "A": 90.0,
+          "B": 100.0
+        },
+        "difference": -10.0,
+        "match": true,
+        "reasons": "评审汇报的底线是口径准确、现场可读。B 存在两个影响评审的实质问题：一是把总投资 280 万改成申请县级扶持资金 280 万，改变了资金性质——对文旅局和乡村振兴办评审来说，总投资（含自筹）280 万和申请财政补助 280 万是两个完全不同的项目，可能引发\"这个项目到底要多少钱\"的根本质疑；二是第 4、8、9 页存在多处内容交叠与表格越界重叠，评审现场投影时领导难以判读资金对应关系和风险防控内容。A 虽然第 3 页有\"直接具备申报资格\"的表述过满，但这是措辞问题，修改量小。A 的 8 页紧凑、数字齐全、资金对应清楚、布局可读，更符合评审汇报\"站得住\"的要求。",
+        "reviewer_to_manifest": {
+          "A": "B",
+          "B": "A"
+        },
+        "reasons_candidate_ids": "reviewer A/B; translate with reviewer_to_manifest"
+      },
+      {
+        "case_id": "03",
+        "human": "tie",
+        "predicted": "tie",
+        "consistency_reviews": {
+          "A": null,
+          "B": null
+        },
+        "scores": {
+          "A": 90.0,
+          "B": 90.0
+        },
+        "difference": 0.0,
+        "match": true,
+        "reasons": "B 的测算链条表面可复核，但根基是空的——0.74 不是独立假设，而是从 45% 和 29% 两个自编数字反推出来的（68 万实测 × 45% 自编 = 30.6 万 → × 29% 自编 = 8.87 万 → ÷ 80 万 = 0.11 → 0.85 - 0.11 = 0.74），整条链是循环论证，起点没有素材依据。A 的测算链条确实断裂（5—6 个月→18 个月无量化过渡），但起点是实测数据（0.85→0.45/0.5），问题在中间断而非起点空。布局问题两边都有：A 第 4 页横轴\"NaN\"导致产线标签全部失效，B 第 3、7 页模块过多互相挤压遮挡。A 的测算起点有据但中间断，B 的测算链完整但起点空——两种问题的性质不同但影响相当，综合持平。",
+        "reviewer_to_manifest": {
+          "A": "A",
+          "B": "B"
+        },
+        "reasons_candidate_ids": "reviewer A/B; translate with reviewer_to_manifest"
+      },
+      {
+        "case_id": "05",
+        "human": "tie",
+        "predicted": "tie",
+        "consistency_reviews": {
+          "A": null,
+          "B": null
+        },
+        "scores": {
+          "A": 90.0,
+          "B": 90.0
+        },
+        "difference": 0.0,
+        "match": true,
+        "reasons": "两者各有硬伤，影响维度不同但严重程度相当。A 的硬伤在内容层面：第 4 页\"记忆已经断片\"和等式定义记忆断层、第 6 页\"钱修了古\"违反了\"别下定论\"的明确要求；视觉上第 7 页布局偏挤，但整体 7 页精炼、视觉气氛好，沙龙基本可用。B 的硬伤在可用性层面：10 页中至少 7 页存在系统性布局重叠，单页塞入 6—12 个子模块，沙龙现场投影时听众几乎无法阅读，直接影响了题目\"沙龙上要用\"的核心使用场景。A 有内容硬伤但视觉和结构基本可用，B 内容忠实于\"别下定论\"但系统性布局重叠导致沙龙不可用。A 的问题更多在内容判断上需要修改措辞，B 的问题在布局结构上需要大幅重构，两者距可用状态的距离相当。",
+        "reviewer_to_manifest": {
+          "A": "A",
+          "B": "B"
+        },
+        "reasons_candidate_ids": "reviewer A/B; translate with reviewer_to_manifest"
+      }
+    ],
+    "skipped": [
+      {
+        "case_id": "06",
+        "reason": "incomplete automated evaluation"
+      },
+      {
+        "case_id": "09",
+        "reason": "human undecided"
+      },
+      {
+        "case_id": "10",
+        "reason": "incomplete automated evaluation"
+      }
+    ]
+  },
+  "robust_interval_agreement": {
+    "n": 5,
+    "matches": 3,
+    "agreement": 0.6,
+    "meaning": "Separate descriptive interval comparison; not interchangeable with complete-score agreement."
+  },
+  "single_assessor_agreement": {
+    "n": 6,
+    "matches": 4,
+    "agreement": 0.6666666666666666,
+    "decided_labels": 6,
+    "coverage": 1.0,
+    "tie_margin": 3,
+    "assessment": "primary_only_not_independently_verified",
+    "meaning": "Descriptive comparison using complete primary scores only; this is not independent verification.",
+    "cases": [
+      {
+        "case_id": "01",
+        "candidate_hashes": {
+          "A": "3a234381e88d3ce745e1e1976597dfca656e66f1b6bd7e150e8b2003fe32980e",
+          "B": "a3b55a9df80f9ffddbddd2291519de0dade4904e93b0525a7a7ec592dcdcb81d"
+        },
+        "scores": {
+          "A": 90.0,
+          "B": 100.0
+        },
+        "prediction": "B",
+        "human": "A",
+        "match": false
+      },
+      {
+        "case_id": "02",
+        "candidate_hashes": {
+          "A": "5debd07966f7950acb76bf14de7ee4be3c5da9d4431806afe5315d1e7c277c1f",
+          "B": "7bcf739c7f9e492d74ad02785f61aa737a3a29bbb2c2aa1f6e062a24fa1a81a9"
+        },
+        "scores": {
+          "A": 90.0,
+          "B": 100.0
+        },
+        "prediction": "B",
+        "human": "B",
+        "match": true
+      },
+      {
+        "case_id": "03",
+        "candidate_hashes": {
+          "A": "955fb1fa5c1c8faeeba214060bf4fe806e799bb49babaa47a714ab0ae8701bda",
+          "B": "d8af8a113e8b8cca0e2f822d21cfd91de13a4eaa5d915251ab087cbb50980e99"
+        },
+        "scores": {
+          "A": 90.0,
+          "B": 90.0
+        },
+        "prediction": "tie",
+        "human": "tie",
+        "match": true
+      },
+      {
+        "case_id": "05",
+        "candidate_hashes": {
+          "A": "ad795db4a382a0a7f1775a156977d082c677fdce662387390908c221e7d16c2f",
+          "B": "80cd57d0b7963d83c76ef5e203b076ef1935b0b2ae6f73e370e0a3dc55860fbb"
+        },
+        "scores": {
+          "A": 90.0,
+          "B": 90.0
+        },
+        "prediction": "tie",
+        "human": "tie",
+        "match": true
+      },
+      {
+        "case_id": "06",
+        "candidate_hashes": {
+          "A": "c71a36c3fe125ee402fc76e19890c21ea059b0bd9a22cb3ec4017f7889250f48",
+          "B": "89d5a717096231d5d33c5867fb1b28518bc28123a56d27e41fce640cbc0ce9f3"
+        },
+        "scores": {
+          "A": 65.0,
+          "B": 90.0
+        },
+        "prediction": "B",
+        "human": "B",
+        "match": true
+      },
+      {
+        "case_id": "10",
+        "candidate_hashes": {
+          "A": "242a9d3ba2a2d72d1c6d19e4dbd74586ec20fe5aa3bf002834961a0722d25250",
+          "B": "bb65216f5456a030a118f0c4aa920be951852bb767639e811fcfec96b1f3581d"
+        },
+        "scores": {
+          "A": 90.0,
+          "B": 87.05882352941177
+        },
+        "prediction": "tie",
+        "human": "B",
+        "match": false
+      }
+    ],
+    "skipped": [],
+    "majority_label_baseline": {
+      "n": 6,
+      "label_counts": {
+        "A": 1,
+        "B": 3,
+        "tie": 2
+      },
+      "majority_labels": [
+        "B"
+      ],
+      "matches": 3,
+      "agreement": 0.5,
+      "meaning": "Label frequency on exactly this comparable subset; not out-of-sample accuracy or a tuning target."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3
+    ],
+    "evidence": "Day1四要素均准确呈现：p2「约40栋老宅/住人不到一半」、p3「40现存明清老宅·约/<1/2仍在居住/年轻人外出打工/留守者多为老人」。数值保留\"约\"意（约40、<1/2），比例方向正确（不到一半而非一半以上），人口结构表述一致。符合等价表述规则。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23738,
+    "total_tokens": 23837,
+    "completion_tokens": 99,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 19.591,
+  "attempts": 1
+}

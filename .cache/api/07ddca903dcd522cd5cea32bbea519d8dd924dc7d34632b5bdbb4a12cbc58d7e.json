@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "PPT严格按Day1-Day4时间线组织，且事实归属准确：Day1对应进村清点（老宅约40栋、住人不到一半、空心化），P2-P3；Day2对应老人访谈（祠堂祭祖频率变化、族谱焚毁补写），P4；Day3对应民居形制与木雕观察（天井院落式、风格差异、外姓人说法），P5；Day4对应旅游开发与老宅保护观察（仿古街与老宅资金矛盾），P6。P2证据地图明确标注各天内容来源，P7三条主线也分别对应Day1-Day4的正确日期。未出现张冠李戴，如旅游开发始终归Day4、木雕观察始终归Day3、祠堂访谈始终归Day2。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 28849,
+    "total_tokens": 29038,
+    "completion_tokens": 189,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 21.311,
+  "attempts": 1
+}

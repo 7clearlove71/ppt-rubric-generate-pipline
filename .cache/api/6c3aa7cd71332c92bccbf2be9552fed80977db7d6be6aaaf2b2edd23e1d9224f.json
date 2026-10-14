@@ -1,0 +1,328 @@
+{
+  "parsed": {
+    "groups": [
+      {
+        "id": "G01",
+        "dimension": "fulfillment",
+        "importance": 3,
+        "rationale": "本组重要性来自评审汇报必须完整覆盖项目背景、非遗价值、利益联结模式、三年递进规划与资金用途等核心申报模块。"
+      },
+      {
+        "id": "G02",
+        "dimension": "correctness",
+        "importance": 3,
+        "rationale": "本组重要性来自用户给定的关键数字、时间与资金分项必须准确，且资金总额与分项之和、规划与用途的对应关系可复算校验。"
+      },
+      {
+        "id": "G03",
+        "dimension": "integrity",
+        "importance": 2,
+        "rationale": "本组重要性来自面向政府审查的申报材料不得虚构县名、选址、合作社名称等未提供信息，且须保留不确定边界。"
+      },
+      {
+        "id": "G04",
+        "dimension": "narrative",
+        "importance": 3,
+        "rationale": "本组重要性来自用户明确要求整体逻辑严丝合缝、页间不脱节，且须适配文旅局与乡村振兴办领导的审查视角。"
+      },
+      {
+        "id": "G05",
+        "dimension": "visual",
+        "importance": 2,
+        "rationale": "本组重要性来自用户会检查标题与图表位置，且评审汇报需具备可读的层级与清晰的表达作用。"
+      }
+    ],
+    "items": [
+      {
+        "id": "R01",
+        "group_id": "G01",
+        "importance": 3,
+        "source_refs": [
+          "Q02"
+        ],
+        "basis": "explicit",
+        "scope": "项目背景模块",
+        "evidence_mode": "text",
+        "judge_prompt": "PPT 包含项目背景模块，交代非遗竹编手艺的传承危机与现状，作为评审汇报的立项依据。仅要求该模块存在且承担背景交代职能，不在此条核对具体数字。background_module_missing：该类缺陷指项目背景模块缺失或未承担背景交代职能；本类不负责具体数字被改写或缺失，也不负责新增无来源信息冒充已知。"
+      },
+      {
+        "id": "R03",
+        "group_id": "G01",
+        "importance": 3,
+        "source_refs": [
+          "Q04"
+        ],
+        "basis": "explicit",
+        "scope": "就业带动与利益联结模块",
+        "evidence_mode": "text",
+        "judge_prompt": "PPT 用\"公司+合作社+农户\"模式讲清三方利益联结，分别说明公司负责设计和销售、合作社统一采购原料和培训、农户在家编织按件计酬的分工与增收机制。仅要求该模式与分工被完整阐述，不在此条核对人均月增收约1800元这一具体数字。model_mechanism_missing：该类缺陷指三方利益联结模式或分工机制未被完整阐述；本类不负责具体数字被改写或缺失，也不负责推论运算错误。"
+      },
+      {
+        "id": "R04",
+        "group_id": "G01",
+        "importance": 3,
+        "source_refs": [
+          "Q06"
+        ],
+        "basis": "explicit",
+        "scope": "三年规划模块",
+        "evidence_mode": "text",
+        "judge_prompt": "PPT 包含三年规划模块，分阶段写明从建设到产能到品牌的递进关系。仅要求三阶段与递进结构存在，不在此条核对具体数值。planning_structure_missing：该类缺陷指三年规划的分阶段递进结构缺失；本类不负责具体数值被改写或缺失，也不负责资金与规划的对应关系。"
+      },
+      {
+        "id": "R06",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q02"
+        ],
+        "basis": "explicit",
+        "scope": "项目背景中的关键事实",
+        "evidence_mode": "text",
+        "judge_prompt": "项目背景中以下给定事实均存在且准确：传承6代、逾150年、目前仅剩12位师傅、师傅平均年龄62岁、面临失传。任一缺失或写错即不通过。fact_distortion：该类缺陷指来源事实失真，即上述背景事实被改写或缺失；本类不负责新增无来源信息冒充已知（由unsupported_fact负责），也不负责推论运算错误（由reasoning_validity负责）。"
+      },
+      {
+        "id": "R07",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q03"
+        ],
+        "basis": "explicit",
+        "scope": "文化价值中的关键事实",
+        "evidence_mode": "text",
+        "judge_prompt": "文化价值中明确写出2018年获批省级非遗，该事实存在且准确。缺失或写错年份/认定级别即不通过。fact_distortion_year：该类缺陷指2018年省级非遗认定年份或级别被改写或缺失；本类不负责新增无来源信息冒充已知，也不负责推论运算错误。"
+      },
+      {
+        "id": "R08",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q04",
+          "Q05"
+        ],
+        "basis": "explicit",
+        "scope": "就业带动中的关键事实",
+        "evidence_mode": "text",
+        "judge_prompt": "就业带动相关内容中以下给定事实均存在且准确：人均月增收约1800元、首期带动农户60户、第二年扩至120户。任一缺失或写错即不通过。fact_distortion_employment：该类缺陷指人均月增收约1800元、首期60户、第二年120户等给定事实被改写或缺失；本类不负责同一指标跨页口径冲突（由cross_page_inconsistency负责），也不负责推论运算错误。"
+      },
+      {
+        "id": "R09",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q07"
+        ],
+        "basis": "explicit",
+        "scope": "资金用途中的关键事实与加总校验",
+        "evidence_mode": "text",
+        "judge_prompt": "资金用途中以下给定事实均存在且准确：总投资280万、厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万。且五项分项之和等于总投资280万。任一金额缺失、写错或加总不符即不通过。fact_distortion_fund：该类缺陷指总投资280万及五项分项金额被改写或缺失，或分项加总不等于280万；本类不负责资金与规划阶段的逻辑对应（由planning_fund_mismatch负责），也不负责推论运算错误。"
+      },
+      {
+        "id": "R10",
+        "group_id": "G02",
+        "importance": 3,
+        "source_refs": [
+          "Q06",
+          "Q07"
+        ],
+        "basis": "explicit",
+        "scope": "规划与资金对应关系及规划关键事实",
+        "evidence_mode": "text",
+        "judge_prompt": "三年规划中以下给定事实均存在且准确：第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件、第三年做品牌入驻电商平台。且资金用途与三年规划在逻辑上对得上：厂房建设对应第一年建工坊、培训经费对应第一年培训、设备采购对应第二年扩产能、品牌推广对应第三年做品牌入驻电商平台、流动资金支撑产能运营。任一规划事实缺失/写错，或资金用途与规划阶段明显矛盾/无法对应则不通过。planning_fund_mismatch：该类缺陷指资金用途与三年规划阶段无法对应或存在明显矛盾，或规划关键事实被改写或缺失；本类不负责单项金额被改写（由fact_distortion_fund负责），也不负责推论运算错误。"
+      },
+      {
+        "id": "R11",
+        "group_id": "G02",
+        "importance": 2,
+        "source_refs": [],
+        "basis": "quality",
+        "scope": "推论有效性",
+        "evidence_mode": "text",
+        "judge_prompt": "PPT 中若出现算术、比较或推论（如资金加总、农户规模倍增、产能与农户匹配、年增收总额折算），其推论须有效：比率分子分母与对象期间可比、时间窗口一致、因果与比较有依据。标注假设不豁免错误运算或循环论证。若未使用推导则自然满足。reasoning_validity：该类缺陷指适用的算术、比较和推论不成立，如比率分子分母或对象期间不可比、时间窗口不一致、因果与比较无依据，或标注假设但存在错误运算、循环论证、把条件结论说成实测结果；本类不负责来源事实失真，也不负责新增无来源信息冒充已知。没有推导时自然满足。"
+      },
+      {
+        "id": "R12",
+        "group_id": "G03",
+        "importance": 2,
+        "source_refs": [],
+        "basis": "quality",
+        "scope": "未提供具体信息的处理",
+        "evidence_mode": "text",
+        "judge_prompt": "对于用户未提供的项目所在县名、工坊选址、合作社名称等具体信息，PPT 不得虚构为已知事实；若需占位应清楚标注为待核实或待补充。将未记载的具体名称/地址/人名冒充已知事实即不通过。unsupported_fact：该类缺陷指未经支持的新增事实被冒充已知，即虚构用户未提供的县名、选址、合作社名称等具体信息；本类不负责来源事实失真（由各fact_distortion条目负责），也不负责推论运算错误。"
+      },
+      {
+        "id": "R13",
+        "group_id": "G03",
+        "importance": 2,
+        "source_refs": [
+          "Q05"
+        ],
+        "basis": "explicit",
+        "scope": "人均增收数值一致性",
+        "evidence_mode": "text",
+        "judge_prompt": "人均月增收约1800元在PPT各处出现时口径一致，首期与第二年农户数变化不导致同一人均增收指标出现矛盾数值。若同一指标在不同页面写出相互冲突的金额则不通过。cross_page_inconsistency：该类缺陷指跨页同一指标口径不一致，即人均月增收等同一指标在不同页面出现相互矛盾的数值；本类不负责单处事实被改写（由fact_distortion_employment负责），也不负责推论运算错误。"
+      },
+      {
+        "id": "R14",
+        "group_id": "G04",
+        "importance": 3,
+        "source_refs": [
+          "Q08"
+        ],
+        "basis": "explicit",
+        "scope": "整体逻辑连贯性",
+        "evidence_mode": "text",
+        "judge_prompt": "PPT 整体逻辑严丝合缝，各页之间不脱节：背景→文化价值→就业模式→三年规划→资金用途形成连贯论证链，前一模块为后一模块提供依据，不出现断裂或突兀跳转。若页间逻辑断裂、模块顺序混乱导致论证链中断则不通过。narrative_break：该类缺陷指页间逻辑断裂或模块顺序混乱导致论证链中断；本类不负责单条事实失真、推论错误或视觉遮挡。"
+      },
+      {
+        "id": "R15",
+        "group_id": "G04",
+        "importance": 2,
+        "source_refs": [
+          "Q01"
+        ],
+        "basis": "explicit",
+        "scope": "受众适配",
+        "evidence_mode": "text",
+        "judge_prompt": "内容表述与详略适配文旅局和乡村振兴办领导的评审审查视角，关注政策依据、资金合规、就业带动成效与文化保护价值，不写成纯技术说明或纯商业宣传。若内容偏离政府评审关注点则不通过。audience_mismatch：该类缺陷指内容偏离政府评审关注点，如写成纯技术说明或纯商业宣传；本类不负责页间逻辑断裂（由narrative_break负责），也不负责视觉层级问题。"
+      },
+      {
+        "id": "R16",
+        "group_id": "G05",
+        "importance": 2,
+        "source_refs": [
+          "Q09"
+        ],
+        "basis": "explicit",
+        "scope": "标题与信息层级",
+        "evidence_mode": "both",
+        "judge_prompt": "各页标题与内容层级清晰，标题能反映该页主题，重点信息有明确层级区分，便于评审领导快速定位关键内容。visual_hierarchy：该类缺陷指在内容可读前提下的信息组织与重点定位问题；排除已经属于遮挡、裁切或图表标签错误的同一缺陷，不能用\"阅读路径被遮挡\"再次处罚遮挡。"
+      },
+      {
+        "id": "R17",
+        "group_id": "G05",
+        "importance": 2,
+        "source_refs": [
+          "Q09"
+        ],
+        "basis": "explicit",
+        "scope": "图表位置与可读性",
+        "evidence_mode": "both",
+        "judge_prompt": "若使用图表，图表位置合理、不遮挡正文、标签可读；若未使用图表不因此扣分。visual_readability：该类缺陷指正文/图形内容的遮挡、裁切、对比等真实不可读问题；排除前述图表标签缺陷。chart_label_integrity：该类缺陷指图表分类/轴/图例/单位标签缺失、NaN等残留、标签本身不可读；相同标签缺陷不再计入正文可读性或视觉层级。"
+      }
+    ],
+    "failure_modes": [
+      {
+        "id": "fact_distortion",
+        "owner": "R06",
+        "definition": "该类缺陷指来源事实失真，即上述背景事实被改写或缺失",
+        "exclusions": "本类不负责新增无来源信息冒充已知（由unsupported_fact负责），也不负责推论运算错误（由reasoning_validity负责）"
+      },
+      {
+        "id": "fact_distortion_year",
+        "owner": "R07",
+        "definition": "该类缺陷指2018年省级非遗认定年份或级别被改写或缺失",
+        "exclusions": "本类不负责新增无来源信息冒充已知，也不负责推论运算错误"
+      },
+      {
+        "id": "fact_distortion_employment",
+        "owner": "R08",
+        "definition": "该类缺陷指人均月增收约1800元、首期60户、第二年120户等给定事实被改写或缺失",
+        "exclusions": "本类不负责同一指标跨页口径冲突（由cross_page_inconsistency负责），也不负责推论运算错误"
+      },
+      {
+        "id": "fact_distortion_fund",
+        "owner": "R09",
+        "definition": "该类缺陷指总投资280万及五项分项金额被改写或缺失，或分项加总不等于280万",
+        "exclusions": "本类不负责资金与规划阶段的逻辑对应（由planning_fund_mismatch负责），也不负责推论运算错误"
+      },
+      {
+        "id": "planning_fund_mismatch",
+        "owner": "R10",
+        "definition": "该类缺陷指资金用途与三年规划阶段无法对应或存在明显矛盾，或规划关键事实被改写或缺失",
+        "exclusions": "本类不负责单项金额被改写（由fact_distortion_fund负责），也不负责推论运算错误"
+      },
+      {
+        "id": "reasoning_validity",
+        "owner": "R11",
+        "definition": "该类缺陷指适用的算术、比较和推论不成立，如比率分子分母或对象期间不可比、时间窗口不一致、因果与比较无依据，或标注假设但存在错误运算、循环论证、把条件结论说成实测结果",
+        "exclusions": "本类不负责来源事实失真，也不负责新增无来源信息冒充已知。没有推导时自然满足"
+      },
+      {
+        "id": "unsupported_fact",
+        "owner": "R12",
+        "definition": "该类缺陷指未经支持的新增事实被冒充已知，即虚构用户未提供的县名、选址、合作社名称等具体信息",
+        "exclusions": "本类不负责来源事实失真（由各fact_distortion条目负责），也不负责推论运算错误"
+      },
+      {
+        "id": "cross_page_inconsistency",
+        "owner": "R13",
+        "definition": "该类缺陷指跨页同一指标口径不一致，即人均月增收等同一指标在不同页面出现相互矛盾的数值",
+        "exclusions": "本类不负责单处事实被改写（由fact_distortion_employment负责），也不负责推论运算错误"
+      },
+      {
+        "id": "narrative_break",
+        "owner": "R14",
+        "definition": "该类缺陷指页间逻辑断裂或模块顺序混乱导致论证链中断",
+        "exclusions": "本类不负责单条事实失真、推论错误或视觉遮挡"
+      },
+      {
+        "id": "audience_mismatch",
+        "owner": "R15",
+        "definition": "该类缺陷指内容偏离政府评审关注点，如写成纯技术说明或纯商业宣传",
+        "exclusions": "本类不负责页间逻辑断裂（由narrative_break负责），也不负责视觉层级问题"
+      },
+      {
+        "id": "chart_label_integrity",
+        "owner": "R17",
+        "definition": "该类缺陷指图表分类/轴/图例/单位标签缺失、NaN等残留、标签本身不可读",
+        "exclusions": "相同标签缺陷不再计入正文可读性或视觉层级"
+      },
+      {
+        "id": "visual_readability",
+        "owner": "R17",
+        "definition": "该类缺陷指正文/图形内容的遮挡、裁切、对比等真实不可读问题",
+        "exclusions": "排除前述图表标签缺陷"
+      },
+      {
+        "id": "visual_hierarchy",
+        "owner": "R16",
+        "definition": "该类缺陷指在内容可读前提下的信息组织与重点定位问题",
+        "exclusions": "排除已经属于遮挡、裁切或标签错误的同一缺陷；不能用\"阅读路径被遮挡\"再次处罚遮挡"
+      },
+      {
+        "id": "background_module_missing",
+        "owner": "R01",
+        "definition": "该类缺陷指项目背景模块缺失或未承担背景交代职能",
+        "exclusions": "本类不负责具体数字被改写或缺失，也不负责新增无来源信息冒充已知"
+      },
+      {
+        "id": "model_mechanism_missing",
+        "owner": "R03",
+        "definition": "该类缺陷指三方利益联结模式或分工机制未被完整阐述",
+        "exclusions": "本类不负责具体数字被改写或缺失，也不负责推论运算错误"
+      },
+      {
+        "id": "planning_structure_missing",
+        "owner": "R04",
+        "definition": "该类缺陷指三年规划的分阶段递进结构缺失",
+        "exclusions": "本类不负责具体数值被改写或缺失，也不负责资金与规划的对应关系"
+      }
+    ]
+  },
+  "model": "glm-5.2",
+  "usage": {
+    "prompt_tokens": 8242,
+    "total_tokens": 11777,
+    "completion_tokens": 3535,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 78.478,
+  "attempts": 1
+}

@@ -1,0 +1,40 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": [
+        "R06"
+      ]
+    },
+    "summary": "rubric完整覆盖五项需求：R01/R02覆盖工位领取与考勤，R03在correctness中检查24小时时限的存在与准确（含等价表述），R05覆盖新员工受众，R06落实不限制页数模板配色且仅设可读性底线，R04为合理通用诚信要求。无重复计分、无无依据硬条件、各条可独立评判。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 131,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 131
+    },
+    "prompt_tokens": 1860,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "text_tokens": 1860
+    },
+    "total_tokens": 1991
+  },
+  "elapsed_seconds": 3.15,
+  "attempts": 1
+}

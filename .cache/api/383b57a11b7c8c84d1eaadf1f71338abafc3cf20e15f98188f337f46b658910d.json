@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "text_seen": [
+      "同比",
+      "亿"
+    ],
+    "overlapping": true,
+    "overlap_objects": [
+      "同（绿色）与亿（金色）",
+      "比（绿色）与亿（金色）"
+    ],
+    "description": "绿色文字'同比'位于图像上层，金色文字'亿'位于下层。绿色'同'字与金色'亿'字在左侧竖笔及横笔处有笔画相交重叠；绿色'比'字与金色'亿'字在中间斜笔处有笔画相交重叠。金色'亿'字的笔画从绿色'同比'二字的笔画间隙和下方穿出，形成明显的叠压关系。背景为纯白色。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 516,
+    "total_tokens": 663,
+    "completion_tokens": 147,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 4.502,
+  "attempts": 1
+}

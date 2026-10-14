@@ -1,0 +1,44 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "Rubric整体质量良好，各项要求覆盖完整，缺陷归属清晰，未发现影响有效性的硬性缺陷。五个纲目结构、题文对应、数据口径统一、问题呼应、公文风格等核心要求均有明确条目负责；视觉缺陷三类固定id使用规范；failure_modes定义与正文语义一致，边界划分清晰，无重复计分风险。",
+    "coverage": {
+      "Q01": [
+        "R03",
+        "R10"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R04"
+      ],
+      "Q05": [
+        "R05"
+      ],
+      "Q06": [
+        "R09"
+      ]
+    }
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 101,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 101
+    },
+    "prompt_tokens": 6512,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048,
+      "text_tokens": 6512
+    },
+    "total_tokens": 6613
+  },
+  "elapsed_seconds": 4.092,
+  "attempts": 1
+}

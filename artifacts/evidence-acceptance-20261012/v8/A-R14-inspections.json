@@ -1,0 +1,50 @@
+[
+  {
+    "id": "p1_overlap_fe92d10a01",
+    "page": 1,
+    "rect": [
+      506.656005859375,
+      289.82598876953125,
+      661.7839965820312,
+      407.52398681640625
+    ],
+    "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2a50e2453306906ae709c0f6f461c89b179cfc421702fb54fc137ea59172cce7/visual-focus-v1/e847cb49a8cd252b96963e0105fb9306c1ba7bc181efd0806053ee5447dc25d0.png",
+    "status": "observed",
+    "observation": {
+      "text_seen": [
+        "同比",
+        "亿"
+      ],
+      "overlapping": true,
+      "overlap_objects": [
+        "同（绿色）与亿（金色）",
+        "比（绿色）与亿（金色）"
+      ],
+      "description": "绿色文字'同比'位于图像上层，金色文字'亿'位于下层。绿色'同'字与金色'亿'字在左侧竖笔及横笔处有笔画相交重叠；绿色'比'字与金色'亿'字在中间斜笔处有笔画相交重叠。金色'亿'字的笔画从绿色'同比'二字的笔画间隙和下方穿出，形成明显的叠压关系。背景为纯白色。"
+    }
+  },
+  {
+    "id": "p2_overlap_54471eb5c8",
+    "page": 2,
+    "rect": [
+      41.06800079345703,
+      326.7380065917969,
+      197.39199829101562,
+      448.62200927734375
+    ],
+    "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2a50e2453306906ae709c0f6f461c89b179cfc421702fb54fc137ea59172cce7/visual-focus-v1/435606ea5fcd1390c5d6d612af957631420d414ae4b6bff50ac7aa3ccc1b4c01.png",
+    "status": "observed",
+    "observation": {
+      "text_seen": [
+        "同比",
+        "亿"
+      ],
+      "overlapping": true,
+      "overlap_objects": [
+        "同与亿",
+        "比与亿"
+      ],
+      "description": "绿色文字'同比'位于上层，金黄色文字'亿'位于下层。'亿'字笔画穿过'同'字内部（'同'的左竖与'亿'的左竖重叠，'同'的下横与'亿'的横折弯钩交叉），'比'字的左竖也与'亿'的横折弯钩交叉。绿色文字完全覆盖在金黄色文字之上，形成明显的上下叠层关系。背景为纯白色。"
+    }
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "page": 10,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "FINIS",
+      "location": "页面上方居中，橙色小字",
+      "statement": "可见事实：页面顶部有装饰性结束标记'FINIS'，颜色为#c96442。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "谢谢聆听——欢迎指正、补充线索与“拆台”",
+      "location": "页面中上部大标题",
+      "statement": "可见事实：主标题分两行呈现，第一行'谢谢聆听——欢迎指正、补充线'，第二行'索与“拆台”'。从局部放大图可见，'线'与'索'是上下行自然换行关系，字形笔画无实际遮挡，属于跨行断词排版，非文字叠印。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "谢谢各位听完这份只有四天的驻村笔记——这是一份中期田野笔记的分享，不是研究结论。欢迎指正、补充线索与当场“拆台”，线索可在沙龙现场投递。四天的笔记只够提出问题，接下来靠多方核验。",
+      "location": "页面中部说明文字",
+      "statement": "可见事实：说明文字分两段排版，从局部放大图可见第一行末'当场'与第二行首'“拆台”'是行末行首自然衔接，无字形笔画遮挡。文字内容明确标注'不是研究结论''只够提出问题''靠多方核验'，体现存疑、非定论态度。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "驻村田野记录者 / 驻村第 1–4 日 · 初步观察，存疑待考",
+      "location": "页面底部居中",
+      "statement": "可见事实：署名区域包含身份标识'驻村田野记录者'及时间范围'驻村第 1–4 日'，并标注'初步观察，存疑待考'。其中'存疑待考'是对整体作品定位的显式标注。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。存疑的地方标出来"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "四天的笔记只够提出问题，接下来靠多方核验",
+      "location": "页面中部说明文字第二段",
+      "statement": "可见事实：作品明确将四天笔记定位为'提出问题'阶段，而非结论，符合'别下定论'的要求。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "别下定论"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "4",
+          "unit": "天",
+          "subject": "驻村笔记时长",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "p10_t2与p10_t3的bounding box相交区域[240.09, 117.47, 479.88, 127.4]",
+      "location": "标题行区域",
+      "statement": "视觉现象记录：两个span的包围框在水平方向有重叠区域，但局部放大图显示'线'字位于第一行右端，'索'字位于第二行左端，是跨行换行排版，实际字形笔画无交叠，不构成可读性缺陷。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p10_t4与p10_t5的bounding box相交区域[155.74, 215.54, 563.58, 218.26]",
+      "location": "说明文字区域",
+      "statement": "视觉现象记录：两个span的包围框在垂直方向有窄条重叠，但局部放大图显示第一行末'当场'与第二行首'“拆台”'是正常行末行首衔接，无字形笔画遮挡，不构成可读性缺陷。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

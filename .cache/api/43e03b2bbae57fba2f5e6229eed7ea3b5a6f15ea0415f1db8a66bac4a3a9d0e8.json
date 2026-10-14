@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "text_seen": [
+      "组变化 5%（中科院宁波材料所）；重",
+      "με（光纤光栅标定，量级参照）"
+    ],
+    "overlapping": false,
+    "overlap_objects": [],
+    "description": "两行黑色文字，背景为浅灰色。上行文字为'组变化 5%（中科院宁波材料所）；重'，下行文字为'με（光纤光栅标定，量级参照）'。两行文字上下排列，无字形相交，间距正常。上行末尾的'重'字被截断。下行左侧为希腊字母μ和ε，右侧为中文括号及内容。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 189,
+    "total_tokens": 330,
+    "completion_tokens": 141,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 30.899,
+  "attempts": 1
+}

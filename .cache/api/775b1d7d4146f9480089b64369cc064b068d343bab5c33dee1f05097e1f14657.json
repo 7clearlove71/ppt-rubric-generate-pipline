@@ -1,0 +1,133 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      9
+    ],
+    "evidence": "第9页存在虚构具体事实并冒充既定成果的缺陷。该页标题为\"临床路径已跑通：从伦理批件到受试者入组的六个节点\"，但其全部内容聚焦于NEO（清华×宣武医院）、阶梯医疗（中科院×华山医院）、北脑一号、触觉重建临床范式等脑机接口/神经植入物公开项目，而非用户给定的\"柔性电子团队\"自有成果。页面详细呈现了NEO项目的伦理审批时间（2023年4月）、首例入组日期（2023-10-24）、获批上市日期（2026-03-13）、累计36例手术、11家合作医院等具体事实，以及阶梯医疗40余例、北脑一号5例等数据。这些均为外部公开项目的具体信息，被直接用于本报告页面中，且页面未明确标注为\"行业对标\"或\"外部案例\"，反而以\"临床路径已跑通\"作为标题，六个节点流程图也采用第一人称叙述（如\"01 医工协同\"），极易被理解为团队自身临床路径。ledger p9_e20明确指出该页\"展示四个对标项目...均为脑机接口/神经植入领域公开项目，非本团队成果\"，p9_e21指出\"与用户需求定义的柔性电子团队近三年进展主题存在明显偏离\"。尽管页面底部有\"来源\"注释，但正文主体未将NEO等项目与\"本团队\"进行明确区分，且将外部项目的具体临床节点、医院名称、日期、例数等详细事实直接呈现，构成虚构用户未提供的具体事实并冒充既定成果的情形。此外，用户prompt仅要求呈现\"与三甲医院合作植入式电子皮肤已进入临床试验阶段\"，并未提供任何关于NEO、宣武医院、36例手术、2023年4月伦理审批等具体信息，作品擅自引入这些外部项目的详细事实并嵌入本团队报告语境中，违反了fabricated_facts条款。",
+    "evidence_ids": [
+      "p9_e1",
+      "p9_e5",
+      "p9_e6",
+      "p9_e7",
+      "p9_e9",
+      "p9_e11",
+      "p9_e15",
+      "p9_e16",
+      "p9_e17",
+      "p9_e20",
+      "p9_e21"
+    ],
+    "resolutions": [],
+    "additional_observations": [
+      {
+        "page": 9,
+        "quote": "NEO 2023 年 4 月通过宣武医院伦理审查并完成试验注册",
+        "location": "页面上部第四节点",
+        "statement": "作品引入NEO项目具体伦理审批时间（2023年4月）和具体医院名称（宣武医院），该信息未在用户prompt中提供，且NEO为清华团队的外部公开项目，非用户给定的柔性电子团队成果。页面以\"临床路径已跑通\"为标题，将外部项目事实嵌入本团队报告语境，构成虚构具体事实冒充既定成果。",
+        "kind": "fact",
+        "failure_mode": "fabricated_facts",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 9,
+        "quote": "NEO 2023-10-24 首例植入，距伦理通过约 6 个月",
+        "location": "页面上部第六节点",
+        "statement": "作品引入NEO项目具体首例入组日期（2023-10-24）和具体时长计算（约6个月），该信息未在用户prompt中提供，且NEO为外部公开项目。页面未明确区分该事实属于外部对标而非本团队成果，构成虚构具体事实冒充既定成果。",
+        "kind": "fact",
+        "failure_mode": "fabricated_facts",
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2023-10-24",
+            "unit": "日期",
+            "subject": "NEO首例植入日期",
+            "denominator": "不适用",
+            "time_origin": "2023年10月24日"
+          },
+          {
+            "value": "6",
+            "unit": "月",
+            "subject": "伦理通过至首例植入间隔",
+            "denominator": "不适用",
+            "time_origin": "伦理通过后"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 9,
+        "quote": "NEO（清华 × 宣武医院） 36 例",
+        "location": "页面中部横向柱状图第一行",
+        "statement": "作品引入NEO项目具体合作方（清华×宣武医院）和具体例数（36例），该信息未在用户prompt中提供。用户prompt仅要求呈现\"与三甲医院合作植入式电子皮肤已进入临床试验阶段\"，未指定任何医院名称或具体例数。作品将外部项目的具体合作方和例数直接呈现于本团队报告中，构成虚构具体事实冒充既定成果。",
+        "kind": "fact",
+        "failure_mode": "fabricated_facts",
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "例",
+            "subject": "NEO累计临床植入例数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 9,
+        "quote": "NEO 于 2026-03-13 获国家药监局批准上市",
+        "location": "页面中部图表下方注释",
+        "statement": "作品引入NEO项目具体获批上市日期（2026-03-13），该信息未在用户prompt中提供，且为外部公开项目的事实。页面将该信息作为本报告\"临床路径已跑通\"的佐证材料，构成虚构具体事实冒充既定成果。",
+        "kind": "fact",
+        "failure_mode": "fabricated_facts",
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2026-03-13",
+            "unit": "日期",
+            "subject": "NEO获批上市日期",
+            "denominator": "不适用",
+            "time_origin": "2026年3月13日"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "page": 9,
+        "quote": "阶梯医疗（中科院 × 华山医院） 40 余例",
+        "location": "页面中部横向柱状图第二行",
+        "statement": "作品引入阶梯医疗项目具体合作方（中科院×华山医院）和具体例数（40余例），该信息未在用户prompt中提供。该页面整体将多个外部脑机接口项目的具体医院名称、例数、日期等事实密集呈现，且未在正文明确标注为\"外部行业对标\"，构成虚构具体事实冒充既定成果。",
+        "kind": "fact",
+        "failure_mode": "fabricated_facts",
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "例",
+            "subject": "阶梯医疗累计临床植入例数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 62292,
+    "total_tokens": 63780,
+    "completion_tokens": 1488,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 76.391,
+  "attempts": 1
+}

@@ -1,0 +1,30 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "evidence": "封面页（P1）有明确标题'寒冬淬火 逆势生长'与核心数据4.2亿/+26%；P2为总览页，P3-P6逐页展开老板叙事主线（不裁员反加码研发、现金危机、专利产出、团队与客户续约），P7以'正是那段日子让我们脱胎换骨'收束叙事并汇总数据，P8为正式收尾页'带着这份底气，走进新一年'。老板原话以引文形式自然融入P3、P7，非制作批注。无大面积空白、无待补充占位符、无模板英文栏位未填充、无面向制作者的说明文字。8页结构完整，可直接作为年会开场PPT使用。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 26153,
+    "total_tokens": 26336,
+    "completion_tokens": 183,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.691,
+  "attempts": 1
+}

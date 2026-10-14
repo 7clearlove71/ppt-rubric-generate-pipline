@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      4
+    ],
+    "evidence": "幻灯片4的图表存在严重渲染残留：X轴分类标签全部显示为\"NaN\"（1号线、2号线、3号线、4号线位置均显示NaN），导致数据柱形的产线归属完全无法辨认。虽然图例和Y轴单位（kWh/件、kWh/h）完整，但核心的分类标签失效，违反\"不得出现NaN、undefined、占位符等渲染残留导致数据归属无法辨认\"的明确要求。其他页面图表（如页2、3、5、6、7）标签、单位、图例均正常可读。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 19504,
+    "total_tokens": 19641,
+    "completion_tokens": 137,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 15.863,
+  "attempts": 1
+}

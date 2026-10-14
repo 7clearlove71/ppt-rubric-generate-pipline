@@ -1,0 +1,240 @@
+{
+  "page": 3,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "老宅未消失，日常先退场",
+      "location": "页面上部标题区域",
+      "statement": "页面标题，呈现Day1主题",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "Day1 进村。现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "第一层：空心化，不只指房屋空置，也指代际结构收缩。",
+      "location": "标题下方副标题",
+      "statement": "将Day1观察归纳为'空心化'主题，与需求中'初步感受:空心化、文化记忆断层、保护与开发错位'一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "40",
+      "location": "页面左侧大号数字，由p3_t3('4')和p3_t4('0')组成",
+      "statement": "视觉呈现'40'，对应'现存明清老宅约40栋'",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "40",
+          "unit": "栋",
+          "subject": "明清老宅",
+          "denominator": "不适用",
+          "time_origin": "Day1观察时点"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "现存明清老宅 · 约",
+      "location": "数字40右侧，p3_t5-p3_t7区域",
+      "statement": "文字标注'现存明清老宅'和'约'，与数字40组合表达'约40栋现存明清老宅'",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "<1/2",
+      "location": "页面左中部大号文字p3_t8",
+      "statement": "视觉呈现'不到一半'的数学表达，对应'住人不到一半'",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "住人不到一半"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "<1/2",
+          "unit": "比例",
+          "subject": "住人老宅占比",
+          "denominator": "40栋",
+          "time_origin": "Day1观察时点"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "仍在居住",
+      "location": "<1/2下方p3_t9",
+      "statement": "标注'<1/2'的含义为'仍在居住'的比例",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "居住状态的收缩",
+      "location": "右侧浅色卡片标题p3_t10",
+      "statement": "对Day1观察的主题概括",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "年轻人外出打工。",
+      "location": "右侧卡片内p3_t11",
+      "statement": "转述Day1核心事实之一",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年轻人外出打工"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "留守者多为老人。",
+      "location": "右侧卡片内p3_t12",
+      "statement": "转述Day1核心事实之一",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "留守多为老人"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "老宅仍具存量价值。",
+      "location": "右侧卡片内p3_t13",
+      "statement": "作品添加的推断性表述，非原文直接给定，但未冒充具体事实",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "“约”“不到一半”为田野口述观察，后续需核对户数与居住名单。",
+      "location": "右侧卡片底部注释p3_t14",
+      "statement": "对数字不确定性进行显式标注，符合'存疑的地方标出来'的要求",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来,别下定论"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "空心化：建筑存量仍在，生活连续性与代际在场减弱。",
+      "location": "页面底部深色条带p3_t15",
+      "statement": "对空心化主题的总结性表述，将初步感受定位为观察结论而非最终定论",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "田野初察 · 第 03 / 07 页",
+      "location": "页面底部p3_t16-p3_t20",
+      "statement": "页码标识，显示为第3页共7页",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "03",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "07",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "0",
+      "location": "局部放大图中可见大号数字'0'与金色文字'现存明清老宅'存在笔画交叉",
+      "statement": "视觉现象：数字'0'（属于'40'的一部分）与'现存明清老宅'文字在水平方向有重叠区域，放大图中可见'现'字左侧笔画与'0'的右侧边缘相交。此为装饰性大号数字与常规文字的有意叠印设计，'0'作为背景层次元素，'现存明清老宅'作为前景可读文字。需judge判断是否构成真实不可读。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "4",
+      "location": "p3_t3 bbox [46.46, 157.06, 86.47, 211.06]",
+      "statement": "数字'4'位于'0'上方，组成'40'，与下方文字无直接相交",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p3_overlap_86bb3de758: p3_t4('0')与p3_t5('现存明清老宅') intersection [47.28, 224.19, 86.47, 242.19], fraction_of_smaller_bbox 0.3484",
+      "location": "文字区域几何重叠候选",
+      "statement": "bounding box相交提示需核查真实遮挡。放大图显示'0'的右半部分与'现存明清老宅'的'现'字左部有视觉重叠，但'现存明清老宅'整体仍可辨识。属于设计层面的层次叠放，非意外遮挡。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "Bounding boxes assist localization only. Intersection is not proof of occlusion; inspect the image."
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

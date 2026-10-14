@@ -1,0 +1,198 @@
+{
+  "method": "Describe frozen binary scoring granularity without candidate scores or human labels; this is not a weight fitting exercise.",
+  "limitations": [
+    "Weight disparity is not itself proof of wrong importance.",
+    "One error and multiple errors inside the same binary criterion can lose the same item weight."
+  ],
+  "cases": [
+    {
+      "case_id": "01",
+      "rubric_hash": "da3003c33e53ea80ccd4960e3f24f569b34bed7d6b3299da9d3fca039ea8e20f",
+      "items": 13,
+      "largest_binary_loss": 15.0,
+      "smallest_binary_loss": 2.142857142857143,
+      "top_items": [
+        {
+          "id": "R_Q04",
+          "dimension": "fulfillment",
+          "score": 15.0,
+          "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：包含技术路线图模块"
+        },
+        {
+          "id": "R_Q05",
+          "dimension": "fulfillment",
+          "score": 15.0,
+          "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：包含下一步计划模块"
+        },
+        {
+          "id": "I_BOUNDARY",
+          "dimension": "integrity",
+          "score": 15.0,
+          "pass_condition": "新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。"
+        }
+      ]
+    },
+    {
+      "case_id": "02",
+      "rubric_hash": "852225638817312fbb0a1124e6cf900b30fb55e9594dfa9d23d3657498ebd9b2",
+      "items": 19,
+      "largest_binary_loss": 15.0,
+      "smallest_binary_loss": 2.0,
+      "top_items": [
+        {
+          "id": "I_BOUNDARY",
+          "dimension": "integrity",
+          "score": 15.0,
+          "pass_condition": "新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。"
+        },
+        {
+          "id": "R_Q05",
+          "dimension": "fulfillment",
+          "score": 11.25,
+          "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：用\"公司+合作社+农户\"模式讲清带动农户就业的利益联结与分工：公司负责设计和销售、合作社统一采购原料和培训、农户在家编织按件计酬。"
+        },
+        {
+          "id": "R_Q13",
+          "dimension": "fulfillment",
+          "score": 11.25,
+          "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：资金用途须与三年规划内容对应吻合（如厂房建设对应建工坊、培训经费对应培训、品牌推广对应做品牌入驻电商），不写虚。仅检查已呈现的资金项与已呈现规划内容之间的对应关系；资金项或规划内容缺失由对应条目负责，不再重复计为对应关系缺陷。"
+        }
+      ]
+    },
+    {
+      "case_id": "03",
+      "rubric_hash": "eb3f512a841427e081554b4f03d725303187db792348eb9f3a277a57b42b5dc5",
+      "items": 11,
+      "largest_binary_loss": 30.0,
+      "smallest_binary_loss": 2.272727272727273,
+      "top_items": [
+        {
+          "id": "R_Q03",
+          "dimension": "fulfillment",
+          "score": 30.0,
+          "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：1号线更换液压系统的投资回报账要在PPT里算清楚：投入约120万元，按当前产量和工业电价0.75元/kWh测算，约18个月收回成本；需呈现可理解的测算过程，并保持这些数值的估算性质。"
+        },
+        {
+          "id": "I_BOUNDARY",
+          "dimension": "integrity",
+          "score": 15.0,
+          "pass_condition": "新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。"
+        },
+        {
+          "id": "R_Q05",
+          "dimension": "narrative",
+          "score": 10.0,
+          "pass_condition": "满足以下来源明确的表达、受众或使用场景约束：整体结构符合要求：先呈现四条产线的能耗对比，再聚焦1号线做深挖，最后落到节能改造的投资回报测算。"
+        }
+      ]
+    },
+    {
+      "case_id": "05",
+      "rubric_hash": "4130edcbbd6181953d0c889adb575e406dd1c51b1f0e5b79d30689e6797926ab",
+      "items": 14,
+      "largest_binary_loss": 15.0,
+      "smallest_binary_loss": 3.8461538461538463,
+      "top_items": [
+        {
+          "id": "R_Q01",
+          "dimension": "fulfillment",
+          "score": 15.0,
+          "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：将田野笔记整理为一份完整PPT，覆盖四天笔记的主体内容，供沙龙使用"
+        },
+        {
+          "id": "R_Q07",
+          "dimension": "fulfillment",
+          "score": 15.0,
+          "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：呈现笔记作者的三点初步感受并作为后续方向：空心化、文化记忆断层、保护与开发错位；应作为初步判断/方向而非定论"
+        },
+        {
+          "id": "R_Q09",
+          "dimension": "narrative",
+          "score": 10.0,
+          "pass_condition": "满足以下来源明确的表达、受众或使用场景约束：PPT用于沙龙场景，整体风格要大气、出彩"
+        }
+      ]
+    },
+    {
+      "case_id": "06",
+      "rubric_hash": "48f7f352d53b69c4fd90e565eb3fdfb12c81deed73dc60dbd0a7240d48a6f054",
+      "items": 15,
+      "largest_binary_loss": 25.0,
+      "smallest_binary_loss": 1.3636363636363635,
+      "top_items": [
+        {
+          "id": "C_REASON",
+          "dimension": "correctness",
+          "score": 25.0,
+          "pass_condition": "补充信息前后一致，运算和正常近似正确；比率分子分母、对象、时期与时间起点可比；结论由所述前提支持，不将相关性说成已证实因果、不以待证结论作为其自身证明。"
+        },
+        {
+          "id": "I_BOUNDARY",
+          "dimension": "integrity",
+          "score": 15.0,
+          "pass_condition": "新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。"
+        },
+        {
+          "id": "V_READ",
+          "dimension": "visual",
+          "score": 10.0,
+          "pass_condition": "有信息作用的文字、数字及图表类别/轴/图例/单位可辨认，不因重叠叠印、截断、对比不足或缺失标签导致信息损失或需要猜读；页面没有未处理的NaN等破损残留。"
+        }
+      ]
+    },
+    {
+      "case_id": "09",
+      "rubric_hash": "20ba03f22aea5fe8349eb49d6b05c6ad4a0e44bdd70b2fd50677d32e27a446cb",
+      "items": 17,
+      "largest_binary_loss": 30.0,
+      "smallest_binary_loss": 1.6666666666666667,
+      "top_items": [
+        {
+          "id": "R_Q01",
+          "dimension": "fulfillment",
+          "score": 30.0,
+          "pass_condition": "完成以下明确交付目标，不把只有名称而没有所要求实质内容视为完成：产出年会开场PPT，将老板讲话稿内容与全年数据融合为一个整体：数据须能衔接并支撑老板讲述的内容，情怀/叙事部分须落到具体数字，讲述与数据互相支撑，不得讲话与数据'两张皮'。"
+        },
+        {
+          "id": "I_BOUNDARY",
+          "dimension": "integrity",
+          "score": 15.0,
+          "pass_condition": "新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。"
+        },
+        {
+          "id": "V_READ",
+          "dimension": "visual",
+          "score": 10.0,
+          "pass_condition": "有信息作用的文字、数字及图表类别/轴/图例/单位可辨认，不因重叠叠印、截断、对比不足或缺失标签导致信息损失或需要猜读；页面没有未处理的NaN等破损残留。"
+        }
+      ]
+    },
+    {
+      "case_id": "10",
+      "rubric_hash": "1564a066c36e7f880f02b2d8819bd8e2f57bab3c63806c8340bbc572976b754d",
+      "items": 20,
+      "largest_binary_loss": 15.0,
+      "smallest_binary_loss": 2.9411764705882355,
+      "top_items": [
+        {
+          "id": "I_BOUNDARY",
+          "dimension": "integrity",
+          "score": 15.0,
+          "pass_condition": "新增具体断言有可见来源支持，或由准确的标题、页注、统一声明与上下文清楚界定为建议、目标、假设、示例、待核实信息，未被冒充为已经证实的实际情况。"
+        },
+        {
+          "id": "V_READ",
+          "dimension": "visual",
+          "score": 10.0,
+          "pass_condition": "有信息作用的文字、数字及图表类别/轴/图例/单位可辨认，不因重叠叠印、截断、对比不足或缺失标签导致信息损失或需要猜读；页面没有未处理的NaN等破损残留。"
+        },
+        {
+          "id": "R_Q14",
+          "dimension": "narrative",
+          "score": 6.0,
+          "pass_condition": "满足以下来源明确的表达、受众或使用场景约束：面向管理层的危机应对决策汇报，供次日一早管理层会议使用"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "parsed": {
+    "consistent": false,
+    "issues": [
+      {
+        "reason": "候选A对第4页右侧折线图的判定存在自我矛盾与标准适用错误。A在verdict中认定该折线图属于'chart_label_integrity缺陷'，但在evidence的p4_e8中却注明'failure_modes中R16-chart_label_integrity未在提供的缺陷列表中（提供的缺陷列表含R01-R17，但R16存在）'，形成'存在又不存在'的自我矛盾。更关键的是，A将该折线认定为'与叙事转折形成呼应的图表化表达'，但标准明确scope为'使用了图表或可视化呈现的页面'，且定义针对'柱状图、折线图、饼图、双轴图等'数据图表。该折线无任何坐标轴、数据点、数值关联，本质上更接近装饰性趋势线条或视觉引导线，而非承载具体数据的'折线图'。A未提供任何证据表明该线条对应具体数据序列、有可读数值意图或属于数据可视化，却自行推断其为'图表化表达'并适用chart_label_integrity，属于过度扩张标准适用范围。相比之下，候选B对第4页两个柱状图的标签完整性进行了详细核验，两者对'何为应被评判的图表'的边界把握不一致。",
+        "evidence_refs": {
+          "A": [
+            "p4_e8"
+          ]
+        }
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 4075,
+    "total_tokens": 4353,
+    "completion_tokens": 278,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 45.546,
+  "attempts": 2
+}

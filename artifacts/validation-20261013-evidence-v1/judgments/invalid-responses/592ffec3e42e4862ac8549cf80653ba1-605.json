@@ -1,0 +1,1176 @@
+{
+  "page": 7,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "今晚批准五项决策，用闭环监控守住风险窗口",
+      "location": "页面上方标题",
+      "statement": "页面标题，概括本页核心内容：提出五项需今晚批准的决策，并强调闭环监控与风险窗口",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "决策",
+      "location": "表格第一列表头",
+      "statement": "表格列标题，标识第一列为决策类别",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "今晚批准内容",
+      "location": "表格第二列表头",
+      "statement": "表格列标题，标识第二列为今晚需批准的具体内容",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "会后需补充的字段",
+      "location": "表格第三列表头",
+      "statement": "表格列标题，标识第三列为会后需要补充完善的字段信息",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "响应组织",
+      "location": "表格第一行第一列",
+      "statement": "决策类别之一：响应组织",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "启动二级响应并组建跨部门小组",
+      "location": "表格第一行第二列",
+      "statement": "响应组织的今晚批准内容：启动二级响应并组建跨部门小组",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "小组负责人、成员部门、值守时间、决策权限",
+      "location": "表格第一行第三列",
+      "statement": "响应组织会后需补充的字段，包含负责人、部门、值守时间及决策权限",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "对外沟通",
+      "location": "表格第二行第一列",
+      "statement": "决策类别之一：对外沟通",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "事实边界内临时声明，并按36小时更新",
+      "location": "表格第二行第二列",
+      "statement": "对外沟通的今晚批准内容：在事实边界内发布临时声明，并按36小时更新。此处36小时与素材中技术复核预计需要36小时存在对应关系",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "技术复核预计所需时间",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "临时声明更新周期",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "声明审批人、事实边界清单、更新触发条件",
+      "location": "表格第二行第三列",
+      "statement": "对外沟通会后需补充的字段",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "客户处置",
+      "location": "表格第三行第一列",
+      "statement": "决策类别之一：客户处置",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "优先客服与退换方案",
+      "location": "表格第三行第二列",
+      "statement": "客户处置的今晚批准内容：优先处理客服与退换货方案",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "客服增援人数、退换适用范围、预算上限",
+      "location": "表格第三行第三列",
+      "statement": "客户处置会后需补充的字段",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "闭环监控",
+      "location": "表格第四行第一列",
+      "statement": "决策类别之一：闭环监控",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "舆情/客诉/退单联动看板，每2小时汇报",
+      "location": "表格第四行第二列",
+      "statement": "闭环监控的今晚批准内容：建立舆情、客诉、退单联动看板，每2小时汇报一次",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "2",
+          "unit": "小时",
+          "subject": "汇报频率",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "看板责任人、指标阈值、异常触发动作",
+      "location": "表格第四行第三列",
+      "statement": "闭环监控会后需补充的字段",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "升级机制",
+      "location": "表格第五行第一列",
+      "statement": "决策类别之一：升级机制",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "授权三级与四级升级",
+      "location": "表格第五行第二列，红色文字",
+      "statement": "升级机制的今晚批准内容：授权三级与四级升级。此处为红色高亮显示，提示重要性或紧急性",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "升级触发条件、可授权人员、升级后资源",
+      "location": "表格第五行第三列",
+      "statement": "升级机制会后需补充的字段",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "风险监控清单",
+      "location": "页面右侧上方标题",
+      "statement": "右侧模块标题：风险监控清单",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "转发量与负面情绪",
+      "location": "风险监控清单第一行左侧",
+      "statement": "风险监控指标之一：转发量与负面情绪",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "视频发布后24小时内转发破万,评论区负面情绪占比约72%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "72",
+          "unit": "%",
+          "subject": "负面情绪占比",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "权威媒体跟进",
+      "location": "风险监控清单第一行右侧",
+      "statement": "风险监控指标之一：权威媒体跟进",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "还没有权威媒体跟进"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "KOL扩散",
+      "location": "风险监控清单第二行左侧",
+      "statement": "风险监控指标之一：KOL扩散",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "但已有3个垂类KOL开始转发,有进一步发酵的苗头"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "3",
+          "unit": "人",
+          "subject": "垂类KOL转发数量",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "相关来电",
+      "location": "风险监控清单第二行右侧",
+      "statement": "风险监控指标之一：相关来电",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "近三天相关来电大概40通"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "40",
+          "unit": "次",
+          "subject": "近三天相关来电数量",
+          "denominator": "不适用",
+          "time_origin": "近三天"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "退单量",
+      "location": "风险监控清单第三行左侧",
+      "statement": "风险监控指标之一：退单量",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "电商渠道的退单量也比平时多了约15%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "15",
+          "unit": "%",
+          "subject": "电商退单量增长",
+          "denominator": "不适用",
+          "time_origin": "比平时"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "技术复核结论",
+      "location": "风险监控清单第三行右侧",
+      "statement": "风险监控指标之一：技术复核结论",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "内部备注里技术复核还没做完,预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "平台或监管介入",
+      "location": "风险监控清单第四行左侧",
+      "statement": "风险监控指标之一：平台或监管介入",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "声明反馈",
+      "location": "风险监控清单第四行右侧",
+      "statement": "风险监控指标之一：声明反馈",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "若48小时内无有效回应，风险将从质疑转向抵制；若技术复核确认问题，必须立即切换至召回、补偿、整改和监管沟通路径。",
+      "location": "页面右下角说明文字",
+      "statement": "关键时间窗口提示：48小时内无有效回应则风险升级；技术复核确认问题需切换至召回等路径。此处明确体现了48小时关键窗口和升级后果",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "有效回应关键窗口",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "资料来源：用户素材，待验证",
+      "location": "页面左下角",
+      "statement": "资料来源标注：用户素材，待验证",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "启动二级响应并组建跨部门小组",
+      "location": "表格第一行第二列",
+      "statement": "本页呈现了分级响应机制的部分内容：启动二级响应、授权三级与四级升级。但各级别的触发信号、具体动作、升级条件等细节分散在\"会后需补充的字段\"中，当前页面仅为框架性呈现，尚未完整区分事态等级及对应动作",
+      "kind": "inference",
+      "failure_mode": "response_mechanism_vague",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "授权三级与四级升级",
+      "location": "表格第五行第二列",
+      "statement": "升级机制仅提及\"授权三级与四级升级\"，但未说明当前处于何种等级、各级别的触发条件、升级信号及对应资源。三级、四级的具体定义缺失",
+      "kind": "inference",
+      "failure_mode": "response_mechanism_vague",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "每2小时汇报",
+      "location": "表格第四行第二列",
+      "statement": "闭环监控中\"每2小时汇报\"为新增建议性内容，素材中未给定此监测频率。该表述呈现为既定安排而非可识别的建议",
+      "kind": "inference",
+      "failure_mode": "unsupported_assertion",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "舆情监测那边出的负面话题摘要、这三天客服来电统计的要点、还有公关部连夜赶的声明草稿"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "2",
+          "unit": "小时",
+          "subject": "汇报频率",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "事实边界内临时声明，并按36小时更新",
+      "location": "表格第二行第二列",
+      "statement": "对外沟通内容提及\"事实边界内临时声明\"，但未完整呈现声明草稿原文，也未明确体现修改建议中的两点核心风险（36小时复核未完前提与措辞过满风险、\"追究法律责任\"可能被解读为店大欺客激化对立）。本页为决策页，可能因功能分工不同而未承载完整修改建议",
+      "kind": "inference",
+      "failure_mode": "statement_revision_missing",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "草稿写的是\"我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利\""
+        },
+        {
+          "source_id": "prompt",
+          "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "\"追究法律责任\"这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立,这两点务必在修改建议里体现出来"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "若技术复核确认问题，必须立即切换至召回、补偿、整改和监管沟通路径",
+      "location": "页面右下角",
+      "statement": "此处对复核未决的产品问题给出了条件性后续安排，但\"确认问题\"后的确定性切换路径在素材中未给定，属于新增建议内容。该表述呈现为既定事实安排",
+      "kind": "inference",
+      "failure_mode": "unsupported_assertion",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "转发量与负面情绪",
+      "location": "风险监控清单",
+      "statement": "风险监控清单中\"转发量\"与\"负面情绪\"并列，但未体现素材中\"24小时内转发破万\"及\"负面情绪占比约72%\"的具体数值，仅为指标名称罗列",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "视频发布后24小时内转发破万,评论区负面情绪占比约72%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "相关来电",
+      "location": "风险监控清单",
+      "statement": "风险监控清单中\"相关来电\"仅列指标名称，未体现素材中\"近三天相关来电大概40通\"的具体数值及诉求分布（退货退款约60%、要官方说明约35%）",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "近三天相关来电大概40通,诉求集中在退货退款(约60%)和要官方说明(约35%)"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "退单量",
+      "location": "风险监控清单",
+      "statement": "风险监控清单中\"退单量\"仅列指标名称，未体现素材中\"电商渠道的退单量也比平时多了约15%\"的具体数值",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "电商渠道的退单量也比平时多了约15%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "若48小时内无有效回应，风险将从质疑转向抵制",
+      "location": "页面右下角",
+      "statement": "48小时关键窗口判断已在本页呈现，与素材一致",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "有效回应关键窗口",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "客服增援人数、退换适用范围、预算上限",
+      "location": "表格第三行第三列",
+      "statement": "客户处置的会后补充字段包含预算上限，素材中未给定预算相关数据，属于合理建议性补充",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "升级触发条件、可授权人员、升级后资源",
+      "location": "表格第五行第三列",
+      "statement": "升级机制会后需补充字段包含触发条件等，说明当前页面仅为框架，具体分级内容待补充",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p7_t7与p7_t8",
+      "location": "表格第一行第三列文字区域",
+      "statement": "bounding box存在垂直方向小范围交集（intersection y:107.24-109.46），但局部放大图显示为正常换行排版，上下两行文字\"小组负责人、成员部门、值守时\"与\"间、决策权限\"无实际笔画遮挡，属于相邻行正常排版",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p7_t11与p7_t12",
+      "location": "表格第二行第三列文字区域",
+      "statement": "bounding box存在垂直方向小范围交集（intersection y:156.99-159.21），但局部放大图显示为正常换行排版，上下两行文字\"声明审批人、事实边界清单、更\"与\"新触发条件\"无实际笔画遮挡，属于相邻行正常排版",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p7_t15与p7_t16",
+      "location": "表格第三行第三列文字区域",
+      "statement": "bounding box存在垂直方向小范围交集（intersection y:206.73-208.96），但局部放大图显示为正常换行排版，上下两行文字\"客服增援人数、退换适用范围、\"与\"预算上限\"无实际笔画遮挡，属于相邻行正常排版",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p7_t19与p7_t20",
+      "location": "表格第四行第三列文字区域",
+      "statement": "bounding box存在垂直方向小范围交集（intersection y:256.48-258.71），但局部放大图显示为正常换行排版，上下两行文字\"看板责任人、指标阈值、异常触\"与\"发动作\"无实际笔画遮挡，属于相邻行正常排版",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p7_t23与p7_t24",
+      "location": "表格第五行第三列文字区域",
+      "statement": "bounding box存在垂直方向小范围交集（intersection y:306.51-308.74），但局部放大图显示为正常换行排版，上下两行文字\"升级触发条件、可授权人员、升\"与\"级后资源\"无实际笔画遮挡，属于相邻行正常排版",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p7_t34与p7_t35",
+      "location": "页面右下角说明文字区域",
+      "statement": "bounding box存在垂直方向小范围交集（intersection y:298.77-301.0），但局部放大图显示为正常换行排版，上下两行文字\"若48小时内无有效回应，风险将从质疑转向抵制；若技术\"与\"复核确认问题，必须立即切换至召回、补偿、整改和监管\"无实际笔画遮挡，属于相邻行正常排版",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p7_t35与p7_t36",
+      "location": "页面右下角说明文字区域",
+      "statement": "bounding box存在垂直方向小范围交集（intersection y:309.6-311.83），但局部放大图显示为正常换行排版，上下两行文字\"复核确认问题，必须立即切换至召回、补偿、整改和监管\"与\"沟通路径。\"无实际笔画遮挡，属于相邻行正常排版",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "今晚批准五项决策，用闭环监控守住风险窗口",
+      "location": "页面整体结构",
+      "statement": "本页为决策建议页，聚焦管理层今晚需批准的五项决策及风险监控清单。从结构上看，本页未包含事实时间线、影响评估的完整数据呈现，也未包含声明草稿原文及完整修改建议，主要承载分级响应机制中的决策批准部分。若全篇结构完整，此页为功能分工合理的决策页；若全篇缺少其他板块则需结合其他页面判断",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "结构上我想清楚了,事实时间线要先立住,然后是影响评估,声明草稿这块要单独拎出来给修改建议,分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "风险监控清单包含转发量与负面情绪、权威媒体跟进、KOL扩散、相关来电、退单量、技术复核结论、平台或监管介入、声明反馈",
+      "location": "页面右侧",
+      "statement": "风险监控清单涵盖舆情、客诉、退单、技术复核、监管、声明反馈等多维度指标，体现了联动监控思路，与素材中三块素材的关联性有所体现",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "启动二级响应并组建跨部门小组；授权三级与四级升级",
+      "location": "表格第一行与第五行",
+      "statement": "响应分级中提及二级、三级、四级，但未说明一级是什么、当前为何直接启动二级、各级之间的递进关系及触发条件。分级响应机制的具体等级定义和触发信号不完整",
+      "kind": "inference",
+      "failure_mode": "response_mechanism_vague",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "事实边界内临时声明",
+      "location": "表格第二行第二列",
+      "statement": "对外沟通内容使用\"事实边界内临时声明\"的表述，相较于素材中原草稿\"我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利\"的强硬措辞，体现了一定的措辞调整意识，但未明确呈现原文对比及具体修改建议的两点风险分析",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "草稿写的是\"我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利\""
+        },
+        {
+          "source_id": "prompt",
+          "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "\"追究法律责任\"这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立,这两点务必在修改建议里体现出来,不是随便改改措辞就行"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "优先客服与退换方案",
+      "location": "表格第三行第二列",
+      "statement": "客户处置内容提及优先客服与退换方案，但未体现素材中\"退货退款约60%\"\"要官方说明约35%\"的具体诉求分布数据，无法判断影响评估的完整性",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "诉求集中在退货退款(约60%)和要官方说明(约35%)"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "舆情/客诉/退单联动看板，每2小时汇报",
+      "location": "表格第四行第二列",
+      "statement": "联动看板设计体现了三块素材的整合思路，将舆情、客诉、退单三者联动，但\"每2小时汇报\"为新增频率建议，素材未给定",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "舆情监测那边出的负面话题摘要、这三天客服来电统计的要点、还有公关部连夜赶的声明草稿,这三样不能直接拼在一起糊弄,得融合成一个完整的危机应对逻辑给到管理层"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "若48小时内无有效回应，风险将从质疑转向抵制",
+      "location": "页面右下角",
+      "statement": "48小时时间窗口及升级后果已在本页明确呈现，与素材一致，时间窗口判断未缺失",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "48",
+          "unit": "小时",
+          "subject": "有效回应关键窗口",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "若技术复核确认问题，必须立即切换至召回、补偿、整改和监管沟通路径",
+      "location": "页面右下角",
+      "statement": "技术复核后的条件性路径安排，体现了对复核未决状态的应对预案，但\"召回、补偿、整改和监管沟通路径\"为新增内容，素材未给定这些具体动作，且表述为确定性安排而非建议",
+      "kind": "inference",
+      "failure_mode": "unsupported_assertion",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "资料来源：用户素材，待验证",
+      "location": "页面左下角",
+      "statement": "来源标注为\"用户素材，待验证\"，表明部分内容基于用户素材但未经完全验证，该标注本身不构成缺陷，但提示部分数据可能为待确认状态",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "今晚批准五项决策，用闭环监控守住风险窗口",
+      "location": "页面标题与整体结构",
+      "statement": "本页标题为决策导向，内容聚焦管理层今晚需批准的决策事项。从单页功能看，此页主要承载分级响应机制中的决策批准环节，以及风险监控清单。事实时间线、影响评估完整数据、声明草稿修改建议等内容未在本页呈现，需结合其他页面判断全篇结构完整性",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "结构上我想清楚了,事实时间线要先立住,然后是影响评估,声明草稿这块要单独拎出来给修改建议,分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "响应组织、对外沟通、客户处置、闭环监控、升级机制",
+      "location": "表格左侧第一列",
+      "statement": "五项决策类别覆盖了响应、沟通、客户、监控、升级五个维度，但未明确体现\"事实时间线\"\"影响评估\"\"声明草稿修改建议\"三个板块的内容，本页功能聚焦于决策与监控而非完整四板块呈现",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "结构上我想清楚了,事实时间线要先立住,然后是影响评估,声明草稿这块要单独拎出来给修改建议,分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "风险监控清单：转发量与负面情绪、权威媒体跟进、KOL扩散、相关来电、退单量、技术复核结论、平台或监管介入、声明反馈",
+      "location": "页面右侧",
+      "statement": "风险监控清单涵盖8项指标，但未呈现具体数值或阈值，仅为指标名称罗列。与素材中的具体数据（转发破万、负面情绪约72%、3个垂类KOL、来电约40通、退单增约15%）未建立直接数值对应关系",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "视频发布后24小时内转发破万,评论区负面情绪占比约72%"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "已有3个垂类KOL开始转发"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "近三天相关来电大概40通"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "电商渠道的退单量也比平时多了约15%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "启动二级响应并组建跨部门小组",
+      "location": "表格第一行",
+      "statement": "响应组织决策中提及\"二级响应\"，但未解释二级响应的定义、触发条件、与一级/三级/四级的区别。结合\"授权三级与四级升级\"，分级体系的等级定义和触发信号均不完整",
+      "kind": "inference",
+      "failure_mode": "response_mechanism_vague",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "授权三级与四级升级",
+      "location": "表格第五行第二列，红色文字",
+      "statement": "升级机制以红色高亮显示，提示重要性，但仅提及\"授权三级与四级升级\"，未说明当前等级状态、升级触发条件、各级对应动作及资源。分级响应机制的具体内容缺失",
+      "kind": "inference",
+      "failure_mode": "response_mechanism_vague",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "会后需补充的字段",
+      "location": "表格第三列整体",
+      "statement": "表格第三列大量字段标记为\"会后需补充\"，包括小组负责人、声明审批人、客服增援人数、看板责任人、升级触发条件等，说明当前页面仅为决策框架，具体执行细节待补充。该设计本身不构成缺陷，但提示本页内容以框架性呈现为主",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "事实边界内临时声明，并按36小时更新",
+      "location": "表格第二行第二列",
+      "statement": "36小时更新周期与素材中技术复核预计36小时存在对应，体现了对复核时间窗口的考虑，但未明确说明\"临时声明\"是因为复核未完、措辞需保留余地的修改建议逻辑",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "技术复核还没做完,预计还需要36小时才能出结论"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "技术复核预计所需时间",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "36",
+          "unit": "小时",
+          "subject": "临时声明更新周期",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "若48小时内无有效回应，风险将从质疑转向抵制；若技术复核确认问题，必须立即切换至召回、补偿、整改和监管沟通路径。",
+      "location": "页面右下角说明文字",
+      "statement": "该说明文字涵盖两个条件判断：48小时无回应的风险升级、技术复核确认问题的路径切换。前者与素材一致，后者为新增预案。整体呈现为决策支撑逻辑，但\"必须立即切换\"的表述较为绝对，素材未给定\"召回、补偿、整改\"等具体动作",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "今晚批准五项决策，用闭环监控守住风险窗口",
+      "location": "页面整体",
+      "statement": "本页为第7页，从页码判断可能为后续页面，前置页面可能已呈现事实时间线、影响评估、声明草稿修改建议等内容。单页检查无法判断全篇四板块是否齐全，需结合其他页面评估",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "结构上我想清楚了,事实时间线要先立住,然后是影响评估,声明草稿这块要单独拎出来给修改建议,分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页未呈现声明草稿原文及完整修改建议",
+      "location": "页面内容检查",
+      "statement": "基于本页可见内容，声明草稿原文（\"我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利\"）未在本页呈现，修改建议的两点核心风险（复核未完前提与措辞过满、追究法律责任被解读为店大欺客激化对立）也未明确呈现。该内容可能在前置页面，本页功能分工不同",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "草稿写的是\"我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利\""
+        },
+        {
+          "source_id": "prompt",
+          "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "\"追究法律责任\"这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立,这两点务必在修改建议里体现出来,不是随便改改措辞就行"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页未呈现事实时间线完整内容",
+      "location": "页面内容检查",
+      "statement": "基于本页可见内容，事实时间线（6月10日起测评博主发视频、24小时内转发破万、48小时窗口等）未在本页完整呈现，仅48小时窗口在右下角提及。该内容可能在前置页面",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "6月10日起某测评博主发视频质疑我们产品有安全隐患,视频发布后24小时内转发破万"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "48小时内如果不做有效回应,可能从质疑升级为抵制"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页未呈现影响评估完整数据",
+      "location": "页面内容检查",
+      "statement": "基于本页可见内容，影响评估中的具体数据（来电约40通、退货退款约60%、要官方说明约35%、退单增约15%）未在本页完整呈现，仅在风险监控清单中列有指标名称。该内容可能在前置页面",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "近三天相关来电大概40通,诉求集中在退货退款(约60%)和要官方说明(约35%)"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "电商渠道的退单量也比平时多了约15%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "建议将风险监控清单中的指标与素材具体数值建立对应，增强决策依据的直观性",
+      "location": "页面右侧风险监控清单",
+      "statement": "当前风险监控清单仅为指标名称，建议补充具体数值或阈值参考，如转发量基准、负面情绪占比阈值等，以支撑管理层快速判断",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "视频发布后24小时内转发破万,评论区负面情绪占比约72%"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "近三天相关来电大概40通"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "电商渠道的退单量也比平时多了约15%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "建议明确分级响应机制中二级、三级、四级的定义、触发条件及对应动作",
+      "location": "表格第一列与第五行",
+      "statement": "当前分级响应机制仅为框架性表述，建议补充各级别的明确定义、触发信号、升级条件及对应资源，以满足分级响应机制的完整性要求",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "分级响应机制也得有,这四块都不能少"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "建议声明草稿修改建议部分明确呈现原文对比及两点核心风险分析",
+      "location": "表格第二行及整体结构",
+      "statement": "若本页为声明草稿修改建议的承载页，建议补充草稿原文与修改建议的对比，并明确36小时复核未完前提与措辞过满风险、追究法律责任被解读为店大欺客激化对立两点分析",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "草稿写的是\"我司产品均符合国家标准,视频内容与事实不符,我司保留追究法律责任的权利\""
+        },
+        {
+          "source_id": "prompt",
+          "quote": "在这个节骨眼上把话说得这么满,万一复核发现确有问题会非常被动"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "\"追究法律责任\"这种强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立,这两点务必在修改建议里体现出来,不是随便改改措辞就行"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体布局清晰，左右分栏结构，左侧为决策表格，右侧为风险监控清单及关键提示",
+      "location": "页面整体视觉",
+      "statement": "页面采用左右分栏布局，左侧为三色列表格（决策/今晚批准内容/会后需补充的字段），右侧为风险监控清单（2列4行卡片）及底部说明文字。视觉层级较为清晰，标题、表头、正文、注释区分明确",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格第一行表头为红色背景（#d33941），白色文字",
+      "location": "表格表头视觉",
+      "statement": "表格表头采用红色背景配白色文字，与正文形成明显对比，视觉区分度良好",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "升级机制行中\"授权三级与四级升级\"为红色文字（#d33941）",
+      "location": "表格第五行第二列",
+      "statement": "该单元格文字采用红色，为全页唯一红色正文，起到强调作用，提示该决策项的重要性或紧急性",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "风险监控清单为浅灰色背景卡片，2列4行布局",
+      "location": "页面右侧",
+      "statement": "风险监控清单采用卡片式布局，8个指标均匀分布，视觉整齐，但卡片内仅有文字标签，无数据或状态指示",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面右下角说明文字为黑色，与上方卡片有明确分隔",
+      "location": "页面右下角",
+      "statement": "关键提示文字位于风险监控清单下方，独立成段，视觉位置突出，便于阅读",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "资料来源：用户素材，待验证",
+      "location": "页面左下角，灰色小字",
+      "statement": "来源注释位于页面左下角，字号较小，颜色为灰色（#898989），不影响主内容阅读",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "所有文字区域无实际笔画遮挡，可读性良好",
+      "location": "页面整体文字检查",
+      "statement": "经局部放大图核查，所有bounding box存在交集的文字对均为正常换行排版，无实际字形叠印或遮挡，文字可读性良好",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格行高均匀，内容无截断",
+      "location": "表格整体检查",
+      "statement": "表格5行内容均在页面边界内，无行被页面边界或页脚截断，表格完整性良好",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "风险监控清单卡片完整，无裁切出界",
+      "location": "页面右侧检查",
+      "statement": "右侧8个卡片及说明文字均在页面边界内，无内容裁切或出界",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

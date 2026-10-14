@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      5
+    ],
+    "evidence": "第5页投资回报测算模块明确使用工业电价0.75元/kWh（③月节约电费：8.8万kWh×0.75元/kWh=6.6万元/月）、改造投入120万元（标题及投资线120万元）、静态回收期≈18个月（④静态回收期：120万元÷6.6≈18.2个月）。三项关键给定参数均与sources完全一致，未被篡改。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23105,
+    "total_tokens": 23212,
+    "completion_tokens": 107,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 18.93,
+  "attempts": 1
+}

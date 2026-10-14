@@ -1,0 +1,92 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 1,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "封面标题“老旧小区改造工作汇报”、专项工作汇报、汇报单位、汇报时间及三项指标（92.6% 年度完工率 63÷68个小区、85.3% 资金到位率 3.65÷4.28亿元、91.2% 居民总体满意率 有效样本11,962份）均清晰可辨，右侧红色竖排“城镇老旧小区改造”白字对比充足，无重叠、截断或NaN残留；无图表，不要求补充",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "封面页：左上标签—主标题—汇报单位/时间—底部三项并列指标，层级与阅读顺序明确，三项指标等距并列、对应关系清楚，右侧竖排装饰条不干扰主体",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "“汇报提纲”及01-05五个条目（改造任务完成情况、资金使用情况、居民满意度、存在问题、下一步计划）与右侧对应摘要数字（92.6%、3.86万户、85.3%、78.6%、91.2%等）均清晰可读，无遮挡或截断；无图表，不要求补充",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "目录页：编号—条目名—右侧数据摘要逐行对齐，分隔线明确行界，阅读顺序自上而下唯一，并列关系清晰",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "标题“一、改造任务完成情况”、（一）四项指标（68个计划改造小区、63个已完工小区、92.6%年度完工率、5个在建小区）及（二）三条进度条（基础类95.6%、完善类88.2%、提升类76.5%）的类别名、条形与百分比标签均可辨认；局部放大图证实红色装饰短线与数字、数字与单位标签之间无实际笔画相交；“63个÷68个”“2027年6月底前完工”“100%”为正常换行且完整可见，底部注释可读，无NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "内容可读前提下，标题—（一）指标行—（二）条形进度—说明文字—注释的层级与阅读路径明确；三条进度条左对齐类别名、右端百分比，红色填充条与灰色底条加100%虚线基准的编码对应关系清楚，无误读风险",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 1360,
+    "completion_tokens_details": {
+      "reasoning_tokens": 733,
+      "text_tokens": 627
+    },
+    "prompt_tokens": 10745,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 9569,
+      "text_tokens": 1176
+    },
+    "total_tokens": 12105
+  },
+  "elapsed_seconds": 52.167,
+  "attempts": 1
+}

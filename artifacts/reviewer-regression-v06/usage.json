@@ -1,0 +1,82 @@
+[
+  {
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "701c48ef880b184103f97999b0198a13a9d07b551b4a78d6e1db5774d0d5701b",
+    "cached": true
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "335f5f6e52b393d8a51de80a4191a7958a22146cbb6fa37e05012fb1effac02c",
+    "cached": false,
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 1582,
+      "total_tokens": 2148,
+      "completion_tokens": 566,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 16.108,
+    "attempts": 1
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "45194a0108b2018168f1e3be0baef93f57d6c48bd58ba2f36b46555914e43290",
+    "cached": true
+  },
+  {
+    "role": "reviewer",
+    "cache_key": "0d7e08d6983679a8ec8372e34ea16691259e5c9a5c4fa52c8a9a8843deadd7c4",
+    "cached": false,
+    "model": "kimi-k2.6",
+    "usage": {
+      "prompt_tokens": 1589,
+      "total_tokens": 1670,
+      "completion_tokens": 81,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 33.321,
+    "attempts": 2
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "a892e5e2c7cdf12b9d127063399ee4401c52c4488fc75c85be9dee390ec0ecec",
+    "cached": true
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "9a3711ce3231aaeb95144a965f46ec8376f6b978e2e221f325e807a8456af9e4",
+    "cached": true
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "ad243d3bb13c77a5dc2e2141729f91e825f918e191cda34d76bfb7f051323482",
+    "cached": true
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "7d8d607c51ee270e24e883d673eb2c13087cda6127304c12f1d7dbe5cad71e1b",
+    "cached": true
+  },
+  {
+    "role": "reviewer",
+    "model": "kimi-k2.6",
+    "cache_key": "44aa14ee2d1cf011243a5ab642be34d91177c7319507c845071ad4645b9c4d6d",
+    "cached": true
+  }
+]

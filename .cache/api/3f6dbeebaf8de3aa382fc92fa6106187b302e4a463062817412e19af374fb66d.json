@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A与候选B均判定为yes，结论一致。",
+      "两候选在专业术语使用、技术参数呈现、技术挑战与解决方案展开等方面均满足expert_depth标准：A有良率78%→92%及工程意义解读、弯曲100,000次及验证方法论三要素、植入式电子皮肤临床试验及技术路线图；B有失效机理四类拆解、中性层设计×多层复合阻隔封装、器件-生物界面一体化设计、行业标准对标（IEC/ISO/NMPA）及量化里程碑规划。",
+      "B的技术参数密度和外部对标引用显著高于A，但A通过'规模化入场券'论证、成熟度对照表、数据性质标注等方式同样展现了匹配专家受众的专业深度。标准仅要求'体现一定的技术专业性'，不要求参数密度统一，两种展开方式均不构成标准漂移。",
+      "两候选均未出现'过度简化'或'纯科普化表述'的实质问题，答案一致且均有充分证据支撑。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 57920,
+    "total_tokens": 58152,
+    "completion_tokens": 232,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 57.477,
+  "attempts": 1
+}

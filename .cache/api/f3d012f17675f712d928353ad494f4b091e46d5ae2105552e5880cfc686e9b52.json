@@ -1,0 +1,341 @@
+{
+  "parsed": {
+    "page": 5,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "利益联结：三方分工到人，在家编织按件计酬",
+        "location": "页面顶部标题",
+        "statement": "页面标题明确点明利益联结主题，与用户需求中的\"公司+合作社+农户\"模式对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "带动农户就业的模式用\"公司+合作社+农户\"讲清利益联结"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "公司 市场端 产品设计与市场销售",
+        "location": "左上方流程图节点",
+        "statement": "公司职责为产品设计与市场销售，与用户给定事实一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "公司负责设计和销售"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "合作社 组织端 统一采购原料并组织培训",
+        "location": "中间流程图节点",
+        "statement": "合作社职责为统一采购原料并组织培训，与用户给定事实一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "合作社统一采购原料和培训"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "农户 生产端 在家编织、按件计酬",
+        "location": "右上方流程图节点",
+        "statement": "农户职责为在家编织、按件计酬，与用户给定事实一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "农户在家编织按件计酬"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "逐级下达 订单 / 设计标准 · 统一原料 · 集中培训 · 技术指导",
+        "location": "流程图上方箭头文字",
+        "statement": "流程方向为自上而下逐级下达，体现管理链条",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "成品交验 · 计件核算 · 按月兑付 逐级归集",
+        "location": "流程图下方箭头文字",
+        "statement": "产品回流方向为自下而上逐级归集，形成闭环",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "三方权责对照 承担职能 · 收益方式 · 承担风险（项目申报口径）",
+        "location": "左下方表格标题",
+        "statement": "表格以三方权责对照形式呈现，包含承担职能、收益方式、承担风险三列",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "公司 产品设计与市场销售 设计与销售渠道收益（分配比例按公司章程约定） 市场与订单波动风险",
+        "location": "表格第一行",
+        "statement": "公司承担市场风险，收益方式注明按公司章程约定，未给出具体比例数字",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "合作社 统一采购原料并组织培训 组织服务收益（分配比例按合作社章程约定） 原料供应与质量、品控风险",
+        "location": "表格第二行",
+        "statement": "合作社承担原料供应与质量、品控风险，收益方式注明按合作社章程约定",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "农户 在家编织 按件计酬，人均月增收约 1800 元 不承担销售风险",
+        "location": "表格第三行",
+        "statement": "农户按件计酬，人均月增收约1800元，不承担销售风险，与用户给定事实一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "1800",
+            "unit": "元",
+            "subject": "人均月增收",
+            "denominator": "人·月",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "按件计酬 5 步兑付 与统一供料、统一质检、统一销售对应",
+        "location": "右下方模块标题",
+        "statement": "5步兑付流程与三统一对应，展示计酬机制的具体操作步骤",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "1 领料登记 2 在家编织 3 交验质检 4 计件核算 5 按月兑付",
+        "location": "5步流程图",
+        "statement": "5步兑付流程清晰：领料→编织→质检→核算→兑付",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "统一供料 统一质检 统一销售",
+        "location": "5步流程下方标签",
+        "statement": "三统一支撑体系：供料、质检、销售",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "人均月增收 约1800 元/人·月",
+        "location": "右下方突出显示",
+        "statement": "核心数字约1800元/人·月以醒目方式呈现，与用户给定事实一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "人均月增收约1800元"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "1800",
+            "unit": "元",
+            "subject": "人均月增收",
+            "denominator": "人·月",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "按件计酬结算，农户不承担销售风险；计件单价按品类与工序核定",
+        "location": "1800元数字右侧说明文字",
+        "statement": "补充说明计酬机制细节，强调农户不承担销售风险",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "低门槛就业 不出村、不误农，妇女与留守劳动力可参与",
+        "location": "底部左侧标签",
+        "statement": "强调就业门槛低，目标人群为妇女与留守劳动力",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "统一品控 合作社集中培训＋交验质检，计件与质量挂钩",
+        "location": "底部中间标签",
+        "statement": "品控机制说明，计件与质量挂钩",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "风险分层 市场风险由公司承担，农户不承担销售风险",
+        "location": "底部右侧标签",
+        "statement": "风险分层设计，市场风险由公司承担",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "资料来源：项目申报口径（三方分工、在家编织按件计酬、人均月增收约1800 元为锁定口径）；背景参照：封面新闻2025 竹编、国家林草局雅安竹编、新华社2025 非遗工坊。收益分配比例、计件单价与保底收购价以公司章程、合作协议及申报材料为准。",
+        "location": "页面底部来源说明",
+        "statement": "明确标注核心数据为项目申报口径（锁定口径），背景参照为外部资料，收益分配比例等以正式文件为准。此处理较为严谨，将未确定事项标注为以正式文件为准，避免了将假设性内容冒充事实",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "1800",
+            "unit": "元",
+            "subject": "人均月增收",
+            "denominator": "人·月",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "设计与销售渠道收益（分配比例按公司章程\n约定）",
+        "location": "表格公司行收益方式单元格，放大图p5_overlap_460bc4f205",
+        "statement": "视觉观察：该单元格内文字为两行排版，第一行\"设计与销售渠道收益（分配比例按公司章程\"，第二行\"约定）\"。从放大图可见，这是正常的换行排版，\"章程\"与\"约定）\"之间无真实字形遮挡，矩形相交源于行高与换行设计，不构成可读性问题",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "组织服务收益（分配比例按合作社章程约\n定）",
+        "location": "表格合作社行收益方式单元格，放大图p5_overlap_a737cce5f6",
+        "statement": "视觉观察：同理为正常换行排版，\"约\"与\"定）\"之间为换行衔接，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "按件计酬结算，农户不承担销售风险；计件单价按品类与\n工序核定",
+        "location": "右侧说明文字，放大图p5_overlap_1b48bcc389",
+        "statement": "视觉观察：正常换行排版，\"与\"和\"工序核定\"分处两行，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "资料来源：项目申报口径（三方分工、在家编织按件计酬、人均月增收约1800 元为锁定口径）；背景参照：封面新闻2025 竹编、国家林草局雅安竹编、新华社2025 非遗工坊。收益分配比例、计件单\n价与保底收购价以公司章程、合作协议及申报材料为准。",
+        "location": "底部来源说明，放大图p5_overlap_4e7c1c0083",
+        "statement": "视觉观察：正常换行排版，\"计件单\"与\"价与保底收购价\"为同一词语的换行，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": " 元/ 人· 月 / 按件计酬结算，农户不承担销售风险；计件单价按品类与",
+        "location": "右侧数字旁文字区域，放大图p5_overlap_c6f17796d7",
+        "statement": "视觉观察：放大图显示\"0 元/人·月\"与\"按件计酬结算...\"存在水平方向的部分重叠现象。左侧大号数字\"约1800\"的\"0\"字尾与右侧说明文字\"按件计酬结算\"的起始部分在水平方向相邻，从放大图可见\"0\"右侧紧邻\"元/人·月\"，而说明文字从更右侧开始，实际笔画无交叠。这是同一行内不同元素的水平排列，非遮挡问题",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "封面新闻2025 竹编、国家林草局雅安竹编、新华社2025 非遗工坊",
+        "location": "底部来源说明中的背景参照",
+        "statement": "作品引用了外部背景参照，但标注为\"背景参照\"而非项目本身的事实来源，处理较为恰当。但\"国家林草局雅安竹编\"这一参照与项目所在地是否为雅安未说明，作为背景参照不构成fabricated_facts",
+        "kind": "assumption",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "预计带动的农户数(首期60户第二年扩至120户)",
+        "location": "用户需求中的数字，本页未出现",
+        "statement": "本页聚焦利益联结机制与三方权责，未出现首期60户/第二年120户的带动户数数字。该数字可能出现在其他页面，本页单独无法判断是否缺失",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "顺带把预计带动的农户数(首期60户第二年扩至120户)和人均增收讲一下"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 9472,
+    "total_tokens": 12597,
+    "completion_tokens": 3125,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 70.81,
+  "attempts": 1
+}

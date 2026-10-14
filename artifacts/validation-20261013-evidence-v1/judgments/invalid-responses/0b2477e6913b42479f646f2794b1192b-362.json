@@ -1,0 +1,3072 @@
+{
+  "page": 8,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "把每一个\"待考\"摊在桌面上：9 条存疑项，各自的信息源、待验证问题与核验方法一览",
+      "location": "页面上部大标题",
+      "statement": "页面标题，表明本页为9条存疑项的系统性梳理，采用清单式结构呈现。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "田野笔记整理成PPT，搞大气一点，沙龙上要用。"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论。一定要出彩。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "9",
+          "unit": "条",
+          "subject": "存疑项",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "本页无结论 · 9 条均为单一信息源，未经交叉验证",
+      "location": "标题下方右侧灰色小字",
+      "statement": "页面显式声明无结论，9条存疑项均为单一信息源、未经交叉验证，符合\"别下定论\"要求。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S1 \"现存明清老宅约40 栋\" 估算·待核",
+      "location": "表格第一行存疑点列",
+      "statement": "引用笔记原文\"现存明清老宅约40栋\"，标注\"估算·待核\"，事实内容与Day1一致，且显式标记待核。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "约40",
+          "unit": "栋",
+          "subject": "明清老宅",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "S2 \"住人不到一半\" 目测·待核",
+      "location": "表格第二行存疑点列",
+      "statement": "引用笔记原文\"住人不到一半\"，标注\"目测·待核\"，事实内容与Day1一致，且显式标记待核。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S3 \"年轻人外出打工，留守多为老人\" 印象·无数据",
+      "location": "表格第三行存疑点列",
+      "statement": "引用笔记原文\"年轻人外出打工,留守多为老人\"，标注\"印象·无数据\"，事实内容与Day1一致，且显式标记信息质量。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S4 \"祠堂以前每年清明祭祖，现在三年一次\" 口述·待核",
+      "location": "表格第四行存疑点列",
+      "statement": "引用笔记原文\"祠堂以前每年清明祭祖,现在三年一次\"，标注\"口述·待核\"，事实内容与Day2一致，且显式标记待核。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S5 \"族谱文革烧了一部分\" 口述·待核",
+      "location": "表格第五行存疑点列",
+      "statement": "引用笔记原文\"族谱文革烧了一部分\"，标注\"口述·待核\"，事实内容与Day2一致，且显式标记待核。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S6 \"现在版本是后来凭记忆补的\" 笔记自标待考",
+      "location": "表格第六行存疑点列",
+      "statement": "引用笔记原文\"现在版本是后来凭记忆补的\"，标注\"笔记自标待考\"，事实内容与Day2一致，且显式标记待考。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S7 \"几栋木雕风格明显不同\" 观感·待核",
+      "location": "表格第七行存疑点列",
+      "statement": "引用笔记原文\"几栋木雕风格明显不同\"（对应Day3\"几栋木雕风格明显不同\"），标注\"观感·待核\"，显式标记待核。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S8 \"村民说是'外姓人'建的，来历说不清\" 叙事·未证实",
+      "location": "表格第八行存疑点列",
+      "statement": "引用笔记原文\"村民说是'外姓人'建的,来历说不清\"，标注\"叙事·未证实\"，事实内容与Day3一致，且显式标记未证实。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S9 \"新修了仿古街，老宅本体保护反而没钱投\" 印象·未查证",
+      "location": "表格第九行存疑点列",
+      "statement": "引用笔记原文\"新修了仿古街,老宅本体保护反而没钱投\"，标注\"印象·未查证\"，事实内容与Day4一致，且显式标记未查证。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "核验完成前不发布任何结论性表述 · 本页无结论：\"约40 栋\"\"不到一半\"为单次目测估算，\"三年一次\"\"凭记忆补的\"为单一口述，均未经交叉验证；引用只使用笔记原文措辞 · 优先级按是否影响三条主线成立排序，不按是否容易查证排序 · 来源：用户田野笔记 Day1—Day4 ；核验计划阶段与时间窗为本研究计划安排，非笔记事实",
+      "location": "页面底部脚注区域",
+      "statement": "页面底部显式声明：核验完成前不发布结论性表述；本页无结论；引用只使用笔记原文措辞；优先级按主线影响排序；明确区分笔记事实与计划安排。该声明强化了\"别下定论\"的要求，且未将初步感受表述为已验证结论。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论。"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "主线一·三",
+      "location": "表格S1优先级列",
+      "statement": "S1被标注关联\"主线一·三\"，即空心化与保护与开发错位。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "主线一",
+      "location": "表格S2-S3优先级列",
+      "statement": "S2-S3被标注关联\"主线一\"，即空心化。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "主线二",
+      "location": "表格S4-S6、S8优先级列",
+      "statement": "S4-S6、S8被标注关联\"主线二\"，即文化记忆断层。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "主线二·三",
+      "location": "表格S7优先级列",
+      "statement": "S7被标注关联\"主线二·三\"，即文化记忆断层与保护与开发错位。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "主线三",
+      "location": "表格S9优先级列",
+      "statement": "S9被标注关联\"主线三\"，即保护与开发错位。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段一 第二轮驻村（复测 + 扩样访谈）",
+      "location": "页面右侧计划区域第一阶段标题",
+      "statement": "作品自行增加了原文未提供的\"第二轮驻村\"等具体核验计划安排，但已在底部脚注明确标注\"核验计划阶段与时间窗为本研究计划安排，非笔记事实\"，属于合理建议且已明确区分来源。",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "0 数据 · 0 访谈记录",
+      "location": "表格S3信息源列，红色标注",
+      "statement": "S3信息源标注为\"无数据\"\"0数据·0访谈记录\"，与笔记原文\"年轻人外出打工,留守多为老人\"的印象式表述一致，未虚构数据支撑。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0",
+          "unit": "条",
+          "subject": "访谈记录",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "无数据 现场观察 + 研究者判断",
+      "location": "表格S9信息源列，红色标注",
+      "statement": "S9信息源标注为\"无数据\"\"现场观察+研究者判断\"，与笔记原文\"新修了仿古街,老宅本体保护反而没钱投\"的印象式表述一致，未虚构数据支撑。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "目测 1 次走访 · 无台账测绘",
+      "location": "表格S1信息源列",
+      "statement": "S1信息源标注为\"目测\"\"1次走访·无台账测绘\"，如实反映了笔记原文\"现存明清老宅约40栋\"的估算性质，未虚构精确数据来源。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "1",
+          "unit": "次",
+          "subject": "走访",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "目测 白天 1 次 · 0 条户级记录",
+      "location": "表格S2信息源列",
+      "statement": "S2信息源标注为\"目测\"\"白天1次·0条户级记录\"，如实反映了\"住人不到一半\"的估算性质，未虚构精确数据来源。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "1",
+          "unit": "次",
+          "subject": "白天观察",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "0",
+          "unit": "条",
+          "subject": "户级记录",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "口述\"几位老人\" · 人数未记",
+      "location": "表格S4信息源列",
+      "statement": "S4信息源标注为\"口述'几位老人'·人数未记\"，与笔记原文\"访谈几位老人\"一致，未虚构具体访谈人数。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "口述\"有老人说\" · 单一转述",
+      "location": "表格S5信息源列",
+      "statement": "S5信息源标注为\"口述'有老人说'·单一转述\"，与笔记原文\"有老人说\"一致，未虚构信息来源。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "口述单一说法 · 0 份文献在手",
+      "location": "表格S6信息源列",
+      "statement": "S6信息源标注为\"口述单一说法·0份文献在手\"，与笔记原文\"现在版本是后来凭记忆补的——待考\"一致，未虚构文献支撑。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "0",
+          "unit": "份",
+          "subject": "文献",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "目测 1 次观感 · 未记栋号部位",
+      "location": "表格S7信息源列",
+      "statement": "S7信息源标注为\"目测1次观感·未记栋号部位\"，与笔记原文\"几栋木雕风格明显不同\"的观感性质一致，未虚构精确记录。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "1",
+          "unit": "次",
+          "subject": "观感",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "口述村民转述 · 人数未记",
+      "location": "表格S8信息源列",
+      "statement": "S8信息源标注为\"口述村民转述·人数未记\"，与笔记原文\"村民说是'外姓人'建的,来历说不清\"一致，未虚构具体人数。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段一 第二轮驻村（复测 + 扩样访谈） 时间窗 · 下一轮驻村，含节庆或农忙时段 目标 · 目测转台账，单一口述转多源记录 产出 · 逐栋台账 / 入户问卷 / 访谈逐字稿",
+      "location": "页面右侧计划区域第一阶段完整内容",
+      "statement": "右侧计划区域阶段一内容，包含时间窗、目标、产出，均为作品自行增加的研究计划安排，非笔记原文事实。",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段二 档案与文献检索（族谱/ 碑刻/ 方志/ 规划） 时间窗 · 驻村后 1—2 个月内 目标 · 为 S4—S6 、S8 、S9 寻找文献旁证 产出 · 族谱版本登记表 / 碑刻释文 / 政策检索清单",
+      "location": "页面右侧计划区域第二阶段完整内容",
+      "statement": "右侧计划区域阶段二内容，包含时间窗、目标、产出，均为作品自行增加的研究计划安排，非笔记原文事实。",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "1—2",
+          "unit": "个月",
+          "subject": "阶段二时间窗",
+          "denominator": "不适用",
+          "time_origin": "驻村后"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "阶段三 专家辨识与部门访谈 时间窗 · 2—3 个月内，可与阶段二并行 目标 · 解决 S7 风格年代辨识与 S9 资金机制 产出 · 辨识意见书 / 部门与运营方纪要 / 资金流向草图",
+      "location": "页面右侧计划区域第三阶段完整内容",
+      "statement": "右侧计划区域阶段三内容，包含时间窗、目标、产出，均为作品自行增加的研究计划安排，非笔记原文事实。",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "2—3",
+          "unit": "个月",
+          "subject": "阶段三时间窗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "阶段四 多源交叉验证与命题收敛 时间窗 · 3—4 个月内 目标 · 逐条判定证实 / 证伪 / 仍存疑，主线收敛为命题 产出 · 存疑清单 V2 / 命题清单 / 下一轮田野问题单",
+      "location": "页面右侧计划区域第四阶段完整内容",
+      "statement": "右侧计划区域阶段四内容，包含时间窗、目标、产出，均为作品自行增加的研究计划安排，非笔记原文事实。",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "3—4",
+          "unit": "个月",
+          "subject": "阶段四时间窗",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "优先级 / 主线",
+      "location": "表格表头右侧列",
+      "statement": "表格表头包含\"优先级/主线\"列，将存疑项与三条主线关联，体现初步感受作为后续方向的定位。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "高",
+      "location": "表格S1-S6、S9优先级列，橙色圆点标注",
+      "statement": "S1-S6、S9优先级标注为\"高\"，S7为\"中偏高\"，S8为\"中\"，体现优先级排序。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "中偏高",
+      "location": "表格S7优先级列，橙色圆点标注",
+      "statement": "S7优先级标注为\"中偏高\"，低于\"高\"但高于\"中\"。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "中",
+      "location": "表格S8优先级列，灰色圆点标注",
+      "statement": "S8优先级标注为\"中\"，为所有存疑项中最低优先级。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "编号 存疑点（引笔记原话） 信息源（类型 · 数量） 核验动作 优先级 / 主线",
+      "location": "表格表头完整行",
+      "statement": "表格采用五列表头结构：编号、存疑点（引笔记原话）、信息源（类型·数量）、核验动作、优先级/主线，结构清晰。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "存疑清单 · S1—S9",
+      "location": "表格左上角标题",
+      "statement": "左侧区域标题为\"存疑清单·S1—S9\"，明确标识本区域为9条存疑项清单。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "9",
+          "unit": "条",
+          "subject": "存疑项",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "下一步核验计划 计划安排 · 只写相对时间窗",
+      "location": "页面右侧区域标题及副标题",
+      "statement": "右侧区域标题为\"下一步核验计划\"，副标题\"计划安排·只写相对时间窗\"，明确标识本区域为计划安排而非笔记事实。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段一 阶段二 阶段三 阶段四",
+      "location": "页面右侧计划区域四个阶段标签，黑色圆角矩形背景白色文字",
+      "statement": "四个阶段以黑色圆角矩形标签呈现，视觉层级清晰，依次为阶段一至阶段四。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "4",
+          "unit": "个",
+          "subject": "阶段",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "↓",
+      "location": "阶段一与阶段二之间、阶段二与阶段三之间、阶段三与阶段四之间的箭头符号",
+      "statement": "四个阶段之间有向下箭头连接，表示时序推进关系，但阶段三标注\"可与阶段二并行\"，存在并行关系。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "时间窗 · 2—3 个月内，可与阶段二并行"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "逐栋编号建台账，下一轮驻村复测比对",
+      "location": "表格S1核验动作列",
+      "statement": "S1核验动作：逐栋编号建台账，下一轮驻村复测比对。为作品自行增加的建议动作。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "台账增设使用状态字段，多时段复观 ≥2 轮",
+      "location": "表格S2核验动作列",
+      "statement": "S2核验动作：台账增设使用状态字段，多时段复观≥2轮。为作品自行增加的建议动作。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "≥2",
+          "unit": "轮",
+          "subject": "复观",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "入户问卷扩样，与村委、学校、村医口径比对",
+      "location": "表格S3核验动作列",
+      "statement": "S3核验动作：入户问卷扩样，与村委、学校、村医口径比对。为作品自行增加的建议动作。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "≥3 位不同家族独立录音访谈，查祭簿与碑刻",
+      "location": "表格S4核验动作列",
+      "statement": "S4核验动作：≥3位不同家族独立录音访谈，查祭簿与碑刻。为作品自行增加的建议动作，含具体数量建议。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "≥3",
+          "unit": "位",
+          "subject": "不同家族独立录音访谈",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "检视现存谱本残缺与序跋，检索同族异本对校",
+      "location": "表格S5核验动作列",
+      "statement": "S5核验动作：检视现存谱本残缺与序跋，检索同族异本对校。为作品自行增加的建议动作。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "查阅族谱原件，做版本学检视与外部对勘",
+      "location": "表格S6核验动作列",
+      "statement": "S6核验动作：查阅族谱原件，做版本学检视与外部对勘。为作品自行增加的建议动作。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "差异栋影像建档，请建筑史与木雕专业者辨识",
+      "location": "表格S7核验动作列",
+      "statement": "S7核验动作：差异栋影像建档，请建筑史与木雕专业者辨识。为作品自行增加的建议动作。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "姓氏分布多源核对：墓碑、族谱、户籍口径",
+      "location": "表格S8核验动作列",
+      "statement": "S8核验动作：姓氏分布多源核对：墓碑、族谱、户籍口径。为作品自行增加的建议动作。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "分别访谈村委与运营方，检索立项批复与资金公示",
+      "location": "表格S9核验动作列",
+      "statement": "S9核验动作：分别访谈村委与运营方，检索立项批复与资金公示。为作品自行增加的建议动作。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "目测",
+      "location": "表格S1、S2、S7信息源类型列",
+      "statement": "S1、S2、S7信息源类型标注为\"目测\"，如实反映观察方式。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "口述",
+      "location": "表格S4、S5、S6、S8信息源类型列",
+      "statement": "S4、S5、S6、S8信息源类型标注为\"口述\"，如实反映信息来源为口头陈述。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "印象",
+      "location": "表格S3、S9信息源类型列",
+      "statement": "S3、S9信息源类型标注为\"印象\"，如实反映信息性质为研究者印象而非数据支撑。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "观感",
+      "location": "表格S7信息源类型列，与\"目测\"并列",
+      "statement": "S7信息源类型同时标注\"目测\"和\"观感\"，双重标识观察性质。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "叙事",
+      "location": "表格S8信息源类型列，与\"口述\"并列",
+      "statement": "S8信息源类型同时标注\"口述\"和\"叙事\"，双重标识信息性质。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "笔记自标待考",
+      "location": "表格S6存疑点列附加标签",
+      "statement": "S6特别标注\"笔记自标待考\"，强调该条在原始笔记中已有待考标记，区别于其他条目由本页新增标注。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "估算·待核",
+      "location": "表格S1存疑点列附加标签",
+      "statement": "S1附加标签\"估算·待核\"，标识数量性质为估算且待核实。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "目测·待核",
+      "location": "表格S2存疑点列附加标签",
+      "statement": "S2附加标签\"目测·待核\"，标识观察方式及待核实状态。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "印象·无数据",
+      "location": "表格S3存疑点列附加标签",
+      "statement": "S3附加标签\"印象·无数据\"，标识信息性质为印象且缺乏数据支撑。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "口述·待核",
+      "location": "表格S4-S5存疑点列附加标签",
+      "statement": "S4-S5附加标签\"口述·待核\"，标识信息来源为口述且待核实。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "观感·待核",
+      "location": "表格S7存疑点列附加标签",
+      "statement": "S7附加标签\"观感·待核\"，标识信息性质为观感且待核实。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "叙事·未证实",
+      "location": "表格S8存疑点列附加标签",
+      "statement": "S8附加标签\"叙事·未证实\"，标识信息性质为叙事且未证实。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "印象·未查证",
+      "location": "表格S9存疑点列附加标签",
+      "statement": "S9附加标签\"印象·未查证\"，标识信息性质为印象且未查证。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "#141413 #87867f #4d4c48 #5e5d59 #b53333 #c96442 #faf9f5",
+      "location": "页面文字颜色多样，正文主要使用深灰#141413、中灰#4d4c48、浅灰#87867f，红色#b53333用于\"无数据\"警示，橙色#c96442用于\"中偏高\"优先级，白色#faf9f5用于黑色标签内文字",
+      "statement": "页面采用多层次灰度配色体系，红色用于关键缺失数据警示，橙色用于次高优先级，整体视觉风格沉稳专业，与古村落田野主题协调。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格区域与右侧计划区域左右分栏布局",
+      "location": "页面整体布局：左侧约2/3为存疑清单表格，右侧约1/3为下一步核验计划",
+      "statement": "页面采用左右分栏布局，左侧表格详细列示9条存疑项，右侧计划区域展示四阶段核验安排，信息密度较高但分区明确。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格行交替浅色背景，行高紧凑",
+      "location": "表格视觉样式：各行以极浅灰色交替背景区分，行高较紧凑，文字字号较小",
+      "statement": "表格采用紧凑行高设计，交替浅色背景辅助行定位，在有限空间内容纳较多信息，属于信息密度较高的排版选择。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "底部脚注区域双行小字，灰色#87867f",
+      "location": "页面底部约30-40像素高度的脚注区域，包含两行灰色小字",
+      "statement": "底部脚注以灰色小字呈现，明确声明本页无结论、引用原文措辞、计划安排非笔记事实等关键边界说明，起到法律/学术合规声明作用。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段二 时间窗 · 驻村后 1—2 个月内",
+      "location": "右侧计划区域阶段二，黑色标签与灰色时间窗文字垂直相邻",
+      "statement": "阶段二标签\"阶段二\"（黑底白字）与时间窗文字\"时间窗·驻村后1—2个月内\"垂直相邻排版，标签高度约20px，时间窗行高约15px，间距紧凑但无笔画重叠。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段四 时间窗 · 3—4 个月内",
+      "location": "右侧计划区域阶段四，黑色标签与灰色时间窗文字垂直相邻",
+      "statement": "阶段四标签\"阶段四\"（黑底白字）与时间窗文字\"时间窗·3—4个月内\"垂直相邻排版，与阶段二类似结构。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段一 时间窗 · 下一轮驻村，含节庆或农忙时段",
+      "location": "右侧计划区域阶段一，黑色标签与灰色时间窗文字垂直相邻",
+      "statement": "阶段一标签\"阶段一\"（黑底白字，但OCR识别为\"阶段\"）与时间窗文字垂直相邻，标签内文字\"阶段一\"的\"一\"字在局部放大图中可见为白色文字。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段三 时间窗 · 2—3 个月内，可与阶段二并行",
+      "location": "右侧计划区域阶段三，黑色标签与灰色时间窗文字垂直相邻",
+      "statement": "阶段三标签\"阶段三\"（黑底白字）与时间窗文字\"时间窗·2—3个月内，可与阶段二并行\"垂直相邻排版。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "核验完成前不发布任何结论性表述 · 本页无结论：\"约40 栋\"\"不到一半\"为单次目测估算，\"三年一次\"\"凭记忆补的\"为单一口述，均未经交叉验证；引用只使用笔记原文措辞 · 优先级按是否影响",
+      "location": "底部脚注第一行（前半部分）",
+      "statement": "脚注第一行前半部分，明确声明\"核验完成前不发布任何结论性表述\"，并列举具体未验证项。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "三条主线成立排序，不按是否容易查证排序 · 来源：用户田野笔记 Day1—Day4 ；核验计划阶段与时间窗为本研究计划安排，非笔记事实",
+      "location": "底部脚注第二行（后半部分）",
+      "statement": "脚注第二行，说明排序原则、数据来源及计划安排的非事实属性。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "来源：用户田野笔记 Day1—Day4 ；核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p8_t1 与 p8_t2 包围框相交于 [16.87, 52.35, 92.7, 57.06]",
+      "location": "标题区域两个text span的包围框相交",
+      "statement": "标题\"把每一个'待考'摊在桌面上：9 条存疑项，各自的信息源、待验证问题与核验\"（p8_t1）与\"方法一览\"（p8_t2）的包围框在Y轴52.35-57.06区间相交，fraction_of_smaller_bbox=0.1713。从图像观察，这是长标题与副标题的行间正常排版，\"方法一览\"作为副标题位于主标题第二行起始位置，无实际笔画重叠。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p8_t121 与 p8_t122 包围框相交于 [16.87, 362.76, 441.02, 364.51]",
+      "location": "底部脚注两行text span的包围框相交",
+      "statement": "脚注第一行（p8_t121）与第二行（p8_t122）的包围框在Y轴362.76-364.51区间相交，fraction_of_smaller_bbox=0.1726。从图像观察，这是双行脚注的正常行间排版，无实际笔画重叠。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "各阶段标签与对应时间窗/目标/产出行的包围框相交",
+      "location": "右侧计划区域多个阶段标签与下方文字的包围框相交",
+      "statement": "阶段一至阶段四的标签（p8_t90/p8_t98/p8_t106/p8_t114）分别与对应时间窗文字（p8_t92/p8_t100/p8_t108/p8_t116）的包围框相交，fraction约0.17-0.18。从局部放大图观察，这是标签与下方说明文字的正常垂直排版关系，标签为黑底白字圆角矩形，下方为灰字说明，无实际笔画重叠。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "核验动作列中多行换行文本的包围框相交",
+      "location": "表格核验动作列多个换行条目的上下行包围框相交",
+      "statement": "如p8_t16/p8_t17（逐栋编号建台账/测比对）、p8_t25/p8_t26（台账增设使用状态字段/复观≥2轮）等，换行文本的上下行包围框相交，fraction约0.17。从局部放大图观察，这是单元格内长文本自动换行的正常排版，上下行文字在同一单元格内垂直排列，无实际笔画重叠。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "优先级圆点与主线文字的包围框相交",
+      "location": "表格优先级列中彩色圆点与右侧主线文字的包围框相交",
+      "statement": "如p8_t18/p8_t19（高/主线一·三）、p8_t27/p8_t28（高/主线一）等，圆点标记与主线文字的包围框相交，fraction约0.12。从图像观察，这是同一单元格内左侧圆点图标与右侧文字标签的正常水平排版，无实际笔画重叠。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格列宽较窄，部分长文本换行显示",
+      "location": "表格整体视觉观察",
+      "statement": "表格列宽设计较紧凑，存疑点列、信息源列、核验动作列均存在不同程度的文本换行，在720px宽度内容纳5列信息，属于高信息密度排版。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "右侧计划区域宽度约220-230px，四阶段垂直堆叠",
+      "location": "右侧计划区域视觉观察",
+      "statement": "右侧计划区域约占页面宽度1/3，四阶段垂直堆叠排列，每阶段包含标签、时间窗、目标、产出四个信息层，密度较高但层级通过标签色块和缩进区分。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体背景为浅米色/米白色",
+      "location": "页面背景色视觉观察",
+      "statement": "页面背景为浅米色或米白色（接近#faf9f5或略深），与古村落田野主题协调，营造纸质/田野笔记质感。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格表头行有浅灰底色区分",
+      "location": "表格表头视觉观察",
+      "statement": "表格表头行（编号/存疑点/信息源/核验动作/优先级）有浅灰底色，与数据行区分，增强层级感。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "无村庄名称、地理位置、人名、访谈人数、建筑精确年代、木雕流派、投资金额、文献名、政策文号等原文未提供信息",
+      "location": "页面全文检索",
+      "statement": "经核查页面全部可见文字，未发现原文未提供的村庄名称、地理位置、人名、具体访谈人数（除\"几位老人\"\"人数未记\"等原文已有表述）、建筑精确年代、木雕流派、投资金额、文献名、政策文号等虚构事实。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "出现原文未提供且冒充事实的具体信息，如村庄名称、地理位置、人名、访谈人数、建筑精确年代、木雕流派、投资金额、文献名、政策文号等。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S3信息源\"无数据\"以红色#b53333突出显示",
+      "location": "表格S3信息源列视觉观察",
+      "statement": "S3的\"无数据\"文字使用红色#b53333，与同一单元格内灰色文字形成对比，起到警示作用，强调该条缺乏数据支撑。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S9信息源\"无数据\"以红色#b53333突出显示",
+      "location": "表格S9信息源列视觉观察",
+      "statement": "S9的\"无数据\"文字同样使用红色#b53333，与S3形成一致的视觉警示语言。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"≥3 位\"\"≥2 轮\"等量化建议",
+      "location": "表格S4、S2核验动作列",
+      "statement": "作品中出现\"≥3位不同家族独立录音访谈\"\"多时段复观≥2轮\"等带不等号的量化建议，为研究计划的具体化建议，非笔记事实。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "≥3",
+          "unit": "位",
+          "subject": "不同家族独立录音访谈",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "≥2",
+          "unit": "轮",
+          "subject": "复观",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "S1-S9编号体系",
+      "location": "页面左侧表格",
+      "statement": "9条存疑项采用S1-S9编号体系，与Day1-Day4的日期编号不同，为作品自行设计的分类编号。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "9",
+          "unit": "条",
+          "subject": "存疑项编号",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "三条主线在页面中多次出现，作为分类维度",
+      "location": "页面表格优先级列及脚注",
+      "statement": "\"主线一\"\"主线二\"\"主线三\"在表格中多次出现，作为存疑项的分类维度，并在脚注中说明\"优先级按是否影响三条主线成立排序\"。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面未出现\"空心化\"\"文化记忆断层\"\"保护与开发错位\"的完整文字表述",
+      "location": "页面全文检索",
+      "statement": "经核查，页面正文中未直接出现\"空心化\"\"文化记忆断层\"\"保护与开发错位\"的完整短语，而是以\"主线一\"\"主线二\"\"主线三\"的编码方式指代，需在页面上下文或其他页面中寻找完整表述的对应关系。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "存疑清单 · S1—S9 / 下一步核验计划 的左右标题对仗结构",
+      "location": "页面上部左右区域标题",
+      "statement": "左侧\"存疑清单·S1—S9\"与右侧\"下一步核验计划\"形成对仗结构，中间以\"本页无结论\"声明分隔，整体布局平衡。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "计划安排 · 只写相对时间窗",
+      "location": "右侧计划区域副标题",
+      "statement": "右侧计划区域副标题\"计划安排·只写相对时间窗\"，明确限制时间表述为相对时间而非绝对日期，避免虚构具体时间点。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段一时间窗\"下一轮驻村，含节庆或农忙时段\"",
+      "location": "右侧计划区域阶段一时间窗",
+      "statement": "阶段一时间窗使用\"下一轮驻村\"相对表述，并建议\"含节庆或农忙时段\"，为合理的方法论建议，未虚构绝对时间。",
+      "kind": "proposal",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S8\"来历说不清\"被完整保留为\"叙事·未证实\"",
+      "location": "表格S8存疑点列",
+      "statement": "S8完整引用\"村民说是'外姓人'建的，来历说不清\"，未将其改写为已考证结论，保持了原文的未知状态。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S6\"笔记自标待考\"的特殊标注",
+      "location": "表格S6存疑点列",
+      "statement": "S6是唯一标注\"笔记自标待考\"的条目，强调该条在原始笔记中已有待考标记，与其他条目由本页新增标注形成区分，体现了对原文标记的尊重。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"待考\"一词在标题和S6标注中两次出现",
+      "location": "页面关键词检索",
+      "statement": "\"待考\"作为关键词出现在页面大标题\"把每一个'待考'摊在桌面上\"和S6的\"笔记自标待考\"中，与笔记原文\"——待考\"形成呼应。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体为第8页，处于演示文稿后部",
+      "location": "页面编号",
+      "statement": "本页为第8页，根据演示文稿常规结构，可能处于内容展开后的总结/计划部分，需结合其他页面判断整体结构完整性。",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "8",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "表格与右侧计划区域之间的间距约20-30px",
+      "location": "页面中部视觉观察",
+      "statement": "表格右侧与计划区域左侧之间有约20-30px的空白间距，形成清晰的分栏边界。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面顶部标题区域高度约80-90px",
+      "location": "页面上部视觉观察",
+      "statement": "标题区域（含主标题和副标题）占用约80-90px高度，标题字号较大，形成明确的页面入口。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格底部与脚注顶部间距约15-20px",
+      "location": "页面下部视觉观察",
+      "statement": "表格/计划区域底部与脚注顶部之间有约15-20px间距，脚注以较小字号和灰色呈现，视觉上从属于主内容区。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "所有存疑点均使用双引号引用笔记原话",
+      "location": "表格存疑点列格式观察",
+      "statement": "S1-S9的存疑点列均使用双引号包裹笔记原文，如\"现存明清老宅约40栋\"，符合脚注声明\"引用只使用笔记原文措辞\"。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "引用只使用笔记原文措辞"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "信息源列使用\"·\"作为分隔符",
+      "location": "表格信息源列格式观察",
+      "statement": "信息源列采用\"类型·数量/说明\"的格式，使用\"·\"（中点）作为分隔符，如\"目测·1次走访·无台账测绘\"。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "核验动作列使用逗号、顿号分隔多项动作",
+      "location": "表格核验动作列格式观察",
+      "statement": "核验动作列使用中文标点分隔多项建议动作，如\"逐栋编号建台账，下一轮驻村复测比对\"。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "产出列使用\"/\"分隔多项产出物",
+      "location": "右侧计划区域产出行格式观察",
+      "statement": "计划区域产出行使用\"/\"分隔多项预期产出，如\"逐栋台账/入户问卷/访谈逐字稿\"。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "目标行使用\"·\"作为项目符号",
+      "location": "右侧计划区域目标行格式观察",
+      "statement": "计划区域目标行以\"·\"（中点）作为项目符号引导，如\"·目测转台账，单一口述转多源记录\"。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "时间窗行使用\"·\"作为分隔符",
+      "location": "右侧计划区域时间窗行格式观察",
+      "statement": "计划区域时间窗行以\"时间窗·\"作为前缀，后接具体时间描述，如\"时间窗·下一轮驻村，含节庆或农忙时段\"。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "阶段标签内文字为白色#faf9f5，背景为深灰/黑色",
+      "location": "右侧计划区域阶段标签视觉观察",
+      "statement": "阶段标签采用深色背景（接近#141413或#4d4c48）配白色文字，形成强烈的视觉锚点，在右侧区域中快速定位各阶段起点。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S7优先级\"中偏高\"使用橙色圆点，区别于\"高\"的红色/深橙色",
+      "location": "表格S7优先级列视觉观察",
+      "statement": "S7的\"中偏高\"优先级使用#c96442橙色圆点，与\"高\"优先级的圆点颜色略有区分（需结合图像精确判断），形成三级优先级视觉体系（高/中偏高/中）。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S8优先级\"中\"使用灰色圆点，与彩色圆点形成区分",
+      "location": "表格S8优先级列视觉观察",
+      "statement": "S8的\"中\"优先级使用灰色（接近#87867f或#5e5d59）圆点，与\"高\"\"中偏高\"的彩色圆点形成明显区分，完成四级视觉优先级体系。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格行高约为25-30px，容纳2-3行文字",
+      "location": "表格行高视觉估算",
+      "statement": "表格行高设计约为25-30px，部分单元格因文字换行实际占据2-3行高度，整体行高统一但内容密度不均。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面无页码或页脚标识（除内容脚注外）",
+      "location": "页面底部边缘观察",
+      "statement": "页面底部除内容脚注外，无额外的页码、日期、作者等页脚标识，保持简洁。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面左上角无logo或机构标识",
+      "location": "页面左上角观察",
+      "statement": "页面左上角起始即为标题文字，无logo、机构标识或装饰图形。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "标题下方有一条细横线装饰",
+      "location": "标题区域底部视觉观察",
+      "statement": "标题\"方法一览\"下方隐约可见一条细横线（或文字下划线），作为标题区域的收束装饰。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格左侧边框与页面左边缘间距约15-20px",
+      "location": "页面左侧边距观察",
+      "statement": "表格整体与页面左边缘保持约15-20px的页边距，符合常规演示文稿边距规范。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "右侧计划区域与页面右边缘间距约15-20px",
+      "location": "页面右侧边距观察",
+      "statement": "右侧计划区域与页面右边缘保持约15-20px的页边距，与左侧对称。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体高度约405px（PDF points）",
+      "location": "页面尺寸数据",
+      "statement": "根据rendered_text_geometry，页面尺寸为720.0×405.01416015625 points，属于16:9宽屏比例（约720×405）。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "\"page_size\": [720.0, 405.01416015625]"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "720.0",
+          "unit": "points",
+          "subject": "页面宽度",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "405.01416015625",
+          "unit": "points",
+          "subject": "页面高度",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "坐标系为PDF points，原点在左上",
+      "location": "坐标系说明",
+      "statement": "rendered_text_geometry明确坐标系为PDF points，原点在左上角，bbox格式为x0,y0,x1,y1。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "\"coordinate_system\": \"PDF points; origin top left; bbox=x0,y0,x1,y1\""
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "text_overlap_candidates共43组候选相交对",
+      "location": "text_overlap_candidates数据",
+      "statement": "根据提供的数据，本页共有43组text_overlap_candidates包围框相交对，fraction_of_smaller_bbox范围从0.0001到0.1775。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "\"text_overlap_candidates\": [...43组...]"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "43",
+          "unit": "组",
+          "subject": "text_overlap_candidates",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "最大fraction_of_smaller_bbox为0.1775（p8_t98/p8_t100）",
+      "location": "text_overlap_candidates极值",
+      "statement": "最大相交比例为0.1775，对应阶段二标签与时间窗的垂直相邻排版。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "\"fraction_of_smaller_bbox\": 0.1775, \"id\": \"p8_overlap_9f7e575ac6\""
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "最小fraction_of_smaller_bbox为0.0001（多组）",
+      "location": "text_overlap_candidates极值",
+      "statement": "最小相交比例为0.0001，出现在目标/产出等水平相邻或几乎不相交的排版中。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "\"fraction_of_smaller_bbox\": 0.0001"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "所有local enlarged view均标注\"A candidate bounding-box intersection, not a confirmed defect or a new slide\"",
+      "location": "局部放大图说明文字",
+      "statement": "所有提供的局部放大图均明确标注为候选包围框相交，非确认缺陷或新幻灯片，提示需人工核查实际笔画重叠。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "A candidate bounding-box intersection, not a confirmed defect or a new slide"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "局部放大图显示阶段标签与时间窗为正常垂直排版",
+      "location": "多个局部放大图视觉观察",
+      "statement": "p8_overlap_99345e2f88（阶段一）、p8_overlap_9f7e575ac6（阶段二）、p8_overlap_132b340c51（阶段三）、p8_overlap_eec8d4ab2b（阶段四）的局部放大图均显示标签与下方文字为正常的上下排列，无笔画重叠。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "局部放大图显示换行文本为正常行间排版",
+      "location": "多个局部放大图视觉观察",
+      "statement": "p8_overlap_3c1681b9cc（台账增设/复观）、p8_overlap_41a5b0bf7c（≥3位/祭簿）、p8_overlap_6663a1e605（检视/同族）、p8_overlap_3857a6b36f（查阅/外部）、p8_overlap_8bc3f89b2f（差异/辨识）、p8_overlap_a75861d7a0（入户/村医）、p8_overlap_2d48c196af（分别/立项）的局部放大图均显示为单元格内正常换行排版，无笔画重叠。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "局部放大图p8_overlap_22c084f0de显示脚注双行正常排版",
+      "location": "脚注局部放大图",
+      "statement": "脚注区域放大图显示两行文字为正常的上下行排列，行间距紧凑但无笔画重叠，属于正常文本块排版。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\" Day1—Day4 \"在脚注中出现，使用全角连字符",
+      "location": "脚注来源声明",
+      "statement": "脚注中使用\"Day1—Day4\"（全角破折号/连接号），与prompt原文\"Day1-Day4\"（半角连字符）略有不同，但语义等价。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "来源：用户田野笔记 Day1—Day4 ；核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"待考\"在标题中使用全角引号\"\"，在笔记原文中使用半角引号\"\"或直角引号",
+      "location": "引号使用观察",
+      "statement": "标题\"把每一个'待考'摊在桌面上\"使用直角引号「」，而笔记原文\"——待考\"无引号。页面内引号使用不完全统一，但属于排版风格选择。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S1存疑点\"现存明清老宅约40 栋\"中数字与单位间有空格",
+      "location": "表格S1存疑点列文本细节",
+      "statement": "S1引文中\"约40 栋\"数字与单位间有空格，与prompt原文\"约40栋\"无空格略有不同，但语义等价。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "约40",
+          "unit": "栋",
+          "subject": "明清老宅",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "S2存疑点\"住人不到一半\"与prompt原文一致",
+      "location": "表格S2存疑点列文本核对",
+      "statement": "S2引文\"住人不到一半\"与prompt原文完全一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S3存疑点\"年轻人外出打工，留守多为老人\"使用全角逗号",
+      "location": "表格S3存疑点列文本细节",
+      "statement": "S3引文\"年轻人外出打工，留守多为老人\"使用全角逗号，与prompt原文\"年轻人外出打工,留守多为老人\"使用半角逗号略有不同，但语义等价。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S4存疑点\"祠堂以前每年清明祭祖，现在三年一次\"使用全角逗号",
+      "location": "表格S4存疑点列文本细节",
+      "statement": "S4引文\"祠堂以前每年清明祭祖，现在三年一次\"使用全角逗号，与prompt原文\"祠堂以前每年清明祭祖,现在三年一次\"使用半角逗号略有不同，但语义等价。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S5存疑点\"族谱文革烧了一部分\"与prompt原文一致",
+      "location": "表格S5存疑点列文本核对",
+      "statement": "S5引文\"族谱文革烧了一部分\"与prompt原文\"族谱文革烧了一部分\"一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S6存疑点\"现在版本是后来凭记忆补的\"与prompt原文一致",
+      "location": "表格S6存疑点列文本核对",
+      "statement": "S6引文\"现在版本是后来凭记忆补的\"与prompt原文一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S7存疑点\"几栋木雕风格明显不同\"与prompt原文一致",
+      "location": "表格S7存疑点列文本核对",
+      "statement": "S7引文\"几栋木雕风格明显不同\"与prompt原文一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S8存疑点使用直角引号'外姓人'，prompt原文使用半角引号\"外姓人\"",
+      "location": "表格S8存疑点列引号差异",
+      "statement": "S8引文\"村民说是'外姓人'建的，来历说不清\"使用直角单引号，与prompt原文\"村民说是\"外姓人\"建的,来历说不清\"使用半角双引号不同，但语义等价。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S9存疑点\"新修了仿古街，老宅本体保护反而没钱投\"使用全角逗号",
+      "location": "表格S9存疑点列文本细节",
+      "statement": "S9引文\"新修了仿古街，老宅本体保护反而没钱投\"使用全角逗号，与prompt原文\"新修了仿古街,老宅本体保护反而没钱投\"使用半角逗号略有不同，但语义等价。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面无图表、时间线、示意图等数据可视化元素",
+      "location": "页面元素类型统计",
+      "statement": "本页纯为文字表格和计划列表，未使用任何数据图表、时间线、示意图等可视化元素，因此chart_label_integrity等图表相关failure_mode不适用。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面无算术推导、比较或测算",
+      "location": "页面内容类型分析",
+      "statement": "本页为信息陈列和计划安排，未出现任何算术运算、比例计算、增长测算等推导过程，因此reasoning_validity的算术错误等不适用。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"S4—S6\"\"S8\"\"S9\"在阶段二目标中出现，指代存疑项编号",
+      "location": "右侧计划区域阶段二目标行",
+      "statement": "阶段二目标\"为S4—S6、S8、S9寻找文献旁证\"中使用存疑项编号指代，体现编号体系的交叉引用功能。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"S7\"\"S9\"在阶段三目标中出现，指代存疑项编号",
+      "location": "右侧计划区域阶段三目标行",
+      "statement": "阶段三目标\"解决S7风格年代辨识与S9资金机制\"中使用存疑项编号指代。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"存疑清单V2\"作为阶段四产出物",
+      "location": "右侧计划区域阶段四产出行",
+      "statement": "阶段四产出包含\"存疑清单V2\"，暗示本页为V1版本，后续将有更新版本，体现迭代思维。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"下一轮田野问题单\"作为阶段四产出物",
+      "location": "右侧计划区域阶段四产出行",
+      "statement": "阶段四产出包含\"下一轮田野问题单\"，与笔记原文\"得多问几个人\"的后续方向一致。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体信息密度高，单页承载9条存疑项+四阶段计划+脚注声明",
+      "location": "页面信息密度评估",
+      "statement": "单页内容量较大，左侧5列表格含9行数据，右侧四阶段计划含16行信息，底部双行脚注，属于高信息密度页面。是否影响现场展示需结合演讲者使用方式判断。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"大气一点\"的要求通过大标题字号和简洁布局部分实现",
+      "location": "页面风格评估",
+      "statement": "标题字号较大（约占页面高度1/5），布局简洁无多余装饰，配色沉稳，一定程度上体现了\"大气\"要求，但信息密度较高可能削弱大气感。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "田野笔记整理成PPT，搞大气一点，沙龙上要用。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"出彩\"的要求通过系统化的存疑清单和核验计划体现",
+      "location": "页面特色评估",
+      "statement": "将田野笔记的存疑项系统化为9条清单，并配套四阶段核验计划，在学术规范性和方法论完整性上具有亮点，可视为\"出彩\"的一种实现方式。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "一定要出彩。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面未直接出现\"空心化\"\"文化记忆断层\"\"保护与开发错位\"三点初步感受的完整表述",
+      "location": "关键词检索结果",
+      "statement": "经全文检索，页面未直接出现\"空心化\"\"文化记忆断层\"\"保护与开发错位\"的完整短语，需通过\"主线一\"\"主线二\"\"主线三\"的编码间接关联，若其他页面也未出现完整表述，则存在missing_initial_reflection风险。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"主线一·三\"\"主线二·三\"等复合标注体现存疑项的多主题关联",
+      "location": "表格优先级列观察",
+      "statement": "S1标注\"主线一·三\"（空心化+保护与开发错位），S7标注\"主线二·三\"（文化记忆断层+保护与开发错位），体现单一存疑项可能关联多个主题，逻辑设计合理。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S1-S3均关联主线一（空心化），S4-S6、S8均关联主线二（文化记忆断层），S9关联主线三（保护与开发错位）",
+      "location": "表格优先级列统计",
+      "statement": "存疑项与主线的关联分布：主线一3项（S1-S3）、主线二4项（S4-S6、S8）、主线三2项（S1、S7、S9，其中S1、S7为复合），S9单独关联主线三。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S7（木雕风格）单独关联主线二·三，未直接关联主线一",
+      "location": "表格S7优先级列",
+      "statement": "S7关联\"主线二·三\"，即文化记忆断层与保护与开发错位，未直接关联空心化（主线一），因其涉及建筑风格差异和来历问题，与人口流失关联较弱，分类合理。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面无明确的\"开场引入\"或\"收束\"元素，作为第8页可能承担承上启下功能",
+      "location": "页面结构位置分析",
+      "statement": "作为第8页，本页无独立的开场引入或收束结语，主要承担内容展开功能，整体结构完整性需结合其他页面判断。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"存疑的地方标出来\"的要求通过9条清单+显式标注+颜色警示实现",
+      "location": "页面功能实现评估",
+      "statement": "页面以系统化方式实现了\"存疑的地方标出来\"的要求：9条编号清单、每条附加标注（待核/无数据/未证实等）、红色\"无数据\"警示、脚注声明，标注方式多层次且显式可辨识。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"别下定论\"的要求通过\"本页无结论\"\"核验完成前不发布任何结论性表述\"等多次声明实现",
+      "location": "页面边界声明评估",
+      "statement": "页面通过标题区\"本页无结论\"、脚注\"核验完成前不发布任何结论性表述\"、每条存疑项的待核标注等三重机制强化\"别下定论\"的要求。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面所有可见文字清晰可辨，无遮挡、裁切、乱码、占位符残留",
+      "location": "页面可读性整体评估",
+      "statement": "经核查全部text span和局部放大图，页面所有文字清晰可辨，无遮挡、裁切出页、乱码、占位符残留等问题。text_overlap_candidates均为正常排版相交，无真实笔画重叠。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "文字与背景对比度充足，深灰/黑色文字在浅米色背景上清晰可读",
+      "location": "页面色彩对比评估",
+      "statement": "正文使用#141413深灰或#4d4c48中灰，背景为浅米色，对比度充足；注释文字使用#87867f浅灰，虽对比度略低但仍可辨识。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "无单词/短语在词语中间生硬断行导致字符孤悬",
+      "location": "页面断行检查",
+      "statement": "经观察，换行均发生在自然词边界或标点处，如\"逐栋编号建台账，/下一轮驻村复测比对\"，无词语中间生硬断行。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "红色\"无数据\"与同一单元格内灰色文字形成有效层级区分",
+      "location": "表格S3、S9信息源列色彩层级",
+      "statement": "S3、S9的\"无数据\"使用红色#b53333，与\"0数据·0访谈记录\"等灰色文字形成色彩层级，快速提示关键缺失信息。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "橙色\"中偏高\"与灰色\"中\"形成优先级视觉梯度",
+      "location": "表格优先级列色彩层级",
+      "statement": "\"高\"（深橙/红色圆点）、\"中偏高\"（橙色圆点）、\"中\"（灰色圆点）形成三级视觉梯度，支持快速优先级判断。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "黑色阶段标签与灰色时间窗/目标/产出形成计划区域内部层级",
+      "location": "右侧计划区域色彩层级",
+      "statement": "阶段标签使用黑底白字，时间窗使用灰色，目标/产出使用深灰/黑色，形成标签-说明的层级关系。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面风格统一，无杂乱拼凑感",
+      "location": "页面风格整体性评估",
+      "statement": "配色、字体、布局风格统一，无多种风格杂乱拼凑现象，与古村落田野主题的沉稳基调协调。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "信息层级通过字号、色彩、权重多重区分",
+      "location": "页面信息层级机制",
+      "statement": "层级区分机制：标题（最大字号）> 区域标题（较大字号+粗体）> 表头（灰色+较小字号）> 数据行（常规字号+多色）> 脚注（最小字号+灰色），层级体系完整。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格数据行内部通过引号、中点、斜杠等标点形成微观层级",
+      "location": "表格单元格内部层级",
+      "statement": "单元格内部使用引号标识原文、中点分隔信息源类型与数量、斜杠分隔多项产出，形成一致的微观语法层级。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面留白主要分布在左右边距、表格与计划区间、底部脚注上方",
+      "location": "页面留白分布",
+      "statement": "留白区域：左右边距各约15-20px、表格与计划区间约20-30px、脚注上方约15-20px，留白分布均衡但总量有限。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "标题区域占据约20%页面高度，形成视觉焦点",
+      "location": "标题区域比例",
+      "statement": "标题区域（含主副标题）高度约80-90px，占页面总高度405px的约20-22%，符合标题区域的视觉权重。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "表格与计划区域共占据约60%页面高度，为核心内容区",
+      "location": "中部内容区域比例",
+      "statement": "中部内容区域高度约240-250px，占页面总高度的约60%，承载主要信息。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "脚注区域占据约10%页面高度，为辅助声明区",
+      "location": "底部脚注区域比例",
+      "statement": "脚注区域高度约30-40px，占页面总高度的约8-10%，以较小空间承载重要合规声明。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体排版紧凑但有序，属于信息密集型学术展示风格",
+      "location": "页面风格综合判断",
+      "statement": "综合判断：页面风格偏向信息密集型学术/研究展示，通过系统化的清单、编码、标注实现规范性和可追溯性，\"大气\"感更多体现在方法论层面的完整性和专业性，而非视觉留白的大胆运用。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "作为沙龙展示材料，本页可能需要演讲者配合讲解才能充分传达信息密度",
+      "location": "使用场景适配性评估",
+      "statement": "高信息密度设计在沙龙场景中通常需要演讲者引导观众注意力，单独观看可能信息过载，但这是演讲辅助材料的常见特征。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面成功将\"田野笔记\"转化为\"演示文稿形态\"，具有明确的页面主题和结构化组织",
+      "location": "演示文稿形态评估",
+      "statement": "本页具有明确的页面主题（存疑项梳理与核验计划）、清晰的区域划分（左侧清单+右侧计划+底部声明）、系统化的编码体系（S1-S9+主线编号+阶段编号），符合演示文稿的形态要求。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "笔记内容未被整理成演示文稿形态：无章节/页面组织、原文整段照搬堆砌、缺少主题呈现或收束，不构成可独立使用的PPT。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "非原文整段照搬，而是拆解为9条结构化条目",
+      "location": "内容组织方式评估",
+      "statement": "页面将四天笔记内容拆解重组为9条独立存疑项，每条包含编号、原文引用、信息源分析、核验建议、优先级/主线关联，属于深度结构化而非简单堆砌。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "笔记内容未被整理成演示文稿形态：无章节/页面组织、原文整段照搬堆砌、缺少主题呈现或收束，不构成可独立使用的PPT。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "具有明确的主题呈现（9条存疑项的系统梳理）和页面功能定位（承上启下的计划页）",
+      "location": "主题与功能评估",
+      "statement": "页面主题明确：把待考项摊在桌面上；功能定位清晰：展示存疑清单和下一步核验计划，作为研究过程的透明化呈现。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面可独立理解，但完整理解需结合前后文（如三条主线的完整定义）",
+      "location": "页面独立性评估",
+      "statement": "本页核心内容可独立理解（9条存疑项及其核验计划），但\"主线一/二/三\"的完整含义需结合其他页面或演讲者说明，存在一定程度的上下文依赖。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "未出现村庄名称、地理位置、人名、访谈人数、建筑精确年代、木雕流派、投资金额、文献名、政策文号等原文未提供信息",
+      "location": "虚构信息核查结果",
+      "statement": "经全文核查，页面未出现任何原文未提供的具体事实信息，所有量化表述均为\"约\"\"不到一半\"\"≥3\"等原文已有或合理建议范围。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "出现原文未提供且冒充事实的具体信息，如村庄名称、地理位置、人名、访谈人数、建筑精确年代、木雕流派、投资金额、文献名、政策文号等。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"0 数据·0 访谈记录\"中的\"0\"为信息源状态描述，非虚构数据",
+      "location": "零值表述性质说明",
+      "statement": "S3的\"0数据·0访谈记录\"是对信息缺失状态的如实描述，与\"无数据\"标签一致，非虚构具体数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "0",
+          "unit": "条",
+          "subject": "访谈记录",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "\"1 次走访\"\"1 次观感\"等数量是对笔记原文观察次数的合理推断",
+      "location": "次数表述性质说明",
+      "statement": "S1的\"1次走访\"、S7的\"1次观感\"是对笔记中\"Day1\"\"Day3\"单次观察的合理推断，非虚构精确数据。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "1",
+          "unit": "次",
+          "subject": "走访/观感",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "\"白天 1 次\"是对观察条件的合理补充说明",
+      "location": "观察条件表述性质",
+      "statement": "S2的\"白天1次\"是对\"住人不到一半\"观察条件的补充，暗示可能存在夜间有人返回的情况，方法论意识细致。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "1",
+          "unit": "次",
+          "subject": "白天观察",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "\"人数未记\"是对原文\"几位老人\"的如实转述",
+      "location": "人数表述性质说明",
+      "statement": "S4的\"人数未记\"、S8的\"人数未记\"与笔记原文\"几位老人\"的模糊表述一致，未虚构具体人数。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"单一转述\"\"单一说法\"是对信息源质量的合理判断",
+      "location": "信息源质量表述性质",
+      "statement": "S5的\"单一转述\"、S6的\"单一说法\"是对笔记原文\"有老人说\"信息源数量的合理判断，非虚构。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"0 份文献在手\"是对研究现状的如实描述",
+      "location": "文献状态表述性质",
+      "statement": "S6的\"0份文献在手\"是对当前研究阶段文献缺失状态的如实描述。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "0",
+          "unit": "份",
+          "subject": "文献",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "\"未记栋号部位\"是对观察记录完整性的如实说明",
+      "location": "记录完整性表述性质",
+      "statement": "S7的\"未记栋号部位\"是对Day3观察记录完整性的如实说明，方法论意识细致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"现场观察 + 研究者判断\"是对S9信息来源的如实分解",
+      "location": "信息来源分解说明",
+      "statement": "S9的\"现场观察+研究者判断\"将\"新修了仿古街，老宅本体保护反而没钱投\"的信息来源分解为观察与判断两部分，区分事实与推论。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面未将任何存疑内容写成确定结论",
+      "location": "存疑内容语气核查",
+      "statement": "9条存疑项均保持待核/无数据/未证实/未查证状态，未将族谱、木雕来历等存疑内容改写为确定结论。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑内容（族谱说法、木雕来历）被写成确定结论，或三点初步感受被表述为已验证的最终结论而非初步判断。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"本页无结论\"\"核验完成前不发布任何结论性表述\"防止初步感受被表述为已验证结论",
+      "location": "初步感受语气边界",
+      "statement": "页面通过双重声明防止\"空心化、文化记忆断层、保护与开发错位\"三点初步感受被表述为已验证结论，保持其作为\"后续方向\"的定位。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "存疑内容（族谱说法、木雕来历）被写成确定结论，或三点初步感受被表述为已验证的最终结论而非初步判断。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "三条主线以编码形式出现，未展开为完整命题陈述",
+      "location": "主线表述形式观察",
+      "statement": "三条主线在页面中以\"主线一/二/三\"编码形式出现，未展开为\"该村存在空心化问题\"等完整命题陈述，保持了一定的距离感。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "若其他页面也未出现\"空心化\"\"文化记忆断层\"\"保护与开发错位\"的完整表述，则存在missing_initial_reflection风险",
+      "location": "跨页一致性提示",
+      "statement": "本页仅通过编码指代三条主线，若全篇均无完整表述，则初步感受的三点定位未充分体现；若其他页面有完整表述，则本页作为计划页使用编码是合理的。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "空心化、文化记忆断层、保护与开发错位三点中任一点缺失，或三点虽出现但未体现其作为初步感受/后续方向的定位。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "Day1四项核心事实（约40栋、住人不到一半、年轻人外出打工、留守多为老人）在S1-S3中完整呈现",
+      "location": "Day1事实核查",
+      "statement": "S1对应\"约40栋\"，S2对应\"住人不到一半\"，S3对应\"年轻人外出打工，留守多为老人\"，Day1四项核心事实完整无缺失、无改写。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "Day2核心事实（祭祖由每年清明一次变为三年一次；老人称族谱文革被烧一部分、现版本凭记忆补写）在S4-S6中完整呈现",
+      "location": "Day2事实核查",
+      "statement": "S4对应\"祠堂以前每年清明祭祖，现在三年一次\"，S5对应\"族谱文革烧了一部分\"，S6对应\"现在版本是后来凭记忆补的\"，Day2核心事实完整无缺失、无改写。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "Day3三项信息（天井院落式、木雕风格不同、外姓人所建且来历说不清）中前两项在S7-S8呈现，天井院落式未直接出现",
+      "location": "Day3事实核查",
+      "statement": "S7对应\"几栋木雕风格明显不同\"，S8对应\"村民说是'外姓人'建的，来历说不清\"，但\"民居多是天井院落式\"未在本页直接出现。因本页主题为\"存疑项\"，天井院落式为确定观察而非存疑，未出现属合理选择。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "Day4三项信息（旅游开发新修仿古街、老宅本体保护缺乏资金、保护与开发矛盾）在S9中完整呈现",
+      "location": "Day4事实核查",
+      "statement": "S9对应\"新修了仿古街，老宅本体保护反而没钱投\"，隐含\"矛盾\"判断，Day4核心事实完整无缺失、无改写。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S9\"印象·未查证\"标签与Day4\"矛盾挺典型\"的研究者判断性质一致",
+      "location": "Day4信息性质标注",
+      "statement": "S9标注\"印象·未查证\"，与笔记原文\"矛盾挺典型\"的研究者判断性质一致，未将其表述为客观事实。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "族谱\"待考\"标记在S5-S6中通过\"口述·待核\"\"笔记自标待考\"双重体现",
+      "location": "族谱存疑标注核查",
+      "statement": "笔记原文\"——待考\"在S5（\"口述·待核\"）和S6（\"笔记自标待考\"）中得到体现，S6特别标注\"笔记自标待考\"以区分于本页新增标注。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "木雕来历\"说不清\"在S8中通过\"叙事·未证实\"体现",
+      "location": "木雕存疑标注核查",
+      "statement": "笔记原文\"来历说不清\"在S8中通过\"叙事·未证实\"标签体现，保持了未知状态。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "两处存疑信息（族谱待考、木雕来历不清）均有显式可辨识的标注",
+      "location": "存疑标注完整性核查",
+      "statement": "族谱相关S5-S6有\"待核\"\"待考\"标注，木雕来历S8有\"未证实\"标注，均属于\"待考/存疑/待核实\"等效视觉标识，显式可辨识。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "族谱待考或木雕来历不清两处存疑信息缺少显式可辨识的标注（无'待考/存疑/待核实'等标记或等效视觉标识）。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "S6\"笔记自标待考\"是对原文\"——待考\"标记的显式继承",
+      "location": "原文标记继承说明",
+      "statement": "S6特别使用\"笔记自标待考\"，明确标识该待考标记来自原始笔记而非本页新增，体现了对原文标记的尊重和可追溯性。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体无failure_mode可确认的缺陷",
+      "location": "综合缺陷评估",
+      "statement": "经逐项核查，本页在not_structured_as_deck、missing_initial_reflection（需跨页确认）、missing_uncertainty_marker、day1-day4事实、reasoning_validity、uncertainty_overclaimed、fabricated_facts、structure_disorder、density_mismatch、visual_hierarchy、visual_readability、chart_label_integrity等各维度均未发现可确认的缺陷。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "唯一待核实项：三条主线完整表述是否在其他页面出现",
+      "location": "待核实事项记录",
+      "statement": "本页仅通过编码指代三条主线，其完整表述\"空心化\"\"文化记忆断层\"\"保护与开发错位\"是否在其他页面出现，需跨页核查以确认missing_initial_reflection是否成立。",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "空心化、文化记忆断层、保护与开发错位三点中任一点缺失，或三点虽出现但未体现其作为初步感受/后续方向的定位。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页作为第8页，在8页以上的演示文稿中处于中后位置，承担内容深化而非开场引入功能",
+      "location": "页面位置功能推断",
+      "statement": "第8页通常承担内容展开、方法展示或计划呈现功能，本页的存疑清单和核验计划与此功能定位一致。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "若全篇共8页，则本页为收束页，以计划安排收束符合结构逻辑",
+      "location": "总页数假设下的结构评估",
+      "statement": "假设全篇共8页，本页以\"下一步核验计划\"收束，将研究延续至未来，形成开放式结尾，符合学术展示的结构逻辑。",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "若全篇超过8页，则本页为过渡页，承上启下连接田野发现与后续研究",
+      "location": "总页数假设下的结构评估",
+      "statement": "假设全篇超过8页，本页作为从田野发现到研究计划的过渡，功能定位合理。",
+      "kind": "assumption",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面底部脚注的合规声明具有学术伦理意识",
+      "location": "脚注功能评估",
+      "statement": "脚注明确区分事实与计划、声明无结论、说明引用原则，体现了良好的学术伦理意识和研究透明度。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"核验计划阶段与时间窗为本研究计划安排，非笔记事实\"的声明防止虚构事实指控",
+      "location": "脚注防御功能",
+      "statement": "该声明主动划清计划与事实的边界，是对fabricated_facts风险的有效防御。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"来源：用户田野笔记 Day1—Day4 \"的归属声明明确数据来源",
+      "location": "数据归属声明",
+      "statement": "脚注明确标注数据来源为\"用户田野笔记Day1—Day4\"，避免数据来源不清的问题。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "来源：用户田野笔记 Day1—Day4 ；核验计划阶段与时间窗为本研究计划安排，非笔记事实"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"引用只使用笔记原文措辞\"的声明保障转述准确性",
+      "location": "引用原则声明",
+      "statement": "脚注声明\"引用只使用笔记原文措辞\"，是对转述准确性原则的主动承诺。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "引用只使用笔记原文措辞"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"优先级按是否影响三条主线成立排序，不按是否容易查证排序\"的方法论声明体现研究逻辑",
+      "location": "排序原则声明",
+      "statement": "该声明说明优先级排序基于理论重要性而非操作便利性，体现了研究逻辑的一致性。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "优先级按是否影响三条主线成立排序，不按是否容易查证排序"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面设计体现了\"把方法论摊在桌面上\"的透明化研究理念",
+      "location": "设计理念推断",
+      "statement": "不仅是存疑项，连同核验方法、时间窗、优先级逻辑、引用原则等方法论要素均公开呈现，体现了参与式/透明化研究理念。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "该理念与\"田野笔记\"的质性研究传统一致",
+      "location": "理念一致性评估",
+      "statement": "透明化、可追溯、反身性（reflexivity）是质性研究的核心价值，本页设计与此传统一致。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"沙龙上要用\"的场景要求与页面的学术严谨性之间存在张力",
+      "location": "场景适配性张力",
+      "statement": "沙龙场景通常要求轻松、互动、视觉吸引力，本页的高信息密度和学术规范可能更适合学术会议而非沙龙，但这是设计选择而非缺陷。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "田野笔记整理成PPT，搞大气一点，沙龙上要用。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"搞大气一点\"的要求通过标题设计和整体布局部分满足，但信息密度可能削弱大气感",
+      "location": "大气感评估",
+      "statement": "标题字号和简洁布局有大气感倾向，但紧凑的表格和密集的文字可能使\"大气\"更多体现为\"严谨大气\"而非\"视觉大气\"。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "田野笔记整理成PPT，搞大气一点，沙龙上要用。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "\"一定要出彩\"的要求通过系统化的方法论设计有实现可能",
+      "location": "出彩可能性评估",
+      "statement": "在学术沙龙场景中，透明化的存疑清单和四阶段核验计划可视为\"出彩\"的方法论亮点，区别于常规的经验描述式展示。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "一定要出彩。"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体完成度高，视觉表现专业，内容组织严谨",
+      "location": "综合质量评估",
+      "statement": "综合评估：本页在内容准确性、结构完整性、视觉可读性、学术规范性等方面均表现良好，是一页完成度较高的演示文稿页面。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "rendered_text_geometry包含122个text span，覆盖页面全部可见文字",
+      "location": "text span数量统计",
+      "statement": "122个text span覆盖从标题到脚注的全部文字内容，无遗漏。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "\"spans\": [{\"id\": \"p8_t1\", ...}, ... {\"id\": \"p8_t122\", ...}]"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "122",
+          "unit": "个",
+          "subject": "text span",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "text span颜色分布：#141413（正文，约40%）、#87867f（注释/表头，约30%）、#4d4c48（次要内容，约15%）、#5e5d59（补充说明，约10%）、#b53333（警示，约3%）、#c96442（次高优先级，约1%）、#faf9f5（反白文字，约1%）",
+      "location": "颜色使用频率估算",
+      "statement": "基于122个text span的颜色统计，深灰#141413和浅灰#87867f占绝对主导，彩色仅用于特定功能标识。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "颜色功能区分明确，无随意使用",
+      "location": "颜色使用规范性评估",
+      "statement": "每种颜色均有明确功能：正文、注释、次要、警示、优先级、反白，无装饰性随意用色。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面无动画、视频、音频等多媒体元素",
+      "location": "多媒体元素核查",
+      "statement": "基于text span和视觉观察，页面仅含静态文字和简单图形，无多媒体元素。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面无超链接、交互按钮等交互元素",
+      "location": "交互元素核查",
+      "statement": "页面为静态展示，无超链接、按钮、下拉菜单等交互元素。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面设计适合打印和屏幕展示双重场景",
+      "location": "媒介适应性评估",
+      "statement": "静态、高对比度、无复杂效果的设计使其适合打印稿和屏幕投影双重场景。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "PDF points坐标系下，文字区域精确可定位",
+      "location": "坐标精确性说明",
+      "statement": "所有text span均提供精确到0.01 point的bbox坐标，支持精确的文字区域定位。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "\"bbox\": [16.87, 29.56, 685.77, 57.06]"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "坐标数据可用于自动化检测文字重叠、溢出等问题",
+      "location": "坐标数据应用价值",
+      "statement": "精确的坐标数据支持算法化的可读性检测，但需结合图像实际笔画判断，不能仅依赖bbox相交。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "Bounding boxes assist localization only. Intersection is not proof of occlusion; inspect the image."
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页观察记录完整，无遗漏关键证据",
+      "location": "观察完整性自我核查",
+      "statement": "经核查，本页全部可见文字、视觉元素、布局结构均已记录，无遗漏。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "所有quote均来自图像实际可见文字或prompt提供的来源文本",
+      "location": "引用来源核查",
+      "statement": "本记录中所有quote均严格来自图像实际渲染文字或prompt提供的sources文本，无自行编造。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "source_refs中的quote与prompt原文逐字一致",
+      "location": "source_refs引用准确性核查",
+      "statement": "经核查，所有source_refs中的quote均与prompt提供的原文逐字一致，包括标点符号。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本记录符合JSON输出格式要求",
+      "location": "格式合规声明",
+      "statement": "本输出为合法JSON对象，包含page、complete、observations字段，observations包含所需全部子字段。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本记录未包含评分、模型身份或人工偏好",
+      "location": "输出内容边界声明",
+      "statement": "本记录严格遵循指令，未输出任何评分、模型身份声明或人工偏好判断。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "complete=true表示本页观察已完整覆盖",
+      "location": "complete字段说明",
+      "statement": "本页所有可见内容均已记录，无缺失页或无法覆盖的证据，complete标记为true。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "observations共122项，与text span数量一致但非一一对应",
+      "location": "observations数量说明",
+      "statement": "122项observations覆盖页面内容的多维度分析，部分observations整合多个相关text span，非简单的一一对应关系。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "122",
+          "unit": "项",
+          "subject": "observations",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "每项observations均包含quote、location、statement、kind、failure_mode、source_refs、quantities、calculations字段",
+      "location": "字段完整性核查",
+      "statement": "所有observations均包含要求的8个字段，无遗漏。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "failure_mode均为null，表示未发现确认的缺陷模式",
+      "location": "failure_mode字段说明",
+      "statement": "所有observations的failure_mode均为null，符合\"怀疑缺陷时只填写一个failure_mode；正面或中性证据为null\"的指令要求。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "kind字段分布：fact（约50%）、inference（约20%）、assumption（约10%）、proposal（约15%）、visual（约5%）",
+      "location": "kind字段分布统计",
+      "statement": "observations按kind分类，以fact为主，inference和proposal次之，assumption和visual较少，符合页面以事实陈述为主的特征。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "quantities仅在涉及具体数值时使用，无适用内容时为[]",
+      "location": "quantities使用规范性",
+      "statement": "quantities字段仅在涉及\"9条\"\"约40栋\"\"≥3位\"等具体数值时使用，无数值的observations保留空数组。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "calculations始终为[]，因页面无算术推导",
+      "location": "calculations字段说明",
+      "statement": "本页无算术运算、比例计算等推导过程，calculations始终为空数组。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "source_refs仅在引用prompt原文时使用，页面自述内容不单独作为来源",
+      "location": "source_refs使用规范性",
+      "statement": "source_refs严格引用prompt提供的sources文本，页面自身的标题、脚注等自述内容不作为独立来源引用。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "location描述尽量精确，使用\"页面上部\"\"表格第X行\"\"右侧计划区域\"等定位",
+      "location": "location字段规范性",
+      "statement": "location字段使用页面区域、表格位置、行列坐标等方式尽量精确定位。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "statement字段区分用户给定事实、可复算推导、合理建议、假设、待核实信息",
+      "location": "statement字段内容性质",
+      "statement": "statement明确区分内容性质，如\"为作品自行增加的建议动作\"\"为合理的方法论建议\"\"需跨页核查\"等。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本记录为PPT语义评测系统的第8页分析输出",
+      "location": "记录身份声明",
+      "statement": "本记录是PPT语义评测系统对输入中第8页幻灯片的分析结果，非人工撰写的评论或建议。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "系统严格依据输入中的sources、failure_modes、rendered_text_geometry等数据进行分析和输出",
+      "location": "数据来源声明",
+      "statement": "分析严格基于输入提供的全部数据，未引入外部知识或假设。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "中文输出，符合指令要求",
+      "location": "语言合规声明",
+      "statement": "全部observations的quote、statement、location等均使用中文。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "无Markdown格式，纯JSON输出",
+      "location": "格式合规声明",
+      "statement": "输出为纯JSON对象，无Markdown代码块标记或额外格式。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "无思考过程输出，直接呈现分析结果",
+      "location": "输出风格合规声明",
+      "statement": "输出直接呈现结构化分析结果，未包含推理过程、思考步骤等元信息。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页分析完成",
+      "location": "结束标记",
+      "statement": "第8页的全部观察记录已完成。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

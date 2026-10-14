@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      4,
+      8,
+      11
+    ],
+    "evidence": "PPT中数据与路线内容均使用匹配的视觉元素：页4用柱状图对比78%→92%良率变化，图形标注含坐标轴、数据标签及注释；页8用箭头流程图展示实验室研究→验证→临床试验→临床应用的转化阶段，当前阶段以橙色高亮标注；页11用时间轴呈现2026-2028三阶段技术路线图，各阶段目标清晰对应。图形类型与内容匹配，标注充分，无干扰性装饰元素。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 42094,
+    "total_tokens": 42219,
+    "completion_tokens": 125,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 14.412,
+  "attempts": 1
+}

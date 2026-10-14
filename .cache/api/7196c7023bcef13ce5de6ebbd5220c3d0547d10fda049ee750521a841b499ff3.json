@@ -1,0 +1,24 @@
+{
+  "parsed": {
+    "text_seen": [
+      "3×10⁻⁵"
+    ],
+    "overlapping": false,
+    "overlap_objects": [],
+    "description": "画面左侧有一个蓝色圆角矩形，右侧是黑色文字'3×10⁻⁵'。蓝色矩形与文字之间有明显间距，无笔画相交。文字中的'×'为乘号，'-5'为上标形式。背景为白色。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 153,
+    "total_tokens": 245,
+    "completion_tokens": 92,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 59.392,
+  "attempts": 1
+}

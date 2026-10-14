@@ -1,0 +1,69 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [],
+    "normalizations": [
+      {
+        "removed_item": "R04",
+        "source_ref": "Q04",
+        "retained_items": [
+          "R11"
+        ],
+        "separately_covered_context_refs": [],
+        "reason": "Exact single-source ownership duplicated between fulfillment and correctness"
+      }
+    ],
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R01",
+          "R02",
+          "R15"
+        ],
+        "Q02": [
+          "R03",
+          "R16"
+        ],
+        "Q03": [
+          "R03"
+        ],
+        "Q04": [
+          "R08",
+          "R09",
+          "R11",
+          "R12"
+        ],
+        "Q05": [
+          "R05",
+          "R16"
+        ],
+        "Q06": [
+          "R01",
+          "R15",
+          "R17"
+        ],
+        "Q07": [
+          "R07",
+          "R09",
+          "R10",
+          "R17"
+        ],
+        "Q08": [
+          "R08",
+          "R09"
+        ],
+        "Q09": [
+          "R06"
+        ]
+      },
+      "summary": "rubric覆盖全部9项需求：三段式结构、1号线深挖、3号线空载、标杆参照、数据准确性、ROI参数与可复算性、假设标注、叙事与视觉各有归属；R04移除后Q04仍由R08/R09/R11/R12充分覆盖，无重复计分、无无依据硬条件、各条目可独立评判。"
+    },
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "未发现有依据的反例"
+    }
+  }
+]

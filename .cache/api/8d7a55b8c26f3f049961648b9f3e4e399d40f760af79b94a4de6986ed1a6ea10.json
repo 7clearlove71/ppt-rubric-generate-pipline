@@ -1,0 +1,211 @@
+{
+  "parsed": {
+    "page": 3,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "2018 年获批省级非遗，文化价值有权威认定支撑",
+        "location": "页面顶部标题区域",
+        "statement": "页面标题明确包含用户给定的关键事实：2018年获批省级非遗。该信息与sources中用户要求一致。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "2018年获批省级非遗"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2018",
+            "unit": "年",
+            "subject": "省级非遗认定时间",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2018",
+        "location": "左侧深色卡片大字号数字",
+        "statement": "视觉强调2018年这一认定年份，与标题一致。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "2018年获批省级非遗"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "2018",
+            "unit": "年",
+            "subject": "省级非遗认定时间",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "获批省级非物质文化遗产代表性项目",
+        "location": "左侧深色卡片中部",
+        "statement": "明确表述认定级别为'省级非物质文化遗产代表性项目'，体现省级非遗认定的分量。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "2018年获批省级非遗"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "历史渊源、技艺完整度、地域代表性、传承谱系经省级权威评审确认",
+        "location": "左侧深色卡片底部",
+        "statement": "列举评审维度，论证省级认定的权威性和含金量，属于对省级非遗认定分量的展开论述。",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "文化价值这块要能体现出省级非遗认定的分量"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "权威认定 · 文化资产成色足",
+        "location": "右侧上部卡片标题",
+        "statement": "第一个价值维度：强调认定文件的硬依据作用。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "认定文件即硬依据，项目文化价值无需自证，直接具备申报省级非遗保护资金的资格。",
+        "location": "右侧上部卡片正文",
+        "statement": "将省级认定与政府评审场景关联，论证对当前申报的支撑价值。属于合理推论。",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "文旅名片 · 县域传播有载体",
+        "location": "右侧中部卡片标题",
+        "statement": "第二个价值维度：文旅融合角度。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "可与乡村旅游、研学体验等业态联动放大，是县域对外传播的文化名片。",
+        "location": "右侧中部卡片正文",
+        "statement": "提出文旅联动方向，与评审方文旅局职能对应。属于合理建议。",
+        "kind": "proposal",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "产业反哺 · 越有市场越有传承",
+        "location": "右侧下部卡片标题",
+        "statement": "第三个价值维度：产业与传承的良性循环。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "非遗工坊把文化资产转化为产业资产，形成“以用促保”的良性循环，避免静态博物馆式封存。",
+        "location": "右侧下部卡片正文",
+        "statement": "完整句子跨两个text span（p3_t12和p3_t13）。从局部放大图可见，'封'与'存。'在同一行连续呈现，为正常换行断字，非真实遮挡。bounding box相交源于行尾字符与下一行首字符的矩形区域接近，实际笔画无重叠。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "价值越高，抢救越紧迫",
+        "location": "底部左侧强调文字",
+        "statement": "承上启下过渡句，将文化价值与抢救紧迫性关联。",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "认定在手 · 传人只剩12 位 —— 活态遗产断代损失是全省层面的损失",
+        "location": "底部右侧补充说明",
+        "statement": "引入用户给定的'仅剩12位师傅'事实，建立价值与危机的对比论证。数字12与用户要求一致。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "12",
+            "unit": "位",
+            "subject": "师傅人数",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：项目申报材料（2018 年获批省级非物质文化遗产代表性项目）",
+        "location": "页面左下角来源标注",
+        "statement": "标注数据来源为项目申报材料，但未提供可独立核实的具体文件编号或发布机构。属于作品自述来源，非独立来源。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "页面整体布局：左侧深色卡片突出认定年份与级别，右侧三个浅色卡片分维度展开价值论证，底部横幅建立价值-危机关联",
+        "location": "全页",
+        "statement": "视觉层级清晰：标题→核心认定信息→三维价值论证→价值-危机过渡。无遮挡、裁切出界或对比不足问题。正文与背景对比度充足，字号适中。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5664,
+    "total_tokens": 7320,
+    "completion_tokens": 1656,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 49.464,
+  "attempts": 1
+}

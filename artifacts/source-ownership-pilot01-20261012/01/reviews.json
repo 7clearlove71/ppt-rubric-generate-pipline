@@ -1,0 +1,88 @@
+[
+  {
+    "revision": 0,
+    "structural_errors": [
+      "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q03: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+      "Q04: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+    ],
+    "normalizations": [],
+    "review": {
+      "approved": false,
+      "issues": [],
+      "coverage": {},
+      "summary": "Semantic review skipped until structural errors are fixed",
+      "skipped": true
+    },
+    "counterexample_review": null
+  },
+  {
+    "revision": 1,
+    "structural_errors": [],
+    "normalizations": [],
+    "review": {
+      "approved": true,
+      "issues": [],
+      "summary": "rubric覆盖全部8项需求，三项关键事实由独立原子条目负责且允许等价表述；路线图与计划模块、专家深度、20分钟体量均有对应条目；failure_modes归属单一、边界互斥，视觉三类缺陷与reasoning_validity定义符合协议；未新增固定页数/模板等无依据硬条件，未发现重复计分。",
+      "coverage": {
+        "Q01": [
+          "R06"
+        ],
+        "Q02": [
+          "R02"
+        ],
+        "Q03": [
+          "R03"
+        ],
+        "Q04": [
+          "R07"
+        ],
+        "Q05": [
+          "R11"
+        ],
+        "Q06": [
+          "R12"
+        ],
+        "Q07": [
+          "R04"
+        ],
+        "Q08": [
+          "R05"
+        ]
+      },
+      "reported_coverage": {
+        "Q01": [
+          "R06"
+        ],
+        "Q02": [
+          "R02"
+        ],
+        "Q03": [
+          "R03"
+        ],
+        "Q04": [
+          "R07"
+        ],
+        "Q05": [
+          "R11"
+        ],
+        "Q06": [
+          "R12"
+        ],
+        "Q07": [
+          "R04"
+        ],
+        "Q08": [
+          "R05"
+        ]
+      }
+    },
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "未发现有依据的反例：三项事实条目各自独立负责不同事实，路线图与计划条目分别负责不同模块且明确允许多样形式，事实与虚构、推论、视觉各类缺陷归属边界清晰，无重复计分、越权要求或关键推论漏项。",
+      "coverage": {},
+      "reported_coverage": {}
+    }
+  }
+]

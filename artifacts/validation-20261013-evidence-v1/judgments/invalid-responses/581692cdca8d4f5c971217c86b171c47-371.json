@@ -1,0 +1,261 @@
+{
+  "page": 9,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "中期分享不求结论：现场征集四类线索、抛出三个开放议题，欢迎学者与从业者当场\"拆台\"",
+      "location": "页面顶部主标题",
+      "statement": "页面定位为中期分享/沙龙互动环节，明确标注\"不求结论\"，与需求中\"别下定论\"一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "本页所有陈述为初步观察，存疑项见存疑清单页；核验完成前不发布任何结论性表述。",
+      "location": "页面底部脚注",
+      "statement": "显式声明所有陈述为初步观察，核验前不发布结论，符合需求中存疑标注和不下定论的要求",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存疑的地方标出来，别下定论"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "四天的笔记只够提出问题，接下来靠多方核验。",
+      "location": "页面底部深色横幅左侧",
+      "statement": "收束性陈述，将四天笔记定位为提出问题而非结论，呼应需求中的初步感受定位",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "A 祭祖由每年清明改为三年一次，是\"文化断层\"，还是仪式形式的重组？",
+      "location": "右侧开放议题A区",
+      "statement": "议题A涉及Day2核心事实\"祭祖由每年清明一次变为三年一次\"，以问句形式呈现正反立场，未写成定论",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "祠堂以前每年清明祭祖,现在三年一次"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "B \"外姓人\"这类说不清的村落叙事，应作为史实线索追查，还是作为记忆建构本身来研究？",
+      "location": "右侧开放议题B区",
+      "statement": "议题B涉及Day3\"外姓人\"来历说不清的信息，以问句呈现，保留\"说不清\"的存疑状态",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "村民说是\"外姓人\"建的,来历说不清"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "C 仿古街与老宅本体之争，是资金问题、产权问题，还是价值排序问题？",
+      "location": "右侧开放议题C区",
+      "statement": "议题C涉及Day4保护与开发错位矛盾，以问句呈现三个可能维度，未下结论",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "①建筑与工艺 明清木雕地域流派辨识、天井院落形制与构件断代经验",
+      "location": "左上征集线索①区",
+      "statement": "线索征集涉及Day3天井院落式民居和木雕风格差异信息，作为待核实/待补充的专业需求提出",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "民居多是天井院落式,几栋木雕风格明显不同"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "②文献与档案 族谱版本比对与考辨经验",
+      "location": "中上征集线索②区",
+      "statement": "线索征集涉及Day2族谱信息，明确使用\"考辨经验\"表述，将族谱作为待核实文献处理",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "③政策与资金 保护专项资金与保护发展规划申报实务，私有产权老宅本体修缮的渠道与责任主体",
+      "location": "左下征集线索③区，标注\"外部参照·仅作路径提示\"",
+      "statement": "线索征集涉及Day4保护资金缺乏问题，明确标注\"外部参照·仅作路径提示\"，并声明\"不含任何金额承诺\"",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "老宅本体保护反而没钱投,矛盾挺典型"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "④同类村落 空心化背景下维持活态的对照案例，仿古街与本体保护张力的真实处置与踩过的坑",
+      "location": "中下征集线索④区",
+      "statement": "线索征集涉及Day1空心化和Day4保护与开发张力，作为对照案例需求提出",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年轻人外出打工,留守多为老人；保护与开发错位"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "正方·断层说 频率下降意味着组织能力、人口结构与集体认同同步衰减 / 反方·重组说 频次压缩未必等于强度下降，或转向规模化、家祭化与远程参与",
+      "location": "议题A正反方陈述区",
+      "statement": "正反方陈述均使用推测性表述（\"意味着\"\"未必等于\"\"或转向\"），未写成确定结论",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "正方·史实线索说 木雕风格差异属可检验物证，配合族谱、碑刻与方志可望还原建宅者 / 反方·记忆建构说 叙事反映村落如何解释自身差异，\"来历说不清\"本身即研究对象",
+      "location": "议题B正反方陈述区",
+      "statement": "正方使用\"可望还原\"条件式表述，反方直接引用\"来历说不清\"原文作为研究对象，均未断言已考证",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "来历说不清"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "正方·资金渠道说 本体修缮缺可申报的合规渠道与专项口径，仿古街更易立项 / 反方·产权价值说 私有老宅修缮责任主体不清，或价值排序在前，资金只是结果",
+      "location": "议题C正反方陈述区",
+      "statement": "正反方均使用分析性框架呈现，使用\"或\"\"只是结果\"等推测性表述，未下确定结论",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p9_t1与p9_t2 bounding box在y方向重叠[16.87,52.35,149.56,57.06]，占较小框比例约17%",
+      "location": "顶部标题区域",
+      "statement": "渲染几何显示标题第一行与第二行bounding box有垂直方向交集，但局部放大图显示这是两行正常排版（\"拆台\"作为第二行起始），无实际字形叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p9_t52与p9_t53 bounding box在y方向重叠[428.6,199.09,477.36,200.84]",
+      "location": "议题B标题区",
+      "statement": "议题B标题跨行显示，局部放大图确认\"记忆建/构本身来研究？\"是正常换行，\"构\"字完整显示在第二行，无实际遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "多个\"我们缺什么\"与后续正文、p9_t8与p9_t10、p9_t17与p9_t19等bounding box相邻或微交",
+      "location": "左侧征集线索各分类区",
+      "statement": "局部放大图显示\"我们缺什么\"作为标签与后续正文在同一行连续排版，属于设计上的行内标签+正文组合，无真实字形叠印遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p9_t56与p9_t57 bounding box在[415.11,235.15,429.05,236.9]微交",
+      "location": "议题B正方陈述区",
+      "statement": "局部放大图显示\"还原建/宅者\"为正常换行，\"宅者\"完整显示在第二行，无遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "p9_t60与p9_t61 bounding box在[560.21,235.15,567.21,236.9]微交",
+      "location": "议题B反方陈述区",
+      "statement": "局部放大图显示\"研究对/象\"为正常换行，\"象\"字完整显示，无遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "页面整体分为左上征集线索（四类）、右上开放议题（三条）、底部收束横幅三部分",
+      "location": "整体版式",
+      "statement": "信息层级清晰：主标题→征集线索/开放议题两大板块→各分类子项→正反方细分→底部收束与脚注，有明确视觉分区",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "线索投递方式见会后发放的联系卡，亦可由沙龙主办方转交 / 可接受的协作形式：联合调查／文献代查／专家辨识",
+      "location": "底部横幅右侧",
+      "statement": "提供具体后续协作机制，将开放议题落实到可操作的征集流程",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

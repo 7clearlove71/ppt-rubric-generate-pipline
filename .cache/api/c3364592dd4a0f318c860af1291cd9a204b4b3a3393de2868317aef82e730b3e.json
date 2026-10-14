@@ -1,0 +1,79 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      12,
+      13
+    ],
+    "evidence": "第12页整改措施表格中，第01行整改措施列的上下两行文字发生真实叠印：上行末尾'缺口纳入年度预算调整方案'与下行开头'建立管线单位出资联席会议制度，签订'的笔画在同一单元格内相互交叠，导致两行文字均无法完整辨认（局部放大图p12_overlap_3e25b8667d清晰显示'方案'与'建立'等字重叠）。第04行整改措施列同样存在叠印：上行末尾'待审计资金实行竣工结算限时办结'与下行开头'加装电梯与停车泊位项目单独建档、单独'的笔画相互交叠（局部放大图p12_overlap_0d6ab83c73显示'办结'与'加装'等字重叠）。第13页请示事项区域，'以上请示事项，请予审议。'的金色文字与上方白色文字'入市级文件，明确付费节点与比例。'发生实际叠印（局部放大图p13_overlap_a385bcea2c显示两行文字笔画交错重叠），导致金色结束语无法独立清晰辨认。上述叠印问题均属于正文内容的真实不可读缺陷，违反visual_readability标准。",
+    "evidence_ids": [
+      "p12_overlap_3e25b8667d",
+      "p12_overlap_0d6ab83c73",
+      "p13_overlap_a385bcea2c"
+    ],
+    "resolutions": [],
+    "inspection_resolutions": [
+      {
+        "inspection_id": "p2_overlap_83a18fd292",
+        "relation_confirmed": false,
+        "defect_present": false,
+        "reason": "局部放大图显示红色'标'字与右侧红色'9'字虽邻近，但两者为独立字符且未发生实际笔画相交；'标'字木字旁右侧与'9'左侧弧线之间有明显间隙，不构成遮挡或叠印，文字均可独立辨认。"
+      },
+      {
+        "inspection_id": "p9_overlap_16c01a529f",
+        "relation_confirmed": true,
+        "defect_present": true,
+        "reason": "局部放大图确认棕色'64.1%'与深蓝色'50.1%'在水平和垂直方向上几乎完全重叠，两组数字字形相互交错；同时棕色折线及圆形节点与数字下半部分也有重叠，导致该位置的数据标签无法独立辨认，构成chart_label_integrity缺陷（非visual_readability）。因本条目排除chart_label_integrity，不在本条登记。"
+      }
+    ],
+    "additional_observations": [
+      {
+        "page": 12,
+        "quote": "缺口纳入年度预算调整方案\n建立管线单位出资联席会议制度，签订",
+        "location": "整改措施表格第01-02行整改措施列",
+        "statement": "表格同一列内相邻行文字发生真实叠印，上行末尾'方案'与下行开头'建立'笔画相交，两行文字均无法完整独立辨认",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 12,
+        "quote": "待审计资金实行竣工结算限时办结\n加装电梯与停车泊位项目单独建档、单独",
+        "location": "整改措施表格第04-05行整改措施列",
+        "statement": "表格同一列内相邻行文字发生真实叠印，上行末尾'办结'与下行开头'加装'笔画相交，两行文字均无法完整独立辨认",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 13,
+        "quote": "入市级文件，明确付费节点与比例。\n以上请示事项，请予审议。",
+        "location": "请示事项区域底部",
+        "statement": "金色结束语'以上请示事项，请予审议。'与上方白色文字'入市级文件，明确付费节点与比例。'发生实际叠印，金色文字被白色文字笔画覆盖，无法独立清晰辨认",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 153198,
+    "total_tokens": 154011,
+    "completion_tokens": 813,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 365.7,
+  "attempts": 3
+}

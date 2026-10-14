@@ -1,0 +1,28 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "全篇图表均具备完整可读的坐标轴、分类标签、图例、数据标签与单位标注，无NaN/undefined/占位符等渲染残留。页2柱状图标注\"kWh/件\"、\"万kWh\"及行业标杆0.45；页3图表含\"单位能耗 kWh/件\"纵轴与四线分类；页4瀑布图标注\"万 kWh/月\"；页5现金流图纵轴\"万元\"、横轴\"月份\"，敏感性分析图例清晰标注\"个月\"；页6空载能耗图标注\"kWh/h\"、均值7.75与目标6；页7时间轴路线图含阶段标签与相对月份。单位符号均规范为\"kWh\"而非\"KWH\"，\"万元\"、\"个月\"等单位清晰可辨。所有数据归属均可直接辨认，无影响理解的渲染瑕疵。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23146,
+    "total_tokens": 23361,
+    "completion_tokens": 215,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.938,
+  "attempts": 1
+}

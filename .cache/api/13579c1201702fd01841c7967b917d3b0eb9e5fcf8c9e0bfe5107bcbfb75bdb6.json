@@ -1,0 +1,49 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R01"
+        ],
+        "reason": "要求“至少一位具名负责人及其真实电话号码”且无占位，超出用户仅要求“工位领取说明”的范围，属于无来源硬条件并排斥合理占位。",
+        "fix": "改为：PPT包含可辨识的工位领取说明；可呈现通用流程或明确标注待补充的负责人/地点，不要求虚构姓名或电话。"
+      }
+    ],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": [
+        "R06"
+      ]
+    },
+    "summary": "除R01存在无依据的硬性真实信息要求外，其余条目总体覆盖需求且可独立评判；修正R01后可通过。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 207,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 207
+    },
+    "prompt_tokens": 1840,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "text_tokens": 1840
+    },
+    "total_tokens": 2047
+  },
+  "elapsed_seconds": 3.934,
+  "attempts": 1
+}

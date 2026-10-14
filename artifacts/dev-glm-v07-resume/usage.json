@@ -1,0 +1,38 @@
+[
+  {
+    "role": "generator",
+    "model": "glm-5.2",
+    "cache_key": "301d720b51f2e1d8798d64ed3e7513e0a93dbccedb518e312ca6fca64018b7a2",
+    "cached": true
+  },
+  {
+    "role": "generator",
+    "model": "glm-5.2",
+    "cache_key": "3e5c640a8a2b481fe8e7426b1b9b40ffab8445a0fcb19519eb9316b447c48ede",
+    "cached": true
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k2.6",
+    "cache_key": "0329edb80888a1d9bfa8cca83e080e38a03423ac56cc9a49f0f0452561c1ddba",
+    "cached": true
+  },
+  {
+    "role": "vision",
+    "model": "kimi-k2.6",
+    "cache_key": "c5b6bb76a5eb7bd842e434dc510dfc79706106a53173ba421b33f3cf16121f30",
+    "cached": true
+  },
+  {
+    "role": "generator",
+    "model": "glm-5.2",
+    "cache_key": "ef3dc746c7267b3be43ad66c9e6631a931dab3d61b13150bf05a3590da583b11",
+    "cached": true
+  },
+  {
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "3f1284daca9bb076647e4add37f8c95b19bbf58e09487c07a03de97966c2974a",
+    "cached": true
+  }
+]

@@ -1,0 +1,5036 @@
+{
+  "complete": true,
+  "pages": [
+    {
+      "page": 1,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "从实验室到临床",
+          "location": "页面左侧中部大标题",
+          "statement": "主标题概括了从研发到临床转化的方向，与prompt中植入式电子皮肤进入临床试验阶段的方向一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子的工程化三年",
+          "location": "主标题下方副标题",
+          "statement": "明确时间范围为三年，与prompt要求的近三年时间范围一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性电子团队近三年进展"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "3",
+              "unit": "年",
+              "subject": "工程化时间",
+              "denominator": "不适用",
+              "time_origin": "近三年"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "年会特邀报告 · 20 分钟",
+          "location": "页面左上方",
+          "statement": "明确标注报告时长为20分钟，与prompt要求的20分钟一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "20分钟"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "20",
+              "unit": "分钟",
+              "subject": "报告时长",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "汇报对象：领域内专家",
+          "location": "页面左下方",
+          "statement": "明确标注汇报对象为领域内专家，与prompt要求一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "汇报对象：领域内专家"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "近三年 · 三条主线",
+          "location": "页面右上方深蓝色区域",
+          "statement": "右侧导航栏总览结构，提示报告将围绕三条主线展开",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "3",
+              "unit": "条",
+              "subject": "主线数量",
+              "denominator": "不适用",
+              "time_origin": "近三年"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "01 可拉伸传感器阵列",
+          "location": "右侧导航栏第一项",
+          "statement": "第一条主线为可拉伸传感器阵列，与prompt中第一项关键事实对应，但本页仅列标题未出现具体良率数值",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "02 柔性 OLED 器件",
+          "location": "右侧导航栏第二项",
+          "statement": "第二条主线为柔性OLED器件，与prompt中第二项关键事实对应，但本页仅列标题未出现具体弯曲次数",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "03 植入式电子皮肤",
+          "location": "右侧导航栏第三项",
+          "statement": "第三条主线为植入式电子皮肤，与prompt中第三项关键事实对应，但本页仅列标题未出现三甲医院合作及临床试验阶段的具体信息",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队",
+          "location": "页面左下方",
+          "statement": "报告团队名称，与prompt中柔性电子团队一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性电子团队"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "近三年研究进展",
+          "location": "页面左下方团队名称下方",
+          "statement": "再次确认时间范围为近三年研究进展",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性电子团队近三年进展"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "视觉观察：页面采用左右分栏布局，左侧为浅色背景的主标题区，右侧为深蓝色背景的导航目录区",
+          "location": "整体页面布局",
+          "statement": "封面页结构清晰，信息层级分明：报告类型/时长→主标题→副标题→团队信息→三条主线导航。右侧导航以编号+主题形式呈现，颜色对比鲜明（橙色编号+白色文字在深蓝背景上）。未观察到文字遮挡、裁切或对比度不足问题。",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "p1_t16 '柔性 ' bbox [674.87, 354.1, 722.11, 375.1]; p1_t17 'OLED ' bbox [727.14, 353.15, 790.12, 376.59]; p1_t18 '器' bbox [795.17, 354.1, 816.18, 375.1]; p1_t19 '件' bbox [674.87, 379.3, 695.88, 400.3]",
+          "location": "右侧导航栏第二项'柔性 OLED 器件'",
+          "statement": "根据geometry数据，'柔性'、'OLED'、'器'的x1/y0/y1与'件'的x0/y0/y1显示'OLED器件'被拆分为'OLED'+'器'+'件'三行，其中'器'在795.17-816.18x/354.1-375.1y，'件'在674.87-695.88x/379.3-400.3y，即'件'换行至下一行且左对齐于'柔性'下方，形成'柔性 OLED'在第一行、'器件'在第二行的视觉呈现。这是换行排版而非遮挡。",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "本页为封面页，仅呈现报告框架结构",
+          "location": "整体页面功能判断",
+          "statement": "作为封面页，本页未展开任何关键事实的具体数值内容（78%→92%、10万次、三甲医院临床试验），这些实质性信息预期在后续内页呈现。封面页的三条主线标题与prompt三项关键事实主题对应，方向一致。技术路线图与下一步计划模块在本页未出现，需后续页面核查。",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "20 分钟，五个部分",
+          "location": "页面上部标题区",
+          "statement": "页面标题明确报告时长为20分钟，并预告分为五个部分",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "汇报对象：领域内专家，20分钟"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "20",
+              "unit": "分钟",
+              "subject": "报告时长",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "01 三年进展总览 三大突破一页看清",
+          "location": "页面左侧列表第一项",
+          "statement": "第一部分标题为三年进展总览，副标题提及三大突破",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "02 可拉伸传感器阵列 量产良率 78% → 92%",
+          "location": "页面左侧列表第二项",
+          "statement": "关键事实完整呈现：可拉伸传感器阵列量产良率从78%提升至92%，数值与方向均正确",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "78",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率（基准值）",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率（当前值）",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "03 柔性 OLED 器件 弯曲 10 万次无衰减",
+          "location": "页面左侧列表第三项",
+          "statement": "关键事实完整呈现：柔性OLED器件弯曲10万次无衰减，次数与结论均正确",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "10",
+              "unit": "万次",
+              "subject": "柔性OLED器件弯曲次数",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "04 植入式电子皮肤 与三甲医院合作，进入临床试验",
+          "location": "页面左侧列表第四项",
+          "statement": "关键事实完整呈现：植入式电子皮肤与三甲医院合作，已进入临床试验阶段，合作方层级和临床阶段状态均正确",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "05 技术路线图与下一步计划 未来三年的推进方向与三个动作",
+          "location": "页面左侧列表第五项",
+          "statement": "页面预告包含技术路线图与下一步计划两个模块，表明结构中存在对应内容",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "含技术路线图与下一步计划"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告",
+          "location": "页面左下角",
+          "statement": "页脚标注团队名称与报告性质，符合年会特邀报告场景定位",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "02 / 13",
+          "location": "页面右下角",
+          "statement": "当前为第2页，共13页，总页数与20分钟时长基本匹配",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "13",
+              "unit": "页",
+              "subject": "总页数",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "92%",
+          "location": "页面左侧列表第二项，p2_t10 bbox [134.39, 252.69, 164.4, 269.42]",
+          "statement": "视觉观察：92%的bbox位于较低位置，与上方78% →形成分行排版，但文本在图像中清晰可读，无笔画遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "量产良率 78% → 92%",
+          "location": "页面左侧列表第二项",
+          "statement": "良率数值78%与92%分属不同文本span，通过箭头连接，表达完整的提升关系",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "92%",
+          "location": "左侧中部，大号字体",
+          "statement": "可拉伸传感器阵列量产良率显示为92%，但用户给定事实要求呈现『从78%提升至92%』的完整变化过程。本页仅呈现当前值92%，未出现起始值78%或提升方向",
+          "kind": "fact",
+          "failure_mode": "sensor_yield_fact",
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率",
+              "denominator": "不适用",
+              "time_origin": "当前值，未说明起始值"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "100,000",
+          "location": "中部，大号字体",
+          "statement": "柔性OLED器件弯曲次数显示为100,000次，与给定事实『弯曲10万次』一致；下方标注『性能无衰减』与给定事实一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "100000",
+              "unit": "次",
+              "subject": "柔性OLED器件弯曲次数",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "临床试验 / 已进入临床试验阶段",
+          "location": "右侧，大号字体及下方小字",
+          "statement": "植入式电子皮肤状态标注为『临床试验』及『已进入临床试验阶段』，与给定事实一致；但本页未出现『与三甲医院合作』的合作方信息",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "三条主线，三年之内全部跨过工程化门槛",
+          "location": "页顶标题",
+          "statement": "标题提及三条主线和三年时间范围，与柔性电子主题及近三年时间范围相符",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "材料 — 器件 — 系统 — 应用，工程化闭环已成形",
+          "location": "页底横幅区域",
+          "statement": "呈现技术路线链条，但仅为概括性闭环表述，未展示具体的技术路线图（时间轴、阶段划分、里程碑节点等结构化内容）",
+          "kind": "inference",
+          "failure_mode": "missing_roadmap",
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "含技术路线图与下一步计划"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "03 / 13",
+          "location": "右下角页码",
+          "statement": "当前为第3页，共13页，属于报告早期页面",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "3",
+              "unit": "页",
+              "subject": "当前页码",
+              "denominator": "13",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告",
+          "location": "左下角",
+          "statement": "标注汇报主体和场景，与给定需求一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告PPT"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "可拉伸传感器阵列 / 柔性 OLED 器件 / 植入式电子皮肤",
+          "location": "三列布局的标题行",
+          "statement": "三项内容均属于柔性电子主题，与专家汇报场景匹配",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "量产工艺已稳定",
+          "location": "左侧92%下方小字",
+          "statement": "补充说明量产状态，但未标注为计划或目标，作为既定成果呈现",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "本页整体布局",
+          "location": "全页",
+          "statement": "三列对称布局，文字清晰无遮挡，对比度良好，无可见的文字叠印或裁切问题；text_overlap_candidates为空列表",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 4,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "良率从 78% 到 92% ：量产工艺跨过稳定门槛",
+          "location": "页面顶部标题区域",
+          "statement": "标题明确呈现关键事实：可拉伸传感器阵列量产良率从78%提升至92%，方向与数值均正确",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "78",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率（三年前）",
+              "denominator": "不适用",
+              "time_origin": "三年前"
+            },
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率（现在）",
+              "denominator": "不适用",
+              "time_origin": "现在"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "78%",
+          "location": "柱状图左侧柱子顶部标注",
+          "statement": "图表中三年前良率标注为78%，与标题一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "78",
+              "unit": "%",
+              "subject": "三年前量产良率",
+              "denominator": "不适用",
+              "time_origin": "三年前"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "92%",
+          "location": "柱状图右侧柱子顶部标注",
+          "statement": "图表中现在良率标注为92%，与标题一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "现在量产良率",
+              "denominator": "不适用",
+              "time_origin": "现在"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "良率提升 14 个百分点",
+          "location": "页面右侧中部",
+          "statement": "92%-78%=14个百分点，该计算正确",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "14",
+              "unit": "个百分点",
+              "subject": "良率提升幅度",
+              "denominator": "不适用",
+              "time_origin": "近三年"
+            }
+          ],
+          "calculations": [
+            {
+              "operation": "subtract",
+              "left": "92",
+              "right": "78",
+              "reported": "14",
+              "left_unit": "%",
+              "right_unit": "%",
+              "reported_unit": "个百分点",
+              "left_quote": "92%",
+              "right_quote": "78%",
+              "reported_quote": "良率提升 14 个百分点",
+              "relation_quote": "良率提升 14 个百分点",
+              "meaning": "当前良率与三年前良率的绝对差值"
+            }
+          ]
+        },
+        {
+          "quote": "不良率由 22% 降至 8%",
+          "location": "页面右侧中部偏下",
+          "statement": "由良率推算不良率：100%-78%=22%，100%-92%=8%，该换算正确",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "22",
+              "unit": "%",
+              "subject": "三年前不良率",
+              "denominator": "不适用",
+              "time_origin": "三年前"
+            },
+            {
+              "value": "8",
+              "unit": "%",
+              "subject": "现在不良率",
+              "denominator": "不适用",
+              "time_origin": "现在"
+            }
+          ],
+          "calculations": [
+            {
+              "operation": "subtract",
+              "left": "100",
+              "right": "78",
+              "reported": "22",
+              "left_unit": "%",
+              "right_unit": "%",
+              "reported_unit": "%",
+              "left_quote": "100",
+              "right_quote": "78%",
+              "reported_quote": "22%",
+              "relation_quote": "不良率由 22% 降至",
+              "meaning": "三年前不良率"
+            },
+            {
+              "operation": "subtract",
+              "left": "100",
+              "right": "92",
+              "reported": "8",
+              "left_unit": "%",
+              "right_unit": "%",
+              "reported_unit": "%",
+              "left_quote": "100",
+              "right_quote": "92%",
+              "reported_quote": "8%",
+              "relation_quote": "降至 8%",
+              "meaning": "现在不良率"
+            }
+          ]
+        },
+        {
+          "quote": "相对下降约 64%",
+          "location": "页面右侧中部偏下",
+          "statement": "不良率相对下降计算：(22%-8%)/22%≈63.6%≈64%，该近似计算正确",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "64",
+              "unit": "%",
+              "subject": "不良率相对下降幅度",
+              "denominator": "不适用",
+              "time_origin": "近三年"
+            }
+          ],
+          "calculations": [
+            {
+              "operation": "growth_percent",
+              "left": "8",
+              "right": "22",
+              "reported": "64",
+              "left_unit": "%",
+              "right_unit": "%",
+              "reported_unit": "%",
+              "left_quote": "8%",
+              "right_quote": "22%",
+              "reported_quote": "相对下降约 64%",
+              "relation_quote": "相对下降约 64%",
+              "meaning": "不良率从22%降至8%的相对降幅，约等于63.6%四舍五入为64%"
+            }
+          ]
+        },
+        {
+          "quote": "注：近三年量产良率（团队量产线数据）",
+          "location": "页面左下角",
+          "statement": "数据来源标注为团队量产线数据，时间范围明确为近三年，与prompt要求的近三年进展一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性电子团队近三年进展"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告",
+          "location": "页面左下角",
+          "statement": "页脚标注与prompt要求的年会特邀报告场景一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告PPT"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "04 / 13",
+          "location": "页面右下角",
+          "statement": "当前为第4页，共13页，报告篇幅信息",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "4",
+              "unit": "页",
+              "subject": "当前页码",
+              "denominator": "13",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "柱状图Y轴刻度0、25、50、75、100，X轴为三年前/现在两个时间点",
+          "location": "页面左侧图表区域",
+          "statement": "柱状图有完整的坐标轴标签和刻度，分类标签清晰，无缺失或NaN残留",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "100、75、50、25、0",
+          "location": "Y轴刻度",
+          "statement": "Y轴刻度单位未明确标注为百分比，但结合柱顶78%、92%及上下文，可推断为良率百分比刻度；刻度本身清晰可读",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "100",
+              "unit": "%",
+              "subject": "Y轴最大值",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "从「能做」走向「能量产」",
+          "location": "页面右侧下部",
+          "statement": "定性总结语，与良率提升的量化事实相呼应，未引入新的未核实事实",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "整体页面布局：标题-图表-右侧数据解读-页脚注释",
+          "location": "全页",
+          "statement": "页面信息层级清晰，重点数据（78%→92%）突出，无明显的视觉混乱或遮挡问题；text_overlap_candidates为空，无候选重叠区域",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 5,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "92% 不是终点，而是规模化的入场券",
+          "location": "页面上部标题区域",
+          "statement": "页面标题呈现92%数值，与prompt中给定的可拉伸传感器阵列量产良率提升至92%的关键事实相关",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率",
+              "denominator": "不适用",
+              "time_origin": "近三年"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "良率越过 90% ，阵列才有资格进入批量交付与成本可控的轨道",
+          "location": "页面中上部",
+          "statement": "页面将90%作为规模化门槛进行论述，但未明确提及78%的起始值；当前页仅呈现最终92%和门槛90%，未完整呈现'从78%提升至92%'的提升过程",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "90",
+              "unit": "%",
+              "subject": "规模化门槛良率",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "不良率每降一档，单位成本显著改善（工程通识解读，不引具体数字）",
+          "location": "页面中部，成本结构条目右侧",
+          "statement": "作者明确标注不引用具体数字，采用定性表述；未提供成本改善的具体量化数据或计算",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "参数窗口收窄到可固化，产线可交接",
+          "location": "页面中下部，工艺可复制条目右侧",
+          "statement": "工艺可复制性定性描述，未提供具体参数范围或量化指标",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "阵列规模交付成为传感系统与电子皮肤的供给基础",
+          "location": "页面下部，下游可用条目右侧",
+          "statement": "提及电子皮肤作为下游应用方向，但未涉及临床试验阶段或三甲医院合作信息",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "批量交付与成本可控",
+          "location": "页面中上部，橙色高亮文字",
+          "statement": "局部放大视图显示p5_t6与p5_t7的bbox在x=652.56-652.57处有极小交集（fraction_of_smaller_bbox=0.0001），实际图像中'控'与'的'为正常相邻排版，无真实笔画遮挡；文字可读",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "，阵列才有资格进入",
+          "location": "页面中上部，'进入'与橙色文字交界处",
+          "statement": "局部放大视图显示p5_t5与p5_t6的bbox在x=436.56-436.57处有极小交集（fraction_of_smaller_bbox=0.0），实际图像中'入'与'批'为正常相邻排版，颜色区分（黑/橙）清晰，无真实笔画遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告",
+          "location": "页面左下角",
+          "statement": "页脚标注团队名称与报告性质，与prompt要求的年会特邀报告场景一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "05 / 13",
+          "location": "页面右下角",
+          "statement": "当前为第5页，共13页；本页未包含技术路线图或下一步计划的结构化内容",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "5",
+              "unit": "页",
+              "subject": "当前页码",
+              "denominator": "13",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 6,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "弯曲 100,000 次，性能零衰减",
+          "location": "页面顶部标题区域",
+          "statement": "页面主标题明确包含关键数值100,000次及'性能零衰减'结论",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "100000",
+              "unit": "次",
+              "subject": "弯曲次数",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "100,000",
+          "location": "页面左侧中部大字号数字",
+          "statement": "页面核心数据展示，与标题一致，重复强调弯曲次数",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "弯曲10万次"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "100000",
+              "unit": "次",
+              "subject": "弯曲循环次数",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "次弯曲循环",
+          "location": "100,000数字下方",
+          "statement": "单位说明，确认100,000为弯曲循环次数",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "性能零衰减",
+          "location": "页面左侧下部，橙色文字",
+          "statement": "明确表述性能无衰减结论，与prompt中'无衰减'一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "无衰减"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "关键性能参数在循环前后无衰减",
+          "location": "页面右侧'验证判据'模块",
+          "statement": "验证标准说明，再次确认'无衰减'结论，但表述为'循环前后无衰减'而非直接引用'弯曲10万次无衰减'",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "注：团队可靠性测试结论（柔性 OLED 器件）",
+          "location": "页面底部左侧注释",
+          "statement": "明确标注该数据为柔性OLED器件的可靠性测试结论，与prompt中'柔性OLED器件'完全对应",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "可靠性验证 · 反复弯曲",
+          "location": "页面左侧上部，100,000数字上方",
+          "statement": "模块主题说明，表明本页内容为可靠性验证中的反复弯曲测试",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "工程意义 折叠与贴合形态下的长寿命可用性得到验证",
+          "location": "页面右侧下部",
+          "statement": "对测试结果的工程应用解读，属于合理推论，未改变原始事实",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告",
+          "location": "页面底部左侧",
+          "statement": "页脚信息，确认报告主体和场景",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "06 / 13",
+          "location": "页面底部右侧",
+          "statement": "页码显示为第6页，共13页",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "6",
+              "unit": "页",
+              "subject": "当前页码",
+              "denominator": "13",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "验证判据",
+          "location": "页面右侧上部，带绿色对勾图标",
+          "statement": "结构化信息模块标题，视觉层级清晰",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "工程意义",
+          "location": "页面右侧中部，带橙色上升箭头图标",
+          "statement": "结构化信息模块标题，与验证判据形成并列结构",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 7,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "这一结论如何被验证",
+          "location": "页面上部标题区域",
+          "statement": "页面标题，表明本页内容为验证方法论说明",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "弯曲条件",
+          "location": "左侧卡片标题",
+          "statement": "验证框架第一要素：弯曲条件",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "弯曲形态与频率\n构成测试剖面",
+          "location": "左侧卡片内容",
+          "statement": "弯曲条件的具体说明，为方法学通识表述",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "循环规模",
+          "location": "中间卡片标题",
+          "statement": "验证框架第二要素：循环规模",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "累计 100,000 次\n弯曲循环",
+          "location": "中间卡片内容",
+          "statement": "循环规模具体数值为100,000次弯曲循环，与prompt中'弯曲10万次'一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "100000",
+              "unit": "次",
+              "subject": "弯曲循环",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "衰减判据",
+          "location": "右侧卡片标题",
+          "statement": "验证框架第三要素：衰减判据",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "循环前后关键性能\n无衰减",
+          "location": "右侧卡片内容",
+          "statement": "衰减判据为循环前后关键性能无衰减，与prompt中'无衰减'结论一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "验证结果支持器件进入应用评估",
+          "location": "页面中部总结条",
+          "statement": "验证结论总结，'应用评估'为绿色高亮",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "注：验证框架三要素为方法学通识表述，不涉具体弯曲半径与频率数值",
+          "location": "页面下部注释",
+          "statement": "明确说明本页为方法学通识表述，不涉及具体技术参数",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告",
+          "location": "页面左下角",
+          "statement": "页脚信息，表明报告主体与场景",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "07 / 13",
+          "location": "页面右下角",
+          "statement": "页码，当前为第7页，共13页",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "7",
+              "unit": "页",
+              "subject": "当前页码",
+              "denominator": "13",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "验证结果支持器件进入应用评估",
+          "location": "局部放大图区域，包含p7_t16与p7_t17",
+          "statement": "经局部放大图核查，'验证结果支持器件进入'（深蓝色）与'应用评估'（绿色）为相邻排版，'进入'与'应用'两字紧邻但无笔画重叠，属于正常连字排版，非真实遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "与三甲医院合作，植入式电子皮肤进入临床试验",
+          "location": "页面顶部标题区域",
+          "statement": "标题完整呈现了prompt给定的关键事实：合作方为三甲医院、产品为植入式电子皮肤、状态为已进入临床试验阶段",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "▼ 当前阶段",
+          "location": "阶段流程图上方，橙色标记",
+          "statement": "视觉标记指示当前所处阶段位置，与'临床试验'节点对应",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "规划",
+          "location": "阶段流程图上方最右侧",
+          "statement": "灰色文字标记'临床应用'为未来规划阶段，非当前状态",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "实验室研究 → 验证 → 临床试验 → 临床应用",
+          "location": "页面中上部横向流程图",
+          "statement": "四阶段转化路径，当前高亮节点为'临床试验'，前后阶段为'验证'和'临床应用'",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "临床试验",
+          "location": "流程图第三节点，橙色高亮背景",
+          "statement": "该节点使用橙色填充、白色文字，与'当前阶段'标记对应，明确当前处于临床试验阶段",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "三甲医院合作 / 团队与三甲医院联合推进植入式电子皮肤的临床验证",
+          "location": "页面中部左侧，图标下方",
+          "statement": "正文再次确认合作方层级为三甲医院，产品为植入式电子皮肤，活动为临床验证",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "植入式电子皮肤的 临床转化通道已打开",
+          "location": "页面中下部强调文本区域",
+          "statement": "两色拼接文字，前段深蓝'植入式电子皮肤的'，后段橙色'临床转化通道已打开'；局部放大图显示'的'与'临'字之间无笔画遮挡，为正常相邻排版，bbox极小交集(0.0001)不构成真实叠印",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "注：当前临床试验阶段为既定事实，阶段序列为通识框架",
+          "location": "页面底部注释区域",
+          "statement": "作者主动标注'临床试验阶段'为既定事实，阶段序列为通用框架性表述，该注释用于区分事实与框架",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告 / 08 / 13",
+          "location": "页面底部页脚",
+          "statement": "页脚标识报告主体为柔性电子团队，场景为年会特邀报告，当前为第8页共13页",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "8",
+              "unit": "页",
+              "subject": "当前页码",
+              "denominator": "13",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "三条主线在临床汇合",
+          "location": "页面顶部标题区域",
+          "statement": "页面主标题，概括本页核心内容：三条技术主线在临床场景汇聚",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "可拉伸阵列\n传感单元的规模化供给",
+          "location": "左侧上方矩形框内",
+          "statement": "第一条主线：可拉伸传感器阵列，强调规模化供给能力。未出现具体良率数值78%或92%",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "可靠性方法\n临床级器件的验证范式",
+          "location": "左侧下方矩形框内",
+          "statement": "第二条主线：可靠性验证方法，强调临床级器件验证范式。未出现柔性OLED或10万次弯曲的具体信息",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "植入式电子皮肤\n临床试验阶段",
+          "location": "右侧深色矩形框内",
+          "statement": "第三条主线汇聚点：植入式电子皮肤已进入临床试验阶段。与source中'与三甲医院合作植入式电子皮肤已进入临床试验阶段'基本事实方向一致，但未明确提及'三甲医院'合作方层级",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "阵列供给与可靠性验证，共同托举植入式器件进入临床",
+          "location": "页面中下部",
+          "statement": "总结性陈述，说明前两条主线（阵列供给、可靠性验证）支撑第三条主线（植入式器件进入临床）。'临床'二字以橙色高亮显示",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告",
+          "location": "左下角页脚",
+          "statement": "页脚信息，标明团队名称与报告性质",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告PPT"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "09 / 13",
+          "location": "右下角页脚",
+          "statement": "页码信息，当前为第9页，共13页",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "9",
+              "unit": "页",
+              "subject": "当前页码",
+              "denominator": "13",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "阵列供给与可靠性验证，共同托举植入式器件进入临床",
+          "location": "p9_t8与p9_t9交界处，放大图显示为连续文本",
+          "statement": "经局部放大图核查，p9_t8与p9_t9虽bbox有微小交集（fraction_of_smaller_bbox=0.0006），但实际字形笔画无遮挡，'进入'与'临床'为正常连续排版，无真实叠印或不可读问题",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "可拉伸阵列 / 可靠性方法 / 植入式电子皮肤",
+          "location": "页面整体结构",
+          "statement": "本页以结构化框图形式呈现三条技术主线的逻辑关系，属于技术路线图的汇聚/总结性页面，具有实质结构化内容，非口号式表述",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "传感单元的规模化供给 / 临床级器件的验证范式 / 临床试验阶段",
+          "location": "各框图副标题",
+          "statement": "各主线均附有具体技术定位说明，内容指向柔性电子临床转化，符合专家受众的专业深度要求，未出现明显偏离主题或时间范围的内容",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 10,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "三条主线的成熟度对照",
+          "location": "页面上方标题区域，bbox[58.53,62.92,418.54,98.92]",
+          "statement": "页面标题，表明本页内容为三条技术主线的成熟度对比",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "可拉伸传感器阵列 / 量产良率 92% / 量产验证 / 规模化交付",
+          "location": "表格第一行数据区域，主线列bbox[81.64,228.83,249.64,249.84]，关键指标列bbox[314.16,228.83,450.47,251.33]，验证层级列bbox[621.64,228.83,705.64,249.84]，应用阶段列bbox[771.62,228.83,876.62,249.84]",
+          "statement": "表格第一行呈现可拉伸传感器阵列的当前状态。关键指标显示为'量产良率 92%'，仅呈现当前值92%，未出现来源要求的'从78%提升至92%'的完整变化过程（起始值78%缺失）。由于本页仅展示当前状态，无法单独判断全篇是否在其他位置补充了78%的基准值，需跨页复核。数值92%与来源给定当前值一致。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率",
+              "denominator": "不适用",
+              "time_origin": "当前值，基准值78%未在本页出现"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "柔性 OLED 器件 / 弯曲 100,000 次无衰减 / 可靠性验证 / 应用评估",
+          "location": "表格第二行数据区域，主线列bbox[81.64,311.35,245.09,332.35]（含p10_t11-t13三个span），关键指标列bbox[314.16,311.35,537.2,332.35]（含p10_t14-t16三个span），验证层级列bbox[621.64,311.35,726.64,332.35]，应用阶段列bbox[771.62,311.35,855.62,332.35]",
+          "statement": "表格第二行呈现柔性OLED器件状态。关键指标为'弯曲 100,000 次无衰减'，其中'100,000'以千分位格式呈现，实质为10万次；'无衰减'结论完整保留。与来源给定事实一致。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "100000",
+              "unit": "次",
+              "subject": "柔性OLED器件弯曲次数",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "植入式电子皮肤 / 进入临床试验 / 临床验证 / 临床转化",
+          "location": "表格第三行数据区域，主线列bbox[81.64,393.84,228.65,414.84]，关键指标列bbox[314.16,393.84,440.17,414.84]，验证层级列bbox[621.64,393.84,705.64,414.84]，应用阶段列bbox[771.62,393.84,855.62,414.84]",
+          "statement": "表格第三行呈现植入式电子皮肤状态。关键指标为'进入临床试验'，验证层级为'临床验证'，应用阶段为'临床转化'。来源要求的关键事实为'与三甲医院合作植入式电子皮肤已进入临床试验阶段'。本页呈现了'植入式电子皮肤'和'进入临床试验'，但未出现'与三甲医院合作'这一合作方层级信息。由于本页为结构化对比表格，合作方信息可能在前文其他页面详述，需跨页复核。当前页未出现合作方层级错误，仅存在信息简化。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "三条主线处于不同的成熟度阶梯，共同构成工程化闭环",
+          "location": "页面下方说明文字，bbox[59.13,459.09,563.15,480.1]",
+          "statement": "页面底部总结句，强调三条主线的差异化成熟度及整体闭环关系。属于概括性表述，无具体数值。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告 / 10 / 13",
+          "location": "页面左下角页脚bbox[59.53,498.45,219.51,510.44]，右下角页码bbox[863.77,497.91,900.39,511.29]",
+          "statement": "页脚标识报告主体为'柔性电子团队'，场景为'年会特邀报告'，当前页码为第10页共13页。与需求场景一致。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告PPT"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "10",
+              "unit": "页",
+              "subject": "当前页码",
+              "denominator": "13",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "表格整体布局：四列（主线、关键指标、验证层级、应用阶段）三行数据，列标题位于浅灰背景表头行",
+          "location": "页面中部表格区域，约y=140至y=420范围",
+          "statement": "视觉表现：表格结构清晰，列标题与数据行分区明确。所有文字无叠印、无裁切、无遮挡，对比度良好。text_overlap_candidates为空列表，无候选重叠区域。各span的bbox之间无异常相交。",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "92% 与 100,000 等数字的呈现方式",
+          "location": "关键指标列具体数值区域",
+          "statement": "数字与单位/量词在同一行内完整呈现：'量产良率 92%'中数值与百分号紧邻；'弯曲 100,000 次无衰减'中千分位数字与量词'次'及结论'无衰减'均完整可读。无数字单位分离现象。",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 11,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "2026–2028 ：从工程化走向规模临床应用",
+          "location": "页面顶部标题区域",
+          "statement": "该页为技术路线图/下一步计划页面，时间跨度为2026-2028年，定位为未来规划而非当前成果",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "含技术路线图与下一步计划"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "现在",
+          "location": "时间轴左侧起点，橙色圆点标记",
+          "statement": "时间轴以\"现在\"为起点，向后延伸至2026、2027、2028三个阶段",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "2026 工艺与验证固化 良率工艺窗口固化 可靠性协议标准化",
+          "location": "时间轴第一阶段（左起）",
+          "statement": "2026年目标聚焦于工艺固化与可靠性标准化，提及\"良率工艺窗口固化\"但未重复具体92%数值",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "2027 系统与集成 阵列—器件—皮肤 系统级集成与验证",
+          "location": "时间轴第二阶段",
+          "statement": "2027年目标为系统级集成，涵盖传感器阵列、OLED器件、电子皮肤三类组件的整合",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "2028 临床与规模 临床推进与规模化交付 衔接当前临床试验阶段",
+          "location": "时间轴第三阶段（右起）",
+          "statement": "2028年目标为临床推进与规模化交付，明确提及\"衔接当前临床试验阶段\"",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "情景数据：阶段划分与各阶段目标为团队规划，衔接 92% 良率、10 万次弯曲与当前临床试验阶段",
+          "location": "页面中下部说明文字",
+          "statement": "该说明文字明确将92%良率、10万次弯曲、当前临床试验阶段标注为\"情景数据\"和\"团队规划\"的衔接基础，而非将未来目标与当前成果混淆",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%；柔性OLED器件弯曲10万次无衰减；与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "良率",
+              "denominator": "不适用",
+              "time_origin": "当前（作为规划衔接基础）"
+            },
+            {
+              "value": "10",
+              "unit": "万次",
+              "subject": "弯曲",
+              "denominator": "不适用",
+              "time_origin": "当前（作为规划衔接基础）"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "三阶段推进：先固化工艺，再集成系统，最后拓展临床",
+          "location": "页面底部总结条",
+          "statement": "以文字列表形式呈现三阶段推进策略，结构清晰，与上方时间轴内容一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "三阶段推进：先 固化工艺",
+          "location": "页面底部，p11_t21与p11_t22交界处",
+          "statement": "根据局部放大图核查，\"先\"与\"固化工艺\"为正常相邻排版，\"先\"字右边缘与\"固\"字左边缘有正常字间距，无实际笔画重叠或遮挡；bounding box交集面积占比仅0.0001，属于排版间隙计算误差",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 年会特邀报告 11 / 13",
+          "location": "页面底部页脚",
+          "statement": "页脚信息完整，页码显示为第11页共13页",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告PPT"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "92% 良率",
+          "location": "情景数据说明文字中",
+          "statement": "该页将92%良率作为当前成果引用，与prompt给定事实\"可拉伸传感器阵列量产良率从78%提升至92%\"中的目标值92%一致，但此页未提及78%基准值和\"从...提升至\"的变化过程。由于本页主题为未来规划而非历史回顾，未重复完整变化过程属于合理的内容取舍",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率",
+              "denominator": "不适用",
+              "time_origin": "当前"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "10 万次弯曲",
+          "location": "情景数据说明文字中",
+          "statement": "该页将\"10万次弯曲\"作为当前成果引用，与prompt给定事实\"柔性OLED器件弯曲10万次无衰减\"中的次数一致，但简化为\"10万次弯曲\"，未完整保留\"无衰减\"结论。由于本页主题为未来规划，此简化为合理的引用方式",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "10",
+              "unit": "万次",
+              "subject": "弯曲次数",
+              "denominator": "不适用",
+              "time_origin": "当前"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "当前临床试验阶段",
+          "location": "2028阶段描述及情景数据说明中",
+          "statement": "该页两次提及\"当前临床试验阶段\"，与prompt给定事实\"与三甲医院合作植入式电子皮肤已进入临床试验阶段\"中的临床阶段状态一致，但未重复\"三甲医院\"合作方层级和\"植入式电子皮肤\"具体产品形态",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "阶段划分与各阶段目标为团队规划",
+          "location": "情景数据说明文字",
+          "statement": "页面明确标注2026-2028内容性质为\"团队规划\"，与当前成果区分清晰，不存在事实与推测混淆的问题",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 12,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "下一步：三条线的三个动作",
+          "location": "页面上方标题区域",
+          "statement": "页面标题明确标识为下一步计划内容，属于规划性表述而非已完成事实",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "含技术路线图与下一步计划"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "计划一 · 传感主线 / 良率工艺固化 / 工艺窗口固化与产线交接 / 产能扩展支撑规模交付",
+          "location": "页面左侧第一栏",
+          "statement": "计划一围绕传感器量产良率工艺固化展开，提及产线交接与产能扩展，但未出现具体数值78%或92%，本页为计划模块不强制要求重复历史数值",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "计划二 · 显示主线 / 验证体系标准化 / 弯曲疲劳协议标准化 / 向应用评估推进",
+          "location": "页面中间第二栏",
+          "statement": "计划二围绕显示主线验证体系标准化，提及弯曲疲劳协议，但未出现10万次无衰减的具体数值，本页为计划模块不强制要求重复历史数值",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "计划三 · 医疗主线 / 临床推进与迭代 / 临床试验持续推进 / 临床反馈驱动器件迭代",
+          "location": "页面右侧第三栏",
+          "statement": "计划三明确提及医疗主线、临床试验持续推进，与prompt中植入式电子皮肤已进入临床试验阶段的事实方向一致，但未明确重复三甲医院合作方信息",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "情景内容：三项计划为团队规划性表述，衔接既有成果",
+          "location": "页面底部左侧说明文字",
+          "location_2": "[59.39, 463.35, 419.31, 478.35]",
+          "statement": "页面明确标注三项计划为规划性表述，与既有成果区分，有助于区分事实与推测",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "三个合作切口：工艺 · 验证方法 · 临床转化",
+          "location": "页面中下部横幅区域",
+          "statement": "该横幅文字在视觉呈现中，'三个合作切口：'与'工艺'之间存在bounding box极小交集（fraction_of_smaller_bbox=0.0002），但放大图显示实际字形无遮挡，'工艺'二字完整可读，属于相邻排版而非真实叠印",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "12 / 13",
+          "location": "页面右下角",
+          "statement": "当前为第12页，共13页，说明存在下一页，本页作为计划模块页面存在",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "12",
+              "unit": "页",
+              "subject": "当前页码",
+              "denominator": "13",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": []
+        }
+      ]
+    },
+    {
+      "page": 13,
+      "complete": true,
+      "observations": [
+        {
+          "quote": "78% → 92% 量产良率 · 100,000 次弯曲无衰减",
+          "location": "页面中部左侧主标题下方",
+          "statement": "可见文字包含可拉伸传感器阵列量产良率从78%提升至92%的关键事实，数值与方向均正确；同时包含柔性OLED器件弯曲100,000次无衰减的关键事实，弯曲次数为10万次量级且'无衰减'结论明确",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "78",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率（基准值）",
+              "denominator": "不适用",
+              "time_origin": "近三年起始"
+            },
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "可拉伸传感器阵列量产良率（当前值）",
+              "denominator": "不适用",
+              "time_origin": "近三年结束"
+            },
+            {
+              "value": "100000",
+              "unit": "次",
+              "subject": "柔性OLED器件弯曲次数",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "临床试验阶段 · 工程化闭环成形",
+          "location": "页面中下部左侧",
+          "statement": "可见文字包含'临床试验阶段'，与植入式电子皮肤进入临床试验阶段的关键事实一致；右侧栏同步出现'临床试验'和'三甲医院合作推进'",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "92% 量产良率",
+          "location": "页面右侧深蓝栏上部",
+          "statement": "右侧信息栏以结构化形式重复呈现三大成果，92%量产良率与左侧一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "92",
+              "unit": "%",
+              "subject": "量产良率",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "100,000 次 弯曲无衰减",
+          "location": "页面右侧深蓝栏中部",
+          "statement": "右侧信息栏重复呈现弯曲10万次无衰减，与左侧及来源一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性OLED器件弯曲10万次无衰减"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "100000",
+              "unit": "次",
+              "subject": "弯曲次数",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": []
+        },
+        {
+          "quote": "临床试验 三甲医院合作推进",
+          "location": "页面右侧深蓝栏下部",
+          "statement": "右侧信息栏呈现'临床试验'和'三甲医院合作推进'，与来源事实中'与三甲医院合作''已进入临床试验阶段'一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "欢迎就工艺、验证与临床转化开展合作交流",
+          "location": "页面中下部，与'临床试验阶段 · 工程化闭环成形'区域发生bbox相交",
+          "statement": "从局部放大图可见，'欢迎就工艺、验证与临床转化开展合作交流'文字与上方'临床试验阶段 · 工程化闭环成形'在垂直方向紧密相邻，但实际字形笔画存在明显叠印：'临床试验阶段'的底部与'欢迎就工艺'的顶部在同一水平线上重叠，导致两行文字笔画相互穿插覆盖，形成真实不可读区域",
+          "kind": "visual",
+          "failure_mode": "visual_readability",
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "三大成果回顾",
+          "location": "页面右侧深蓝栏顶部",
+          "statement": "右侧栏标题为'三大成果回顾'，表明本页为总结回顾性质，非技术路线图或下一步计划模块",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "结语",
+          "location": "页面左上角",
+          "statement": "页面明确标注为'结语'页，属于报告收尾总结页",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "柔性电子团队 · 2026 年会特邀报告",
+          "location": "页面左下角",
+          "statement": "落款信息与汇报场景一致，时间标注为2026年，与'近三年'时间范围可对应（2023-2026）",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "年会特邀报告"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        },
+        {
+          "quote": "三年，从实验室到临床",
+          "location": "页面左侧主标题",
+          "statement": "主标题概括柔性电子主题及近三年时间跨度，与需求定义的目标一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "柔性电子团队近三年进展"
+            }
+          ],
+          "quantities": [],
+          "calculations": []
+        }
+      ]
+    }
+  ],
+  "ledger": [
+    {
+      "quote": "从实验室到临床",
+      "location": "页面左侧中部大标题",
+      "statement": "主标题概括了从研发到临床转化的方向，与prompt中植入式电子皮肤进入临床试验阶段的方向一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e1",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子的工程化三年",
+      "location": "主标题下方副标题",
+      "statement": "明确时间范围为三年，与prompt要求的近三年时间范围一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性电子团队近三年进展"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "3",
+          "unit": "年",
+          "subject": "工程化时间",
+          "denominator": "不适用",
+          "time_origin": "近三年"
+        }
+      ],
+      "calculations": [],
+      "id": "p1_e2",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "年会特邀报告 · 20 分钟",
+      "location": "页面左上方",
+      "statement": "明确标注报告时长为20分钟，与prompt要求的20分钟一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "20分钟"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "20",
+          "unit": "分钟",
+          "subject": "报告时长",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p1_e3",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "汇报对象：领域内专家",
+      "location": "页面左下方",
+      "statement": "明确标注汇报对象为领域内专家，与prompt要求一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "汇报对象：领域内专家"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e4",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "近三年 · 三条主线",
+      "location": "页面右上方深蓝色区域",
+      "statement": "右侧导航栏总览结构，提示报告将围绕三条主线展开",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "3",
+          "unit": "条",
+          "subject": "主线数量",
+          "denominator": "不适用",
+          "time_origin": "近三年"
+        }
+      ],
+      "calculations": [],
+      "id": "p1_e5",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "01 可拉伸传感器阵列",
+      "location": "右侧导航栏第一项",
+      "statement": "第一条主线为可拉伸传感器阵列，与prompt中第一项关键事实对应，但本页仅列标题未出现具体良率数值",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e6",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "02 柔性 OLED 器件",
+      "location": "右侧导航栏第二项",
+      "statement": "第二条主线为柔性OLED器件，与prompt中第二项关键事实对应，但本页仅列标题未出现具体弯曲次数",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e7",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "03 植入式电子皮肤",
+      "location": "右侧导航栏第三项",
+      "statement": "第三条主线为植入式电子皮肤，与prompt中第三项关键事实对应，但本页仅列标题未出现三甲医院合作及临床试验阶段的具体信息",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e8",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队",
+      "location": "页面左下方",
+      "statement": "报告团队名称，与prompt中柔性电子团队一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性电子团队"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e9",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "近三年研究进展",
+      "location": "页面左下方团队名称下方",
+      "statement": "再次确认时间范围为近三年研究进展",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性电子团队近三年进展"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e10",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "视觉观察：页面采用左右分栏布局，左侧为浅色背景的主标题区，右侧为深蓝色背景的导航目录区",
+      "location": "整体页面布局",
+      "statement": "封面页结构清晰，信息层级分明：报告类型/时长→主标题→副标题→团队信息→三条主线导航。右侧导航以编号+主题形式呈现，颜色对比鲜明（橙色编号+白色文字在深蓝背景上）。未观察到文字遮挡、裁切或对比度不足问题。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e11",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "p1_t16 '柔性 ' bbox [674.87, 354.1, 722.11, 375.1]; p1_t17 'OLED ' bbox [727.14, 353.15, 790.12, 376.59]; p1_t18 '器' bbox [795.17, 354.1, 816.18, 375.1]; p1_t19 '件' bbox [674.87, 379.3, 695.88, 400.3]",
+      "location": "右侧导航栏第二项'柔性 OLED 器件'",
+      "statement": "根据geometry数据，'柔性'、'OLED'、'器'的x1/y0/y1与'件'的x0/y0/y1显示'OLED器件'被拆分为'OLED'+'器'+'件'三行，其中'器'在795.17-816.18x/354.1-375.1y，'件'在674.87-695.88x/379.3-400.3y，即'件'换行至下一行且左对齐于'柔性'下方，形成'柔性 OLED'在第一行、'器件'在第二行的视觉呈现。这是换行排版而非遮挡。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e12",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "本页为封面页，仅呈现报告框架结构",
+      "location": "整体页面功能判断",
+      "statement": "作为封面页，本页未展开任何关键事实的具体数值内容（78%→92%、10万次、三甲医院临床试验），这些实质性信息预期在后续内页呈现。封面页的三条主线标题与prompt三项关键事实主题对应，方向一致。技术路线图与下一步计划模块在本页未出现，需后续页面核查。",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p1_e13",
+      "page": 1,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "20 分钟，五个部分",
+      "location": "页面上部标题区",
+      "statement": "页面标题明确报告时长为20分钟，并预告分为五个部分",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "汇报对象：领域内专家，20分钟"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "20",
+          "unit": "分钟",
+          "subject": "报告时长",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p2_e1",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "01 三年进展总览 三大突破一页看清",
+      "location": "页面左侧列表第一项",
+      "statement": "第一部分标题为三年进展总览，副标题提及三大突破",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p2_e2",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "02 可拉伸传感器阵列 量产良率 78% → 92%",
+      "location": "页面左侧列表第二项",
+      "statement": "关键事实完整呈现：可拉伸传感器阵列量产良率从78%提升至92%，数值与方向均正确",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "78",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率（基准值）",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率（当前值）",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": [],
+      "id": "p2_e3",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "03 柔性 OLED 器件 弯曲 10 万次无衰减",
+      "location": "页面左侧列表第三项",
+      "statement": "关键事实完整呈现：柔性OLED器件弯曲10万次无衰减，次数与结论均正确",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "柔性OLED器件弯曲次数",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p2_e4",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "04 植入式电子皮肤 与三甲医院合作，进入临床试验",
+      "location": "页面左侧列表第四项",
+      "statement": "关键事实完整呈现：植入式电子皮肤与三甲医院合作，已进入临床试验阶段，合作方层级和临床阶段状态均正确",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p2_e5",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "05 技术路线图与下一步计划 未来三年的推进方向与三个动作",
+      "location": "页面左侧列表第五项",
+      "statement": "页面预告包含技术路线图与下一步计划两个模块，表明结构中存在对应内容",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "含技术路线图与下一步计划"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p2_e6",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告",
+      "location": "页面左下角",
+      "statement": "页脚标注团队名称与报告性质，符合年会特邀报告场景定位",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p2_e7",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "02 / 13",
+      "location": "页面右下角",
+      "statement": "当前为第2页，共13页，总页数与20分钟时长基本匹配",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "13",
+          "unit": "页",
+          "subject": "总页数",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p2_e8",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "92%",
+      "location": "页面左侧列表第二项，p2_t10 bbox [134.39, 252.69, 164.4, 269.42]",
+      "statement": "视觉观察：92%的bbox位于较低位置，与上方78% →形成分行排版，但文本在图像中清晰可读，无笔画遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p2_e9",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "量产良率 78% → 92%",
+      "location": "页面左侧列表第二项",
+      "statement": "良率数值78%与92%分属不同文本span，通过箭头连接，表达完整的提升关系",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p2_e10",
+      "page": 2,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "92%",
+      "location": "左侧中部，大号字体",
+      "statement": "可拉伸传感器阵列量产良率显示为92%，但用户给定事实要求呈现『从78%提升至92%』的完整变化过程。本页仅呈现当前值92%，未出现起始值78%或提升方向",
+      "kind": "fact",
+      "failure_mode": "sensor_yield_fact",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率",
+          "denominator": "不适用",
+          "time_origin": "当前值，未说明起始值"
+        }
+      ],
+      "calculations": [],
+      "id": "p3_e1",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "100,000",
+      "location": "中部，大号字体",
+      "statement": "柔性OLED器件弯曲次数显示为100,000次，与给定事实『弯曲10万次』一致；下方标注『性能无衰减』与给定事实一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "100000",
+          "unit": "次",
+          "subject": "柔性OLED器件弯曲次数",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p3_e2",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "临床试验 / 已进入临床试验阶段",
+      "location": "右侧，大号字体及下方小字",
+      "statement": "植入式电子皮肤状态标注为『临床试验』及『已进入临床试验阶段』，与给定事实一致；但本页未出现『与三甲医院合作』的合作方信息",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p3_e3",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三条主线，三年之内全部跨过工程化门槛",
+      "location": "页顶标题",
+      "statement": "标题提及三条主线和三年时间范围，与柔性电子主题及近三年时间范围相符",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p3_e4",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "材料 — 器件 — 系统 — 应用，工程化闭环已成形",
+      "location": "页底横幅区域",
+      "statement": "呈现技术路线链条，但仅为概括性闭环表述，未展示具体的技术路线图（时间轴、阶段划分、里程碑节点等结构化内容）",
+      "kind": "inference",
+      "failure_mode": "missing_roadmap",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "含技术路线图与下一步计划"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p3_e5",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "03 / 13",
+      "location": "右下角页码",
+      "statement": "当前为第3页，共13页，属于报告早期页面",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "3",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p3_e6",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告",
+      "location": "左下角",
+      "statement": "标注汇报主体和场景，与给定需求一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告PPT"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p3_e7",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "可拉伸传感器阵列 / 柔性 OLED 器件 / 植入式电子皮肤",
+      "location": "三列布局的标题行",
+      "statement": "三项内容均属于柔性电子主题，与专家汇报场景匹配",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p3_e8",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "量产工艺已稳定",
+      "location": "左侧92%下方小字",
+      "statement": "补充说明量产状态，但未标注为计划或目标，作为既定成果呈现",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p3_e9",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "本页整体布局",
+      "location": "全页",
+      "statement": "三列对称布局，文字清晰无遮挡，对比度良好，无可见的文字叠印或裁切问题；text_overlap_candidates为空列表",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p3_e10",
+      "page": 3,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "良率从 78% 到 92% ：量产工艺跨过稳定门槛",
+      "location": "页面顶部标题区域",
+      "statement": "标题明确呈现关键事实：可拉伸传感器阵列量产良率从78%提升至92%，方向与数值均正确",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "78",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率（三年前）",
+          "denominator": "不适用",
+          "time_origin": "三年前"
+        },
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率（现在）",
+          "denominator": "不适用",
+          "time_origin": "现在"
+        }
+      ],
+      "calculations": [],
+      "id": "p4_e1",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "78%",
+      "location": "柱状图左侧柱子顶部标注",
+      "statement": "图表中三年前良率标注为78%，与标题一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "78",
+          "unit": "%",
+          "subject": "三年前量产良率",
+          "denominator": "不适用",
+          "time_origin": "三年前"
+        }
+      ],
+      "calculations": [],
+      "id": "p4_e2",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "92%",
+      "location": "柱状图右侧柱子顶部标注",
+      "statement": "图表中现在良率标注为92%，与标题一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "现在量产良率",
+          "denominator": "不适用",
+          "time_origin": "现在"
+        }
+      ],
+      "calculations": [],
+      "id": "p4_e3",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "良率提升 14 个百分点",
+      "location": "页面右侧中部",
+      "statement": "92%-78%=14个百分点，该计算正确",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "14",
+          "unit": "个百分点",
+          "subject": "良率提升幅度",
+          "denominator": "不适用",
+          "time_origin": "近三年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "subtract",
+          "left": "92",
+          "right": "78",
+          "reported": "14",
+          "left_unit": "%",
+          "right_unit": "%",
+          "reported_unit": "个百分点",
+          "left_quote": "92%",
+          "right_quote": "78%",
+          "reported_quote": "良率提升 14 个百分点",
+          "relation_quote": "良率提升 14 个百分点",
+          "meaning": "当前良率与三年前良率的绝对差值"
+        }
+      ],
+      "id": "p4_e4",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": [
+        {
+          "status": "unverified",
+          "computed": null,
+          "matches_reported_precision": null,
+          "reason": "Unit unsupported or unspecified",
+          "limit": "An unverified extraction is not a defect in the presentation."
+        }
+      ]
+    },
+    {
+      "quote": "不良率由 22% 降至 8%",
+      "location": "页面右侧中部偏下",
+      "statement": "由良率推算不良率：100%-78%=22%，100%-92%=8%，该换算正确",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "22",
+          "unit": "%",
+          "subject": "三年前不良率",
+          "denominator": "不适用",
+          "time_origin": "三年前"
+        },
+        {
+          "value": "8",
+          "unit": "%",
+          "subject": "现在不良率",
+          "denominator": "不适用",
+          "time_origin": "现在"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "subtract",
+          "left": "100",
+          "right": "78",
+          "reported": "22",
+          "left_unit": "%",
+          "right_unit": "%",
+          "reported_unit": "%",
+          "left_quote": "100",
+          "right_quote": "78%",
+          "reported_quote": "22%",
+          "relation_quote": "不良率由 22% 降至",
+          "meaning": "三年前不良率"
+        },
+        {
+          "operation": "subtract",
+          "left": "100",
+          "right": "92",
+          "reported": "8",
+          "left_unit": "%",
+          "right_unit": "%",
+          "reported_unit": "%",
+          "left_quote": "100",
+          "right_quote": "92%",
+          "reported_quote": "8%",
+          "relation_quote": "降至 8%",
+          "meaning": "现在不良率"
+        }
+      ],
+      "id": "p4_e5",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": [
+        {
+          "status": "unverified",
+          "computed": null,
+          "matches_reported_precision": null,
+          "reason": "Calculation anchor is not supplied evidence",
+          "limit": "An unverified extraction is not a defect in the presentation."
+        },
+        {
+          "status": "unverified",
+          "computed": null,
+          "matches_reported_precision": null,
+          "reason": "Calculation anchor is not supplied evidence",
+          "limit": "An unverified extraction is not a defect in the presentation."
+        }
+      ]
+    },
+    {
+      "quote": "相对下降约 64%",
+      "location": "页面右侧中部偏下",
+      "statement": "不良率相对下降计算：(22%-8%)/22%≈63.6%≈64%，该近似计算正确",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "64",
+          "unit": "%",
+          "subject": "不良率相对下降幅度",
+          "denominator": "不适用",
+          "time_origin": "近三年"
+        }
+      ],
+      "calculations": [
+        {
+          "operation": "growth_percent",
+          "left": "8",
+          "right": "22",
+          "reported": "64",
+          "left_unit": "%",
+          "right_unit": "%",
+          "reported_unit": "%",
+          "left_quote": "8%",
+          "right_quote": "22%",
+          "reported_quote": "相对下降约 64%",
+          "relation_quote": "相对下降约 64%",
+          "meaning": "不良率从22%降至8%的相对降幅，约等于63.6%四舍五入为64%"
+        }
+      ],
+      "id": "p4_e6",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": [
+        {
+          "status": "unverified",
+          "computed": null,
+          "matches_reported_precision": null,
+          "reason": "Operand/result unit is not explicit beside its value",
+          "limit": "An unverified extraction is not a defect in the presentation."
+        }
+      ]
+    },
+    {
+      "quote": "注：近三年量产良率（团队量产线数据）",
+      "location": "页面左下角",
+      "statement": "数据来源标注为团队量产线数据，时间范围明确为近三年，与prompt要求的近三年进展一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性电子团队近三年进展"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p4_e7",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告",
+      "location": "页面左下角",
+      "statement": "页脚标注与prompt要求的年会特邀报告场景一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告PPT"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p4_e8",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "04 / 13",
+      "location": "页面右下角",
+      "statement": "当前为第4页，共13页，报告篇幅信息",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "4",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p4_e9",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柱状图Y轴刻度0、25、50、75、100，X轴为三年前/现在两个时间点",
+      "location": "页面左侧图表区域",
+      "statement": "柱状图有完整的坐标轴标签和刻度，分类标签清晰，无缺失或NaN残留",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p4_e10",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "100、75、50、25、0",
+      "location": "Y轴刻度",
+      "statement": "Y轴刻度单位未明确标注为百分比，但结合柱顶78%、92%及上下文，可推断为良率百分比刻度；刻度本身清晰可读",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "100",
+          "unit": "%",
+          "subject": "Y轴最大值",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p4_e11",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "从「能做」走向「能量产」",
+      "location": "页面右侧下部",
+      "statement": "定性总结语，与良率提升的量化事实相呼应，未引入新的未核实事实",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p4_e12",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "整体页面布局：标题-图表-右侧数据解读-页脚注释",
+      "location": "全页",
+      "statement": "页面信息层级清晰，重点数据（78%→92%）突出，无明显的视觉混乱或遮挡问题；text_overlap_candidates为空，无候选重叠区域",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p4_e13",
+      "page": 4,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "92% 不是终点，而是规模化的入场券",
+      "location": "页面上部标题区域",
+      "statement": "页面标题呈现92%数值，与prompt中给定的可拉伸传感器阵列量产良率提升至92%的关键事实相关",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率",
+          "denominator": "不适用",
+          "time_origin": "近三年"
+        }
+      ],
+      "calculations": [],
+      "id": "p5_e1",
+      "page": 5,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "良率越过 90% ，阵列才有资格进入批量交付与成本可控的轨道",
+      "location": "页面中上部",
+      "statement": "页面将90%作为规模化门槛进行论述，但未明确提及78%的起始值；当前页仅呈现最终92%和门槛90%，未完整呈现'从78%提升至92%'的提升过程",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "90",
+          "unit": "%",
+          "subject": "规模化门槛良率",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": [],
+      "id": "p5_e2",
+      "page": 5,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "不良率每降一档，单位成本显著改善（工程通识解读，不引具体数字）",
+      "location": "页面中部，成本结构条目右侧",
+      "statement": "作者明确标注不引用具体数字，采用定性表述；未提供成本改善的具体量化数据或计算",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p5_e3",
+      "page": 5,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "参数窗口收窄到可固化，产线可交接",
+      "location": "页面中下部，工艺可复制条目右侧",
+      "statement": "工艺可复制性定性描述，未提供具体参数范围或量化指标",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p5_e4",
+      "page": 5,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "阵列规模交付成为传感系统与电子皮肤的供给基础",
+      "location": "页面下部，下游可用条目右侧",
+      "statement": "提及电子皮肤作为下游应用方向，但未涉及临床试验阶段或三甲医院合作信息",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p5_e5",
+      "page": 5,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "批量交付与成本可控",
+      "location": "页面中上部，橙色高亮文字",
+      "statement": "局部放大视图显示p5_t6与p5_t7的bbox在x=652.56-652.57处有极小交集（fraction_of_smaller_bbox=0.0001），实际图像中'控'与'的'为正常相邻排版，无真实笔画遮挡；文字可读",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p5_e6",
+      "page": 5,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "，阵列才有资格进入",
+      "location": "页面中上部，'进入'与橙色文字交界处",
+      "statement": "局部放大视图显示p5_t5与p5_t6的bbox在x=436.56-436.57处有极小交集（fraction_of_smaller_bbox=0.0），实际图像中'入'与'批'为正常相邻排版，颜色区分（黑/橙）清晰，无真实笔画遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p5_e7",
+      "page": 5,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告",
+      "location": "页面左下角",
+      "statement": "页脚标注团队名称与报告性质，与prompt要求的年会特邀报告场景一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p5_e8",
+      "page": 5,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "05 / 13",
+      "location": "页面右下角",
+      "statement": "当前为第5页，共13页；本页未包含技术路线图或下一步计划的结构化内容",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "5",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p5_e9",
+      "page": 5,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "弯曲 100,000 次，性能零衰减",
+      "location": "页面顶部标题区域",
+      "statement": "页面主标题明确包含关键数值100,000次及'性能零衰减'结论",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "100000",
+          "unit": "次",
+          "subject": "弯曲次数",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p6_e1",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "100,000",
+      "location": "页面左侧中部大字号数字",
+      "statement": "页面核心数据展示，与标题一致，重复强调弯曲次数",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "弯曲10万次"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "100000",
+          "unit": "次",
+          "subject": "弯曲循环次数",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p6_e2",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "次弯曲循环",
+      "location": "100,000数字下方",
+      "statement": "单位说明，确认100,000为弯曲循环次数",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p6_e3",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "性能零衰减",
+      "location": "页面左侧下部，橙色文字",
+      "statement": "明确表述性能无衰减结论，与prompt中'无衰减'一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "无衰减"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p6_e4",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "关键性能参数在循环前后无衰减",
+      "location": "页面右侧'验证判据'模块",
+      "statement": "验证标准说明，再次确认'无衰减'结论，但表述为'循环前后无衰减'而非直接引用'弯曲10万次无衰减'",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p6_e5",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "注：团队可靠性测试结论（柔性 OLED 器件）",
+      "location": "页面底部左侧注释",
+      "statement": "明确标注该数据为柔性OLED器件的可靠性测试结论，与prompt中'柔性OLED器件'完全对应",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p6_e6",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "可靠性验证 · 反复弯曲",
+      "location": "页面左侧上部，100,000数字上方",
+      "statement": "模块主题说明，表明本页内容为可靠性验证中的反复弯曲测试",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p6_e7",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "工程意义 折叠与贴合形态下的长寿命可用性得到验证",
+      "location": "页面右侧下部",
+      "statement": "对测试结果的工程应用解读，属于合理推论，未改变原始事实",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p6_e8",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告",
+      "location": "页面底部左侧",
+      "statement": "页脚信息，确认报告主体和场景",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p6_e9",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "06 / 13",
+      "location": "页面底部右侧",
+      "statement": "页码显示为第6页，共13页",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "6",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p6_e10",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "验证判据",
+      "location": "页面右侧上部，带绿色对勾图标",
+      "statement": "结构化信息模块标题，视觉层级清晰",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p6_e11",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "工程意义",
+      "location": "页面右侧中部，带橙色上升箭头图标",
+      "statement": "结构化信息模块标题，与验证判据形成并列结构",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p6_e12",
+      "page": 6,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "这一结论如何被验证",
+      "location": "页面上部标题区域",
+      "statement": "页面标题，表明本页内容为验证方法论说明",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e1",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "弯曲条件",
+      "location": "左侧卡片标题",
+      "statement": "验证框架第一要素：弯曲条件",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e2",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "弯曲形态与频率\n构成测试剖面",
+      "location": "左侧卡片内容",
+      "statement": "弯曲条件的具体说明，为方法学通识表述",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e3",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "循环规模",
+      "location": "中间卡片标题",
+      "statement": "验证框架第二要素：循环规模",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e4",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "累计 100,000 次\n弯曲循环",
+      "location": "中间卡片内容",
+      "statement": "循环规模具体数值为100,000次弯曲循环，与prompt中'弯曲10万次'一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "100000",
+          "unit": "次",
+          "subject": "弯曲循环",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": [],
+      "id": "p7_e5",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "衰减判据",
+      "location": "右侧卡片标题",
+      "statement": "验证框架第三要素：衰减判据",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e6",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "循环前后关键性能\n无衰减",
+      "location": "右侧卡片内容",
+      "statement": "衰减判据为循环前后关键性能无衰减，与prompt中'无衰减'结论一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e7",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "验证结果支持器件进入应用评估",
+      "location": "页面中部总结条",
+      "statement": "验证结论总结，'应用评估'为绿色高亮",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e8",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "注：验证框架三要素为方法学通识表述，不涉具体弯曲半径与频率数值",
+      "location": "页面下部注释",
+      "statement": "明确说明本页为方法学通识表述，不涉及具体技术参数",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e9",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告",
+      "location": "页面左下角",
+      "statement": "页脚信息，表明报告主体与场景",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e10",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "07 / 13",
+      "location": "页面右下角",
+      "statement": "页码，当前为第7页，共13页",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "7",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p7_e11",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "验证结果支持器件进入应用评估",
+      "location": "局部放大图区域，包含p7_t16与p7_t17",
+      "statement": "经局部放大图核查，'验证结果支持器件进入'（深蓝色）与'应用评估'（绿色）为相邻排版，'进入'与'应用'两字紧邻但无笔画重叠，属于正常连字排版，非真实遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p7_e12",
+      "page": 7,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "与三甲医院合作，植入式电子皮肤进入临床试验",
+      "location": "页面顶部标题区域",
+      "statement": "标题完整呈现了prompt给定的关键事实：合作方为三甲医院、产品为植入式电子皮肤、状态为已进入临床试验阶段",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p8_e1",
+      "page": 8,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "▼ 当前阶段",
+      "location": "阶段流程图上方，橙色标记",
+      "statement": "视觉标记指示当前所处阶段位置，与'临床试验'节点对应",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p8_e2",
+      "page": 8,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "规划",
+      "location": "阶段流程图上方最右侧",
+      "statement": "灰色文字标记'临床应用'为未来规划阶段，非当前状态",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p8_e3",
+      "page": 8,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "实验室研究 → 验证 → 临床试验 → 临床应用",
+      "location": "页面中上部横向流程图",
+      "statement": "四阶段转化路径，当前高亮节点为'临床试验'，前后阶段为'验证'和'临床应用'",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p8_e4",
+      "page": 8,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "临床试验",
+      "location": "流程图第三节点，橙色高亮背景",
+      "statement": "该节点使用橙色填充、白色文字，与'当前阶段'标记对应，明确当前处于临床试验阶段",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p8_e5",
+      "page": 8,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三甲医院合作 / 团队与三甲医院联合推进植入式电子皮肤的临床验证",
+      "location": "页面中部左侧，图标下方",
+      "statement": "正文再次确认合作方层级为三甲医院，产品为植入式电子皮肤，活动为临床验证",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p8_e6",
+      "page": 8,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "植入式电子皮肤的 临床转化通道已打开",
+      "location": "页面中下部强调文本区域",
+      "statement": "两色拼接文字，前段深蓝'植入式电子皮肤的'，后段橙色'临床转化通道已打开'；局部放大图显示'的'与'临'字之间无笔画遮挡，为正常相邻排版，bbox极小交集(0.0001)不构成真实叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p8_e7",
+      "page": 8,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "注：当前临床试验阶段为既定事实，阶段序列为通识框架",
+      "location": "页面底部注释区域",
+      "statement": "作者主动标注'临床试验阶段'为既定事实，阶段序列为通用框架性表述，该注释用于区分事实与框架",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p8_e8",
+      "page": 8,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告 / 08 / 13",
+      "location": "页面底部页脚",
+      "statement": "页脚标识报告主体为柔性电子团队，场景为年会特邀报告，当前为第8页共13页",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "8",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p8_e9",
+      "page": 8,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三条主线在临床汇合",
+      "location": "页面顶部标题区域",
+      "statement": "页面主标题，概括本页核心内容：三条技术主线在临床场景汇聚",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e1",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "可拉伸阵列\n传感单元的规模化供给",
+      "location": "左侧上方矩形框内",
+      "statement": "第一条主线：可拉伸传感器阵列，强调规模化供给能力。未出现具体良率数值78%或92%",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e2",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "可靠性方法\n临床级器件的验证范式",
+      "location": "左侧下方矩形框内",
+      "statement": "第二条主线：可靠性验证方法，强调临床级器件验证范式。未出现柔性OLED或10万次弯曲的具体信息",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e3",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "植入式电子皮肤\n临床试验阶段",
+      "location": "右侧深色矩形框内",
+      "statement": "第三条主线汇聚点：植入式电子皮肤已进入临床试验阶段。与source中'与三甲医院合作植入式电子皮肤已进入临床试验阶段'基本事实方向一致，但未明确提及'三甲医院'合作方层级",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e4",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "阵列供给与可靠性验证，共同托举植入式器件进入临床",
+      "location": "页面中下部",
+      "statement": "总结性陈述，说明前两条主线（阵列供给、可靠性验证）支撑第三条主线（植入式器件进入临床）。'临床'二字以橙色高亮显示",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e5",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告",
+      "location": "左下角页脚",
+      "statement": "页脚信息，标明团队名称与报告性质",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告PPT"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e6",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "09 / 13",
+      "location": "右下角页脚",
+      "statement": "页码信息，当前为第9页，共13页",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "9",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p9_e7",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "阵列供给与可靠性验证，共同托举植入式器件进入临床",
+      "location": "p9_t8与p9_t9交界处，放大图显示为连续文本",
+      "statement": "经局部放大图核查，p9_t8与p9_t9虽bbox有微小交集（fraction_of_smaller_bbox=0.0006），但实际字形笔画无遮挡，'进入'与'临床'为正常连续排版，无真实叠印或不可读问题",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e8",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "可拉伸阵列 / 可靠性方法 / 植入式电子皮肤",
+      "location": "页面整体结构",
+      "statement": "本页以结构化框图形式呈现三条技术主线的逻辑关系，属于技术路线图的汇聚/总结性页面，具有实质结构化内容，非口号式表述",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e9",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "传感单元的规模化供给 / 临床级器件的验证范式 / 临床试验阶段",
+      "location": "各框图副标题",
+      "statement": "各主线均附有具体技术定位说明，内容指向柔性电子临床转化，符合专家受众的专业深度要求，未出现明显偏离主题或时间范围的内容",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e10",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三条主线的成熟度对照",
+      "location": "页面上方标题区域，bbox[58.53,62.92,418.54,98.92]",
+      "statement": "页面标题，表明本页内容为三条技术主线的成熟度对比",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p10_e1",
+      "page": 10,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "可拉伸传感器阵列 / 量产良率 92% / 量产验证 / 规模化交付",
+      "location": "表格第一行数据区域，主线列bbox[81.64,228.83,249.64,249.84]，关键指标列bbox[314.16,228.83,450.47,251.33]，验证层级列bbox[621.64,228.83,705.64,249.84]，应用阶段列bbox[771.62,228.83,876.62,249.84]",
+      "statement": "表格第一行呈现可拉伸传感器阵列的当前状态。关键指标显示为'量产良率 92%'，仅呈现当前值92%，未出现来源要求的'从78%提升至92%'的完整变化过程（起始值78%缺失）。由于本页仅展示当前状态，无法单独判断全篇是否在其他位置补充了78%的基准值，需跨页复核。数值92%与来源给定当前值一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率",
+          "denominator": "不适用",
+          "time_origin": "当前值，基准值78%未在本页出现"
+        }
+      ],
+      "calculations": [],
+      "id": "p10_e2",
+      "page": 10,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性 OLED 器件 / 弯曲 100,000 次无衰减 / 可靠性验证 / 应用评估",
+      "location": "表格第二行数据区域，主线列bbox[81.64,311.35,245.09,332.35]（含p10_t11-t13三个span），关键指标列bbox[314.16,311.35,537.2,332.35]（含p10_t14-t16三个span），验证层级列bbox[621.64,311.35,726.64,332.35]，应用阶段列bbox[771.62,311.35,855.62,332.35]",
+      "statement": "表格第二行呈现柔性OLED器件状态。关键指标为'弯曲 100,000 次无衰减'，其中'100,000'以千分位格式呈现，实质为10万次；'无衰减'结论完整保留。与来源给定事实一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "100000",
+          "unit": "次",
+          "subject": "柔性OLED器件弯曲次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": [],
+      "id": "p10_e3",
+      "page": 10,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "植入式电子皮肤 / 进入临床试验 / 临床验证 / 临床转化",
+      "location": "表格第三行数据区域，主线列bbox[81.64,393.84,228.65,414.84]，关键指标列bbox[314.16,393.84,440.17,414.84]，验证层级列bbox[621.64,393.84,705.64,414.84]，应用阶段列bbox[771.62,393.84,855.62,414.84]",
+      "statement": "表格第三行呈现植入式电子皮肤状态。关键指标为'进入临床试验'，验证层级为'临床验证'，应用阶段为'临床转化'。来源要求的关键事实为'与三甲医院合作植入式电子皮肤已进入临床试验阶段'。本页呈现了'植入式电子皮肤'和'进入临床试验'，但未出现'与三甲医院合作'这一合作方层级信息。由于本页为结构化对比表格，合作方信息可能在前文其他页面详述，需跨页复核。当前页未出现合作方层级错误，仅存在信息简化。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p10_e4",
+      "page": 10,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三条主线处于不同的成熟度阶梯，共同构成工程化闭环",
+      "location": "页面下方说明文字，bbox[59.13,459.09,563.15,480.1]",
+      "statement": "页面底部总结句，强调三条主线的差异化成熟度及整体闭环关系。属于概括性表述，无具体数值。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p10_e5",
+      "page": 10,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告 / 10 / 13",
+      "location": "页面左下角页脚bbox[59.53,498.45,219.51,510.44]，右下角页码bbox[863.77,497.91,900.39,511.29]",
+      "statement": "页脚标识报告主体为'柔性电子团队'，场景为'年会特邀报告'，当前页码为第10页共13页。与需求场景一致。",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告PPT"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p10_e6",
+      "page": 10,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "表格整体布局：四列（主线、关键指标、验证层级、应用阶段）三行数据，列标题位于浅灰背景表头行",
+      "location": "页面中部表格区域，约y=140至y=420范围",
+      "statement": "视觉表现：表格结构清晰，列标题与数据行分区明确。所有文字无叠印、无裁切、无遮挡，对比度良好。text_overlap_candidates为空列表，无候选重叠区域。各span的bbox之间无异常相交。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p10_e7",
+      "page": 10,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "92% 与 100,000 等数字的呈现方式",
+      "location": "关键指标列具体数值区域",
+      "statement": "数字与单位/量词在同一行内完整呈现：'量产良率 92%'中数值与百分号紧邻；'弯曲 100,000 次无衰减'中千分位数字与量词'次'及结论'无衰减'均完整可读。无数字单位分离现象。",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p10_e8",
+      "page": 10,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "2026–2028 ：从工程化走向规模临床应用",
+      "location": "页面顶部标题区域",
+      "statement": "该页为技术路线图/下一步计划页面，时间跨度为2026-2028年，定位为未来规划而非当前成果",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "含技术路线图与下一步计划"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e1",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "现在",
+      "location": "时间轴左侧起点，橙色圆点标记",
+      "statement": "时间轴以\"现在\"为起点，向后延伸至2026、2027、2028三个阶段",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e2",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "2026 工艺与验证固化 良率工艺窗口固化 可靠性协议标准化",
+      "location": "时间轴第一阶段（左起）",
+      "statement": "2026年目标聚焦于工艺固化与可靠性标准化，提及\"良率工艺窗口固化\"但未重复具体92%数值",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e3",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "2027 系统与集成 阵列—器件—皮肤 系统级集成与验证",
+      "location": "时间轴第二阶段",
+      "statement": "2027年目标为系统级集成，涵盖传感器阵列、OLED器件、电子皮肤三类组件的整合",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e4",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "2028 临床与规模 临床推进与规模化交付 衔接当前临床试验阶段",
+      "location": "时间轴第三阶段（右起）",
+      "statement": "2028年目标为临床推进与规模化交付，明确提及\"衔接当前临床试验阶段\"",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e5",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "情景数据：阶段划分与各阶段目标为团队规划，衔接 92% 良率、10 万次弯曲与当前临床试验阶段",
+      "location": "页面中下部说明文字",
+      "statement": "该说明文字明确将92%良率、10万次弯曲、当前临床试验阶段标注为\"情景数据\"和\"团队规划\"的衔接基础，而非将未来目标与当前成果混淆",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%；柔性OLED器件弯曲10万次无衰减；与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "良率",
+          "denominator": "不适用",
+          "time_origin": "当前（作为规划衔接基础）"
+        },
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "弯曲",
+          "denominator": "不适用",
+          "time_origin": "当前（作为规划衔接基础）"
+        }
+      ],
+      "calculations": [],
+      "id": "p11_e6",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三阶段推进：先固化工艺，再集成系统，最后拓展临床",
+      "location": "页面底部总结条",
+      "statement": "以文字列表形式呈现三阶段推进策略，结构清晰，与上方时间轴内容一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e7",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三阶段推进：先 固化工艺",
+      "location": "页面底部，p11_t21与p11_t22交界处",
+      "statement": "根据局部放大图核查，\"先\"与\"固化工艺\"为正常相邻排版，\"先\"字右边缘与\"固\"字左边缘有正常字间距，无实际笔画重叠或遮挡；bounding box交集面积占比仅0.0001，属于排版间隙计算误差",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e8",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 年会特邀报告 11 / 13",
+      "location": "页面底部页脚",
+      "statement": "页脚信息完整，页码显示为第11页共13页",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告PPT"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e9",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "92% 良率",
+      "location": "情景数据说明文字中",
+      "statement": "该页将92%良率作为当前成果引用，与prompt给定事实\"可拉伸传感器阵列量产良率从78%提升至92%\"中的目标值92%一致，但此页未提及78%基准值和\"从...提升至\"的变化过程。由于本页主题为未来规划而非历史回顾，未重复完整变化过程属于合理的内容取舍",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": [],
+      "id": "p11_e10",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "10 万次弯曲",
+      "location": "情景数据说明文字中",
+      "statement": "该页将\"10万次弯曲\"作为当前成果引用，与prompt给定事实\"柔性OLED器件弯曲10万次无衰减\"中的次数一致，但简化为\"10万次弯曲\"，未完整保留\"无衰减\"结论。由于本页主题为未来规划，此简化为合理的引用方式",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "10",
+          "unit": "万次",
+          "subject": "弯曲次数",
+          "denominator": "不适用",
+          "time_origin": "当前"
+        }
+      ],
+      "calculations": [],
+      "id": "p11_e11",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "当前临床试验阶段",
+      "location": "2028阶段描述及情景数据说明中",
+      "statement": "该页两次提及\"当前临床试验阶段\"，与prompt给定事实\"与三甲医院合作植入式电子皮肤已进入临床试验阶段\"中的临床阶段状态一致，但未重复\"三甲医院\"合作方层级和\"植入式电子皮肤\"具体产品形态",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e12",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "阶段划分与各阶段目标为团队规划",
+      "location": "情景数据说明文字",
+      "statement": "页面明确标注2026-2028内容性质为\"团队规划\"，与当前成果区分清晰，不存在事实与推测混淆的问题",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p11_e13",
+      "page": 11,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "下一步：三条线的三个动作",
+      "location": "页面上方标题区域",
+      "statement": "页面标题明确标识为下一步计划内容，属于规划性表述而非已完成事实",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "含技术路线图与下一步计划"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p12_e1",
+      "page": 12,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "计划一 · 传感主线 / 良率工艺固化 / 工艺窗口固化与产线交接 / 产能扩展支撑规模交付",
+      "location": "页面左侧第一栏",
+      "statement": "计划一围绕传感器量产良率工艺固化展开，提及产线交接与产能扩展，但未出现具体数值78%或92%，本页为计划模块不强制要求重复历史数值",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p12_e2",
+      "page": 12,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "计划二 · 显示主线 / 验证体系标准化 / 弯曲疲劳协议标准化 / 向应用评估推进",
+      "location": "页面中间第二栏",
+      "statement": "计划二围绕显示主线验证体系标准化，提及弯曲疲劳协议，但未出现10万次无衰减的具体数值，本页为计划模块不强制要求重复历史数值",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p12_e3",
+      "page": 12,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "计划三 · 医疗主线 / 临床推进与迭代 / 临床试验持续推进 / 临床反馈驱动器件迭代",
+      "location": "页面右侧第三栏",
+      "statement": "计划三明确提及医疗主线、临床试验持续推进，与prompt中植入式电子皮肤已进入临床试验阶段的事实方向一致，但未明确重复三甲医院合作方信息",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p12_e4",
+      "page": 12,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "情景内容：三项计划为团队规划性表述，衔接既有成果",
+      "location": "页面底部左侧说明文字",
+      "location_2": "[59.39, 463.35, 419.31, 478.35]",
+      "statement": "页面明确标注三项计划为规划性表述，与既有成果区分，有助于区分事实与推测",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p12_e5",
+      "page": 12,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三个合作切口：工艺 · 验证方法 · 临床转化",
+      "location": "页面中下部横幅区域",
+      "statement": "该横幅文字在视觉呈现中，'三个合作切口：'与'工艺'之间存在bounding box极小交集（fraction_of_smaller_bbox=0.0002），但放大图显示实际字形无遮挡，'工艺'二字完整可读，属于相邻排版而非真实叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p12_e6",
+      "page": 12,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "12 / 13",
+      "location": "页面右下角",
+      "statement": "当前为第12页，共13页，说明存在下一页，本页作为计划模块页面存在",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "12",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": [],
+      "id": "p12_e7",
+      "page": 12,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "78% → 92% 量产良率 · 100,000 次弯曲无衰减",
+      "location": "页面中部左侧主标题下方",
+      "statement": "可见文字包含可拉伸传感器阵列量产良率从78%提升至92%的关键事实，数值与方向均正确；同时包含柔性OLED器件弯曲100,000次无衰减的关键事实，弯曲次数为10万次量级且'无衰减'结论明确",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "78",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率（基准值）",
+          "denominator": "不适用",
+          "time_origin": "近三年起始"
+        },
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "可拉伸传感器阵列量产良率（当前值）",
+          "denominator": "不适用",
+          "time_origin": "近三年结束"
+        },
+        {
+          "value": "100000",
+          "unit": "次",
+          "subject": "柔性OLED器件弯曲次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": [],
+      "id": "p13_e1",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "临床试验阶段 · 工程化闭环成形",
+      "location": "页面中下部左侧",
+      "statement": "可见文字包含'临床试验阶段'，与植入式电子皮肤进入临床试验阶段的关键事实一致；右侧栏同步出现'临床试验'和'三甲医院合作推进'",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p13_e2",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "92% 量产良率",
+      "location": "页面右侧深蓝栏上部",
+      "statement": "右侧信息栏以结构化形式重复呈现三大成果，92%量产良率与左侧一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "92",
+          "unit": "%",
+          "subject": "量产良率",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": [],
+      "id": "p13_e3",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "100,000 次 弯曲无衰减",
+      "location": "页面右侧深蓝栏中部",
+      "statement": "右侧信息栏重复呈现弯曲10万次无衰减，与左侧及来源一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性OLED器件弯曲10万次无衰减"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "100000",
+          "unit": "次",
+          "subject": "弯曲次数",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        }
+      ],
+      "calculations": [],
+      "id": "p13_e4",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "临床试验 三甲医院合作推进",
+      "location": "页面右侧深蓝栏下部",
+      "statement": "右侧信息栏呈现'临床试验'和'三甲医院合作推进'，与来源事实中'与三甲医院合作''已进入临床试验阶段'一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p13_e5",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "欢迎就工艺、验证与临床转化开展合作交流",
+      "location": "页面中下部，与'临床试验阶段 · 工程化闭环成形'区域发生bbox相交",
+      "statement": "从局部放大图可见，'欢迎就工艺、验证与临床转化开展合作交流'文字与上方'临床试验阶段 · 工程化闭环成形'在垂直方向紧密相邻，但实际字形笔画存在明显叠印：'临床试验阶段'的底部与'欢迎就工艺'的顶部在同一水平线上重叠，导致两行文字笔画相互穿插覆盖，形成真实不可读区域",
+      "kind": "visual",
+      "failure_mode": "visual_readability",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p13_e6",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三大成果回顾",
+      "location": "页面右侧深蓝栏顶部",
+      "statement": "右侧栏标题为'三大成果回顾'，表明本页为总结回顾性质，非技术路线图或下一步计划模块",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p13_e7",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "结语",
+      "location": "页面左上角",
+      "statement": "页面明确标注为'结语'页，属于报告收尾总结页",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p13_e8",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "柔性电子团队 · 2026 年会特邀报告",
+      "location": "页面左下角",
+      "statement": "落款信息与汇报场景一致，时间标注为2026年，与'近三年'时间范围可对应（2023-2026）",
+      "kind": "inference",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "年会特邀报告"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p13_e9",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "quote": "三年，从实验室到临床",
+      "location": "页面左侧主标题",
+      "statement": "主标题概括柔性电子主题及近三年时间跨度，与需求定义的目标一致",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "柔性电子团队近三年进展"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p13_e10",
+      "page": 13,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p13_overlap_d672f40e72",
+      "page": 13,
+      "quote": "Slide 13 local enlarged view p13_overlap_d672f40e72; text spans ['p13_t11', 'p13_t13']: ['· ', '欢迎就工艺、验证与临床转化开展合作交流']. Original PDF rectangle [51.130001068115234, 327.54998779296875, 466.1600036621094, 383.1000061035156]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [51.130001068115234, 327.54998779296875, 466.1600036621094, 383.1000061035156]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p13_overlap_b60d4822ce",
+      "page": 13,
+      "quote": "Slide 13 local enlarged view p13_overlap_b60d4822ce; text spans ['p13_t12', 'p13_t13']: ['工程化闭环成形', '欢迎就工艺、验证与临床转化开展合作交流']. Original PDF rectangle [51.130001068115234, 328.6300048828125, 466.1600036621094, 383.1000061035156]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [51.130001068115234, 328.6300048828125, 466.1600036621094, 383.1000061035156]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p13_overlap_8f4bd447d7",
+      "page": 13,
+      "quote": "Slide 13 local enlarged view p13_overlap_8f4bd447d7; text spans ['p13_t10', 'p13_t13']: ['临床试验阶段 ', '欢迎就工艺、验证与临床转化开展合作交流']. Original PDF rectangle [51.04999923706055, 328.6300048828125, 466.1600036621094, 383.1000061035156]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [51.04999923706055, 328.6300048828125, 466.1600036621094, 383.1000061035156]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p9_overlap_04f252d115",
+      "page": 9,
+      "quote": "Slide 9 local enlarged view p9_overlap_04f252d115; text spans ['p9_t8', 'p9_t9']: ['阵列供给与可靠性验证，共同托举植入式器件进入', '临床']. Original PDF rectangle [51.04999923706055, 411.42999267578125, 643.0499877929688, 451.44000244140625]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [51.04999923706055, 411.42999267578125, 643.0499877929688, 451.44000244140625]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p12_overlap_2e38f9d59d",
+      "page": 12,
+      "quote": "Slide 12 local enlarged view p12_overlap_2e38f9d59d; text spans ['p12_t20', 'p12_t21']: ['三个合作切口：', '工艺 ']. Original PDF rectangle [138.00999450683594, 382.94000244140625, 376.0199890136719, 422.95001220703125]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [138.00999450683594, 382.94000244140625, 376.0199890136719, 422.95001220703125]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p5_overlap_982ee3f8b1",
+      "page": 5,
+      "quote": "Slide 5 local enlarged view p5_overlap_982ee3f8b1; text spans ['p5_t6', 'p5_t7']: ['批量交付与成本可控', '的轨道']. Original PDF rectangle [428.55999755859375, 162.44000244140625, 732.5700073242188, 202.44000244140625]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [428.55999755859375, 162.44000244140625, 732.5700073242188, 202.44000244140625]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p7_overlap_a2e9acbdb0",
+      "page": 7,
+      "quote": "Slide 7 local enlarged view p7_overlap_a2e9acbdb0; text spans ['p7_t16', 'p7_t17']: ['验证结果支持器件进入', '应用评估']. Original PDF rectangle [84.01000213623047, 388.9200134277344, 436.0299987792969, 428.92999267578125]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [84.01000213623047, 388.9200134277344, 436.0299987792969, 428.92999267578125]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_e5b3a5a183",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_e5b3a5a183; text spans ['p8_t10', 'p8_t11']: ['植入式电子皮肤的', '临床转化通道已打开']. Original PDF rectangle [84.04000091552734, 388.9200134277344, 508.0400085449219, 428.92999267578125]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [84.04000091552734, 388.9200134277344, 508.0400085449219, 428.92999267578125]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p11_overlap_d306941b18",
+      "page": 11,
+      "quote": "Slide 11 local enlarged view p11_overlap_d306941b18; text spans ['p11_t21', 'p11_t22']: ['三阶段推进：先', '固化工艺']. Original PDF rectangle [84.04000091552734, 411.42999267578125, 364.05999755859375, 451.44000244140625]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [84.04000091552734, 411.42999267578125, 364.05999755859375, 451.44000244140625]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p5_overlap_6687ccddbe",
+      "page": 5,
+      "quote": "Slide 5 local enlarged view p5_overlap_6687ccddbe; text spans ['p5_t5', 'p5_t6']: [' ，阵列才有资格进入', '批量交付与成本可控']. Original PDF rectangle [206.77999877929688, 162.44000244140625, 660.5700073242188, 202.44000244140625]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [206.77999877929688, 162.44000244140625, 660.5700073242188, 202.44000244140625]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    }
+  ],
+  "visual_inspections": [
+    {
+      "id": "p13_overlap_d672f40e72",
+      "page": 13,
+      "rect": [
+        51.130001068115234,
+        327.54998779296875,
+        466.1600036621094,
+        383.1000061035156
+      ],
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/c70c3c364cebc9edfd772df981f310d6deb5a5ea766fbacb5832e301bccfad1a/visual-focus-v1/08b2464a35fe56ac76cb21b89e6b18b3d0ca1c7aba4b34c6d974281d5f5d8239.png",
+      "status": "observed",
+      "observation": {
+        "text_seen": [
+          "临床试验阶段：工程化闭环成形",
+          "欢迎就工艺、验证与临床转化开展合作交流"
+        ],
+        "overlapping": true,
+        "overlap_objects": [
+          "第1行\"临床试验阶段：工程化闭环成形\"与第2行\"欢迎就工艺、验证与临床转化开展合作交流\"存在笔画相交"
+        ],
+        "description": "两行黑色中文文字，第1行在上，第2行在下。第2行文字向上侵入第1行文字区域，导致两行文字笔画实际相交重叠，特别是\"欢迎就工艺\"与上方\"临床试验阶段\"之间、\"验证与临床转化\"与上方\"工程化闭环成形\"之间存在明显的字形交叠。背景为白色。"
+      }
+    },
+    {
+      "id": "p13_overlap_b60d4822ce",
+      "page": 13,
+      "rect": [
+        51.130001068115234,
+        328.6300048828125,
+        466.1600036621094,
+        383.1000061035156
+      ],
+      "image": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/c70c3c364cebc9edfd772df981f310d6deb5a5ea766fbacb5832e301bccfad1a/visual-focus-v1/96fb71e2bd585f63baf8bc1805629536eed0c0a9cf62fa07ba535120e62b6be8.png",
+      "status": "observed",
+      "observation": {
+        "text_seen": [
+          "临床试验阶段：工程化闭环成形",
+          "欢迎就工艺、验证与临床转化开展合作交流"
+        ],
+        "overlapping": true,
+        "overlap_objects": [
+          "第一行\"工程化闭环成形\"的\"形\"字与第二行\"验证与临床转化开展合作交流\"的\"验\"字存在笔画相交",
+          "第一行\"：\"与第二行\"验\"字存在笔画相交",
+          "第一行\"工\"字与第二行\"欢\"字存在笔画相交",
+          "第一行\"程\"字与第二行\"迎\"字存在笔画相交",
+          "第一行\"化\"字与第二行\"就\"字存在笔画相交",
+          "第一行\"闭\"字与第二行\"工\"字存在笔画相交",
+          "第一行\"环\"字与第二行\"艺\"字存在笔画相交",
+          "第一行\"成\"字与第二行\"、\"存在笔画相交"
+        ],
+        "description": "两行黑色粗体汉字，第一行在上，第二行在下，行间距极小导致上下两行文字笔画大量重叠相交。第一行文字为\"临床试验阶段：工程化闭环成形\"，第二行文字为\"欢迎就工艺、验证与临床转化开展合作交流\"。背景为浅灰白色，文字为纯黑色无衬线字体，字形粗壮。"
+      }
+    }
+  ],
+  "page_visual_claims_policy": "diagnostic_only_for_visual_criteria"
+}

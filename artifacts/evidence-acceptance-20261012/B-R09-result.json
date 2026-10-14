@@ -1,0 +1,209 @@
+{
+  "answer": "no",
+  "pages": [
+    3,
+    5,
+    6,
+    7,
+    4
+  ],
+  "evidence": "经逐条核对 required_resolution_ids 中的 7 项观察，发现 3 处存在 reasoning_validity 缺陷：\n\n1. p3_e1（第3页标题与推论）：标题断言“26% 的增长不是靠拉新堆量，而是靠 91% 的老客户续约”，将续约率与增长方式建立强因果。源文仅并列给出“全年营收4.2亿同比+26%”和“客户续约率91%”，未提供“增长来自老客户续约”或“非透支式拉新”的因果证据。该推论属于作品自行构建的因果机制，违反“源文未证明因果时，不以强因果措辞包装数据关系”的要求。\n\n2. p7_e9（第7页中心区域）：文字表述“五项指标，互为因果”，将研发投入、专利、团队、客户、营收之间的相关性直接断言为“互为因果”。源文仅提供各项数据的并列事实，未建立任何因果链条；该表述属于把相关性直接断言为强因果，违反 criterion 要求。\n\n3. 跨页口径不一致（第4页与第6页人均营收）：第4页图表标注“上年人均营收 104 万元/人”，第6页右下卡片同样标注“人均营收 ≈ 104 万 → ≈102 万元/人”。但源文仅给“全年营收4.2亿同比+26%”，若按4.2亿为全年营收、上年营收=4.2÷1.26≈3.33亿计算，上年人均营收应为3.33亿÷320≈104万，本年度为4.2亿÷410≈102万。该计算逻辑虽可自洽，但作品未在各页明确披露“上年营收≈3.33亿”这一关键假设，导致读者可能误以4.2亿作为上年营收计算人均（会得到131.25万），存在口径模糊。更关键的是，第6页 p6_e16 的观察已指出此问题，且该页 p6_e17 指出期初投入额3000万与“4.2亿×9%=3780万”存在780万差距，需依赖上年营收3.33亿才能自洽，但页内未明示上年营收，造成跨页口径理解风险。\n\n其余4项经核验不构成缺陷：\n- p5_e5/p5_e7/p5_e13/p5_e15：第5页研发投入金额与占比数据，上年3000万、本年5880万、增量2880万、增幅96%，基于上年营收3.33亿和占比9%/14%计算，算术正确，标注“测算”，无强因果断言。\n- p6_e9：第6页研发投入占比9%→14%、+5pct，投入额≈3000万→5880万、+96%，与第5页口径一致，标注“测算”，无缺陷。\n\n综上，存在3处 reasoning_validity 缺陷。",
+  "evidence_ids": [
+    "p3_e1",
+    "p3_e9",
+    "p3_e14",
+    "p7_e9",
+    "p6_e16",
+    "p6_e17",
+    "p4_e10",
+    "p4_e15",
+    "p5_e5",
+    "p5_e13",
+    "p6_e9",
+    "p3_R09_direct_ecdb3eb8fa96",
+    "p4_R09_direct_8007847cfee6"
+  ],
+  "resolutions": [
+    {
+      "evidence_id": "p5_e5",
+      "defect_present": false,
+      "reason": "第5页图表上年研发投入≈3,000万元、本年5,880万元，基于上年营收≈3.33亿×9%和本年4.2亿×14%计算，算术正确，且标注'测算'，无强因果断言，不构成reasoning_validity缺陷。",
+      "decision": "reject"
+    },
+    {
+      "evidence_id": "p5_e7",
+      "defect_present": false,
+      "reason": "第5页右侧卡片'≈33% 每3元营收投回1元研发'，计算为研发增量2,880万÷营收增量8,667万≈33.2%，标注'测算'，仅为比例计算，无因果断言，不构成缺陷。",
+      "decision": "reject"
+    },
+    {
+      "evidence_id": "p5_e13",
+      "defect_present": false,
+      "reason": "第5页脚注详细披露测算口径：上年营收≈3.33亿（4.2÷1.26）、上年研发投入≈3,000万（3.33亿×9%）、本年5,880万（4.2亿×14%），计算逻辑自洽且透明，不构成缺陷。",
+      "decision": "reject"
+    },
+    {
+      "evidence_id": "p5_e15",
+      "defect_present": false,
+      "reason": "第5页本年度研发投入5,880万元与4.2亿×14%=5,880万一致，数据正确，不构成缺陷。",
+      "decision": "reject"
+    },
+    {
+      "evidence_id": "p6_e9",
+      "defect_present": false,
+      "reason": "第6页'没有砍研发'卡片中，占比9%→14%、+5pct，投入额≈3,000万→5,880万、+96%，与第5页口径一致，均标注'测算'，无跨页矛盾，不构成缺陷。",
+      "decision": "reject"
+    },
+    {
+      "evidence_id": "p6_e17",
+      "defect_present": true,
+      "reason": "第6页期初投入额3,000万的推算依赖上年营收≈3.33亿，但页内未明确披露上年营收数值；若读者误用本年营收4.2亿×9%=3,780万，会与3,000万产生780万差距。此口径未在页内充分说明，导致跨页理解风险，属于reasoning_validity中的口径不一致问题。",
+      "decision": "confirm"
+    },
+    {
+      "evidence_id": "p7_e9",
+      "defect_present": true,
+      "reason": "第7页中心区域明确表述'五项指标，互为因果'，将并置的相关数据直接断言为因果关系。源文仅提供各项独立事实，未建立任何因果机制，该表述属于把相关性直接断言为强因果，违反criterion要求。",
+      "decision": "confirm"
+    },
+    {
+      "evidence_id": "p3_e1",
+      "decision": "confirm",
+      "reason": "标题将营收增长方式直接归因于老客户续约，建立强因果断言。源文仅并列提供营收+26%和续约率91%，未证明增长'靠的是'续约而非拉新。"
+    },
+    {
+      "evidence_id": "p3_R09_direct_ecdb3eb8fa96",
+      "decision": "confirm",
+      "reason": "该句使用'若A则非B'的逆否推理，将续约率91%作为'非透支式拉新'的充分条件。源文未建立'透支式拉新'与'续约率'之间的任何关系，属于作品自行构建的因果机制，且以反事实推断包装为逻辑必然。"
+    },
+    {
+      "evidence_id": "p4_R09_direct_8007847cfee6",
+      "decision": "confirm",
+      "reason": "上年人均营收104万元的计算依据未在页内明示。若按源文全年营收4.2亿为上年营收计算，人均应为131.25万；实际需依赖上年营收≈3.33亿才能得104万，但作品未明确标注'上年营收≈3.33亿'于该页，导致读者可能误解计算口径。"
+    }
+  ],
+  "additional_observations": [
+    {
+      "page": 3,
+      "quote": "26% 的增长不是靠拉新堆量，而是靠 91% 的老客户续约",
+      "location": "页面顶部大标题",
+      "statement": "标题将营收增长方式直接归因于老客户续约，建立强因果断言。源文仅并列提供营收+26%和续约率91%，未证明增长'靠的是'续约而非拉新。",
+      "kind": "inference",
+      "failure_mode": "reasoning_validity",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "全年营收4.2亿同比+26%"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "客户续约率91%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "page": 3,
+      "quote": "高增速与高续约率同时成立：若靠透支式拉新堆量，续约率不会守在 91%。",
+      "location": "中部推论文字区",
+      "statement": "该句使用'若A则非B'的逆否推理，将续约率91%作为'非透支式拉新'的充分条件。源文未建立'透支式拉新'与'续约率'之间的任何关系，属于作品自行构建的因果机制，且以反事实推断包装为逻辑必然。",
+      "kind": "inference",
+      "failure_mode": "reasoning_validity",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "客户续约率91%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "page": 4,
+      "quote": "104 万元",
+      "location": "右下图表灰色柱顶（上年人均营收）",
+      "statement": "上年人均营收104万元的计算依据未在页内明示。若按源文全年营收4.2亿为上年营收计算，人均应为131.25万；实际需依赖上年营收≈3.33亿才能得104万，但作品未明确标注'上年营收≈3.33亿'于该页，导致读者可能误解计算口径。",
+      "kind": "inference",
+      "failure_mode": "reasoning_validity",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "全年营收4.2亿同比+26%"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    }
+  ],
+  "failure_ids": [
+    "p6_e17",
+    "p7_e9",
+    "p3_e1",
+    "p3_R09_direct_ecdb3eb8fa96",
+    "p4_R09_direct_8007847cfee6"
+  ],
+  "registered_evidence": [
+    {
+      "page": 3,
+      "quote": "26% 的增长不是靠拉新堆量，而是靠 91% 的老客户续约",
+      "location": "页面顶部大标题",
+      "statement": "标题将营收增长方式直接归因于老客户续约，建立强因果断言。源文仅并列提供营收+26%和续约率91%，未证明增长'靠的是'续约而非拉新。",
+      "kind": "inference",
+      "failure_mode": "reasoning_validity",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "全年营收4.2亿同比+26%"
+        },
+        {
+          "source_id": "prompt",
+          "quote": "客户续约率91%"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p3_e1",
+      "failure_mode_origin": "direct_judge_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "page": 3,
+      "quote": "高增速与高续约率同时成立：若靠透支式拉新堆量，续约率不会守在 91%。",
+      "location": "中部推论文字区",
+      "statement": "该句使用'若A则非B'的逆否推理，将续约率91%作为'非透支式拉新'的充分条件。源文未建立'透支式拉新'与'续约率'之间的任何关系，属于作品自行构建的因果机制，且以反事实推断包装为逻辑必然。",
+      "kind": "inference",
+      "failure_mode": "reasoning_validity",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "客户续约率91%"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p3_R09_direct_ecdb3eb8fa96",
+      "failure_mode_origin": "direct_judge_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "page": 4,
+      "quote": "104 万元",
+      "location": "右下图表灰色柱顶（上年人均营收）",
+      "statement": "上年人均营收104万元的计算依据未在页内明示。若按源文全年营收4.2亿为上年营收计算，人均应为131.25万；实际需依赖上年营收≈3.33亿才能得104万，但作品未明确标注'上年营收≈3.33亿'于该页，导致读者可能误解计算口径。",
+      "kind": "inference",
+      "failure_mode": "reasoning_validity",
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "全年营收4.2亿同比+26%"
+        }
+      ],
+      "quantities": [],
+      "calculations": [],
+      "id": "p4_R09_direct_8007847cfee6",
+      "failure_mode_origin": "direct_judge_observation",
+      "arithmetic_checks": []
+    }
+  ]
+}

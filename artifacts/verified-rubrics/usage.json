@@ -1,0 +1,23 @@
+[
+  {
+    "role": "reviewer",
+    "cache_key": "46bb93f2597c66965bebf060225c502c1226ad49a073114b8bd5445e033888d1",
+    "cached": false,
+    "model": "kimi-k3",
+    "usage": {
+      "completion_tokens": 1043,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "text_tokens": 1043
+      },
+      "prompt_tokens": 6186,
+      "prompt_tokens_details": {
+        "cached_tokens": 6144,
+        "text_tokens": 6186
+      },
+      "total_tokens": 7229
+    },
+    "elapsed_seconds": 23.311,
+    "attempts": 1
+  }
+]

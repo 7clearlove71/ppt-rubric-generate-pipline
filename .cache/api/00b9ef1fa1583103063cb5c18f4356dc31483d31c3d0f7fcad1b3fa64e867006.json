@@ -1,0 +1,350 @@
+{
+  "parsed": {
+    "page": 3,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "一、改造任务完成情况",
+        "location": "页面顶部标题区域",
+        "statement": "本页为五个既定纲目中的第一个板块\"改造任务完成情况\"，板块存在且标题与需求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "改造任务完成情况"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "68个 计划改造小区",
+        "location": "页面左上部数据卡片",
+        "statement": "计划改造小区数量为68个，附带326栋、3.86万户的细化数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "68",
+            "unit": "个",
+            "subject": "计划改造小区",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "326",
+            "unit": "栋",
+            "subject": "计划改造楼栋",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "3.86",
+            "unit": "万户",
+            "subject": "计划改造户数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "63个 已完工小区 占计划 92.6%",
+        "location": "页面中上部数据卡片",
+        "statement": "已完工小区63个，占计划比例92.6%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "63",
+            "unit": "个",
+            "subject": "已完工小区",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "92.6",
+            "unit": "%",
+            "subject": "已完工小区占计划比例",
+            "denominator": "68个计划改造小区",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "92.6% 年度完工率 63个÷68个",
+        "location": "页面中上部数据卡片",
+        "statement": "年度完工率标注为92.6%，并给出计算公式63÷68",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "92.6",
+            "unit": "%",
+            "subject": "年度完工率",
+            "denominator": "68个计划改造小区",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "63",
+            "right": "68",
+            "reported": "92.6",
+            "left_unit": "个",
+            "right_unit": "个",
+            "reported_unit": "%",
+            "left_quote": "63个",
+            "right_quote": "68个",
+            "reported_quote": "92.6%",
+            "relation_quote": "年度完工率",
+            "meaning": "已完工小区数占计划改造小区数的百分比"
+          }
+        ]
+      },
+      {
+        "quote": "5个 在建小区 2027年6月底前完工",
+        "location": "页面右上部数据卡片",
+        "statement": "在建小区5个，计划2027年6月底前完工",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "5",
+            "unit": "个",
+            "subject": "在建小区",
+            "denominator": "不适用",
+            "time_origin": "2027年6月底前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "基础类（管网更新等）95.6%",
+        "location": "页面中部横向条形图",
+        "statement": "基础类改造内容完成进度95.6%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "95.6",
+            "unit": "%",
+            "subject": "基础类改造内容完成进度",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "完善类（加装电梯等）88.2%",
+        "location": "页面中部横向条形图",
+        "statement": "完善类改造内容完成进度88.2%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "88.2",
+            "unit": "%",
+            "subject": "完善类改造内容完成进度",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "提升类（养老托育等）76.5%",
+        "location": "页面中部横向条形图",
+        "statement": "提升类改造内容完成进度76.5%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "76.5",
+            "unit": "%",
+            "subject": "提升类改造内容完成进度",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "在建5个小区中，3个因地下管线迁改协调周期较长滞后于序时进度（详见第四部分（一））。",
+        "location": "页面中下部说明文字",
+        "statement": "明确指出在建小区中存在进度滞后问题，并指引至第四部分（一），与后续\"存在问题\"板块形成呼应关系",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "3",
+            "unit": "个",
+            "subject": "滞后于序时进度的在建小区",
+            "denominator": "5个在建小区",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "注：完工率＝已完工小区数÷计划改造小区数；分类进度按工程量测算；本页数据为情景示例，正式汇报以核定数为准。",
+        "location": "页面底部注释区域",
+        "statement": "明确标注数据性质为\"情景示例\"，并说明正式汇报以核定数为准，属于来源未提供具体数据时的合理标注方式",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "数据类的表述(比如完工率、资金到位率、满意度这些)前后要统一口径,不能一会儿百分比一会儿又是笼统说法"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "92.6% 年度完工率",
+        "location": "页面中上部，p3_t15与p3_t16区域",
+        "statement": "经局部放大核查，\"92.6%\"大数字与下方\"年度完工率\"标签为上下层级排版，字形无实际叠印遮挡，可读",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "63 已完工小区",
+        "location": "页面中上部，p3_t10与p3_t12区域",
+        "statement": "经局部放大核查，\"63\"大数字与下方\"已完工小区\"标签为上下层级排版，字形无实际叠印遮挡，可读",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "68 计划改造小区",
+        "location": "页面左上部，p3_t3与p3_t5区域",
+        "statement": "经局部放大核查，\"68\"大数字与下方\"计划改造小区\"标签为上下层级排版，字形无实际叠印遮挡，可读",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "5 在建小区",
+        "location": "页面右上部，p3_t21与p3_t23区域",
+        "statement": "经局部放大核查，\"5\"大数字与下方\"在建小区\"标签为上下层级排版，字形无实际叠印遮挡，可读",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "个 计划改造小区",
+        "location": "页面左上部，p3_t4与p3_t5区域",
+        "statement": "经局部放大核查，\"个\"字与\"计划改造小区\"为正常相邻排版，无实际字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "个 已完工小区",
+        "location": "页面中上部，p3_t11与p3_t12区域",
+        "statement": "经局部放大核查，\"个\"字与\"已完工小区\"为正常相邻排版，无实际字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "个 在建小区",
+        "location": "页面右上部，p3_t22与p3_t23区域",
+        "statement": "经局部放大核查，\"个\"字与\"在建小区\"为正常相邻排版，无实际字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "100%",
+        "location": "页面右侧纵向坐标轴底部",
+        "statement": "横向条形图右侧标注100%刻度，作为进度条满格参照，图表标签完整",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "100",
+            "unit": "%",
+            "subject": "进度条满格参照",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "（一）总体完成情况",
+        "location": "页面标题下方",
+        "statement": "使用公文式编号\"（一）\"，措辞规范，符合公文风格",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "小标题的措辞要正、要像公文里出来的,不要用口语化的说法"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "（二）分类改造内容完成进度",
+        "location": "页面中部",
+        "statement": "使用公文式编号\"（二）\"，措辞规范，符合公文风格",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "小标题的措辞要正、要像公文里出来的,不要用口语化的说法"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 10225,
+    "total_tokens": 12787,
+    "completion_tokens": 2562,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 138.2,
+  "attempts": 1
+}

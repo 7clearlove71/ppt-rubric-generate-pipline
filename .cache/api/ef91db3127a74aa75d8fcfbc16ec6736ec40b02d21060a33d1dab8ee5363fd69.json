@@ -1,0 +1,311 @@
+{
+  "parsed": {
+    "page": 5,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "92% 的良率站得住：批次一致性数据与行业对标同时给出",
+        "location": "页面顶部标题区域",
+        "statement": "页面标题明确呈现本团队量产良率92%的核心主张，并强调批次一致性数据与行业对标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "零基线；本团队 78%→92% （2023–2025 ，团队自有成果）",
+        "location": "图表上方说明文字左侧",
+        "statement": "明确给出本团队量产良率从78%提升至92%的时间范围2023-2025，标注为团队自有成果",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "78",
+            "unit": "%",
+            "subject": "本团队量产良率基准值",
+            "denominator": "不适用",
+            "time_origin": "2023"
+          },
+          {
+            "value": "92",
+            "unit": "%",
+            "subject": "本团队量产良率当前值",
+            "denominator": "不适用",
+            "time_origin": "2025"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "78%",
+        "location": "柱状图第一个蓝色柱体上方",
+        "statement": "图表可视化呈现2023年本团队量产良率78%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "78",
+            "unit": "%",
+            "subject": "本团队2023量产良率",
+            "denominator": "不适用",
+            "time_origin": "2023"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "92%",
+        "location": "柱状图第二个蓝色柱体上方",
+        "statement": "图表可视化呈现2025年本团队量产良率92%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "92",
+            "unit": "%",
+            "subject": "本团队2025量产良率",
+            "denominator": "不适用",
+            "time_origin": "2025"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "来源：团队自有成果（2023–2025 ，量产良率 78%→92% ）",
+        "location": "页面底部来源说明行首",
+        "statement": "底部来源再次确认78%→92%的良率提升为团队自有成果，时间范围2023-2025",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "78",
+            "unit": "%",
+            "subject": "量产良率起始值",
+            "denominator": "不适用",
+            "time_origin": "2023"
+          },
+          {
+            "value": "92",
+            "unit": "%",
+            "subject": "量产良率结束值",
+            "denominator": "不适用",
+            "time_origin": "2025"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "印刷电子为 95%+ 先进线，图中取其下限",
+        "location": "图表上方说明文字中部",
+        "statement": "说明行业对标数据中印刷电子卷对卷取95%作为下限值，非精确对标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "95",
+            "unit": "%",
+            "subject": "印刷电子卷对卷先进线下限",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "柔性 OLED 为 2022-05 厂商公开口径",
+        "location": "图表上方说明文字右侧",
+        "statement": "说明柔性OLED数据来源于2022年5月厂商公开口径，存在时间差",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "跨类对标：统计口径不同，不可直接读数",
+        "location": "页面右侧中部灰色框标题",
+        "statement": "作者主动声明不同类别良率统计口径存在差异，提醒不可直接数值比较",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本团队 · 阵列级 功能良率 + 电学全检 + 可靠性抽检",
+        "location": "跨类对标说明框第一行",
+        "statement": "明确本团队92%良率的统计口径为阵列级，包含功能良率、电学全检和可靠性抽检",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "92% 处于行业头部区间，距印刷电子卷对卷先进线约 3 个百分点（2026 目标 95% ）",
+        "location": "结论与公开参照线框",
+        "statement": "给出定量结论：92%距95%约3个百分点，并设定2026年目标95%",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "92",
+            "unit": "%",
+            "subject": "本团队当前量产良率",
+            "denominator": "不适用",
+            "time_origin": "2025"
+          },
+          {
+            "value": "95",
+            "unit": "%",
+            "subject": "印刷电子卷对卷先进线/2026目标",
+            "denominator": "不适用",
+            "time_origin": "2026（目标）"
+          },
+          {
+            "value": "3",
+            "unit": "百分点",
+            "subject": "差距",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "95",
+            "right": "92",
+            "reported": "3",
+            "left_unit": "%",
+            "right_unit": "%",
+            "reported_unit": "百分点",
+            "left_quote": "印刷电子卷对卷 95%+",
+            "right_quote": "92% 处于行业头部区间",
+            "reported_quote": "距印刷电子卷对卷先进线约 3 个百分点",
+            "relation_quote": "距印刷电子卷对卷先进线约 3 个百分点",
+            "meaning": "当前良率与行业先进线的差距"
+          }
+        ]
+      },
+      {
+        "quote": "灵敏度 0.594 pm/με",
+        "location": "结论框底部参照线区域",
+        "statement": "可见希腊字母μ与ε紧密排列形成单位με，局部放大图显示为正常排版而非遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0.594",
+            "unit": "pm/με",
+            "subject": "灵敏度",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "ε",
+        "location": "p5_t53 bbox [456.61, 313.08, 460.11, 320.08]",
+        "statement": "希腊字母ε的渲染包围框与后续文本框存在高度重叠的候选记录，但局部放大图显示实际为με单位正常连写排版，无真实字形遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "μ",
+        "location": "p5_t54 bbox [449.63, 313.08, 456.63, 320.08]",
+        "statement": "希腊字母μ的渲染包围框与前后文本存在候选交集，局部放大图证实为正常单位组合pm/με，非遮挡缺陷",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "前三段为团队内部量产口径，未随素材公开数值",
+        "location": "92%四段证据链框右上角",
+        "statement": "明确披露四段证据链中前三段（连续批次统计、单器件一致性、可靠性抽检）为团队内部数据，未公开具体数值",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "批次均值/ 标准差/Cpk 与迟滞/ 重复性/ 温漂属团队内部数据，不以外部值替代",
+        "location": "页面底部来源说明第二行",
+        "statement": "再次强调关键统计量为团队内部数据，不采用外部替代值",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "量产良率行业对标：本团队 × 印刷电子卷对卷 × 柔性 OLED 面板",
+        "location": "图表上方副标题",
+        "statement": "页面核心内容聚焦于量产良率行业对标，属于柔性电子传感器领域专业内容",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "柔性电子团队近三年进展"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 8082,
+    "total_tokens": 10547,
+    "completion_tokens": 2465,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 55.951,
+  "attempts": 1
+}

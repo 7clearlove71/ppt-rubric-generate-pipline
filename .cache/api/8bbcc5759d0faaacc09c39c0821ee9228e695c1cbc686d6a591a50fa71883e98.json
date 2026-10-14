@@ -1,0 +1,186 @@
+{
+  "parsed": {
+    "page": 3,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "寒冬里的选择：加码，而不是收缩",
+        "location": "页面顶部标题",
+        "statement": "标题为判断式表达，直接传达核心观点，符合'结论先行'要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "结论先行不铺垫寒暄、标题简洁有力"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "「年初行业寒冬，咬牙没有裁员，反而加大了研发投入。」——老板年度讲话原文",
+        "location": "页面左侧引用框",
+        "statement": "直接引用老板原话，包含叙事要素'行业寒冬''不裁员''加大研发投入'，与数据形成对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年初行业寒冬，咬牙没有裁员反而加大了研发投入"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "选择一 · 不裁员 / 320 → 410 人 / 一个都没少，还在变多",
+        "location": "页面右侧上部",
+        "statement": "员工数据从320增至410人，与'不裁员'叙事直接挂钩，用'一个都没少，还在变多'诠释数据含义",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "员工320涨到410人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "320",
+            "unit": "人",
+            "subject": "员工数（年初/基准）",
+            "denominator": "不适用",
+            "time_origin": "年初或基准期"
+          },
+          {
+            "value": "410",
+            "unit": "人",
+            "subject": "员工数（当前/年末）",
+            "denominator": "不适用",
+            "time_origin": "年末"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "410",
+            "right": "320",
+            "reported": "90",
+            "meaning": "员工净增90人，增幅约28.1%"
+          }
+        ]
+      },
+      {
+        "quote": "选择二 · 加码研发 / 9% → 14% / 研发投入占营收比例 · +5 个百分点",
+        "location": "页面右侧下部",
+        "statement": "研发投入占比从9%提升至14%，标注'+5个百分点'，与'加大研发投入'叙事直接对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "研发投入占比从9%提到14%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "9",
+            "unit": "%",
+            "subject": "研发投入占营收比例（基准）",
+            "denominator": "营收",
+            "time_origin": "基准期"
+          },
+          {
+            "value": "14",
+            "unit": "%",
+            "subject": "研发投入占营收比例（当前）",
+            "denominator": "营收",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "subtract",
+            "left": "14",
+            "right": "9",
+            "reported": "5",
+            "meaning": "研发投入占比提升5个百分点"
+          }
+        ]
+      },
+      {
+        "quote": "行业在收缩，我们在加码",
+        "location": "页面左下部",
+        "statement": "对比式金句，'行业在收缩'为合理演绎（源文有'行业寒冬'），'我们在加码'概括本页双数据主题，无具体数字但属观点提炼",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年初行业寒冬"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "2026 年度大会 · 开场汇报 / 03 / 08",
+        "location": "页面底部",
+        "statement": "页脚信息完整，含活动名称、页码3/8",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "3",
+            "unit": "页",
+            "subject": "当前页码",
+            "denominator": "8",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "页面整体布局：左侧老板原话引用，右侧两个数据模块分别对应'不裁员'和'加码研发'两个选择",
+        "location": "页面整体结构",
+        "statement": "叙事与数据同页呈现，引用框与数据模块形成互文，未出现'两张皮'分离；两个数据模块有独立图标和标签，视觉层级清晰",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "情怀部分要能落到具体数字上，做到讲述和数据互相支撑"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页未出现：现金仅够发两个月工资、团队无人退缩、脱胎换骨、全年营收4.2亿同比+26%、新增专利18项、客户续约率91%",
+        "location": "本页未呈现内容",
+        "statement": "上述数据/叙事要素本页未涉及，但属于跨页分配问题，本页仅承担'寒冬里的选择'子主题，不能单独判定全篇缺失",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5146,
+    "total_tokens": 6106,
+    "completion_tokens": 960,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 21.497,
+  "attempts": 1
+}

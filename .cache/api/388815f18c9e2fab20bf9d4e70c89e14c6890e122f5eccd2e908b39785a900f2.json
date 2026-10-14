@@ -1,0 +1,21 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "Requirements and rubric items accurately cover all source-specified facts, deliverables, and presentation constraints without introducing extraneous obligations, duplicate penalties, or substantive errors. No counterexamples establish any defect under the current criteria."
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 7670,
+    "total_tokens": 11742,
+    "completion_tokens": 4072,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 4014
+    }
+  },
+  "elapsed_seconds": 479.939,
+  "attempts": 2
+}

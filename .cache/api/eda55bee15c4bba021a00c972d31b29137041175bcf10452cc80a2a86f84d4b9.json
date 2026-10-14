@@ -1,0 +1,25 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      4,
+      8
+    ],
+    "evidence": "电商渠道退单量较平时多约15%在PPT多处准确呈现：P2「电商渠道退单量 较平时多约15%」并标注来源素材二；P4「退单量较平时增幅 约15%」以图表形式呈现，并说明「与退货退款约60%的诉求结构相互印证」；P8再次列出「约15% 电商渠道退单量较平时多」。数值与素材二原文「电商渠道的退单量也比平时多了约15%」完全一致，未缺失或写错。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 22629,
+    "total_tokens": 22766,
+    "completion_tokens": 137,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.885,
+  "attempts": 1
+}

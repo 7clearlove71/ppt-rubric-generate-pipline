@@ -1,0 +1,26 @@
+{
+  "stage": "recover-generation",
+  "cases": [
+    "02"
+  ],
+  "remaining_provider_requests": 70,
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-m",
+    "ppt_rubric",
+    "generate",
+    "--cases",
+    "02",
+    "--config",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/generation-recovery-config.json",
+    "--out",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261013-evidence-v1/rubrics",
+    "--workers",
+    "1",
+    "--max-api-requests",
+    "70",
+    "--confirm-bailian-bulk"
+  ],
+  "authorization": "authorization.json",
+  "plan": "recover-generation-plan.json"
+}

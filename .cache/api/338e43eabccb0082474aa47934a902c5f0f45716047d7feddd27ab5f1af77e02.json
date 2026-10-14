@@ -1,0 +1,41 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      3,
+      4,
+      7
+    ],
+    "evidence": "在1号线深挖模块（第3-4页及第7页监测机制）中，作品明确将1号线能耗高的主因归因于液压系统老化导致的效率下降。第3页标题直接陈述'排查后主因锁定液压系统老化'，四步诊断链第④步结论为'主因锁定为液压系统老化'，并给出'液压系统占该线电耗约45%、约30.6万kWh/月，老化致高出正常约29%'的量化支撑。第4页标题再次强调'液压系统占1号线电耗45%（约30.6万kWh/月），老化使其能耗高出正常水平约29%'，左侧柱状图明确区分'液压系统占45%'与'老化损失约29%'，右侧改造效果预期说明'改造后消除该老化损失'。第7页监测与验证机制区将'液压分项电耗占比'和'29%老化损失是否消除'列为验证指标。这些表述均明确指向液压系统老化是1号线能耗高的主要原因，符合用户给定的核心发现，且未将原因指向无关因素。",
+    "evidence_ids": [
+      "p3_e1",
+      "p3_e2",
+      "p3_e19",
+      "p3_e22",
+      "p3_e23",
+      "p4_e1",
+      "p4_e3",
+      "p4_e4",
+      "p4_e25",
+      "p7_e10",
+      "p7_e28"
+    ],
+    "resolutions": [],
+    "additional_observations": [],
+    "inspection_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 53470,
+    "total_tokens": 53833,
+    "completion_tokens": 363,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 119.276,
+  "attempts": 1
+}

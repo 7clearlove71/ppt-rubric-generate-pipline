@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-13T04:55:54.052864+00:00",
+  "diagnosis": "case02 reviser response stopped at output token cap",
+  "request_id": 14,
+  "actual_completion_tokens": 16003,
+  "reasoning_tokens": 10995,
+  "text_tokens": 5008,
+  "elapsed_seconds": 306.162,
+  "planned_recovery": "Introduce per-role output token limit; set reviser=32768 only in a dedicated case02 error-recovery profile. Reuse successful original-role requests, resume interrupted revision and unchanged reviews. No new rubric revision/source-refinement allowance.",
+  "generation_worker_continues_with_already_loaded_original_source": true,
+  "scoring_prompt_version_remains": "2026-10-13.12",
+  "shared_caps_unchanged": {
+    "bailian": 120,
+    "maas": 900
+  }
+}

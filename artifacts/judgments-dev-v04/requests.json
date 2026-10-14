@@ -1,0 +1,470 @@
+[
+  {
+    "request_id": 1,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "59033e37fae5ebab8d47a34e014ee84a0350acd17a7218306f8e6ab363e87add",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 26497,
+      "total_tokens": 26659,
+      "completion_tokens": 162,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.208
+  },
+  {
+    "request_id": 2,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "4086cef4d5a1fe0ffdc542a49448d578df18e50a580b31d9c1a9b14be7c87ee4",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.283
+  },
+  {
+    "request_id": 3,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "4086cef4d5a1fe0ffdc542a49448d578df18e50a580b31d9c1a9b14be7c87ee4",
+    "attempt": 2,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 26513,
+      "total_tokens": 26765,
+      "completion_tokens": 252,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.685
+  },
+  {
+    "request_id": 4,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "400c12a6cc9bf7ad26c5731f2f5d6e332834d3ef12a1fa4ec823e26f2405c0de",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 26486,
+      "total_tokens": 26575,
+      "completion_tokens": 89,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 5.909
+  },
+  {
+    "request_id": 5,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "537722c38f66833ac3f4269d7ec3b9b746495def28aaf5057c350dc73c76d894",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 26506,
+      "total_tokens": 26710,
+      "completion_tokens": 204,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 7.53
+  },
+  {
+    "request_id": 6,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "ac956afade6cfc4b8f7b8a87572dc1632749932b2c5fdcc2290d75a85daffd35",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 26505,
+      "total_tokens": 26721,
+      "completion_tokens": 216,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.465
+  },
+  {
+    "request_id": 7,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "9f8f66be07141085d27e5b98a235b30b20ce436a4f50f0710f5528078d042f84",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.754
+  },
+  {
+    "request_id": 8,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "9f8f66be07141085d27e5b98a235b30b20ce436a4f50f0710f5528078d042f84",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.717
+  },
+  {
+    "request_id": 9,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e26a8df39b590d283a3cef55bed0225c010969f5e13e75d218c29aa5a731c88f",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.724
+  },
+  {
+    "request_id": 10,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "9f8f66be07141085d27e5b98a235b30b20ce436a4f50f0710f5528078d042f84",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 0.869
+  },
+  {
+    "request_id": 11,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "baab71c69b4de7f38deec8f358aa9b299c3b69f103d6f632e80d00d160c7ec78",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.833
+  },
+  {
+    "request_id": 12,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e26a8df39b590d283a3cef55bed0225c010969f5e13e75d218c29aa5a731c88f",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.965
+  },
+  {
+    "request_id": 13,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "baab71c69b4de7f38deec8f358aa9b299c3b69f103d6f632e80d00d160c7ec78",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.673
+  },
+  {
+    "request_id": 14,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e26a8df39b590d283a3cef55bed0225c010969f5e13e75d218c29aa5a731c88f",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 0.67
+  },
+  {
+    "request_id": 15,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "2e10a186200c8591c145a52d75dbf2d58f73ef4459862301f8b13fec7ed2ce64",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.7
+  },
+  {
+    "request_id": 16,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "baab71c69b4de7f38deec8f358aa9b299c3b69f103d6f632e80d00d160c7ec78",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 0.826
+  },
+  {
+    "request_id": 17,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "c278f44f6b850fb3deb09e6faed0d90270842b38c679e4f4e5e47a2bdceba68f",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.729
+  },
+  {
+    "request_id": 18,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "2e10a186200c8591c145a52d75dbf2d58f73ef4459862301f8b13fec7ed2ce64",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.868
+  },
+  {
+    "request_id": 19,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "c278f44f6b850fb3deb09e6faed0d90270842b38c679e4f4e5e47a2bdceba68f",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.724
+  },
+  {
+    "request_id": 20,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "2e10a186200c8591c145a52d75dbf2d58f73ef4459862301f8b13fec7ed2ce64",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 0.706
+  },
+  {
+    "request_id": 21,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "1db07f7cdad34ac378e29739a727f0d8741327d4c1e8ec5e7e9083097508ac0d",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.734
+  },
+  {
+    "request_id": 22,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "c278f44f6b850fb3deb09e6faed0d90270842b38c679e4f4e5e47a2bdceba68f",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 0.851
+  },
+  {
+    "request_id": 23,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "43d6b6c90a6ce724902b22d2256e5c477fc092b986eb024e5db452eb161d193a",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.827
+  },
+  {
+    "request_id": 24,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "1db07f7cdad34ac378e29739a727f0d8741327d4c1e8ec5e7e9083097508ac0d",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 3.161
+  },
+  {
+    "request_id": 25,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "43d6b6c90a6ce724902b22d2256e5c477fc092b986eb024e5db452eb161d193a",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.731
+  },
+  {
+    "request_id": 26,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "1db07f7cdad34ac378e29739a727f0d8741327d4c1e8ec5e7e9083097508ac0d",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 0.691
+  },
+  {
+    "request_id": 27,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e915c70a537f219f83cc1d9d989fd6b6843be984def9a6a2770308ef1501969f",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.752
+  },
+  {
+    "request_id": 28,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "43d6b6c90a6ce724902b22d2256e5c477fc092b986eb024e5db452eb161d193a",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.681
+  },
+  {
+    "request_id": 29,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e915c70a537f219f83cc1d9d989fd6b6843be984def9a6a2770308ef1501969f",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.829
+  },
+  {
+    "request_id": 30,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e41979a5a50766fe5a35b423fb2bcf3eca8a7214a80eb41dfd5405652c8af63f",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.752
+  },
+  {
+    "request_id": 31,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e915c70a537f219f83cc1d9d989fd6b6843be984def9a6a2770308ef1501969f",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 0.79
+  },
+  {
+    "request_id": 32,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e41979a5a50766fe5a35b423fb2bcf3eca8a7214a80eb41dfd5405652c8af63f",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 4.338
+  },
+  {
+    "request_id": 33,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "10c49742475c22897a375a048e27be7e9b08d80cdc7ce44cb4e699af1292f62a",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.774
+  },
+  {
+    "request_id": 34,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "10c49742475c22897a375a048e27be7e9b08d80cdc7ce44cb4e699af1292f62a",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.758
+  },
+  {
+    "request_id": 35,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e41979a5a50766fe5a35b423fb2bcf3eca8a7214a80eb41dfd5405652c8af63f",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 0.729
+  },
+  {
+    "request_id": 36,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e44f5e33660f20f9dadd6c2fcbea26855d5f38839dabf6445ca70699aeebef55",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 2.065
+  },
+  {
+    "request_id": 37,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "10c49742475c22897a375a048e27be7e9b08d80cdc7ce44cb4e699af1292f62a",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.218
+  },
+  {
+    "request_id": 38,
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "4468472c7ab88cef327e3357920d5772b8b3728e1505781667a72320a4b8279b",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 429,
+    "error_type": "RequestException",
+    "elapsed_seconds": 1.843
+  }
+]

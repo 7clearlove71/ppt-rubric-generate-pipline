@@ -1,0 +1,34 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R04",
+          "R07"
+        ],
+        "reason": "反例：PPT前文写'完工率85%'、后文写'完工率92%'且未标注时间或口径差异。这一原子缺陷同时触发R04（数据口径不一致）和R07（同一指标数值矛盾且未标注口径差异），两条标准因同一缺陷失败，存在重复计分。",
+        "fix": "R07应排除'同一指标数值矛盾'情形，该情形由R04独立负责；R07仅负责'无来源数据冒充既定事实'类缺陷。"
+      }
+    ],
+    "summary": "R04与R07在数据矛盾场景下重复计分",
+    "coverage": {}
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 151,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 151
+    },
+    "prompt_tokens": 7253,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 7253
+    },
+    "total_tokens": 7404
+  },
+  "elapsed_seconds": 22.009,
+  "attempts": 1
+}

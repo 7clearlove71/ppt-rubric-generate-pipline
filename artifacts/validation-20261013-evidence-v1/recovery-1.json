@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-13T02:34:58.277434+00:00",
+  "reason": "User resumed after interrupted turn; no runner or judge process remains.",
+  "maas_actual_requests_before_resume": 25,
+  "maas_remaining": 875,
+  "bailian_remaining": 120,
+  "inflight_requests_counted_as_consumed": [
+    25
+  ],
+  "inflight_usage_unknown": true,
+  "successful_calls_reused_from_cache": true,
+  "no_duplicate_worker": true
+}

@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      3,
+      5,
+      7
+    ],
+    "evidence": "第3页标题明确写“对标行业标杆0.45 kWh/件：1号线超标杆89%，2/3/4号线已接近标杆”，图表中以橙色虚线标注行业标杆0.45，右侧文字列示各线超标杆比例（2/3/4号线分别约16%、7%-8%、16%），并计算1号线降至标杆0.45的省电潜力。第5页口径一将“降至行业标杆0.45 kWh/件”作为改造目标测算。第7页图表再次以0.45作为行业标杆与1号线现状0.85、改造后验收目标0.5并列对比。行业标杆值0.45 kWh/件在多处被明确引用并用于对照分析。",
+    "visual_resolutions": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 19679,
+    "total_tokens": 19861,
+    "completion_tokens": 182,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.848,
+  "attempts": 1
+}

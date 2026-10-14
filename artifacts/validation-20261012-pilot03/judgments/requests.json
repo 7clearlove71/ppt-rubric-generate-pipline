@@ -1,0 +1,1544 @@
+[
+  {
+    "request_id": 1,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "9f7fd1d450b27fa841eadd3daddb3825d930c982f86fa4fe65714911d813179d",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3291,
+      "completion_tokens": 484,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 14.817
+  },
+  {
+    "request_id": 2,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "adc3cfffa91e80a189ef54bdd91929039514e7c98473dbc445e7843938d25991",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3469,
+      "completion_tokens": 662,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 19.429
+  },
+  {
+    "request_id": 3,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "bb4b4f7be97af2e71bd0a06cc76318278661158af2e7e63f54db1ab7461f35dd",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3412,
+      "completion_tokens": 605,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 17.832
+  },
+  {
+    "request_id": 4,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "7932bf02bcdaa8d774c6b7c91c201166da3380c4aff339c5db3889d4c67f4bd0",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3433,
+      "completion_tokens": 626,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 18.985
+  },
+  {
+    "request_id": 5,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "d67071b5d5c9f41e1c59ed502fcadd68cd7cccfdcd1184e2a584393c4bdbaaa6",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3363,
+      "completion_tokens": 556,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 16.726
+  },
+  {
+    "request_id": 6,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "663b7c0f3785bc3a0b7cce29cad9ebaf9395e17adcfcc145ae7ed90368e632cf",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3479,
+      "completion_tokens": 672,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 20.173
+  },
+  {
+    "request_id": 7,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "c1a898708772d44ac0c986917bc5057bed9ab9f11168c84083e85e803b5a9e69",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3481,
+      "completion_tokens": 674,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 20.519
+  },
+  {
+    "request_id": 8,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "ac83ccf1e5fa7edb869fc7dc5b27df18c90b9fd1e4af2af206593fdb18967b71",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3156,
+      "completion_tokens": 349,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 11.166
+  },
+  {
+    "request_id": 9,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "ea529250dec9d8f7c5d17410aca631caa0c15914148cb859875b6ca108a54766",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19700,
+      "total_tokens": 19878,
+      "completion_tokens": 178,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.337
+  },
+  {
+    "request_id": 10,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "9225d3cc1b34cbd9e81a1aee49ec607cc9564250cc02cacdba3a4bcc8ec44d39",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19675,
+      "total_tokens": 19819,
+      "completion_tokens": 144,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 7.043
+  },
+  {
+    "request_id": 11,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "062b6d1e068861a262213f62f237d6643517f02782188279c8b94800e824810c",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19699,
+      "total_tokens": 19894,
+      "completion_tokens": 195,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.644
+  },
+  {
+    "request_id": 12,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "5a4fff94bffe232ef6db74c6fc525731652cdf48dbcb522840f91b66849de3ee",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19736,
+      "total_tokens": 20013,
+      "completion_tokens": 277,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 11.007
+  },
+  {
+    "request_id": 13,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "01eb492d40fb1d654d3331cc8deb9a48bbe718cad9d337ce77ac6fb57bcf1852",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19679,
+      "total_tokens": 19861,
+      "completion_tokens": 182,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.877
+  },
+  {
+    "request_id": 14,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "691b000fdc1abd12b9e9c950d02e96f0e7152aefb2cc203faf99bae189b5341e",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19832,
+      "total_tokens": 20170,
+      "completion_tokens": 338,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 12.532
+  },
+  {
+    "request_id": 15,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "fef15805388a923b60270e922990636996f90a4a4f6eda9001b8c04dec73acbf",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19675,
+      "total_tokens": 19806,
+      "completion_tokens": 131,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 6.652
+  },
+  {
+    "request_id": 16,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e4107e94283d7b81e24c79134829f0d13d6bcf9a79dfa11c0beb8a7b5bb056c5",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19710,
+      "total_tokens": 19880,
+      "completion_tokens": 170,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.633
+  },
+  {
+    "request_id": 17,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "92d8135220db0759242761d8454da7982a20342f255932fd089c0e3f30f16cf4",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19683,
+      "total_tokens": 20082,
+      "completion_tokens": 399,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 14.802
+  },
+  {
+    "request_id": 18,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "2ed18173a1520f8a232ec117a7fa154fc80f43b27b9b690297d660a5add0238b",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19664,
+      "total_tokens": 19788,
+      "completion_tokens": 124,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 6.838
+  },
+  {
+    "request_id": 19,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "d68b36f671405b568debc527829b566ce28f6d2bfeee023af1af6622cc77693b",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19741,
+      "total_tokens": 19995,
+      "completion_tokens": 254,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 12.097
+  },
+  {
+    "request_id": 20,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "2fe3998269b4469497b522787e62283c279d004935ccefac3e01b8e63a4c92cb",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19706,
+      "total_tokens": 19847,
+      "completion_tokens": 141,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 7.118
+  },
+  {
+    "request_id": 21,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "2929b1018b731f87ea6fa91143f5e66622200d863963cf63646bae702698304a",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19672,
+      "total_tokens": 20020,
+      "completion_tokens": 348,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 13.206
+  },
+  {
+    "request_id": 22,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "3314fae641cd96abe511ad63729931cbfbdb787a636c8bb82d40fd6f24399837",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19690,
+      "total_tokens": 19898,
+      "completion_tokens": 208,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.008
+  },
+  {
+    "request_id": 23,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "cdbddcb791a594d42316699519aa5e77e51afe295222e114837d3c187d9b4acc",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 19693,
+      "total_tokens": 19886,
+      "completion_tokens": 193,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.955
+  },
+  {
+    "request_id": 24,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "fb61785810e7eeb6d4bd85a7d858ae2f5181c3de3719fc80f6ca4627d428d590",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 20832,
+      "total_tokens": 21624,
+      "completion_tokens": 792,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Judge must resolve every visual concern exactly once",
+    "elapsed_seconds": 28.302
+  },
+  {
+    "request_id": 25,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "fb61785810e7eeb6d4bd85a7d858ae2f5181c3de3719fc80f6ca4627d428d590",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 20832,
+      "total_tokens": 21256,
+      "completion_tokens": 424,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Judge must resolve every visual concern exactly once",
+    "elapsed_seconds": 17.972
+  },
+  {
+    "request_id": 26,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "fb61785810e7eeb6d4bd85a7d858ae2f5181c3de3719fc80f6ca4627d428d590",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 20832,
+      "total_tokens": 21301,
+      "completion_tokens": 469,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Judge must resolve every visual concern exactly once",
+    "elapsed_seconds": 17.083
+  },
+  {
+    "request_id": 27,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "dae4aa4d166c0a16cec539f03eba97954451dbccc3043a6240316ce42ad8ab88",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 20751,
+      "total_tokens": 20994,
+      "completion_tokens": 243,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 10.405
+  },
+  {
+    "request_id": 28,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "87742c0142530a00702e1d11e713708ee8aac5a3b332954972a02aadd076fabc",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 20968,
+      "total_tokens": 21203,
+      "completion_tokens": 235,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 10.629
+  },
+  {
+    "request_id": 29,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "7d77eb539dba97a89576c8dfba816cf80cec1a8c61e2d40db54daef7838afdfa",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 21049,
+      "total_tokens": 21470,
+      "completion_tokens": 421,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 15.12
+  },
+  {
+    "request_id": 30,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "362fe4d1575f3a18458bc0f0522b6845aa5ba70a1efd46c841d91f4df202a979",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3175,
+      "completion_tokens": 368,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 12.156
+  },
+  {
+    "request_id": 31,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "91b0d5d3c8c892fa9af49b15460fcfcf3ea3200cee0d722b3ac3e5aaacf2eb51",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3466,
+      "completion_tokens": 659,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 20.303
+  },
+  {
+    "request_id": 32,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "de2834f3144df7179fc7805081331a0d66c2e7dedd48fdae404f1b76be918d70",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3588,
+      "completion_tokens": 781,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 24.658
+  },
+  {
+    "request_id": 33,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "2f4c671dd815d424a3df8f63cb2f94b7443b1d8dd32776eb19e73978c07fe09a",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3438,
+      "completion_tokens": 631,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 19.388
+  },
+  {
+    "request_id": 34,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "d4604b40ffb048cef8b66f872c0e08fdda3794089193932157308f1ba4ac6324",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3522,
+      "completion_tokens": 715,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 22.449
+  },
+  {
+    "request_id": 35,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "a5da10eb4176cbcbbc49c1a28e6a71a1c9a5e68c4e72a1b96a12a16caa9701ed",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3498,
+      "completion_tokens": 691,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 21.404
+  },
+  {
+    "request_id": 36,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "a76d237520f54a231920dcd1bdbe5425e4d1b2cbc4e778dae485310415d0509e",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3546,
+      "completion_tokens": 739,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 22.541
+  },
+  {
+    "request_id": 37,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "455b9ab654b0cc618afac33245c15d4a251ba93d0d9b2c87f899f53156e81100",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 2807,
+      "total_tokens": 3278,
+      "completion_tokens": 471,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 14.882
+  },
+  {
+    "request_id": 38,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "6ae91bae437e7ef6fc22faf473338f6af49783c8a1c76ccf40aa693a5ca53cc0",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23342,
+      "total_tokens": 23540,
+      "completion_tokens": 198,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.315
+  },
+  {
+    "request_id": 39,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "f4d22ff65f5b704493e6e3ec44ac346ca276ef22ae32e4807bb5ae90cd4fd201",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23317,
+      "total_tokens": 23505,
+      "completion_tokens": 188,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.511
+  },
+  {
+    "request_id": 40,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "5a666ea8cc3aef31eec3bc588531002ddc865cf7d14e9645fe9d256c21d19b22",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23341,
+      "total_tokens": 23593,
+      "completion_tokens": 252,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.957
+  },
+  {
+    "request_id": 41,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "2e8317f98085c575cbcda83dd0cce864c44f52d8a0f2ec8be9d278c04a3e69bd",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23378,
+      "total_tokens": 23634,
+      "completion_tokens": 256,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 10.912
+  },
+  {
+    "request_id": 42,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e34afc2b978498296bedc1e85c3467a87c3ed4f9b4abb3f32fc5c9cec311ab95",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23321,
+      "total_tokens": 23562,
+      "completion_tokens": 241,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 10.691
+  },
+  {
+    "request_id": 43,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "0eb58faba582b9fb0f53da5d9dc9af6dc425a8ec8de95c8faf16402701cb6bbe",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23474,
+      "total_tokens": 23664,
+      "completion_tokens": 190,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.555
+  },
+  {
+    "request_id": 44,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "023e6ed182bcd5ab1c9970e5ce51eb970af434dcd7c1343fac1190139769eb05",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23317,
+      "total_tokens": 23442,
+      "completion_tokens": 125,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 7.005
+  },
+  {
+    "request_id": 45,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "f672b397318bb65b7f76072b56759795c6a11fab24b78cf214b561d68d86fd18",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23352,
+      "total_tokens": 23579,
+      "completion_tokens": 227,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.932
+  },
+  {
+    "request_id": 46,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "89627ed6aa69ba380eeedb33da8d9755d283b2366e3e8268eb5a05aff3110dc7",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23325,
+      "total_tokens": 23694,
+      "completion_tokens": 369,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 14.146
+  },
+  {
+    "request_id": 47,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "07397c31f885eaa03ca8c92b42a5063c0f754074978791c9eac0d90db9d566bf",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23306,
+      "total_tokens": 23506,
+      "completion_tokens": 200,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.185
+  },
+  {
+    "request_id": 48,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "4598444d087b240b0d43e45027a8ed76cc04a2855d630c8e0c78c4d27ab5cd61",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23383,
+      "total_tokens": 23625,
+      "completion_tokens": 242,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.978
+  },
+  {
+    "request_id": 49,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "b60db9b12c7685260f0b36f16fb859a44d3d843c09ca2f7b1e244c284e3c6a30",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23348,
+      "total_tokens": 23719,
+      "completion_tokens": 371,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 15.056
+  },
+  {
+    "request_id": 50,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "3a6d3c5b2662a9a1370ef6385fc1f88dc58db6faf5df7a3635ad9c792b87dad8",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23314,
+      "total_tokens": 23592,
+      "completion_tokens": 278,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 13.068
+  },
+  {
+    "request_id": 51,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "0537e689861136920bd43d87201c24909004147316d4115fd39697413cb88acd",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23332,
+      "total_tokens": 23566,
+      "completion_tokens": 234,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "JSONDecodeError",
+    "failure_stage": "output_parse",
+    "elapsed_seconds": 11.158
+  },
+  {
+    "request_id": 52,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "0537e689861136920bd43d87201c24909004147316d4115fd39697413cb88acd",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23332,
+      "total_tokens": 23631,
+      "completion_tokens": 299,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "JSONDecodeError",
+    "failure_stage": "output_parse",
+    "elapsed_seconds": 13.358
+  },
+  {
+    "request_id": 53,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "0537e689861136920bd43d87201c24909004147316d4115fd39697413cb88acd",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23332,
+      "total_tokens": 23583,
+      "completion_tokens": 251,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "JSONDecodeError",
+    "failure_stage": "output_parse",
+    "elapsed_seconds": 10.346
+  },
+  {
+    "request_id": 54,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "e453a06505d51a8ec04ccef66e777ece1182caf2c0156b943eb01bbc4c639c74",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23335,
+      "total_tokens": 23603,
+      "completion_tokens": 268,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 11.744
+  },
+  {
+    "request_id": 55,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "4c2468a89435d34a1efb6ae20219124109f0bac52d2745c7072eb0082fe93391",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24384,
+      "total_tokens": 24812,
+      "completion_tokens": 428,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Judge must resolve every visual concern exactly once",
+    "elapsed_seconds": 16.912
+  },
+  {
+    "request_id": 56,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "4c2468a89435d34a1efb6ae20219124109f0bac52d2745c7072eb0082fe93391",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24384,
+      "total_tokens": 24807,
+      "completion_tokens": 423,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Judge must resolve every visual concern exactly once",
+    "elapsed_seconds": 17.98
+  },
+  {
+    "request_id": 57,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "4c2468a89435d34a1efb6ae20219124109f0bac52d2745c7072eb0082fe93391",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24384,
+      "total_tokens": 25198,
+      "completion_tokens": 814,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "failure_stage": "schema_validation",
+    "validation_error": "Judge must resolve every visual concern exactly once",
+    "elapsed_seconds": 26.176
+  },
+  {
+    "request_id": 58,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "bfa08c72d9ecd433bf218b9ee1da0c713e07a1526f071e86862e99bfccf08942",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24520,
+      "total_tokens": 24804,
+      "completion_tokens": 284,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 12.803
+  },
+  {
+    "request_id": 59,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "996ec1bb64954fb7080b113d47b0d4dedbbf5a6c0798c63f8f4e1d59643af9dd",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24751,
+      "total_tokens": 25105,
+      "completion_tokens": 354,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 14.259
+  },
+  {
+    "request_id": 60,
+    "invocation_id": "da5a2fdc364749fe9ee83112f245c6b3",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "46dff6165087a179d8bbc80944519ce2745f8984051613c1b95ea9743bf447d4",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24875,
+      "total_tokens": 25145,
+      "completion_tokens": 270,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 11.778
+  },
+  {
+    "request_id": 61,
+    "invocation_id": "4dec057ced3a437194018d721a003e18",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "22f468cce18c42b67fef35d802ed6e89f4ed1f9ddf3675eea5d77c2e74b77b12",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 20890,
+      "total_tokens": 21136,
+      "completion_tokens": 246,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.809
+  },
+  {
+    "request_id": 62,
+    "invocation_id": "4dec057ced3a437194018d721a003e18",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "da07cdc81981d4c63a74601b4fba7d65a3510aaf279310e8a1bc6f4bf3cbe81c",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 20811,
+      "total_tokens": 21011,
+      "completion_tokens": 200,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.391
+  },
+  {
+    "request_id": 63,
+    "invocation_id": "4dec057ced3a437194018d721a003e18",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "b59cbd3dcf8ddbe1b92a80e7b329bcc6a21cf3dd7792b71335f960693dfaa327",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 21028,
+      "total_tokens": 21319,
+      "completion_tokens": 291,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.783
+  },
+  {
+    "request_id": 64,
+    "invocation_id": "4dec057ced3a437194018d721a003e18",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "1ecf60bd19831ba6648dc288fb80bc9ec5fbeae4ef02fcc14b33d21b8c9ffb76",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 21107,
+      "total_tokens": 21543,
+      "completion_tokens": 436,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 15.617
+  },
+  {
+    "request_id": 65,
+    "invocation_id": "4dec057ced3a437194018d721a003e18",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "0537e689861136920bd43d87201c24909004147316d4115fd39697413cb88acd",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 23332,
+      "total_tokens": 23561,
+      "completion_tokens": 229,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 10.829
+  },
+  {
+    "request_id": 66,
+    "invocation_id": "4dec057ced3a437194018d721a003e18",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "ca55c64547b412a3dfb0b90a10b9fab91403ff225477eb96829efe9c7f9fdd3d",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24442,
+      "total_tokens": 24714,
+      "completion_tokens": 272,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 11.577
+  },
+  {
+    "request_id": 67,
+    "invocation_id": "4dec057ced3a437194018d721a003e18",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "83ffc673cf4e4bbf362a96fde267f2d47e5358d53bed8b4554df21b22266468e",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24580,
+      "total_tokens": 24854,
+      "completion_tokens": 274,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 11.605
+  },
+  {
+    "request_id": 68,
+    "invocation_id": "4dec057ced3a437194018d721a003e18",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "77cf21210beebf37e8257e180330b0c40acfce7258aab0b47e0b1238070b2eec",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24809,
+      "total_tokens": 24987,
+      "completion_tokens": 178,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 7.869
+  },
+  {
+    "request_id": 69,
+    "invocation_id": "4dec057ced3a437194018d721a003e18",
+    "role": "judge",
+    "model": "kimi-k2.6",
+    "cache_key": "88a328552c5c3ee87638e72242d8c8c38a0cca51b2061cc61d722177abfe0ad7",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 24935,
+      "total_tokens": 25295,
+      "completion_tokens": 360,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 13.062
+  }
+]

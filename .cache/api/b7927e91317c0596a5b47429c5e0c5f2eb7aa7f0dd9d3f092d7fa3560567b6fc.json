@@ -1,0 +1,31 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      4
+    ],
+    "evidence": "全13页幻灯片中，仅第4页使用了数据图表（柱状图）。经核查该柱状图：Y轴有刻度标签（0、25、50、75、100），X轴有类别标签（'三年前'、'现在'），柱子顶部有数据标签（78%、92%），所有标签均清晰可读，无遮挡、无NaN残留、无超出边界或对比度不足问题。其余页面未使用数据图表，本条自然满足。",
+    "evidence_ids": [
+      "p4_e2",
+      "p4_e3",
+      "p4_e7"
+    ],
+    "resolutions": [],
+    "inspection_resolutions": [],
+    "additional_observations": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 78706,
+    "total_tokens": 78877,
+    "completion_tokens": 171,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 41.902,
+  "attempts": 1
+}

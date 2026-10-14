@@ -1,0 +1,61 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      4
+    ],
+    "evidence": "第4页图表X轴下方出现四个'NaN'残留标签（p4_t16-p4_t19），位于各产线名称正下方，属于图表分类/轴标签区域的NaN残留，直接违反chart_label_integrity标准。该缺陷为实际图像中可辨识的真实问题，非提取错误。",
+    "evidence_ids": [
+      "p4_e3",
+      "p4_e4",
+      "p4_e5",
+      "p4_e6",
+      "p4_e7",
+      "p4_e8",
+      "p4_e9",
+      "p4_e10"
+    ],
+    "resolutions": [],
+    "inspection_resolutions": [
+      {
+        "inspection_id": "p3_overlap_038de22750",
+        "relation_confirmed": false,
+        "defect_present": false,
+        "reason": "局部放大图显示p3_t35与p3_t36为连续单行文本，因排版换行分为两个text span，实际渲染中'36万'与'kWh。'在同一行水平排列，无字形相交或遮挡，文字清晰可辨，不构成visual_readability缺陷。"
+      },
+      {
+        "inspection_id": "p2_overlap_0582ebacc3",
+        "relation_confirmed": false,
+        "defect_present": false,
+        "reason": "局部放大图显示p2_t50与p2_t51为正常段落换行，第二行仅'倍。'一字与第一行左对齐，两行之间有适当垂直间距，无笔画相交或遮挡，文字清晰可读，不构成visual_readability缺陷。"
+      }
+    ],
+    "additional_observations": [
+      {
+        "page": 4,
+        "quote": "NaN",
+        "location": "图表X轴下方，1-4号线名称正下方各一个",
+        "statement": "第4页四线能耗横向对比图表中，X轴四个产线名称下方均出现'NaN'残留标签，与图表数据柱下方对齐，属于图表分类/轴标签的NaN残留",
+        "kind": "visual",
+        "failure_mode": "chart_label_integrity",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 68656,
+    "total_tokens": 69149,
+    "completion_tokens": 493,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 125.464,
+  "attempts": 1
+}

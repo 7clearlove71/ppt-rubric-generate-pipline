@@ -1,0 +1,58 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R01",
+        "R15",
+        "R18"
+      ],
+      "Q02": [
+        "R08"
+      ],
+      "Q03": [
+        "R09"
+      ],
+      "Q04": [
+        "R10"
+      ],
+      "Q05": [
+        "R11",
+        "R19"
+      ],
+      "Q06": [
+        "R12"
+      ],
+      "Q07": [
+        "R13",
+        "R14",
+        "R16"
+      ],
+      "Q08": [
+        "R17"
+      ],
+      "Q09": [
+        "R20",
+        "R21",
+        "R22",
+        "R23"
+      ]
+    },
+    "summary": "rubric结构合理，已消除6项重复计分（R02-R07），关键事实归correctness、交付范围归fulfillment，符合协议。无新增无依据硬条件，条件缺席判定语义明确，各条可独立评判。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 4388,
+    "total_tokens": 4531,
+    "completion_tokens": 143,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 4.483,
+  "attempts": 1
+}

@@ -1,0 +1,299 @@
+{
+  "parsed": {
+    "page": 5,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "三、居民满意度",
+        "location": "页面上部标题区域",
+        "statement": "页面标题为需求规定的五个纲目之一，内容定位明确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#3 居民满意度"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "12,480 份 发放问卷 覆盖 68 个改造小区",
+        "location": "页面左上部数据卡片",
+        "statement": "问卷发放数量及覆盖小区数量，单位明确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "12480",
+            "unit": "份",
+            "subject": "发放问卷",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "68",
+            "unit": "个",
+            "subject": "改造小区",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "95.8% 问卷有效回收率 回收有效问卷 11,962 份",
+        "location": "页面中上部数据卡片",
+        "statement": "有效回收率及回收问卷数量，两项数据可交叉验证",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "95.8",
+            "unit": "%",
+            "subject": "问卷有效回收率",
+            "denominator": "发放问卷数",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "11962",
+            "unit": "份",
+            "subject": "回收有效问卷",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "11962",
+            "right": "12480",
+            "reported": "95.8",
+            "left_unit": "份",
+            "right_unit": "份",
+            "reported_unit": "%",
+            "left_quote": "回收有效问卷 11,962 份",
+            "right_quote": "12,480 份",
+            "reported_quote": "95.8%",
+            "relation_quote": "问卷有效回收率",
+            "meaning": "验证回收率计算：11962÷12480≈95.85%，与报告值95.8%基本吻合"
+          }
+        ]
+      },
+      {
+        "quote": "91.2% 居民总体满意率 含\"满意\"与\"基本满意\"",
+        "location": "页面右上部数据卡片",
+        "statement": "总体满意率定义明确，口径为\"满意\"与\"基本满意\"之和",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "91.2",
+            "unit": "%",
+            "subject": "居民总体满意率",
+            "denominator": "有效样本数",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "调查方式：入户问卷与现场访谈相结合，调查覆盖全部 68 个改造小区。",
+        "location": "页面中上部说明文字",
+        "statement": "调查方式说明，覆盖范围与左侧数据一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "68",
+            "unit": "个",
+            "subject": "改造小区",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "改造工程质量 93.5% 施工组织与安全管理 88.4% 改造内容与需求匹配 86.1% 沟通协商与信息公开 84.9% 长效维护机制 82.7%",
+        "location": "页面中部横向条形图",
+        "statement": "五项分项满意率数据，以条形图形式呈现，数值从82.7%到93.5%递减",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "93.5",
+            "unit": "%",
+            "subject": "改造工程质量",
+            "denominator": "有效样本数",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "88.4",
+            "unit": "%",
+            "subject": "施工组织与安全管理",
+            "denominator": "有效样本数",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "86.1",
+            "unit": "%",
+            "subject": "改造内容与需求匹配",
+            "denominator": "有效样本数",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "84.9",
+            "unit": "%",
+            "subject": "沟通协商与信息公开",
+            "denominator": "有效样本数",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "82.7",
+            "unit": "%",
+            "subject": "长效维护机制",
+            "denominator": "有效样本数",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "短板项：长效维护机制 82.7% 为五个分项最低；需求匹配 86.1%（对应问题（三）、（四））。",
+        "location": "页面下部红色说明文字",
+        "statement": "明确指出两项短板，并与后续问题板块建立呼应关系，符合需求中\"问题要跟前面资金和满意度两块是呼应的\"要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存在问题那部分不要写虚的,要能看出跟前面资金和满意度两块是呼应的、有对应关系的,评审组一眼要能看出问题是从哪儿来的"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "82.7",
+            "unit": "%",
+            "subject": "长效维护机制",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "86.1",
+            "unit": "%",
+            "subject": "需求匹配",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "注：满意率＝评价为\"满意\"或\"基本满意\"的样本数÷有效样本数；本页数据为情景示例，正式汇报以核定数为准。",
+        "location": "页面底部注释文字",
+        "statement": "明确标注数据为情景示例，非既定事实，且给出计算公式，符合规范",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "评价为\"满意\"或\"基本满意\"的样本数",
+            "right": "有效样本数",
+            "reported": "满意率",
+            "left_unit": "人",
+            "right_unit": "人",
+            "reported_unit": "%",
+            "left_quote": "评价为\"满意\"或\"基本满意\"的样本数",
+            "right_quote": "有效样本数",
+            "reported_quote": "满意率",
+            "relation_quote": "满意率＝",
+            "meaning": "满意率计算公式定义"
+          }
+        ]
+      },
+      {
+        "quote": "% （对应问题（三）、（四））。",
+        "location": "页面底部，条形图X轴标签区域与红色说明文字交汇处",
+        "statement": "视觉现象：条形图X轴的\"%\"标签（20%、40%等）与底部红色说明文字\"（对应问题（三）、（四））\"在水平方向上位置接近，但放大图显示为上下分层排版，非真实字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "86.1%",
+        "location": "页面底部，条形图X轴0%标签与红色说明文字交汇处",
+        "statement": "视觉现象：X轴0%标签与红色文字\"86.1%\"在水平位置接近，放大图显示为上下分层，无真实笔画遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "91.2% 居民总体满意率",
+        "location": "页面右上部数据卡片",
+        "statement": "视觉现象：大数字\"91.2%\"与下方文字\"居民总体满意率\"为垂直上下排版关系，数字底部与文字顶部有间距，无真实叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "95.8% 问卷有效回收率",
+        "location": "页面中上部数据卡片",
+        "statement": "视觉现象：大数字\"95.8%\"与下方文字\"问卷有效回收率\"为垂直上下排版关系，无真实叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "12,480 发放问卷",
+        "location": "页面左上部数据卡片",
+        "statement": "视觉现象：大数字\"12,480\"与下方文字\"发放问卷\"为垂直上下排版关系，无真实叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "05",
+        "location": "页面右下角",
+        "statement": "页码标识",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 10212,
+    "total_tokens": 12434,
+    "completion_tokens": 2222,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 69.907,
+  "attempts": 1
+}

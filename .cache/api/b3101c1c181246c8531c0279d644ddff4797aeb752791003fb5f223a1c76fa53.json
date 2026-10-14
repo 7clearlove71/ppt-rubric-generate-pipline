@@ -1,0 +1,534 @@
+{
+  "parsed": {
+    "page": 4,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "老旧小区改造工作情况汇报",
+        "location": "页面左上角标题",
+        "statement": "页面标题，确认主题为老旧小区改造工作汇报",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "老旧小区改造工作汇报的PPT"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "一、改造任务完成情况 ｜ 04 / 13",
+        "location": "页面右上角导航",
+        "statement": "当前页属于第一板块\"改造任务完成情况\"，页码为第4页共13页",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "#1 改造任务完成情况"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "分项改造任务完成明细",
+        "location": "主标题区域",
+        "statement": "本页子标题，与\"改造任务完成情况\"板块主题一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "基础设施类完成率均高于90.0%，完善类与提升类有4项低于90.0%，是总体完工率未达标的主因。",
+        "location": "副标题说明文字",
+        "statement": "对表格数据的概括说明，指出基础设施类完成率均高于90%，完善类与提升类有4项低于90%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "90.0",
+            "unit": "%",
+            "subject": "基础设施类完成率阈值",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "盖",
+        "location": "表格\"光纤及5G覆盖\"行，\"盖\"字单独位于\"覆\"下方",
+        "statement": "根据text_overlap_candidates和局部放大图，\"盖\"字与下方\"加装电梯\"的\"加\"字存在垂直方向上的字形叠印现象。\"光纤及5G覆盖\"被拆分为\"光纤及5G覆\"和单独的\"盖\"，\"盖\"字向下偏移与下一行\"加装电梯\"的\"加\"字笔画发生实际遮挡重叠",
+        "kind": "visual",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "光纤及5G覆盖",
+        "location": "表格第二行改造内容列",
+        "statement": "原文为\"光纤及5G覆盖\"，但渲染几何显示被拆分为\"光纤及\"、\"5G\"、\"覆\"、\"盖\"四个span，其中\"盖\"字位置异常下移",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "加装电梯",
+        "location": "表格第三行改造内容列",
+        "statement": "改造内容为\"加装电梯\"，单位\"部\"，计划量120，完成量96，完成率80.0%，进度状态\"滞后\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "120",
+            "unit": "部",
+            "subject": "加装电梯计划量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "96",
+            "unit": "部",
+            "subject": "加装电梯完成量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "80.0",
+            "unit": "%",
+            "subject": "加装电梯完成率",
+            "denominator": "120",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "96",
+            "right": "120",
+            "reported": "80.0",
+            "left_unit": "部",
+            "right_unit": "部",
+            "reported_unit": "%",
+            "left_quote": "96",
+            "right_quote": "120",
+            "reported_quote": "80.0%",
+            "relation_quote": "完成率",
+            "meaning": "加装电梯完成量占计划量的比例"
+          }
+        ]
+      },
+      {
+        "quote": "九项分项任务：达标1项、基本达标4项、滞后4项（滞后项集中在完善类与提升类）",
+        "location": "表格底部汇总行",
+        "statement": "汇总统计：9项任务中达标1项、基本达标4项、滞后4项，与副标题\"4项低于90.0%\"一致（滞后项即为低于90%的项）",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "1",
+            "unit": "项",
+            "subject": "达标任务数",
+            "denominator": "9",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "4",
+            "unit": "项",
+            "subject": "基本达标任务数",
+            "denominator": "9",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "4",
+            "unit": "项",
+            "subject": "滞后任务数",
+            "denominator": "9",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "判定阈值（与P02一致）：完成率≥95%为达标，90%（含）—95%为基本达标，＜90%为滞后。",
+        "location": "表格下方注释",
+        "statement": "明确三项进度状态的判定标准，并注明与P02页一致，便于跨页数据口径核对",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "95",
+            "unit": "%",
+            "subject": "达标阈值下限",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "90",
+            "unit": "%",
+            "subject": "基本达标阈值下限",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：改造工作台账、分项工程竣工验收备案表",
+        "location": "页面左下角",
+        "statement": "数据来源说明，符合公文规范",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据截至2026年8月31日",
+        "location": "页面右下角",
+        "statement": "数据截止时间明确，但年份2026年为未来时间，属于待核实信息",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2026",
+            "unit": "年",
+            "subject": "数据截止年份",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "比率保留一位小数",
+        "location": "页面右下角注释",
+        "statement": "数据精度说明，表格中完成率均保留一位小数，与说明一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "情景数据",
+        "location": "页面右下角",
+        "statement": "标注为\"情景数据\"，提示数据可能为模拟/示例数据，非实际统计数据",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "水电气路及雨污分流 68 63 92.6% 基本达标",
+        "location": "表格第一行数据",
+        "statement": "基础设施类第一项，计划68个小区，完成63个，完成率92.6%，状态基本达标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "68",
+            "unit": "个小区",
+            "subject": "水电气路及雨污分流计划量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "63",
+            "unit": "个小区",
+            "subject": "水电气路及雨污分流完成量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "92.6",
+            "unit": "%",
+            "subject": "水电气路及雨污分流完成率",
+            "denominator": "68",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "63",
+            "right": "68",
+            "reported": "92.6",
+            "left_unit": "个小区",
+            "right_unit": "个小区",
+            "reported_unit": "%",
+            "left_quote": "63",
+            "right_quote": "68",
+            "reported_quote": "92.6%",
+            "relation_quote": "完成率",
+            "meaning": "水电气路及雨污分流完成量占计划量的比例"
+          }
+        ]
+      },
+      {
+        "quote": "光纤及5G覆盖 68 66 97.1% 达标",
+        "location": "表格第二行数据",
+        "statement": "基础设施类第二项，计划68个小区，完成66个，完成率97.1%，状态达标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "68",
+            "unit": "个小区",
+            "subject": "光纤及5G覆盖计划量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "66",
+            "unit": "个小区",
+            "subject": "光纤及5G覆盖完成量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "97.1",
+            "unit": "%",
+            "subject": "光纤及5G覆盖完成率",
+            "denominator": "68",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "66",
+            "right": "68",
+            "reported": "97.1",
+            "left_unit": "个小区",
+            "right_unit": "个小区",
+            "reported_unit": "%",
+            "left_quote": "66",
+            "right_quote": "68",
+            "reported_quote": "97.1%",
+            "relation_quote": "完成率",
+            "meaning": "光纤及5G覆盖完成量占计划量的比例"
+          }
+        ]
+      },
+      {
+        "quote": "新增停车泊位 3200 2860 89.4% 滞后",
+        "location": "表格第四行数据",
+        "statement": "完善类第二项，计划3200个，完成2860个，完成率89.4%，状态滞后（低于90%阈值）",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "3200",
+            "unit": "个",
+            "subject": "新增停车泊位计划量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "2860",
+            "unit": "个",
+            "subject": "新增停车泊位完成量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "89.4",
+            "unit": "%",
+            "subject": "新增停车泊位完成率",
+            "denominator": "3200",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "2860",
+            "right": "3200",
+            "reported": "89.4",
+            "left_unit": "个",
+            "right_unit": "个",
+            "reported_unit": "%",
+            "left_quote": "2860",
+            "right_quote": "3200",
+            "reported_quote": "89.4%",
+            "relation_quote": "完成率",
+            "meaning": "新增停车泊位完成量占计划量的比例"
+          }
+        ]
+      },
+      {
+        "quote": "社区服务及养老托幼设施 24 19 79.2% 滞后",
+        "location": "表格第七行数据",
+        "statement": "完善类第五项，计划24处，完成19处，完成率79.2%，状态滞后，为全表完成率最低项",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "24",
+            "unit": "处",
+            "subject": "社区服务及养老托幼设施计划量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "19",
+            "unit": "处",
+            "subject": "社区服务及养老托幼设施完成量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "79.2",
+            "unit": "%",
+            "subject": "社区服务及养老托幼设施完成率",
+            "denominator": "24",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "19",
+            "right": "24",
+            "reported": "79.2",
+            "left_unit": "处",
+            "right_unit": "处",
+            "reported_unit": "%",
+            "left_quote": "19",
+            "right_quote": "24",
+            "reported_quote": "79.2%",
+            "relation_quote": "完成率",
+            "meaning": "社区服务及养老托幼设施完成量占计划量的比例"
+          }
+        ]
+      },
+      {
+        "quote": "智慧安防（视频监控、门禁） 68 61 89.7% 滞后",
+        "location": "表格第八行数据",
+        "statement": "提升类第一项，计划68个小区，完成61个，完成率89.7%，状态滞后（低于90%阈值）",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "68",
+            "unit": "个小区",
+            "subject": "智慧安防计划量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "61",
+            "unit": "个小区",
+            "subject": "智慧安防完成量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "89.7",
+            "unit": "%",
+            "subject": "智慧安防完成率",
+            "denominator": "68",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "61",
+            "right": "68",
+            "reported": "89.7",
+            "left_unit": "个小区",
+            "right_unit": "个小区",
+            "reported_unit": "%",
+            "left_quote": "61",
+            "right_quote": "68",
+            "reported_quote": "89.7%",
+            "relation_quote": "完成率",
+            "meaning": "智慧安防完成量占计划量的比例"
+          }
+        ]
+      },
+      {
+        "quote": "绿化及公共空间 15.6 14.1 90.4% 基本达标",
+        "location": "表格第九行数据",
+        "statement": "提升类第二项，计划15.6万平方米，完成14.1万平方米，完成率90.4%，状态基本达标",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "15.6",
+            "unit": "万平方米",
+            "subject": "绿化及公共空间计划量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "14.1",
+            "unit": "万平方米",
+            "subject": "绿化及公共空间完成量",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "90.4",
+            "unit": "%",
+            "subject": "绿化及公共空间完成率",
+            "denominator": "15.6",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": [
+          {
+            "operation": "ratio_percent",
+            "left": "14.1",
+            "right": "15.6",
+            "reported": "90.4",
+            "left_unit": "万平方米",
+            "right_unit": "万平方米",
+            "reported_unit": "%",
+            "left_quote": "14.1",
+            "right_quote": "15.6",
+            "reported_quote": "90.4%",
+            "relation_quote": "完成率",
+            "meaning": "绿化及公共空间完成量占计划量的比例"
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 11055,
+    "total_tokens": 15186,
+    "completion_tokens": 4131,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 129.065,
+  "attempts": 1
+}

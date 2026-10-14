@@ -1,0 +1,86 @@
+{
+  "status": "engineering_repairs_completed_quality_acceptance_incomplete",
+  "prompt_version": "2026-10-12.6",
+  "rubric_validator": 10,
+  "judge_validator": 6,
+  "offline_tests": {
+    "passed": 120,
+    "failed": 0
+  },
+  "generation06": {
+    "status": "approved",
+    "items": 13,
+    "prompt_version": "2026-10-12.4",
+    "rubric_path": "recheck06/06/rubric.json",
+    "first_pass": "quality_failed",
+    "manually_approved": false
+  },
+  "real_component_probes": {
+    "case_id": "09",
+    "r04_equivalent_verdicts_consistency": {
+      "status": "passed",
+      "distinct_live_calls": 1
+    },
+    "visual_a_r14": {
+      "schema": "passed_under_2026-10-12.5",
+      "answer": "no",
+      "quality": "failed_anchor_accuracy",
+      "reason": "Still attributes page1 overlap to 4.2 and 亿; image shows 亿 and 同比.",
+      "latest_geometry_fix": "offline_verified_only"
+    },
+    "reasoning_b_r09": {
+      "status": "incomplete",
+      "reason": "Latest online attempts used invalid source_refs, then yes with confirmed defects. Neither output accepted.",
+      "latest_boolean_and_source_schema_fix": "offline_verified_only"
+    }
+  },
+  "spatial_diagnostic": {
+    "numeric_vs_unit_bbox_intersects": false,
+    "unit_vs_yoy_bbox_intersects": true,
+    "note": "Bounding box diagnostics; raw image independently inspected. New geometry-assisted model protocol not run online."
+  },
+  "new_full_deck_scores": 0,
+  "new_human_agreement": null,
+  "holdout_run": false,
+  "remaining_risks": [
+    "Real model perception and semantic judgments remain unvalidated under final .6.",
+    "01/02/03/05 source ownership conflicts still rejected in offline replay; need real bounded regeneration.",
+    "Component success is not a full-case score or measured human agreement."
+  ],
+  "budget": {
+    "status": "closed",
+    "unused_budget_is_not_future_authorization": true,
+    "services": {
+      "bailian": {
+        "actual_requests": 10,
+        "cap": 12,
+        "statuses": {
+          "success": 10
+        },
+        "reported_prompt_tokens": 72507,
+        "reported_completion_tokens": 9074,
+        "reported_total_tokens": 81581,
+        "usage_missing_requests": 0,
+        "request_journal": "audit06/requests.json"
+      },
+      "maas": {
+        "actual_requests": 18,
+        "cap": 18,
+        "statuses": {
+          "success": 4,
+          "failed": 13,
+          "started": 1
+        },
+        "reported_prompt_tokens": 479723,
+        "reported_completion_tokens": 24062,
+        "reported_total_tokens": 503785,
+        "usage_missing_requests": 1,
+        "request_journal": "probes09/requests.json",
+        "interrupted_request_ids": [
+          15
+        ],
+        "interruption_note": "Request 15 was in flight when the superseded worker was stopped. Counted as consumed; provider usage unknown. Historical started status is preserved."
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "evidence": "所有含具体数据的页面均在底部脚注明确标注“本页数据为情景示例，正式汇报以核定数为准”：第3页（改造任务完成情况，p.3）、第4页（资金使用情况，p.4）、第5页（居民满意度，p.5）、第6页（存在问题，p.6）、第7页（下一步计划，p.7）。标注位置一致、措辞统一，边界清晰，未将示意数据包装成既定事实。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 28399,
+    "total_tokens": 28521,
+    "completion_tokens": 122,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 17.15,
+  "attempts": 1
+}

@@ -1,0 +1,251 @@
+{
+  "parsed": {
+    "page": 3,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "老宅未消失，日常先退场",
+        "location": "页面上部标题区域",
+        "statement": "页面标题，呈现Day1主题",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第一层：空心化，不只指房屋空置，也指代际结构收缩。",
+        "location": "标题下方副标题",
+        "statement": "将空心化定位为第一层分析维度，并扩展其含义",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "40",
+        "location": "页面左侧大号数字",
+        "statement": "数字4和0分两个span渲染，视觉上组合为40",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "现存明清老宅约40栋"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "栋",
+            "subject": "明清老宅",
+            "denominator": "不适用",
+            "time_origin": "Day1"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "现存明清老宅 · 约",
+        "location": "40数字右侧",
+        "statement": "说明40的单位与约数性质",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "现存明清老宅约40栋"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "<1/2",
+        "location": "页面左侧中部",
+        "statement": "用数学符号表示不到一半的比例",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "住人不到一半"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "<1/2",
+            "unit": "1",
+            "subject": "住人比例",
+            "denominator": "全部老宅",
+            "time_origin": "Day1"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "仍在居住",
+        "location": "<1/2下方",
+        "statement": "说明小于1/2的含义是仍在居住的比例",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "居住状态的收缩",
+        "location": "页面右侧卡片标题",
+        "statement": "对Day1现象的概念化概括",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "年轻人外出打工。",
+        "location": "右侧卡片第一行",
+        "statement": "Day1核心事实之一",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年轻人外出打工"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "留守者多为老人。",
+        "location": "右侧卡片第二行",
+        "statement": "Day1核心事实之一",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "留守多为老人"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "老宅仍具存量价值。",
+        "location": "右侧卡片第三行",
+        "statement": "作品对Day1现象的推论性判断，原文未直接出现",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "“约”“不到一半”为田野口述观察，后续需核对户数与居住名单。",
+        "location": "右侧卡片底部注释",
+        "statement": "对数字不确定性的显式标注，符合存疑标记要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "空心化：建筑存量仍在，生活连续性与代际在场减弱。",
+        "location": "页面底部总结条",
+        "statement": "对空心化的归纳总结，体现其作为初步感受/后续方向的定位",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "田野初察 · 第 03 / 07 页",
+        "location": "页面左下角",
+        "statement": "页码标识，显示为7页中的第3页",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "03",
+            "unit": "页",
+            "subject": "当前页码",
+            "denominator": "07",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "0",
+        "location": "40数字的个位部分，与\"现存明清老宅\"文字有bbox交集",
+        "statement": "视觉现象：大号数字0的bbox与\"现存明清老宅\"文字bbox相交，fraction_of_smaller_bbox为0.3484",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "现存明清老宅 ",
+        "location": "40数字右侧，与数字0有bbox交集",
+        "statement": "视觉现象：金色文字与白色大号数字0在渲染上形成叠层效果，非遮挡性缺陷",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "Day1 进村。现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。",
+        "location": "整页内容对应原文",
+        "statement": "本页完整覆盖了Day1四项核心事实：约40栋、住人不到一半、年轻人外出打工、留守多为老人，无缺失或改写",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "Day1 进村。现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 7207,
+    "total_tokens": 8950,
+    "completion_tokens": 1743,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 258.01,
+  "attempts": 2
+}

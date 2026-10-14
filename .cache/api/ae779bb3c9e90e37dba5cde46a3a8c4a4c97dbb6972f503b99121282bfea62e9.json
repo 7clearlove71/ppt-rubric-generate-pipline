@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "两个候选作品均判定为yes，但证据呈现方式不同：A作品提供了极为详尽的逐页计算核查（含大量evidence_ids），B作品提供了关键计算节点的验证。两者核心结论一致——所有计算逻辑正确、口径统一、无算术错误。",
+      "A作品在verdict中提及'P3标注93.0%'与计算值92.647%→92.6%存在微小差异，但evidence中p3_e6明确记录为92.6%，且verdict整体判定为计算正确，该细节不影响最终yes结论。",
+      "B作品存在少量视觉叠印问题（p6_e16至p6_e20），但属于视觉呈现层面，不涉及本条criterion管辖的计算逻辑、比率推导或比较错误范畴。",
+      "两作品在'情景数据'标注方面均明确提示数据性质，不构成计算逻辑层面的实质冲突。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 66786,
+    "total_tokens": 66993,
+    "completion_tokens": 207,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 122.833,
+  "attempts": 1
+}

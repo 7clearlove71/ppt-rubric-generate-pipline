@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "review_author": "Codex subagent independent view_image inspection; not a new human annotation or revised ground truth",
+  "status": "complete",
+  "review_scope": {
+    "samples": 4,
+    "model_responses": 8,
+    "viewed_unique_images": 6,
+    "candidate_preference_assessed": false,
+    "human_winner_labels_read": false,
+    "holdout_content_read": false,
+    "external_model_api_calls_by_this_review": 0,
+    "raw_responses_changed": false,
+    "expected_labels_changed": false,
+    "prompts_or_code_changed": false
+  },
+  "summary": {
+    "raw_readability_answers_matching_frozen_relation": 8,
+    "raw_readability_answers_total": 8,
+    "positive_sample_detection": {
+      "matching_responses": 6,
+      "responses": 6,
+      "distinct_images": 3
+    },
+    "negative_control": {
+      "false_positive_responses": 0,
+      "responses": 2,
+      "distinct_images": 1
+    },
+    "semantic_double_attribution": {
+      "primary_samples": [],
+      "verification_samples": [
+        "local-01",
+        "local-03"
+      ]
+    },
+    "exact_key_collision_would_detect": [
+      "local-03/verification"
+    ],
+    "semantic_duplicate_not_detected_by_exact_key": [
+      "local-01/verification"
+    ],
+    "rationale_quality": "Not all eight matching readability answers have correct object/number descriptions; no overall rationale-accuracy score is claimed.",
+    "conclusion": "局部可读性标签回归8/8匹配，但存在命中对象与数字转录错误，MaaS两例违反V_LAYOUT排除条件。不能将8/8写成完整语义验收通过。"
+  },
+  "records": [
+    {
+      "id": "local-01",
+      "codex_image_findings": [
+        "指定局部中灰色待专业辨识等文字与白色存疑核心标题实际叠印。橙色初步观察/存疑待考/村民转述为另一行，不能把待专业辨识说成橙色。",
+        "原页另有橙色笔记事实与院落轴线字段、黑色A/B木雕对照标题与灰色说明、底部字段/核查路径附近文字的叠印。五个编号解释卡片仍可定位为并列项。"
+      ],
+      "assessors": {
+        "primary": {
+          "readability_answer_supported": true,
+          "target_object_localization": "partial_with_wrong_object_color_and_pair",
+          "layout_double_attribution": false,
+          "rationale_findings": [
+            {
+              "kind": "incorrect_object_attribution",
+              "response_excerpt": "橙色“待专业辨识”叠印在“初步观察",
+              "finding": "待专业辨识为灰色，穿过的是白色存疑核心标题；该响应的颜色和对象配对不准确。正确的no标签不能证明这段理由准确。"
+            },
+            {
+              "kind": "layout_exclusion_applied",
+              "finding": "V_LAYOUT=yes排除叠印后描述标题、分区及五个编号项，未重复处罚本次可读性缺陷。"
+            }
+          ],
+          "model": "kimi-k3",
+          "request_id": 1,
+          "response_pointer": "/records/0/assessors/primary/response",
+          "response_sha256": "57a370be7b84feff04acf79c9cf56f2c89b5ce608f82d10bb7829142e1edd5b4",
+          "raw_V_READ": "no",
+          "raw_V_LAYOUT": "yes",
+          "raw_exact_defect_key_collision": false
+        },
+        "verification": {
+          "readability_answer_supported": true,
+          "target_object_localization": "coarse_and_partly_mispaired",
+          "layout_double_attribution": true,
+          "rationale_findings": [
+            {
+              "kind": "imprecise_object_pair",
+              "response_excerpt": "中部区域'A/B栋木雕对照'等文字与上方'笔记事实：几栋木雕风格明显不同'等文字发生重叠",
+              "finding": "原图中这两个标题分处不同水平带；实际可见的是各自与灰色说明或字段文字叠印，不能直接将它们互相配成遮挡对象。"
+            },
+            {
+              "kind": "semantic_duplicate_penalty",
+              "response_excerpt": "内容层级与阅读顺序因重叠穿插而混乱",
+              "finding": "V_LAYOUT=no再次以同一叠印/遮挡为原因，未给出在内容可读前提下仍独立存在的布局缺陷。五个编号卡片的并列结构仍可定位。",
+              "exact_key_detector_would_flag": false
+            }
+          ],
+          "model": "kimi-k2.6",
+          "request_id": 1,
+          "response_pointer": "/records/0/assessors/verification/response",
+          "response_sha256": "fff8e50f998d6c8411dd51ab44a283e73ade55f2c2d5b1dfd976211a99f0c9af",
+          "raw_V_READ": "no",
+          "raw_V_LAYOUT": "no",
+          "raw_exact_defect_key_collision": false
+        }
+      },
+      "case_id": "05",
+      "candidate_id": "B",
+      "original_page": 5,
+      "frozen_expected_relation": "overlap",
+      "viewed_images": [
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/visual-focus-v1/546987ca8ada50408d9d3e850ee9a5e827a4c3cb27473aa7f4c3f14ba2108fbe.png",
+          "sha256": "f530d5d22e57cb5cd2beed818f504c3d7328e365109fafd850dbe2b7864900ba",
+          "view_image_detail": "original"
+        },
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/page-005.png",
+          "sha256": "b8b7232aff5a935fe8be4d3ee972e9233b803fcbfcab2fce1dae4f5a1594a307",
+          "view_image_detail": "original"
+        }
+      ]
+    },
+    {
+      "id": "local-02",
+      "codex_image_findings": [
+        "指定局部中红色完工率92.6%等批注与灰色低于基础类与完善类等正文实际笔画相交。原页问题01正文数值为76.5%。",
+        "问题03尾部91.2%与红色说明叠印，问题04尾部93.5%与红色说明叠印。问题02红色说明位于灰色于所在行；下一行中央附近还与问题04的红色短分隔条相交，不能把这些都说成同一红色批注覆盖。"
+      ],
+      "assessors": {
+        "primary": {
+          "readability_answer_supported": true,
+          "target_object_localization": "identified_with_inaccurate_extra_transcription",
+          "layout_double_attribution": false,
+          "rationale_findings": [
+            {
+              "kind": "numeric_transcription_error",
+              "response_excerpt": "04区“93.3%。”",
+              "finding": "原页对应灰色数字为93.5%，不是93.3%；叠印关系仍存在。"
+            },
+            {
+              "kind": "object_attribution_limit",
+              "response_excerpt": "“中央”二字被红线穿过",
+              "finding": "中央附近确有红色短分隔条，和上一行红色来源批注不是同一个对象。响应将它们合在同一批注覆盖叙述中，需保留对象区分。"
+            },
+            {
+              "kind": "layout_exclusion_applied",
+              "finding": "V_LAYOUT=yes只评价四象限和编号关系，未重复处罚叠印。"
+            }
+          ],
+          "model": "kimi-k3",
+          "request_id": 2,
+          "response_pointer": "/records/1/assessors/primary/response",
+          "response_sha256": "d4d109a778675f389ef274c8bb122b5a2b7054b51a3f3478334eb032143e2183",
+          "raw_V_READ": "no",
+          "raw_V_LAYOUT": "yes",
+          "raw_exact_defect_key_collision": false
+        },
+        "verification": {
+          "readability_answer_supported": true,
+          "target_object_localization": "identified_with_inaccurate_extra_transcription",
+          "layout_double_attribution": false,
+          "rationale_findings": [
+            {
+              "kind": "numeric_transcription_error",
+              "response_excerpt": "76.8%，低于基础类与完善类。",
+              "finding": "原页01数字为76.5%，不是76.8%；指定局部红灰笔画相交对象命中。"
+            },
+            {
+              "kind": "numeric_transcription_error",
+              "response_excerpt": "93.9%。",
+              "finding": "原页04数字为93.5%，不是93.9%。"
+            },
+            {
+              "kind": "object_attribution_limit",
+              "finding": "将02红色批注与中央与省级资金一行配为叠印对象不准确：该批注与上方灰色于所在行相交，中央所在下一行与红色短分隔条相交。"
+            },
+            {
+              "kind": "layout_exclusion_applied",
+              "finding": "V_LAYOUT=yes明确不重复计入叠印。"
+            }
+          ],
+          "model": "kimi-k2.6",
+          "request_id": 2,
+          "response_pointer": "/records/1/assessors/verification/response",
+          "response_sha256": "952899c974666d0e844b826e9be63e7fa68a13e21d8844e20847510c7f86b05a",
+          "raw_V_READ": "no",
+          "raw_V_LAYOUT": "yes",
+          "raw_exact_defect_key_collision": false
+        }
+      },
+      "case_id": "06",
+      "candidate_id": "B",
+      "original_page": 6,
+      "frozen_expected_relation": "overlap",
+      "viewed_images": [
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/visual-focus-v1/a42a8246f7e514f09fc3c5e65d4e6e675de0d54987d849fccfe001de753278ce.png",
+          "sha256": "5b90655a6ca1b6cd9a36aa15e36b65ae1df687288d9e93a8daead5e31ea9a262",
+          "view_image_detail": "original"
+        },
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-006.png",
+          "sha256": "d2a46481fcb2f67d17773b32779ad44ab28463c3c0df0aa2e62420b8cf998e09",
+          "view_image_detail": "original"
+        }
+      ]
+    },
+    {
+      "id": "local-03",
+      "codex_image_findings": [
+        "01红色责任说明与灰色达到100.0%相交；02红色责任说明与灰色提升至90.0%以上等正文相交；03红色责任说明与灰色长效维护机制满意率提升至一行相交。",
+        "03的90.0%在下一行单独出现，不是被红色责任说明覆盖的同一行。04红色责任说明独立成行，与上方灰色正文有间距。2×2编号分区及标题结构可辨。"
+      ],
+      "assessors": {
+        "primary": {
+          "readability_answer_supported": true,
+          "target_object_localization": "main_anchors_identified_with_minor_scope_overstatement",
+          "layout_double_attribution": false,
+          "rationale_findings": [
+            {
+              "kind": "overextended_covered_text",
+              "response_excerpt": "长效维护机制满意率提升至90.0%",
+              "finding": "被红字穿过的是长效维护机制满意率提升至一行；90.0%另起下一行，仍可单独辨认。将整段连写为重叠对象扩大了实际覆盖范围。"
+            },
+            {
+              "kind": "negative_subregion_correctly_excluded",
+              "finding": "正确指出04红字独立成行，没有将全部红色说明一概标为叠印。"
+            },
+            {
+              "kind": "layout_exclusion_applied",
+              "finding": "V_LAYOUT=yes按2×2编号分区说明组织，未再次处罚叠印。"
+            }
+          ],
+          "model": "kimi-k3",
+          "request_id": 3,
+          "response_pointer": "/records/2/assessors/primary/response",
+          "response_sha256": "e3e86e56d93b302cd6646e0c5aeb73b3e190ca35a90107b8223f138a25e9b007",
+          "raw_V_READ": "no",
+          "raw_V_LAYOUT": "yes",
+          "raw_exact_defect_key_collision": false
+        },
+        "verification": {
+          "readability_answer_supported": true,
+          "target_object_localization": "main_anchors_identified_with_wrong_number",
+          "layout_double_attribution": true,
+          "rationale_findings": [
+            {
+              "kind": "numeric_transcription_error",
+              "response_excerpt": "提升至95.0%以上",
+              "finding": "原页02为提升至90.0%以上，不是95.0%。"
+            },
+            {
+              "kind": "overextended_covered_text",
+              "response_excerpt": "关键数据（100.0%、95.0%、90.0%）",
+              "finding": "02数字被误读；03的90.0%在下一行单独可辨，不能称三处数字均被红字遮挡。"
+            },
+            {
+              "kind": "semantic_duplicate_penalty",
+              "response_excerpt": "布局本身未造成错误的对应关系或难以确定的阅读顺序。然而",
+              "finding": "先承认独立布局结构正常，再把同一物理叠印改称编码失效，违反V_LAYOUT排除。V_READ与V_LAYOUT的defect.key完全相同，精确key检查能够标出此例。",
+              "exact_key_detector_would_flag": true
+            }
+          ],
+          "model": "kimi-k2.6",
+          "request_id": 3,
+          "response_pointer": "/records/2/assessors/verification/response",
+          "response_sha256": "6d80e76509217ba09b23c90d9e035407710f742753ba577d79c11bd1f4be326f",
+          "raw_V_READ": "no",
+          "raw_V_LAYOUT": "no",
+          "raw_exact_defect_key_collision": true
+        }
+      },
+      "case_id": "06",
+      "candidate_id": "B",
+      "original_page": 7,
+      "frozen_expected_relation": "overlap",
+      "viewed_images": [
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-007.png",
+          "sha256": "7546c3bdd0f69345fb0746fe44858a416f13baf83fd905be85811b561cfec328",
+          "view_image_detail": "original"
+        }
+      ]
+    },
+    {
+      "id": "local-04",
+      "codex_image_findings": [
+        "两张图表及顶部/底部文字区域分离。裁员0人与+90人/约+28.1%的红色标签框间有空隙；320人、410人、104万元、102万元柱顶标签与其他对象没有可见叠印。",
+        "标题—KPI/引语—双图—结论—来源的层级与图像一致；灰/红年度对应明确。"
+      ],
+      "assessors": {
+        "primary": {
+          "readability_answer_supported": true,
+          "target_object_localization": "negative_control_correctly_described",
+          "layout_double_attribution": false,
+          "rationale_findings": [
+            {
+              "kind": "negative_control_pass",
+              "finding": "V_READ=yes、V_LAYOUT=yes均有原图支持；没有将相邻红框或柱顶标签误报成遮挡。"
+            }
+          ],
+          "model": "kimi-k3",
+          "request_id": 4,
+          "response_pointer": "/records/3/assessors/primary/response",
+          "response_sha256": "87a1ebf510993285409d096913ff9dc222f8c7f9b371c1cd1cf3254ddc434dc3",
+          "raw_V_READ": "yes",
+          "raw_V_LAYOUT": "yes",
+          "raw_exact_defect_key_collision": false
+        },
+        "verification": {
+          "readability_answer_supported": true,
+          "target_object_localization": "negative_control_correctly_described",
+          "layout_double_attribution": false,
+          "rationale_findings": [
+            {
+              "kind": "negative_control_pass",
+              "finding": "V_READ=yes、V_LAYOUT=yes均有原图支持；本抽查未发现负例误报。"
+            }
+          ],
+          "model": "kimi-k2.6",
+          "request_id": 4,
+          "response_pointer": "/records/3/assessors/verification/response",
+          "response_sha256": "c11fbc15f6700ac146ecf24823b96a9497540cd35997aa413ade9ca4871fccd5",
+          "raw_V_READ": "yes",
+          "raw_V_LAYOUT": "yes",
+          "raw_exact_defect_key_collision": false
+        }
+      },
+      "case_id": "09",
+      "candidate_id": "B",
+      "original_page": 4,
+      "frozen_expected_relation": "no_overlap",
+      "viewed_images": [
+        {
+          "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-004.png",
+          "sha256": "017df97898c6b6098f82a3915bed748f89143b6b636e67bf3af193f1ff5dcf43",
+          "view_image_detail": "original"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "这是Codex针对已选开发图像的抽查，不是新的人类重标或独立人工真值。",
+    "三个正例、一个负例为定向选择，不能估计总体视觉准确率、PPT完整得分或人工一致率。",
+    "预期overlap与模型V_READ只是局部检测对应；原页其他区域的理由不能由单一局部标签认证。",
+    "精确defect.key相同可暴露部分重复归因，改写key后的同义重复仍需语义审查。",
+    "本QA只记录缺陷，不自动改判或调整权重；所有答案、预期、图片与代码均保留。"
+  ],
+  "created_at_utc": "2026-10-14T03:48:20.766573+00:00",
+  "inputs": {
+    "frozen_expected_dataset": {
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/local-ground-truth.json",
+      "sha256": "d8c57993c92a55dfcb8ec25c080a28d2019a3f5337d1a81a22818c234d8ced6f"
+    },
+    "raw_regression_responses": {
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/local-regression/results.json",
+      "sha256": "f82159cb59674f9267e09a3a82eaef4d9f66ace8e270877e5c17151f5edd0abb"
+    },
+    "journals": [
+      {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/local-regression/primary-api/requests.json",
+        "sha256": "2a04e9c8edc3784168b15f40080f0bf46155c939b49431d5bdd54f8472c8e3c1"
+      },
+      {
+        "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/local-regression/verification-api/requests.json",
+        "sha256": "88d3c0ed63b78372e907d30a9ebeab54d9e0e2356ccf43f9638fa9c699b486ce"
+      }
+    ]
+  }
+}

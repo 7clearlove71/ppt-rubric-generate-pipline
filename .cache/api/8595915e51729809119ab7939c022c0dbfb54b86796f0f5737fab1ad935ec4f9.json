@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A与B的verdict均判定为yes，且双方证据均显示『柔性OLED器件弯曲10万次无衰减』这一关键事实在全篇多处明确、一致呈现。两候选在弯曲次数（10万次/100,000次）与结论（无衰减/性能零衰减/性能无衰减）的等价表述上均符合criterion允许范围，且均未出现量级错误或结论改写。候选B的p2_e6虽记录行业认证口径30万-60万次，但该证据已被其verdict中的resolution明确排除为oled_bending_fact缺陷，因该页底部注释p2_e3已将该事实标注为团队自有成果，不构成对关键事实的改写或矛盾。两候选在事实呈现方式、展开顺序、详略程度上存在差异（A侧重多页重复确认，B侧重技术机理与行业对比），但均满足『全篇至少一处明确表述』且『多处出现时数值与结论前后一致』的通过条件，不构成标准漂移。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 35046,
+    "total_tokens": 35278,
+    "completion_tokens": 232,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 57.207,
+  "attempts": 1
+}

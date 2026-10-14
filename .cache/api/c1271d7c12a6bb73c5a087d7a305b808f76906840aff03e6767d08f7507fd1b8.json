@@ -1,0 +1,21 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "rubric结构完整，来源引用准确，各条目边界清晰、无双重扣分风险，通过条件与例外相容，无强制额外阈值，未对正常舍入、合理建议、背景常识等设置不当排斥。符合评测标准。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 7588,
+    "total_tokens": 7661,
+    "completion_tokens": 73,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 24.709,
+  "attempts": 1
+}

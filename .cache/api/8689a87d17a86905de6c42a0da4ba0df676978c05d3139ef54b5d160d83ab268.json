@@ -1,0 +1,21 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "rubric完整且自洽。事实条目R01-R03准确锁定来源要求的三项关键数据，保留起止数值与结论强度，排除条件合理区分了呈现形式与事实准确性。交付物条目R04-R05允许基于已知事实合理展开未给定细节，同时通过固定条目I_BOUNDARY防范冒充事实风险。受众与时长条目R06-R07聚焦适配性而非硬性量化指标。通用固定条目C_REASON、I_BOUNDARY、N_FLOW、V_READ、V_LAYOUT的适用条件、通过条件与排除项相互独立，无双重扣分风险。无强制额外阈值、无单一通过条件与例外冲突，无需要边界修复的判据缺陷。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6412,
+    "total_tokens": 6578,
+    "completion_tokens": 166,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 5.575,
+  "attempts": 1
+}

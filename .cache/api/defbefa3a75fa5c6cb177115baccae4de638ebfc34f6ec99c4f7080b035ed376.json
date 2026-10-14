@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      1,
+      2,
+      3,
+      5,
+      6
+    ],
+    "evidence": "五项数据全部准确呈现：①全年营收4.2亿、同比+26%（页1、页2）；②研发投入占比9%→14%（页2、页3、页5）；③新增专利18项（页2、页5）；④员工320→410人（页2、页3、页6）；⑤客户续约率91%（页2、页6）。数值、单位、变化方向均与需求一致，无错误或缺失。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 26147,
+    "total_tokens": 26268,
+    "completion_tokens": 121,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 18.787,
+  "attempts": 1
+}

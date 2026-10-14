@@ -1,0 +1,1917 @@
+{
+  "case_id": "03",
+  "candidate_id": "A",
+  "candidate_hash": "955fb1fa5c1c8faeeba214060bf4fe806e799bb49babaa47a714ab0ae8701bda",
+  "document_id": "doc_8e9c36215717be0b6134d7d9",
+  "rubric_hash": "eb3f512a841427e081554b4f03d725303187db792348eb9f3a277a57b42b5dc5",
+  "source_hash": "f4fbe496938af45cad16c8fb8616de42b1a84452abcfae3f9afc4e5273f6c6eb",
+  "config_hash": "f693d7f2e7fd6cc3da5927dd9f3237b4ed81bb029a83b2804081ab672fedc1f1",
+  "judge_model": "kimi-k3",
+  "verification_model": "kimi-k2.6",
+  "protocol": "contract_v2",
+  "evaluation_protocol": "contract_v2",
+  "judge_validator_version": 1,
+  "judge_prompt_fingerprint": "7eca6a1a1416543c13132f105fa07a4737d368017c70e254f964d2242327220c",
+  "primary": {
+    "model": "kimi-k3",
+    "document_id": "doc_8e9c36215717be0b6134d7d9",
+    "content": {
+      "status": "success",
+      "raw": {
+        "verdicts": [
+          {
+            "rubric_id": "R_Q01",
+            "answer": "yes",
+            "pages": [
+              2,
+              4,
+              6
+            ],
+            "evidence": "第2页图表完整呈现四线一个月对比：1号线80万件/68万kWh/0.85kWh/件、2号线95/49/0.52、3号线70/34/0.48、4号线60/31/0.52，与来源逐值一致，标题与页脚明确'一个月'实测口径；空载能耗8/6/12/5 kWh/h在第4页双轴图和第6页柱状图完整呈现。核心发现方面，第2页关键发现01'单位能耗0.85kWh/件，约为其余三线（0.48-0.52）的1.6-1.8倍'及第4页'远高于其他产线的0.5左右'均准确突出。deck级要求由不同页面共同满足。",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q02",
+            "answer": "yes",
+            "pages": [
+              4,
+              7
+            ],
+            "evidence": "第4页大标题'根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'，正文'根因锁定：液压系统老化——现场排查确认液压系统老化导致效率下降'，并在排查逻辑链中呈现'现场排查→根因锁定'；第7页决策要点回顾'根因：液压系统老化导致效率下降'。对象、因果与限定均与来源一致。",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q03",
+            "answer": "yes",
+            "pages": [
+              5
+            ],
+            "evidence": "第5页完整呈现投资回报账：投入120万元；测算口径明示月产量80万件、工业电价0.75元/kWh；口径一降至0.45月省电32万kWh、月省24万元、120÷24≈5个月；口径二降至0.5月省28万kWh、月省约21万元、120÷21≈5-6个月；并以来源给定的'保守口径约18个月收回成本'（计入施工停产与爬坡期打折）作为回本结论。测算过程可理解、可复算，'约''大概'等表述保持估算性质。",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q04",
+            "answer": "yes",
+            "pages": [
+              2,
+              6
+            ],
+            "evidence": "第6页专页呈现：3号线单位能耗0.48kWh/件四线最优，但待机空载12kWh/h为四线之最（1号线8、2号线6、4号线5），'指向停机流程不规范'，正文明确'停机流程不规范，该停未停、该断未断'；第2页关键发现04亦概括同一事实。对象、数值、单位与结论均与来源一致。",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q05",
+            "answer": "yes",
+            "pages": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "evidence": "全篇结构符合来源要求的主线：第2-3页先摆四条产线能耗对比与标杆对标，第4页聚焦1号线做根因深挖（数据异常→现场排查→根因→解决路径），第5页落到节能改造投资回报测算，第7页立项建议仍以120万投资与回报为决策落点；第6页3号线管理改进是来源要求'提一句'的附加内容，置于测算与建议之间不破坏主线结构。",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q06",
+            "answer": "yes",
+            "pages": [
+              3,
+              5,
+              7
+            ],
+            "evidence": "第3页对标图虚线及标注'行业标杆0.45'、标题'对标行业标杆0.45kWh/件'；第5页口径一'降至行业标杆0.45kWh/件'；第7页对标图'行业标杆0.45'。各处引用数值均为0.45kWh/件，与来源一致。",
+            "defect": null
+          },
+          {
+            "rubric_id": "C_REASON",
+            "answer": "yes",
+            "pages": [
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            "evidence": "逐项复算通过：四线合计68+49+34+31=182万kWh；月电费182×0.75=136.5万元；年电费136.5×12=1638万元；1号线产量占比80/305≈26%、用电占比68/182≈37%；0.85对其余三线倍数1.63-1.77即1.6-1.8倍；超标杆(0.85-0.45)/0.45≈89%、(0.52-0.45)/0.45≈16%、(0.48-0.45)/0.45≈7%；月多耗电(0.85-0.45)×80万=32万kWh×0.75=24万元、(0.85-0.5)×80万=28万kWh×0.75=21万元；年节省24×12=288万、21×12=252万；120÷24=5个月、120÷21≈5.7个月；12/5=2.4倍；12×0.75=9元/小时。比率分子分母与时期口径一致（同为月产80万件、同一电价），推导值均在页脚标注测算口径，结论由所述前提支持，未将相关性冒充因果。",
+            "defect": null
+          },
+          {
+            "rubric_id": "I_BOUNDARY",
+            "answer": "yes",
+            "pages": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "evidence": "来源外新增断言均有清楚界定：年电费1638万元等推导值在第2页页脚明确标注'为推导值'并给出电价口径；第3页页脚声明'单源口径，无外部交叉验证'；第4页页脚声明根因结论'均为用户素材口径，未做外部检索验证'；第6页停机SOP、能耗监控告警等列入'改进方向'板块，第7页'安排生产淡季施工''验收目标0.45-0.5'均为明确建议/目标表述；液压元件磨损机理说明属对老化致效率下降的常识性解释且页脚已统一声明口径。未见新增事实冒充已证实情况。",
+            "defect": null
+          },
+          {
+            "rubric_id": "N_FLOW",
+            "answer": "yes",
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "evidence": "内容顺序为封面→四线全景对比→标杆对标→1号线根因深挖→投资回报测算→3号线管理改进→立项建议→结尾，主线与来源要求的叙述顺序一致；模块间有显式衔接（第4页'为下一页投资回报测算提供技术口径'、第6页'与1号线技改形成两条腿走路'、第7页决策要点回顾），第4页底部排查逻辑链将异常发现→排查→根因→方案串联。无无关信息堆积、自相割裂或无意义重复。",
+            "defect": null
+          }
+        ]
+      }
+    },
+    "visual_batches": [
+      {
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "crop_ids": [
+          "doc_8e9c36215717be0b6134d7d9/p3_overlap_038de22750",
+          "doc_8e9c36215717be0b6134d7d9/p2_overlap_0582ebacc3",
+          "doc_8e9c36215717be0b6134d7d9/p2_overlap_cf663a25ad"
+        ],
+        "status": "success",
+        "raw": {
+          "pages": [
+            {
+              "page": 1,
+              "verdicts": [
+                {
+                  "rubric_id": "V_READ",
+                  "answer": "yes",
+                  "pages": [
+                    1
+                  ],
+                  "evidence": "封面页：绿色小字“// 节能改造立项审批汇报”、白色大标题“产线设备能耗分析与节能改造立项建议”、副标题“基于一个月产线设备能耗数据的专项分析与改造立项汇报”、按钮“READ THE BRIEF”及右下角“DOC · 2026 年 9 月 / 汇报对象：立项评审委员会”均清晰可辨，无重叠、截断或对比不足；无图表，不适用图例要求",
+                  "defect": null
+                },
+                {
+                  "rubric_id": "V_LAYOUT",
+                  "answer": "yes",
+                  "pages": [
+                    1
+                  ],
+                  "evidence": "简洁封面合理留白；顶部小标签—主标题—副标题—底部按钮与汇报对象信息层级清晰，阅读顺序明确，无错误对应关系",
+                  "defect": null
+                }
+              ]
+            },
+            {
+              "page": 2,
+              "verdicts": [
+                {
+                  "rubric_id": "V_READ",
+                  "answer": "yes",
+                  "pages": [
+                    2
+                  ],
+                  "evidence": "标题“一个月产线能耗全景：四线月用电 182 万 kWh，月电费约 136.5 万元”可读；组合图图例（月产量/月用电量/单位能耗）、左右轴单位（万件/万kWh、kWh/件）、柱值80/68/95/49/70/34/60/31及线值0.85/0.52/0.48/0.52、轴类别1-4号线均可辨；右侧合计卡（182万kWh、136.5万元、1638万元）与关键发现01-04标题及正文（含局部放大图所示“能效分化明显”“3号线单耗最优但空载最高”正文换行完整）均清晰可读；底部数据来源小字可辨；无NaN残留",
+                  "defect": null
+                },
+                {
+                  "rubric_id": "V_LAYOUT",
+                  "answer": "yes",
+                  "pages": [
+                    2
+                  ],
+                  "evidence": "左侧对比图与右侧合计卡、关键发现列表分区明确；标题—图—结论的阅读路径清晰，编号01-04的并列关系可识别，双轴图例与柱/线编码对应关系正确，无误导性组织",
+                  "defect": null
+                }
+              ]
+            },
+            {
+              "page": 3,
+              "verdicts": [
+                {
+                  "rubric_id": "V_READ",
+                  "answer": "yes",
+                  "pages": [
+                    3
+                  ],
+                  "evidence": "标题“对标行业标杆 0.45 kWh/件：1号线超标杆 89%，2/3/4号线已接近标杆”可读；柱状图轴单位kWh/件、柱值0.85/0.52/0.48/0.52、类别1-4号线、虚线标注“行业标杆 0.45”均可辨；右侧“2/3/4号线：已接近标杆”列表、“1号线：唯一显著能耗洼地”卡片（含局部放大图所示“按月产80万件、电价0.75元/kWh测算；降至标杆月用电仅需36万kWh。”换行完整）及底部结论条、数据来源均清晰可读；无NaN残留",
+                  "defect": null
+                },
+                {
+                  "rubric_id": "V_LAYOUT",
+                  "answer": "yes",
+                  "pages": [
+                    3
+                  ],
+                  "evidence": "左侧对标柱图与右侧分组结论卡（接近标杆组、能耗洼地卡、结论条）主次分明；红色1号线柱与绿色其他柱的颜色编码与右侧“唯一显著能耗洼地”结论对应一致，阅读顺序明确，无错误对应",
+                  "defect": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pages": [
+          4,
+          5,
+          6
+        ],
+        "crop_ids": [
+          "doc_8e9c36215717be0b6134d7d9/p4_overlap_1a6aff76b8",
+          "doc_8e9c36215717be0b6134d7d9/p4_overlap_2e64dc4e6d",
+          "doc_8e9c36215717be0b6134d7d9/p4_overlap_4efeb48dac"
+        ],
+        "status": "success",
+        "raw": {
+          "pages": [
+            {
+              "page": 4,
+              "verdicts": [
+                {
+                  "rubric_id": "V_READ",
+                  "answer": "no",
+                  "pages": [
+                    4
+                  ],
+                  "evidence": "左侧图表“四线能耗横向对比”X轴四个类别标签全部显示为“NaN”，属于未处理的破损残留，图表类别信息缺失需猜读；其余文字（标题、右侧三个卡片、底部逻辑链与数据来源）、数值0.85/8/0.52/6/0.48/12/5、双轴单位“单位能耗(kWh/件)”“空载能耗(kWh/h)”及图例均可辨认，所附局部放大图显示右侧卡片文字无实际叠印遮挡。",
+                  "defect": {
+                    "key": "doc_8e9c36215717be0b6134d7d9/page/4/chart-x-axis-category-labels-nan",
+                    "description": "第4页左侧“四线能耗横向对比”图表X轴四个类别标签均渲染为“NaN”，产线类别信息丢失，读者无法从图中辨认各柱对应的产线。"
+                  }
+                },
+                {
+                  "rubric_id": "V_LAYOUT",
+                  "answer": "yes",
+                  "pages": [
+                    4
+                  ],
+                  "evidence": "在卡片与正文内容可读的前提下，页面标题在上、左图右栏（数据异常发现/根因锁定/解决路径三卡片纵向排列）、底部“排查逻辑链”四步箭头流程与数据来源的组织清晰，主次与阅读顺序可识别，图形编码（绿色=单位能耗、橙色=空载能耗，双轴分列左右）不会造成错误对应；X轴NaN属标签破损问题，仅归V_READ，不在本条重复计分。",
+                  "defect": null
+                }
+              ]
+            },
+            {
+              "page": 5,
+              "verdicts": [
+                {
+                  "rubric_id": "V_READ",
+                  "answer": "yes",
+                  "pages": [
+                    5
+                  ],
+                  "evidence": "标题“1号线改造投资回报测算：投入120万元，年节省电费252-288万元”清晰；柱状图类别标签“当前（0.85 kWh/件）/口径一（降至0.45）/口径二（降至0.5）”、数值“68万kWh/36万kWh/40万kWh”、Y轴“月用电（万kWh）”0-70刻度均可辨认；右侧口径一、口径二卡片及保守口径框内文字数字完整可读；底部测算口径与数据来源小字可辨，无NaN等破损残留。",
+                  "defect": null
+                },
+                {
+                  "rubric_id": "V_LAYOUT",
+                  "answer": "yes",
+                  "pages": [
+                    5
+                  ],
+                  "evidence": "标题居上，左侧改造前后对比柱状图与右侧口径一/口径二/保守口径三卡片左右分栏，底部测算口径与数据来源，主次关系和从上到下、先图后口径的阅读顺序明确；红/绿/浅绿柱色区分当前与两个口径，与X轴类别标签一一对应，无错误对应关系。",
+                  "defect": null
+                }
+              ]
+            },
+            {
+              "page": 6,
+              "verdicts": [
+                {
+                  "rubric_id": "V_READ",
+                  "answer": "yes",
+                  "pages": [
+                    6
+                  ],
+                  "evidence": "标题“3号线空载能耗四线最高：零投入管理改进压缩待机电费”清晰；图表“四线待机空载能耗对比”单位kWh/h、X轴类别1号线/2号线/3号线/4号线及数值8/6/12/5、Y轴0-12刻度均可辨认；右侧“现象与根因”区0.48/12/约9元及说明文字、改进方向01-03条目、底部结论框与数据来源均完整可读，无重叠截断，无NaN残留。",
+                  "defect": null
+                },
+                {
+                  "rubric_id": "V_LAYOUT",
+                  "answer": "yes",
+                  "pages": [
+                    6
+                  ],
+                  "evidence": "标题居上，左图（四线待机空载能耗对比）右栏（现象与根因指标区、改进方向01/02/03编号列表、底部结论框）分栏明确，编号列表阅读顺序清晰；3号线柱以红色突出、其余绿色，与标题“3号线最高”的结论对应一致，无错误或歧义的编码对应。",
+                  "defect": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "pages": [
+          7,
+          8
+        ],
+        "crop_ids": [
+          "doc_8e9c36215717be0b6134d7d9/p7_overlap_f00c234358",
+          "doc_8e9c36215717be0b6134d7d9/p7_overlap_1928e4aa1a",
+          "doc_8e9c36215717be0b6134d7d9/p7_overlap_5bb2a3c914"
+        ],
+        "status": "success",
+        "raw": {
+          "pages": [
+            {
+              "page": 7,
+              "verdicts": [
+                {
+                  "rubric_id": "V_READ",
+                  "answer": "yes",
+                  "pages": [
+                    7
+                  ],
+                  "evidence": "标题两行文字完整可辨（局部图显示“…停机管理改进”换行无截断）；柱状图数值0.85/0.45/0.5、类别标签“1号线现状/行业标杆/改造后验收目标”、单位kWh/件及刻度均可读；右侧“决策要点回顾/技术改造线/管理改进线”各框文字、底部“预期总收益”说明及数据来源行均清晰，无重叠叠印、截断或NaN残留",
+                  "defect": null
+                },
+                {
+                  "rubric_id": "V_LAYOUT",
+                  "answer": "yes",
+                  "pages": [
+                    7
+                  ],
+                  "evidence": "顶部标题—左侧对比柱状图—右侧三个要点框—底部收益说明与数据来源的层级与主次清晰，红/绿色柱编码对应现状与目标，阅读顺序明确，无错误对应关系",
+                  "defect": null
+                }
+              ]
+            },
+            {
+              "page": 8,
+              "verdicts": [
+                {
+                  "rubric_id": "V_READ",
+                  "answer": "yes",
+                  "pages": [
+                    8
+                  ],
+                  "evidence": "结束页“// END”“恳请评审委员会批准立项”、副标题“感谢各位评审，恳请批准节能改造立项”、左下“BACK TO TOP”按钮及右下汇报人/日期/附注文字均清晰可辨，无遮挡或破损残留",
+                  "defect": null
+                },
+                {
+                  "rubric_id": "V_LAYOUT",
+                  "answer": "yes",
+                  "pages": [
+                    8
+                  ],
+                  "evidence": "结束页居中主标题、副标题与底部信息层级明确，合理留白符合结束页规范，无阅读顺序歧义",
+                  "defect": null
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "visual_pages": [
+      {
+        "page": 1,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "封面页：绿色小字“// 节能改造立项审批汇报”、白色大标题“产线设备能耗分析与节能改造立项建议”、副标题“基于一个月产线设备能耗数据的专项分析与改造立项汇报”、按钮“READ THE BRIEF”及右下角“DOC · 2026 年 9 月 / 汇报对象：立项评审委员会”均清晰可辨，无重叠、截断或对比不足；无图表，不适用图例要求",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "简洁封面合理留白；顶部小标签—主标题—副标题—底部按钮与汇报对象信息层级清晰，阅读顺序明确，无错误对应关系",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 2,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "标题“一个月产线能耗全景：四线月用电 182 万 kWh，月电费约 136.5 万元”可读；组合图图例（月产量/月用电量/单位能耗）、左右轴单位（万件/万kWh、kWh/件）、柱值80/68/95/49/70/34/60/31及线值0.85/0.52/0.48/0.52、轴类别1-4号线均可辨；右侧合计卡（182万kWh、136.5万元、1638万元）与关键发现01-04标题及正文（含局部放大图所示“能效分化明显”“3号线单耗最优但空载最高”正文换行完整）均清晰可读；底部数据来源小字可辨；无NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "左侧对比图与右侧合计卡、关键发现列表分区明确；标题—图—结论的阅读路径清晰，编号01-04的并列关系可识别，双轴图例与柱/线编码对应关系正确，无误导性组织",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 3,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "标题“对标行业标杆 0.45 kWh/件：1号线超标杆 89%，2/3/4号线已接近标杆”可读；柱状图轴单位kWh/件、柱值0.85/0.52/0.48/0.52、类别1-4号线、虚线标注“行业标杆 0.45”均可辨；右侧“2/3/4号线：已接近标杆”列表、“1号线：唯一显著能耗洼地”卡片（含局部放大图所示“按月产80万件、电价0.75元/kWh测算；降至标杆月用电仅需36万kWh。”换行完整）及底部结论条、数据来源均清晰可读；无NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "左侧对标柱图与右侧分组结论卡（接近标杆组、能耗洼地卡、结论条）主次分明；红色1号线柱与绿色其他柱的颜色编码与右侧“唯一显著能耗洼地”结论对应一致，阅读顺序明确，无错误对应",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 4,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              4
+            ],
+            "evidence": "左侧图表“四线能耗横向对比”X轴四个类别标签全部显示为“NaN”，属于未处理的破损残留，图表类别信息缺失需猜读；其余文字（标题、右侧三个卡片、底部逻辑链与数据来源）、数值0.85/8/0.52/6/0.48/12/5、双轴单位“单位能耗(kWh/件)”“空载能耗(kWh/h)”及图例均可辨认，所附局部放大图显示右侧卡片文字无实际叠印遮挡。",
+            "defect": {
+              "key": "doc_8e9c36215717be0b6134d7d9/page/4/chart-x-axis-category-labels-nan",
+              "description": "第4页左侧“四线能耗横向对比”图表X轴四个类别标签均渲染为“NaN”，产线类别信息丢失，读者无法从图中辨认各柱对应的产线。"
+            }
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              4
+            ],
+            "evidence": "在卡片与正文内容可读的前提下，页面标题在上、左图右栏（数据异常发现/根因锁定/解决路径三卡片纵向排列）、底部“排查逻辑链”四步箭头流程与数据来源的组织清晰，主次与阅读顺序可识别，图形编码（绿色=单位能耗、橙色=空载能耗，双轴分列左右）不会造成错误对应；X轴NaN属标签破损问题，仅归V_READ，不在本条重复计分。",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 5,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              5
+            ],
+            "evidence": "标题“1号线改造投资回报测算：投入120万元，年节省电费252-288万元”清晰；柱状图类别标签“当前（0.85 kWh/件）/口径一（降至0.45）/口径二（降至0.5）”、数值“68万kWh/36万kWh/40万kWh”、Y轴“月用电（万kWh）”0-70刻度均可辨认；右侧口径一、口径二卡片及保守口径框内文字数字完整可读；底部测算口径与数据来源小字可辨，无NaN等破损残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              5
+            ],
+            "evidence": "标题居上，左侧改造前后对比柱状图与右侧口径一/口径二/保守口径三卡片左右分栏，底部测算口径与数据来源，主次关系和从上到下、先图后口径的阅读顺序明确；红/绿/浅绿柱色区分当前与两个口径，与X轴类别标签一一对应，无错误对应关系。",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 6,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              6
+            ],
+            "evidence": "标题“3号线空载能耗四线最高：零投入管理改进压缩待机电费”清晰；图表“四线待机空载能耗对比”单位kWh/h、X轴类别1号线/2号线/3号线/4号线及数值8/6/12/5、Y轴0-12刻度均可辨认；右侧“现象与根因”区0.48/12/约9元及说明文字、改进方向01-03条目、底部结论框与数据来源均完整可读，无重叠截断，无NaN残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              6
+            ],
+            "evidence": "标题居上，左图（四线待机空载能耗对比）右栏（现象与根因指标区、改进方向01/02/03编号列表、底部结论框）分栏明确，编号列表阅读顺序清晰；3号线柱以红色突出、其余绿色，与标题“3号线最高”的结论对应一致，无错误或歧义的编码对应。",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 7,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "标题两行文字完整可辨（局部图显示“…停机管理改进”换行无截断）；柱状图数值0.85/0.45/0.5、类别标签“1号线现状/行业标杆/改造后验收目标”、单位kWh/件及刻度均可读；右侧“决策要点回顾/技术改造线/管理改进线”各框文字、底部“预期总收益”说明及数据来源行均清晰，无重叠叠印、截断或NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "顶部标题—左侧对比柱状图—右侧三个要点框—底部收益说明与数据来源的层级与主次清晰，红/绿色柱编码对应现状与目标，阅读顺序明确，无错误对应关系",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 8,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页“// END”“恳请评审委员会批准立项”、副标题“感谢各位评审，恳请批准节能改造立项”、左下“BACK TO TOP”按钮及右下汇报人/日期/附注文字均清晰可辨，无遮挡或破损残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页居中主标题、副标题与底部信息层级明确，合理留白符合结束页规范，无阅读顺序歧义",
+            "defect": null
+          }
+        ]
+      }
+    ],
+    "auxiliary_errors": [],
+    "verdicts": [
+      {
+        "rubric_id": "R_Q01",
+        "answer": "yes",
+        "pages": [
+          2,
+          4,
+          6
+        ],
+        "evidence": "第2页图表完整呈现四线一个月对比：1号线80万件/68万kWh/0.85kWh/件、2号线95/49/0.52、3号线70/34/0.48、4号线60/31/0.52，与来源逐值一致，标题与页脚明确'一个月'实测口径；空载能耗8/6/12/5 kWh/h在第4页双轴图和第6页柱状图完整呈现。核心发现方面，第2页关键发现01'单位能耗0.85kWh/件，约为其余三线（0.48-0.52）的1.6-1.8倍'及第4页'远高于其他产线的0.5左右'均准确突出。deck级要求由不同页面共同满足。",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q02",
+        "answer": "yes",
+        "pages": [
+          4,
+          7
+        ],
+        "evidence": "第4页大标题'根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'，正文'根因锁定：液压系统老化——现场排查确认液压系统老化导致效率下降'，并在排查逻辑链中呈现'现场排查→根因锁定'；第7页决策要点回顾'根因：液压系统老化导致效率下降'。对象、因果与限定均与来源一致。",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q03",
+        "answer": "yes",
+        "pages": [
+          5
+        ],
+        "evidence": "第5页完整呈现投资回报账：投入120万元；测算口径明示月产量80万件、工业电价0.75元/kWh；口径一降至0.45月省电32万kWh、月省24万元、120÷24≈5个月；口径二降至0.5月省28万kWh、月省约21万元、120÷21≈5-6个月；并以来源给定的'保守口径约18个月收回成本'（计入施工停产与爬坡期打折）作为回本结论。测算过程可理解、可复算，'约''大概'等表述保持估算性质。",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q04",
+        "answer": "yes",
+        "pages": [
+          2,
+          6
+        ],
+        "evidence": "第6页专页呈现：3号线单位能耗0.48kWh/件四线最优，但待机空载12kWh/h为四线之最（1号线8、2号线6、4号线5），'指向停机流程不规范'，正文明确'停机流程不规范，该停未停、该断未断'；第2页关键发现04亦概括同一事实。对象、数值、单位与结论均与来源一致。",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q05",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "全篇结构符合来源要求的主线：第2-3页先摆四条产线能耗对比与标杆对标，第4页聚焦1号线做根因深挖（数据异常→现场排查→根因→解决路径），第5页落到节能改造投资回报测算，第7页立项建议仍以120万投资与回报为决策落点；第6页3号线管理改进是来源要求'提一句'的附加内容，置于测算与建议之间不破坏主线结构。",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q06",
+        "answer": "yes",
+        "pages": [
+          3,
+          5,
+          7
+        ],
+        "evidence": "第3页对标图虚线及标注'行业标杆0.45'、标题'对标行业标杆0.45kWh/件'；第5页口径一'降至行业标杆0.45kWh/件'；第7页对标图'行业标杆0.45'。各处引用数值均为0.45kWh/件，与来源一致。",
+        "defect": null
+      },
+      {
+        "rubric_id": "C_REASON",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "evidence": "逐项复算通过：四线合计68+49+34+31=182万kWh；月电费182×0.75=136.5万元；年电费136.5×12=1638万元；1号线产量占比80/305≈26%、用电占比68/182≈37%；0.85对其余三线倍数1.63-1.77即1.6-1.8倍；超标杆(0.85-0.45)/0.45≈89%、(0.52-0.45)/0.45≈16%、(0.48-0.45)/0.45≈7%；月多耗电(0.85-0.45)×80万=32万kWh×0.75=24万元、(0.85-0.5)×80万=28万kWh×0.75=21万元；年节省24×12=288万、21×12=252万；120÷24=5个月、120÷21≈5.7个月；12/5=2.4倍；12×0.75=9元/小时。比率分子分母与时期口径一致（同为月产80万件、同一电价），推导值均在页脚标注测算口径，结论由所述前提支持，未将相关性冒充因果。",
+        "defect": null
+      },
+      {
+        "rubric_id": "I_BOUNDARY",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "来源外新增断言均有清楚界定：年电费1638万元等推导值在第2页页脚明确标注'为推导值'并给出电价口径；第3页页脚声明'单源口径，无外部交叉验证'；第4页页脚声明根因结论'均为用户素材口径，未做外部检索验证'；第6页停机SOP、能耗监控告警等列入'改进方向'板块，第7页'安排生产淡季施工''验收目标0.45-0.5'均为明确建议/目标表述；液压元件磨损机理说明属对老化致效率下降的常识性解释且页脚已统一声明口径。未见新增事实冒充已证实情况。",
+        "defect": null
+      },
+      {
+        "rubric_id": "N_FLOW",
+        "answer": "yes",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence": "内容顺序为封面→四线全景对比→标杆对标→1号线根因深挖→投资回报测算→3号线管理改进→立项建议→结尾，主线与来源要求的叙述顺序一致；模块间有显式衔接（第4页'为下一页投资回报测算提供技术口径'、第6页'与1号线技改形成两条腿走路'、第7页决策要点回顾），第4页底部排查逻辑链将异常发现→排查→根因→方案串联。无无关信息堆积、自相割裂或无意义重复。",
+        "defect": null
+      },
+      {
+        "rubric_id": "V_READ",
+        "answer": "no",
+        "pages": [
+          4
+        ],
+        "evidence": "Page 4: 左侧图表“四线能耗横向对比”X轴四个类别标签全部显示为“NaN”，属于未处理的破损残留，图表类别信息缺失需猜读；其余文字（标题、右侧三个卡片、底部逻辑链与数据来源）、数值0.85/8/0.52/6/0.48/12/5、双轴单位“单位能耗(kWh/件)”“空载能耗(kWh/h)”及图例均可辨认，所附局部放大图显示右侧卡片文字无实际叠印遮挡。",
+        "defect": null,
+        "defects": [
+          {
+            "key": "doc_8e9c36215717be0b6134d7d9/page/4/chart-x-axis-category-labels-nan",
+            "description": "第4页左侧“四线能耗横向对比”图表X轴四个类别标签均渲染为“NaN”，产线类别信息丢失，读者无法从图中辨认各柱对应的产线。"
+          }
+        ],
+        "page_verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "封面页：绿色小字“// 节能改造立项审批汇报”、白色大标题“产线设备能耗分析与节能改造立项建议”、副标题“基于一个月产线设备能耗数据的专项分析与改造立项汇报”、按钮“READ THE BRIEF”及右下角“DOC · 2026 年 9 月 / 汇报对象：立项评审委员会”均清晰可辨，无重叠、截断或对比不足；无图表，不适用图例要求",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "标题“一个月产线能耗全景：四线月用电 182 万 kWh，月电费约 136.5 万元”可读；组合图图例（月产量/月用电量/单位能耗）、左右轴单位（万件/万kWh、kWh/件）、柱值80/68/95/49/70/34/60/31及线值0.85/0.52/0.48/0.52、轴类别1-4号线均可辨；右侧合计卡（182万kWh、136.5万元、1638万元）与关键发现01-04标题及正文（含局部放大图所示“能效分化明显”“3号线单耗最优但空载最高”正文换行完整）均清晰可读；底部数据来源小字可辨；无NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "标题“对标行业标杆 0.45 kWh/件：1号线超标杆 89%，2/3/4号线已接近标杆”可读；柱状图轴单位kWh/件、柱值0.85/0.52/0.48/0.52、类别1-4号线、虚线标注“行业标杆 0.45”均可辨；右侧“2/3/4号线：已接近标杆”列表、“1号线：唯一显著能耗洼地”卡片（含局部放大图所示“按月产80万件、电价0.75元/kWh测算；降至标杆月用电仅需36万kWh。”换行完整）及底部结论条、数据来源均清晰可读；无NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              4
+            ],
+            "evidence": "左侧图表“四线能耗横向对比”X轴四个类别标签全部显示为“NaN”，属于未处理的破损残留，图表类别信息缺失需猜读；其余文字（标题、右侧三个卡片、底部逻辑链与数据来源）、数值0.85/8/0.52/6/0.48/12/5、双轴单位“单位能耗(kWh/件)”“空载能耗(kWh/h)”及图例均可辨认，所附局部放大图显示右侧卡片文字无实际叠印遮挡。",
+            "defect": {
+              "key": "doc_8e9c36215717be0b6134d7d9/page/4/chart-x-axis-category-labels-nan",
+              "description": "第4页左侧“四线能耗横向对比”图表X轴四个类别标签均渲染为“NaN”，产线类别信息丢失，读者无法从图中辨认各柱对应的产线。"
+            }
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              5
+            ],
+            "evidence": "标题“1号线改造投资回报测算：投入120万元，年节省电费252-288万元”清晰；柱状图类别标签“当前（0.85 kWh/件）/口径一（降至0.45）/口径二（降至0.5）”、数值“68万kWh/36万kWh/40万kWh”、Y轴“月用电（万kWh）”0-70刻度均可辨认；右侧口径一、口径二卡片及保守口径框内文字数字完整可读；底部测算口径与数据来源小字可辨，无NaN等破损残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              6
+            ],
+            "evidence": "标题“3号线空载能耗四线最高：零投入管理改进压缩待机电费”清晰；图表“四线待机空载能耗对比”单位kWh/h、X轴类别1号线/2号线/3号线/4号线及数值8/6/12/5、Y轴0-12刻度均可辨认；右侧“现象与根因”区0.48/12/约9元及说明文字、改进方向01-03条目、底部结论框与数据来源均完整可读，无重叠截断，无NaN残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "标题两行文字完整可辨（局部图显示“…停机管理改进”换行无截断）；柱状图数值0.85/0.45/0.5、类别标签“1号线现状/行业标杆/改造后验收目标”、单位kWh/件及刻度均可读；右侧“决策要点回顾/技术改造线/管理改进线”各框文字、底部“预期总收益”说明及数据来源行均清晰，无重叠叠印、截断或NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页“// END”“恳请评审委员会批准立项”、副标题“感谢各位评审，恳请批准节能改造立项”、左下“BACK TO TOP”按钮及右下汇报人/日期/附注文字均清晰可辨，无遮挡或破损残留",
+            "defect": null
+          }
+        ],
+        "aggregation": "any_no_else_unknown_else_all_yes"
+      },
+      {
+        "rubric_id": "V_LAYOUT",
+        "answer": "yes",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence": "Page 1: 简洁封面合理留白；顶部小标签—主标题—副标题—底部按钮与汇报对象信息层级清晰，阅读顺序明确，无错误对应关系\nPage 2: 左侧对比图与右侧合计卡、关键发现列表分区明确；标题—图—结论的阅读路径清晰，编号01-04的并列关系可识别，双轴图例与柱/线编码对应关系正确，无误导性组织\nPage 3: 左侧对标柱图与右侧分组结论卡（接近标杆组、能耗洼地卡、结论条）主次分明；红色1号线柱与绿色其他柱的颜色编码与右侧“唯一显著能耗洼地”结论对应一致，阅读顺序明确，无错误对应\nPage 4: 在卡片与正文内容可读的前提下，页面标题在上、左图右栏（数据异常发现/根因锁定/解决路径三卡片纵向排列）、底部“排查逻辑链”四步箭头流程与数据来源的组织清晰，主次与阅读顺序可识别，图形编码（绿色=单位能耗、橙色=空载能耗，双轴分列左右）不会造成错误对应；X轴NaN属标签破损问题，仅归V_READ，不在本条重复计分。\nPage 5: 标题居上，左侧改造前后对比柱状图与右侧口径一/口径二/保守口径三卡片左右分栏，底部测算口径与数据来源，主次关系和从上到下、先图后口径的阅读顺序明确；红/绿/浅绿柱色区分当前与两个口径，与X轴类别标签一一对应，无错误对应关系。\nPage 6: 标题居上，左图（四线待机空载能耗对比）右栏（现象与根因指标区、改进方向01/02/03编号列表、底部结论框）分栏明确，编号列表阅读顺序清晰；3号线柱以红色突出、其余绿色，与标题“3号线最高”的结论对应一致，无错误或歧义的编码对应。\nPage 7: 顶部标题—左侧对比柱状图—右侧三个要点框—底部收益说明与数据来源的层级与主次清晰，红/绿色柱编码对应现状与目标，阅读顺序明确，无错误对应关系\nPage 8: 结束页居中主标题、副标题与底部信息层级明确，合理留白符合结束页规范，无阅读顺序歧义",
+        "defect": null,
+        "defects": [],
+        "page_verdicts": [
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "简洁封面合理留白；顶部小标签—主标题—副标题—底部按钮与汇报对象信息层级清晰，阅读顺序明确，无错误对应关系",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "左侧对比图与右侧合计卡、关键发现列表分区明确；标题—图—结论的阅读路径清晰，编号01-04的并列关系可识别，双轴图例与柱/线编码对应关系正确，无误导性组织",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "左侧对标柱图与右侧分组结论卡（接近标杆组、能耗洼地卡、结论条）主次分明；红色1号线柱与绿色其他柱的颜色编码与右侧“唯一显著能耗洼地”结论对应一致，阅读顺序明确，无错误对应",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              4
+            ],
+            "evidence": "在卡片与正文内容可读的前提下，页面标题在上、左图右栏（数据异常发现/根因锁定/解决路径三卡片纵向排列）、底部“排查逻辑链”四步箭头流程与数据来源的组织清晰，主次与阅读顺序可识别，图形编码（绿色=单位能耗、橙色=空载能耗，双轴分列左右）不会造成错误对应；X轴NaN属标签破损问题，仅归V_READ，不在本条重复计分。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              5
+            ],
+            "evidence": "标题居上，左侧改造前后对比柱状图与右侧口径一/口径二/保守口径三卡片左右分栏，底部测算口径与数据来源，主次关系和从上到下、先图后口径的阅读顺序明确；红/绿/浅绿柱色区分当前与两个口径，与X轴类别标签一一对应，无错误对应关系。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              6
+            ],
+            "evidence": "标题居上，左图（四线待机空载能耗对比）右栏（现象与根因指标区、改进方向01/02/03编号列表、底部结论框）分栏明确，编号列表阅读顺序清晰；3号线柱以红色突出、其余绿色，与标题“3号线最高”的结论对应一致，无错误或歧义的编码对应。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "顶部标题—左侧对比柱状图—右侧三个要点框—底部收益说明与数据来源的层级与主次清晰，红/绿色柱编码对应现状与目标，阅读顺序明确，无错误对应关系",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页居中主标题、副标题与底部信息层级明确，合理留白符合结束页规范，无阅读顺序歧义",
+            "defect": null
+          }
+        ],
+        "aggregation": "any_no_else_unknown_else_all_yes"
+      }
+    ],
+    "summary": {
+      "status": "complete",
+      "score": 90.0,
+      "score_lower": 90.0,
+      "score_upper": 90.0,
+      "unresolved_weight": 0,
+      "dimensions": {
+        "correctness": {
+          "earned": 25.000000000000004,
+          "possible": 25.000000000000004,
+          "unresolved": 0
+        },
+        "fulfillment": {
+          "earned": 30.0,
+          "possible": 30.0,
+          "unresolved": 0
+        },
+        "integrity": {
+          "earned": 15.0,
+          "possible": 15.0,
+          "unresolved": 0
+        },
+        "narrative": {
+          "earned": 15.0,
+          "possible": 15.0,
+          "unresolved": 0
+        },
+        "visual": {
+          "earned": 5.0,
+          "possible": 15.0,
+          "unresolved": 0
+        }
+      }
+    },
+    "ownership_conflicts": [],
+    "visual_evaluated": true
+  },
+  "verification": {
+    "model": "kimi-k2.6",
+    "document_id": "doc_8e9c36215717be0b6134d7d9",
+    "content": {
+      "status": "success",
+      "raw": {
+        "verdicts": [
+          {
+            "rubric_id": "R_Q01",
+            "answer": "yes",
+            "pages": [
+              2,
+              4,
+              6
+            ],
+            "evidence": "Page 2 presents the four-line comparison with exact values: 1号线 80万件/68万kWh/0.85 kWh/件, 2号线 95万件/49万kWh/0.52 kWh/件, 3号线 70万件/34万kWh/0.48 kWh/件, 4号线 60万件/31万kWh/0.52 kWh/件. Page 4 shows空载能耗: 1号线8, 2号线6, 3号线12, 4号线5. Page 6 reconfirms 3号线空载12 kWh/h. The core finding is highlighted on page 2: '1号线是洼地 单位能耗0.85 kWh/件，约为其余三线（0.48-0.52）的1.6-1.8倍.' All data matches source catalog src_174da649339240d00804ab0f through src_088ada1ab22d5049ba57d957.",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q02",
+            "answer": "yes",
+            "pages": [
+              4
+            ],
+            "evidence": "Page 4 explicitly states in title: '根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'. The '根因锁定' section confirms: '现场排查确认液压系统老化导致效率下降——液压元件磨损使能量转换损失增大'. This directly matches source prompt requirement (src_3fecb88711b00ca960c2cb91).",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q03",
+            "answer": "yes",
+            "pages": [
+              5,
+              7
+            ],
+            "evidence": "Page 5 presents complete ROI calculation:投入120万元, with two测算口径. 口径一: 降至0.45 kWh/件, 月省电32万kWh, 月省电费24万元, 年节省约288万元, 纯电费回本约5个月. 口径二: 降至0.5 kWh/件, 月省电28万kWh, 月省电费约21万元, 年节省约252万元, 回收期约5-6个月. Critically, the conservative口径 states: '计入施工停产损失与投产爬坡期节能打折后回收期约18个月'. This matches source requirement of '大概18个月能收回成本' (src_3fecb88711b00ca960c2cb91). Page 7 reconfirms '回收期约18个月以内'. The测算过程 is clearly presented with visible calculation steps.",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q04",
+            "answer": "yes",
+            "pages": [
+              2,
+              6
+            ],
+            "evidence": "Page 2 key finding 04 states: '3号线单耗最优但空载最高 单位能耗0.48 kWh/件四线最优，空载能耗12 kWh/h为四线之最，待机管理有改进空间.' Page 6 dedicates full page to this issue with title '3号线空载能耗四线最高：零投入管理改进压缩待机电费', showing '0.48 单位能耗 kWh/件·四线最优' and '12 待机空载 kWh/h·四线之最', and explicitly states '停机流程不规范'. Matches source prompt exactly (src_3fecb88711b00ca960c2cb91).",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q05",
+            "answer": "yes",
+            "pages": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "evidence": "Structure follows required sequence: Page 2 presents four-line能耗对比 (四条线的能耗对比摆出来). Pages 3-4 focus on 1号线深挖 (聚焦1号线做深挖) with标杆对标 and根因排查. Pages 5-7 present节能改造投资回报测算 with 120万投入 and 18-month回收期. The flow is: 四线对比 → 1号线深挖 → 投资回报测算, exactly as specified in source prompt (src_3fecb88711b00ca960c2cb91).",
+            "defect": null
+          },
+          {
+            "rubric_id": "R_Q06",
+            "answer": "yes",
+            "pages": [
+              3,
+              5,
+              7
+            ],
+            "evidence": "Page 3 shows '行业标杆 0.45' as horizontal dashed line on chart, with text '对标行业标杆0.45 kWh/件：1号线超标杆89%，2/3/4号线已接近标杆'. Page 5 references '降至行业标杆 0.45 kWh/件'. Page 7 shows '行业标杆 0.45' in chart. Value 0.45 kWh/件 is accurate per source src_624e5d89a92f6fbecfcd2a96.",
+            "defect": null
+          },
+          {
+            "rubric_id": "C_REASON",
+            "answer": "yes",
+            "pages": [
+              2,
+              3,
+              5
+            ],
+            "evidence": "Calculations are consistent and arithmetically correct. Page 2: 182万kWh × 0.75元/kWh = 136.5万元 monthly, ×12 = 1638万元 yearly - correct. Page 3: 1号线 0.85 vs标杆0.45, 差距0.40, (0.40/0.45)≈89% - correct approximation. Page 5: 口径一 80万件×(0.85-0.45)=32万kWh monthly saving, ×0.75=24万元, ×12=288万元 yearly - correct. 口径二 80万件×(0.85-0.5)=28万kWh, ×0.75=21万元, ×12=252万元 - correct. 120万÷24万=5 months, 120万÷21万≈5.7 months - correct. Conservative 18-month回收期 with explicit note about施工停产损失与爬坡期打折 - reasonable assumption, not a calculation error. No circular reasoning or false causation claims.",
+            "defect": null
+          },
+          {
+            "rubric_id": "I_BOUNDARY",
+            "answer": "yes",
+            "pages": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "evidence": "All新增 assertions are properly scoped. Page 2 '数据来源：产线能耗月度数据（用户素材，最近一个月实测）' and '月电费按工业电价0.75元/kWh测算...为推导值'. Page 3 '数据来源：产线能耗数据（单源口径，无外部交叉验证）'. Page 4 '根因结论来自现场排查，均为用户素材口径，未做外部检索验证'. Page 5 '数据来源：用户素材'. Page 6 '数据来源：一个月产线设备能耗实测数据（用户素材）'. The '行业标杆0.45' is treated as reference benchmark, not claimed as verified. Management improvement suggestions on page 6 are framed as '改进方向·零投资/低投入管理改进' - clearly labeled as recommendations. No新增 facts are presented as established truths without boundary markers.",
+            "defect": null
+          },
+          {
+            "rubric_id": "N_FLOW",
+            "answer": "yes",
+            "pages": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "evidence": "Content organization is coherent and supports the立项审批 purpose. Sequence: title → 四线能耗全景对比 → 1号线标杆对标 → 1号线根因排查 → 投资回报测算 → 3号线管理改进 → 立项建议总结 → closing. Logical progression from data presentation to analysis to recommendation. No irrelevant information堆积, no自相割裂表达, no无意义重复. The 3号线 content on page 6 is positioned after 1号线投资回报测算 but before final recommendation, forming complementary '技术改造+管理改进' complete proposal - a valid structural choice that enhances rather than obstructs task understanding.",
+            "defect": null
+          }
+        ]
+      }
+    },
+    "visual_batches": [],
+    "visual_pages": [],
+    "auxiliary_errors": [],
+    "verdicts": [
+      {
+        "rubric_id": "R_Q01",
+        "answer": "yes",
+        "pages": [
+          2,
+          4,
+          6
+        ],
+        "evidence": "Page 2 presents the four-line comparison with exact values: 1号线 80万件/68万kWh/0.85 kWh/件, 2号线 95万件/49万kWh/0.52 kWh/件, 3号线 70万件/34万kWh/0.48 kWh/件, 4号线 60万件/31万kWh/0.52 kWh/件. Page 4 shows空载能耗: 1号线8, 2号线6, 3号线12, 4号线5. Page 6 reconfirms 3号线空载12 kWh/h. The core finding is highlighted on page 2: '1号线是洼地 单位能耗0.85 kWh/件，约为其余三线（0.48-0.52）的1.6-1.8倍.' All data matches source catalog src_174da649339240d00804ab0f through src_088ada1ab22d5049ba57d957.",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q02",
+        "answer": "yes",
+        "pages": [
+          4
+        ],
+        "evidence": "Page 4 explicitly states in title: '根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'. The '根因锁定' section confirms: '现场排查确认液压系统老化导致效率下降——液压元件磨损使能量转换损失增大'. This directly matches source prompt requirement (src_3fecb88711b00ca960c2cb91).",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q03",
+        "answer": "yes",
+        "pages": [
+          5,
+          7
+        ],
+        "evidence": "Page 5 presents complete ROI calculation:投入120万元, with two测算口径. 口径一: 降至0.45 kWh/件, 月省电32万kWh, 月省电费24万元, 年节省约288万元, 纯电费回本约5个月. 口径二: 降至0.5 kWh/件, 月省电28万kWh, 月省电费约21万元, 年节省约252万元, 回收期约5-6个月. Critically, the conservative口径 states: '计入施工停产损失与投产爬坡期节能打折后回收期约18个月'. This matches source requirement of '大概18个月能收回成本' (src_3fecb88711b00ca960c2cb91). Page 7 reconfirms '回收期约18个月以内'. The测算过程 is clearly presented with visible calculation steps.",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q04",
+        "answer": "yes",
+        "pages": [
+          2,
+          6
+        ],
+        "evidence": "Page 2 key finding 04 states: '3号线单耗最优但空载最高 单位能耗0.48 kWh/件四线最优，空载能耗12 kWh/h为四线之最，待机管理有改进空间.' Page 6 dedicates full page to this issue with title '3号线空载能耗四线最高：零投入管理改进压缩待机电费', showing '0.48 单位能耗 kWh/件·四线最优' and '12 待机空载 kWh/h·四线之最', and explicitly states '停机流程不规范'. Matches source prompt exactly (src_3fecb88711b00ca960c2cb91).",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q05",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "Structure follows required sequence: Page 2 presents four-line能耗对比 (四条线的能耗对比摆出来). Pages 3-4 focus on 1号线深挖 (聚焦1号线做深挖) with标杆对标 and根因排查. Pages 5-7 present节能改造投资回报测算 with 120万投入 and 18-month回收期. The flow is: 四线对比 → 1号线深挖 → 投资回报测算, exactly as specified in source prompt (src_3fecb88711b00ca960c2cb91).",
+        "defect": null
+      },
+      {
+        "rubric_id": "R_Q06",
+        "answer": "yes",
+        "pages": [
+          3,
+          5,
+          7
+        ],
+        "evidence": "Page 3 shows '行业标杆 0.45' as horizontal dashed line on chart, with text '对标行业标杆0.45 kWh/件：1号线超标杆89%，2/3/4号线已接近标杆'. Page 5 references '降至行业标杆 0.45 kWh/件'. Page 7 shows '行业标杆 0.45' in chart. Value 0.45 kWh/件 is accurate per source src_624e5d89a92f6fbecfcd2a96.",
+        "defect": null
+      },
+      {
+        "rubric_id": "C_REASON",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          5
+        ],
+        "evidence": "Calculations are consistent and arithmetically correct. Page 2: 182万kWh × 0.75元/kWh = 136.5万元 monthly, ×12 = 1638万元 yearly - correct. Page 3: 1号线 0.85 vs标杆0.45, 差距0.40, (0.40/0.45)≈89% - correct approximation. Page 5: 口径一 80万件×(0.85-0.45)=32万kWh monthly saving, ×0.75=24万元, ×12=288万元 yearly - correct. 口径二 80万件×(0.85-0.5)=28万kWh, ×0.75=21万元, ×12=252万元 - correct. 120万÷24万=5 months, 120万÷21万≈5.7 months - correct. Conservative 18-month回收期 with explicit note about施工停产损失与爬坡期打折 - reasonable assumption, not a calculation error. No circular reasoning or false causation claims.",
+        "defect": null
+      },
+      {
+        "rubric_id": "I_BOUNDARY",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "All新增 assertions are properly scoped. Page 2 '数据来源：产线能耗月度数据（用户素材，最近一个月实测）' and '月电费按工业电价0.75元/kWh测算...为推导值'. Page 3 '数据来源：产线能耗数据（单源口径，无外部交叉验证）'. Page 4 '根因结论来自现场排查，均为用户素材口径，未做外部检索验证'. Page 5 '数据来源：用户素材'. Page 6 '数据来源：一个月产线设备能耗实测数据（用户素材）'. The '行业标杆0.45' is treated as reference benchmark, not claimed as verified. Management improvement suggestions on page 6 are framed as '改进方向·零投资/低投入管理改进' - clearly labeled as recommendations. No新增 facts are presented as established truths without boundary markers.",
+        "defect": null
+      },
+      {
+        "rubric_id": "N_FLOW",
+        "answer": "yes",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence": "Content organization is coherent and supports the立项审批 purpose. Sequence: title → 四线能耗全景对比 → 1号线标杆对标 → 1号线根因排查 → 投资回报测算 → 3号线管理改进 → 立项建议总结 → closing. Logical progression from data presentation to analysis to recommendation. No irrelevant information堆积, no自相割裂表达, no无意义重复. The 3号线 content on page 6 is positioned after 1号线投资回报测算 but before final recommendation, forming complementary '技术改造+管理改进' complete proposal - a valid structural choice that enhances rather than obstructs task understanding.",
+        "defect": null
+      },
+      {
+        "rubric_id": "V_READ",
+        "answer": "unknown",
+        "pages": [],
+        "evidence": "Not independently evaluated by this assessor",
+        "defect": null
+      },
+      {
+        "rubric_id": "V_LAYOUT",
+        "answer": "unknown",
+        "pages": [],
+        "evidence": "Not independently evaluated by this assessor",
+        "defect": null
+      }
+    ],
+    "summary": {
+      "status": "incomplete",
+      "score": null,
+      "score_lower": 85.0,
+      "score_upper": 100.0,
+      "unresolved_weight": 15.0,
+      "dimensions": {
+        "correctness": {
+          "earned": 25.000000000000004,
+          "possible": 25.000000000000004,
+          "unresolved": 0
+        },
+        "fulfillment": {
+          "earned": 30.0,
+          "possible": 30.0,
+          "unresolved": 0
+        },
+        "integrity": {
+          "earned": 15.0,
+          "possible": 15.0,
+          "unresolved": 0
+        },
+        "narrative": {
+          "earned": 15.0,
+          "possible": 15.0,
+          "unresolved": 0
+        },
+        "visual": {
+          "earned": 0,
+          "possible": 15.0,
+          "unresolved": 15.0
+        }
+      }
+    },
+    "ownership_conflicts": [],
+    "visual_evaluated": false
+  },
+  "consensus": {
+    "summary": {
+      "status": "complete",
+      "score": 90.0,
+      "score_lower": 90.0,
+      "score_upper": 90.0,
+      "unresolved_weight": 0,
+      "dimensions": {
+        "correctness": {
+          "earned": 25.000000000000004,
+          "possible": 25.000000000000004,
+          "unresolved": 0
+        },
+        "fulfillment": {
+          "earned": 30.0,
+          "possible": 30.0,
+          "unresolved": 0
+        },
+        "integrity": {
+          "earned": 15.0,
+          "possible": 15.0,
+          "unresolved": 0
+        },
+        "narrative": {
+          "earned": 15.0,
+          "possible": 15.0,
+          "unresolved": 0
+        },
+        "visual": {
+          "earned": 5.0,
+          "possible": 15.0,
+          "unresolved": 0
+        }
+      }
+    },
+    "verdicts": [
+      {
+        "rubric_id": "R_Q01",
+        "answer": "yes",
+        "pages": [
+          2,
+          4,
+          6
+        ],
+        "evidence": "第2页图表完整呈现四线一个月对比：1号线80万件/68万kWh/0.85kWh/件、2号线95/49/0.52、3号线70/34/0.48、4号线60/31/0.52，与来源逐值一致，标题与页脚明确'一个月'实测口径；空载能耗8/6/12/5 kWh/h在第4页双轴图和第6页柱状图完整呈现。核心发现方面，第2页关键发现01'单位能耗0.85kWh/件，约为其余三线（0.48-0.52）的1.6-1.8倍'及第4页'远高于其他产线的0.5左右'均准确突出。deck级要求由不同页面共同满足。",
+        "defect": null,
+        "assessment_status": "independent_agreement",
+        "primary_answer": "yes",
+        "verification_answer": "yes"
+      },
+      {
+        "rubric_id": "R_Q02",
+        "answer": "yes",
+        "pages": [
+          4,
+          7
+        ],
+        "evidence": "第4页大标题'根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'，正文'根因锁定：液压系统老化——现场排查确认液压系统老化导致效率下降'，并在排查逻辑链中呈现'现场排查→根因锁定'；第7页决策要点回顾'根因：液压系统老化导致效率下降'。对象、因果与限定均与来源一致。",
+        "defect": null,
+        "assessment_status": "independent_agreement",
+        "primary_answer": "yes",
+        "verification_answer": "yes"
+      },
+      {
+        "rubric_id": "R_Q03",
+        "answer": "yes",
+        "pages": [
+          5
+        ],
+        "evidence": "第5页完整呈现投资回报账：投入120万元；测算口径明示月产量80万件、工业电价0.75元/kWh；口径一降至0.45月省电32万kWh、月省24万元、120÷24≈5个月；口径二降至0.5月省28万kWh、月省约21万元、120÷21≈5-6个月；并以来源给定的'保守口径约18个月收回成本'（计入施工停产与爬坡期打折）作为回本结论。测算过程可理解、可复算，'约''大概'等表述保持估算性质。",
+        "defect": null,
+        "assessment_status": "independent_agreement",
+        "primary_answer": "yes",
+        "verification_answer": "yes"
+      },
+      {
+        "rubric_id": "R_Q04",
+        "answer": "yes",
+        "pages": [
+          2,
+          6
+        ],
+        "evidence": "第6页专页呈现：3号线单位能耗0.48kWh/件四线最优，但待机空载12kWh/h为四线之最（1号线8、2号线6、4号线5），'指向停机流程不规范'，正文明确'停机流程不规范，该停未停、该断未断'；第2页关键发现04亦概括同一事实。对象、数值、单位与结论均与来源一致。",
+        "defect": null,
+        "assessment_status": "independent_agreement",
+        "primary_answer": "yes",
+        "verification_answer": "yes"
+      },
+      {
+        "rubric_id": "R_Q05",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "全篇结构符合来源要求的主线：第2-3页先摆四条产线能耗对比与标杆对标，第4页聚焦1号线做根因深挖（数据异常→现场排查→根因→解决路径），第5页落到节能改造投资回报测算，第7页立项建议仍以120万投资与回报为决策落点；第6页3号线管理改进是来源要求'提一句'的附加内容，置于测算与建议之间不破坏主线结构。",
+        "defect": null,
+        "assessment_status": "independent_agreement",
+        "primary_answer": "yes",
+        "verification_answer": "yes"
+      },
+      {
+        "rubric_id": "R_Q06",
+        "answer": "yes",
+        "pages": [
+          3,
+          5,
+          7
+        ],
+        "evidence": "第3页对标图虚线及标注'行业标杆0.45'、标题'对标行业标杆0.45kWh/件'；第5页口径一'降至行业标杆0.45kWh/件'；第7页对标图'行业标杆0.45'。各处引用数值均为0.45kWh/件，与来源一致。",
+        "defect": null,
+        "assessment_status": "independent_agreement",
+        "primary_answer": "yes",
+        "verification_answer": "yes"
+      },
+      {
+        "rubric_id": "C_REASON",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          5,
+          6,
+          7
+        ],
+        "evidence": "逐项复算通过：四线合计68+49+34+31=182万kWh；月电费182×0.75=136.5万元；年电费136.5×12=1638万元；1号线产量占比80/305≈26%、用电占比68/182≈37%；0.85对其余三线倍数1.63-1.77即1.6-1.8倍；超标杆(0.85-0.45)/0.45≈89%、(0.52-0.45)/0.45≈16%、(0.48-0.45)/0.45≈7%；月多耗电(0.85-0.45)×80万=32万kWh×0.75=24万元、(0.85-0.5)×80万=28万kWh×0.75=21万元；年节省24×12=288万、21×12=252万；120÷24=5个月、120÷21≈5.7个月；12/5=2.4倍；12×0.75=9元/小时。比率分子分母与时期口径一致（同为月产80万件、同一电价），推导值均在页脚标注测算口径，结论由所述前提支持，未将相关性冒充因果。",
+        "defect": null,
+        "assessment_status": "independent_agreement",
+        "primary_answer": "yes",
+        "verification_answer": "yes"
+      },
+      {
+        "rubric_id": "I_BOUNDARY",
+        "answer": "yes",
+        "pages": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "evidence": "来源外新增断言均有清楚界定：年电费1638万元等推导值在第2页页脚明确标注'为推导值'并给出电价口径；第3页页脚声明'单源口径，无外部交叉验证'；第4页页脚声明根因结论'均为用户素材口径，未做外部检索验证'；第6页停机SOP、能耗监控告警等列入'改进方向'板块，第7页'安排生产淡季施工''验收目标0.45-0.5'均为明确建议/目标表述；液压元件磨损机理说明属对老化致效率下降的常识性解释且页脚已统一声明口径。未见新增事实冒充已证实情况。",
+        "defect": null,
+        "assessment_status": "independent_agreement",
+        "primary_answer": "yes",
+        "verification_answer": "yes"
+      },
+      {
+        "rubric_id": "N_FLOW",
+        "answer": "yes",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence": "内容顺序为封面→四线全景对比→标杆对标→1号线根因深挖→投资回报测算→3号线管理改进→立项建议→结尾，主线与来源要求的叙述顺序一致；模块间有显式衔接（第4页'为下一页投资回报测算提供技术口径'、第6页'与1号线技改形成两条腿走路'、第7页决策要点回顾），第4页底部排查逻辑链将异常发现→排查→根因→方案串联。无无关信息堆积、自相割裂或无意义重复。",
+        "defect": null,
+        "assessment_status": "independent_agreement",
+        "primary_answer": "yes",
+        "verification_answer": "yes"
+      },
+      {
+        "rubric_id": "V_READ",
+        "answer": "no",
+        "pages": [
+          4
+        ],
+        "evidence": "Page 4: 左侧图表“四线能耗横向对比”X轴四个类别标签全部显示为“NaN”，属于未处理的破损残留，图表类别信息缺失需猜读；其余文字（标题、右侧三个卡片、底部逻辑链与数据来源）、数值0.85/8/0.52/6/0.48/12/5、双轴单位“单位能耗(kWh/件)”“空载能耗(kWh/h)”及图例均可辨认，所附局部放大图显示右侧卡片文字无实际叠印遮挡。",
+        "defect": null,
+        "defects": [
+          {
+            "key": "doc_8e9c36215717be0b6134d7d9/page/4/chart-x-axis-category-labels-nan",
+            "description": "第4页左侧“四线能耗横向对比”图表X轴四个类别标签均渲染为“NaN”，产线类别信息丢失，读者无法从图中辨认各柱对应的产线。"
+          }
+        ],
+        "page_verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "封面页：绿色小字“// 节能改造立项审批汇报”、白色大标题“产线设备能耗分析与节能改造立项建议”、副标题“基于一个月产线设备能耗数据的专项分析与改造立项汇报”、按钮“READ THE BRIEF”及右下角“DOC · 2026 年 9 月 / 汇报对象：立项评审委员会”均清晰可辨，无重叠、截断或对比不足；无图表，不适用图例要求",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "标题“一个月产线能耗全景：四线月用电 182 万 kWh，月电费约 136.5 万元”可读；组合图图例（月产量/月用电量/单位能耗）、左右轴单位（万件/万kWh、kWh/件）、柱值80/68/95/49/70/34/60/31及线值0.85/0.52/0.48/0.52、轴类别1-4号线均可辨；右侧合计卡（182万kWh、136.5万元、1638万元）与关键发现01-04标题及正文（含局部放大图所示“能效分化明显”“3号线单耗最优但空载最高”正文换行完整）均清晰可读；底部数据来源小字可辨；无NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "标题“对标行业标杆 0.45 kWh/件：1号线超标杆 89%，2/3/4号线已接近标杆”可读；柱状图轴单位kWh/件、柱值0.85/0.52/0.48/0.52、类别1-4号线、虚线标注“行业标杆 0.45”均可辨；右侧“2/3/4号线：已接近标杆”列表、“1号线：唯一显著能耗洼地”卡片（含局部放大图所示“按月产80万件、电价0.75元/kWh测算；降至标杆月用电仅需36万kWh。”换行完整）及底部结论条、数据来源均清晰可读；无NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              4
+            ],
+            "evidence": "左侧图表“四线能耗横向对比”X轴四个类别标签全部显示为“NaN”，属于未处理的破损残留，图表类别信息缺失需猜读；其余文字（标题、右侧三个卡片、底部逻辑链与数据来源）、数值0.85/8/0.52/6/0.48/12/5、双轴单位“单位能耗(kWh/件)”“空载能耗(kWh/h)”及图例均可辨认，所附局部放大图显示右侧卡片文字无实际叠印遮挡。",
+            "defect": {
+              "key": "doc_8e9c36215717be0b6134d7d9/page/4/chart-x-axis-category-labels-nan",
+              "description": "第4页左侧“四线能耗横向对比”图表X轴四个类别标签均渲染为“NaN”，产线类别信息丢失，读者无法从图中辨认各柱对应的产线。"
+            }
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              5
+            ],
+            "evidence": "标题“1号线改造投资回报测算：投入120万元，年节省电费252-288万元”清晰；柱状图类别标签“当前（0.85 kWh/件）/口径一（降至0.45）/口径二（降至0.5）”、数值“68万kWh/36万kWh/40万kWh”、Y轴“月用电（万kWh）”0-70刻度均可辨认；右侧口径一、口径二卡片及保守口径框内文字数字完整可读；底部测算口径与数据来源小字可辨，无NaN等破损残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              6
+            ],
+            "evidence": "标题“3号线空载能耗四线最高：零投入管理改进压缩待机电费”清晰；图表“四线待机空载能耗对比”单位kWh/h、X轴类别1号线/2号线/3号线/4号线及数值8/6/12/5、Y轴0-12刻度均可辨认；右侧“现象与根因”区0.48/12/约9元及说明文字、改进方向01-03条目、底部结论框与数据来源均完整可读，无重叠截断，无NaN残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "标题两行文字完整可辨（局部图显示“…停机管理改进”换行无截断）；柱状图数值0.85/0.45/0.5、类别标签“1号线现状/行业标杆/改造后验收目标”、单位kWh/件及刻度均可读；右侧“决策要点回顾/技术改造线/管理改进线”各框文字、底部“预期总收益”说明及数据来源行均清晰，无重叠叠印、截断或NaN残留",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页“// END”“恳请评审委员会批准立项”、副标题“感谢各位评审，恳请批准节能改造立项”、左下“BACK TO TOP”按钮及右下汇报人/日期/附注文字均清晰可辨，无遮挡或破损残留",
+            "defect": null
+          }
+        ],
+        "aggregation": "any_no_else_unknown_else_all_yes",
+        "assessment_status": "not_independently_verified",
+        "primary_answer": "no",
+        "verification_answer": null
+      },
+      {
+        "rubric_id": "V_LAYOUT",
+        "answer": "yes",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence": "Page 1: 简洁封面合理留白；顶部小标签—主标题—副标题—底部按钮与汇报对象信息层级清晰，阅读顺序明确，无错误对应关系\nPage 2: 左侧对比图与右侧合计卡、关键发现列表分区明确；标题—图—结论的阅读路径清晰，编号01-04的并列关系可识别，双轴图例与柱/线编码对应关系正确，无误导性组织\nPage 3: 左侧对标柱图与右侧分组结论卡（接近标杆组、能耗洼地卡、结论条）主次分明；红色1号线柱与绿色其他柱的颜色编码与右侧“唯一显著能耗洼地”结论对应一致，阅读顺序明确，无错误对应\nPage 4: 在卡片与正文内容可读的前提下，页面标题在上、左图右栏（数据异常发现/根因锁定/解决路径三卡片纵向排列）、底部“排查逻辑链”四步箭头流程与数据来源的组织清晰，主次与阅读顺序可识别，图形编码（绿色=单位能耗、橙色=空载能耗，双轴分列左右）不会造成错误对应；X轴NaN属标签破损问题，仅归V_READ，不在本条重复计分。\nPage 5: 标题居上，左侧改造前后对比柱状图与右侧口径一/口径二/保守口径三卡片左右分栏，底部测算口径与数据来源，主次关系和从上到下、先图后口径的阅读顺序明确；红/绿/浅绿柱色区分当前与两个口径，与X轴类别标签一一对应，无错误对应关系。\nPage 6: 标题居上，左图（四线待机空载能耗对比）右栏（现象与根因指标区、改进方向01/02/03编号列表、底部结论框）分栏明确，编号列表阅读顺序清晰；3号线柱以红色突出、其余绿色，与标题“3号线最高”的结论对应一致，无错误或歧义的编码对应。\nPage 7: 顶部标题—左侧对比柱状图—右侧三个要点框—底部收益说明与数据来源的层级与主次清晰，红/绿色柱编码对应现状与目标，阅读顺序明确，无错误对应关系\nPage 8: 结束页居中主标题、副标题与底部信息层级明确，合理留白符合结束页规范，无阅读顺序歧义",
+        "defect": null,
+        "defects": [],
+        "page_verdicts": [
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              1
+            ],
+            "evidence": "简洁封面合理留白；顶部小标签—主标题—副标题—底部按钮与汇报对象信息层级清晰，阅读顺序明确，无错误对应关系",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              2
+            ],
+            "evidence": "左侧对比图与右侧合计卡、关键发现列表分区明确；标题—图—结论的阅读路径清晰，编号01-04的并列关系可识别，双轴图例与柱/线编码对应关系正确，无误导性组织",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              3
+            ],
+            "evidence": "左侧对标柱图与右侧分组结论卡（接近标杆组、能耗洼地卡、结论条）主次分明；红色1号线柱与绿色其他柱的颜色编码与右侧“唯一显著能耗洼地”结论对应一致，阅读顺序明确，无错误对应",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              4
+            ],
+            "evidence": "在卡片与正文内容可读的前提下，页面标题在上、左图右栏（数据异常发现/根因锁定/解决路径三卡片纵向排列）、底部“排查逻辑链”四步箭头流程与数据来源的组织清晰，主次与阅读顺序可识别，图形编码（绿色=单位能耗、橙色=空载能耗，双轴分列左右）不会造成错误对应；X轴NaN属标签破损问题，仅归V_READ，不在本条重复计分。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              5
+            ],
+            "evidence": "标题居上，左侧改造前后对比柱状图与右侧口径一/口径二/保守口径三卡片左右分栏，底部测算口径与数据来源，主次关系和从上到下、先图后口径的阅读顺序明确；红/绿/浅绿柱色区分当前与两个口径，与X轴类别标签一一对应，无错误对应关系。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              6
+            ],
+            "evidence": "标题居上，左图（四线待机空载能耗对比）右栏（现象与根因指标区、改进方向01/02/03编号列表、底部结论框）分栏明确，编号列表阅读顺序清晰；3号线柱以红色突出、其余绿色，与标题“3号线最高”的结论对应一致，无错误或歧义的编码对应。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "顶部标题—左侧对比柱状图—右侧三个要点框—底部收益说明与数据来源的层级与主次清晰，红/绿色柱编码对应现状与目标，阅读顺序明确，无错误对应关系",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "结束页居中主标题、副标题与底部信息层级明确，合理留白符合结束页规范，无阅读顺序歧义",
+            "defect": null
+          }
+        ],
+        "aggregation": "any_no_else_unknown_else_all_yes",
+        "assessment_status": "not_independently_verified",
+        "primary_answer": "yes",
+        "verification_answer": null
+      }
+    ],
+    "ownership_conflicts": [],
+    "independently_evaluated_items": [
+      "R_Q01",
+      "R_Q02",
+      "R_Q03",
+      "R_Q04",
+      "R_Q05",
+      "R_Q06",
+      "C_REASON",
+      "I_BOUNDARY",
+      "N_FLOW"
+    ],
+    "policy": "Independent agreement where verified; primary elsewhere, explicitly marked. No vote or rejudgment."
+  },
+  "summary": {
+    "status": "complete",
+    "score": 90.0,
+    "score_lower": 90.0,
+    "score_upper": 90.0,
+    "unresolved_weight": 0,
+    "dimensions": {
+      "correctness": {
+        "earned": 25.000000000000004,
+        "possible": 25.000000000000004,
+        "unresolved": 0
+      },
+      "fulfillment": {
+        "earned": 30.0,
+        "possible": 30.0,
+        "unresolved": 0
+      },
+      "integrity": {
+        "earned": 15.0,
+        "possible": 15.0,
+        "unresolved": 0
+      },
+      "narrative": {
+        "earned": 15.0,
+        "possible": 15.0,
+        "unresolved": 0
+      },
+      "visual": {
+        "earned": 5.0,
+        "possible": 15.0,
+        "unresolved": 0
+      }
+    }
+  },
+  "verdicts": [
+    {
+      "rubric_id": "R_Q01",
+      "answer": "yes",
+      "pages": [
+        2,
+        4,
+        6
+      ],
+      "evidence": "第2页图表完整呈现四线一个月对比：1号线80万件/68万kWh/0.85kWh/件、2号线95/49/0.52、3号线70/34/0.48、4号线60/31/0.52，与来源逐值一致，标题与页脚明确'一个月'实测口径；空载能耗8/6/12/5 kWh/h在第4页双轴图和第6页柱状图完整呈现。核心发现方面，第2页关键发现01'单位能耗0.85kWh/件，约为其余三线（0.48-0.52）的1.6-1.8倍'及第4页'远高于其他产线的0.5左右'均准确突出。deck级要求由不同页面共同满足。",
+      "defect": null,
+      "assessment_status": "independent_agreement",
+      "primary_answer": "yes",
+      "verification_answer": "yes"
+    },
+    {
+      "rubric_id": "R_Q02",
+      "answer": "yes",
+      "pages": [
+        4,
+        7
+      ],
+      "evidence": "第4页大标题'根因排查确认：1号线液压系统老化导致效率下降，拉高单位能耗'，正文'根因锁定：液压系统老化——现场排查确认液压系统老化导致效率下降'，并在排查逻辑链中呈现'现场排查→根因锁定'；第7页决策要点回顾'根因：液压系统老化导致效率下降'。对象、因果与限定均与来源一致。",
+      "defect": null,
+      "assessment_status": "independent_agreement",
+      "primary_answer": "yes",
+      "verification_answer": "yes"
+    },
+    {
+      "rubric_id": "R_Q03",
+      "answer": "yes",
+      "pages": [
+        5
+      ],
+      "evidence": "第5页完整呈现投资回报账：投入120万元；测算口径明示月产量80万件、工业电价0.75元/kWh；口径一降至0.45月省电32万kWh、月省24万元、120÷24≈5个月；口径二降至0.5月省28万kWh、月省约21万元、120÷21≈5-6个月；并以来源给定的'保守口径约18个月收回成本'（计入施工停产与爬坡期打折）作为回本结论。测算过程可理解、可复算，'约''大概'等表述保持估算性质。",
+      "defect": null,
+      "assessment_status": "independent_agreement",
+      "primary_answer": "yes",
+      "verification_answer": "yes"
+    },
+    {
+      "rubric_id": "R_Q04",
+      "answer": "yes",
+      "pages": [
+        2,
+        6
+      ],
+      "evidence": "第6页专页呈现：3号线单位能耗0.48kWh/件四线最优，但待机空载12kWh/h为四线之最（1号线8、2号线6、4号线5），'指向停机流程不规范'，正文明确'停机流程不规范，该停未停、该断未断'；第2页关键发现04亦概括同一事实。对象、数值、单位与结论均与来源一致。",
+      "defect": null,
+      "assessment_status": "independent_agreement",
+      "primary_answer": "yes",
+      "verification_answer": "yes"
+    },
+    {
+      "rubric_id": "R_Q05",
+      "answer": "yes",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "evidence": "全篇结构符合来源要求的主线：第2-3页先摆四条产线能耗对比与标杆对标，第4页聚焦1号线做根因深挖（数据异常→现场排查→根因→解决路径），第5页落到节能改造投资回报测算，第7页立项建议仍以120万投资与回报为决策落点；第6页3号线管理改进是来源要求'提一句'的附加内容，置于测算与建议之间不破坏主线结构。",
+      "defect": null,
+      "assessment_status": "independent_agreement",
+      "primary_answer": "yes",
+      "verification_answer": "yes"
+    },
+    {
+      "rubric_id": "R_Q06",
+      "answer": "yes",
+      "pages": [
+        3,
+        5,
+        7
+      ],
+      "evidence": "第3页对标图虚线及标注'行业标杆0.45'、标题'对标行业标杆0.45kWh/件'；第5页口径一'降至行业标杆0.45kWh/件'；第7页对标图'行业标杆0.45'。各处引用数值均为0.45kWh/件，与来源一致。",
+      "defect": null,
+      "assessment_status": "independent_agreement",
+      "primary_answer": "yes",
+      "verification_answer": "yes"
+    },
+    {
+      "rubric_id": "C_REASON",
+      "answer": "yes",
+      "pages": [
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "evidence": "逐项复算通过：四线合计68+49+34+31=182万kWh；月电费182×0.75=136.5万元；年电费136.5×12=1638万元；1号线产量占比80/305≈26%、用电占比68/182≈37%；0.85对其余三线倍数1.63-1.77即1.6-1.8倍；超标杆(0.85-0.45)/0.45≈89%、(0.52-0.45)/0.45≈16%、(0.48-0.45)/0.45≈7%；月多耗电(0.85-0.45)×80万=32万kWh×0.75=24万元、(0.85-0.5)×80万=28万kWh×0.75=21万元；年节省24×12=288万、21×12=252万；120÷24=5个月、120÷21≈5.7个月；12/5=2.4倍；12×0.75=9元/小时。比率分子分母与时期口径一致（同为月产80万件、同一电价），推导值均在页脚标注测算口径，结论由所述前提支持，未将相关性冒充因果。",
+      "defect": null,
+      "assessment_status": "independent_agreement",
+      "primary_answer": "yes",
+      "verification_answer": "yes"
+    },
+    {
+      "rubric_id": "I_BOUNDARY",
+      "answer": "yes",
+      "pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "evidence": "来源外新增断言均有清楚界定：年电费1638万元等推导值在第2页页脚明确标注'为推导值'并给出电价口径；第3页页脚声明'单源口径，无外部交叉验证'；第4页页脚声明根因结论'均为用户素材口径，未做外部检索验证'；第6页停机SOP、能耗监控告警等列入'改进方向'板块，第7页'安排生产淡季施工''验收目标0.45-0.5'均为明确建议/目标表述；液压元件磨损机理说明属对老化致效率下降的常识性解释且页脚已统一声明口径。未见新增事实冒充已证实情况。",
+      "defect": null,
+      "assessment_status": "independent_agreement",
+      "primary_answer": "yes",
+      "verification_answer": "yes"
+    },
+    {
+      "rubric_id": "N_FLOW",
+      "answer": "yes",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "evidence": "内容顺序为封面→四线全景对比→标杆对标→1号线根因深挖→投资回报测算→3号线管理改进→立项建议→结尾，主线与来源要求的叙述顺序一致；模块间有显式衔接（第4页'为下一页投资回报测算提供技术口径'、第6页'与1号线技改形成两条腿走路'、第7页决策要点回顾），第4页底部排查逻辑链将异常发现→排查→根因→方案串联。无无关信息堆积、自相割裂或无意义重复。",
+      "defect": null,
+      "assessment_status": "independent_agreement",
+      "primary_answer": "yes",
+      "verification_answer": "yes"
+    },
+    {
+      "rubric_id": "V_READ",
+      "answer": "no",
+      "pages": [
+        4
+      ],
+      "evidence": "Page 4: 左侧图表“四线能耗横向对比”X轴四个类别标签全部显示为“NaN”，属于未处理的破损残留，图表类别信息缺失需猜读；其余文字（标题、右侧三个卡片、底部逻辑链与数据来源）、数值0.85/8/0.52/6/0.48/12/5、双轴单位“单位能耗(kWh/件)”“空载能耗(kWh/h)”及图例均可辨认，所附局部放大图显示右侧卡片文字无实际叠印遮挡。",
+      "defect": null,
+      "defects": [
+        {
+          "key": "doc_8e9c36215717be0b6134d7d9/page/4/chart-x-axis-category-labels-nan",
+          "description": "第4页左侧“四线能耗横向对比”图表X轴四个类别标签均渲染为“NaN”，产线类别信息丢失，读者无法从图中辨认各柱对应的产线。"
+        }
+      ],
+      "page_verdicts": [
+        {
+          "rubric_id": "V_READ",
+          "answer": "yes",
+          "pages": [
+            1
+          ],
+          "evidence": "封面页：绿色小字“// 节能改造立项审批汇报”、白色大标题“产线设备能耗分析与节能改造立项建议”、副标题“基于一个月产线设备能耗数据的专项分析与改造立项汇报”、按钮“READ THE BRIEF”及右下角“DOC · 2026 年 9 月 / 汇报对象：立项评审委员会”均清晰可辨，无重叠、截断或对比不足；无图表，不适用图例要求",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_READ",
+          "answer": "yes",
+          "pages": [
+            2
+          ],
+          "evidence": "标题“一个月产线能耗全景：四线月用电 182 万 kWh，月电费约 136.5 万元”可读；组合图图例（月产量/月用电量/单位能耗）、左右轴单位（万件/万kWh、kWh/件）、柱值80/68/95/49/70/34/60/31及线值0.85/0.52/0.48/0.52、轴类别1-4号线均可辨；右侧合计卡（182万kWh、136.5万元、1638万元）与关键发现01-04标题及正文（含局部放大图所示“能效分化明显”“3号线单耗最优但空载最高”正文换行完整）均清晰可读；底部数据来源小字可辨；无NaN残留",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_READ",
+          "answer": "yes",
+          "pages": [
+            3
+          ],
+          "evidence": "标题“对标行业标杆 0.45 kWh/件：1号线超标杆 89%，2/3/4号线已接近标杆”可读；柱状图轴单位kWh/件、柱值0.85/0.52/0.48/0.52、类别1-4号线、虚线标注“行业标杆 0.45”均可辨；右侧“2/3/4号线：已接近标杆”列表、“1号线：唯一显著能耗洼地”卡片（含局部放大图所示“按月产80万件、电价0.75元/kWh测算；降至标杆月用电仅需36万kWh。”换行完整）及底部结论条、数据来源均清晰可读；无NaN残留",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_READ",
+          "answer": "no",
+          "pages": [
+            4
+          ],
+          "evidence": "左侧图表“四线能耗横向对比”X轴四个类别标签全部显示为“NaN”，属于未处理的破损残留，图表类别信息缺失需猜读；其余文字（标题、右侧三个卡片、底部逻辑链与数据来源）、数值0.85/8/0.52/6/0.48/12/5、双轴单位“单位能耗(kWh/件)”“空载能耗(kWh/h)”及图例均可辨认，所附局部放大图显示右侧卡片文字无实际叠印遮挡。",
+          "defect": {
+            "key": "doc_8e9c36215717be0b6134d7d9/page/4/chart-x-axis-category-labels-nan",
+            "description": "第4页左侧“四线能耗横向对比”图表X轴四个类别标签均渲染为“NaN”，产线类别信息丢失，读者无法从图中辨认各柱对应的产线。"
+          }
+        },
+        {
+          "rubric_id": "V_READ",
+          "answer": "yes",
+          "pages": [
+            5
+          ],
+          "evidence": "标题“1号线改造投资回报测算：投入120万元，年节省电费252-288万元”清晰；柱状图类别标签“当前（0.85 kWh/件）/口径一（降至0.45）/口径二（降至0.5）”、数值“68万kWh/36万kWh/40万kWh”、Y轴“月用电（万kWh）”0-70刻度均可辨认；右侧口径一、口径二卡片及保守口径框内文字数字完整可读；底部测算口径与数据来源小字可辨，无NaN等破损残留。",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_READ",
+          "answer": "yes",
+          "pages": [
+            6
+          ],
+          "evidence": "标题“3号线空载能耗四线最高：零投入管理改进压缩待机电费”清晰；图表“四线待机空载能耗对比”单位kWh/h、X轴类别1号线/2号线/3号线/4号线及数值8/6/12/5、Y轴0-12刻度均可辨认；右侧“现象与根因”区0.48/12/约9元及说明文字、改进方向01-03条目、底部结论框与数据来源均完整可读，无重叠截断，无NaN残留。",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_READ",
+          "answer": "yes",
+          "pages": [
+            7
+          ],
+          "evidence": "标题两行文字完整可辨（局部图显示“…停机管理改进”换行无截断）；柱状图数值0.85/0.45/0.5、类别标签“1号线现状/行业标杆/改造后验收目标”、单位kWh/件及刻度均可读；右侧“决策要点回顾/技术改造线/管理改进线”各框文字、底部“预期总收益”说明及数据来源行均清晰，无重叠叠印、截断或NaN残留",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_READ",
+          "answer": "yes",
+          "pages": [
+            8
+          ],
+          "evidence": "结束页“// END”“恳请评审委员会批准立项”、副标题“感谢各位评审，恳请批准节能改造立项”、左下“BACK TO TOP”按钮及右下汇报人/日期/附注文字均清晰可辨，无遮挡或破损残留",
+          "defect": null
+        }
+      ],
+      "aggregation": "any_no_else_unknown_else_all_yes",
+      "assessment_status": "not_independently_verified",
+      "primary_answer": "no",
+      "verification_answer": null
+    },
+    {
+      "rubric_id": "V_LAYOUT",
+      "answer": "yes",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "evidence": "Page 1: 简洁封面合理留白；顶部小标签—主标题—副标题—底部按钮与汇报对象信息层级清晰，阅读顺序明确，无错误对应关系\nPage 2: 左侧对比图与右侧合计卡、关键发现列表分区明确；标题—图—结论的阅读路径清晰，编号01-04的并列关系可识别，双轴图例与柱/线编码对应关系正确，无误导性组织\nPage 3: 左侧对标柱图与右侧分组结论卡（接近标杆组、能耗洼地卡、结论条）主次分明；红色1号线柱与绿色其他柱的颜色编码与右侧“唯一显著能耗洼地”结论对应一致，阅读顺序明确，无错误对应\nPage 4: 在卡片与正文内容可读的前提下，页面标题在上、左图右栏（数据异常发现/根因锁定/解决路径三卡片纵向排列）、底部“排查逻辑链”四步箭头流程与数据来源的组织清晰，主次与阅读顺序可识别，图形编码（绿色=单位能耗、橙色=空载能耗，双轴分列左右）不会造成错误对应；X轴NaN属标签破损问题，仅归V_READ，不在本条重复计分。\nPage 5: 标题居上，左侧改造前后对比柱状图与右侧口径一/口径二/保守口径三卡片左右分栏，底部测算口径与数据来源，主次关系和从上到下、先图后口径的阅读顺序明确；红/绿/浅绿柱色区分当前与两个口径，与X轴类别标签一一对应，无错误对应关系。\nPage 6: 标题居上，左图（四线待机空载能耗对比）右栏（现象与根因指标区、改进方向01/02/03编号列表、底部结论框）分栏明确，编号列表阅读顺序清晰；3号线柱以红色突出、其余绿色，与标题“3号线最高”的结论对应一致，无错误或歧义的编码对应。\nPage 7: 顶部标题—左侧对比柱状图—右侧三个要点框—底部收益说明与数据来源的层级与主次清晰，红/绿色柱编码对应现状与目标，阅读顺序明确，无错误对应关系\nPage 8: 结束页居中主标题、副标题与底部信息层级明确，合理留白符合结束页规范，无阅读顺序歧义",
+      "defect": null,
+      "defects": [],
+      "page_verdicts": [
+        {
+          "rubric_id": "V_LAYOUT",
+          "answer": "yes",
+          "pages": [
+            1
+          ],
+          "evidence": "简洁封面合理留白；顶部小标签—主标题—副标题—底部按钮与汇报对象信息层级清晰，阅读顺序明确，无错误对应关系",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_LAYOUT",
+          "answer": "yes",
+          "pages": [
+            2
+          ],
+          "evidence": "左侧对比图与右侧合计卡、关键发现列表分区明确；标题—图—结论的阅读路径清晰，编号01-04的并列关系可识别，双轴图例与柱/线编码对应关系正确，无误导性组织",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_LAYOUT",
+          "answer": "yes",
+          "pages": [
+            3
+          ],
+          "evidence": "左侧对标柱图与右侧分组结论卡（接近标杆组、能耗洼地卡、结论条）主次分明；红色1号线柱与绿色其他柱的颜色编码与右侧“唯一显著能耗洼地”结论对应一致，阅读顺序明确，无错误对应",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_LAYOUT",
+          "answer": "yes",
+          "pages": [
+            4
+          ],
+          "evidence": "在卡片与正文内容可读的前提下，页面标题在上、左图右栏（数据异常发现/根因锁定/解决路径三卡片纵向排列）、底部“排查逻辑链”四步箭头流程与数据来源的组织清晰，主次与阅读顺序可识别，图形编码（绿色=单位能耗、橙色=空载能耗，双轴分列左右）不会造成错误对应；X轴NaN属标签破损问题，仅归V_READ，不在本条重复计分。",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_LAYOUT",
+          "answer": "yes",
+          "pages": [
+            5
+          ],
+          "evidence": "标题居上，左侧改造前后对比柱状图与右侧口径一/口径二/保守口径三卡片左右分栏，底部测算口径与数据来源，主次关系和从上到下、先图后口径的阅读顺序明确；红/绿/浅绿柱色区分当前与两个口径，与X轴类别标签一一对应，无错误对应关系。",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_LAYOUT",
+          "answer": "yes",
+          "pages": [
+            6
+          ],
+          "evidence": "标题居上，左图（四线待机空载能耗对比）右栏（现象与根因指标区、改进方向01/02/03编号列表、底部结论框）分栏明确，编号列表阅读顺序清晰；3号线柱以红色突出、其余绿色，与标题“3号线最高”的结论对应一致，无错误或歧义的编码对应。",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_LAYOUT",
+          "answer": "yes",
+          "pages": [
+            7
+          ],
+          "evidence": "顶部标题—左侧对比柱状图—右侧三个要点框—底部收益说明与数据来源的层级与主次清晰，红/绿色柱编码对应现状与目标，阅读顺序明确，无错误对应关系",
+          "defect": null
+        },
+        {
+          "rubric_id": "V_LAYOUT",
+          "answer": "yes",
+          "pages": [
+            8
+          ],
+          "evidence": "结束页居中主标题、副标题与底部信息层级明确，合理留白符合结束页规范，无阅读顺序歧义",
+          "defect": null
+        }
+      ],
+      "aggregation": "any_no_else_unknown_else_all_yes",
+      "assessment_status": "not_independently_verified",
+      "primary_answer": "yes",
+      "verification_answer": null
+    }
+  ],
+  "ownership_conflicts": [],
+  "limitations": [
+    "Exact defect keys detect stated duplicate ownership, not every semantic duplicate.",
+    "Independent agreement is corroboration, not proof of correctness.",
+    "Items marked not_independently_verified use one assessor."
+  ]
+}

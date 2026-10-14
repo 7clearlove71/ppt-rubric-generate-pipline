@@ -1,0 +1,30 @@
+{
+  "offline": true,
+  "generation": {
+    "first_pass_logical_calls": 49,
+    "max_logical_calls": 91,
+    "max_http_attempts": 273,
+    "first_pass_image_presentations": 130
+  },
+  "judge_illustration": {
+    "basis": "Historical 113 criteria and 130 pages only; new approved criterion count not yet known",
+    "criteria": 113,
+    "pages": 130,
+    "first_pass_logical_calls": 469,
+    "max_logical_calls": 808,
+    "max_http_attempts": 2424
+  },
+  "rough_reported_token_estimate": {
+    "bailian": [
+      800000,
+      3000000
+    ],
+    "maas": [
+      8000000,
+      20000000
+    ]
+  },
+  "estimate_basis": "Historical generation reported 773003 tokens across 76 requests (one request missing usage); prior complete scoring 7323025 tokens across 284 requests (25 missing usage). New evidence protocol adds page extraction, consistency review and bounded rejudgments. Ranges are rough planning estimates, not limits or guarantees.",
+  "cost_estimate": null,
+  "price_verified": false
+}

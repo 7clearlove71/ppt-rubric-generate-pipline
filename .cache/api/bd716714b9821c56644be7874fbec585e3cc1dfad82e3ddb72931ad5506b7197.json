@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      5
+    ],
+    "evidence": "第5页标题为“三处‘说满’表述必须撤回”，明确以声明草稿为修改对象。该页中部以独立引用框完整呈现草稿原文（逐字引用）：“我司产品均符合国家标准，视频内容与事实不符，我司保留追究法律责任的权利。”并标注内部备注。下方以三行表格逐句拆解草稿原句——第一句“我司产品均符合国家标准”、第二句“视频内容与事实不符”、第三句“我司保留追究法律责任的权利”，分别对应风险诊断与改写方向。核心三层意思（合规断言、事实否认、法律追责威胁）均完整呈现，修改建议有明确对象。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 22664,
+    "total_tokens": 22810,
+    "completion_tokens": 146,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.372,
+  "attempts": 1
+}

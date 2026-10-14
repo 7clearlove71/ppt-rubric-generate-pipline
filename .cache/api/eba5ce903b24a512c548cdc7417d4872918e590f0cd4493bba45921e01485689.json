@@ -1,0 +1,72 @@
+{
+  "parsed": {
+    "answer": "no",
+    "pages": [
+      6,
+      7
+    ],
+    "evidence": "第6页和第7页存在多处正文文字与红色对应标注文字的实际笔画重叠，导致信息层级混乱、阅读路径受阻。具体核实如下：第6页问题01区域，'76.5%'与红色标注'〔对应第一部分：完工率'发生笔画相交（局部放大图p6_overlap_c650de81d3清晰显示'76.5%'的'6.5%'与红色'〔对应'重叠）；'91.2%'与红色标注'〔对应第三部分：长效维护机制满意率'发生笔画相交（局部放大图p6_overlap_5d36c1cd59显示'91.2%'的'1.2%'与红色标注起笔处重叠）；'93.5%'与红色标注'〔对应第三部分：需求匹配满意率'发生笔画相交（局部放大图p6_overlap_e72bdce6f3显示'93.5%'的'3.5%'与红色标注'〔对应'重叠）。第7页措施01区域，'100.0%'与红色标注'〔对应问题（一）｜责任：市住建局改造办、属地街道〕'发生笔画相交（局部放大图p7_overlap_7e1ff231d9显示'100.0%'的'0.0%'与红色标注'〔对应'重叠）；措施02区域，'90.0%'与红色标注'〔对应问题（二）｜责任：市财政局、市住建局〕'发生笔画相交（局部放大图p7_overlap_dc3257bdf8显示'90.0%'的'0.0%'与红色标注'〔对应'重叠）；措施03区域，'长效维护机制满意率提升至'与红色标注'〔对应问题（三）｜责任：属地街道、市住建局〕'发生笔画相交（局部放大图p7_overlap_242da0dfed显示'长'字起笔与红色标注'〔'重叠）。这些重叠不是单纯的bbox候选相交，而是实际字形笔画在同一空间竞争，正文数据与对应标注难以快速区分，破坏了视觉层级和阅读路径，导致评审组难以快速定位重点信息，符合visual_hierarchy缺陷定义。",
+    "evidence_ids": [
+      "p6_R12_direct_da6aed59a6c5",
+      "p6_R12_direct_45c299185013",
+      "p6_R12_direct_93c0dce86f0b",
+      "p7_R12_direct_366d5e56fb2e",
+      "p7_R12_direct_3e08b8d81bc6",
+      "p7_R12_direct_182459910cf9",
+      "p6_overlap_c650de81d3",
+      "p6_overlap_5d36c1cd59",
+      "p6_overlap_e72bdce6f3",
+      "p7_overlap_7e1ff231d9",
+      "p7_overlap_dc3257bdf8",
+      "p7_overlap_242da0dfed"
+    ],
+    "resolutions": [
+      {
+        "evidence_id": "p6_R12_direct_da6aed59a6c5",
+        "defect_present": true,
+        "reason": "局部放大图p6_overlap_c650de81d3核实：'76.5%'的'6.5%'笔画与红色标注'〔对应第一部分：完工率'的'〔对应'发生实际重叠，黑色数字与红色括号文字在同一空间相交，导致数据与标注难以区分，构成visual_hierarchy缺陷"
+      },
+      {
+        "evidence_id": "p6_R12_direct_45c299185013",
+        "defect_present": true,
+        "reason": "局部放大图p6_overlap_5d36c1cd59核实：'91.2%'的'1.2%'笔画与红色标注'〔对应第三部分：长效维护机制满意率'的'〔对应'发生实际重叠，句号与标注起笔相交，构成visual_hierarchy缺陷"
+      },
+      {
+        "evidence_id": "p6_R12_direct_93c0dce86f0b",
+        "defect_present": true,
+        "reason": "局部放大图p6_overlap_e72bdce6f3核实：'93.5%'的'3.5%'笔画与红色标注'〔对应第三部分：需求匹配满意率'的'〔对应'发生实际重叠，构成visual_hierarchy缺陷"
+      },
+      {
+        "evidence_id": "p7_R12_direct_366d5e56fb2e",
+        "defect_present": true,
+        "reason": "局部放大图p7_overlap_7e1ff231d9核实：'100.0%'的'0.0%'笔画与红色标注'〔对应问题（一）｜责任：市住建局改造办、属地街道〕'的'〔对应'发生实际重叠，百分号与标注括号相交，构成visual_hierarchy缺陷"
+      },
+      {
+        "evidence_id": "p7_R12_direct_3e08b8d81bc6",
+        "defect_present": true,
+        "reason": "局部放大图p7_overlap_dc3257bdf8核实：'90.0%'的'0.0%'笔画与红色标注'〔对应问题（二）｜责任：市财政局、市住建局〕'的'〔对应'发生实际重叠，构成visual_hierarchy缺陷"
+      },
+      {
+        "evidence_id": "p7_R12_direct_182459910cf9",
+        "defect_present": true,
+        "reason": "局部放大图p7_overlap_242da0dfed核实：'长效维护机制满意率提升至'的'长'字起笔与红色标注'〔对应问题（三）｜责任：属地街道、市住建局〕'的'〔'发生实际重叠，构成visual_hierarchy缺陷"
+      }
+    ],
+    "inspection_resolutions": [],
+    "additional_observations": []
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 72462,
+    "total_tokens": 73695,
+    "completion_tokens": 1233,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 118.902,
+  "attempts": 1
+}

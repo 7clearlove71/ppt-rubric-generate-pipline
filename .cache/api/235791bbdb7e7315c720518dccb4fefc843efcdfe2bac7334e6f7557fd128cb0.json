@@ -1,0 +1,213 @@
+{
+  "parsed": {
+    "page": 6,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "三年三步走：建工坊、扩产能、树品牌，逐级递进",
+        "location": "页面顶部标题区域",
+        "statement": "页面主标题，概括三年规划核心阶段",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第一年 · 夯基础 / 建工坊 · 育匠人 / 建成 800 平米 竹编工坊，培训 50 名 编织人员，形成\"有场地、有人手\"的生产与传承基础。",
+        "location": "左侧第一列内容区",
+        "statement": "第一年目标：建800平米工坊，培训50人。数字与用户给定需求一致。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第一年建工坊800平米+培训50人"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "800",
+            "unit": "平米",
+            "subject": "竹编工坊面积",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          },
+          {
+            "value": "50",
+            "unit": "人",
+            "subject": "培训编织人员",
+            "denominator": "不适用",
+            "time_origin": "第一年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "→",
+        "location": "第一列与第二列之间的箭头",
+        "statement": "视觉递进符号，表示阶段推进关系",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第二年 · 上规模 / 扩产能 · 增效益 / 产能提升至 年产10 万件，规模化摊薄成本，带动农户扩至 120 户，工坊进入稳定产出期。",
+        "location": "中间第二列内容区",
+        "statement": "第二年目标：年产10万件，带动农户120户。数字与用户给定需求一致。注意'带动农户扩至120户'在需求中为'第二年扩至120户'，此处表述一致。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第二年扩产能至年产量10万件"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "首期60户第二年扩至120户"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "10",
+            "unit": "万件",
+            "subject": "年产量",
+            "denominator": "年",
+            "time_origin": "第二年"
+          },
+          {
+            "value": "120",
+            "unit": "户",
+            "subject": "带动农户数",
+            "denominator": "不适用",
+            "time_origin": "第二年"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "→",
+        "location": "第二列与第三列之间的箭头",
+        "statement": "视觉递进符号，表示阶段推进关系",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "第三年 · 树品牌 / 建品牌 · 上电商 / 打造自有竹编品牌并 入驻电商平台，从代工走向品牌溢价，打通线上销售渠道。",
+        "location": "右侧第三列内容区",
+        "statement": "第三年目标：做品牌入驻电商平台。与用户给定需求一致。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "第三年做品牌入驻电商平台"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "递进逻辑：培训人才支撑扩产，扩产规模支撑品牌 —— 每一步都是下一步的地基",
+        "location": "底部深色横幅左侧",
+        "statement": "明确阐述三阶段之间的递进因果关系，强化逻辑链条",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "年度节点可验收 / 800 平米 · 50 人 · 10 万件 · 品牌电商",
+        "location": "底部右侧验收节点区",
+        "statement": "关键里程碑汇总，与三阶段内容对应",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "800",
+            "unit": "平米",
+            "subject": "工坊面积",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "50",
+            "unit": "人",
+            "subject": "培训人数",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          },
+          {
+            "value": "10",
+            "unit": "万件",
+            "subject": "年产量",
+            "denominator": "年",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：项目申报材料（三年规划：第一年建工坊800 平米+ 培训50 人，第二年扩产至年产10 万件，第三年品牌+ 电商平台）",
+        "location": "页面底部来源标注",
+        "statement": "数据来源标注，内容与正文一致，但为作品自述来源，非独立可核查来源",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t9与p6_t10等相邻行文字区域存在bounding box相交",
+        "location": "第一年内容区多行文字",
+        "statement": "经局部放大图核查，'员，形成\"有场地、有人手\"的生产与传承基'与'础。'为正常上下行换行排版，'编织人员'跨行显示为'编织人'+'员'，属于正常的段落分行，无真实字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t14-p6_t19等第二年内容区文字区域存在bounding box相交",
+        "location": "第二年内容区多行文字",
+        "statement": "经局部放大图核查，'产能提升至 年产10 万件，规模化摊薄成本，'与'带动农户扩至 120 户，工坊进入稳定产出期。'为正常两行换行排版，无真实字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p6_t23-p6_t26第三年内容区文字区域存在bounding box相交",
+        "location": "第三年内容区多行文字",
+        "statement": "经局部放大图核查，'打造自有竹编品牌并 入驻电商平台，'与'向品牌溢价，打通线上销售渠道。'为正常两行换行排版，无真实字形叠印遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 10776,
+    "total_tokens": 12019,
+    "completion_tokens": 1243,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 58.407,
+  "attempts": 1
+}

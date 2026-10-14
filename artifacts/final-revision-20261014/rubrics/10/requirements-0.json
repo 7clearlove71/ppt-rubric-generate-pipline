@@ -1,0 +1,142 @@
+{
+  "task_summary": "为次日一早管理层会议连夜制作危机应对PPT，将舆情负面话题摘要、近三天客服来电要点、公关部声明草稿三份素材融合为一个完整的危机应对逻辑，供管理层决策。",
+  "source_policy": "已知：三份内部素材的全部事实与数据（舆情摘要、客服来电统计、声明草稿原文及内部备注中的复核进度）。可推导：基于素材的影响评估结论、声明修改方向、分级响应机制设计。允许补充：危机公关的通用框架与组织表达，但不得虚构数据，也不得在复核未出结论前断言产品是否确有安全隐患。待确认：技术复核结论（预计约36小时后出具）。",
+  "requirements": [
+    {
+      "id": "Q01",
+      "kind": "deliverable",
+      "text": "交付“事实时间线”模块，以事件发展顺序立住危机事实脉络（用户明确四块结构不能少之一）",
+      "source_ids": [
+        "src_501ae2ab1893b3ad15f0aa1d"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q02",
+      "kind": "deliverable",
+      "text": "交付“影响评估”模块，综合舆情与客诉两侧数据评估事件影响（四块必备结构之一）",
+      "source_ids": [
+        "src_501ae2ab1893b3ad15f0aa1d"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q03",
+      "kind": "deliverable",
+      "text": "将公关部声明草稿单独拎出，交付针对性的修改建议，而非泛泛改措辞（四块必备结构之一）",
+      "source_ids": [
+        "src_501ae2ab1893b3ad15f0aa1d",
+        "src_20e28be5e5ce08275a1e3c88"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q04",
+      "kind": "deliverable",
+      "text": "交付“分级响应机制”（四块必备结构之一）",
+      "source_ids": [
+        "src_501ae2ab1893b3ad15f0aa1d"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q05",
+      "kind": "fact",
+      "text": "舆情起源与规模：6月10日起某测评博主发布视频质疑产品存在安全隐患，视频发布后24小时内转发破万，评论区负面情绪占比约72%，话题集中在“是否虚标”和“售后甩锅”两个点",
+      "source_ids": [
+        "src_254d6154bf8ae9b729f97ae9"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q06",
+      "kind": "fact",
+      "text": "当前舆情态势：情绪以质疑为主、尚无权威媒体跟进，但已有3个垂类KOL开始转发，有进一步发酵的苗头",
+      "source_ids": [
+        "src_254d6154bf8ae9b729f97ae9"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q07",
+      "kind": "fact",
+      "text": "关键时间窗口：48小时内若不做有效回应，舆情可能从质疑升级为抵制",
+      "source_ids": [
+        "src_254d6154bf8ae9b729f97ae9"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q08",
+      "kind": "fact",
+      "text": "客服来电情况：近三天相关来电约40通，诉求集中在退货退款（约60%）和要求官方说明（约35%）",
+      "source_ids": [
+        "src_46126b6d0ded09f5a5704f6d"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q09",
+      "kind": "fact",
+      "text": "客诉与舆情的关联：部分来电用户直接引用了该测评视频的说法，表明视频传播已影响到实际客诉",
+      "source_ids": [
+        "src_46126b6d0ded09f5a5704f6d"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q10",
+      "kind": "fact",
+      "text": "电商渠道退单量比平时多约15%，且该数据需纳入影响评估",
+      "source_ids": [
+        "src_46126b6d0ded09f5a5704f6d"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q11",
+      "kind": "fact",
+      "text": "声明草稿现状：草稿口径为“我司产品均符合国家标准，视频内容与事实不符，我司保留追究法律责任的权利”；内部备注显示技术复核尚未完成，预计还需36小时出结论",
+      "source_ids": [
+        "src_20e28be5e5ce08275a1e3c88"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q12",
+      "kind": "deliverable",
+      "text": "修改建议必须体现：在技术复核未完成（还需约36小时）的节点上，草稿把结论说得太满，万一复核发现确有问题会非常被动",
+      "source_ids": [
+        "src_20e28be5e5ce08275a1e3c88"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q13",
+      "kind": "deliverable",
+      "text": "修改建议必须体现：“追究法律责任”这类强硬措辞在当前情绪下很可能被解读为店大欺客、激化对立",
+      "source_ids": [
+        "src_20e28be5e5ce08275a1e3c88"
+      ],
+      "importance": 3
+    },
+    {
+      "id": "Q14",
+      "kind": "presentation",
+      "text": "面向管理层的危机应对决策汇报，供次日一早管理层会议使用",
+      "source_ids": [
+        "src_e265576efa9fbf4a33478d57"
+      ],
+      "importance": 2
+    },
+    {
+      "id": "Q15",
+      "kind": "presentation",
+      "text": "三份素材（舆情摘要、客服来电要点、声明草稿）需融合为一个完整的危机应对逻辑，不得直接拼接堆砌",
+      "source_ids": [
+        "src_e265576efa9fbf4a33478d57"
+      ],
+      "importance": 2
+    }
+  ]
+}

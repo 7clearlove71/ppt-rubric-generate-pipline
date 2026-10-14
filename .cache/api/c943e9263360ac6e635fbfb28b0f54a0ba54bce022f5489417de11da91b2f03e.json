@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      6
+    ],
+    "evidence": "第6页标题为“三年三步走：建工坊、扩产能、树品牌，逐级递进”，明确列出：第一年“建成800平米竹编工坊，培训50名编织人员”；第二年“产能提升至年产10万件，带动农户扩至120户”；第三年“打造自有竹编品牌并入驻电商平台”。三项年度目标、数值及归属均与用户给定内容完全一致，无缺失或错位。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 17429,
+    "total_tokens": 17527,
+    "completion_tokens": 98,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 18.047,
+  "attempts": 1
+}

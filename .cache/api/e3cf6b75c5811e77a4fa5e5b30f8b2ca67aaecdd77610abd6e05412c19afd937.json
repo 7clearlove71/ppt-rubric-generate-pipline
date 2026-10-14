@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      11
+    ],
+    "evidence": "第11页标题为'2026–2028：从工程化走向规模临床应用'，呈现结构化时间轴技术路线图：以水平时间线连接'现在→2026→2027→2028'四个节点，各节点对应明确的技术阶段——'工艺与验证固化'（良率工艺窗口固化、可靠性协议标准化）、'系统与集成'（阵列—器件—皮肤系统级集成与验证）、'临床与规模'（临床推进与规模化交付）。页面底部明确标注'三阶段推进：先固化工艺，再集成系统，最后拓展临床'，形成完整的发展路径结构。该页为典型的结构化技术路线图，非单纯文字罗列。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 41626,
+    "total_tokens": 41781,
+    "completion_tokens": 155,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 15.531,
+  "attempts": 1
+}

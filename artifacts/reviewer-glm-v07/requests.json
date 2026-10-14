@@ -1,0 +1,260 @@
+[
+  {
+    "request_id": 1,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "5c7f4a9be68c38e0889716ea3c2d784223f556fad0b9249fb5db4328dad95006",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1882,
+      "total_tokens": 2008,
+      "completion_tokens": 126,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.59
+  },
+  {
+    "request_id": 2,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "0bd29779668fa66564a887777a3bec4133ae07e8f66e6f57406f545cb51c8ae0",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1795,
+      "total_tokens": 1860,
+      "completion_tokens": 65,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "elapsed_seconds": 6.383
+  },
+  {
+    "request_id": 3,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "0bd29779668fa66564a887777a3bec4133ae07e8f66e6f57406f545cb51c8ae0",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1795,
+      "total_tokens": 1878,
+      "completion_tokens": 83,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "elapsed_seconds": 8.493
+  },
+  {
+    "request_id": 4,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "0bd29779668fa66564a887777a3bec4133ae07e8f66e6f57406f545cb51c8ae0",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1795,
+      "total_tokens": 1849,
+      "completion_tokens": 54,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "elapsed_seconds": 4.403
+  },
+  {
+    "request_id": 5,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "128e65efd65cf4b7404168baf3b2cd2fa7e3633f9f50a9cde07f298cb81e94d9",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1888,
+      "total_tokens": 1976,
+      "completion_tokens": 88,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 6.67
+  },
+  {
+    "request_id": 6,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "659d11b5b31864147035f3d99e89d97179c291ecdf0bd08bfa2d8f1ebb2ad6fa",
+    "attempt": 1,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1801,
+      "total_tokens": 1833,
+      "completion_tokens": 32,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "elapsed_seconds": 6.187
+  },
+  {
+    "request_id": 7,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "659d11b5b31864147035f3d99e89d97179c291ecdf0bd08bfa2d8f1ebb2ad6fa",
+    "attempt": 2,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1801,
+      "total_tokens": 1875,
+      "completion_tokens": 74,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "elapsed_seconds": 7.504
+  },
+  {
+    "request_id": 8,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "659d11b5b31864147035f3d99e89d97179c291ecdf0bd08bfa2d8f1ebb2ad6fa",
+    "attempt": 3,
+    "status": "failed",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1801,
+      "total_tokens": 1878,
+      "completion_tokens": 77,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "error_type": "ValueError",
+    "elapsed_seconds": 6.608
+  },
+  {
+    "request_id": 9,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "dc48f831b1b48e222b1c82becf5422a7543143a2e9846e06c44318b0cb2d1d85",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1862,
+      "total_tokens": 2093,
+      "completion_tokens": 231,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 8.97
+  },
+  {
+    "request_id": 10,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "042a1a8764fcb3fa0898da9775d24b82a728187f6be7682517541ab31b3801cc",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1870,
+      "total_tokens": 2066,
+      "completion_tokens": 196,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.486
+  },
+  {
+    "request_id": 11,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "51a982f81237212a320cf35e03476cc84b45fb1adfadbfb35cd1bff61ef4ee0e",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1857,
+      "total_tokens": 2035,
+      "completion_tokens": 178,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 7.426
+  },
+  {
+    "request_id": 12,
+    "role": "reviewer",
+    "model": "glm-5.2",
+    "cache_key": "31b37f532596ea1b78c438723601eac9ff95a1730e40f6bd985158ee1e9463b6",
+    "attempt": 1,
+    "status": "success",
+    "http_status": 200,
+    "usage": {
+      "prompt_tokens": 1852,
+      "total_tokens": 2071,
+      "completion_tokens": 219,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      }
+    },
+    "elapsed_seconds": 9.506
+  }
+]

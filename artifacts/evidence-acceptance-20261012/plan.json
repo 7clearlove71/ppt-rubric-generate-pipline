@@ -1,0 +1,30 @@
+{
+  "operation": "two_full_deck_single_criterion_acceptance_probes",
+  "case_id": "09",
+  "targets": [
+    [
+      "A",
+      "R14"
+    ],
+    [
+      "B",
+      "R09"
+    ]
+  ],
+  "logical_calls": 2,
+  "first_pass_http_upper": 6,
+  "shared_http_cap_including_bounded_repairs": 12,
+  "provider": "MaaS Kimi-K2.6",
+  "bailian_calls": 0,
+  "candidate_pages": {
+    "A": 8,
+    "B": 8
+  },
+  "source_hash": "d5662d7c396185bd67a17395a3b6615c852d85e73877efafca18936e6fbd0b26",
+  "full_scores": false,
+  "human_labels_in_inputs": false,
+  "holdout": false,
+  "authorization_basis": "User requests continued repair; existing MaaS credential permission. Fresh cap; no previous balance reused.",
+  "price": null,
+  "prompt_version": "2026-10-12.6"
+}

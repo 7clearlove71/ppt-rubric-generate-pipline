@@ -1,0 +1,38 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": [
+        "R06"
+      ]
+    },
+    "summary": "rubric通过审核。六项标准覆盖全部五个需求，维度分配合理。R03正确将事实准确性归入correctness而非重复检查fulfillment；R04的integrity条款合理约束无依据断言；R05、R06允许不同有效实现，未增设硬阈值。无重复计分或虚构条件。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 1825,
+    "total_tokens": 1933,
+    "completion_tokens": 108,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 3.647,
+  "attempts": 1
+}

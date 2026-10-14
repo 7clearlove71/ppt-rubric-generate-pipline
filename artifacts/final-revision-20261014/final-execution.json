@@ -1,0 +1,179 @@
+{
+  "version": "2026-10-14.contract-v2.3",
+  "generation_invocations": {
+    "primary-api": "4443cab1c5504bb2b424c38e322e24a1",
+    "verification-api": "e5157fbbb2694a65857029c57baf4433"
+  },
+  "note": "Each final-stage invocation is identified separately; request ledgers also include preserved earlier development pilots.",
+  "generation_invocations_recorded_at": "2026-10-14T03:43:35.458278+00:00",
+  "holdout_decision": {
+    "status": "not_run",
+    "decided_at": "2026-10-14T04:04:07.738052+00:00",
+    "before_final_candidate_scoring": true,
+    "reason": "Source-only QA already found duplicated atomic scoring goals in approved development rubrics 03 and 05. Preserve holdout because source validity has not passed; finish the frozen development experiment without further semantic revision.",
+    "holdout_labels_opened": false
+  },
+  "final_generation_completed_at": "2026-10-14T04:05:12.326404+00:00",
+  "generation_results": {
+    "02": {
+      "status": "approved",
+      "items": 19
+    },
+    "01": {
+      "status": "approved",
+      "items": 13
+    },
+    "03": {
+      "status": "approved",
+      "items": 11
+    },
+    "05": {
+      "status": "approved",
+      "items": 14
+    },
+    "06": {
+      "status": "approved",
+      "items": 15
+    },
+    "09": {
+      "status": "approved",
+      "items": 17
+    },
+    "10": {
+      "status": "approved",
+      "items": 20
+    }
+  },
+  "generation_attempts": {
+    "primary-api": {
+      "actual_attempts": 7,
+      "failed": 0,
+      "tokens_reported": 31363
+    },
+    "verification-api": {
+      "actual_attempts": 8,
+      "failed": 1,
+      "tokens_reported": 127569
+    }
+  },
+  "judgment_invocations": {
+    "primary-api": "45e88800b7be4992ab977e7f96f875f7",
+    "verification-api": "378eec2e2b98487390d945451baf99fe"
+  },
+  "status": "closed",
+  "closed_at": "2026-10-14T05:53:11.662969+00:00",
+  "judgment_process_exit_code": 2,
+  "judgment_exit_meaning": "All planned calls and reports completed; two combined assessments retain independent content disagreement.",
+  "final_result": {
+    "rubrics_automatically_approved": 7,
+    "primary_complete_decks": 14,
+    "combined_complete_decks": 12,
+    "total_decks": 14,
+    "visual_pages_with_both_criteria": 130,
+    "total_pages": 130,
+    "single_assessor_agreement": {
+      "matches": 4,
+      "n": 6,
+      "coverage_of_decided_labels": "6/6",
+      "agreement": 0.6666666666666666
+    },
+    "complete_score_agreement": {
+      "matches": 3,
+      "n": 4,
+      "coverage_of_decided_labels": "4/6",
+      "agreement": 0.75
+    },
+    "robust_interval_agreement": {
+      "matches": 3,
+      "n": 5,
+      "coverage_of_decided_labels": "5/6",
+      "agreement": 0.6
+    },
+    "source_semantic_qa": {
+      "report_cases": 7,
+      "reviewed_cases": 7,
+      "coverage": 1.0,
+      "cases_with_confirmed_material_findings": 4,
+      "case_ids_with_confirmed_material_findings": [
+        "03",
+        "05",
+        "06",
+        "10"
+      ],
+      "confirmed_material_findings": 5,
+      "cases_without_confirmed_counterexample": [
+        "01",
+        "02",
+        "09"
+      ],
+      "unreviewed_cases": [],
+      "conclusion_status": "final_for_declared_scope"
+    },
+    "judgment_semantic_qa": {
+      "reviewed_final_reports": 14,
+      "viewed_images": 53,
+      "source_catalogs": 7,
+      "frozen_rubrics": 7,
+      "findings": 17,
+      "shared_content_findings": {
+        "count": 13,
+        "ids": [
+          "F01",
+          "F02",
+          "F03",
+          "F04",
+          "F05",
+          "F06",
+          "F07",
+          "F08",
+          "F10",
+          "F12",
+          "F13",
+          "F15",
+          "F16"
+        ],
+        "meaning": "Shared positive verdicts with identified semantic or support defects. These are QA findings, not a measured overall error count; F02 retains a domain-common-knowledge exception boundary."
+      },
+      "verification_only_findings": {
+        "count": 2,
+        "ids": [
+          "F11",
+          "F17"
+        ],
+        "meaning": "Primary no is supported, verifier yes is defective, and final consensus already preserves unknown."
+      },
+      "primary_visual_findings": {
+        "count": 2,
+        "ids": [
+          "F09",
+          "F14"
+        ],
+        "meaning": "Specific missed layout/readability defects; these visual items had no independent second-model verification."
+      },
+      "rationale_precision_notes": 14,
+      "supported_checks_separate_from_findings": true,
+      "accuracy_or_score_recomputed": false,
+      "limits": [
+        "All 14 final reports were inspected within a targeted scope; not all 130 pages were visually re-inspected and not every criterion was independently rescored.",
+        "Agreement between two isolated model calls is not proof of correctness; reported findings include shared misses.",
+        "Supported binary answers can still contain wrong page references, numerical descriptions, overlap objects or visibility claims.",
+        "Actual overlap, readability severity, chart interpretation and common-knowledge exceptions must not be collapsed into one error label. The 10/B timing-origin concern is retained as an interpretation gap rather than a high-confidence extra reversed verdict.",
+        "Findings do not create new human truth, measure general accuracy, justify a winner, or alter frozen results."
+      ]
+    },
+    "production_quality_accepted": false,
+    "conclusion": "Reproducible research version; known semantic construction and judgment defects remain. Human labels and raw model answers were not changed to fit rankings."
+  },
+  "human_comparison_labels": {
+    "path": "artifacts/validation-20261013-evidence-v1/human-labels-dev.json",
+    "sha256": "39386c9f0a8af4894183a6a42097f6189292d2c0ca34eaa7eaeb25f3db195907",
+    "usage": "Offline score comparison only; separate historical human-reliability audit had already inspected development labels."
+  },
+  "final_receipts": {
+    "validation-summary.json": "b745f1dc2122b52d89308da13235b98784088c555db6ab9e21c490f9fcfa35e3",
+    "final-accounting.json": "1441ff0f27b8ff832394efae7756e7adf1897dd98584e351a0a383e5799a3e36",
+    "final-source-semantic-qa.json": "e9fe3f0ca7d34a52b114115949a69a3d855513f09e40121f0bd30b68ee4ee438",
+    "final-judgment-semantic-qa.json": "cf2d1ecdd5d541faa37dd5bce38e9c77ed1f7d89808283a75354152c5581f7b8",
+    "experimental-rubrics.jsonl": "322c125c51100820f6bcc594072829f55c28362cba459aa91dcd9f5d33332db7"
+  }
+}

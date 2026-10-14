@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "text_seen": [
+      "能效分化明显，1号线是洼地",
+      "单位能耗 0.85 kWh/件，约为其余三线（0.48-0.52）的 1.6-1.8",
+      "倍。"
+    ],
+    "overlapping": false,
+    "overlap_objects": [],
+    "description": "黑色背景上显示白色中文文字，共三行。第一行文字较大，第二行文字稍小，第三行仅有一个\"倍。\"字，与第二行左对齐。文字之间无笔画相交，各行文字在垂直方向有适当间距，无重叠。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 285,
+    "total_tokens": 408,
+    "completion_tokens": 123,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 120.71,
+  "attempts": 1
+}

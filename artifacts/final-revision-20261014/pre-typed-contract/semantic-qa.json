@@ -1,0 +1,11 @@
+{
+  "status": "failed_independent_semantic_check",
+  "automated_approved": true,
+  "case_id": "01",
+  "defects": [
+    "Key facts R01/R02/R03 were assigned fulfillment and checked again by generic correctness R09",
+    "Q08 changed time scope into a literal labeling requirement"
+  ],
+  "human_winner_consulted": false,
+  "disposition": "Preserved; not eligible as final v2 output. Typed source contract and fixed generic library added before expansion."
+}

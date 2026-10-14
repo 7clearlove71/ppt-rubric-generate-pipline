@@ -1,0 +1,167 @@
+{
+  "preliminary": false,
+  "cases": [
+    {
+      "case_id": "01",
+      "saved_rounds": 3,
+      "status": "quality_failed",
+      "last_saved_structural_errors": [
+        "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q03: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q04: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+      ],
+      "last_saved_semantic_review": {
+        "approved": false,
+        "issues": [],
+        "coverage": {},
+        "summary": "Semantic review skipped until structural errors are fixed",
+        "skipped": true
+      },
+      "history_complete": true
+    },
+    {
+      "case_id": "02",
+      "saved_rounds": 3,
+      "status": "quality_failed",
+      "last_saved_structural_errors": [
+        "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q03: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q04: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q05: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q06: duplicate explicit scoring in fulfillment ['R05'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q07: duplicate explicit scoring in fulfillment ['R06'] and correctness ['R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+      ],
+      "last_saved_semantic_review": {
+        "approved": false,
+        "issues": [],
+        "coverage": {},
+        "summary": "Semantic review skipped until structural errors are fixed",
+        "skipped": true
+      },
+      "history_complete": true
+    },
+    {
+      "case_id": "03",
+      "saved_rounds": 3,
+      "status": "quality_failed",
+      "last_saved_structural_errors": [
+        "Q02: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q04: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R07', 'R08']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q05: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q09: duplicate explicit scoring in fulfillment ['R05'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "R07: definition and exclusions must appear verbatim in judge_prompt",
+        "R10: definition and exclusions must appear verbatim in judge_prompt",
+        "R11: definition and exclusions must appear verbatim in judge_prompt",
+        "R12: definition and exclusions must appear verbatim in judge_prompt",
+        "R14: definition and exclusions must appear verbatim in judge_prompt"
+      ],
+      "last_saved_semantic_review": {
+        "approved": false,
+        "issues": [],
+        "coverage": {},
+        "summary": "Semantic review skipped until structural errors are fixed",
+        "skipped": true
+      },
+      "history_complete": true
+    },
+    {
+      "case_id": "05",
+      "saved_rounds": 3,
+      "status": "quality_failed",
+      "last_saved_structural_errors": [
+        "Q04: duplicate explicit scoring in fulfillment ['R01'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q05: duplicate explicit scoring in fulfillment ['R02'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q06: duplicate explicit scoring in fulfillment ['R03'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment.",
+        "Q07: duplicate explicit scoring in fulfillment ['R04'] and correctness ['R07']. Use one atomic present-and-correct criterion for each required fact in correctness; do not repeat it as a separate fulfillment criterion. Keep other task requirements in fulfillment."
+      ],
+      "last_saved_semantic_review": {
+        "approved": false,
+        "issues": [],
+        "coverage": {},
+        "summary": "Semantic review skipped until structural errors are fixed",
+        "skipped": true
+      },
+      "history_complete": true
+    },
+    {
+      "case_id": "06",
+      "saved_rounds": 3,
+      "status": "quality_failed",
+      "last_saved_structural_errors": [
+        "R11: definition and exclusions must appear verbatim in judge_prompt"
+      ],
+      "last_saved_semantic_review": {
+        "approved": false,
+        "issues": [],
+        "coverage": {},
+        "summary": "Semantic review skipped until structural errors are fixed",
+        "skipped": true
+      },
+      "history_complete": true
+    },
+    {
+      "case_id": "09",
+      "saved_rounds": 2,
+      "status": "approved",
+      "last_saved_structural_errors": [],
+      "last_saved_semantic_review": {
+        "approved": true,
+        "issues": [],
+        "coverage": {
+          "Q01": [
+            "R01",
+            "R12"
+          ],
+          "Q02": [
+            "R01",
+            "R02"
+          ],
+          "Q03": [
+            "R08",
+            "R12"
+          ],
+          "Q04": [
+            "R07",
+            "R09"
+          ],
+          "Q05": [
+            "R03",
+            "R13",
+            "R15"
+          ],
+          "Q06": [
+            "R04"
+          ],
+          "Q07": [
+            "R05"
+          ],
+          "Q08": [
+            "R06"
+          ]
+        },
+        "summary": "rubric完整覆盖八项需求：五项核心数据与叙事五要素各有'存在且准确'的专属条目（R07/R08），融合与情怀落地由R01/R02承担，风格与完整性由R03-R06承担，推论有效性、虚构事实、视觉三类缺陷均有单一owner且failure_modes边界与judge_prompt逐字一致，未发现重复计分、无依据硬条件或缺失要求。"
+      },
+      "history_complete": true
+    },
+    {
+      "case_id": "10",
+      "saved_rounds": 2,
+      "status": "error",
+      "last_saved_structural_errors": [
+        "R06: definition and exclusions must appear verbatim in judge_prompt",
+        "R13: definition and exclusions must appear verbatim in judge_prompt",
+        "R15: definition and exclusions must appear verbatim in judge_prompt"
+      ],
+      "last_saved_semantic_review": {
+        "approved": false,
+        "issues": [],
+        "coverage": {},
+        "summary": "Semantic review skipped until structural errors are fixed",
+        "skipped": true
+      },
+      "history_complete": false
+    }
+  ],
+  "case10_note": "Third-round reviewer responses failed schema validation before the round history could be persisted. requests.json retains all three failures; final status is error, not the last saved draft status.",
+  "interpretation": "Structural source-reference conflicts indicate failure to satisfy the present-and-correct single-criterion protocol. They are not by themselves proof of actual duplicate deductions; case 01 explicitly excludes missing facts from its accuracy criterion but remains structurally invalid."
+}

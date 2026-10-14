@@ -1,0 +1,49 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R02"
+        ],
+        "reason": "“必须同时包含考勤说明与至少一整页网络安全培训”将用户要求的考勤说明与未要求的网络安全培训捆绑，新增无来源硬条件。",
+        "fix": "仅保留“PPT中包含可辨识的考勤说明”；删除网络安全培训要求，或另设不扣分建议项。"
+      }
+    ],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": [
+        "R06"
+      ]
+    },
+    "summary": "R02把考勤说明与无来源的网络安全整页要求捆绑，需修正；其余覆盖与判据基本有效。"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 147,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 147
+    },
+    "prompt_tokens": 1830,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "text_tokens": 1830
+    },
+    "total_tokens": 1977
+  },
+  "elapsed_seconds": 4.445,
+  "attempts": 1
+}

@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "summary": "未发现有依据的反例"
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 21,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 21
+    },
+    "prompt_tokens": 4766,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048,
+      "text_tokens": 4766
+    },
+    "total_tokens": 4787
+  },
+  "elapsed_seconds": 1.857,
+  "attempts": 1
+}

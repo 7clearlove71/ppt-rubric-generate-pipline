@@ -1,0 +1,38 @@
+{
+  "parsed": {
+    "approved": true,
+    "issues": [],
+    "coverage": {
+      "Q01": [
+        "R05"
+      ],
+      "Q02": [
+        "R01"
+      ],
+      "Q03": [
+        "R02"
+      ],
+      "Q04": [
+        "R03"
+      ],
+      "Q05": [
+        "R06"
+      ]
+    },
+    "summary": "rubric覆盖全部五项需求，事实条目存在且准确归correctness，交付范围归fulfillment，未新增无依据硬条件，无重复计分，各条可独立评判。"
+  },
+  "model": "glm-5.2",
+  "usage": {
+    "prompt_tokens": 1888,
+    "total_tokens": 1976,
+    "completion_tokens": 88,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 6.671,
+  "attempts": 1
+}

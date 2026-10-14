@@ -1,0 +1,46 @@
+{
+  "parsed": {
+    "approved": false,
+    "issues": [
+      {
+        "severity": "error",
+        "item_ids": [
+          "R01",
+          "R02",
+          "R03",
+          "R05",
+          "R06"
+        ],
+        "reason": "反例：一份其余完整的PPT仅删去文化价值部分。R02因“文化价值部分整体缺失”记no；同时R01要求“项目背景、文化价值、带动农户模式、三年规划、资金用途等申报主体内容均已成文展开”，同一缺失使R01也记no。R01正文逐一枚举各模块，与R02/R03/R05/R06的模块存在性检查重复计分。",
+        "fix": "R01仅负责整体交付形态（主题对题、非模板占位、构成完整申报汇报），将“各主体内容均已成文展开”改为“整体构成连贯的申报叙事”，单个模块缺失交由对应条目判定。"
+      },
+      {
+        "severity": "error",
+        "item_ids": [
+          "R08",
+          "R10"
+        ],
+        "reason": "反例：规划页写“第三年入驻电商平台后实现年销售10万件”，把条件性目标说成已实现结果。R08缺陷定义含“把条件性目标说成已实现结果”记no；R10对同一表述以“把未来计划陈述为已完成事实”记no。同一缺陷被两条同时处罚。",
+        "fix": "从R08正文及failure_modes定义中删去“或把条件性目标说成已实现结果”，该缺陷仅由R10负责，R08只管算术、口径与比较有效性。"
+      }
+    ],
+    "summary": "存在两处重复计分：R01与各模块条目对单一模块缺失双重处罚；R08与R10对“目标说成既成事实”双重处罚。",
+    "coverage": {}
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 345,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0,
+      "text_tokens": 345
+    },
+    "prompt_tokens": 9229,
+    "prompt_tokens_details": {
+      "cached_tokens": 1024,
+      "text_tokens": 9229
+    },
+    "total_tokens": 9574
+  },
+  "elapsed_seconds": 25.017,
+  "attempts": 1
+}

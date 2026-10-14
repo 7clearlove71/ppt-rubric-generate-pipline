@@ -1,0 +1,274 @@
+[
+  {
+    "id": "valid-flexible-design",
+    "expected_approved": true,
+    "structural_errors": [],
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "未发现有依据的反例"
+    },
+    "approved": true,
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "Rubric完整覆盖所有需求，各维度分配合理，无重复计分或无依据要求。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "valid-equivalent-units",
+    "expected_approved": true,
+    "structural_errors": [],
+    "counterexample_review": {
+      "approved": true,
+      "issues": [],
+      "summary": "未发现有依据的反例"
+    },
+    "approved": true,
+    "review": {
+      "approved": true,
+      "issues": [],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "rubric完整覆盖五项需求：R01/R02覆盖工位领取与考勤，R03在correctness中检查24小时时限的存在与准确（含等价表述），R05覆盖新员工受众，R06落实不限制页数模板配色且仅设可读性底线，R04为合理通用诚信要求。无重复计分、无无依据硬条件、各条可独立评判。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-font-threshold",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R06"
+          ],
+          "reason": "“每一页的所有正文字体必须至少28磅，任何一页小于28磅则不通过”属于用户未要求的硬性字号阈值，且无视可读性",
+          "fix": "改为可观察的阅读质量判据，如“正文与背景对比清晰、字号在常规演示距离下可读，不强制固定字号”"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "覆盖基本完整，但R06引入无依据的28磅硬阈值，需修改后通过。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-extra-module",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R02"
+          ],
+          "reason": "R02要求“至少一整页网络安全培训”，这是用户没有要求且非必要质量原则的硬条件，属于新增交付范围。",
+          "fix": "删除“至少一整页网络安全培训”硬条件，仅保留“PPT中包含可辨识的考勤说明”。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R02新增用户未要求的网络安全培训硬条件，需修正；其余条目覆盖与判定语义基本有效。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-candidate-style",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R06"
+          ],
+          "reason": "要求“必须照候选A的黑底金字模板制作并采用同样封面布局”，属于新增用户未要求的硬性模板限制，且依赖候选身份，违反“不限制页数、模板与配色”。",
+          "fix": "删除对指定候选、固定模板、固定配色和封面布局的硬性要求；改为仅评估画面是否清晰可读、信息呈现是否有效。"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": []
+      },
+      "summary": "rubric整体覆盖了核心内容要求，但R06引入无依据的候选特定模板硬约束，影响有效性，需修改后方可通过。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-duplicate-fact",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R03",
+            "R04"
+          ],
+          "reason": "R03与R04检查同一事实（24小时激活时限的存在与准确），R04属integrity却重复correctness已覆盖的缺失/错误判定，造成双重扣分",
+          "fix": "删除R04，或将其改为仅检查与24小时时限无关的新增无依据断言（如虚构激活后果、流程细节），不再重复判定该事实的缺失或错误"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03",
+          "R04"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "整体覆盖良好，但R03与R04对同一关键事实重复计分，需修正后通过。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  },
+  {
+    "id": "invalid-demand-invention",
+    "expected_approved": false,
+    "structural_errors": [],
+    "approved": false,
+    "review": {
+      "approved": false,
+      "issues": [
+        {
+          "severity": "error",
+          "item_ids": [
+            "R01"
+          ],
+          "reason": "要求'至少一位具名负责人及其真实电话号码，不得使用占位'，用户未提供此信息，属于无依据硬条件且排斥合理占位",
+          "fix": "改为：PPT中有可辨识的工位领取说明；可呈现通用说明或明确标注待补充的负责人与联系方式，不要求虚构具体姓名或电话"
+        }
+      ],
+      "coverage": {
+        "Q01": [
+          "R05"
+        ],
+        "Q02": [
+          "R01"
+        ],
+        "Q03": [
+          "R02"
+        ],
+        "Q04": [
+          "R03"
+        ],
+        "Q05": [
+          "R06"
+        ]
+      },
+      "summary": "R01无依据强制真实姓名电话并禁止占位，违反协议第6条；其余条目覆盖完整、判据可观察，修正后可通过。"
+    },
+    "reviewer_called": true,
+    "detected_target": true,
+    "passed": true
+  }
+]

@@ -1,0 +1,171 @@
+{
+  "parsed": {
+    "page": 3,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "92%",
+        "location": "左侧中部，大号字体",
+        "statement": "可拉伸传感器阵列量产良率显示为92%，但用户给定事实要求呈现『从78%提升至92%』的完整变化过程。本页仅呈现当前值92%，未出现起始值78%或提升方向",
+        "kind": "fact",
+        "failure_mode": "sensor_yield_fact",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "可拉伸传感器阵列量产良率从78%提升至92%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "92",
+            "unit": "%",
+            "subject": "可拉伸传感器阵列量产良率",
+            "denominator": "不适用",
+            "time_origin": "当前值，未说明起始值"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "100,000",
+        "location": "中部，大号字体",
+        "statement": "柔性OLED器件弯曲次数显示为100,000次，与给定事实『弯曲10万次』一致；下方标注『性能无衰减』与给定事实一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "柔性OLED器件弯曲10万次无衰减"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "100000",
+            "unit": "次",
+            "subject": "柔性OLED器件弯曲次数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "临床试验 / 已进入临床试验阶段",
+        "location": "右侧，大号字体及下方小字",
+        "statement": "植入式电子皮肤状态标注为『临床试验』及『已进入临床试验阶段』，与给定事实一致；但本页未出现『与三甲医院合作』的合作方信息",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "与三甲医院合作植入式电子皮肤已进入临床试验阶段"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "三条主线，三年之内全部跨过工程化门槛",
+        "location": "页顶标题",
+        "statement": "标题提及三条主线和三年时间范围，与柔性电子主题及近三年时间范围相符",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "材料 — 器件 — 系统 — 应用，工程化闭环已成形",
+        "location": "页底横幅区域",
+        "statement": "呈现技术路线链条，但仅为概括性闭环表述，未展示具体的技术路线图（时间轴、阶段划分、里程碑节点等结构化内容）",
+        "kind": "inference",
+        "failure_mode": "missing_roadmap",
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "含技术路线图与下一步计划"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "03 / 13",
+        "location": "右下角页码",
+        "statement": "当前为第3页，共13页，属于报告早期页面",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "3",
+            "unit": "页",
+            "subject": "当前页码",
+            "denominator": "13",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "柔性电子团队 · 年会特邀报告",
+        "location": "左下角",
+        "statement": "标注汇报主体和场景，与给定需求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年会特邀报告PPT"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "可拉伸传感器阵列 / 柔性 OLED 器件 / 植入式电子皮肤",
+        "location": "三列布局的标题行",
+        "statement": "三项内容均属于柔性电子主题，与专家汇报场景匹配",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "量产工艺已稳定",
+        "location": "左侧92%下方小字",
+        "statement": "补充说明量产状态，但未标注为计划或目标，作为既定成果呈现",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "本页整体布局",
+        "location": "全页",
+        "statement": "三列对称布局，文字清晰无遮挡，对比度良好，无可见的文字叠印或裁切问题；text_overlap_candidates为空列表",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 6522,
+    "total_tokens": 7759,
+    "completion_tokens": 1237,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 57.798,
+  "attempts": 1
+}

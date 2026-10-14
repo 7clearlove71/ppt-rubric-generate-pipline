@@ -1,0 +1,46 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 10,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              10
+            ],
+            "evidence": "页面为结束页：FINIS 小标签、大标题“谢谢聆听——欢迎指正、补充线索与“拆台””、正文段落及底部“驻村田野记录者 / 驻村第 1-4 日 · 初步观察，存疑待考”均清晰可辨，无重叠、截断或对比不足；局部放大图确认标题与正文笔画无遮挡，无 NaN 残留。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              10
+            ],
+            "evidence": "内容可读前提下，层级清晰：FINIS 标签→主标题→装饰分隔线→说明段落→底部署名（圆点+名称+日期注释），主次关系明确，阅读顺序自上而下无歧义；结束页合理留白，不扣分。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 340,
+    "completion_tokens_details": {
+      "reasoning_tokens": 125,
+      "text_tokens": 215
+    },
+    "prompt_tokens": 3033,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 2047,
+      "text_tokens": 986
+    },
+    "total_tokens": 3373
+  },
+  "elapsed_seconds": 54.035,
+  "attempts": 1
+}

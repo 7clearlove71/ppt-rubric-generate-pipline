@@ -1,0 +1,1906 @@
+{
+  "schema_version": "1.0",
+  "status": "complete",
+  "scope": "Independent Codex semantic inspection of frozen contract_v2 formal judgments; not new human ground truth.",
+  "restrictions": {
+    "human_winner_labels_read": false,
+    "held_out_content_read": false,
+    "api_requests": 0,
+    "answers_or_code_modified": false,
+    "checkpoints_treated_as_final": false
+  },
+  "selection_policy": "Inspect completed final A.json/B.json reports, prioritizing decisive no/unknown, source scope and exclusions, numeric/time reasoning, actual page visibility and duplicate attribution. This is a targeted semantic QA, not an exhaustive independent rescoring.",
+  "reviewed_reports": [
+    {
+      "case_id": "02",
+      "candidate_id": "A",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/02/A.json",
+      "sha256": "041fe767b42c1889d735ea9c253d1cbabb132ce14a440a568d3c28e01ec93413",
+      "reported_summary": {
+        "status": "complete",
+        "score": 90.0,
+        "score_lower": 90.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All content verdict rationales read; source catalog and frozen criterion boundaries checked; original page images 3,4,8,9 inspected. Targeted semantic QA, not exhaustive image-by-image rescoring.",
+      "supported_checks": [
+        "V_READ no: real information-destroying overlap exists on pages 4,8,9.",
+        "V_LAYOUT yes does not repeat the same overlap as a second penalty.",
+        "Income totals use an explicit one-participant-per-household assumption on page 6; arithmetic and rounding shown in content reasoning are valid.",
+        "Required original facts and planning/budget correspondence are present in text; readability failures remain owned by V_READ."
+      ]
+    },
+    {
+      "case_id": "01",
+      "candidate_id": "A",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/01/A.json",
+      "sha256": "9798f0574cffb2a9659a3cb4588316dfd7d63d86c9a387d12582effda82c20f4",
+      "reported_summary": {
+        "status": "complete",
+        "score": 90.0,
+        "score_lower": 90.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All content rationales read; source and criterion exclusions checked; original page images 5,9,13 inspected. Targeted QA, not exhaustive independent rescoring.",
+      "supported_checks": [
+        "V_READ no: page 13 final-body line and invitation line truly overlap.",
+        "V_LAYOUT does not repeat the readability penalty.",
+        "Relative defect-rate reduction (22-8)/22 is about 63.6%, so about 64% is valid.",
+        "Three original achievement facts, roadmap and next-step plans are present; future plans are visibly marked as plans."
+      ]
+    },
+    {
+      "case_id": "02",
+      "candidate_id": "B",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/02/B.json",
+      "sha256": "88e43a4cc2812d0c8c6d9693352d048fb5b7d09c0d9984d3784483f130f7336c",
+      "reported_summary": {
+        "status": "complete",
+        "score": 100.0,
+        "score_lower": 100.0,
+        "score_upper": 100.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All eight pages of extracted content and all content rationales checked; original images 3,5,7 inspected; source and frozen criterion boundaries compared. No comparison to candidate A score or human label used.",
+      "supported_checks": [
+        "Original required project facts, year-by-year plans and budget correspondence are present.",
+        "Arithmetic 1800*12=21600 and 120*2.16=259.2 is correct, and 259 is normal approximation; the defect is units/assumption, not arithmetic.",
+        "Visual passes on sampled pages 3,5,7 are supported; not an exhaustive all-page visual audit."
+      ]
+    },
+    {
+      "case_id": "01",
+      "candidate_id": "B",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/01/B.json",
+      "sha256": "23e9a8f0faceba9260f9f21b588a84ee6f0f8115481b1c21da10019bfdfb4e30",
+      "reported_summary": {
+        "status": "complete",
+        "score": 100.0,
+        "score_lower": 100.0,
+        "score_upper": 100.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All content rationales and full extracted deck text read; source boundaries checked; original images 5 and 10 inspected. No comparative score or human winner used.",
+      "supported_checks": [
+        "Three required original achievements and substantive roadmap/plan modules are present.",
+        "Future 2026-2028 target numbers are visibly marked self-defined, so those targets alone should not fail information-boundary checks.",
+        "Several public comparison sections visibly identify public-source provenance and difference of measurement scope; they should not all be relabeled as unsupported team achievements.",
+        "Arithmetic yield-point and relative defect-rate changes are valid.",
+        "Sampled page 5 and 10 visuals are readable, but this does not independently certify every visual page."
+      ]
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "A",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/03/A.json",
+      "sha256": "6a9a756bdbf9b512096a2bda5032a3204ba44cb5c6c534d68696b8ab39f99fe9",
+      "reported_summary": {
+        "status": "complete",
+        "score": 90.0,
+        "score_lower": 90.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.000000000000004,
+            "possible": 25.000000000000004,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All content rationales and full extracted deck text read; source and frozen ROI criterion checked; original images 3,4,5 inspected. Source-contract construction defects are outside this judgment QA and retained in the separate source QA.",
+      "supported_checks": [
+        "V_READ no is supported by four NaN category labels on page 4; the geometry does not require inventing another overlap.",
+        "V_LAYOUT does not repeat the label problem.",
+        "120/24=5 and 120/21 about 5.7 months are valid calculations under the visible 0.45/0.5 scenarios.",
+        "The original source itself supplies about 18 months; this is not a hallucinated target, and a reasonable explicit conservative assumption is not intrinsically a calculation error."
+      ]
+    },
+    {
+      "case_id": "05",
+      "candidate_id": "A",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/05/A.json",
+      "sha256": "438830588989ae7a05418cf73ba8838597a0a45483458342bf844a5bbbff1382",
+      "reported_summary": {
+        "status": "complete",
+        "score": 90.0,
+        "score_lower": 90.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All content rationales and full extracted seven-page text checked; original pages2,7 inspected; uncertainty and duplicate-ownership boundaries reviewed.",
+      "supported_checks": [
+        "R_Q04/R_Q05/R_Q07/R_Q08 passes respect visible local uncertainty markers plus whole-deck preliminary-observation framing; bold analytic titles alone do not negate those boundaries.",
+        "No uncertainty defect is charged again under I_BOUNDARY, and no visual defect is charged again under V_LAYOUT.",
+        "Page2 has real overlap of the wrapped final house-character with the next inhabitancy line.",
+        "Page7 bottom body lines extend beyond the pale cards into the dark background and lose legibility; V_READ no is supported regardless of the imprecise clipping explanation."
+      ],
+      "evidence_precision_notes": [
+        {
+          "assessor": "verification",
+          "rubric_id": "R_Q02",
+          "pages": [
+            2,
+            3
+          ],
+          "note": "The rationale incorrectly says page2 DAY1 card explicitly lists young people leaving for work and remaining residents mostly elderly. Those two statements appear on page3, not page2. They do exist in the document, so this is a page-attribution error rather than a missing-fact failure."
+        },
+        {
+          "assessor": "primary",
+          "rubric_id": "V_READ",
+          "pages": [
+            7
+          ],
+          "note": "The explanation says the three final body lines are clipped by the card edge. The original image instead shows dark glyphs continuing beyond the pale card onto the dark background, causing severe contrast loss. The mechanism is overstated as clipping; the information-loss/no verdict remains supported."
+        }
+      ]
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "B",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/03/B.json",
+      "sha256": "7dea785bf6a61d0a276ea99feba18a8f317662b75bbdbd8ea7521aa4500b27eb",
+      "reported_summary": {
+        "status": "complete",
+        "score": 90.0,
+        "score_lower": 90.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.000000000000004,
+            "possible": 25.000000000000004,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All final content rationales, full extracted eight-page text, frozen source, and original pages3,4,5,7 checked. Ratio denominator, ROI delivery, added-source claims, actual overlap/cropping, and visual encoding checked.",
+      "supported_checks": [
+        "Original source facts, supplied approximately18-month estimate, and 120/6.6≈18.2 normal rounding are preserved; explicit45%/29% engineering assumptions are not themselves provenance violations.",
+        "Page5 presents a reproducible cashflow chain conditional on8.8万kWh savings; the separate upstream denominator inconsistency is assigned only to C_REASON.",
+        "Pages3,5 have real overlapping text/graphics and page7 has a left-edge cropped row label, supporting V_READ no.",
+        "The same overlap/cropping is not reused for V_LAYOUT; the independent time-axis encoding issue is described separately."
+      ],
+      "evidence_precision_notes": [
+        {
+          "assessor": "primary",
+          "rubric_id": "V_READ",
+          "pages": [
+            3
+          ],
+          "note": "The rationale swaps diagnostic row names/numbers: actual① is产量归一化对比 and② is分时段/分设备电耗拆分. It also describes dark-red blocks covering③④ keywords, whereas the original graph bars/labels intersect the upper diagnostic area and do not support that full stated range. Substantial true overlap remains, so the binary no is supported despite inaccurate detail."
+        },
+        {
+          "assessor": "primary",
+          "rubric_id": "V_READ",
+          "pages": [
+            7
+          ],
+          "note": "The left-edge label is genuinely clipped, but the claim that no stroke of并 is visible is stronger than the original image supports; residual strokes reach the page edge. The cropping/no conclusion remains supported."
+        }
+      ]
+    },
+    {
+      "case_id": "05",
+      "candidate_id": "B",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/05/B.json",
+      "sha256": "2c391adacb16398e74d7394ddfa6e7fe8dfee0684c4212c999191f678f49623f",
+      "reported_summary": {
+        "status": "complete",
+        "score": 90.0,
+        "score_lower": 90.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All final content rationales, complete extracted ten-page text, frozen source, and original pages3,5,8 inspected; prior page5 registered original crop revisited. Emphasis on local/global uncertainty, actual overlap, and duplicate ownership.",
+      "supported_checks": [
+        "Source facts and their uncertainty remain visible in headlines, source statements and S1-S9 list; the global preliminary-observation frame and local待考 markers support the uncertainty passes.",
+        "The17-cell and<50%/>50% descriptions are explicitly illustrative, not measured proportions; parallel hypotheses are framed as alternatives, and external references are not applied as village facts.",
+        "Page5 has extensive true overlapping table/annotation/text and page content extending below the visible slide; V_READ no is supported.",
+        "Page5 still has identifiable sections and numbered parallel cards; V_LAYOUT yes correctly excludes the readability defect rather than applying a duplicate penalty.",
+        "Original pages3,8 support the distinction between dense text and demonstrated overlap; no new content-direction error identified in this focused review."
+      ],
+      "evidence_precision_notes": [
+        {
+          "assessor": "primary",
+          "rubric_id": "V_READ",
+          "pages": [
+            5
+          ],
+          "note": "The formal rationale pairs五条并列可能解释 with card① as if these text bands directly overlap. The image places that heading above the numbered cards; the actual intrusions are gray table/annotation text crossing those bands. The most obvious registered close-up shows gray待专业辨识 crossing the white存疑核心 heading; the formal response instead emphasizes the orange初步观察 line. The true overlap/no verdict is supported, but object pairing and coverage should not be treated as precise solely because the verdict is correct."
+        }
+      ]
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "A",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/06/A.json",
+      "sha256": "94b4800947034136f885e68ca3ac67da38a3e22238497341094391de423ab11f",
+      "reported_summary": {
+        "status": "incomplete",
+        "score": null,
+        "score_lower": 65.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 25.0,
+        "dimensions": {
+          "correctness": {
+            "earned": 0,
+            "possible": 25.0,
+            "unresolved": 25.0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All final content rationales and full extracted thirteen-page text checked; original pages4,7,9,11,12,13 inspected. Focused on global scenario-data boundary, reported arithmetic and cross-page contradiction, visual information loss and ownership.",
+      "supported_checks": [
+        "Every page visibly marks the added data as scenario data; I_BOUNDARY yes is supported and the illustrative figures must not be treated as fabricated real measurements.",
+        "Five requested modules, formal headings, source-to-problem references and action plans exist; correct ratios and the1.9万元 household approximation are preserved.",
+        "Primary C_REASON no correctly identifies page11基础设施类已完成 contradicting page4 completion92.6%/97.1%; verification misses that claim. The final unknown retains the model disagreement rather than falsely publishing a complete score.",
+        "All five cited visual failure pages4,7,9,12,13 show the described actual overlaps:盖/加;15日/无效问卷;50件/64.1%; overflowing table rows; final white/gold text.",
+        "V_LAYOUT yes excludes the same physical overlaps. Clear rows/columns/sections remain identifiable."
+      ],
+      "evidence_precision_notes": [
+        {
+          "assessor": "verification",
+          "rubric_id": "C_REASON",
+          "pages": [
+            7,
+            8
+          ],
+          "note": "The rationale calls4424+1405 the sum of page8 subitem satisfaction counts. They are page7 overall response categories满意/基本满意; page7 explicitly states overall and page8 subitem questions must not substitute for each other. The5829/6214 calculation itself is correct, but the classification/page attribution is wrong."
+        }
+      ]
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "A",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/09/A.json",
+      "sha256": "b250b447096a063973f3463e1ced4e812dbeed832516bb3d3720bb447a3595fd",
+      "reported_summary": {
+        "status": "complete",
+        "score": 90.0,
+        "score_lower": 90.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All final content rationales, complete extracted eight-page text, frozen source and original pages1,2,4,5,6 inspected. Focused on cash-runway semantics, arithmetic, rhetorical narrative, physical overlap and the actual readability threshold.",
+      "supported_checks": [
+        "The source cash-runway wording remains two months of salary in the hardest month; this deck does not convert it to an asserted elapsed60-day crisis.",
+        "Plus5 percentage points and plus90 people are correct. Source facts, annual-story components and the requested connection of narrative to data are present.",
+        "研发交出专利 and留下的人赢得续约 are broad annual-summary synthesis in a task explicitly requesting narrative/data integration; this focused QA does not automatically equate them with an unsupported exclusive causal identification.",
+        "Page4 large月 actually intersects难 in the body text, supporting V_READ no; V_LAYOUT correctly excludes this same overlap.",
+        "Pages1/2 genuinely overlap gold亿 with green同比, and the primary explicitly acknowledges that physical relation. Whether the remaining distinct colored strokes meet the no-guessing readability threshold is an interpretation boundary; no high-confidence contrary verdict is recorded here. The earlier local overlap label alone cannot certify a readability failure under this rubric.",
+        "Pages5/6 key text and data are readable in the original images; no added content-direction error identified in this targeted review."
+      ],
+      "evidence_precision_notes": []
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "B",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/06/B.json",
+      "sha256": "4d9528ae9f93d6f1d149649d11fb5045f8845a5842c8acff9357c3fc727b94ac",
+      "reported_summary": {
+        "status": "complete",
+        "score": 90.0,
+        "score_lower": 90.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All final content rationales, complete extracted eight-page text and original pages3,6,7 checked; statistics, scenario scope, current/target dates and duplicate visual attribution emphasized.",
+      "supported_checks": [
+        "The illustrative-data notes on pages3-5 plus explicit context links on pages6-7 support the source boundary. Source itself does not give numeric facts.",
+        "63/68,3.65/4.28,2.87/3.65 and channel ratios are valid rounded figures;11962/12480×100=95.84935897 rounds to95.8 at one decimal.",
+        "2027 completion is explicitly a future target for the same unfinished projects; this QA does not turn a target date crossing calendar years into an established inconsistency by itself.",
+        "Original pages6/7 support V_READ no: red responsibility/source notes intersect body text, while page7 item04 remains separated.",
+        "V_LAYOUT yes respects the readable2×2 numbered structure and does not duplicate the overlap penalty. No new high-confidence content-direction error found."
+      ],
+      "evidence_precision_notes": [
+        {
+          "assessor": "verification",
+          "rubric_id": "R_Q02",
+          "pages": [
+            3
+          ],
+          "note": "Rationale misreads category progress as基础类100%、完善类95.6%、提升类88.2%. Actual categories are95.6%、88.2%、76.5%;100% is the common axis benchmark. The requested task-completion module still exists, so this changes evidence precision rather than its binary fulfillment verdict."
+        },
+        {
+          "assessor": "verification",
+          "rubric_id": "C_REASON",
+          "pages": [
+            5
+          ],
+          "note": "Rationale writes11962/12480=95.9%≈95.8%. Exact ratio is95.84935897%; normal one-decimal rounding gives95.8 directly. The deck is correct; the assessor arithmetic explanation is inaccurate."
+        },
+        {
+          "assessor": "verification",
+          "rubric_id": "I_BOUNDARY",
+          "pages": [
+            6,
+            7
+          ],
+          "note": "Rationale says pages3-7 all repeat本页数据为情景示例，正式汇报以核定数为准. That sentence is on pages3-5; page6 instead references previous data scope, page7 describes target scope. Context supports the yes verdict, but the claimed repeated quotation is false."
+        },
+        {
+          "assessor": "primary",
+          "rubric_id": "V_READ",
+          "pages": [
+            6
+          ],
+          "note": "The red source annotation crosses the灰色于 line in item02;中央 on the next line intersects a different red separator bar. The defect description merges them under the source-note object. Actual numeric values76.5/91.2/93.5 are now transcribed correctly, but body phrase完善类（5个）conflates the body with the separate red在建5个 note."
+        },
+        {
+          "assessor": "primary",
+          "rubric_id": "V_READ",
+          "pages": [
+            7
+          ],
+          "note": "Item03 overlap covers长效维护机制满意率提升至;90.0% is on a separate following line and remains readable. The long evidence quote overextends the affected text, though the shorter defect description correctly stops at提升至. The no verdict is supported."
+        }
+      ]
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/09/B.json",
+      "sha256": "7878f5d95f66b119e7ac9eceef86818e464e9ebfbdd54fd444af421e615844f4",
+      "reported_summary": {
+        "status": "complete",
+        "score": 100.0,
+        "score_lower": 100.0,
+        "score_upper": 100.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.0,
+            "possible": 25.0,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All final content rationales, full eight-page extracted/rendered text, source and original pages3,4,5,6,7 checked. Focused on incremental ratios, causal exclusion, runway versus elapsed duration, visibility and ownership.",
+      "supported_checks": [
+        "Derived revenue, R&D, growth and employee ratios are arithmetically valid at their stated approximation level.",
+        "Page5 shorthand每3元营收投回1元研发 is accompanied immediately by研发增量/营收增量 formula; page7 explicitly says每新增3元. Full visible context supplies the incremental boundary, so it is not independently flagged as wrong total-revenue division.",
+        "Page4 original image supports no-overlap/readability yes;104→102万元/人 being described as approximately stable is not treated as an exact-equality error.",
+        "Future directions explicitly avoid fabricated quantitative promises.",
+        "The content problems are assigned once: causal inference to C_REASON; source cash-runway object change to R_Q03; clipped footer to V_READ."
+      ],
+      "evidence_precision_notes": []
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "A",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/10/A.json",
+      "sha256": "54fe74c476cddf54c013e748477b7ae06fc0807428111e63b7fa467871e2c7c2",
+      "reported_summary": {
+        "status": "complete",
+        "score": 90.0,
+        "score_lower": 90.0,
+        "score_upper": 90.0,
+        "unresolved_weight": 0,
+        "dimensions": {
+          "correctness": {
+            "earned": 25.000000000000004,
+            "possible": 25.000000000000004,
+            "unresolved": 0
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All final content rationales, complete extracted eight-page text, frozen source and original pages3,4,6,7 checked. Focused on explicit time origins, unsupported complaint-category metadata, visible response mechanism and true overlaps.",
+      "supported_checks": [
+        "Actual news/call/order figures are retained; source-required statement-risk analysis is substantive; recommendations, thresholds and proposed responsibilities are visibly framed as suggestions.",
+        "Page6 bottom text really intersects the footer and page7 row-time labels intersect action text; V_READ no has direct support.",
+        "Page6 additionally places most L2 details and all detailed L3 table content below the slide; this extensive clipping remains a visual failure, not a second penalty under another criterion.",
+        "The original source does not fix the48-hour window anchor unambiguously. F15 therefore relies on the deck's own explicit different anchors rather than inventing an original calendar deadline."
+      ],
+      "evidence_precision_notes": [
+        {
+          "assessor": "primary_and_verification",
+          "rubric_id": "R_Q04",
+          "pages": [
+            6
+          ],
+          "note": "Both content rationales describe all three levels and each trigger/action/owner/deadline as complete. The original page visibly includes L1, only the beginning of the L2 table, and the right decision tree; most L2 details and all detailed L3 table rows are off the lower page edge. Extracted slide text contains them, but must not be presented as evidence that all details are visible to the meeting audience. The same clipping remains owned by the existing V_READ no, without an additional content penalty."
+        }
+      ]
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "B",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/judgments/10/B.json",
+      "sha256": "21d067dcf0233e59d9778e70098df78e36dd78e39fea7b4de9f843e51997f7c4",
+      "reported_summary": {
+        "status": "incomplete",
+        "score": null,
+        "score_lower": 87.05882352941177,
+        "score_upper": 90.0,
+        "unresolved_weight": 2.9411764705882355,
+        "dimensions": {
+          "correctness": {
+            "earned": 22.058823529411768,
+            "possible": 25.000000000000004,
+            "unresolved": 2.9411764705882355
+          },
+          "fulfillment": {
+            "earned": 30.0,
+            "possible": 30.0,
+            "unresolved": 0
+          },
+          "integrity": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "narrative": {
+            "earned": 15.0,
+            "possible": 15.0,
+            "unresolved": 0
+          },
+          "visual": {
+            "earned": 5.0,
+            "possible": 15.0,
+            "unresolved": 0
+          }
+        }
+      },
+      "review_scope": "All final content rationales and complete extracted eight-page text checked against frozen source and rubric; original pages 2, 3, 5, 6 and 7 visually inspected. Focused on required topic absence, timing origins, complete response levels and visual degree boundaries.",
+      "supported_checks": [
+        "Primary R_Q05 no is supported: the whole deck omits both specific topic meanings (whether specifications are overstated and after-sales blame-shifting); generic allegations to verify do not express either one. Final consensus already retains unknown because the verifier disagrees.",
+        "Page 5 visibly provides four response levels with triggers, actions and authorization; suggestions and future actions are generally presented as proposed measures.",
+        "Page 3 chart axis labels are genuinely crowded and touch; the extent of guessing remains a readability threshold judgment, so this QA does not assert a confident opposite answer. V_LAYOUT does not charge the same crowded labels again.",
+        "Page 6 phase durations 4+4+16+12+12=48 and their printed phase ranges are arithmetically consistent. Tonight approval wording is not treated as a confirmed source contradiction merely because the meeting is tomorrow morning."
+      ],
+      "evidence_precision_notes": [
+        {
+          "assessor": "verification",
+          "rubric_id": "C_REASON",
+          "pages": [
+            2
+          ],
+          "note": "The verifier explicitly equates T+36 hours on the factual timeline with source wording another 36 hours. The same left-side timeline starts with June 10 video publication and then T+24, while the right-side current-status box says another 36 hours. A common origin implies a shifted completion point; the verifier supplies no origin reconciliation. Unlike 10/A, this deck never literally defines T0, so QA retains this as a timing-origin interpretation gap rather than an additional high-confidence reversed verdict. It does not invent a calendar deadline or duplicate R_Q11."
+        },
+        {
+          "assessor": "primary",
+          "rubric_id": "V_READ",
+          "pages": [
+            6
+          ],
+          "note": "The rationale calls the upper chart Gantt-like, but the bars all start at zero and encode phase durations, not the printed phase start offsets. The durations and phase labels can still support a duration-chart interpretation; the imprecise name is not automatically an independent layout failure."
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "case_id": "02",
+      "candidate_id": "A",
+      "rubric_ids": [
+        "I_BOUNDARY"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "category": "missed_source_overattribution",
+      "confidence": "high for provenance/rationale defect; targeted QA does not replace the score",
+      "pages": [
+        3
+      ],
+      "criterion_boundary": "New specific claims need visible support or accurate hypothesis/proposal boundaries; reasonable general background is excluded.",
+      "source_anchor": "The sole source prompt gives 12 masters, average age 62, and risk of loss; it gives no per-master allocation of craft processes.",
+      "page_anchor": "P3: 现存师傅12位，单人退出即造成局部工序空心化（给定口径）",
+      "finding": "Both assessors say the new assertions are bounded or supported, but the page explicitly attributes a stronger project-specific deterministic claim to the given source. No source or assumption supports the mapping from any one person leaving to a specific process becoming empty. A general loss-of-tradition risk does not establish that mapping. The given-source label is therefore not an accurate boundary.",
+      "practical_limit": "This demonstrates that cross-model agreement can share an omitted source check. No raw answer, score, weight, or protocol was changed; other boundaries on pages 3-9 are genuinely present and should remain credited."
+    },
+    {
+      "id": "F02",
+      "case_id": "01",
+      "candidate_id": "A",
+      "rubric_ids": [
+        "I_BOUNDARY"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "category": "unsupported_expansion_of_background_exception",
+      "confidence": "high that the numeric gate has no supplied source or applicable visible qualification; whether to exempt it as common knowledge remains a domain judgment",
+      "pages": [
+        5
+      ],
+      "criterion_boundary": "Reasonable background common knowledge is exempt; specific added claims otherwise need support or clear hypothesis/target boundaries. Narrow captions cannot be silently broadened to cover unrelated numeric claims.",
+      "source_anchor": "The source supplies 78% to 92% yield, 100,000 bends and the clinical-trial stage; it gives no 90% eligibility threshold for batch delivery or cost control.",
+      "page_anchor": "P5: 良率越过90%，阵列才有资格进入批量交付与成本可控的轨道. A separate lower cost row alone says 工程通识解读，不引具体数字.",
+      "finding": "Both I_BOUNDARY rationales cite the lower cost-row note as evidence that all additions are bounded. That note does not visibly qualify the separate 90% threshold. The verifier additionally calls that threshold engineering common knowledge without establishing why this specific necessary threshold qualifies for the exception. The all-additions-bounded rationale therefore overlooks an unqualified numeric gate.",
+      "practical_limit": "QA does not externally adjudicate an industry-wide 90% rule and does not change the formal score. Page 9 linkage was inspected but is not separately declared a proven error, because reasonable synthesis versus asserted causality needs domain interpretation."
+    },
+    {
+      "id": "F03",
+      "case_id": "02",
+      "candidate_id": "B",
+      "rubric_ids": [
+        "C_REASON"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "category": "person_household_unit_substitution",
+      "confidence": "high",
+      "pages": [
+        5
+      ],
+      "criterion_boundary": "Supplemental calculations must preserve comparable objects and units; explicit reasonable assumptions are permitted.",
+      "source_anchor": "Original source: approximately 1800 yuan/person/month and 120 households in year two. It supplies neither participants per household nor household income.",
+      "page_anchor": "P5 shows per-person annual income 2.16万元, followed by total 120户 × 2.16万元/户·年 ≈259万元. Neither the page nor the other seven pages states one participant per household.",
+      "finding": "Both assessors verify multiplication and rounding but silently accept replacing yuan/person-year with yuan/household-year. A generic measured/estimated label does not supply the missing participants-per-household assumption. The correct unit conversion is conditional on that assumption; the existing rationale overlooks it.",
+      "practical_limit": "Keep required original fact item R_Q06 credited; the new unsupported conversion belongs only to C_REASON. No score or answer was edited."
+    },
+    {
+      "id": "F04",
+      "case_id": "02",
+      "candidate_id": "B",
+      "rubric_ids": [
+        "I_BOUNDARY"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "category": "source_label_accepted_without_support",
+      "confidence": "high for lack of source support; legal truth not externally adjudicated",
+      "pages": [
+        3
+      ],
+      "criterion_boundary": "Specific added claims need visible source support or accurate proposal/hypothesis/verification boundaries; merely citing supplied materials does not add absent facts to those materials.",
+      "source_anchor": "Source establishes provincial recognition in 2018; it does not establish qualification for a particular provincial funding program or exemption from demonstrating cultural value.",
+      "page_anchor": "P3: 项目文化价值无需自证，直接具备申报省级非遗保护资金的资格. Footer only attributes the 2018 recognition to project application materials.",
+      "finding": "The primary I_BOUNDARY rationale examines tourism suggestions but omits this asserted qualification. The verifier treats a general project-materials source label as support for all new claims, while quoting the unsupported qualification as positive evidence under R_Q04. This misses the difference between real supplied recognition and an added funding-eligibility conclusion.",
+      "practical_limit": "This QA does not state the project is legally ineligible. It identifies unsupported attribution and an unqualified conclusion under the frozen source-boundary rule; no rubric or score changed."
+    },
+    {
+      "id": "F05",
+      "case_id": "01",
+      "candidate_id": "B",
+      "rubric_ids": [
+        "I_BOUNDARY"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "category": "undisclosed_internal_data_treated_as_validated_boundary",
+      "confidence": "high",
+      "pages": [
+        5,
+        10
+      ],
+      "criterion_boundary": "Added specific team accomplishments need actual visible support or an accurate proposal/hypothesis/verification boundary. A claim that undisclosed internal results exist is not a hypothetical boundary.",
+      "source_anchor": "Supplied source gives only the three achievement statements: array yield 78%-92%, OLED 100000 bends without degradation, skin entering clinical trials with a tertiary hospital. It does not give a wireless engineering prototype, internal batches/CPk, electrical full inspection or reliability sampling records.",
+      "page_anchor": "P5: 前三段为团队内部量产口径，未随素材公开数值, including at least 12 batches/CPk and sampling metrics. P10 grey column is explicitly 2023-2025已完成（实测） and contains 无线信号链工程样机、通道数与采集链路验证.",
+      "finding": "Both I_BOUNDARY rationales treat the separation between future targets and grey completed nodes as sufficient evidence for all new assertions. The primary explicitly accepts internally held but undisclosed measurements as a boundary. That statement actually asserts existing team evidence; it neither provides such evidence nor marks it as hypothetical. Page 10 additionally labels an unsupported wireless prototype as measured completed work. Thus this is a source-ownership failure even though the future targets and public benchmarks are properly labeled.",
+      "practical_limit": "No request was made for confidential internal data and no outside industry claims were fact-checked. This QA only compares the supplied source with what the slide claims was already measured. No answer, score, or rubric was changed."
+    },
+    {
+      "id": "F06",
+      "case_id": "03",
+      "candidate_id": "A",
+      "rubric_ids": [
+        "R_Q03"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "category": "calculation_deliverable_not_substantiated",
+      "confidence": "high",
+      "pages": [
+        5
+      ],
+      "criterion_boundary": "The requested 120万元/about18months investment case requires an understandable calculation; approximation and explicit reasonable assumptions are permitted.",
+      "source_anchor": "The user provides about 18 months and expressly asks for this investment account to be calculated clearly.",
+      "page_anchor": "P5 calculates 5 and 5-6 months for two energy scenarios, then says construction shutdown loss and ramp-up discounts yield about18 months without any amount, duration, discount rate or cash-flow step for those factors.",
+      "finding": "Both assessors call the 18-month path understandable/reproducible because the other two 5-month scenario calculations are present. Naming conservative factors does not connect them quantitatively to the specified 18-month estimate. The issue is incomplete requested analysis, not that 18 is false or that assumptions are forbidden.",
+      "practical_limit": "Keep this defect owned by the ROI deliverable R_Q03; do not charge it again as C_REASON or I_BOUNDARY, and do not force agreement by treating the source-provided 18 months as mathematically impossible."
+    },
+    {
+      "id": "F07",
+      "case_id": "03",
+      "candidate_id": "A",
+      "rubric_ids": [
+        "C_REASON"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "category": "unsupported_cost_benefit_inference",
+      "confidence": "high",
+      "pages": [
+        3
+      ],
+      "criterion_boundary": "Added conclusions must follow from stated premises; correct arithmetic elsewhere does not establish a separate economic conclusion.",
+      "source_anchor": "Sources supply energy, production, electricity price, benchmark, and line1 replacement cost. They provide no retrofit investment costs for lines2-4.",
+      "page_anchor": "P3: 三线优化空间有限，改造收益难以覆盖投入.",
+      "finding": "The assessors verify benchmark gaps and arithmetic but omit the claim that retrofitting lines2-4 cannot cover investment. Being closer to the energy benchmark does not establish their benefit/cost ratio without a cost premise. This is distinct from the line1 18-month deliverable.",
+      "practical_limit": "This QA does not assert lines2-4 should be retrofitted. It identifies an unsupported exclusionary economic inference. No scores or raw outputs changed."
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "B",
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "confidence": "high",
+      "id": "F08",
+      "rubric_ids": [
+        "C_REASON"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "category": "ratio_denominator_semantic_error",
+      "pages": [
+        4
+      ],
+      "criterion_boundary": "Ratios must retain comparable numerators and denominators; clearly declared assumptions do not exempt internal arithmetic/semantic consistency.",
+      "source_anchor": "Source supplies the line1 energy data and approximately18-month payback; the45%/29% hydraulic decomposition is a labeled engineering estimate added by the deck.",
+      "page_anchor": "P4: 液压系统占1号线电耗45%（约30.6万kWh/月），老化使其能耗高出正常水平约29%; chart gives老化损失8.8万kWh.",
+      "finding": "Both assessors explicitly accept29%×30.6≈8.8 (verification:29%=8.8/30.6), using current consumption as denominator. 高出正常29% instead uses normal consumption: current30.6/1.29≈23.7209, excess≈6.8791. An8.8 reduction from30.6 implies roughly40.4% above normal21.8. This is not ordinary rounding or a missing-assumption complaint.",
+      "practical_limit": "No result changed. The supplied18-month estimate is not declared false;120/6.6≈18.2 is correct and the visible ROI chain is not independently failed for this same upstream defect."
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "B",
+      "reported_answers": {
+        "primary": "yes",
+        "verification": null,
+        "consensus": "yes",
+        "assessment_status": "not_independently_verified"
+      },
+      "confidence": "high",
+      "id": "F09",
+      "rubric_ids": [
+        "V_LAYOUT"
+      ],
+      "assessors": [
+        "primary"
+      ],
+      "category": "nonuniform_time_axis_encoding",
+      "pages": [
+        5
+      ],
+      "criterion_boundary": "Readable graphical encoding must not imply an incorrect correspondence. This issue is independent of the overlapping18-month annotation.",
+      "source_anchor": "The page itself assumes constant monthly savings6.6万元 and presents cumulative cashflow against months.",
+      "page_anchor": "P5 cumulative cashflow chart: numeric month positions0,6,12,18,24,36,60 are equally spaced; caption横轴：月份｜纵轴：万元（零基线真实尺度）.",
+      "finding": "Equal horizontal distances encode6-,12-, and24-month intervals identically, making the constant monthly saving appear to accelerate after24months. The primary yes rationale checks labels/colors but misses the distorted time correspondence in this connected cumulative cashflow plot.",
+      "practical_limit": "This is not a preference for a particular chart style; the actual numeric time spacing creates a misleading slope. The verification model did not independently inspect visual items. No score changed."
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "B",
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "confidence": "high",
+      "id": "F10",
+      "rubric_ids": [
+        "I_BOUNDARY"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "category": "fabricated_source_attribution",
+      "pages": [
+        3
+      ],
+      "criterion_boundary": "Additional specific evidence may be hypothetical or provisional, but cannot be presented as supplied source material when that material is absent.",
+      "source_anchor": "The complete source catalog gives four-line energy data, hydraulic aging as main cause, ROI estimate, electricity price and benchmark. It contains no diagnostic inspection checklist.",
+      "page_anchor": "P3 inspection row lists油温、系统压力波动、泵组卸载、泄漏点与溢流阀设定, followed by素材仅给出排查项目清单，未提供逐项实测读数.",
+      "finding": "The deck explicitly attributes an added diagnostic checklist to the source. Primary even describes that sentence as honest disclosure. Verification accepts the global estimate boundaries without checking this concrete source attribution. The engineering checklist could be proposed legitimately, but the supplied-material claim is unsupported.",
+      "practical_limit": "This does not reject the original source conclusion that hydraulic aging is the main cause or the correctly labeled45%/29% estimates. The finding concerns only the invented source checklist. No score changed."
+    },
+    {
+      "id": "F11",
+      "case_id": "06",
+      "candidate_id": "A",
+      "rubric_ids": [
+        "C_REASON"
+      ],
+      "assessors": [
+        "verification"
+      ],
+      "reported_answers": {
+        "primary": "no",
+        "verification": "yes",
+        "consensus": "unknown"
+      },
+      "category": "missed_cross_page_internal_contradiction",
+      "confidence": "high",
+      "pages": [
+        4,
+        11
+      ],
+      "criterion_boundary": "Clearly hypothetical data are allowed, but their own factual conclusions must be internally consistent.",
+      "source_anchor": "Original source requests a formal report with consistent statistical scope; it supplies no numeric facts, and the deck labels its numbers情景数据.",
+      "page_anchor": "P4 infrastructure rows show63/68=92.6% and66/68=97.1%; P11主要表现 states基础设施类已完成.",
+      "finding": "Primary correctly rejects the contradiction. Verification cites correct ratios and source-to-problem references to assert all conclusions follow, missing that the infrastructure category still has unfinished units. This is a verifier error rather than a shared incorrect consensus.",
+      "practical_limit": "The frozen final report already retains C_REASON unknown due to disagreement. QA does not resolve that unknown or change points. This is not a provenance complaint against allowed scenario data."
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "confidence": "high",
+      "id": "F12",
+      "rubric_ids": [
+        "C_REASON"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "category": "unsupported_exclusive_causal_inference",
+      "pages": [
+        3,
+        7
+      ],
+      "criterion_boundary": "Data-supported narrative may synthesize outcomes, but the fixed criterion explicitly excludes asserting established causation from correlation or unsupported premises.",
+      "source_anchor": "Source supplies revenue4.2亿元,+26%,renewal91%,R&D and team figures, without old/new-customer revenue contribution or a causal attribution study.",
+      "page_anchor": "P3 headline:26%的增长不是靠拉新堆量，而是靠91%的老客户续约; body:若靠透支式拉新堆量，续约率不会守在91%; P7:五项指标，互为因果.",
+      "finding": "Both assessors explicitly call the P3 counterfactual reasonable and nonabsolute, despite its unsupported exclusion. A91% retention rate for existing customers can coexist with acquisition-driven revenue growth; it provides neither the old/new revenue decomposition nor the asserted implication. P7 strengthens correlation into互为因果. This exceeds the broader annual-summary rhetoric that was not flagged in09/A.",
+      "practical_limit": "No actual driver of the business growth is asserted by QA. Valid original figures, normal arithmetic and narrative integration are preserved; no duplicate failure is assigned to I_BOUNDARY or the presentation criteria, and no scores changed."
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "confidence": "high",
+      "id": "F13",
+      "rubric_ids": [
+        "R_Q03"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "category": "source_fact_runway_recast_as_elapsed_duration",
+      "pages": [
+        6
+      ],
+      "criterion_boundary": "The source fact criterion preserves the object, period, status and qualifiers of the given two-month salary coverage statement.",
+      "source_anchor": "最难那个月账上现金只够发两个月工资 describes available cash measured in months of salaries at a difficult moment, not an elapsed crisis duration.",
+      "page_anchor": "P6 headline:现金只够发2个月工资的那60天; bottom:熬过这60天. The original quotation and0–60day runway graphic also remain on the page.",
+      "finding": "Both assessors accept the page as merely a reasonable2months≈60days conversion. That approximation itself is fine, but the headline and熬过 reassign the60days to an experienced historical period. The correct source quotation elsewhere does not establish that period. Primary also repeats最难60天 in its narrative rationale.",
+      "practical_limit": "The record concerns changed meaning of the given source fact, assigned only to R_Q03; it is not an objection to a60day runway visualization or a second I_BOUNDARY/C_REASON charge. No answers changed."
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "reported_answers": {
+        "primary": "yes",
+        "verification": null,
+        "consensus": "yes",
+        "assessment_status": "not_independently_verified"
+      },
+      "confidence": "high",
+      "id": "F14",
+      "rubric_ids": [
+        "V_READ"
+      ],
+      "assessors": [
+        "primary"
+      ],
+      "category": "missed_off_page_text_clipping",
+      "pages": [
+        5
+      ],
+      "criterion_boundary": "All visible slide text must remain readable without clipping; the criterion does not exempt a footnote because the same number appears elsewhere.",
+      "source_anchor": "Original slide text contains the footer ending增量2,880万\n元、增幅≈+96%. The registered PDF rendered_text instead ends增量\n元、增幅≈+96%, with2,880万 missing.",
+      "page_anchor": "P5 source/calculation footer extends beyond the right page edge after增量. Original image visibly truncates the rightmost phrase while the next line starts元.",
+      "finding": "Primary declares both footnote lines complete and interprets增量…元 solely as a number/unit line break. The actual image and rendered text show the intervening2,880万 is clipped off the page. This is an actual visibility miss, not a judgment about layout density.",
+      "practical_limit": "The number remains elsewhere in the slide, so no content-fact failure is duplicated. Verification did not independently inspect visual criteria; no score is changed."
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "A",
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "confidence": "high",
+      "id": "F15",
+      "rubric_ids": [
+        "C_REASON"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "category": "incompatible_time_origins_subtracted",
+      "pages": [
+        3
+      ],
+      "criterion_boundary": "The fixed reasoning criterion explicitly requires comparable time starting points; marking an expression推导 does not make incompatible durations comparable.",
+      "source_anchor": "Source gives an48-hour response warning and a technical review expected to require another36hours. It supplies no elapsed time sinceJune10 for the subtraction.",
+      "page_anchor": "P3 left-to-right timeline passesT0=6月10日,T0+24h,当前; right cards label review36hours当前起算 and window48hoursT0+48h, then state余量区=48小时窗口−还需36小时.",
+      "finding": "The deck explicitly sets different origins but subtracts48−36 as remaining margin. If elapsed time sinceT0 is e, that margin is48−e−36, not48−36. Both assessors approve the comparison because it is labeled推导, without checking the missing elapsed-time premise. No value for e is supplied.",
+      "practical_limit": "QA does not impose its own interpretation of the source's48-hour anchor or infer a current calendar date. The independent contradiction is between the deck's explicit anchors and its subtraction. Original36/48facts and the reasonable suggestion to communicate before review are preserved; no double charge to fact/timeline items."
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "A",
+      "reported_answers": {
+        "primary": "yes",
+        "verification": "yes",
+        "consensus": "yes"
+      },
+      "confidence": "high",
+      "id": "F16",
+      "rubric_ids": [
+        "I_BOUNDARY"
+      ],
+      "assessors": [
+        "primary",
+        "verification"
+      ],
+      "category": "unsupported_source_metadata_asserted",
+      "pages": [
+        4
+      ],
+      "criterion_boundary": "An added concrete data-definition assertion needs source support or an accurate assumption/uncertainty boundary.",
+      "source_anchor": "The source lists roughly60% refund and35% official-explanation requests; it gives no whether/extent of overlap between those categories.",
+      "page_anchor": "P4 note:两项均为素材原值，口径存在重叠，按原值分列呈现，不加总、不补差; footer repeats素材原值、口径重叠.",
+      "finding": "The deck asserts overlap as established metadata. Primary accepts it as a correct scope handling; verification gives a whole-deck I_BOUNDARY yes without detecting the unsupported assertion. Neither overlap nor mutual exclusivity follows from the given percentages. Choosing not to add the percentages is prudent, but cannot establish why they overlap.",
+      "practical_limit": "The60%/35% source values remain accurate and are not failed again under R_Q08. QA does not claim the groups are disjoint or that a missing5% category must be invented. No answers changed."
+    },
+    {
+      "id": "F17",
+      "case_id": "10",
+      "candidate_id": "B",
+      "rubric_ids": [
+        "R_Q05"
+      ],
+      "assessors": [
+        "verification"
+      ],
+      "reported_answers": {
+        "primary": "no",
+        "verification": "yes",
+        "consensus": "unknown"
+      },
+      "category": "verifier_invents_omission_exception",
+      "pages": [
+        2,
+        3
+      ],
+      "confidence": "high",
+      "criterion_boundary": "R_Q05 expressly includes the two topic meanings; the frozen exclusions permit semantic equivalents, not deletion of selected required facts as unimportant details.",
+      "source_anchor": "src_254d6154bf8ae9b729f97ae9:话题主要集中在“是否虚标”和“售后甩锅”这两个点上; the same two topics appear expressly in R_Q05 pass_condition.",
+      "page_anchor": "Complete eight-page text and relevant original pages lack both topic meanings. Page 2待复核事项 says指控逐句真伪, which identifies no specific allegation topic.",
+      "finding": "Verification explicitly admits both topics are not presented but downgrades them to素材细节 and accepts generic指控逐句真伪 plus the retained numerical facts. This invents an exception to the frozen criterion. Primary performs a whole-deck absence check and returns no; the final report correctly retains unknown.",
+      "practical_limit": "This is a verifier-only error, not a shared false consensus. QA does not resolve unknown, change scores, require exact wording, or count the omission again under another criterion."
+    }
+  ],
+  "pending_cases": [],
+  "prepared_source_and_rubric_cases": [
+    "01",
+    "02",
+    "03",
+    "05",
+    "06",
+    "09",
+    "10"
+  ],
+  "preparation_notes": [
+    {
+      "case_id": "01",
+      "candidate_id": "A",
+      "pages": [
+        5,
+        9
+      ],
+      "focus": "Check whether all-source-boundaries-clear claims address page 5's 90% batch-delivery threshold and page 9's asserted supply/reliability-to-clinical linkage; narrow method notes on other pages do not automatically apply globally."
+    },
+    {
+      "case_id": "01",
+      "candidate_id": "B",
+      "pages": [
+        5,
+        7,
+        10
+      ],
+      "focus": "Separate explicitly marked public benchmarks and future targets from unsupported assertions of completed internal team measurements; preserve cross-object comparison restrictions."
+    },
+    {
+      "case_id": "02",
+      "candidate_id": "B",
+      "pages": [
+        3,
+        5
+      ],
+      "focus": "Check unsupported funding-qualification claim and per-person to per-household annual income conversion; page 5 shows 120 households multiplied by 2.16万元/household-year without visible one-participant-per-household assumption."
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "A",
+      "pages": [
+        3,
+        5,
+        7
+      ],
+      "focus": "Distinguish correct arithmetic from unsupported claims that alternatives cannot repay; check whether a quantified 18-month conservative calculation is actually supplied and avoid charging the same anchor twice."
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "B",
+      "pages": [
+        3,
+        4,
+        5
+      ],
+      "focus": "Distinguish explicitly disclosed engineering assumptions from proven diagnosis. The phrase high by 29% relative to normal has a different denominator from treating 29% of the current hydraulic total as recoverable loss; approximate 18.2-to-18 months itself is valid rounding."
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "pages": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "focus": "Check causal claims against supplied figures; distinguish incremental R&D/revenue ratio from total R&D share; inspect cash-runway duration versus the elapsed period of a crisis. Do not automatically treat every rhetorical juxtaposition as proof of causation."
+    }
+  ],
+  "reviewed_images": [
+    {
+      "case_id": "01",
+      "candidate_id": "A",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/c70c3c364cebc9edfd772df981f310d6deb5a5ea766fbacb5832e301bccfad1a/page-005.png",
+      "sha256": "98e8352048793592eed1e0aff4a107c772a6e6efe6d7f468ac7d4eb2c86c574b",
+      "detail": "original"
+    },
+    {
+      "case_id": "01",
+      "candidate_id": "A",
+      "page": 9,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/c70c3c364cebc9edfd772df981f310d6deb5a5ea766fbacb5832e301bccfad1a/page-009.png",
+      "sha256": "5b57685516cddac510a6fc93a4727a9a2b3ca29a00ffd578900a8ce27385e58b",
+      "detail": "original"
+    },
+    {
+      "case_id": "02",
+      "candidate_id": "B",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/3e6a194179ae7e516f274fbf3674ca7a8d349ca4d08522054e0fe84c2b2f6be2/page-005.png",
+      "sha256": "056b4ae94411e0fe91427ebe53d37f90b71e92c95ade0cfdf04df37b1d3dac01",
+      "detail": "original"
+    },
+    {
+      "case_id": "02",
+      "candidate_id": "A",
+      "page": 3,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/e4d40da1afdcb7b6da9c966c54c69a5035d7058bc1ec75cca96d1b40828f4034/page-003.png",
+      "sha256": "54904851f90c0b2a183a7785272dbec632f0623c9cef948a23db75993df9887a",
+      "detail": "original"
+    },
+    {
+      "case_id": "02",
+      "candidate_id": "A",
+      "page": 4,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/e4d40da1afdcb7b6da9c966c54c69a5035d7058bc1ec75cca96d1b40828f4034/page-004.png",
+      "sha256": "4782abed4fc3d1b9a40b3968a021f85a0f643731c317eeb231be8216e4a353a2",
+      "detail": "original"
+    },
+    {
+      "case_id": "02",
+      "candidate_id": "A",
+      "page": 8,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/e4d40da1afdcb7b6da9c966c54c69a5035d7058bc1ec75cca96d1b40828f4034/page-008.png",
+      "sha256": "471eaeea3490030efcd4f3ef7c0ab0708623a8b64888e0d32496a1f4af42c2bc",
+      "detail": "original"
+    },
+    {
+      "case_id": "02",
+      "candidate_id": "A",
+      "page": 9,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/e4d40da1afdcb7b6da9c966c54c69a5035d7058bc1ec75cca96d1b40828f4034/page-009.png",
+      "sha256": "06333b8870f56b73abdcef5d074bdd8d2e5f73d466dbf59cead05918ad2810b7",
+      "detail": "original"
+    },
+    {
+      "case_id": "01",
+      "candidate_id": "A",
+      "page": 13,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/c70c3c364cebc9edfd772df981f310d6deb5a5ea766fbacb5832e301bccfad1a/page-013.png",
+      "sha256": "13aebc8d4715c747dc8d168dbe8a7a23ee584fa387411feee765ed8dd4b7d314",
+      "detail": "original"
+    },
+    {
+      "case_id": "01",
+      "candidate_id": "B",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/027c38e7fe1f6b9d12825d6be5a49f7d13a39a06f8865f121b6da8a67e4b7fc2/page-005.png",
+      "sha256": "34667534d0893930d4fd7d9a836a827f41e894b79e5e3d9dbb90a618d75668dc",
+      "detail": "original"
+    },
+    {
+      "case_id": "01",
+      "candidate_id": "B",
+      "page": 10,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/027c38e7fe1f6b9d12825d6be5a49f7d13a39a06f8865f121b6da8a67e4b7fc2/page-010.png",
+      "sha256": "0a5dd1d563f87da56039bb07cf07ed7b802657cf0e83bd70a2d898fbdef68d93",
+      "detail": "original"
+    },
+    {
+      "case_id": "02",
+      "candidate_id": "B",
+      "page": 3,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/3e6a194179ae7e516f274fbf3674ca7a8d349ca4d08522054e0fe84c2b2f6be2/page-003.png",
+      "sha256": "6bb6fd7bba107d566034002a807abc3f8de24ed6f2564fc31d98636ef07c6637",
+      "detail": "original"
+    },
+    {
+      "case_id": "02",
+      "candidate_id": "B",
+      "page": 7,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/3e6a194179ae7e516f274fbf3674ca7a8d349ca4d08522054e0fe84c2b2f6be2/page-007.png",
+      "sha256": "0694b04e4111e7d3c3e8b268815e744b485b36b3bd70f7c27789491df9068f4d",
+      "detail": "original"
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "A",
+      "page": 3,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f2c1f18676bdedf2f84f38e56979447cd72a580a1d845961859f05e97342677/page-003.png",
+      "sha256": "58f2d6c8ba4e11d218618ff9b59bde972117bbfef3b1f6e2974258ceee9bc633",
+      "detail": "original"
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "A",
+      "page": 4,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f2c1f18676bdedf2f84f38e56979447cd72a580a1d845961859f05e97342677/page-004.png",
+      "sha256": "1efa1240007746177f316744994f514c169fca35b897153c91df5ebedf4eb7f7",
+      "detail": "original"
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "A",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f2c1f18676bdedf2f84f38e56979447cd72a580a1d845961859f05e97342677/page-005.png",
+      "sha256": "5d6784140cbb32fe6a11a3ddca7241fab9f6d131d3ad6a8ee1c18d65957cbadd",
+      "detail": "original"
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "B",
+      "page": 4,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/dfbb9e6384b3aad86a1892a3123073aca27b5ee626576b2c7df84f389be1d0b5/page-004.png",
+      "sha256": "3959b7d1984a2e768ca5118c5b85c0b19c46aa8add23d1155d123bdd3618b362",
+      "detail": "original"
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "B",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/dfbb9e6384b3aad86a1892a3123073aca27b5ee626576b2c7df84f389be1d0b5/page-005.png",
+      "sha256": "1af2b4e63abd30f9ba0cb809b0c5419719115d10f9aa65187f50cfff5ef723d6",
+      "detail": "original"
+    },
+    {
+      "case_id": "05",
+      "candidate_id": "A",
+      "page": 2,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/58df1fa80922cfde6c6b658d55513f46de4a7aea1780dc880c9bd91105a70eb9/page-002.png",
+      "sha256": "b56b2ef05df540bc0afb169c1fa77f70ed363193c6d4a99640613a2c4af8ac70",
+      "detail": "original"
+    },
+    {
+      "case_id": "05",
+      "candidate_id": "A",
+      "page": 7,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/58df1fa80922cfde6c6b658d55513f46de4a7aea1780dc880c9bd91105a70eb9/page-007.png",
+      "sha256": "6ca34d9c700a0efbfb436badc8b93442cc57abac8481e0b9afa51a9cf7c16352",
+      "detail": "original"
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "B",
+      "page": 3,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/dfbb9e6384b3aad86a1892a3123073aca27b5ee626576b2c7df84f389be1d0b5/page-003.png",
+      "sha256": "73834f819652c6d39b4f0e232a80a3ccd03e109c5511e5376f9295a31f1ff6ce",
+      "detail": "original"
+    },
+    {
+      "case_id": "03",
+      "candidate_id": "B",
+      "page": 7,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/dfbb9e6384b3aad86a1892a3123073aca27b5ee626576b2c7df84f389be1d0b5/page-007.png",
+      "sha256": "916bb2f945c1e25439de904198045a52b1dbbd35037ff0caecacad801b2c3595",
+      "detail": "original"
+    },
+    {
+      "case_id": "05",
+      "candidate_id": "B",
+      "page": 3,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/page-003.png",
+      "sha256": "66d074389d78488505152ff3301df97b0071876e3e9322f54d011cdfde277f3a",
+      "detail": "original"
+    },
+    {
+      "case_id": "05",
+      "candidate_id": "B",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/page-005.png",
+      "sha256": "b8b7232aff5a935fe8be4d3ee972e9233b803fcbfcab2fce1dae4f5a1594a307",
+      "detail": "original"
+    },
+    {
+      "case_id": "05",
+      "candidate_id": "B",
+      "page": 8,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/page-008.png",
+      "sha256": "7e3c8399d460185b294e8bfacf6ebabbf64696c2c6998c1476140e615fd90612",
+      "detail": "original"
+    },
+    {
+      "case_id": "05",
+      "candidate_id": "B",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/64b3a6cbcea7182212f381e5edf3d10825c7a9595c310a00c967b398f1edc394/visual-focus-v1/546987ca8ada50408d9d3e850ee9a5e827a4c3cb27473aa7f4c3f14ba2108fbe.png",
+      "sha256": "f530d5d22e57cb5cd2beed818f504c3d7328e365109fafd850dbe2b7864900ba",
+      "detail": "original",
+      "kind": "registered_prior_crop"
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "A",
+      "page": 4,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/941ac8d12033019f933c035910849ddd33be26490889512bfcade365bfb697d7/page-004.png",
+      "sha256": "5e1fed100aeeda9bad4981f13ffe585854c9624f090639855bfd3897826d3338",
+      "detail": "original"
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "A",
+      "page": 7,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/941ac8d12033019f933c035910849ddd33be26490889512bfcade365bfb697d7/page-007.png",
+      "sha256": "db8742199c9239fd2d40d3f4f6d5b46648195c4e75ec8f5b36e451bd7da72dff",
+      "detail": "original"
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "A",
+      "page": 9,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/941ac8d12033019f933c035910849ddd33be26490889512bfcade365bfb697d7/page-009.png",
+      "sha256": "dbc370248476ac86178c049e1533d1e281bccf692651af4b2ddae7c1897403c1",
+      "detail": "original"
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "A",
+      "page": 11,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/941ac8d12033019f933c035910849ddd33be26490889512bfcade365bfb697d7/page-011.png",
+      "sha256": "4c6c995f9ee88e501fe4245c10bfe9d51e07c96ea4435192ffe052c6ab82fd98",
+      "detail": "original"
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "A",
+      "page": 12,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/941ac8d12033019f933c035910849ddd33be26490889512bfcade365bfb697d7/page-012.png",
+      "sha256": "15bf25e6350828a8fbdb88d5d68b373fba6230994acc78c852390db8ed9698c7",
+      "detail": "original"
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "A",
+      "page": 13,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/941ac8d12033019f933c035910849ddd33be26490889512bfcade365bfb697d7/page-013.png",
+      "sha256": "f656e20302accb5492875d41910e1038a2861e45076505897d717bb2f84b70d9",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "A",
+      "page": 1,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2a50e2453306906ae709c0f6f461c89b179cfc421702fb54fc137ea59172cce7/page-001.png",
+      "sha256": "e2ddfb5b5bd3c73894d0039695174640b74a626798f4557690ca990da8c46e2e",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "A",
+      "page": 2,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2a50e2453306906ae709c0f6f461c89b179cfc421702fb54fc137ea59172cce7/page-002.png",
+      "sha256": "dbfcf6a3a98ecb8cb67a24ddf328e48e501026419bbbded6ec44601a95ee7a06",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "A",
+      "page": 4,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2a50e2453306906ae709c0f6f461c89b179cfc421702fb54fc137ea59172cce7/page-004.png",
+      "sha256": "aec50886264663b91977bb52ad29de12b4ec80b27c6c72e84633b5446c0f8787",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "A",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2a50e2453306906ae709c0f6f461c89b179cfc421702fb54fc137ea59172cce7/page-005.png",
+      "sha256": "657ce09b27737e755bdcc4bf1d7a897fe44a6361e9009a16801c2a6b4bfb5845",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "A",
+      "page": 6,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2a50e2453306906ae709c0f6f461c89b179cfc421702fb54fc137ea59172cce7/page-006.png",
+      "sha256": "362eddf738f88ab01b28c607b53b513e109e9445ea3d4b60cb700c263e642dbb",
+      "detail": "original"
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "B",
+      "page": 3,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-003.png",
+      "sha256": "4783bdeef40b2621ddb0f00667f6761ddd76d50daece464a6ddb03853e322cdc",
+      "detail": "original"
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "B",
+      "page": 6,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-006.png",
+      "sha256": "d2a46481fcb2f67d17773b32779ad44ab28463c3c0df0aa2e62420b8cf998e09",
+      "detail": "original"
+    },
+    {
+      "case_id": "06",
+      "candidate_id": "B",
+      "page": 7,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/2f474510fb38c41dd1e6f7d5de53ea4d050068670ac9cb86e3f17254508d8f8d/page-007.png",
+      "sha256": "7546c3bdd0f69345fb0746fe44858a416f13baf83fd905be85811b561cfec328",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "page": 3,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-003.png",
+      "sha256": "f48036fe4b0443589bf251d1e543fc45cc963008654f3d624708bd5cc7ed40d7",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "page": 4,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-004.png",
+      "sha256": "017df97898c6b6098f82a3915bed748f89143b6b636e67bf3af193f1ff5dcf43",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-005.png",
+      "sha256": "797f40a53f54edc5c24b0acc74b170f2f5656f293843ca9b844296d4681cff51",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "page": 6,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-006.png",
+      "sha256": "3b5b8d4a5d057f7d004b53bef0194d1625db622d5978f496c9c2ed9f42fa5320",
+      "detail": "original"
+    },
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "page": 7,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/page-007.png",
+      "sha256": "1f92db3597fdf062c543b5d93f4a2d340549df6c10b5e8d8f135fe16f32155e6",
+      "detail": "original"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "A",
+      "page": 3,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/4872ccc964e878d23fb0379eae600f82ea2dcae63c6f717a83a3cf6be0350903/page-003.png",
+      "sha256": "dafd7321433aaa55bf196065308fe721eab49f95d24e16dc5ec09e12ea1a5bea",
+      "detail": "original"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "A",
+      "page": 4,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/4872ccc964e878d23fb0379eae600f82ea2dcae63c6f717a83a3cf6be0350903/page-004.png",
+      "sha256": "32bd2d7fc408440d4a7fce773e9564da4556ec1e91901479004794a5ed8e23a8",
+      "detail": "original"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "A",
+      "page": 6,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/4872ccc964e878d23fb0379eae600f82ea2dcae63c6f717a83a3cf6be0350903/page-006.png",
+      "sha256": "49a9e3f9ffb9f3603f837be7e076674ae82621b4070c95c7740ea621538a44a4",
+      "detail": "original"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "A",
+      "page": 7,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/4872ccc964e878d23fb0379eae600f82ea2dcae63c6f717a83a3cf6be0350903/page-007.png",
+      "sha256": "5488b5b4cef48657954961107794b7fdc961629d3d3723d36519fa21e70d9b28",
+      "detail": "original"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "B",
+      "page": 2,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/0c6644663507d061497aa4a01533e457575a8dd48eb366d2fa622480f3c5a63b/page-002.png",
+      "sha256": "4176fa4c2db3dde8d2370d1b26bbb5cadc4ba7061a4cfb0ad39b67b85c0488b7",
+      "detail": "original"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "B",
+      "page": 3,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/0c6644663507d061497aa4a01533e457575a8dd48eb366d2fa622480f3c5a63b/page-003.png",
+      "sha256": "139b0a6b0d1dcdb6822e72db3e18676599bf1d2a3dacb780705c8a20f531e54a",
+      "detail": "original"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "B",
+      "page": 5,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/0c6644663507d061497aa4a01533e457575a8dd48eb366d2fa622480f3c5a63b/page-005.png",
+      "sha256": "d274d911eba4e24589402d9058aef88359defd6f6b1d08a56a0e44b2550fcc81",
+      "detail": "original"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "B",
+      "page": 6,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/0c6644663507d061497aa4a01533e457575a8dd48eb366d2fa622480f3c5a63b/page-006.png",
+      "sha256": "8d00401bfd944a8aefd3b885778101e6efb18c197cb38c9c73451c857beb406a",
+      "detail": "original"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "B",
+      "page": 7,
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/0c6644663507d061497aa4a01533e457575a8dd48eb366d2fa622480f3c5a63b/page-007.png",
+      "sha256": "124a2e9bd16d301be6952b5595063b3dcf7309eb09b5b4eafcc036138a0f94ff",
+      "detail": "original"
+    }
+  ],
+  "source_and_rubric_hashes": [
+    {
+      "case_id": "01",
+      "source_catalog_sha256": "c87b0ee1e331fce936926ae70d2696ad6b40eae820444f5efe25ba271118372c",
+      "rubric_sha256": "cb334699d4941e2425f01a81b718665af2ac6d5beed62f18a221e321e8fd1cf5",
+      "source_catalog_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/01/source-catalog.json",
+      "rubric_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/01/rubric.json"
+    },
+    {
+      "case_id": "02",
+      "source_catalog_sha256": "60dd09996a9b3f220de8a767701353b8caa65c3b892dc5d8e04753c1253ef57f",
+      "rubric_sha256": "f2c440544957364879543a5523c5e3bae2fe12e673c647365d862c95be979fbe",
+      "source_catalog_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/02/source-catalog.json",
+      "rubric_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/02/rubric.json"
+    },
+    {
+      "case_id": "03",
+      "source_catalog_sha256": "2c561be575d77e77777b33e9fc03a6eb08917d23fc208db8b5e4e5ea2f8fa727",
+      "rubric_sha256": "192ec74bf836d08757c6f2e2ed502c031fb16aad09ef51afd5e1b02f888a8aa6",
+      "source_catalog_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/03/source-catalog.json",
+      "rubric_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/03/rubric.json"
+    },
+    {
+      "case_id": "05",
+      "source_catalog_sha256": "132f33cb5123170cf12a198250059b1ed9e5908cb052b6b104c277effa3b98e2",
+      "rubric_sha256": "8b0e8c04065ba48a17c1628babf2312fe13c1768a14916e45160e63216ab894e",
+      "source_catalog_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/05/source-catalog.json",
+      "rubric_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/05/rubric.json"
+    },
+    {
+      "case_id": "06",
+      "source_catalog_sha256": "97639b452c35fa86ee00ad09c7e41a8acaa302fcb2c302b5b81efe9c356595a4",
+      "rubric_sha256": "5e092df0f6784d1f3dedc78a963c0619c83c02369951a3eb52dc3ab9e0fa01c8",
+      "source_catalog_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/06/source-catalog.json",
+      "rubric_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/06/rubric.json"
+    },
+    {
+      "case_id": "09",
+      "source_catalog_sha256": "329724d0bb69186b85684d3a322aab77066db8a6a88f722ba371f943edce511d",
+      "rubric_sha256": "71f20530bf0835714fc64ad4e2ae943bcbdd0f4d724d36e6003e894143aa2f46",
+      "source_catalog_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/09/source-catalog.json",
+      "rubric_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/09/rubric.json"
+    },
+    {
+      "case_id": "10",
+      "source_catalog_sha256": "6e1e7eca851a246943a444a3a9733480ad0adc549817280d788b1ff6c5f8d8d5",
+      "rubric_sha256": "b65fe093b55f9b81fa3a280d9f106541ad0cb4aed6c02b7c5daf86fac2d91b47",
+      "source_catalog_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/10/source-catalog.json",
+      "rubric_path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/final-revision-20261014/rubrics/10/rubric.json"
+    }
+  ],
+  "supporting_artifact_hashes": [
+    {
+      "case_id": "09",
+      "candidate_id": "B",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/92ba06789fd2df58b1675b9dfc4f485cccd3add699c599dbfab8db5cae91c436/deck.json",
+      "sha256": "85beaf9af73d8d00f1abd8305bb820a427b190d51dbdb308dbd9caae8685a825",
+      "purpose": "F14 original and rendered footer text comparison"
+    },
+    {
+      "case_id": "10",
+      "candidate_id": "B",
+      "path": "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/.cache/render/0c6644663507d061497aa4a01533e457575a8dd48eb366d2fa622480f3c5a63b/deck.json",
+      "sha256": "d798126c240bc3182fe35128a1ab65d3db44daac1bd8354301613240e115d10a",
+      "purpose": "F17 complete-deck required-topic absence check and recorded time-origin interpretation note"
+    }
+  ],
+  "summary": {
+    "reviewed_final_reports": 14,
+    "viewed_images": 53,
+    "source_catalogs": 7,
+    "frozen_rubrics": 7,
+    "findings": 17,
+    "shared_content_findings": {
+      "count": 13,
+      "ids": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F10",
+        "F12",
+        "F13",
+        "F15",
+        "F16"
+      ],
+      "meaning": "Shared positive verdicts with identified semantic or support defects. These are QA findings, not a measured overall error count; F02 retains a domain-common-knowledge exception boundary."
+    },
+    "verification_only_findings": {
+      "count": 2,
+      "ids": [
+        "F11",
+        "F17"
+      ],
+      "meaning": "Primary no is supported, verifier yes is defective, and final consensus already preserves unknown."
+    },
+    "primary_visual_findings": {
+      "count": 2,
+      "ids": [
+        "F09",
+        "F14"
+      ],
+      "meaning": "Specific missed layout/readability defects; these visual items had no independent second-model verification."
+    },
+    "rationale_precision_notes": 14,
+    "supported_checks_separate_from_findings": true,
+    "accuracy_or_score_recomputed": false,
+    "limits": [
+      "All 14 final reports were inspected within a targeted scope; not all 130 pages were visually re-inspected and not every criterion was independently rescored.",
+      "Agreement between two isolated model calls is not proof of correctness; reported findings include shared misses.",
+      "Supported binary answers can still contain wrong page references, numerical descriptions, overlap objects or visibility claims.",
+      "Actual overlap, readability severity, chart interpretation and common-knowledge exceptions must not be collapsed into one error label. The 10/B timing-origin concern is retained as an interpretation gap rather than a high-confidence extra reversed verdict.",
+      "Findings do not create new human truth, measure general accuracy, justify a winner, or alter frozen results."
+    ]
+  },
+  "completion_meaning": "Completed the declared targeted QA of all 14 frozen final reports; not an exhaustive independent rescoring.",
+  "hash_verification": {
+    "checked_at_utc": "2026-10-14T05:51:21.501685+00:00",
+    "algorithm": "sha256",
+    "all_match": true,
+    "mismatches": [],
+    "counts": {
+      "final_report": 14,
+      "rubric": 7,
+      "source_catalog": 7,
+      "supporting_artifact": 2,
+      "viewed_image": 53
+    },
+    "total_files_checked": 83,
+    "preexisting_hashes_preserved": true
+  }
+}

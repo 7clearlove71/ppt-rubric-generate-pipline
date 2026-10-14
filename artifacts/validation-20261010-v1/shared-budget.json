@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "authorization_closed": true,
+  "unused_requests_are_not_new_production_authorization": true,
+  "versions": [
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261010-v1",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261010-v2",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261010-v3",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261010-v4",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261010-v5",
+    "/Users/liangyuanzhi/Documents/ChatGPT/ppt-rubric-generate-pipline/artifacts/validation-20261010-v6"
+  ],
+  "bailian_limit": 120,
+  "bailian_used": 76,
+  "bailian_remaining": 44,
+  "maas_limit": 300,
+  "maas_used": 284,
+  "maas_remaining": 16
+}

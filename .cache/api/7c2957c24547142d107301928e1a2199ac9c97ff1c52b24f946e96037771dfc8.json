@@ -1,0 +1,240 @@
+{
+  "parsed": {
+    "page": 6,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "10 万次弯曲无衰减 = 中性层设计 × 多层复合阻隔封装",
+        "location": "页面顶部标题区域",
+        "statement": "页面核心标题明确包含用户给定的关键事实『柔性OLED器件弯曲10万次无衰减』，且方向正确",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "柔性OLED器件弯曲10万次无衰减"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "100000",
+            "unit": "次",
+            "subject": "弯曲次数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "100,000 次\n弯曲无衰减，高出公开基准 1–2 个数量级",
+        "location": "页面右上对比卡片，蓝色高亮",
+        "statement": "团队自有成果明确标注100,000次弯曲无衰减，与标题一致；同时给出与公开基准的比较关系",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "柔性OLED器件弯曲10万次无衰减"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "100000",
+            "unit": "次",
+            "subject": "团队自有成果柔性OLED弯曲次数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2,000 次\n耐弯折循环",
+        "location": "页面左上对比卡片",
+        "statement": "公开基准1：3D打印柔性OLED（64像素）的耐弯折循环次数为2,000次",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2000",
+            "unit": "次",
+            "subject": "公开基准3D打印柔性OLED耐弯折循环",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "10,000 次\n循环后发光效率无明显损失、TFT 各层无裂纹",
+        "location": "页面中上对比卡片",
+        "statement": "公开基准2：可穿戴柔性OLED（1.0mm半径）的循环次数为10,000次，但注明是『循环后发光效率无明显损失』而非『无衰减』",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "10000",
+            "unit": "次",
+            "subject": "公开基准可穿戴柔性OLED循环次数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "10 ⁷ / 10 ⁶ / 10 ⁵ / 10 ⁴ / 10 ³ / 10 ²",
+        "location": "图表X轴下方对数刻度标签",
+        "statement": "X轴对数刻度标签显示为分离的『10』和『⁷/⁶/⁵/⁴/³/²』形式，通过局部放大图可见实际渲染为完整的『10⁻⁷』『10⁻⁶』等科学计数法格式，上标负号与数字组合正常，无真实遮挡",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "1.8×10 ⁷ / 8.70×10 ⁶ / 1.70×10 ⁵ / 3×10 ⁵ / 4×10 ⁴",
+        "location": "图表右侧数据标签",
+        "statement": "WVTR数据标签显示为分离的底数与上标形式，通过局部放大图核实：『1.8×10⁻⁷』『8.70×10⁻⁶』『1.70×10⁻⁵』『3×10⁻⁵』『4×10⁻⁴』，上标负号与指数数字组合正常，无真实字形遮挡，属于科学计数法的正常排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "1.8×10⁻⁷",
+            "unit": "g/m²·day",
+            "subject": "混合有机-无机TFE的WVTR",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "8.70×10⁻⁶",
+            "unit": "g/m²·day",
+            "subject": "多功能封装膜TFE的WVTR",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "1.70×10⁻⁵",
+            "unit": "g/m²·day",
+            "subject": "高温高湿1000次弯曲后的WVTR",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "3×10⁻⁵",
+            "unit": "g/m²·day",
+            "subject": "100%应变1000次后的WVTR",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "4×10⁻⁴",
+            "unit": "g/m²·day",
+            "subject": "85℃/85%RH+30%拉伸的WVTR",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "单位：g/m²·day",
+        "location": "图表上方右侧",
+        "statement": "WVTR图表明确标注单位",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：Springer 柔性封装可靠性综述 · ACS AMI 混合 TFE · PMC 多功能封装膜综述 · MDPI Micromachines · OFweek 显示 · 搜狐 UTG 与 CPI 对比 · 团队自有成果",
+        "location": "页面底部",
+        "statement": "数据来源声明包含文献综述、行业媒体及团队自有成果，未虚构具体医院名称或临床分期等未给定信息",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "三条退化通道 · 须在同一叠层内同时压制\n系统级组合设计 · 协同而非分步优化",
+        "location": "页面右侧技术说明区域",
+        "statement": "页面包含技术机理分析（中性层设计、多层复合阻隔封装）和系统级设计思路，具有专家受众所需的技术深度",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "边界条件：面板约 0.3 mm 、寿命约 30,000 h 、工作温度 −40~85 ℃",
+        "location": "页面右下技术参数",
+        "statement": "给出具体边界条件参数，增强技术可信度",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "0.3",
+            "unit": "mm",
+            "subject": "面板厚度",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "30000",
+            "unit": "h",
+            "subject": "寿命",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "UTG 耐折 ≥20 万次、−20 ℃ 不脆化，CPI 约 8 万次",
+        "location": "页面右侧系统级设计要点",
+        "statement": "引用UTG/CPI盖板支撑层的性能参数，标注为『约』和『≥』，属于合理的技术背景补充，未冒充团队自有成果",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "20",
+            "unit": "万次",
+            "subject": "UTG耐折次数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          },
+          {
+            "value": "8",
+            "unit": "万次",
+            "subject": "CPI耐折次数",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 9579,
+    "total_tokens": 11662,
+    "completion_tokens": 2083,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 52.191,
+  "attempts": 1
+}

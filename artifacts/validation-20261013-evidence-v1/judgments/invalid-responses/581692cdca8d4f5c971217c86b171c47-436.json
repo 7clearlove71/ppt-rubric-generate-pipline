@@ -1,0 +1,376 @@
+{
+  "page": 12,
+  "complete": true,
+  "observations": [
+    {
+      "quote": "老旧小区改造工作情况汇报",
+      "location": "页面左上角标题栏",
+      "statement": "页面标题，确认主题为老旧小区改造工作汇报",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "老旧小区改造工作汇报的PPT"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "五、下一步计划 ｜ 12 / 13",
+      "location": "页面右上角导航栏",
+      "statement": "当前页为第12页，共13页，属于第五板块\"下一步计划\"",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "#5 下一步计划"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "12",
+          "unit": "页",
+          "subject": "当前页码",
+          "denominator": "13",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "整改措施与责任分工",
+      "location": "页面主标题",
+      "statement": "本页主标题为\"整改措施与责任分工\"，属于\"下一步计划\"板块下的具体执行内容，非口语化表述，符合公文风格",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "小标题的措辞要正、要像公文里出来的，不要用口语化的说法"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "七项措施逐条对应五项问题，明确责任单位、完成时限与验收口径，比率沿用 P02 统一阈值。",
+      "location": "副标题/说明文字",
+      "statement": "说明整改措施与前文问题板块（P10、P11）存在对应关系，强调比率口径统一沿用P02",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存在问题那部分不要写虚的，要能看出跟前面资金和满意度两块是呼应的、有对应关系的"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "01 问题一 追加区级配套资金安排，将 2140 万元缺口纳入年度预算调整方案",
+      "location": "表格第1行",
+      "statement": "措施01对应问题一，涉及资金缺口2140万元，责任单位为区财政局、区住建局，完成时限2026年10月底，验收口径区级到位率100.0%",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "2140",
+          "unit": "万元",
+          "subject": "区级配套资金缺口",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "100.0",
+          "unit": "%",
+          "subject": "区级到位率",
+          "denominator": "不适用",
+          "time_origin": "2026年10月底"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "02 问题一 建立管线单位出资联席会议制度，签订\"共建共担\"协议并明确付费节点",
+      "location": "表格第2行",
+      "statement": "措施02对应问题一，涉及社会资本到位，责任单位区住建局、管线单位，完成时限2026年11月底，验收口径社会资本到位率95.0%",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "95.0",
+          "unit": "%",
+          "subject": "社会资本到位率",
+          "denominator": "不适用",
+          "time_origin": "2026年11月底"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "03 问题一 推行居民出资先改造后付费及分期缴纳，公示出资标准与使用去向",
+      "location": "表格第3行",
+      "statement": "措施03对应问题一，涉及居民出资，责任单位街道办事处、社区，完成时限2026年12月底，验收口径居民出资到位率90.0%",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "90.0",
+          "unit": "%",
+          "subject": "居民出资到位率",
+          "denominator": "不适用",
+          "time_origin": "2026年12月底"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "04 问题二 建立结余资金月调度机制，对 3236 万元待审计资金实行竣工结算限时办结",
+      "location": "表格第4行",
+      "statement": "措施04对应问题二，涉及结余资金3236万元待审计，责任单位区财政局、审计局，完成时限2026年11月底，验收口径支出执行率95.0%",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "3236",
+          "unit": "万元",
+          "subject": "待审计结余资金",
+          "denominator": "不适用",
+          "time_origin": "未说明"
+        },
+        {
+          "value": "95.0",
+          "unit": "%",
+          "subject": "支出执行率",
+          "denominator": "不适用",
+          "time_origin": "2026年11月底"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "05 问题三 加装电梯与停车泊位项目单独建档、单独调度，实行一小区一方案",
+      "location": "表格第5行",
+      "statement": "措施05对应问题三，责任单位区住建局、规划分局，完成时限2026年11月底，验收口径完成率均达90.0%",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "90.0",
+          "unit": "%",
+          "subject": "完成率",
+          "denominator": "不适用",
+          "time_origin": "2026年11月底"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "06 问题四 落实文明施工标准，设置公示牌与噪声扬尘监测点，实行投诉 24 小时响应",
+      "location": "表格第6行",
+      "statement": "措施06对应问题四，涉及施工管理，责任单位区住建局、城管局，完成时限2026年10月底，验收口径施工管理满意度90.0%",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "24",
+          "unit": "小时",
+          "subject": "投诉响应时间",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "90.0",
+          "unit": "%",
+          "subject": "施工管理满意度",
+          "denominator": "不适用",
+          "time_origin": "2026年10月底"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "07 问题五 明确设施移交清单与物业接管主体，同步签订后期管养协议",
+      "location": "表格第7行",
+      "statement": "措施07对应问题五，责任单位区住建局、民政局，完成时限2026年12月底，验收口径设施移交率100.0%",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [
+        {
+          "value": "100.0",
+          "unit": "%",
+          "subject": "设施移交率",
+          "denominator": "不适用",
+          "time_origin": "2026年12月底"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "整改要求：上述七项措施自本报告审定之日起执行，每月 5 日前报送进展；验收口径中的比率均按 P02 统一口径计算。",
+      "location": "表格下方说明文字",
+      "statement": "强调整改措施的执行机制与比率口径统一性，要求每月5日前报送进展",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "数据类的表述前后要统一口径，不能一会儿百分比一会儿又是笼统说法"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "5",
+          "unit": "日",
+          "subject": "每月报送进展截止日",
+          "denominator": "不适用",
+          "time_origin": "本报告审定之日起"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "达标线 95.0% 、滞后线 90.0% ，与 P02 、 P08 判定阈值一致；责任单位为牵头单位，配合单位另行文明确。",
+      "location": "表格下方说明文字",
+      "statement": "明确验收标准的两档阈值，并声明与P02、P08判定阈值一致，体现前后口径统一",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "数据类的表述前后要统一口径"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "95.0",
+          "unit": "%",
+          "subject": "达标线",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "90.0",
+          "unit": "%",
+          "subject": "滞后线",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "措施依据： P10 、 P11 所列五项问题",
+      "location": "页面左下角",
+      "statement": "明确整改措施依据为P10、P11所列五项问题，与存在问题板块形成呼应关系",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "存在问题那部分不要写虚的，要能看出跟前面资金和满意度两块是呼应的、有对应关系的"
+        }
+      ],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "数据截至 2026 年 8 月 31 日 · 比率保留一位小数 · 情景数据",
+      "location": "页面右下角",
+      "statement": "标注数据截止时间为2026年8月31日，说明数据为情景数据（假设/模拟数据），比率保留一位小数",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [
+        {
+          "source_id": "prompt",
+          "quote": "来源未提供的具体数值数据被表述为既定事实，未标注为假设、示例或待核实"
+        }
+      ],
+      "quantities": [
+        {
+          "value": "2026",
+          "unit": "年",
+          "subject": "数据截止年份",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "8",
+          "unit": "月",
+          "subject": "数据截止月份",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        },
+        {
+          "value": "31",
+          "unit": "日",
+          "subject": "数据截止日期",
+          "denominator": "不适用",
+          "time_origin": "不适用"
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "quote": "缺口纳入年度预算调整方案 / 建立管线单位出资联席会议制度，签订",
+      "location": "表格第1-2行交界处，整改措施列",
+      "statement": "根据局部放大图，p12_t32与p12_t33存在bbox相交，实际图像显示\"元\"字与\"建\"字发生笔画叠印遮挡，属于真实文字重叠",
+      "kind": "visual",
+      "failure_mode": "visual_readability",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "待审计资金实行竣工结算限时办结 / 加装电梯与停车泊位项目单独建档、单独",
+      "location": "表格第4-5行交界处，整改措施列",
+      "statement": "根据局部放大图，p12_t41与p12_t42存在bbox相交，实际图像显示\"结\"字与\"加\"字发生笔画叠印遮挡，属于真实文字重叠",
+      "kind": "visual",
+      "failure_mode": "visual_readability",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "落实文明施工标准，设置公示牌与噪声扬 / 24",
+      "location": "表格第6行，整改措施列",
+      "statement": "根据局部放大图，p12_t44与p12_t46的bbox相交区域极小，实际图像中\"24\"与上行文字未发生真实笔画遮挡，数字\"24\"清晰可读，属于相邻排版而非叠印",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "推行居民出资先改造后付费及分期缴纳， / 公示出资标准与使用去向",
+      "location": "表格第3行，整改措施列",
+      "statement": "根据局部放大图，p12_t35与p12_t36的bbox相交区域极小（fraction_of_smaller_bbox=0.0007），实际图像中两行文字为正常换行排版，未发生真实笔画遮挡",
+      "kind": "visual",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    },
+    {
+      "quote": "情景数据",
+      "location": "页面右下角标注",
+      "statement": "页面明确标注\"情景数据\"，表明本页数据为假设/模拟性质，已做标注处理，不构成无依据的事实断言",
+      "kind": "fact",
+      "failure_mode": null,
+      "source_refs": [],
+      "quantities": [],
+      "calculations": []
+    }
+  ]
+}

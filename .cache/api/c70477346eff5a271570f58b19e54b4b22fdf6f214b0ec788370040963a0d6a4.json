@@ -1,0 +1,468 @@
+{
+  "parsed": {
+    "page": 4,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "影响已从舆情穿透到经营：约40通来电与退单量多约15%同时承压",
+        "location": "页面顶部大标题",
+        "statement": "标题明确点出舆情到经营的传导，包含关键数值约40通、约15%",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "近三天相关来电大概40通"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "通",
+            "subject": "近三天相关来电",
+            "denominator": "不适用",
+            "time_origin": "近三天"
+          },
+          {
+            "value": "15",
+            "unit": "%",
+            "subject": "电商退单增量",
+            "denominator": "平时",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "退货退款诉求 约60%",
+        "location": "左侧柱状图-红色柱",
+        "statement": "素材原值保留，约数限定词保留，颜色为红色突出",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "诉求集中在退货退款(约60%)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "60",
+            "unit": "%",
+            "subject": "退货退款诉求占比",
+            "denominator": "近三天相关来电",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "要官方说明诉求 约35%",
+        "location": "左侧柱状图-灰色柱",
+        "statement": "素材原值保留，约数限定词保留",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "要官方说明(约35%)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "35",
+            "unit": "%",
+            "subject": "要官方说明诉求占比",
+            "denominator": "近三天相关来电",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "两项均为素材原值，口径存在重叠，按原值分列呈现，不加总、不补差",
+        "location": "左侧柱状图下方注释",
+        "statement": "主动声明口径重叠，不加总，避免误导读出95%占比；文字换行排版，'差'字在第二行起始",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "诉求集中在退货退款(约60%)和要官方说明(约35%)"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "舆情面 中等，情绪以质疑为主 趋势上行：3个垂类KOL转发·[舆情摘要]",
+        "location": "中部左上-四维影响分级第一行",
+        "statement": "素材信息完整保留：情绪以质疑为主、3个垂类KOL转发；标注来源[舆情摘要]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "目前情绪是质疑为主"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "已有3个垂类KOL开始转发"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "3",
+            "unit": "个",
+            "subject": "垂类KOL转发",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "客诉面 已形成实际客诉压力 趋势上行：来电直接引用视频说法·[客服来电]",
+        "location": "中部左中-四维影响分级第二行",
+        "statement": "明确指出'来电直接引用视频说法'，体现舆情到客诉的传导；标注来源[客服来电]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "有部分用户是直接引用了那条视频的说法打进来的"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "渠道经营面 已出现实际经营敞口 趋势上行：退单量较平时多约15%·[客服来电]",
+        "location": "中部左下-四维影响分级第三行",
+        "statement": "退单量数据完整，约数保留，标注来源[客服来电]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "15",
+            "unit": "%",
+            "subject": "退单量增量",
+            "denominator": "平时",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "品牌与法务面 尚未爆发，属预防性风险 趋势上行：复核结论不确定·[声明草稿]",
+        "location": "中部左下-四维影响分级第四行",
+        "statement": "指出复核结论不确定，呼应36小时复核未完的前提；标注来源[声明草稿]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "内部备注里技术复核还没做完，预计还需要36小时才能出结论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核预计所需时间",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "1 视频传播 [舆情摘要] 24小时内转发破万 负面情绪占比约72%，尚无权威媒体跟进",
+        "location": "右侧上部-舆情到经营传导链第一步",
+        "statement": "传播数据完整：24小时转发破万、负面情绪约72%、尚无权威媒体跟进；标注来源[舆情摘要]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "视频发布后24小时内转发破万"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "评论区负面情绪占比约72%"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "还没有权威媒体跟进"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "24",
+            "unit": "小时",
+            "subject": "转发破万用时",
+            "denominator": "不适用",
+            "time_origin": "视频发布后"
+          },
+          {
+            "value": "72",
+            "unit": "%",
+            "subject": "负面情绪占比",
+            "denominator": "评论区",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "2 客服来电 [客服来电] 近三天大概40通 退货退款约60%、要官方说明约35%",
+        "location": "右侧中部-舆情到经营传导链第二步",
+        "statement": "客服数据完整，约数限定词保留（大概40通、约60%、约35%）；标注来源[客服来电]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "近三天相关来电大概40通"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "诉求集中在退货退款(约60%)"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "要官方说明(约35%)"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "通",
+            "subject": "相关来电",
+            "denominator": "不适用",
+            "time_origin": "近三天"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "3 电商退单 [客服来电] 退单量比平时多约15% 与退货退款约60%的诉求结构相互印证",
+        "location": "右侧下部-舆情到经营传导链第三步",
+        "statement": "退单数据完整，约数保留，并建立与诉求结构的印证关系；标注来源[客服来电]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "电商渠道的退单量也比平时多了约15%"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "15",
+            "unit": "%",
+            "subject": "退单量增量",
+            "denominator": "平时",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "升级触发条件 48小时窗口内",
+        "location": "底部左侧红色标签",
+        "statement": "48小时关键窗口明确标出",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "关键回应窗口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "权威媒体跟进 一旦跟进，事件从站内讨论跳到公共议题 [舆情摘要]",
+        "location": "底部左中-升级触发条件之一",
+        "statement": "触发条件具体，后果明确，标注来源[舆情摘要]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "还没有权威媒体跟进"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "48小时窗口失守 窗口内不做有效回应，可能从质疑升级为抵制 [舆情摘要]",
+        "location": "底部中右-升级触发条件之二",
+        "statement": "48小时窗口判断完整保留，包括'质疑升级为抵制'的紧迫性；标注来源[舆情摘要]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "48小时内如果不做有效回应，可能从质疑升级为抵制"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "48",
+            "unit": "小时",
+            "subject": "关键回应窗口",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "技术复核发现问题 复核预计还需36小时，结论前说满将前后矛盾 [声明草稿]",
+        "location": "底部右侧-升级触发条件之三",
+        "statement": "36小时复核未完前提明确，'说满将前后矛盾'点出措辞过满风险；标注来源[声明草稿]",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "预计还需要36小时才能出结论"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "在这个节骨眼上把话说得这么满，万一复核发现确有问题会非常被动"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "36",
+            "unit": "小时",
+            "subject": "技术复核预计所需时间",
+            "denominator": "不适用",
+            "time_origin": "当前"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "数据来源：[舆情摘要][客服来电][声明草稿]；退货退款约60%与要官方说明约35%为素材原值、口径重叠，分列不加总；退单绝对件数、GMV损失与历史基线值素材未提供，未作推算。",
+        "location": "页面底部注释",
+        "statement": "数据来源完整标注，主动声明未推算素材未提供的数据，避免unsupported_assertion",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "舆情监测那边出的负面话题摘要"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "这三天客服来电统计的要点"
+          },
+          {
+            "source_id": "prompt",
+            "quote": "公关部连夜赶的声明草稿"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "趋势上行：3个垂类KOL转发·[舆情摘要]",
+        "location": "中部左上-舆情面趋势行",
+        "statement": "视觉现象：'趋势'与'上行'为灰色与红色相邻文字，bbox极窄相交（fraction_of_smaller_bbox=0.0022），放大图显示为正常排版间距，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "趋势上行：来电直接引用视频说法·[客服来电]",
+        "location": "中部左中-客诉面趋势行",
+        "statement": "视觉现象：'趋势'与'上行'为灰色与红色相邻文字，bbox极窄相交，放大图显示为正常排版间距，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "趋势上行：退单量较平时多约15%·[客服来电]",
+        "location": "中部左下-渠道经营面趋势行",
+        "statement": "视觉现象：'趋势'与'上行'为灰色与红色相邻文字，bbox极窄相交，放大图显示为正常排版间距，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "趋势上行：复核结论不确定·[声明草稿]",
+        "location": "中部左下-品牌与法务面趋势行",
+        "statement": "视觉现象：'趋势'与'上行'为灰色与红色相邻文字，bbox极窄相交，放大图显示为正常排版间距，无真实叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "占近三天来电诉求比例（%）",
+        "location": "左侧柱状图X轴下方",
+        "statement": "视觉现象：与上方'0% 20% 40% 60% 80%100%'刻度标签bbox底边相交（fraction=0.0197），放大图显示为正常上下排列，轴标签与刻度无叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "两项均为素材原值，口径存在重叠，按原值分列呈现，不加总、不补差",
+        "location": "左侧柱状图下方注释",
+        "statement": "视觉现象：'差'字bbox与上行文字底边相交（fraction=0.1726），放大图显示为正常换行排版，'差'字单独位于第二行起始，无叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 10789,
+    "total_tokens": 14510,
+    "completion_tokens": 3721,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 312.644,
+  "attempts": 2
+}

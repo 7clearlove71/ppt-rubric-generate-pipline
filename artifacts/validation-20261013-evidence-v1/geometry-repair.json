@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-13T07:17:51.168875+00:00",
+  "prompt_version": "2026-10-13.12",
+  "judge_validator_version": 10,
+  "actual_maas_requests_before_resume": 201,
+  "remaining_maas_requests": 699,
+  "actual_bailian_requests": 56,
+  "tests": {
+    "passed": 140,
+    "warnings": 6
+  },
+  "raw_replay_fixture": "fixtures/evidence-regressions/case02-provided-geometry-refs.json",
+  "behavior": "Register actual provided text spans and geometry regions referenced by the model. Unknown IDs stay invalid. Neutral geometry never automatically becomes a defect. Raw answer and rationale stay unchanged.",
+  "limitations": "Structural acceptance does not endorse semantics; raw181 may repeat readability defects under hierarchy. Failed request181 remains failed.",
+  "prior_artifacts": "pre-geometry-repair",
+  "budget": "shared across all invocations, canonical requests.json journals only"
+}

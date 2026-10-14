@@ -1,0 +1,43 @@
+{
+  "case_id": "03",
+  "status": "diagnostic_not_score_override",
+  "human_winner": "tie",
+  "automatic_winner": "B",
+  "findings": [
+    {
+      "type": "answer_evidence_contradiction",
+      "candidate": "B",
+      "rubric_id": "R13",
+      "raw_verdict": {
+        "rubric_id": "R13",
+        "answer": "yes",
+        "pages": [
+          1,
+          8
+        ],
+        "evidence": "封面页（页1）与尾页（页8）的汇报单位使用\"设备与能源管理部门\"，日期使用\"2026年9月\"，均为用户未提供的虚构具体信息，且未以假设/占位形式标注，写得像既定事实（如\"汇报单位：设备与能源管理部门\"\"2026年9月\"）。这违反了R13关于不虚构用户未提供的具体背景信息的要求。其他页面也存在类似问题（如页2-7的\"数据来源\"标注\"一个月四条产线能耗实测数据\"虽与prompt一致，但页脚等位置的日期、部门名仍属虚构）。因此全篇存在虚构具体背景信息且未作占位说明的情况，本条判no。"
+      },
+      "impact": "Structured yes awards 5 points even though evidence explicitly concludes no. Raw score is retained; report is not trustworthy as a fully validated judgment."
+    },
+    {
+      "type": "rubric_false_arithmetic_example",
+      "rubric_id": "R09",
+      "example": "120÷6.6写成18.2这类精度错误也算不通过",
+      "analysis": "120/6.6 = 18.1818..., rounded to one decimal is correctly 18.2. The automatically approved rubric contains an invalid negative example."
+    },
+    {
+      "type": "human_model_evidence_disagreement",
+      "rubric_id": "R12/R14/R18",
+      "analysis": "Human faults unsupported reverse-engineered savings assumptions and overlapping layout; judge accepts assumption labeling and reports no overlap. Requires source/render evidence inspection; human rationale is not injected into scoring."
+    },
+    {
+      "type": "confirmed_visual_false_positive",
+      "candidate": "B",
+      "rubric_id": "R18",
+      "page": 3,
+      "render_path": ".cache/render/dfbb9e6384b3aad86a1892a3123073aca27b5ee626576b2c7df84f389be1d0b5/page-003.png",
+      "analysis": "Direct visual inspection confirms extensive overlap between chart, four diagnostic step rows and their text. Judge claims P3 has no obstruction. Human layout criticism is supported by this rendered page."
+    }
+  ],
+  "policy": "Do not change human labels, weights, tie margin or raw verdicts to manufacture agreement."
+}

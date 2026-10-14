@@ -1,0 +1,72 @@
+{
+  "parsed": {
+    "pages": [
+      {
+        "page": 7,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "no",
+            "pages": [
+              7
+            ],
+            "evidence": "页面主体（标题、A1-A13卡片、D1-D4决策框、关键节点、数据来源）文字本身可辨认，但左侧三个黑色粗体时段标签“6-24 小时”“24-36 小时”“36-48 小时”分别叠印在A1、A4、A8卡片正文上；所附局部图（p7_overlap_10d2031ed3、34ffd02764、e0c52f1c1b）可见粗体标签笔画与卡片文字（“说满”表述/态度声明/小时）实际相交，被压文字需猜读，存在信息损失。",
+            "defect": {
+              "key": "doc_46902ecdee3c979c8f3ee543/page/7/time-label-over-card-text",
+              "description": "左侧时段标签“6-24 小时”“24-36 小时”“36-48 小时”以黑色粗体大字叠印在A1/A4/A8卡片正文行上（局部图确认笔画实际相交），导致被覆盖的卡片文字部分遮挡、需猜读。"
+            }
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              7
+            ],
+            "evidence": "在可读内容范围内，顶部标题、中部按0-6/6-24/24-36/36-48小时分组的A1-A13行动卡片网格、右侧与行对应的关键节点、底部D1-D4四项拍板决策框层级与主次关系可识别，阅读顺序可确定；时段标签与卡片的遮挡属可读性问题，仅已在V_READ计分，不在本条重复处罚。",
+            "defect": null
+          }
+        ]
+      },
+      {
+        "page": 8,
+        "verdicts": [
+          {
+            "rubric_id": "V_READ",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "大标题“请拍板：48小时倒计时”、副标题要点句、四组KPI（48小时/36小时/约72%/约15%）及其标签与说明文字、底部REPORTER/DEPARTMENT/DATE及数据来源小字均清晰可辨认，无重叠、截断或缺失标签；约15%栏说明折行但完整可读。",
+            "defect": null
+          },
+          {
+            "rubric_id": "V_LAYOUT",
+            "answer": "yes",
+            "pages": [
+              8
+            ],
+            "evidence": "顶部标题区-要点句-四栏并列KPI-底部汇报信息栏的层级与阅读路径清晰，四个KPI并列项对齐、对应关系明确（大数字+标签+说明），收尾页留白合理，无错误编码或不确定的阅读顺序。",
+            "defect": null
+          }
+        ]
+      }
+    ]
+  },
+  "model": "kimi-k3",
+  "usage": {
+    "completion_tokens": 2636,
+    "completion_tokens_details": {
+      "reasoning_tokens": 2061,
+      "text_tokens": 575
+    },
+    "prompt_tokens": 4665,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "image_tokens": 3551,
+      "text_tokens": 1114
+    },
+    "total_tokens": 7301
+  },
+  "elapsed_seconds": 56.931,
+  "attempts": 1
+}

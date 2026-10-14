@@ -1,0 +1,27 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "evidence": "PPT采用主题式重组但保留了正确的时间/来源对应。第2页总览中Day1对应'进村/约40栋老宅/住人不到一半'，Day2对应'访谈老人/祭祖三年一次/族谱存疑'，Day3对应'看民居/天井院落/木雕差异'，Day4对应'旅游开发/新修仿古街/本体缺投入'，与原文逐日记录一致。第3-6页分主题展开时，各页内容归属正确：第3页空心化仅含Day1人口居住数据，第4页记忆断层仅含Day2祭祖与族谱内容，第5页建筑差异仅含Day3民居观察，第6页开发错位仅含Day4旅游开发矛盾。未出现事实跨日混淆或主题错配。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23709,
+    "total_tokens": 23908,
+    "completion_tokens": 199,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 20.59,
+  "attempts": 1
+}

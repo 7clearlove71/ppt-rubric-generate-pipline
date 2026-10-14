@@ -1,0 +1,11 @@
+[
+  {
+    "revision": 0,
+    "requirements_hash": "a6ac46ac19fb35c3fa7990b1a7e322c078f56f2853f94277112235c4121703f6",
+    "review": {
+      "approved": true,
+      "issues": [],
+      "summary": "Requirements完整覆盖全部来源目标，无遗漏、无额外强制义务、无不当拆分重复；rubric与固定质量库条目边界清晰，排除条件有效防重复扣分，分数分配正确；无成立反例。"
+    }
+  }
+]

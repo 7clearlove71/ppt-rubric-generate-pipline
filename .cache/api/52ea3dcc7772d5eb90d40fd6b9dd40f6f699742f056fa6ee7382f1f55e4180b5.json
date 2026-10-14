@@ -1,0 +1,26 @@
+{
+  "parsed": {
+    "answer": "yes",
+    "pages": [
+      2,
+      4,
+      5,
+      7
+    ],
+    "evidence": "族谱待考：p4「待考：需多问几位老人」用红色标签明确标出；p7「待考：族谱焚毁与重写细节」列入TO BE VERIFIED红色边框专区。木雕/外姓人待考：p5「待考」用红色按钮标签标于「外姓人」之说下方；p7「外姓人建造来源」再次列入同一待考专区。两类存疑信息均有可辨识的视觉标记（红色标签、红色边框专区），非正文顺带提及。"
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 23732,
+    "total_tokens": 23864,
+    "completion_tokens": 132,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 18.196,
+  "attempts": 1
+}

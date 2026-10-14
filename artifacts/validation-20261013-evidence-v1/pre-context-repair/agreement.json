@@ -1,0 +1,82 @@
+{
+  "split": "dev",
+  "tie_margin": 3.0,
+  "n": 1,
+  "matches": 1,
+  "consistency_audited_n": 0,
+  "consistency_audited_agreement": null,
+  "total_cases": 7,
+  "decided_labels": 6,
+  "evaluation_coverage": 0.16666666666666666,
+  "all_decided_cases_evaluated": false,
+  "all_cases_comparable": false,
+  "matched_fraction_of_decided_labels": 0.16666666666666666,
+  "agreement": 1.0,
+  "wilson_95_interval": [
+    0.20654329147389294,
+    1
+  ],
+  "human_ties": 0,
+  "predicted_ties": 0,
+  "cases": [
+    {
+      "case_id": "01",
+      "human": "A",
+      "predicted": "A",
+      "consistency_reviews": {
+        "A": {
+          "skipped": 0,
+          "unavailable": 2,
+          "unresolved": 0,
+          "passed": 13,
+          "status": "incomplete"
+        },
+        "B": {
+          "skipped": 0,
+          "unavailable": 2,
+          "unresolved": 0,
+          "passed": 13,
+          "status": "incomplete"
+        }
+      },
+      "scores": {
+        "A": 94.6,
+        "B": 79.0
+      },
+      "difference": 15.599999999999994,
+      "match": true,
+      "reasons": "面向领域内专家，证据边界比信息量更影响可信度。A 的主线集中、三个核心数据准确呈现、对推断有标注，适合 20 分钟报告。B 虽然补充了更多技术细节和行业图表，但把素材没有的团队系统成果（无线信号链、AI 标定、多中心平台）写成了\"已完成（实测）\"，跨口径并列后隐含领先判断——这些问题面向专家会被当场质疑，比信息量不足更致命。",
+      "reviewer_to_manifest": {
+        "A": "A",
+        "B": "B"
+      },
+      "reasons_candidate_ids": "reviewer A/B; translate with reviewer_to_manifest"
+    }
+  ],
+  "skipped": [
+    {
+      "case_id": "02",
+      "reason": "incomplete automated evaluation"
+    },
+    {
+      "case_id": "03",
+      "reason": "incomplete automated evaluation"
+    },
+    {
+      "case_id": "05",
+      "reason": "incomplete automated evaluation"
+    },
+    {
+      "case_id": "06",
+      "reason": "incomplete automated evaluation"
+    },
+    {
+      "case_id": "09",
+      "reason": "human undecided"
+    },
+    {
+      "case_id": "10",
+      "reason": "incomplete automated evaluation"
+    }
+  ]
+}

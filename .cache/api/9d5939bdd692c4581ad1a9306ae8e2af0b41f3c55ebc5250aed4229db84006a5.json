@@ -1,0 +1,23 @@
+{
+  "parsed": {
+    "consistent": true,
+    "issues": [],
+    "notes": [
+      "候选A第7页将'约18个月'表述为'约18个月以内'，添加了'以内'限定词，但此条scope仅要求'投资回报测算模块'，第7页为总结页而非投资回报测算模块核心页，且第5页核心模块已正确呈现'约18个月'及完整测算口径。候选A第5页'保守口径约18个月'的表述中'保守口径'为作品新增修饰，但时间要素'约18个月'与口径要素'月产量80万件·单位能耗0.85 kWh/件·工业电价0.75元/kWh，参数均来自1号线实际运行数据'均明确存在，符合criterion要求。候选B第5页标题'约18个月'、指标卡④'≈18个月'及底部数据来源说明完整包含两个要素，第7、8页为结论重申。两候选在核心投资回报测算模块均满足要求，答案一致为yes，无实质冲突需翻转。"
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 24827,
+    "total_tokens": 25061,
+    "completion_tokens": 234,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 121.798,
+  "attempts": 1
+}

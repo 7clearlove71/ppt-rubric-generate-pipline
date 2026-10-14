@@ -1,0 +1,88 @@
+{
+  "version": "2026-10-14.contract-v2.3",
+  "design": "source-only canonical predicate; fixed dimension budgets; one candidate per request; local visual aggregation; independent content model disagreement is interval",
+  "tuning_target": "criterion validity and grounded evidence, never human winner",
+  "dev_cases": [
+    "01",
+    "02",
+    "03",
+    "05",
+    "06",
+    "09",
+    "10"
+  ],
+  "holdout_cases": [
+    "04",
+    "07",
+    "08"
+  ],
+  "holdout_accessed": false,
+  "tie_margin": 3,
+  "primary_model": "kimi-k3",
+  "verification_model": "kimi-k2.6",
+  "verification_content_only": true,
+  "visual_weights": {
+    "V_READ": 10,
+    "V_LAYOUT": 5
+  },
+  "visual_weight_reason": "single readability owner prevents overlap/layout double charge; 2:1 ratio frozen uniformly before new outcomes",
+  "candidate_observations": "only after rubric freeze; never input to construction",
+  "semantic_revision_policy": "initial source-only design/audit plus at most 2 source-only revision/audit rounds (at most 3 audits), no result-driven rank tuning",
+  "primary_thinking": true,
+  "independent_rubric_auditor": "kimi-k2.6",
+  "sensitivity": {
+    "dimension_multipliers": [
+      0.8,
+      1.2
+    ],
+    "all_corners": 32,
+    "normalize_to": 100,
+    "used_to_fit_labels": false
+  },
+  "source_library": [
+    "C_REASON",
+    "I_BOUNDARY",
+    "N_FLOW",
+    "V_READ",
+    "V_LAYOUT"
+  ],
+  "amendments": [
+    {
+      "from": "contract-v2.1",
+      "to": "contract-v2.2",
+      "trigger": "source-only 01 rubric independently found duplicated fact scoring before any new deck judgments",
+      "record": "pre-typed-contract/semantic-qa.json",
+      "change": "typed fact ownership, fixed generic library, independent model auditor, K3 thinking"
+    },
+    {
+      "from": "contract-v2.2",
+      "to": "contract-v2.3",
+      "trigger": "independent source-only QA confirmed duplicated payment mode and invented per-page title rule in02",
+      "record": "docs/contract-v23-source-only-audit.md",
+      "change": "remove free DESIGN stage; direct typed requirement compiler; require concrete valid audit counterexamples; enable independent auditor thinking"
+    }
+  ],
+  "rubric_validator": 3,
+  "offline_tests": 333,
+  "final_construction": "EXTRACT -> deterministic one criterion per source requirement -> independent AUDIT; at most two requirements revisions; no free DESIGN stage",
+  "rubric_auditor_thinking": true,
+  "engineering_refresh": {
+    "date": "2026-10-14T03:41:39.020732+00:00",
+    "changed_files": [
+      "ppt_rubric/contract_v2.py",
+      "ppt_rubric/contract_report.py"
+    ],
+    "changes": "shared-client case workers; stricter offline report and single-assessor statistics; no prompts, scoring weights, criteria, or semantic version change",
+    "previous_hashes": "pre-worker-frozen-code-hashes.json"
+  },
+  "reporting_only_updates": [
+    {
+      "recorded_at": "2026-10-14T04:21:48.507259+00:00",
+      "changed_files": [
+        "ppt_rubric/contract_report.py"
+      ],
+      "reason": "Include independently audited source semantic quality in offline reporting, hash-bound to current rubrics; no model prompt, criterion, request setting, score, or comparison denominator changed.",
+      "previous_hashes": "pre-qa-report-frozen-code-hashes.json"
+    }
+  ]
+}

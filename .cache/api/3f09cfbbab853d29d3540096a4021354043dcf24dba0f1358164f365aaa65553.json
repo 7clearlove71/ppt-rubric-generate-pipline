@@ -1,0 +1,123 @@
+{
+  "parsed": {
+    "page": 1,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "产线设备能耗分析与节能改造立项建议",
+        "location": "页面中央主标题区域，p1_t2与p1_t3在[58.51, 126.81, 134.53, 138.22]处包围框相交",
+        "statement": "主标题由两个独立text span组成：'产线设备能耗分析与节能改造立项'（p1_t2）与'建议'（p1_t3）。从局部放大图可见，'建议'二字位于'立项'下方，是标题的续行而非独立内容，实际排版为两行标题'产线设备能耗分析与节能改造立项/建议'。包围框相交但字形笔画无实际遮挡，属于正常换行排版。",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "// 节能改造立项审批汇报",
+        "location": "页面左上方，p1_t1[58.51, 55.02, 150.36, 67.01]",
+        "statement": "页面顶部绿色小字标签，表明文档用途为节能改造立项审批汇报",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "节能改造立项要用"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "基于一个月产线设备能耗数据的专项分析与改造立项汇报",
+        "location": "页面中下部，p1_t4[58.51, 208.48, 307.7, 223.49]",
+        "statement": "副标题说明数据来源为一个月产线设备能耗数据，与用户需求一致",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "产线设备能耗数据我拉了一个月的"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "1",
+            "unit": "月",
+            "subject": "数据采集周期",
+            "denominator": "不适用",
+            "time_origin": "未说明"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "READ THE BRIEF",
+        "location": "页面左下角按钮区域，p1_t5[69.31, 335.54, 136.49, 347.53]",
+        "statement": "装饰性按钮文字，非数据内容",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "DOC · 2026 年9 月",
+        "location": "页面右下角，p1_t6[599.1, 325.39, 661.52, 335.9]",
+        "statement": "文档日期标注为2026年9月，用户未给定此日期，属于作品自行添加的时间信息",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [
+          {
+            "value": "2026年9月",
+            "unit": "不适用",
+            "subject": "文档日期",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "汇报对象：立项评审委员会",
+        "location": "页面右下角，p1_t7[577.98, 338.77, 661.53, 349.28]",
+        "statement": "标注汇报对象，与节能改造立项用途相符",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "节能改造立项要用"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "[整页内容]",
+        "location": "第1页全页",
+        "statement": "本页为封面页，仅包含标题、副标题、日期和汇报对象等元信息，未呈现任何用户要求的三段式叙事模块（四条产线能耗对比、1号线深挖、投资回报测算），也未呈现任何产线数据、能耗数值、原因分析或测算内容。作为封面页，此内容安排属于正常结构，但无法单独判断后续页面是否包含所需模块。",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "model": "kimi-k2.6",
+  "usage": {
+    "prompt_tokens": 5351,
+    "total_tokens": 6157,
+    "completion_tokens": 806,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    }
+  },
+  "elapsed_seconds": 139.137,
+  "attempts": 1
+}
