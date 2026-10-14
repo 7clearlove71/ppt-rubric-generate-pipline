@@ -1,0 +1,62 @@
+{
+  "version": "0.1.0",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "generator_model": "kimi-k3",
+  "vision_model": "kimi-k3",
+  "reviewer_model": "kimi-k3",
+  "judge_model": "kimi-k3",
+  "keychain_service": "codex.alibaba-bailian.api-key",
+  "keychain_account": "codex",
+  "trust_env_proxy": false,
+  "timeout_seconds": 180,
+  "max_retries": 3,
+  "max_output_tokens": 16000,
+  "request_options": {
+    "enable_thinking": true
+  },
+  "api_concurrency": 1,
+  "max_revisions": 2,
+  "dpi": 150,
+  "pdf_backend": "pymupdf",
+  "soffice": "soffice",
+  "font_dirs": [],
+  "dimension_weights": {
+    "fulfillment": 30,
+    "correctness": 25,
+    "integrity": 15,
+    "narrative": 15,
+    "visual": 15
+  },
+  "max_case_text_chars": 100000,
+  "max_images_per_request": 60,
+  "tie_margin": 3.0,
+  "min_request_interval_seconds": 20,
+  "rate_limit_backoff_seconds": 30,
+  "max_consecutive_rate_limits": 3,
+  "evaluation_protocol": "contract_v2",
+  "max_source_refinements": 0,
+  "reviser_model": "kimi-k3",
+  "source_refinement_reviser_role": "reviser",
+  "role_request_options": {
+    "reviser": {
+      "enable_thinking": true
+    }
+  },
+  "pipeline_stage": "judge",
+  "role_timeout_seconds": {
+    "generator": 600,
+    "reviewer": 600,
+    "judge": 600,
+    "vision": 600
+  },
+  "role_max_output_tokens": {
+    "generator": 32768,
+    "reviewer": 32768,
+    "judge": 32768,
+    "vision": 32768
+  },
+  "verification_content_only": true,
+  "visual_batch_size": 3,
+  "max_visual_focus_images": 4,
+  "api_key_env": "BAILIAN_API_KEY"
+}

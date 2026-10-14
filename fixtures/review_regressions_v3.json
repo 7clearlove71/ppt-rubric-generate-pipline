@@ -1,0 +1,298 @@
+{
+  "sources": [
+    {
+      "id": "prompt",
+      "text": "制作一份面向新员工的入职培训PPT，包含工位领取与考勤说明。另须明确写出账号激活时限：账号须在入职后24小时内激活。不要求介绍具体账号激活操作流程。不限制页数、模板与配色。"
+    }
+  ],
+  "requirements": {
+    "requirements": [
+      {
+        "id": "Q01",
+        "source_id": "prompt",
+        "quote": "面向新员工",
+        "text": "新员工受众",
+        "importance": 3
+      },
+      {
+        "id": "Q02",
+        "source_id": "prompt",
+        "quote": "工位领取",
+        "text": "包含工位领取说明",
+        "importance": 3
+      },
+      {
+        "id": "Q03",
+        "source_id": "prompt",
+        "quote": "考勤说明",
+        "text": "包含考勤说明",
+        "importance": 3
+      },
+      {
+        "id": "Q04",
+        "source_id": "prompt",
+        "quote": "账号须在入职后24小时内激活",
+        "text": "账号激活期限为入职后24小时",
+        "importance": 3
+      },
+      {
+        "id": "Q05",
+        "source_id": "prompt",
+        "quote": "不限制页数、模板与配色",
+        "text": "允许不同页数、模板与配色",
+        "importance": 3
+      }
+    ]
+  },
+  "rubric": {
+    "groups": [
+      {
+        "id": "G01",
+        "dimension": "fulfillment",
+        "importance": 1,
+        "rationale": "该质量维度内的同一目标共享预算"
+      },
+      {
+        "id": "G02",
+        "dimension": "correctness",
+        "importance": 1,
+        "rationale": "该质量维度内的同一目标共享预算"
+      },
+      {
+        "id": "G03",
+        "dimension": "integrity",
+        "importance": 1,
+        "rationale": "该质量维度内的同一目标共享预算"
+      },
+      {
+        "id": "G04",
+        "dimension": "narrative",
+        "importance": 1,
+        "rationale": "该质量维度内的同一目标共享预算"
+      },
+      {
+        "id": "G05",
+        "dimension": "visual",
+        "importance": 1,
+        "rationale": "该质量维度内的同一目标共享预算"
+      }
+    ],
+    "items": [
+      {
+        "id": "R01",
+        "group_id": "G01",
+        "source_refs": [
+          "Q02"
+        ],
+        "basis": "explicit",
+        "importance": 1,
+        "scope": "整份PPT",
+        "evidence_mode": "both",
+        "judge_prompt": "PPT中有可辨识的工位领取说明；可使用通用流程或明确标注待补充的单位实际流程，不要求虚构具体负责人。"
+      },
+      {
+        "id": "R02",
+        "group_id": "G01",
+        "source_refs": [
+          "Q03"
+        ],
+        "basis": "explicit",
+        "importance": 1,
+        "scope": "整份PPT",
+        "evidence_mode": "both",
+        "judge_prompt": "PPT中有可辨识的考勤说明；可以呈现通用说明或明确标注待补充的单位政策，不要求虚构考勤时间或处罚细则。"
+      },
+      {
+        "id": "R03",
+        "group_id": "G02",
+        "source_refs": [
+          "Q04"
+        ],
+        "basis": "explicit",
+        "importance": 1,
+        "scope": "整份PPT",
+        "evidence_mode": "both",
+        "judge_prompt": "PPT中明确说明账号应在入职后24小时内激活，所有引用处保持时限与起算点准确。24小时和1天为等价表达；完全缺失、起算点或数值错误则不通过。"
+      },
+      {
+        "id": "R04",
+        "group_id": "G03",
+        "source_refs": [],
+        "basis": "quality",
+        "importance": 1,
+        "scope": "整份PPT",
+        "evidence_mode": "both",
+        "judge_prompt": "对用户没有提供的单位政策、负责人或办理地点，使用通用描述、占位或可识别的建议，不将新增的具体信息冒充已经确认的单位制度。允许领域常识与合理建议，不要求所有常识逐字来自需求。"
+      },
+      {
+        "id": "R05",
+        "group_id": "G04",
+        "source_refs": [
+          "Q01"
+        ],
+        "basis": "explicit",
+        "importance": 1,
+        "scope": "整份PPT",
+        "evidence_mode": "both",
+        "judge_prompt": "表达适合新员工理解：办理事项与相关说明有清晰对应关系，首次出现的单位专属缩写有解释或上下文说明。没有此类缩写时无需额外解释，不要求受众具备未介绍的单位内部知识。"
+      },
+      {
+        "id": "R06",
+        "group_id": "G05",
+        "source_refs": [
+          "Q05"
+        ],
+        "basis": "quality",
+        "importance": 1,
+        "scope": "整份PPT",
+        "evidence_mode": "both",
+        "judge_prompt": "页面正文与背景有足够对比，正文信息可阅读，未出现使内容不可辨识的裁切、重叠或乱码。允许任意有效页数、模板和配色，不规定固定字号或每页字数。"
+      }
+    ]
+  },
+  "tests": [
+    {
+      "id": "valid-flexible-design",
+      "expected_approved": true,
+      "changes": [],
+      "rationale": "No arbitrary design requirements; unknown unit details may be placeholders."
+    },
+    {
+      "id": "valid-equivalent-units",
+      "expected_approved": true,
+      "changes": [
+        {
+          "item_id": "R03",
+          "judge_prompt": "账号激活时限应为入职后1天之内，PPT须展示该规则，任何引用处不得改错起算点或时长。1天与24小时视为等价表达；缺失该规则或改为入职前一天等不等价说法不通过。"
+        }
+      ],
+      "rationale": "Exact unit equivalence must not be treated as source fabrication."
+    },
+    {
+      "id": "invalid-font-threshold",
+      "expected_approved": false,
+      "target_items": [
+        "R06"
+      ],
+      "changes": [
+        {
+          "item_id": "R06",
+          "judge_prompt": "每一页的所有正文字体必须至少28磅，任何一页小于28磅则不通过，无论实际是否清晰可读。"
+        }
+      ],
+      "rationale": "A mandatory unsupported exact typography threshold."
+    },
+    {
+      "id": "invalid-extra-module",
+      "expected_approved": false,
+      "target_items": [
+        "R02"
+      ],
+      "changes": [
+        {
+          "item_id": "R02",
+          "judge_prompt": "PPT必须同时包含考勤说明与至少一整页网络安全培训，否则不通过。"
+        }
+      ],
+      "rationale": "Source never requires a cybersecurity chapter or its length."
+    },
+    {
+      "id": "invalid-candidate-style",
+      "expected_approved": false,
+      "target_items": [
+        "R06"
+      ],
+      "changes": [
+        {
+          "item_id": "R06",
+          "judge_prompt": "必须照候选A的黑底金字模板制作并采用同样封面布局，与候选B相似则不通过。"
+        }
+      ],
+      "rationale": "Candidate identity and imitation are not legitimate quality criteria."
+    },
+    {
+      "id": "invalid-duplicate-fact",
+      "expected_approved": false,
+      "target_items": [
+        "R03",
+        "R04"
+      ],
+      "changes": [
+        {
+          "item_id": "R04",
+          "judge_prompt": "PPT必须说明入职后24小时内激活账号，缺失这条信息或者写错时限均不通过。"
+        }
+      ],
+      "rationale": "Same missing/incorrect deadline penalized twice despite misleading quality metadata."
+    },
+    {
+      "id": "invalid-demand-invention",
+      "expected_approved": false,
+      "target_items": [
+        "R01"
+      ],
+      "changes": [
+        {
+          "item_id": "R01",
+          "judge_prompt": "工位领取说明必须列出至少一位具名负责人及其真实电话号码，不得使用占位或待补信息，否则不通过。"
+        }
+      ],
+      "rationale": "Requires unavailable concrete personal/organization data instead of allowed placeholders."
+    },
+    {
+      "id": "valid-rounded-derived-value",
+      "expected_approved": true,
+      "target_items": [],
+      "changes": [
+        {
+          "item_id": "R04",
+          "judge_prompt": "对用户没有提供的单位政策、负责人或办理地点，使用通用描述、占位或可识别的建议，不将新增的具体信息冒充已经确认的单位制度。允许领域常识与合理建议，不要求所有常识逐字来自需求。 若补充量化示例，允许明确标注的假设和正常四舍五入，例如100÷6约为16.7是正确的一位小数近似，不应因此扣分。"
+        }
+      ],
+      "rationale": "Correct rounding must not be rejected as an arithmetic error."
+    },
+    {
+      "id": "invalid-rounded-value-negative-example",
+      "expected_approved": false,
+      "target_items": [
+        "R04"
+      ],
+      "changes": [
+        {
+          "item_id": "R04",
+          "judge_prompt": "对用户没有提供的单位政策、负责人或办理地点，使用通用描述、占位或可识别的建议，不将新增的具体信息冒充已经确认的单位制度。允许领域常识与合理建议，不要求所有常识逐字来自需求。 若补充量化示例，100÷6写成16.7这类精度错误也算不通过。"
+        }
+      ],
+      "rationale": "The seeded negative example incorrectly rejects valid rounding."
+    },
+    {
+      "id": "valid-proposal-not-confirmed-policy",
+      "expected_approved": true,
+      "target_items": [],
+      "changes": [
+        {
+          "item_id": "R04",
+          "judge_prompt": "对用户没有提供的单位政策、负责人或办理地点，使用通用描述、占位或可识别的建议，不将新增的具体信息冒充已经确认的单位制度。允许领域常识与合理建议，不要求所有常识逐字来自需求。 计划页或待审批栏可以通过上下文表明建议性质，不强制逐句添加假设标签；整改目标未达到达标线，不自动等于声称已经达标。"
+        }
+      ],
+      "rationale": "Proposals and goals are not automatically false claims of completed facts."
+    },
+    {
+      "id": "invalid-absence-proves-negative",
+      "expected_approved": false,
+      "target_items": [
+        "R04"
+      ],
+      "changes": [
+        {
+          "item_id": "R04",
+          "judge_prompt": "对用户没有提供的单位政策、负责人或办理地点，使用通用描述、占位或可识别的建议，不将新增的具体信息冒充已经确认的单位制度。允许领域常识与合理建议，不要求所有常识逐字来自需求。 材料未记载的制度应认定现实中不存在，凡候选说有该制度都必须判错，即便标为待核实也不例外。"
+        }
+      ],
+      "rationale": "Lack of source evidence does not establish absence in reality."
+    }
+  ],
+  "fixture_version": "3",
+  "change_note": "Clarifies that the account criterion concerns the deadline, not an unstated activation tutorial. Expected answers and all rubric items/mutations unchanged; v1 retained.",
+  "scope": "Development reviewer regression; new cases are unexecuted against live models. No preference labels."
+}

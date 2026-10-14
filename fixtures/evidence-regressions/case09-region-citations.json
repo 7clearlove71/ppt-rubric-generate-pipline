@@ -1,0 +1,263 @@
+{
+  "raw": {
+    "answer": "no",
+    "pages": [
+      1,
+      2,
+      4
+    ],
+    "evidence": "经逐页核对原始图像与局部放大图，确认存在以下真实叠印缺陷：第1页绿色'同比'文字与金色'亿'字发生笔画相交重叠，绿色'同'字左竖与金色'亿'字左竖重叠、绿色'比'字斜笔与金色'亿'字横折弯钩交叉，导致两字互相遮挡；第2页同样出现绿色'同比'与金色'亿'的上下叠层关系，'亿'字笔画穿过'同'字内部，绿色文字完全覆盖金黄色文字；第4页超大号深蓝色'月'字与下方正文'最难的那个月，账上现金只够发两个月工资；但团队没有一个人退缩。'发生严重叠印，'月'字占据正文区域导致正文首字'最'及后续文字被大面积遮挡，且'月'字底部与'但'字顶部相交。上述均为真实不可读问题，违反visual_readability标准。",
+    "evidence_ids": [
+      "p1_overlap_fe92d10a01",
+      "p2_overlap_54471eb5c8",
+      "p4_overlap_41b880fea8",
+      "p4_overlap_7ce6f90a6d"
+    ],
+    "resolutions": [],
+    "inspection_resolutions": [
+      {
+        "inspection_id": "p1_overlap_fe92d10a01",
+        "relation_confirmed": true,
+        "defect_present": true,
+        "reason": "局部放大图清晰显示绿色'同比'位于上层、金色'亿'位于下层，'同'字左竖与'亿'字左竖笔画相交，'比'字斜笔与'亿'字横折弯钩交叉，金色'亿'字从绿色文字笔画间隙和下方穿出，形成真实叠压遮挡，导致两字均难以完整辨识，构成visual_readability缺陷。"
+      },
+      {
+        "inspection_id": "p2_overlap_54471eb5c8",
+        "relation_confirmed": true,
+        "defect_present": true,
+        "reason": "局部放大图确认绿色'同比'位于上层、金黄色'亿'位于下层，'亿'字左竖穿过'同'字内部，'比'字左竖与'亿'字横折弯钩交叉，绿色文字完全覆盖金黄色文字，形成上下叠层遮挡，导致文字不可完整阅读，构成visual_readability缺陷。"
+      }
+    ],
+    "additional_observations": [
+      {
+        "page": 4,
+        "quote": "超大号深蓝色'月'字与正文'最难的那个月，账上现金只够发两个月工资；但团队没有一个人退缩。'发生叠印",
+        "location": "页面中部偏左，大号'月'字区域与正文起始区域",
+        "statement": "第4页使用超大号装饰性'月'字（深蓝色）与下方正文段落直接重叠，'月'字占据正文首行空间，导致正文首字'最'被完全遮挡，且'月'字底部笔画与第二行首字'但'的顶部相交，正文段落无法完整阅读。这是真实的内容遮挡，非仅bbox相交的候选情况。",
+        "kind": "fact",
+        "failure_mode": "visual_readability",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "inspections": [
+    {
+      "id": "p1_overlap_fe92d10a01",
+      "page": 1,
+      "rect": [
+        506.656005859375,
+        289.82598876953125,
+        661.7839965820312,
+        407.52398681640625
+      ],
+      "status": "observed",
+      "observation": {
+        "text_seen": [
+          "同比",
+          "亿"
+        ],
+        "overlapping": true,
+        "overlap_objects": [
+          "同（绿色）与亿（金色）",
+          "比（绿色）与亿（金色）"
+        ],
+        "description": "绿色文字'同比'位于图像上层，金色文字'亿'位于下层。绿色'同'字与金色'亿'字在左侧竖笔及横笔处有笔画相交重叠；绿色'比'字与金色'亿'字在中间斜笔处有笔画相交重叠。金色'亿'字的笔画从绿色'同比'二字的笔画间隙和下方穿出，形成明显的叠压关系。背景为纯白色。"
+      }
+    },
+    {
+      "id": "p2_overlap_54471eb5c8",
+      "page": 2,
+      "rect": [
+        41.06800079345703,
+        326.7380065917969,
+        197.39199829101562,
+        448.62200927734375
+      ],
+      "status": "observed",
+      "observation": {
+        "text_seen": [
+          "同比",
+          "亿"
+        ],
+        "overlapping": true,
+        "overlap_objects": [
+          "同与亿",
+          "比与亿"
+        ],
+        "description": "绿色文字'同比'位于上层，金黄色文字'亿'位于下层。'亿'字笔画穿过'同'字内部（'同'的左竖与'亿'的左竖重叠，'同'的下横与'亿'的横折弯钩交叉），'比'字的左竖也与'亿'的横折弯钩交叉。绿色文字完全覆盖在金黄色文字之上，形成明显的上下叠层关系。背景为纯白色。"
+      }
+    }
+  ],
+  "regions": [
+    {
+      "id": "p1_overlap_fe92d10a01",
+      "page": 1,
+      "quote": "Slide 1 local enlarged view p1_overlap_fe92d10a01; text spans ['p1_t9', 'p1_t10']: ['亿', '同比 ']. Original PDF rectangle [506.656005859375, 289.82598876953125, 661.7839965820312, 407.52398681640625]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [506.656005859375, 289.82598876953125, 661.7839965820312, 407.52398681640625]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p2_overlap_54471eb5c8",
+      "page": 2,
+      "quote": "Slide 2 local enlarged view p2_overlap_54471eb5c8; text spans ['p2_t6', 'p2_t7']: ['亿', '同比 ']. Original PDF rectangle [41.06800079345703, 326.7380065917969, 197.39199829101562, 448.62200927734375]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [41.06800079345703, 326.7380065917969, 197.39199829101562, 448.62200927734375]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_41b880fea8",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_41b880fea8; text spans ['p4_t4', 'p4_t6']: ['月', '但']. Original PDF rectangle [42.87799835205078, 322.5780029296875, 152.0919952392578, 442.0820007324219]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [42.87799835205078, 322.5780029296875, 152.0919952392578, 442.0820007324219]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_7ce6f90a6d",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_7ce6f90a6d; text spans ['p4_t4', 'p4_t5']: ['月', '最难的那个月，账上现金只够发两个月工资；']. Original PDF rectangle [42.87799835205078, 322.5780029296875, 525.6320190429688, 431.7919921875]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [42.87799835205078, 322.5780029296875, 525.6320190429688, 431.7919921875]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_4b9415fb48",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_4b9415fb48; text spans ['p3_t18', 'p3_t20']: ['9% → 14%', '· +5 ']. Original PDF rectangle [463.9700012207031, 361.7200012207031, 762.9500122070312, 463.1499938964844]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [463.9700012207031, 361.7200012207031, 762.9500122070312, 463.1499938964844]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_34c11cff69",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_34c11cff69; text spans ['p3_t18', 'p3_t21']: ['9% → 14%', '个百分点']. Original PDF rectangle [464.1839904785156, 361.9339904785156, 762.7360229492188, 461.8659973144531]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [464.1839904785156, 361.9339904785156, 762.7360229492188, 461.8659973144531]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_f9e1e95e51",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_f9e1e95e51; text spans ['p3_t18', 'p3_t19']: ['9% → 14%', '研发投入占营收比例 ']. Original PDF rectangle [464.1839904785156, 361.9339904785156, 762.7360229492188, 461.8659973144531]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [464.1839904785156, 361.9339904785156, 762.7360229492188, 461.8659973144531]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p3_overlap_a29b0e0ebf",
+      "page": 3,
+      "quote": "Slide 3 local enlarged view p3_overlap_a29b0e0ebf; text spans ['p3_t12', 'p3_t14']: ['320 → 410 ', '一个都没少，还在变多']. Original PDF rectangle [464.1839904785156, 214.9340057373047, 771.7559814453125, 314.8659973144531]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [464.1839904785156, 214.9340057373047, 771.7559814453125, 314.8659973144531]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p5_overlap_41a25ad306",
+      "page": 5,
+      "quote": "Slide 5 local enlarged view p5_overlap_41a25ad306; text spans ['p5_t7', 'p5_t9']: ['14%', '9% · ']. Original PDF rectangle [37.380001068115234, 219.97000122070312, 235.67999267578125, 367.6700134277344]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [37.380001068115234, 219.97000122070312, 235.67999267578125, 367.6700134277344]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p5_overlap_b54ed508ff",
+      "page": 5,
+      "quote": "Slide 5 local enlarged view p5_overlap_b54ed508ff; text spans ['p5_t7', 'p5_t10']: ['14%', '+5 ']. Original PDF rectangle [37.380001068115234, 219.97000122070312, 235.67999267578125, 367.6700134277344]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [37.380001068115234, 219.97000122070312, 235.67999267578125, 367.6700134277344]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p5_overlap_b1a5534a44",
+      "page": 5,
+      "quote": "Slide 5 local enlarged view p5_overlap_b1a5534a44; text spans ['p5_t7', 'p5_t8']: ['14%', '较上年 ']. Original PDF rectangle [37.678001403808594, 220.26800537109375, 235.3820037841797, 365.8819885253906]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [37.678001403808594, 220.26800537109375, 235.3820037841797, 365.8819885253906]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p5_overlap_495c735693",
+      "page": 5,
+      "quote": "Slide 5 local enlarged view p5_overlap_495c735693; text spans ['p5_t16', 'p5_t17']: ['项', '技术家底，是寒冬里攒下的']. Original PDF rectangle [535.9199829101562, 310.7699890136719, 751.9199829101562, 433.760009765625]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [535.9199829101562, 310.7699890136719, 751.9199829101562, 433.760009765625]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    }
+  ]
+}

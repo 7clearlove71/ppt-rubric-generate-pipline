@@ -1,0 +1,22 @@
+data/
+.cache/
+artifacts/
+research/presentbench/
+research/presentbench-tree.json
+__pycache__/
+.pytest_cache/
+*.egg-info/
+.venv/
+.env
+.DS_Store
+
+# Local credentials, machine settings and private experiment history
+.env.*
+!.env.example
+*.pem
+*.key
+configs/local/
+AGENTS.md
+research/
+build/
+dist/

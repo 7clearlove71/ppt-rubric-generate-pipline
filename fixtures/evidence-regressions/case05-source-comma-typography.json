@@ -1,0 +1,464 @@
+{
+  "origin": "artifacts/validation-20261013-evidence-v1/judgments/invalid-responses/0b2477e6913b42479f646f2794b1192b-360.json",
+  "raw_sha256": "a0104dc9e183c490e36abf51ffa9726a27e41bdfef04c7cf334c8ee2e45cd565",
+  "raw": {
+    "page": 8,
+    "complete": true,
+    "observations": [
+      {
+        "quote": "把每一个\"待考\"摊在桌面上：9 条存疑项，各自的信息源、待验证问题与核验方法一览",
+        "location": "页面上部标题区域",
+        "statement": "页面标题明确使用\"待考\"一词，将9条存疑项以清单形式呈现",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来，别下定论"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "9",
+            "unit": "条",
+            "subject": "存疑项",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "本页无结论 · 9 条均为单一信息源，未经交叉验证",
+        "location": "标题下方右侧",
+        "statement": "页面显式标注\"本页无结论\"，强调所有存疑项未经交叉验证，符合\"别下定论\"的要求",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来，别下定论"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S1 \"现存明清老宅约40 栋\" 估算·待核",
+        "location": "表格第一行",
+        "statement": "Day1事实\"约40栋\"被引用并标注\"估算·待核\"，信息源标注为\"目测 1次走访·无台账测绘\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "现存明清老宅约40栋"
+          }
+        ],
+        "quantities": [
+          {
+            "value": "40",
+            "unit": "栋",
+            "subject": "明清老宅",
+            "denominator": "不适用",
+            "time_origin": "不适用"
+          }
+        ],
+        "calculations": []
+      },
+      {
+        "quote": "S2 \"住人不到一半\" 目测·待核",
+        "location": "表格第二行",
+        "statement": "Day1事实\"住人不到一半\"被引用并标注\"目测·待核\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "住人不到一半"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S3 \"年轻人外出打工，留守多为老人\" 印象·无数据",
+        "location": "表格第三行",
+        "statement": "Day1事实\"年轻人外出打工，留守多为老人\"被引用，标注为\"印象·无数据\"，信息源标注\"无数据 0数据·0访谈记录\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "年轻人外出打工,留守多为老人"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S4 \"祠堂以前每年清明祭祖，现在三年一次\" 口述·待核",
+        "location": "表格第四行",
+        "statement": "Day2事实\"祠堂以前每年清明祭祖，现在三年一次\"被引用并标注\"口述·待核\"，信息源标注\"口述'几位老人'·人数未记\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "祠堂以前每年清明祭祖,现在三年一次"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S5 \"族谱文革烧了一部分\" 口述·待核",
+        "location": "表格第五行",
+        "statement": "Day2事实\"族谱文革烧了一部分\"被引用并标注\"口述·待核\"，信息源标注\"口述'有老人说'·单一转述\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "族谱文革烧了一部分"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S6 \"现在版本是后来凭记忆补的\" 笔记自标待考",
+        "location": "表格第六行",
+        "statement": "Day2事实\"现在版本是后来凭记忆补的\"被引用，特别标注\"笔记自标待考\"，信息源标注\"口述单一说法·0份文献在手\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "现在版本是后来凭记忆补的——待考"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S7 \"几栋木雕风格明显不同\" 观感·待核",
+        "location": "表格第七行",
+        "statement": "Day3事实\"几栋木雕风格明显不同\"被引用并标注\"观感·待核\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "几栋木雕风格明显不同"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S8 \"村民说是'外姓人'建的，来历说不清\" 叙事·未证实",
+        "location": "表格第八行",
+        "statement": "Day3事实\"村民说是'外姓人'建的，来历说不清\"被引用并标注\"叙事·未证实\"，信息源标注\"口述村民转述·人数未记\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "村民说是\"外姓人\"建的,来历说不清"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S9 \"新修了仿古街，老宅本体保护反而没钱投\" 印象·未查证",
+        "location": "表格第九行",
+        "statement": "Day4事实\"新修了仿古街，老宅本体保护反而没钱投\"被引用并标注\"印象·未查证\"，信息源标注\"无数据 现场观察+研究者判断\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "核验完成前不发布任何结论性表述 · 本页无结论：\"约40 栋\"\"不到一半\"为单次目测估算，\"三年一次\"\"凭记忆补的\"为单一口述，均未经交叉验证；引用只使用笔记原文措辞",
+        "location": "页面底部注释",
+        "statement": "底部注释再次强调\"核验完成前不发布任何结论性表述\"，明确说明引用使用笔记原文措辞，并指出数据局限",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "存疑的地方标出来，别下定论"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "来源：用户田野笔记 Day1—Day4 ；核验计划阶段与时间窗为本研究计划安排，非笔记事实",
+        "location": "页面底部注释末尾",
+        "statement": "明确区分笔记事实与作品自行添加的核验计划，标注后者\"非笔记事实\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段一 第二轮驻村（复测 + 扩样访谈）",
+        "location": "页面右侧计划区域",
+        "statement": "右侧\"下一步核验计划\"包含四个阶段，此为作品自行添加的研究计划内容，非笔记原文",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "优先级 / 主线",
+        "location": "表格列标题",
+        "statement": "表格包含优先级和主线关联标注，如\"主线一·三\"\"主线二\"\"主线三\"",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段二 档案与文献检索（族谱/碑刻/方志/规划）",
+        "location": "右侧计划区域",
+        "statement": "核验计划第二阶段，作品自行添加",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段三 专家辨识与部门访谈",
+        "location": "右侧计划区域",
+        "statement": "核验计划第三阶段，作品自行添加",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段四 多源交叉验证与命题收敛",
+        "location": "右侧计划区域",
+        "statement": "核验计划第四阶段，作品自行添加",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "核验完成前不发布任何结论性表述",
+        "location": "页面底部",
+        "statement": "视觉可见：底部注释文字清晰，无遮挡裁切",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "阶段一/阶段二/阶段三/阶段四标签与对应时间窗文字",
+        "location": "右侧计划区域各阶段标题",
+        "statement": "根据text_overlap_candidates和局部放大图核查：阶段标签（黑色圆角矩形背景）与时间窗文字存在bbox相交，但放大图显示阶段标签为独立视觉元素（白字黑底），时间窗为灰字，两者垂直排列无实际笔画遮挡，属于相邻排版而非叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "p8_t121与p8_t122底部注释两行",
+        "location": "页面底部注释区域",
+        "statement": "根据text_overlap_candidates和局部放大图核查：两行注释文字存在bbox相交（y坐标重叠约1.75pt），但放大图显示为正常换行排版，第一行末尾与第二行开头在水平方向连续，无实际笔画遮挡，属于段落换行而非叠印",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "核验动作列中的多行文字（如'逐栋编号建台账，下一轮驻村复/测比对'）",
+        "location": "表格中部各行动作描述",
+        "statement": "根据多个局部放大图核查：核验动作列中多行文字为正常的单元格内换行排版，行间距紧凑但无实际笔画重叠，属于合理的表格行内换行",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "表格中'高'优先级标签与'主线X'文字",
+        "location": "表格右侧优先级列",
+        "statement": "根据局部放大图核查：'高'字（白色文字，橙色/红色圆形背景）与'主线一/二/三'文字存在bbox相交，但放大图显示'高'为独立圆形标签，'主线'文字在其下方或右侧，无实际笔画遮挡，属于相邻排版",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S3行'无数据'红色标注",
+        "location": "表格第三行信息源列",
+        "statement": "视觉可见：'无数据'以红色（#b53333）突出显示，与周围灰色文字形成对比，用于强调信息缺失状态",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "S9行'无数据'红色标注",
+        "location": "表格第九行信息源列",
+        "statement": "视觉可见：'无数据'以红色突出显示，与S3一致",
+        "kind": "visual",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "主线一·三 / 主线二·三 等双线标注",
+        "location": "表格右侧主线列",
+        "statement": "部分存疑项关联两条主线（如S1关联主线一·三，S7关联主线二·三），体现存疑项与初步感受方向的多重关联",
+        "kind": "inference",
+        "failure_mode": null,
+        "source_refs": [
+          {
+            "source_id": "prompt",
+            "quote": "初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向"
+          }
+        ],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "quote": "计划安排 · 只写相对时间窗",
+        "location": "右侧计划区域标题旁",
+        "statement": "作品自行添加的说明，强调时间窗为相对时间而非绝对日期",
+        "kind": "fact",
+        "failure_mode": null,
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "prompt",
+      "text": "田野笔记整理成PPT，搞大气一点，沙龙上要用。\n\n原文：\n\nDay1 进村。现存明清老宅约40栋,住人不到一半,年轻人外出打工,留守多为老人。\nDay2 访谈几位老人,祠堂以前每年清明祭祖,现在三年一次。有老人说族谱文革烧了一部分,现在版本是后来凭记忆补的——待考,得多问几个人。\nDay3 民居多是天井院落式,几栋木雕风格明显不同,村民说是\"外姓人\"建的,来历说不清。\nDay4 村里搞旅游开发,新修了仿古街,老宅本体保护反而没钱投,矛盾挺典型。\n初步感受:空心化、文化记忆断层、保护与开发错位,这三点是后续方向。\n存疑的地方标出来,别下定论。一定要出彩。"
+    }
+  ],
+  "modes": {
+    "not_structured_as_deck": {
+      "id": "not_structured_as_deck",
+      "owner": "R01",
+      "definition": "笔记内容未被整理成演示文稿形态：无章节/页面组织、原文整段照搬堆砌、缺少主题呈现或收束，不构成可独立使用的PPT。",
+      "exclusions": "不评判具体事实是否缺失或写错（由对应Day事实条目负责），不评判视觉美观。"
+    },
+    "missing_initial_reflection": {
+      "id": "missing_initial_reflection",
+      "owner": "R02",
+      "definition": "空心化、文化记忆断层、保护与开发错位三点中任一点缺失，或三点虽出现但未体现其作为初步感受/后续方向的定位。",
+      "exclusions": "不评判这三点是否被过度定论化（由存疑表述边界条目负责）。"
+    },
+    "missing_uncertainty_marker": {
+      "id": "missing_uncertainty_marker",
+      "owner": "R03",
+      "definition": "族谱待考或木雕来历不清两处存疑信息缺少显式可辨识的标注（无'待考/存疑/待核实'等标记或等效视觉标识）。",
+      "exclusions": "标注存在但正文仍以确定语气陈述该信息的，由存疑表述边界条目负责；不评判标注的视觉美观度。"
+    },
+    "day1_fact_missing_or_wrong": {
+      "id": "day1_fact_missing_or_wrong",
+      "owner": "R04",
+      "definition": "Day1四项核心事实（约40栋、住人不到一半、年轻人外出打工、留守多为老人）中任一项缺失、数值/语义被写错或改写为不同含义。",
+      "exclusions": "不评判Day2-Day4的事实内容（由对应Day事实条目负责），不评判版式美观。"
+    },
+    "day2_fact_missing_or_wrong": {
+      "id": "day2_fact_missing_or_wrong",
+      "owner": "R05",
+      "definition": "Day2核心事实（祭祖由每年清明一次变为三年一次；老人称族谱文革被烧一部分、现版本凭记忆补写）中任一项缺失或被写错，包括改变频率对比、访谈来源、受损时期或补写方式。",
+      "exclusions": "不评判其他Day的事实内容，不评判存疑标注是否存在（由存疑标注条目负责）。"
+    },
+    "day3_fact_missing_or_wrong": {
+      "id": "day3_fact_missing_or_wrong",
+      "owner": "R06",
+      "definition": "Day3三项信息（民居多为天井院落式、几栋木雕风格明显不同、村民称系外姓人所建且来历说不清）中任一项缺失或被写错，包括把传闻属性或未知状态改写为已考证结论。",
+      "exclusions": "不评判其他Day的事实内容；'来历说不清'被写成定论时本条负责事实失真，语气层面的定论化不再由存疑表述边界条目重复处罚同一处。"
+    },
+    "day4_fact_missing_or_wrong": {
+      "id": "day4_fact_missing_or_wrong",
+      "owner": "R07",
+      "definition": "Day4三项信息（旅游开发新修仿古街、老宅本体保护缺乏资金、保护与开发矛盾）中任一项缺失或被写错，包括把保护缺钱写成资金有保障或矛盾已解决。",
+      "exclusions": "不评判其他Day的事实内容，不评判视觉呈现。"
+    },
+    "reasoning_validity": {
+      "id": "reasoning_validity",
+      "owner": "R08",
+      "definition": "作品中出现的归纳、比较或测算存在算术错误、口径不一致、对象或期间不可比、循环论证、以偏概全，或把条件性推测表述为实测结果；未出现推导时不适用。",
+      "exclusions": "不评判原文给定事实本身的转述准确性，不评判明确标注为假设且逻辑自洽的设想。"
+    },
+    "uncertainty_overclaimed": {
+      "id": "uncertainty_overclaimed",
+      "owner": "R09",
+      "definition": "存疑内容（族谱说法、木雕来历）被写成确定结论，或三点初步感受被表述为已验证的最终结论而非初步判断。",
+      "exclusions": "对事实性观察（老宅数量、祭祖频率、仿古街修建）的确定陈述不扣分；缺少存疑标注本身由存疑标注条目负责；木雕来历被改写为已考证结论的事实失真由Day3事实条目负责，本条不重复处罚同一处。"
+    },
+    "fabricated_facts": {
+      "id": "fabricated_facts",
+      "owner": "R10",
+      "definition": "出现原文未提供且冒充事实的具体信息，如村庄名称、地理位置、人名、访谈人数、建筑精确年代、木雕流派、投资金额、文献名、政策文号等。",
+      "exclusions": "与领域常识一致的一般性背景表述、明确标注为假设或建议的内容不扣分；对原文事实的错误转述由对应Day事实条目负责。"
+    },
+    "structure_disorder": {
+      "id": "structure_disorder",
+      "owner": "R11",
+      "definition": "缺少可辨识的开场引入或收束，内容组织混乱、堆砌无逻辑顺序，听众无法跟随讲述路径。",
+      "exclusions": "不评判单页信息密度（由信息密度条目负责），不评判视觉风格。"
+    },
+    "density_mismatch": {
+      "id": "density_mismatch",
+      "owner": "R12",
+      "definition": "单页文字普遍过载（大段原文照抄）影响现场展示，或整体内容过于单薄无法承载四天笔记的一场沙龙分享。",
+      "exclusions": "不评判结构完整性（由结构条目负责），不评判因遮挡裁切导致的不可读（由视觉可读性条目负责）。"
+    },
+    "visual_hierarchy": {
+      "id": "visual_hierarchy",
+      "owner": "R13",
+      "definition": "在内容可读前提下，版式缺乏信息层级（标题/要点/注释不可区分）、排版局促无留白、风格杂乱拼凑或与古村落田野主题明显违和，未达到大气有表现力的要求。",
+      "exclusions": "不评判遮挡、裁切、对比不足等可读性问题（由视觉可读性条目负责），不评判图表标签缺陷（由图表标签条目负责），不以具体配色字体偏好扣分。"
+    },
+    "visual_readability": {
+      "id": "visual_readability",
+      "owner": "R14",
+      "definition": "正文或图形内容存在遮挡、裁切出页、文字与背景对比不足、乱码、占位符残留、或单词/短语在词语中间生硬断行导致字符孤悬等真实不可读问题。",
+      "exclusions": "图表的轴/图例/分类/单位标签缺陷由图表标签条目负责；内容可读前提下的层级与美观问题由视觉层级条目负责。"
+    },
+    "chart_label_integrity": {
+      "id": "chart_label_integrity",
+      "owner": "R15",
+      "definition": "数据图表、示意图或时间线的分类、轴、图例、单位标签缺失、不可读、与内容不对应，或存在NaN/undefined等异常残留；未使用图表时不适用。",
+      "exclusions": "图表之外的正文可读性问题由视觉可读性条目负责；图表数据本身的事实错误由相应事实条目负责。"
+    }
+  }
+}

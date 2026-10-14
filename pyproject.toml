@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ppt-rubric"
+version = "0.1.0"
+description = "Generate one audited semantic rubric per presentation task"
+requires-python = ">=3.9"
+dependencies = ["requests>=2.31,<3", "PyMuPDF>=1.24,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=7,<9"]
+
+[project.scripts]
+ppt-rubric = "ppt_rubric.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ppt_rubric*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

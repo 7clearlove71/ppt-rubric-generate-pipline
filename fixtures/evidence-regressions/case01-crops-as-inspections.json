@@ -1,0 +1,98 @@
+{
+  "answer": "yes",
+  "pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "evidence": "经逐页核查全部13页幻灯片：标题与正文均存在明确的字号、粗细、颜色差异（如主标题用#1a2e4a大字号，副标题/正文用较小字号或#6b6f76灰色）；关键数据（92%、100,000、78%→92%等）均通过大字号、高对比色（#c2410c橙色或#1a2e4a深蓝）进行视觉强调；各页信息密度适中，无过度拥挤或空洞；阅读路径符合从上到下、从左到右的常规习惯。所有text_overlap_candidates经局部放大图核实均为相邻文本的正常排版衔接，无实际字形叠印或遮挡。未发现属于visual_hierarchy的缺陷。",
+  "evidence_ids": [
+    "p1_e1",
+    "p2_e1",
+    "p3_e4",
+    "p4_e1",
+    "p5_e1",
+    "p6_e1",
+    "p7_e1",
+    "p8_e1",
+    "p9_e1",
+    "p10_e1",
+    "p11_e1",
+    "p12_e1",
+    "p13_e1"
+  ],
+  "resolutions": [],
+  "additional_observations": [],
+  "inspection_resolutions": [
+    {
+      "inspection_id": "p13_overlap_d672f40e72",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'·'与'欢迎就工艺、验证与临床转化开展合作交流'为正常行内排版，间隔符与正文无笔画相交，不构成叠印缺陷"
+    },
+    {
+      "inspection_id": "p13_overlap_b60d4822ce",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'工程化闭环成形'与'欢迎就工艺...'为上下两行文本，无实际字形相交，属于正常段落换行排版"
+    },
+    {
+      "inspection_id": "p13_overlap_8f4bd447d7",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'临床试验阶段'与'欢迎就工艺...'为上下两行，无笔画相交，正常行距排版"
+    },
+    {
+      "inspection_id": "p9_overlap_04f252d115",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'临床'二字为橙色高亮强调，与前文'进入'无字形相交，属于正常词组内颜色区分排版"
+    },
+    {
+      "inspection_id": "p12_overlap_2e38f9d59d",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'三个合作切口：'与'工艺'为正常行内排版，冒号后接关键词无叠印"
+    },
+    {
+      "inspection_id": "p5_overlap_982ee3f8b1",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'批量交付与成本可控'与'的轨道'为同一行内连续文本，无字形相交，正常词组衔接"
+    },
+    {
+      "inspection_id": "p7_overlap_a2e9acbdb0",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'验证结果支持器件进入'与'应用评估'为同一行内连续文本，'应用评估'为绿色高亮强调，无字形相交"
+    },
+    {
+      "inspection_id": "p8_overlap_e5b3a5a183",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'植入式电子皮肤的'与'临床转化通道已打开'为同一行内连续文本，后者为橙色高亮，无字形相交"
+    },
+    {
+      "inspection_id": "p11_overlap_d306941b18",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'三阶段推进：先'与'固化工艺'为同一行内连续文本，后者为橙色高亮，无字形相交"
+    },
+    {
+      "inspection_id": "p5_overlap_6687ccddbe",
+      "relation_confirmed": false,
+      "defect_present": false,
+      "reason": "局部放大图显示'，阵列才有资格进入'与'批量交付与成本可控'为同一行内连续文本，后者为橙色高亮，无字形相交"
+    }
+  ]
+}

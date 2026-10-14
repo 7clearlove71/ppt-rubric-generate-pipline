@@ -1,0 +1,3063 @@
+{
+  "origin": "artifacts/validation-20261013-evidence-v1/judgments/invalid-responses/2a0b6ad087c441d8b0faf57cbebc02cd-213.json",
+  "raw_sha256": "96c1a136f124d07d5f711f647d70ab4da7679fd6a98871176784a3d5d0dd802f",
+  "raw": {
+    "consistent": false,
+    "issues": [
+      {
+        "reason": "候选A将第9页标题\"四类风险有防控\"与风险防控表实际只列出三类风险（技艺断代、市场与订单、原料与品控）之间的数量不匹配，判定为narrative_disconnection并给出no。但核查证据p9_e12（风险防控模块）明确记载\"风险类别：技艺断代风险、市场与订单风险、原料与品控风险\"，而p9_e16（保障机制区域）记载\"组织保障、制度保障、监督保障、持续保障\"四类保障机制。标题中的\"四类风险\"与保障机制的\"四类\"形成的是\"风险防控与保障机制\"的并列结构，而非\"四类风险对应四类保障\"的一一映射关系。风险防控表列出三类风险，加上保障机制作为第四类防控措施（组织/制度/监督/持续保障本身就是风险防控的落地机制），或标题存在轻微措辞不严谨，但并未构成\"论证链条断裂、顺序混乱或无意义重复堆砌\"。该缺陷属于标题措辞与表格内容的局部不一致，程度远未达到criterion所要求的\"明显断裂或重复到妨碍理解\"。候选B全篇8页按合理顺序推进并获yes，两候选在\"标题数字与实际条目数轻微不一致是否构成narrative_disconnection\"的边界上存在实质冲突：A将其升格为逻辑断裂而判no，B的同类标题-内容关系（如p7资金五项与规划三年对应）则被认可为有效衔接。按criterion原文\"存在明显断裂或重复到妨碍理解记no\"，A的判定过度扩张了缺陷边界，应将A改判为yes。",
+        "rule_quote": "全篇叙事逻辑连贯、页间不脱节：内容按\"背景与问题→文化价值→模式与带动成效→三年规划→资金保障\"或等价的合理顺序推进，相邻模块之间有承接关系（如以濒危现状引出扶持必要性、以规划引出资金需求），评审读者能顺畅跟随论证链条；不出现模块顺序混乱、前后内容无关联跳跃、或同一内容无意义重复堆砌。存在目录、逻辑导航、过渡语或章节页等显式承接手段是有效的实现方式，但不强制要求标注页码，口头过渡或章节页同样有效。整体连贯记yes；存在明显断裂或重复到妨碍理解记no。合理的章节过渡页与简要回顾不算重复。",
+        "evidence_refs": {
+          "A": [
+            "p9_e1",
+            "p9_e12",
+            "p9_e16",
+            "p9_e32"
+          ],
+          "B": [
+            "p1_e3",
+            "p2_e1",
+            "p2_e20",
+            "p3_e1",
+            "p3_e11",
+            "p3_e12",
+            "p4_e1",
+            "p5_e1",
+            "p6_e1",
+            "p6_e7",
+            "p7_e1",
+            "p7_e3",
+            "p7_e5",
+            "p7_e7",
+            "p7_e9",
+            "p8_e2",
+            "p8_e3"
+          ]
+        },
+        "observed_answers": {
+          "A": "no",
+          "B": "yes"
+        },
+        "verdict_quotes": {
+          "A": "第9页标题为\"四类风险有防控\"，但风险防控表实际只列出三类风险（技艺断代、市场与订单、原料与品控），而页面底部保障机制却列出四类（组织、制度、监督、持续）。标题声称\"四类风险\"与表格实际三类风险数量不匹配，且保障机制的四类与风险类别的三类形成逻辑不对应，构成叙事链条上的断裂。",
+          "B": "全篇8页按\"封面→项目背景与危机→文化价值认定→带动模式结构→带动成效数据→三年规划→资金保障→恳请立项\"顺序推进，形成完整的论证链条。"
+        },
+        "expected_answers": {
+          "A": "yes"
+        }
+      }
+    ],
+    "notes": [
+      "候选A的判定将标题数字与表格条目数的轻微不一致（3类风险+4类保障机制 vs 标题\"四类风险有防控\"）直接等同于narrative_disconnection，但该页整体仍围绕'效益保障：投入产出可考核，风险有防控'的主题展开，风险类别与保障机制共同构成完整的防控体系，评审读者不会因标题写'四类'而实际看到三类风险就产生理解断裂。此问题更适合作为标题措辞精度或信息完整性的轻微瑕疵，而非叙事逻辑层面的断裂。候选B在类似情况下（如p7资金五项对应规划三年，并非每项资金都有独立年度对应）被认可为有效衔接，两候选的评判尺度不一致。"
+    ]
+  },
+  "criterion": "全篇叙事逻辑连贯、页间不脱节：内容按“背景与问题→文化价值→模式与带动成效→三年规划→资金保障”或等价的合理顺序推进，相邻模块之间有承接关系（如以濒危现状引出扶持必要性、以规划引出资金需求），评审读者能顺畅跟随论证链条；不出现模块顺序混乱、前后内容无关联跳跃、或同一内容无意义重复堆砌。存在目录、逻辑导航、过渡语或章节页等显式承接手段是有效的实现方式，但不强制要求标注页码，口头过渡或章节页同样有效。整体连贯记yes；存在明显断裂或重复到妨碍理解记no。合理的章节过渡页与简要回顾不算重复。\n\n【程序附加的缺陷归属边界】\nnarrative_disconnection：页面或模块之间缺乏承接，论证链条断裂、顺序混乱或无意义重复堆砌，妨碍评审读者顺畅跟随\n排除：合理的章节过渡、简要回顾不算重复；单页内部的信息组织问题由visual_hierarchy负责",
+  "candidates": {
+    "A": {
+      "verdict": {
+        "answer": "no",
+        "pages": [
+          9
+        ],
+        "evidence": "第9页标题为\"四类风险有防控\"，但风险防控表实际只列出三类风险（技艺断代、市场与订单、原料与品控），而页面底部保障机制却列出四类（组织、制度、监督、持续）。标题声称\"四类风险\"与表格实际三类风险数量不匹配，且保障机制的四类与风险类别的三类形成逻辑不对应，构成叙事链条上的断裂。",
+        "evidence_ids": [
+          "p9_e32"
+        ],
+        "failure_ids": [
+          "p9_e32"
+        ],
+        "resolutions": [
+          {
+            "evidence_id": "p9_e32",
+            "defect_present": true,
+            "reason": "第9页标题明确写\"四类风险有防控\"，但风险防控表主体仅列出三类风险类别（技艺断代风险、市场与订单风险、原料与品控风险），第四类风险未在表中明确列出。同时页面底部列出\"组织保障、制度保障、监督保障、持续保障\"四类保障机制，形成\"三类风险配四类保障\"的数量错位。这种标题与内容的不一致、风险类别与保障机制数量的不对应，构成论证链条的逻辑断裂，妨碍评审读者顺畅跟随。该缺陷属于narrative_disconnection，归属本条。",
+            "decision": "confirm"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "quote": "效益保障：投入产出可考核，四类风险有防控",
+          "location": "页面上部标题区域",
+          "statement": "页面标题，概括本页核心内容",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e1",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "280 万元形成800 ㎡工坊、年产量10 万件产能，带动计件农户60 户→120 户、人均月增收约1800 元；四类风险均有防控措施与责任主体，四类保障机制同步落地。",
+          "location": "标题下方副标题区域",
+          "statement": "本页核心数据汇总，包含总投资280万元、工坊面积800㎡、年产量10万件、带动农户60户扩至120户、人均月增收约1800元等关键指标",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "首期60户第二年扩至120户"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "人均月增收约1800元"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "280",
+              "unit": "万元",
+              "subject": "总投资",
+              "denominator": "不适用",
+              "time_origin": "三年规划期"
+            },
+            {
+              "value": "800",
+              "unit": "㎡",
+              "subject": "工坊面积",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            },
+            {
+              "value": "10",
+              "unit": "万件",
+              "subject": "年产量",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            },
+            {
+              "value": "60",
+              "unit": "户",
+              "subject": "首期带动农户数",
+              "denominator": "不适用",
+              "time_origin": "首年"
+            },
+            {
+              "value": "120",
+              "unit": "户",
+              "subject": "第二年带动农户数",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            },
+            {
+              "value": "1800",
+              "unit": "元",
+              "subject": "人均月增收",
+              "denominator": "人",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e2",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "投入产出对应关系图",
+          "location": "页面中部左侧",
+          "statement": "模块标题，下方列出资金投向与产出的对应关系",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e3",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "与资金用途五项构成逐项对应",
+          "location": "页面中部右侧",
+          "statement": "说明该图与资金用途的对应关系",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e4",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "厂房建设 / 120 万元 / 第一年 / 800 ㎡工坊建成投用",
+          "location": "投入产出对应关系表第一行",
+          "statement": "厂房建设120万元对应第一年产出800㎡工坊，与用户给定数据一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "厂房建设120万"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "第一年建工坊800平米"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "120",
+              "unit": "万元",
+              "subject": "厂房建设",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            },
+            {
+              "value": "800",
+              "unit": "㎡",
+              "subject": "工坊面积",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e5",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "设备采购 / 60 万元 / 第一年进场、第二年扩产 / 支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+          "location": "投入产出对应关系表第二行",
+          "statement": "设备采购60万元，分两年投入，支撑10万件产能，与用户给定数据一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "设备采购60万"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "第二年扩产能至年产量10万件"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "60",
+              "unit": "万元",
+              "subject": "设备采购",
+              "denominator": "不适用",
+              "time_origin": "第一年进场、第二年扩产"
+            },
+            {
+              "value": "10",
+              "unit": "万件",
+              "subject": "年产量",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e6",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "培训经费 / 30 万元 / 第一年为主、延续第二年 / 培训50 人；支撑计件农户由60 户扩至120 户",
+          "location": "投入产出对应关系表第三行",
+          "statement": "培训经费30万元，培训50人，支撑农户从60户扩至120户，与用户给定数据一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "培训经费30万"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "培训50人"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "首期60户第二年扩至120户"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "30",
+              "unit": "万元",
+              "subject": "培训经费",
+              "denominator": "不适用",
+              "time_origin": "第一年为主、延续第二年"
+            },
+            {
+              "value": "50",
+              "unit": "人",
+              "subject": "培训人数",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            },
+            {
+              "value": "60",
+              "unit": "户",
+              "subject": "首期农户数",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            },
+            {
+              "value": "120",
+              "unit": "户",
+              "subject": "第二年农户数",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e7",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "品牌推广 / 40 万元 / 第三年 / 品牌包装设计与电商平台入驻运营",
+          "location": "投入产出对应关系表第四行",
+          "statement": "品牌推广40万元对应第三年电商平台入驻，与用户给定数据一致。但用户给定资金用途中品牌推广为40万，此处对应第三年，而用户要求\"第三年做品牌入驻电商平台\"，匹配。注意：用户给定资金用途中还有\"流动资金30万\"，本表未直接列出流动资金对应项",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "品牌推广40万"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "第三年做品牌入驻电商平台"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "40",
+              "unit": "万元",
+              "subject": "品牌推广",
+              "denominator": "不适用",
+              "time_origin": "第三年"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e8",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "合计280 万元 · 贯穿性产出 / 人均月增收约1800 元（三年贯穿）；12 位师傅技艺有人接续",
+          "location": "投入产出表下方黑色条带区域",
+          "statement": "汇总总投资280万元，并列出贯穿性产出指标：人均月增收1800元（三年）、12位师傅技艺接续。与用户给定数据一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "总投资280万"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "人均月增收约1800元"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "目前仅剩12位师傅平均年龄62岁"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "280",
+              "unit": "万元",
+              "subject": "总投资",
+              "denominator": "不适用",
+              "time_origin": "三年"
+            },
+            {
+              "value": "1800",
+              "unit": "元",
+              "subject": "人均月增收",
+              "denominator": "人",
+              "time_origin": "三年贯穿"
+            },
+            {
+              "value": "12",
+              "unit": "人",
+              "subject": "师傅人数",
+              "denominator": "不适用",
+              "time_origin": "当前"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e9",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "文化传承效益 / 可持续影响 + 社会效益 / 对象：12 位师傅（平均62 岁）与省级非遗竹编技艺 / 措施：师带徒与培训50 人，技艺记录与工序标准化 / 载体：800 ㎡工坊投用，工序与产品标准留存 / 凭证：培训台账、师带徒协议、技艺记录与标准文本",
+          "location": "页面中下部左侧绩效分栏",
+          "statement": "文化传承效益模块，包含12位师傅、平均62岁、省级非遗、培训50人、800㎡工坊等关键信息，与用户给定数据一致。但未明确提及\"传了6代逾150年\"和\"2018年获批省级非遗\"的具体年份",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "目前仅剩12位师傅平均年龄62岁"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "2018年获批省级非遗"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "培训50人"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "800平米"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "12",
+              "unit": "人",
+              "subject": "师傅人数",
+              "denominator": "不适用",
+              "time_origin": "当前"
+            },
+            {
+              "value": "62",
+              "unit": "岁",
+              "subject": "师傅平均年龄",
+              "denominator": "人",
+              "time_origin": "当前"
+            },
+            {
+              "value": "50",
+              "unit": "人",
+              "subject": "培训人数",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            },
+            {
+              "value": "800",
+              "unit": "㎡",
+              "subject": "工坊面积",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e10",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "农户增收效益 / 社会效益 / 对象：计件农户首年60 户 → 第二年120 户 / 指标：人均月增收约1800 元，三年贯穿 / 测算：月增收总额10.8 万元 → 21.6 万元（户均1 人计件）",
+          "location": "页面中下部右侧绩效分栏",
+          "statement": "农户增收效益模块，给出月增收总额测算：10.8万元→21.6万元。计算过程：60户×1800元=10.8万元，120户×1800元=21.6万元，算术正确。但标注\"户均1人计件\"为假设条件",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "首期60户第二年扩至120户"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "人均月增收约1800元"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "60",
+              "unit": "户",
+              "subject": "首期农户数",
+              "denominator": "不适用",
+              "time_origin": "首年"
+            },
+            {
+              "value": "120",
+              "unit": "户",
+              "subject": "第二年农户数",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            },
+            {
+              "value": "1800",
+              "unit": "元",
+              "subject": "人均月增收",
+              "denominator": "人",
+              "time_origin": "三年贯穿"
+            },
+            {
+              "value": "10.8",
+              "unit": "万元",
+              "subject": "月增收总额",
+              "denominator": "不适用",
+              "time_origin": "首年"
+            },
+            {
+              "value": "21.6",
+              "unit": "万元",
+              "subject": "月增收总额",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e11",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Unit unsupported or unspecified",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            },
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Unit unsupported or unspecified",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "四类风险防控表 / 风险类别：技艺断代风险、市场与订单风险、原料与品控风险 / 责任主体由公司、合作社、农户既定分工推导",
+          "location": "页面下部风险防控模块",
+          "statement": "列出三类风险（技艺断代、市场与订单、原料与品控），但标题称\"四类风险\"，实际只列出三类风险类别。第四类风险未在风险类别栏明确列出，需核查是否存在视觉遮挡或遗漏",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e12",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "技艺断代风险 / 12 位师傅平均62 岁，后继乏人则工序与产品标准失传 / 师带徒与培训50 人；技艺记录与工序标准化；培训经费30 万元专款用于培训与记录 / 合作社 + 师傅",
+          "location": "风险防控表第一行",
+          "statement": "技艺断代风险防控措施，与用户给定数据一致。责任主体为\"合作社+师傅\"，与用户要求的\"公司+合作社+农户\"模式中的合作社职责（统一采购原料和培训）部分匹配，但师傅作为责任主体未在用户给定模式中明确",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "12位师傅平均年龄62岁"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "培训50人"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "培训经费30万"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "合作社统一采购原料和培训"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "12",
+              "unit": "人",
+              "subject": "师傅人数",
+              "denominator": "不适用",
+              "time_origin": "当前"
+            },
+            {
+              "value": "62",
+              "unit": "岁",
+              "subject": "师傅平均年龄",
+              "denominator": "人",
+              "time_origin": "当前"
+            },
+            {
+              "value": "50",
+              "unit": "人",
+              "subject": "培训人数",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            },
+            {
+              "value": "30",
+              "unit": "万元",
+              "subject": "培训经费",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e13",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "市场与订单风险 / 订单波动直接影响农户按件计酬收入与产能利用率 / 公司统一接单与销售；第三年入驻电商平台拓展渠道；按订单排产、以销定产 / 公司",
+          "location": "风险防控表第二行",
+          "statement": "市场与订单风险防控措施，责任主体为\"公司\"，与用户要求的\"公司负责设计和销售\"一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "公司负责设计和销售"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "第三年做品牌入驻电商平台"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e14",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "原料与品控风险 / 竹材供应量与质量不稳，影响交付与计件单价核算 / 合作社统一采购竹材；进厂交验质检并与计件结算挂钩；工序标准化统一品控口径 / 合作社",
+          "location": "风险防控表第三行",
+          "statement": "原料与品控风险防控措施，责任主体为\"合作社\"，与用户要求的\"合作社统一采购原料\"一致。但用户给定模式中合作社还负责\"培训\"，此处未重复列出",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "合作社统一采购原料和培训"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e15",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "组织保障 / 县级主管部门指导，公司管设计与销售、合作社管原料采购与培训、农户在家编织按件计酬 / 制度保障 / 按件计酬结算制度、交验质检制度、专账核算与凭证留存制度，载体为计件结算表与质检记录 / 监督保障 / 按进度拨付、验收后结算、结算公示、年度验收与绩效报告，台账备查并接受县级主管部门监督 / 持续保障 / 第三年品牌打造与电商平台入驻形成外销出口与自我造血能力，降低对扶持资金的依赖",
+          "location": "页面底部四类保障机制横排区域",
+          "statement": "四类保障机制：组织保障、制度保障、监督保障、持续保障。组织保障内容与公司+合作社+农户模式一致。注意：此处\"四类保障机制\"与上方\"四类风险防控表\"的\"四类\"形成呼应，但风险类别只列出三类，保障机制却有四类，存在数量不匹配",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "公司负责设计和销售、合作社统一采购原料和培训、农户在家编织按件计酬"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e16",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "数据来源：申报锁定口径（280 万元五项构成、800 ㎡、培训50 人、年产量10 万件、60 户→120 户、人均月增收约1800 元）；月增收总额为算术测算值，绩效分栏参照财政项目支出绩效评价通用框架。",
+          "location": "页面底部注释区域",
+          "statement": "数据来源说明，明确月增收总额为算术测算值，绩效分栏参照通用框架。但未提及\"流动资金30万\"在投入产出表中的对应位置",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "280",
+              "unit": "万元",
+              "subject": "总投资",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "800",
+              "unit": "㎡",
+              "subject": "工坊面积",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "50",
+              "unit": "人",
+              "subject": "培训人数",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "10",
+              "unit": "万件",
+              "subject": "年产量",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "60",
+              "unit": "户",
+              "subject": "首期农户数",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "120",
+              "unit": "户",
+              "subject": "第二年农户数",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "1800",
+              "unit": "元",
+              "subject": "人均月增收",
+              "denominator": "人",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p9_e17",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "风险防控表中\"组织保障\"\"制度保障\"\"监督保障\"\"持续保障\"作为四类保障机制，与\"四类风险\"数量不匹配",
+          "location": "页面底部保障机制区域",
+          "statement": "标题称\"四类风险\"，但风险类别只列三类；而保障机制却有四类（组织、制度、监督、持续）。这种\"四类风险\"与\"四类保障\"的表述存在逻辑不对应：三类风险配四类保障，或四类保障只对应三类风险，数量关系混乱",
+          "kind": "inference",
+          "failure_mode": "narrative_disconnection",
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e32",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "投入产出表中设备采购对应阶段为\"第一年进场、第二年扩产\"，但用户要求\"第二年扩产能至年产量10万件\"，未明确设备分两年进场",
+          "location": "设备采购对应阶段区域",
+          "statement": "用户给定规划为\"第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件\"，设备采购60万作为总投资分项，本页将其对应阶段拆分为\"第一年进场、第二年扩产\"，这是对用户给定规划的合理细化，但需确认是否与前后页一致。此处作为单页观察，不构成错误",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e33",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "培训经费对应阶段为\"第一年为主、延续第二年\"，用户要求\"第一年...培训50人\"，未明确培训延续至第二年",
+          "location": "培训经费对应阶段区域",
+          "statement": "用户给定规划为\"第一年建工坊800平米+培训50人\"，本页将培训经费30万对应阶段写为\"第一年为主、延续第二年\"，并产出\"培训50人；支撑计件农户由60户扩至120户\"。用户未明确培训延续第二年，但\"支撑计件农户由60户扩至120户\"的产出描述跨两年，因此培训延续第二年是合理的推导。作为单页观察，不构成错误",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第一年建工坊800平米+培训50人"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "首期60户第二年扩至120户"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e34",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "月增收总额测算假设\"户均1人计件\"",
+          "location": "农户增收效益测算区域",
+          "statement": "月增收总额10.8万元→21.6万元的测算明确标注假设条件\"户均1人计件\"，这是合理的假设说明，未冒充为事实。但需注意该假设未在用户给定需求中出现，属于作品自行添加的测算假设，已明确标注",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e35",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "省级非遗认定年份2018年在本页未出现",
+          "location": "文化传承效益区域",
+          "statement": "用户要求\"2018年获批省级非遗\"，本页文化传承效益模块只写\"省级非遗竹编技艺\"，未出现具体年份2018年。该信息在本页缺失，但可能在前文已出现，作为单页观察记录此事实",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "2018年获批省级非遗"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e36",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "传承6代逾150年在本页未出现",
+          "location": "文化传承效益区域",
+          "statement": "用户要求\"传了6代逾150年\"，本页文化传承效益模块未出现此信息。该信息在本页缺失，但可能在前文已出现，作为单页观察记录此事实",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "传了6代逾150年"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p9_e37",
+          "page": 9,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        }
+      ]
+    },
+    "B": {
+      "verdict": {
+        "answer": "yes",
+        "pages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence": "全篇8页按\"封面→项目背景与危机→文化价值认定→带动模式结构→带动成效数据→三年规划→资金保障→恳请立项\"顺序推进，形成完整的论证链条。封面（p1）以纲要提示预置五个模块，建立读者预期。第2页以濒危现状（6代150年、12位师傅、平均年龄62岁）建立扶持必要性；第3页以2018年省级非遗认定提升文化价值权威性，底部横幅\"价值越高，抢救越紧迫\"直接承接上页危机，形成价值-危机关联。第4页展开\"公司+合作社+农户\"三方联动模式，明确各方职责；第5页以柱状图和测算卡片呈现首期60户、次年120户及人均月增收1800元的量化成效，是对第4页模式的成效延伸。第6页三年规划以\"建工坊→扩产能→树品牌\"递进，底部明确\"培训人才支撑扩产，扩产规模支撑品牌\"的因果链条。第7页资金计划标题即声明\"与三年规划逐项对应\"，右侧列表每项均标注对应年度（厂房建设120万→第一年800平米、设备采购60万→第二年10万件、培训经费30万→第一年50人、品牌推广40万→第三年品牌电商），实现资金与规划的逻辑闭环。第8页以\"恳请立项支持\"收束，回扣封面汇报对象（县文旅局、县乡村振兴办）。各模块间有过渡语或对应说明（如p3底部横幅、p7逐项对应说明），无顺序混乱、无意义重复或论证断裂。",
+        "evidence_ids": [
+          "p1_e3",
+          "p2_e1",
+          "p2_e20",
+          "p3_e1",
+          "p3_e11",
+          "p3_e12",
+          "p4_e1",
+          "p4_e13",
+          "p5_e1",
+          "p6_e1",
+          "p6_e7",
+          "p7_e1",
+          "p7_e3",
+          "p7_e5",
+          "p7_e7",
+          "p7_e9",
+          "p8_e2",
+          "p8_e3"
+        ],
+        "failure_ids": [],
+        "resolutions": []
+      },
+      "evidence": [
+        {
+          "quote": "非遗保护与乡村振兴产业扶持项目申报",
+          "location": "页面顶部左侧",
+          "statement": "可见的副标题/类别标签，使用棕红色(#c96442)",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p1_e1",
+          "page": 1,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "非遗竹编工坊产业 扶持项目评审汇报",
+          "location": "页面上部中央偏左，主标题区域",
+          "statement": "主标题，字号最大，黑色(#141413)，分两行显示，行内存在空格断行",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p1_e2",
+          "page": 1,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "六代匠心传薪火，竹编产业富乡邻 —— 项目背景 · 文化价值 · 带动模式 · 三年规划 · 资金计划",
+          "location": "主标题下方，灰色副标题行",
+          "statement": "可见的汇报纲要提示，包含用户要求的五个内容模块：项目背景、文化价值、带动模式、三年规划、资金计划；其中\"六代\"与用户需求\"传了6代\"形成对应",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "项目背景要讲清楚这门手艺在我们那儿传了6代逾150年"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "6",
+              "unit": "代",
+              "subject": "传承代数",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p1_e3",
+          "page": 1,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "项目申报单位",
+          "location": "页面左下角",
+          "statement": "申报单位占位标签，未填写具体单位名称",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p1_e4",
+          "page": 1,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "汇报对象：县文旅局 · 县乡村振兴办 ｜ 2026 年9 月",
+          "location": "页面左下角，项目申报单位下方",
+          "statement": "可见的汇报对象与时间信息，汇报对象与用户需求\"评审是文旅局和乡村振兴办的领导\"一致；时间为2026年9月，属于未来日期，作为汇报时间假设合理",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "评审是文旅局和乡村振兴办的领导"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "2026",
+              "unit": "年",
+              "subject": "汇报时间",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p1_e5",
+          "page": 1,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "（页面整体为米白色/浅米色背景，左侧有橙色圆形装饰元素）",
+          "location": "全页背景及左下角装饰",
+          "statement": "视觉观察：封面页设计简洁，无图表、无数据表格、无图片，纯文字排版；装饰线与承载数据的图表区分明显，橙色圆点为纯装饰元素",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p1_e6",
+          "page": 1,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "（text_overlap_candidates为空列表）",
+          "location": "全页文字区域",
+          "statement": "根据提供的渲染几何信息，各文字区域bbox互不相交，无候选重叠对；图像目视检查各文字元素独立清晰，无叠印、遮挡或裁切出界现象",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p1_e7",
+          "page": 1,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "六代传承逾百年的竹编技艺仅存12 位师傅，面临失传危机",
+          "location": "页面上方标题区域",
+          "statement": "页面主标题，概括项目背景核心信息：传承6代、逾百年历史、仅存12位师傅、面临失传危机",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "项目背景要讲清楚这门手艺在我们那儿传了6代逾150年、目前仅剩12位师傅平均年龄62岁面临失传的问题"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e1",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "6",
+          "location": "左上数据卡片，大号数字",
+          "statement": "传承代数为6代，与用户给定事实一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "传了6代逾150年"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "6",
+              "unit": "代",
+              "subject": "传承代数",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p2_e2",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "代际传承谱系",
+          "location": "6代数字下方小字标签",
+          "statement": "数据标签，说明6代指代际传承谱系",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e3",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "150",
+          "location": "左二数据卡片，大号数字",
+          "statement": "传承历史跨度为150年，与用户给定事实一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "传了6代逾150年"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "150",
+              "unit": "年",
+              "subject": "传承历史跨度",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p2_e4",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": " 年",
+          "location": "150数字右侧，单位文字",
+          "statement": "150的单位为年",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e5",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "逾",
+          "location": "年字右侧，修饰文字",
+          "statement": "逾字表示超过150年，与用户给定逾150年一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "逾150年"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e6",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "传承历史跨度",
+          "location": "150年数字下方小字标签",
+          "statement": "数据标签，说明150年指传承历史跨度",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e7",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "12",
+          "location": "左三数据卡片，大号数字，橙色",
+          "statement": "在世从业师傅数量为12位，与用户给定事实一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "目前仅剩12位师傅"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "12",
+              "unit": "位",
+              "subject": "在世从业师傅",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p2_e8",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": " 位",
+          "location": "12数字右侧，单位文字，橙色",
+          "statement": "12的单位为位",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e9",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "在世从业师傅",
+          "location": "12位数字下方小字标签",
+          "statement": "数据标签，说明12位指在世从业师傅",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e10",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "62",
+          "location": "左四数据卡片，大号数字，橙色",
+          "statement": "师傅平均年龄为62岁，与用户给定事实一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "平均年龄62岁"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "62",
+              "unit": "岁",
+              "subject": "师傅平均年龄",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p2_e11",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": " 岁",
+          "location": "62数字右侧，单位文字，橙色",
+          "statement": "62的单位为岁",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e12",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "师傅平均年龄",
+          "location": "62岁数字下方小字标签",
+          "statement": "数据标签，说明62岁指师傅平均年龄",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e13",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "历史厚度：六代心手相传",
+          "location": "左下内容卡片标题",
+          "statement": "第一栏小标题，强调历史传承维度",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e14",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "选竹、破篾、编织成型全凭手上功夫，逾150 年谱系完整、技法体系完整，是几代人的营生与乡愁。",
+          "location": "左下内容卡片正文",
+          "statement": "描述技艺特点与历史价值，提及逾150年谱系完整",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "传了6代逾150年"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "150",
+              "unit": "年",
+              "subject": "谱系历史",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p2_e15",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "断档现实：后继乏人",
+          "location": "中下内容卡片标题",
+          "statement": "第二栏小标题，强调传承危机维度",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e16",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "年轻人外流、学艺周期长、单打独斗收入不稳，新学徒补充不足，技艺传承出现代际断层。",
+          "location": "中下内容卡片正文",
+          "statement": "分析后继乏人的原因：年轻人外流、学艺周期长、收入不稳、新学徒不足、代际断层",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "面临失传的问题"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e17",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "抢救窗口：等不得",
+          "location": "右下内容卡片标题",
+          "statement": "第三栏小标题，强调紧迫性",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e18",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "技艺全在12 位平均62 岁的师傅手上，人不在则艺随人去；以师傅年岁计，抢救性传承必须立即启动。",
+          "location": "右下内容卡片正文",
+          "statement": "强调抢救紧迫性：12位师傅平均年龄62岁，技艺随人风险，必须立即启动抢救性传承",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "12",
+              "unit": "位",
+              "subject": "师傅数量",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            },
+            {
+              "value": "62",
+              "unit": "岁",
+              "subject": "师傅平均年龄",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p2_e19",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "建设竹编工坊：把“手艺”变“生计”，救人亦救艺",
+          "location": "页面底部深色横幅左侧",
+          "statement": "项目核心主张：通过建设工坊将手艺转化为生计，实现救人与救艺双重目标",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e20",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "以产业带传承，以传承促增收",
+          "location": "页面底部深色横幅右侧",
+          "statement": "项目运作逻辑：产业带动传承，传承促进增收",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p2_e21",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "数据来源：项目申报材料（传承6 代逾150 年，在世师傅12 人、平均年龄62 岁）",
+          "location": "页面左下角，小字注释",
+          "statement": "数据来源标注为项目申报材料，具体列出传承6代、逾150年、在世师傅12人、平均年龄62岁等核心数据",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "项目背景要讲清楚这门手艺在我们那儿传了6代逾150年、目前仅剩12位师傅平均年龄62岁面临失传的问题"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "6",
+              "unit": "代",
+              "subject": "传承",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            },
+            {
+              "value": "150",
+              "unit": "年",
+              "subject": "传承历史",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            },
+            {
+              "value": "12",
+              "unit": "人",
+              "subject": "在世师傅",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            },
+            {
+              "value": "62",
+              "unit": "岁",
+              "subject": "平均年龄",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p2_e22",
+          "page": 2,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "2018 年获批省级非遗，文化价值有权威认定支撑",
+          "location": "页面顶部标题区域",
+          "statement": "页面标题明确包含用户给定的关键事实：2018年获批省级非遗。该信息与sources中用户要求一致。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "2018年获批省级非遗"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "2018",
+              "unit": "年",
+              "subject": "省级非遗认定时间",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p3_e1",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "2018",
+          "location": "左侧深色卡片大字号数字",
+          "statement": "视觉强调2018年这一认定年份，与标题一致。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "2018年获批省级非遗"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "2018",
+              "unit": "年",
+              "subject": "省级非遗认定时间",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p3_e2",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "获批省级非物质文化遗产代表性项目",
+          "location": "左侧深色卡片中部",
+          "statement": "明确表述认定级别为'省级非物质文化遗产代表性项目'，体现省级非遗认定的分量。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "2018年获批省级非遗"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e3",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "历史渊源、技艺完整度、地域代表性、传承谱系经省级权威评审确认",
+          "location": "左侧深色卡片底部",
+          "statement": "列举评审维度，论证省级认定的权威性和含金量，属于对省级非遗认定分量的展开论述。",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "文化价值这块要能体现出省级非遗认定的分量"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e4",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "权威认定 · 文化资产成色足",
+          "location": "右侧上部卡片标题",
+          "statement": "第一个价值维度：强调认定文件的硬依据作用。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e5",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "认定文件即硬依据，项目文化价值无需自证，直接具备申报省级非遗保护资金的资格。",
+          "location": "右侧上部卡片正文",
+          "statement": "将省级认定与政府评审场景关联，论证对当前申报的支撑价值。属于合理推论。",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e6",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "文旅名片 · 县域传播有载体",
+          "location": "右侧中部卡片标题",
+          "statement": "第二个价值维度：文旅融合角度。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e7",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "可与乡村旅游、研学体验等业态联动放大，是县域对外传播的文化名片。",
+          "location": "右侧中部卡片正文",
+          "statement": "提出文旅联动方向，与评审方文旅局职能对应。属于合理建议。",
+          "kind": "proposal",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e8",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "产业反哺 · 越有市场越有传承",
+          "location": "右侧下部卡片标题",
+          "statement": "第三个价值维度：产业与传承的良性循环。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e9",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "非遗工坊把文化资产转化为产业资产，形成“以用促保”的良性循环，避免静态博物馆式封存。",
+          "location": "右侧下部卡片正文",
+          "statement": "完整句子跨两个text span（p3_t12和p3_t13）。从局部放大图可见，'封'与'存。'在同一行连续呈现，为正常换行断字，非真实遮挡。bounding box相交源于行尾字符与下一行首字符的矩形区域接近，实际笔画无重叠。",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e10",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "价值越高，抢救越紧迫",
+          "location": "底部左侧强调文字",
+          "statement": "承上启下过渡句，将文化价值与抢救紧迫性关联。",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e11",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "认定在手 · 传人只剩12 位 —— 活态遗产断代损失是全省层面的损失",
+          "location": "底部右侧补充说明",
+          "statement": "引入用户给定的'仅剩12位师傅'事实，建立价值与危机的对比论证。数字12与用户要求一致。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "目前仅剩12位师傅平均年龄62岁面临失传的问题"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "12",
+              "unit": "位",
+              "subject": "师傅人数",
+              "denominator": "不适用",
+              "time_origin": "当前"
+            }
+          ],
+          "calculations": [],
+          "id": "p3_e12",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "数据来源：项目申报材料（2018 年获批省级非物质文化遗产代表性项目）",
+          "location": "页面左下角来源标注",
+          "statement": "标注数据来源为项目申报材料，但未提供可独立核实的具体文件编号或发布机构。属于作品自述来源，非独立来源。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e13",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "页面整体布局：左侧深色卡片突出认定年份与级别，右侧三个浅色卡片分维度展开价值论证，底部横幅建立价值-危机关联",
+          "location": "全页",
+          "statement": "视觉层级清晰：标题→核心认定信息→三维价值论证→价值-危机过渡。无遮挡、裁切出界或对比不足问题。正文与背景对比度充足，字号适中。",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p3_e14",
+          "page": 3,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "“公司+ 合作社+ 农户”三方联动，农户在家编织稳定增收",
+          "location": "页面顶部标题",
+          "statement": "标题明确呈现模式名称，与用户需求中的利益联结模式表述一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "带动农户就业的模式用\"公司+合作社+农户\"讲清利益联结"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e1",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "市场端\n公司\n负责产品设计与市场销售，解决“编什么、卖给谁”，让产品对接市场需求，避免盲目生产。",
+          "location": "左栏",
+          "statement": "公司职责包含设计与销售，与用户需求对应；但文本换行处存在相邻行上下紧邻排版，非真实叠印",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "公司负责设计和销售"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e2",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "组织端\n合作社\n统一采购竹材等原料、统一组织技能培训，压降农户单独采购成本，零基础也能上手。",
+          "location": "中栏",
+          "statement": "合作社职责包含统一采购原料和培训，与用户需求对应",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "合作社统一采购原料和培训"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e3",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "生产端\n农户\n在家编织、按件计酬，不出远门、不误农活与家务，适合留守劳动力和半劳动力。",
+          "location": "右栏",
+          "statement": "农户职责包含在家编织、按件计酬，与用户需求对应",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "农户在家编织按件计酬"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e4",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "1800\n元/人·月",
+          "location": "左下角深色区块",
+          "statement": "农户人均月增收金额1800元，与用户需求一致；数字与单位分属不同span但视觉连贯可读",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "人均月增收约1800元"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "1800",
+              "unit": "元/人·月",
+              "subject": "农户人均月增收",
+              "denominator": "不适用",
+              "time_origin": "月"
+            }
+          ],
+          "calculations": [],
+          "id": "p4_e5",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "按件计酬 · 多劳多得\n农户人均月增收（约）",
+          "location": "深色区块内1800数字右侧",
+          "statement": "两行文字上下紧邻，放大图显示为正常换行排版，非真实叠印遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e6",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "职责清晰\n三方各司其职\n风险共担\n链条环环扣紧\n收益共享\n增收写进机制",
+          "location": "右下角三列标签",
+          "statement": "三个标签组分别概括模式特征，为概括性表述，无具体数字",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e7",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "数据来源：项目申报材料（公司负责设计与销售、合作社统一采购原料与培训、农户按件计酬人均月增收约1800元）",
+          "location": "页面底部",
+          "statement": "数据来源标注为项目申报材料，未提供可独立核实的第三方来源",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e8",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "负责产品设计与市场销售，解决“编什么、卖\n给谁”，让产品对接市场需求，避免盲目生\n产。",
+          "location": "左栏公司说明文字",
+          "statement": "三行文字为正常段落换行，放大图显示无笔画遮挡，bbox相交为换行排版所致",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e9",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "统一采购竹材等原料、统一组织技能培训，压\n降农户单独采购成本，零基础也能上手。",
+          "location": "中栏合作社说明文字",
+          "statement": "两行文字为正常段落换行，放大图显示无笔画遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e10",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "在家编织、按件计酬，不出远门、不误农活与\n家务，适合留守劳动力和半劳动力。",
+          "location": "右栏农户说明文字",
+          "statement": "两行文字为正常段落换行，放大图显示无笔画遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e11",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "给谁”，让产品对接市场需求，避免盲目生\n产。",
+          "location": "左栏公司说明文字末两行",
+          "statement": "正常段落换行，放大图显示无笔画遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e12",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "“公司+ 合作社+ 农户”三方联动",
+          "location": "页面标题",
+          "statement": "本页完整呈现三方联动模式结构，但未出现首期60户/第二年120户的预计带动户数信息，该信息可能在其他页面呈现",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "顺带把预计带动的农户数(首期60户第二年扩至120户)和人均增收讲一下"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p4_e13",
+          "page": 4,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "首期带动60 户农户、次年扩至120 户，人均月增收约1800 元",
+          "location": "页面上方标题区",
+          "statement": "标题准确引用了用户给定的带动农户数量（首期60户、第二年120户）和人均月增收金额（约1800元），数字与来源一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "首期60户第二年扩至120户"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "60",
+              "unit": "户",
+              "subject": "首期带动农户",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            },
+            {
+              "value": "120",
+              "unit": "户",
+              "subject": "次年带动农户",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            },
+            {
+              "value": "1800",
+              "unit": "元",
+              "subject": "人均月增收",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p5_e1",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "60 户",
+          "location": "左侧柱状图第一个柱顶",
+          "statement": "图表标注首期带动60户，与用户给定数据一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "首期60户"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "60",
+              "unit": "户",
+              "subject": "首期带动农户",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            }
+          ],
+          "calculations": [],
+          "id": "p5_e2",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "120 户",
+          "location": "右侧柱状图第二个柱顶",
+          "statement": "图表标注第二年满规模120户，与用户给定数据一致",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第二年扩至120户"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "120",
+              "unit": "户",
+              "subject": "满规模带动农户",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            }
+          ],
+          "calculations": [],
+          "id": "p5_e3",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "约1800 元",
+          "location": "右侧信息卡片上部",
+          "statement": "人均月增收约1800元，与用户给定数据一致，且标注为\"约\"字体现测算性质",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "人均月增收约1800元"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "1800",
+              "unit": "元",
+              "subject": "人均月增收",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p5_e4",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "按件计酬 · 多劳多得",
+          "location": "右侧信息卡片中部",
+          "statement": "体现了用户要求的\"按件计酬\"机制，但未展开三方职责归属（公司、合作社、农户）",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "农户在家编织按件计酬"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p5_e5",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "约2.16 万元",
+          "location": "右侧信息卡片中下部",
+          "statement": "由月增收1800元乘以12个月得出人均年增收约2.16万元，计算过程在下方注明",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "人均月增收约1800元"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "2.16",
+              "unit": "万元",
+              "subject": "人均年增收",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p5_e6",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Calculation anchor is not supplied evidence",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "约259 万元",
+          "location": "右侧深色信息卡片底部",
+          "statement": "满规模年增收合计测算值，由120户乘以2.16万元/户·年得出",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第二年扩至120户"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "259",
+              "unit": "万元",
+              "subject": "满规模年增收合计",
+              "denominator": "不适用",
+              "time_origin": "满规模年份"
+            }
+          ],
+          "calculations": [],
+          "id": "p5_e7",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Unit unsupported or unspecified",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "数据来源：项目申报材料；年增收为按月增收1800 元×12 个月的申报测算口径",
+          "location": "页面左下角",
+          "statement": "明确标注数据来源为项目申报材料，并说明测算口径，保持了条件性目标的边界，未将其陈述为已完成的既成事实",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p5_e8",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "带动农户（户）",
+          "location": "Y轴上方标签区",
+          "statement": "可见文字区域与\"120\"轴标签的包围框存在微小相交（intersection [31.55, 108.72, 43.84, 108.95]），但从局部放大图可见，\"带动农户（户）\"位于上方，\"120\"为Y轴刻度值位于其下方，两者为正常上下排版关系，无真实字形叠印或遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p5_e9",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "首期示范 → 满规模翻番",
+          "location": "柱状图上方右侧",
+          "statement": "以箭头符号体现首期到第二年的递进关系，\"翻番\"表述准确（60户到120户为翻倍）",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p5_e10",
+          "page": 5,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Unit unsupported or unspecified",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "三年三步走：建工坊、扩产能、树品牌，逐级递进",
+          "location": "页面顶部标题区域",
+          "statement": "页面主标题，概括三年规划核心阶段",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p6_e1",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "第一年 · 夯基础 / 建工坊 · 育匠人 / 建成 800 平米 竹编工坊，培训 50 名 编织人员，形成\"有场地、有人手\"的生产与传承基础。",
+          "location": "左侧第一列内容区",
+          "statement": "第一年目标：建800平米工坊，培训50人。数字与用户给定需求一致。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第一年建工坊800平米+培训50人"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "800",
+              "unit": "平米",
+              "subject": "竹编工坊面积",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            },
+            {
+              "value": "50",
+              "unit": "人",
+              "subject": "培训编织人员",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            }
+          ],
+          "calculations": [],
+          "id": "p6_e2",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "→",
+          "location": "第一列与第二列之间的箭头",
+          "statement": "视觉递进符号，表示阶段推进关系",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p6_e3",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "第二年 · 上规模 / 扩产能 · 增效益 / 产能提升至 年产10 万件，规模化摊薄成本，带动农户扩至 120 户，工坊进入稳定产出期。",
+          "location": "中间第二列内容区",
+          "statement": "第二年目标：年产10万件，带动农户120户。数字与用户给定需求一致。注意'带动农户扩至120户'在需求中为'第二年扩至120户'，此处表述一致。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第二年扩产能至年产量10万件"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "首期60户第二年扩至120户"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "10",
+              "unit": "万件",
+              "subject": "年产量",
+              "denominator": "年",
+              "time_origin": "第二年"
+            },
+            {
+              "value": "120",
+              "unit": "户",
+              "subject": "带动农户数",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            }
+          ],
+          "calculations": [],
+          "id": "p6_e4",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "→",
+          "location": "第二列与第三列之间的箭头",
+          "statement": "视觉递进符号，表示阶段推进关系",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p6_e5",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "第三年 · 树品牌 / 建品牌 · 上电商 / 打造自有竹编品牌并 入驻电商平台，从代工走向品牌溢价，打通线上销售渠道。",
+          "location": "右侧第三列内容区",
+          "statement": "第三年目标：做品牌入驻电商平台。与用户给定需求一致。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第三年做品牌入驻电商平台"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p6_e6",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "递进逻辑：培训人才支撑扩产，扩产规模支撑品牌 —— 每一步都是下一步的地基",
+          "location": "底部深色横幅左侧",
+          "statement": "明确阐述三阶段之间的递进因果关系，强化逻辑链条",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p6_e7",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "年度节点可验收 / 800 平米 · 50 人 · 10 万件 · 品牌电商",
+          "location": "底部右侧验收节点区",
+          "statement": "关键里程碑汇总，与三阶段内容对应",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "800",
+              "unit": "平米",
+              "subject": "工坊面积",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "50",
+              "unit": "人",
+              "subject": "培训人数",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "10",
+              "unit": "万件",
+              "subject": "年产量",
+              "denominator": "年",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p6_e8",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "数据来源：项目申报材料（三年规划：第一年建工坊800 平米+ 培训50 人，第二年扩产至年产10 万件，第三年品牌+ 电商平台）",
+          "location": "页面底部来源标注",
+          "statement": "数据来源标注，内容与正文一致，但为作品自述来源，非独立可核查来源",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p6_e9",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "p6_t9与p6_t10等相邻行文字区域存在bounding box相交",
+          "location": "第一年内容区多行文字",
+          "statement": "经局部放大图核查，'员，形成\"有场地、有人手\"的生产与传承基'与'础。'为正常上下行换行排版，'编织人员'跨行显示为'编织人'+'员'，属于正常的段落分行，无真实字形叠印遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p6_e10",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "p6_t14-p6_t19等第二年内容区文字区域存在bounding box相交",
+          "location": "第二年内容区多行文字",
+          "statement": "经局部放大图核查，'产能提升至 年产10 万件，规模化摊薄成本，'与'带动农户扩至 120 户，工坊进入稳定产出期。'为正常两行换行排版，无真实字形叠印遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p6_e11",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "p6_t23-p6_t26第三年内容区文字区域存在bounding box相交",
+          "location": "第三年内容区多行文字",
+          "statement": "经局部放大图核查，'打造自有竹编品牌并 入驻电商平台，'与'向品牌溢价，打通线上销售渠道。'为正常两行换行排版，无真实字形叠印遮挡",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p6_e12",
+          "page": 6,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "总投资280 万元五大用途，与三年规划逐项对应",
+          "location": "页面顶部标题区",
+          "statement": "页面主标题，明确资金模块与三年规划的对应关系",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "资金用途(总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万)这块要跟前面规划对得上"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "280",
+              "unit": "万元",
+              "subject": "总投资",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e1",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "厂房建设 120 万 · 占比约42.9%",
+          "location": "右侧列表第一项",
+          "statement": "资金分项金额与占比，标注对应第一年规划内容",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "厂房建设120万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "120",
+              "unit": "万元",
+              "subject": "厂房建设",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "42.9",
+              "unit": "%",
+              "subject": "厂房建设占比",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e2",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Operand/result unit is not explicit beside its value",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "对应第一年建成800 平米竹编工坊",
+          "location": "右侧列表第一项下方说明",
+          "statement": "资金用途与三年规划第一年的对应关系，800平米为prompt给定数字",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第一年建工坊800平米+培训50人"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "800",
+              "unit": "平米",
+              "subject": "竹编工坊面积",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e3",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "设备采购 60 万 · 占比约21.4%",
+          "location": "右侧列表第二项",
+          "statement": "资金分项金额与占比，标注对应第二年规划内容",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "设备采购60万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "60",
+              "unit": "万元",
+              "subject": "设备采购",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "21.4",
+              "unit": "%",
+              "subject": "设备采购占比",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e4",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Operand/result unit is not explicit beside its value",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "对应第二年扩产至年产10 万件",
+          "location": "右侧列表第二项下方说明",
+          "statement": "资金用途与三年规划第二年的对应关系，10万件为prompt给定数字",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第二年扩产能至年产量10万件"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "10",
+              "unit": "万件",
+              "subject": "年产量",
+              "denominator": "不适用",
+              "time_origin": "第二年"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e5",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "培训经费 30 万 · 占比约10.7%",
+          "location": "右侧列表第三项",
+          "statement": "资金分项金额与占比，标注对应第一年规划内容",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "培训经费30万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "30",
+              "unit": "万元",
+              "subject": "培训经费",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "10.7",
+              "unit": "%",
+              "subject": "培训经费占比",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e6",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Operand/result unit is not explicit beside its value",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "对应第一年培训50 名编织人员",
+          "location": "右侧列表第三项下方说明",
+          "statement": "资金用途与三年规划第一年的对应关系，50人为prompt给定数字",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第一年建工坊800平米+培训50人"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "50",
+              "unit": "人",
+              "subject": "编织人员培训人数",
+              "denominator": "不适用",
+              "time_origin": "第一年"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e7",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "品牌推广 40 万 · 占比约14.3%",
+          "location": "右侧列表第四项",
+          "statement": "资金分项金额与占比，标注对应第三年规划内容",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "品牌推广40万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "40",
+              "unit": "万元",
+              "subject": "品牌推广",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "14.3",
+              "unit": "%",
+              "subject": "品牌推广占比",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e8",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Operand/result unit is not explicit beside its value",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "对应第三年品牌建设与入驻电商平台",
+          "location": "右侧列表第四项下方说明",
+          "statement": "资金用途与三年规划第三年的对应关系，入驻电商平台为prompt给定内容",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "第三年做品牌入驻电商平台"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p7_e9",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "流动资金 30 万 · 占比约10.7%",
+          "location": "右侧列表第五项",
+          "statement": "资金分项金额与占比，未直接标注对应具体年度，说明为保障原料采购与订单周转",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "流动资金30万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "30",
+              "unit": "万元",
+              "subject": "流动资金",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            },
+            {
+              "value": "10.7",
+              "unit": "%",
+              "subject": "流动资金占比",
+              "denominator": "总投资280万元",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e10",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Operand/result unit is not explicit beside its value",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "保障原料统一采购与订单周转",
+          "location": "右侧列表第五项下方说明",
+          "statement": "流动资金用途说明，与prompt中合作社统一采购原料的职责形成呼应",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "合作社统一采购原料和培训"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p7_e11",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "数据来源：项目申报材料；占比按各项金额÷ 总投资280 万元计算，测算口径仅供评审参考",
+          "location": "页面左下角注释",
+          "statement": "数据来源声明与计算口径说明，提示占比为计算值且为参考性质",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p7_e12",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "环形图展示五项资金构成，各扇区标注项目名称与金额",
+          "location": "页面左侧图表区",
+          "statement": "视觉呈现：环形图（甜甜圈图）展示资金构成，图例标签直接标注于扇区外侧，包含项目名称和金额，无百分比标注于图中",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p7_e13",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "环形图扇区颜色区分：厂房建设（橙红色，最大扇区）、设备采购（黑色）、品牌推广（浅橙红色）、培训经费（绿色）、流动资金（浅灰色）",
+          "location": "页面左侧图表区",
+          "statement": "视觉呈现：五项资金通过不同颜色区分，面积大小与金额成正比，视觉上突出120万厂房建设为最大项",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p7_e14",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "右侧列表与左侧环形图形成互补：左侧图示比例关系，右侧列表明示金额、占比及规划对应关系",
+          "location": "页面整体布局",
+          "statement": "信息架构：双栏布局，图表与文字列表相互配合，降低单一图表的信息密度",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p7_e15",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "金额单位：万元",
+          "location": "页面右上方",
+          "statement": "单位标注明确，避免金额量级误解",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p7_e16",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "总投资 280 万元 · 资金构成",
+          "location": "页面左上方副标题",
+          "statement": "副标题与主标题形成层级，明确本页核心主题为资金构成",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p7_e17",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "各分项金额合计：120+60+30+40+30=280万元，与总投资一致",
+          "location": "页面整体",
+          "statement": "算术验证：五项分项金额之和等于总投资280万元，无合计偏差",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "280",
+              "unit": "万元",
+              "subject": "分项合计",
+              "denominator": "不适用",
+              "time_origin": "未说明"
+            }
+          ],
+          "calculations": [],
+          "id": "p7_e18",
+          "page": 7,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": [
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Calculation anchor is not supplied evidence",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            },
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Calculation anchor is not supplied evidence",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            },
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Calculation anchor is not supplied evidence",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            },
+            {
+              "status": "unverified",
+              "computed": null,
+              "matches_reported_precision": null,
+              "reason": "Calculation anchor is not supplied evidence",
+              "limit": "An unverified extraction is not a defect in the presentation."
+            }
+          ]
+        },
+        {
+          "quote": "FINIS",
+          "location": "页面上方居中",
+          "statement": "页面顶部装饰性英文单词，意为'结束'，标识汇报终页",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p8_e1",
+          "page": 8,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "恳请立项支持",
+          "location": "页面中上部大标题",
+          "statement": "本页核心标题，明确表达申报诉求",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "想给县里申报一个非遗竹编工坊的产业扶持项目，做一套评审汇报PPT"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p8_e2",
+          "page": 8,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "让百年竹编技艺薪火相传，让乡亲们在家门口增收致富 —— 恳请县文旅局、县乡村振兴办对非遗竹编工坊产业扶持项目予以立项支持。",
+          "location": "标题下方正文段落",
+          "statement": "正文完整呈现申报诉求，提及'百年竹编技艺'与用户需求'传了6代逾150年'基本对应（150年可称约百年级），明确称呼评审对象为'县文旅局、县乡村振兴办'，与用户指定的'文旅局和乡村振兴办的领导'一致。该段落在PDF渲染中被拆分为两个text span（p8_t3与p8_t4），在放大图中可见'项'与'目予以立项支持。'为正常换行关系，非真实叠印遮挡：'项'字行尾自然断行，下一行以'目'字开头，形成'项目'一词的跨行分布。两span的bbox在垂直方向有微小重叠（intersection y区间171.01-173.73），但属于排版换行时的行距紧凑，非笔画遮挡。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "评审是文旅局和乡村振兴办的领导"
+            },
+            {
+              "source_id": "prompt",
+              "quote": "传了6代逾150年"
+            }
+          ],
+          "quantities": [
+            {
+              "value": "百年",
+              "unit": "年",
+              "subject": "竹编技艺传承时长",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p8_e3",
+          "page": 8,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "项目申报单位",
+          "location": "页面底部偏左，橙色圆点右侧",
+          "statement": "落款占位信息，未填写具体单位名称",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p8_e4",
+          "page": 8,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "2026 年9 月 · 非遗竹编工坊产业扶持项目评审汇报",
+          "location": "页面底部，'项目申报单位'下方",
+          "statement": "落款日期与汇报名称。日期'2026年9月'为作品自行设定，属于未来时间假设，未标注为假设/待补。该日期与申报项目的计划性质（未来立项）在逻辑上可兼容，但作为具体月份属于无来源事实。",
+          "kind": "fact",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [
+            {
+              "value": "2026",
+              "unit": "年",
+              "subject": "汇报日期年份",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            },
+            {
+              "value": "9",
+              "unit": "月",
+              "subject": "汇报日期月份",
+              "denominator": "不适用",
+              "time_origin": "不适用"
+            }
+          ],
+          "calculations": [],
+          "id": "p8_e5",
+          "page": 8,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "让百年竹编技艺薪火相传",
+          "location": "正文首句",
+          "statement": "'百年'表述与用户给定的'逾150年'存在时间尺度差异：150年严格大于100年，但'百年'在口语中可作约数使用。此处未精确引用'6代逾150年'，属于表述简化而非关键事实篡改。",
+          "kind": "inference",
+          "failure_mode": null,
+          "source_refs": [
+            {
+              "source_id": "prompt",
+              "quote": "传了6代逾150年"
+            }
+          ],
+          "quantities": [],
+          "calculations": [],
+          "id": "p8_e6",
+          "page": 8,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        },
+        {
+          "quote": "（图像整体）",
+          "location": "全页",
+          "statement": "本页为汇报结束页/致谢页，视觉风格简洁，以文字为主，无图表。页面元素排布居中对称，大标题、正文、落款三层结构清晰。无真实遮挡、裁切出界或对比不足问题。装饰性橙色短线位于标题下方，不承载数据。",
+          "kind": "visual",
+          "failure_mode": null,
+          "source_refs": [],
+          "quantities": [],
+          "calculations": [],
+          "id": "p8_e7",
+          "page": 8,
+          "failure_mode_origin": "model_observation",
+          "arithmetic_checks": []
+        }
+      ]
+    }
+  }
+}

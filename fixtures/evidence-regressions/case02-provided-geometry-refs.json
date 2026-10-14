@@ -1,0 +1,7687 @@
+{
+  "origin": "artifacts/validation-20261013-evidence-v1/judgments/invalid-responses/bf3ea49406b24cdb8359d13206b110b5-181.json",
+  "raw_sha256": "bce48eac8ef8bf1697e82d46e1a10cfdd49d47d50f1c18e08ac33f19ae693d48",
+  "raw": {
+    "answer": "no",
+    "pages": [
+      4,
+      8,
+      9
+    ],
+    "evidence": "经逐页核查，第4页、第8页、第9页存在视觉层级与信息归属问题，影响重点定位。第4页存在文字叠印：'原则上从市级名录中遴选产生'与'技艺体系：四阶段工序链条'及'03 社会公示'等文字在左下区域相互覆盖（p4_overlap_0df7fed1c7局部放大图可见），导致省级认定程序与工序体系两个不同模块的标题及内容混杂，阅读路径断裂。第8页表格区域存在大量行间距极密的文字叠印（p8_overlap_a6a1b443b8等8处局部放大图显示'第一年为主、延续第二年'与'第三年'、'培训经费'与'品牌推广'、'40万元'与'30万元'等相互叠印），资金—规划对应表的五项资金条目在垂直方向严重挤压，各资金项的金额、阶段、产出描述互相穿透，无法辨识具体归属，构成版面杂乱导致重点无法定位。第9页标题称'四类风险防控表'，但风险类别栏仅列出技艺断代、市场与订单、原料与品控三类风险（p9_e31），且风险防控表与下方'组织/制度/监督/持续'四类保障机制在垂直空间上紧密相接、缺乏分隔，'责任主体'列与'组织保障'等标签形成叠印候选（p9_overlap_9924af4073等），导致标题与正文归属关系断裂、数量关系混乱，读者无法快速定位第四类风险或理解风险与保障的对应关系。上述缺陷均属于visual_hierarchy范畴，且非遮挡/裁切/标签错误问题，需在本条扣分。",
+    "evidence_ids": [
+      "p4_overlap_0df7fed1c7",
+      "p8_overlap_a6a1b443b8",
+      "p8_overlap_39d3ae07e1",
+      "p8_overlap_4e7d5b7230",
+      "p8_overlap_ae71e6d3db",
+      "p8_overlap_c4a669a9b7",
+      "p8_overlap_35c1572542",
+      "p8_overlap_48c8fbb3b6",
+      "p8_overlap_4c22b90597",
+      "p8_overlap_7e35ecf708",
+      "p8_overlap_7eb8baf0e7",
+      "p8_overlap_a72d49ca17",
+      "p9_e31",
+      "p9_overlap_9924af4073",
+      "p9_overlap_945dbdcc71",
+      "p9_overlap_402a27863e",
+      "p9_overlap_8053b38b8e",
+      "p9_overlap_8cbf155a50",
+      "p9_overlap_73cfc21134",
+      "p9_overlap_c7e4864fc7",
+      "p9_overlap_4eb0b571d3",
+      "p9_overlap_c0640751da",
+      "p9_overlap_6e0a9d7beb",
+      "p9_overlap_fb46200f44",
+      "p9_overlap_ca8e6444e0"
+    ],
+    "resolutions": [
+      {
+        "evidence_id": "p9_e31",
+        "defect_present": true,
+        "reason": "第9页标题明确写'四类风险防控表'，但风险类别栏仅列出三类：技艺断代风险、市场与订单风险、原料与品控风险。从实际图像可见，风险类别列（p9_t42-p9_t45）与风险表现、防控措施、责任主体三列共同构成表格，但第四类风险未在风险类别栏出现，且表格下方直接接续'组织保障'等四类保障机制，无额外风险行。标题与内容数量不匹配，构成标题与正文归属关系断裂、重点无法定位的视觉层级缺陷。"
+      }
+    ],
+    "additional_observations": [
+      {
+        "page": 4,
+        "quote": "原则上从市级名录中遴选产生 / 技艺体系：四阶段工序链条 / 03 社会公示",
+        "location": "页面左下区域，省级认定程序与工序体系模块交界",
+        "statement": "第4页左下区域，省级认定程序的文字'原则上从市级名录中遴选产生'、'03 社会公示'与工序体系标题'技艺体系：四阶段工序链条'及'选竹伐竹'等文字发生实际叠印，两个不同内容模块的标题和正文相互覆盖，导致阅读路径断裂、重点无法定位",
+        "kind": "visual",
+        "failure_mode": "visual_hierarchy",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 8,
+        "quote": "第一年为主、延续第二年 / 第三年 / 培训经费 / 品牌推广 / 40万元 / 30万元 / 培训50人... / 品牌包装设计...",
+        "location": "资金—规划逐项对应表区域，左侧资金条目列",
+        "statement": "第8页资金—规划对应表中，五项资金条目在垂直方向极度压缩，'培训经费'与'品牌推广'、'第一年为主、延续第二年'与'第三年'、'40万元'与'30万元'等文字实际叠印，各资金项的金额、阶段、产出描述互相穿透，无法辨识具体归属，版面杂乱导致重点无法定位",
+        "kind": "visual",
+        "failure_mode": "visual_hierarchy",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      },
+      {
+        "page": 9,
+        "quote": "四类风险防控表 / 技艺断代风险 / 市场与订单风险 / 原料与品控风险 / 组织保障 / 制度保障 / 监督保障 / 持续保障",
+        "location": "页面中下区域，风险防控表与保障机制模块",
+        "statement": "第9页'四类风险防控表'标题下仅列三类风险，且风险表与下方四类保障机制在垂直空间上无明确分隔，'责任主体'列标签与'组织保障'等机制标签形成视觉叠印，导致风险与保障的对应关系混乱、第四类风险缺失、重点无法定位",
+        "kind": "visual",
+        "failure_mode": "visual_hierarchy",
+        "source_refs": [],
+        "quantities": [],
+        "calculations": []
+      }
+    ],
+    "inspection_resolutions": []
+  },
+  "page_count": 10,
+  "item": {
+    "id": "R15",
+    "group_id": "G05",
+    "importance": 2,
+    "source_refs": [
+      "Q09"
+    ],
+    "basis": "explicit",
+    "scope": "全篇页面标题与版面组织",
+    "evidence_mode": "visual",
+    "judge_prompt": "在内容可读的前提下，全篇信息组织清晰：每页有明确可辨识的标题且标题与页面内容对应，重点信息（关键数字、阶段目标）通过字号、粗细、色彩或位置形成可识别的视觉层级，版面疏密得当、元素对齐有秩序，阅读路径自然；卡片或分栏版面中标题与对应正文在视觉上形成明确归属关系，不被大段空白隔开导致归属需读者自行推断。允许不同版式风格（左右分栏、时间轴、卡片式等）均有效。标题缺失或与内容不符、页面元素杂乱无章或标题正文归属断裂导致重点无法定位记no；不得以“阅读路径被遮挡”为由重复处罚已属遮挡的问题。\n\n【程序附加的缺陷归属边界】\nvisual_hierarchy：在内容可读前提下，页面标题缺失或与内容不符、重点信息缺乏可识别层级、标题与正文归属关系断裂、版面杂乱导致重点无法定位\n排除：已属遮挡/裁切/标签错误的同一缺陷不在本条重复处罚；风格偏好不作错误",
+    "dimension": "visual",
+    "score": 5.0
+  },
+  "modes": {
+    "key_fact_distortion": {
+      "id": "key_fact_distortion",
+      "owner": "R07",
+      "definition": "用户给定的关键事实或数字（传承代数与年限、师傅人数与年龄、失传危机、非遗认定年份与级别、增收金额、带动户数、工坊面积、培训人数、年产量、总投资及分项金额）在作品中缺失、被篡改、写错或前后自相矛盾",
+      "exclusions": "基于给定数字的衍生运算与推论错误由reasoning_validity负责；新增的无来源事实由fabricated_facts负责"
+    },
+    "omission_of_required_module": {
+      "id": "omission_of_required_module",
+      "owner": "R01",
+      "definition": "作品不构成可用的评审汇报成品：主题跑题、为通用模板或占位草稿、或内容整体单薄到无法支撑一次申报汇报",
+      "exclusions": "文化价值、带动模式、三年规划、资金用途等单个内容模块的缺失或深度、结构缺陷分别由cultural_value_shallow、model_structure_broken、plan_staging_broken、budget_mismatch负责；关键事实数字的缺失或错误由key_fact_distortion负责"
+    },
+    "cultural_value_shallow": {
+      "id": "cultural_value_shallow",
+      "owner": "R02",
+      "definition": "文化价值部分缺失、仅列名录名称而未以任何方式体现省级非遗认定的分量与意义；或用与本地项目无关的外部参照堆砌冒充分量论证",
+      "exclusions": "认定年份或级别的缺失、误写由key_fact_distortion负责；本条负责文化价值论证的存在性与深度"
+    },
+    "model_structure_broken": {
+      "id": "model_structure_broken",
+      "owner": "R03",
+      "definition": "“公司+合作社+农户”利益联结模式未呈现、三方职责缺失或错误对应（如设计与销售未归公司、采购培训未归合作社、按件计酬未归农户），或未讲清农户收益如何由计酬机制产生",
+      "exclusions": "模式名称措辞的近义变体不算错误；增收金额、带动户数等具体数字的缺失或错误由key_fact_distortion负责"
+    },
+    "plan_staging_broken": {
+      "id": "plan_staging_broken",
+      "owner": "R05",
+      "definition": "三年规划未分阶段呈现、任一年度阶段整体缺失、或三个阶段之间看不出递进关系",
+      "exclusions": "年度目标中具体数字（800平米、50人、10万件等）的缺失或误写由key_fact_distortion负责；本条负责规划模块的分阶段结构与递进呈现"
+    },
+    "budget_mismatch": {
+      "id": "budget_mismatch",
+      "owner": "R06",
+      "definition": "资金用途模块缺失，或资金投向与三年规划内容明显脱节（出现与规划无关的大额支出、规划事项无对应资金来源、仅笼统声称对应而无条目级映射）",
+      "exclusions": "总投资及分项金额数字的缺失或误写由key_fact_distortion负责；分项合计、占比的算术错误与跨期重复计列导致的合计失真由reasoning_validity负责"
+    },
+    "reasoning_validity": {
+      "id": "reasoning_validity",
+      "owner": "R08",
+      "definition": "作品中出现的汇总、占比、换算、比较或因果推论存在算术错误、分子分母或比较对象口径不一致且未作说明、不同性质指标误导性并列、或同一资金项跨阶段重复计列致合计失真；未进行任何推算时自然满足",
+      "exclusions": "用户给定原始数字本身的缺失或引用错误由key_fact_distortion负责；把条件性目标或未来计划说成已实现结果由certainty_boundary_blur负责；本条只负责基于给定数字的衍生运算与推论有效性"
+    },
+    "fabricated_facts": {
+      "id": "fabricated_facts",
+      "owner": "R09",
+      "definition": "新增的无来源具体事实（县名、机构名、历史数据、获奖、批文、既有成果等）被冒充为既成事实，未标注假设/示意/待补；或无法核实的外部数据被用作关键论证支柱而未保持参照边界",
+      "exclusions": "领域一般性常识背景、明确标注的假设与参照、占位符处理不算；低风险假设（如汇报日期）未标注不单独判no；用户给定事实的失真由key_fact_distortion负责"
+    },
+    "certainty_boundary_blur": {
+      "id": "certainty_boundary_blur",
+      "owner": "R10",
+      "definition": "规划目标、预计带动户数与增收等未来事项或条件性目标被陈述为已经完成的既成事实",
+      "exclusions": "明确置于计划/目标语境或使用预计措辞的不算；本条不负责数字本身对错，算术与口径问题由reasoning_validity负责"
+    },
+    "narrative_disconnection": {
+      "id": "narrative_disconnection",
+      "owner": "R11",
+      "definition": "页面或模块之间缺乏承接，论证链条断裂、顺序混乱或无意义重复堆砌，妨碍评审读者顺畅跟随",
+      "exclusions": "合理的章节过渡、简要回顾不算重复；单页内部的信息组织问题由visual_hierarchy负责"
+    },
+    "audience_register_mismatch": {
+      "id": "audience_register_mismatch",
+      "owner": "R12",
+      "definition": "语言风格或内容取向明显不适配政府评审场景：夸张营销、空泛口号堆砌、缺少事实与数据支撑或偏离申报主题",
+      "exclusions": "措辞风格的主观偏好不作错误；事实有无依据由fabricated_facts负责"
+    },
+    "visual_readability": {
+      "id": "visual_readability",
+      "owner": "R13",
+      "definition": "正文或图形内容存在遮挡、裁切出界、对比不足、字号过小或同页多模块交叠压盖等真实不可读问题",
+      "exclusions": "图表标签类缺陷由chart_label_integrity负责；内容可读但组织不佳由visual_hierarchy负责"
+    },
+    "chart_label_integrity": {
+      "id": "chart_label_integrity",
+      "owner": "R14",
+      "definition": "图表的分类/轴/图例/单位标签缺失、图例色块与文字重叠、双轴标签不清、标题与轴标题语义重复挤占空间、出现NaN或占位符残留、标签不可读，或图表数据与正文给定数字矛盾；未使用图表时自然满足",
+      "exclusions": "同一标签缺陷不再计入正文可读性或视觉层级条目"
+    },
+    "visual_hierarchy": {
+      "id": "visual_hierarchy",
+      "owner": "R15",
+      "definition": "在内容可读前提下，页面标题缺失或与内容不符、重点信息缺乏可识别层级、标题与正文归属关系断裂、版面杂乱导致重点无法定位",
+      "exclusions": "已属遮挡/裁切/标签错误的同一缺陷不在本条重复处罚；风格偏好不作错误"
+    }
+  },
+  "ledger": [
+    {
+      "quote": "四类风险防控表实际只列出三类风险",
+      "location": "风险防控表区域",
+      "statement": "标题明确\"四类风险防控表\"，但风险类别栏只列出：技艺断代风险、市场与订单风险、原料与品控风险，共三类。第四类风险未在表中明确列出，存在标题与内容数量不匹配的问题。需核查是否为视觉遮挡导致第四类风险不可见，但从现有可见内容判断，仅三类风险有完整描述",
+      "kind": "inference",
+      "failure_mode": "visual_hierarchy",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "id": "p9_e31",
+      "page": 9,
+      "failure_mode_origin": "model_observation",
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p4_overlap_0df7fed1c7",
+      "page": 4,
+      "quote": "Slide 4 local enlarged view p4_overlap_0df7fed1c7; text spans ['p4_t10', 'p4_t26']: ['原则上从市级名录中遴选产生', '技艺体系：四阶段工序链条']. Original PDF rectangle [21.790000915527344, 203.3699951171875, 157.42999267578125, 233.85000610351562]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [21.790000915527344, 203.3699951171875, 157.42999267578125, 233.85000610351562]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_a6a1b443b8",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_a6a1b443b8; text spans ['p8_t36', 'p8_t40']: ['第一年为主、延续第二年', '第三年']. Original PDF rectangle [18.450000762939453, 316.5799865722656, 111.04000091552734, 343.260009765625]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 316.5799865722656, 111.04000091552734, 343.260009765625]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_39d3ae07e1",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_39d3ae07e1; text spans ['p8_t34', 'p8_t38']: ['培训经费', '品牌推广']. Original PDF rectangle [18.450000762939453, 293.6499938964844, 62.310001373291016, 320.3500061035156]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 293.6499938964844, 62.310001373291016, 320.3500061035156]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_4e7d5b7230",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_4e7d5b7230; text spans ['p8_t37', 'p8_t41']: ['培训50 人，支撑计件农户由60 户扩至120 户', '品牌包装设计与电商平台入驻运营，形成市场出口']. Original PDF rectangle [18.450000762939453, 326.7300109863281, 187.60000610351562, 353.42999267578125]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 326.7300109863281, 187.60000610351562, 353.42999267578125]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_ae71e6d3db",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_ae71e6d3db; text spans ['p8_t39', 'p8_t43']: ['40 万元', '30 万元']. Original PDF rectangle [18.450000762939453, 305.3299865722656, 57.61000061035156, 332.0299987792969]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 305.3299865722656, 57.61000061035156, 332.0299987792969]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_c4a669a9b7",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_c4a669a9b7; text spans ['p8_t28', 'p8_t32']: ['第一年', '第一年进场、第二年扩产']. Original PDF rectangle [18.450000762939453, 315.45001220703125, 111.04000091552734, 342.1499938964844]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 315.45001220703125, 111.04000091552734, 342.1499938964844]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_35c1572542",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_35c1572542; text spans ['p8_t33', 'p8_t37']: ['支撑年产量10 万件的原料处理、编织辅助与烘干定型能力', '培训50 人，支撑计件农户由60 户扩至120 户']. Original PDF rectangle [18.450000762939453, 326.1600036621094, 211.89999389648438, 352.8699951171875]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 326.1600036621094, 211.89999389648438, 352.8699951171875]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_48c8fbb3b6",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_48c8fbb3b6; text spans ['p8_t31', 'p8_t35']: ['60 万元', '30 万元']. Original PDF rectangle [18.450000762939453, 304.19000244140625, 57.65999984741211, 330.8999938964844]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 304.19000244140625, 57.65999984741211, 330.8999938964844]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_4c22b90597",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_4c22b90597; text spans ['p8_t38', 'p8_t42']: ['品牌推广', '流动资金']. Original PDF rectangle [18.450000762939453, 294.2099914550781, 62.310001373291016, 320.9200134277344]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 294.2099914550781, 62.310001373291016, 320.9200134277344]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_7e35ecf708",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_7e35ecf708; text spans ['p8_t35', 'p8_t39']: ['30 万元', '40 万元']. Original PDF rectangle [18.450000762939453, 304.760009765625, 57.61000061035156, 331.4700012207031]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 304.760009765625, 57.61000061035156, 331.4700012207031]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_7eb8baf0e7",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_7eb8baf0e7; text spans ['p8_t40', 'p8_t44']: ['第三年', '三年滚动']. Original PDF rectangle [18.450000762939453, 317.1199951171875, 62.310001373291016, 343.82000732421875]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 317.1199951171875, 62.310001373291016, 343.82000732421875]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    },
+    {
+      "id": "p8_overlap_a72d49ca17",
+      "page": 8,
+      "quote": "Slide 8 local enlarged view p8_overlap_a72d49ca17; text spans ['p8_t30', 'p8_t34']: ['设备采购', '培训经费']. Original PDF rectangle [18.450000762939453, 293.0799865722656, 62.310001373291016, 319.7900085449219]. A candidate bounding-box intersection, not a confirmed defect or a new slide.",
+      "location": "PDF rectangle [18.450000762939453, 293.0799865722656, 62.310001373291016, 319.7900085449219]",
+      "statement": "Supplied image region; bounding-box intersection does not establish a defect.",
+      "kind": "visual",
+      "failure_mode": null,
+      "failure_mode_origin": "image_region",
+      "source_refs": [],
+      "quantities": [],
+      "calculations": [],
+      "arithmetic_checks": []
+    }
+  ],
+  "sources": [
+    {
+      "id": "prompt",
+      "text": "想给县里申报一个非遗竹编工坊的产业扶持项目，做一套评审汇报PPT，评审是文旅局和乡村振兴办的领导，所以内容必须站得住。项目背景要讲清楚这门手艺在我们那儿传了6代逾150年、目前仅剩12位师傅平均年龄62岁面临失传的问题；文化价值这块要能体现出省级非遗认定的分量(2018年获批省级非遗)；带动农户就业的模式用\"公司+合作社+农户\"讲清利益联结，公司负责设计和销售、合作社统一采购原料和培训、农户在家编织按件计酬人均月增收约1800元,顺带把预计带动的农户数(首期60户第二年扩至120户)和人均增收讲一下；三年规划分阶段写，第一年建工坊800平米+培训50人、第二年扩产能至年产量10万件、第三年做品牌入驻电商平台这种递进关系要体现出来；资金用途(总投资280万:厂房建设120万、设备采购60万、培训经费30万、品牌推广40万、流动资金30万)这块要跟前面规划对得上，别写虚了。整体逻辑得严丝合缝，每一页之间不能脱节，标题、图表位置这些我也会挑一挑，先按这个思路出一版。"
+    }
+  ],
+  "geometry": [
+    {
+      "page": 4,
+      "page_size": [
+        720.0,
+        405.01416015625
+      ],
+      "coordinate_system": "PDF points; origin top left; bbox=x0,y0,x1,y1",
+      "spans": [
+        {
+          "id": "p4_t1",
+          "text": "非遗分量：2018 年获批省级，三重价值可核查",
+          "bbox": [
+            16.87,
+            27.18,
+            406.99,
+            54.68
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t2",
+          "text": "认定层级：国家—省—市—县四级名录",
+          "bbox": [
+            29.79,
+            99.43,
+            199.24,
+            113.91
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t3",
+          "text": "本项目处于第二级",
+          "bbox": [
+            635.64,
+            102.8,
+            691.34,
+            112.94
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t4",
+          "text": "国家级",
+          "bbox": [
+            346.45,
+            123.48,
+            373.48,
+            136.53
+          ],
+          "color": "#faf9f5"
+        },
+        {
+          "id": "p4_t5",
+          "text": "国务院文化主管部门评审、国务院公布",
+          "bbox": [
+            29.82,
+            144.52,
+            148.17,
+            154.66
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t6",
+          "text": "1557 项、3610 个子项，五批次（背景参照）",
+          "bbox": [
+            29.82,
+            154.16,
+            168.38,
+            164.3
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t7",
+          "text": "省级",
+          "bbox": [
+            351.01,
+            172.6,
+            369.02,
+            185.66
+          ],
+          "color": "#faf9f5"
+        },
+        {
+          "id": "p4_t8",
+          "text": "2018 年获批省级代表性项目（本项目）",
+          "bbox": [
+            29.82,
+            193.65,
+            150.55,
+            203.79
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t9",
+          "text": "省级文旅主管部门评审、省级人民政府公布",
+          "bbox": [
+            29.82,
+            203.29,
+            162.09,
+            213.42
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t10",
+          "text": "原则上从市级名录中遴选产生",
+          "bbox": [
+            29.82,
+            212.24,
+            120.33,
+            222.38
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t11",
+          "text": "市级",
+          "bbox": [
+            350.96,
+            230.69,
+            368.97,
+            243.74
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t12",
+          "text": "市级文化主管部门评审、市级人民政府公布",
+          "bbox": [
+            29.82,
+            251.76,
+            162.09,
+            261.9
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t13",
+          "text": "一般从县级名录中遴选产生",
+          "bbox": [
+            29.82,
+            261.37,
+            113.36,
+            271.51
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t14",
+          "text": "县级",
+          "bbox": [
+            351.01,
+            279.81,
+            369.02,
+            292.86
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p4_t15",
+          "text": "县级文化主管部门评审、县级人民政府公布",
+          "bbox": [
+            29.82,
+            300.85,
+            162.09,
+            310.99
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t16",
+          "text": "本级直接申报受理",
+          "bbox": [
+            29.82,
+            310.49,
+            85.52,
+            320.63
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t17",
+          "text": "省级认定程序：四环节闭环，文件与公示记录可核",
+          "bbox": [
+            29.82,
+            174.34,
+            182.98,
+            184.48
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t18",
+          "text": "01",
+          "bbox": [
+            37.13,
+            190.9,
+            44.18,
+            201.04
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t19",
+          "text": " 材料审核与实地复核",
+          "bbox": [
+            44.18,
+            190.9,
+            111.12,
+            201.04
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p4_t20",
+          "text": "02",
+          "bbox": [
+            370.69,
+            190.9,
+            378.28,
+            201.04
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t21",
+          "text": " 专家评审（初评＋审议）",
+          "bbox": [
+            378.28,
+            190.9,
+            459.13,
+            201.04
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p4_t22",
+          "text": "03",
+          "bbox": [
+            37.11,
+            210.03,
+            44.68,
+            220.17
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t23",
+          "text": " 社会公示",
+          "bbox": [
+            44.68,
+            210.03,
+            76.82,
+            220.17
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p4_t24",
+          "text": "04",
+          "bbox": [
+            370.66,
+            210.03,
+            378.21,
+            220.17
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t25",
+          "text": " 省级人民政府批准公布",
+          "bbox": [
+            378.21,
+            210.03,
+            452.13,
+            220.17
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p4_t26",
+          "text": "技艺体系：四阶段工序链条",
+          "bbox": [
+            29.79,
+            211.37,
+            149.43,
+            225.85
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t27",
+          "text": "工序名称取公开可核查口径",
+          "bbox": [
+            608.48,
+            214.74,
+            692.02,
+            224.88
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t28",
+          "text": "选竹伐竹",
+          "bbox": [
+            35.92,
+            220.29,
+            63.78,
+            230.43
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t29",
+          "text": "选竹、锯竹、砍伐",
+          "bbox": [
+            35.92,
+            232.54,
+            91.62,
+            242.68
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t30",
+          "text": "→",
+          "bbox": [
+            186.58,
+            226.3,
+            193.58,
+            236.44
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t31",
+          "text": "刮青分篾分层",
+          "bbox": [
+            205.65,
+            220.29,
+            247.44,
+            230.43
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t32",
+          "text": "刮青、分层、破篾、分篾、拉丝",
+          "bbox": [
+            205.65,
+            232.54,
+            303.11,
+            242.68
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t33",
+          "text": "→",
+          "bbox": [
+            356.32,
+            226.3,
+            363.32,
+            236.44
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t34",
+          "text": "编织",
+          "bbox": [
+            375.39,
+            220.29,
+            389.34,
+            230.43
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t35",
+          "text": "编织、竹丝篾片成形",
+          "bbox": [
+            375.39,
+            232.54,
+            438.07,
+            242.68
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t36",
+          "text": "→",
+          "bbox": [
+            526.05,
+            226.3,
+            533.06,
+            236.44
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t37",
+          "text": "收口定型",
+          "bbox": [
+            545.13,
+            220.29,
+            573.0,
+            230.43
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t38",
+          "text": "收边、收口、打磨、烘干定型",
+          "bbox": [
+            545.13,
+            232.54,
+            635.64,
+            242.68
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t39",
+          "text": "公开口径为四川文旅厅8 道、文旅中国7 道工序；本项目实际工序名称与数量以申报材料为准，不虚构本地独有工序。",
+          "bbox": [
+            29.82,
+            234.95,
+            391.95,
+            245.09
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t40",
+          "text": "三重价值：逐条对应政策接口",
+          "bbox": [
+            29.82,
+            261.97,
+            159.42,
+            276.45
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p4_t41",
+          "text": "省级身份可直接进入县域文旅与工坊申报叙事",
+          "bbox": [
+            553.92,
+            265.34,
+            693.16,
+            275.47
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t42",
+          "text": "文化认同价值",
+          "bbox": [
+            37.11,
+            287.08,
+            78.89,
+            297.22
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t43",
+          "text": "六代传承的集体记忆与乡土认同，对应真实性、整体性、传承性",
+          "bbox": [
+            37.11,
+            299.49,
+            232.02,
+            309.63
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t44",
+          "text": "地方名片价值",
+          "bbox": [
+            259.85,
+            287.08,
+            301.64,
+            297.22
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t45",
+          "text": "可纳入县域文旅叙事，参与非遗购物节、展示展销与电商平台推广",
+          "bbox": [
+            259.85,
+            299.49,
+            461.71,
+            309.63
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t46",
+          "text": "产业转化价值",
+          "bbox": [
+            482.6,
+            287.08,
+            524.38,
+            297.22
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t47",
+          "text": "满足非遗工坊依托代表性项目的硬条件，提供品牌与品质背书",
+          "bbox": [
+            482.6,
+            299.49,
+            670.54,
+            309.63
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p4_t48",
+          "text": "结论",
+          "bbox": [
+            34.92,
+            309.27,
+            48.87,
+            319.41
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p4_t49",
+          "text": "省级认定为项目合规性与扶持必要性提供制度依据，对应非遗工坊遴选认定与县级乡村振兴项目库入库要求；认定层级说明它值得保，机制说明它如何带动农户。",
+          "bbox": [
+            56.38,
+            309.27,
+            550.58,
+            319.41
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p4_t50",
+          "text": "来源：《中华人民共和国非物质文化遗产法》、中国非物质文化遗产网／中国非物质文化遗产数字博物馆、湖北省与安徽省文化和旅游厅通知、广东省非遗申报指南、文旅部非遗工坊认定通知、四川",
+          "bbox": [
+            16.87,
+            354.37,
+            622.4,
+            364.51
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p4_t51",
+          "text": "文旅厅眉山竹编非遗技艺、文旅中国非遗工坊竹编培训；本项目2018 年获批省级口径逐字沿用，名录编号、批次文号与代表性传承人姓名以申报材料为准，国家级项目数据仅作背景参照。",
+          "bbox": [
+            16.87,
+            362.76,
+            591.68,
+            372.9
+          ],
+          "color": "#87867f"
+        }
+      ],
+      "limit": "Bounding boxes assist localization only. Intersection is not proof of occlusion; inspect the image.",
+      "text_overlap_candidates": [
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t10",
+            "p4_t26"
+          ],
+          "texts": [
+            "原则上从市级名录中遴选产生",
+            "技艺体系：四阶段工序链条"
+          ],
+          "intersection": [
+            29.82,
+            212.24,
+            120.33,
+            222.38
+          ],
+          "union": [
+            29.79,
+            211.37,
+            149.43,
+            225.85
+          ],
+          "fraction_of_smaller_bbox": 1.0,
+          "id": "p4_overlap_0df7fed1c7"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t13",
+            "p4_t40"
+          ],
+          "texts": [
+            "一般从县级名录中遴选产生",
+            "三重价值：逐条对应政策接口"
+          ],
+          "intersection": [
+            29.82,
+            261.97,
+            113.36,
+            271.51
+          ],
+          "union": [
+            29.82,
+            261.37,
+            159.42,
+            276.45
+          ],
+          "fraction_of_smaller_bbox": 0.9408,
+          "id": "p4_overlap_c91a5b9b5f"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t16",
+            "p4_t48"
+          ],
+          "texts": [
+            "本级直接申报受理",
+            "结论"
+          ],
+          "intersection": [
+            34.92,
+            310.49,
+            48.87,
+            319.41
+          ],
+          "union": [
+            29.82,
+            309.27,
+            85.52,
+            320.63
+          ],
+          "fraction_of_smaller_bbox": 0.8797,
+          "id": "p4_overlap_40cb927f16"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t22",
+            "p4_t26"
+          ],
+          "texts": [
+            "03",
+            "技艺体系：四阶段工序链条"
+          ],
+          "intersection": [
+            37.11,
+            211.37,
+            44.68,
+            220.17
+          ],
+          "union": [
+            29.79,
+            210.03,
+            149.43,
+            225.85
+          ],
+          "fraction_of_smaller_bbox": 0.8679,
+          "id": "p4_overlap_0fbd551b5d"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t23",
+            "p4_t26"
+          ],
+          "texts": [
+            " 社会公示",
+            "技艺体系：四阶段工序链条"
+          ],
+          "intersection": [
+            44.68,
+            211.37,
+            76.82,
+            220.17
+          ],
+          "union": [
+            29.79,
+            210.03,
+            149.43,
+            225.85
+          ],
+          "fraction_of_smaller_bbox": 0.8679,
+          "id": "p4_overlap_97d331d49c"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t15",
+            "p4_t43"
+          ],
+          "texts": [
+            "县级文化主管部门评审、县级人民政府公布",
+            "六代传承的集体记忆与乡土认同，对应真实性、整体性、传承性"
+          ],
+          "intersection": [
+            37.11,
+            300.85,
+            162.09,
+            309.63
+          ],
+          "union": [
+            29.82,
+            299.49,
+            232.02,
+            310.99
+          ],
+          "fraction_of_smaller_bbox": 0.8182,
+          "id": "p4_overlap_e03deafb27"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t10",
+            "p4_t22"
+          ],
+          "texts": [
+            "原则上从市级名录中遴选产生",
+            "03"
+          ],
+          "intersection": [
+            37.11,
+            212.24,
+            44.68,
+            220.17
+          ],
+          "union": [
+            29.82,
+            210.03,
+            120.33,
+            222.38
+          ],
+          "fraction_of_smaller_bbox": 0.7821,
+          "id": "p4_overlap_424286350e"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t10",
+            "p4_t23"
+          ],
+          "texts": [
+            "原则上从市级名录中遴选产生",
+            " 社会公示"
+          ],
+          "intersection": [
+            44.68,
+            212.24,
+            76.82,
+            220.17
+          ],
+          "union": [
+            29.82,
+            210.03,
+            120.33,
+            222.38
+          ],
+          "fraction_of_smaller_bbox": 0.7821,
+          "id": "p4_overlap_b546fcbf80"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t29",
+            "p4_t39"
+          ],
+          "texts": [
+            "选竹、锯竹、砍伐",
+            "公开口径为四川文旅厅8 道、文旅中国7 道工序；本项目实际工序名称与数量以申报材料为准，不虚构本地独有工序。"
+          ],
+          "intersection": [
+            35.92,
+            234.95,
+            91.62,
+            242.68
+          ],
+          "union": [
+            29.82,
+            232.54,
+            391.95,
+            245.09
+          ],
+          "fraction_of_smaller_bbox": 0.7623,
+          "id": "p4_overlap_0911de1f01"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t32",
+            "p4_t39"
+          ],
+          "texts": [
+            "刮青、分层、破篾、分篾、拉丝",
+            "公开口径为四川文旅厅8 道、文旅中国7 道工序；本项目实际工序名称与数量以申报材料为准，不虚构本地独有工序。"
+          ],
+          "intersection": [
+            205.65,
+            234.95,
+            303.11,
+            242.68
+          ],
+          "union": [
+            29.82,
+            232.54,
+            391.95,
+            245.09
+          ],
+          "fraction_of_smaller_bbox": 0.7623,
+          "id": "p4_overlap_0c07e34e83"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t8",
+            "p4_t18"
+          ],
+          "texts": [
+            "2018 年获批省级代表性项目（本项目）",
+            "01"
+          ],
+          "intersection": [
+            37.13,
+            193.65,
+            44.18,
+            201.04
+          ],
+          "union": [
+            29.82,
+            190.9,
+            150.55,
+            203.79
+          ],
+          "fraction_of_smaller_bbox": 0.7288,
+          "id": "p4_overlap_527f1bce45"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t8",
+            "p4_t19"
+          ],
+          "texts": [
+            "2018 年获批省级代表性项目（本项目）",
+            " 材料审核与实地复核"
+          ],
+          "intersection": [
+            44.18,
+            193.65,
+            111.12,
+            201.04
+          ],
+          "union": [
+            29.82,
+            190.9,
+            150.55,
+            203.79
+          ],
+          "fraction_of_smaller_bbox": 0.7288,
+          "id": "p4_overlap_6b911c2b55"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t11",
+            "p4_t39"
+          ],
+          "texts": [
+            "市级",
+            "公开口径为四川文旅厅8 道、文旅中国7 道工序；本项目实际工序名称与数量以申报材料为准，不虚构本地独有工序。"
+          ],
+          "intersection": [
+            350.96,
+            234.95,
+            368.97,
+            243.74
+          ],
+          "union": [
+            29.82,
+            230.69,
+            391.95,
+            245.09
+          ],
+          "fraction_of_smaller_bbox": 0.6736,
+          "id": "p4_overlap_30aad13d9b"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t11",
+            "p4_t33"
+          ],
+          "texts": [
+            "市级",
+            "→"
+          ],
+          "intersection": [
+            356.32,
+            230.69,
+            363.32,
+            236.44
+          ],
+          "union": [
+            350.96,
+            226.3,
+            368.97,
+            243.74
+          ],
+          "fraction_of_smaller_bbox": 0.5671,
+          "id": "p4_overlap_1fa917f337"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t26",
+            "p4_t28"
+          ],
+          "texts": [
+            "技艺体系：四阶段工序链条",
+            "选竹伐竹"
+          ],
+          "intersection": [
+            35.92,
+            220.29,
+            63.78,
+            225.85
+          ],
+          "union": [
+            29.79,
+            211.37,
+            149.43,
+            230.43
+          ],
+          "fraction_of_smaller_bbox": 0.5483,
+          "id": "p4_overlap_c7336edfda"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t16",
+            "p4_t49"
+          ],
+          "texts": [
+            "本级直接申报受理",
+            "省级认定为项目合规性与扶持必要性提供制度依据，对应非遗工坊遴选认定与县级乡村振兴项目库入库要求；认定层级说明它值得保，机制说明它如何带动农户。"
+          ],
+          "intersection": [
+            56.38,
+            310.49,
+            85.52,
+            319.41
+          ],
+          "union": [
+            29.82,
+            309.27,
+            550.58,
+            320.63
+          ],
+          "fraction_of_smaller_bbox": 0.4602,
+          "id": "p4_overlap_a510fa8c41"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t9",
+            "p4_t22"
+          ],
+          "texts": [
+            "省级文旅主管部门评审、省级人民政府公布",
+            "03"
+          ],
+          "intersection": [
+            37.11,
+            210.03,
+            44.68,
+            213.42
+          ],
+          "union": [
+            29.82,
+            203.29,
+            162.09,
+            220.17
+          ],
+          "fraction_of_smaller_bbox": 0.3343,
+          "id": "p4_overlap_f8b7be8604"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t9",
+            "p4_t23"
+          ],
+          "texts": [
+            "省级文旅主管部门评审、省级人民政府公布",
+            " 社会公示"
+          ],
+          "intersection": [
+            44.68,
+            210.03,
+            76.82,
+            213.42
+          ],
+          "union": [
+            29.82,
+            203.29,
+            162.09,
+            220.17
+          ],
+          "fraction_of_smaller_bbox": 0.3343,
+          "id": "p4_overlap_4142fa960e"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t10",
+            "p4_t28"
+          ],
+          "texts": [
+            "原则上从市级名录中遴选产生",
+            "选竹伐竹"
+          ],
+          "intersection": [
+            35.92,
+            220.29,
+            63.78,
+            222.38
+          ],
+          "union": [
+            29.82,
+            212.24,
+            120.33,
+            230.43
+          ],
+          "fraction_of_smaller_bbox": 0.2061,
+          "id": "p4_overlap_038b91d723"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t35",
+            "p4_t39"
+          ],
+          "texts": [
+            "编织、竹丝篾片成形",
+            "公开口径为四川文旅厅8 道、文旅中国7 道工序；本项目实际工序名称与数量以申报材料为准，不虚构本地独有工序。"
+          ],
+          "intersection": [
+            375.39,
+            234.95,
+            391.95,
+            242.68
+          ],
+          "union": [
+            29.82,
+            232.54,
+            438.07,
+            245.09
+          ],
+          "fraction_of_smaller_bbox": 0.2014,
+          "id": "p4_overlap_7225abb15b"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t9",
+            "p4_t26"
+          ],
+          "texts": [
+            "省级文旅主管部门评审、省级人民政府公布",
+            "技艺体系：四阶段工序链条"
+          ],
+          "intersection": [
+            29.82,
+            211.37,
+            149.43,
+            213.42
+          ],
+          "union": [
+            29.79,
+            203.29,
+            162.09,
+            225.85
+          ],
+          "fraction_of_smaller_bbox": 0.183,
+          "id": "p4_overlap_9407018ed3"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t50",
+            "p4_t51"
+          ],
+          "texts": [
+            "来源：《中华人民共和国非物质文化遗产法》、中国非物质文化遗产网／中国非物质文化遗产数字博物馆、湖北省与安徽省文化和旅游厅通知、广东省非遗申报指南、文旅部非遗工坊认定通知、四川",
+            "文旅厅眉山竹编非遗技艺、文旅中国非遗工坊竹编培训；本项目2018 年获批省级口径逐字沿用，名录编号、批次文号与代表性传承人姓名以申报材料为准，国家级项目数据仅作背景参照。"
+          ],
+          "intersection": [
+            16.87,
+            362.76,
+            591.68,
+            364.51
+          ],
+          "union": [
+            16.87,
+            354.37,
+            622.4,
+            372.9
+          ],
+          "fraction_of_smaller_bbox": 0.1726,
+          "id": "p4_overlap_05f4f9c860"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t15",
+            "p4_t48"
+          ],
+          "texts": [
+            "县级文化主管部门评审、县级人民政府公布",
+            "结论"
+          ],
+          "intersection": [
+            34.92,
+            309.27,
+            48.87,
+            310.99
+          ],
+          "union": [
+            29.82,
+            300.85,
+            162.09,
+            319.41
+          ],
+          "fraction_of_smaller_bbox": 0.1696,
+          "id": "p4_overlap_54ad7ab221"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t30",
+            "p4_t39"
+          ],
+          "texts": [
+            "→",
+            "公开口径为四川文旅厅8 道、文旅中国7 道工序；本项目实际工序名称与数量以申报材料为准，不虚构本地独有工序。"
+          ],
+          "intersection": [
+            186.58,
+            234.95,
+            193.58,
+            236.44
+          ],
+          "union": [
+            29.82,
+            226.3,
+            391.95,
+            245.09
+          ],
+          "fraction_of_smaller_bbox": 0.1469,
+          "id": "p4_overlap_fcfca4f3e9"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t33",
+            "p4_t39"
+          ],
+          "texts": [
+            "→",
+            "公开口径为四川文旅厅8 道、文旅中国7 道工序；本项目实际工序名称与数量以申报材料为准，不虚构本地独有工序。"
+          ],
+          "intersection": [
+            356.32,
+            234.95,
+            363.32,
+            236.44
+          ],
+          "union": [
+            29.82,
+            226.3,
+            391.95,
+            245.09
+          ],
+          "fraction_of_smaller_bbox": 0.1469,
+          "id": "p4_overlap_61db1b84f5"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t15",
+            "p4_t49"
+          ],
+          "texts": [
+            "县级文化主管部门评审、县级人民政府公布",
+            "省级认定为项目合规性与扶持必要性提供制度依据，对应非遗工坊遴选认定与县级乡村振兴项目库入库要求；认定层级说明它值得保，机制说明它如何带动农户。"
+          ],
+          "intersection": [
+            56.38,
+            309.27,
+            162.09,
+            310.99
+          ],
+          "union": [
+            29.82,
+            300.85,
+            550.58,
+            319.41
+          ],
+          "fraction_of_smaller_bbox": 0.1356,
+          "id": "p4_overlap_31b9bface0"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t9",
+            "p4_t10"
+          ],
+          "texts": [
+            "省级文旅主管部门评审、省级人民政府公布",
+            "原则上从市级名录中遴选产生"
+          ],
+          "intersection": [
+            29.82,
+            212.24,
+            120.33,
+            213.42
+          ],
+          "union": [
+            29.82,
+            203.29,
+            162.09,
+            222.38
+          ],
+          "fraction_of_smaller_bbox": 0.1164,
+          "id": "p4_overlap_f44afd8612"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t12",
+            "p4_t13"
+          ],
+          "texts": [
+            "市级文化主管部门评审、市级人民政府公布",
+            "一般从县级名录中遴选产生"
+          ],
+          "intersection": [
+            29.82,
+            261.37,
+            113.36,
+            261.9
+          ],
+          "union": [
+            29.82,
+            251.76,
+            162.09,
+            271.51
+          ],
+          "fraction_of_smaller_bbox": 0.0523,
+          "id": "p4_overlap_bf3de8c48f"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t15",
+            "p4_t16"
+          ],
+          "texts": [
+            "县级文化主管部门评审、县级人民政府公布",
+            "本级直接申报受理"
+          ],
+          "intersection": [
+            29.82,
+            310.49,
+            85.52,
+            310.99
+          ],
+          "union": [
+            29.82,
+            300.85,
+            162.09,
+            320.63
+          ],
+          "fraction_of_smaller_bbox": 0.0493,
+          "id": "p4_overlap_b2a5f4018f"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t5",
+            "p4_t6"
+          ],
+          "texts": [
+            "国务院文化主管部门评审、国务院公布",
+            "1557 项、3610 个子项，五批次（背景参照）"
+          ],
+          "intersection": [
+            29.82,
+            154.16,
+            148.17,
+            154.66
+          ],
+          "union": [
+            29.82,
+            144.52,
+            168.38,
+            164.3
+          ],
+          "fraction_of_smaller_bbox": 0.0493,
+          "id": "p4_overlap_edfe75bce6"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t8",
+            "p4_t9"
+          ],
+          "texts": [
+            "2018 年获批省级代表性项目（本项目）",
+            "省级文旅主管部门评审、省级人民政府公布"
+          ],
+          "intersection": [
+            29.82,
+            203.29,
+            150.55,
+            203.79
+          ],
+          "union": [
+            29.82,
+            193.65,
+            162.09,
+            213.42
+          ],
+          "fraction_of_smaller_bbox": 0.0493,
+          "id": "p4_overlap_5427f8fbd2"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t45",
+            "p4_t49"
+          ],
+          "texts": [
+            "可纳入县域文旅叙事，参与非遗购物节、展示展销与电商平台推广",
+            "省级认定为项目合规性与扶持必要性提供制度依据，对应非遗工坊遴选认定与县级乡村振兴项目库入库要求；认定层级说明它值得保，机制说明它如何带动农户。"
+          ],
+          "intersection": [
+            259.85,
+            309.27,
+            461.71,
+            309.63
+          ],
+          "union": [
+            56.38,
+            299.49,
+            550.58,
+            319.41
+          ],
+          "fraction_of_smaller_bbox": 0.0355,
+          "id": "p4_overlap_d9415b0ff0"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t43",
+            "p4_t49"
+          ],
+          "texts": [
+            "六代传承的集体记忆与乡土认同，对应真实性、整体性、传承性",
+            "省级认定为项目合规性与扶持必要性提供制度依据，对应非遗工坊遴选认定与县级乡村振兴项目库入库要求；认定层级说明它值得保，机制说明它如何带动农户。"
+          ],
+          "intersection": [
+            56.38,
+            309.27,
+            232.02,
+            309.63
+          ],
+          "union": [
+            37.11,
+            299.49,
+            550.58,
+            319.41
+          ],
+          "fraction_of_smaller_bbox": 0.032,
+          "id": "p4_overlap_b061527ae3"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t43",
+            "p4_t48"
+          ],
+          "texts": [
+            "六代传承的集体记忆与乡土认同，对应真实性、整体性、传承性",
+            "结论"
+          ],
+          "intersection": [
+            37.11,
+            309.27,
+            48.87,
+            309.63
+          ],
+          "union": [
+            34.92,
+            299.49,
+            232.02,
+            319.41
+          ],
+          "fraction_of_smaller_bbox": 0.0299,
+          "id": "p4_overlap_e06ed07a4a"
+        },
+        {
+          "page": 4,
+          "span_ids": [
+            "p4_t47",
+            "p4_t49"
+          ],
+          "texts": [
+            "满足非遗工坊依托代表性项目的硬条件，提供品牌与品质背书",
+            "省级认定为项目合规性与扶持必要性提供制度依据，对应非遗工坊遴选认定与县级乡村振兴项目库入库要求；认定层级说明它值得保，机制说明它如何带动农户。"
+          ],
+          "intersection": [
+            482.6,
+            309.27,
+            550.58,
+            309.63
+          ],
+          "union": [
+            56.38,
+            299.49,
+            670.54,
+            319.41
+          ],
+          "fraction_of_smaller_bbox": 0.0128,
+          "id": "p4_overlap_1964e9e1e4"
+        }
+      ]
+    },
+    {
+      "page": 8,
+      "page_size": [
+        720.0,
+        405.01416015625
+      ],
+      "coordinate_system": "PDF points; origin top left; bbox=x0,y0,x1,y1",
+      "spans": [
+        {
+          "id": "p8_t1",
+          "text": "厂房建设",
+          "bbox": [
+            176.94,
+            190.16,
+            208.61,
+            201.61
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t2",
+          "text": "120 万元 42.9%",
+          "bbox": [
+            176.91,
+            198.61,
+            233.73,
+            210.06
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t3",
+          "text": "设备采购",
+          "bbox": [
+            78.43,
+            242.34,
+            110.1,
+            253.8
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t4",
+          "text": "60 万元 21.4%",
+          "bbox": [
+            57.6,
+            250.79,
+            110.07,
+            262.24
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t5",
+          "text": "品牌推广",
+          "bbox": [
+            48.39,
+            209.55,
+            80.05,
+            221.0
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t6",
+          "text": "40 万元 14.3%",
+          "bbox": [
+            27.69,
+            217.99,
+            80.05,
+            229.45
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t7",
+          "text": "培训经费",
+          "bbox": [
+            53.58,
+            176.78,
+            85.24,
+            188.23
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t8",
+          "text": "30 万元 10.7%",
+          "bbox": [
+            32.99,
+            185.2,
+            85.24,
+            196.65
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t9",
+          "text": "流动资金",
+          "bbox": [
+            73.73,
+            158.72,
+            105.4,
+            170.17
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t10",
+          "text": "30 万元 10.7%",
+          "bbox": [
+            53.15,
+            167.14,
+            105.39,
+            178.59
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t11",
+          "text": "总投资",
+          "bbox": [
+            115.23,
+            196.54,
+            138.95,
+            207.99
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p8_t12",
+          "text": "280 万元",
+          "bbox": [
+            106.41,
+            202.27,
+            147.76,
+            217.75
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t13",
+          "text": "资金用途：280 万元五项构成，合计校验一致",
+          "bbox": [
+            16.87,
+            27.18,
+            398.14,
+            54.68
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t14",
+          "text": "总投资280 万元＝厂房建设120 ＋设备采购60 ＋培训经费30 ＋品牌推广40 ＋流动资金30 万元，五项合计校验一致，并逐项对应三年规划产出。",
+          "bbox": [
+            16.87,
+            87.98,
+            533.99,
+            99.56
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t15",
+          "text": "资金构成占比（5 项）",
+          "bbox": [
+            26.33,
+            117.19,
+            116.57,
+            130.24
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t16",
+          "text": "单位：万元 · 占比为测算",
+          "bbox": [
+            612.65,
+            118.7,
+            692.65,
+            128.84
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p8_t17",
+          "text": "120+60+30+40+30 ＝280 万元",
+          "bbox": [
+            34.84,
+            236.59,
+            129.12,
+            246.73
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t18",
+          "text": "（合计一致）",
+          "bbox": [
+            129.09,
+            236.59,
+            170.87,
+            246.73
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p8_t19",
+          "text": "占比为测算值，保留一位小数并四舍五入，合计100.0%",
+          "bbox": [
+            34.87,
+            249.04,
+            206.05,
+            259.18
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p8_t20",
+          "text": "资金—规划逐项对应表",
+          "bbox": [
+            26.45,
+            237.57,
+            116.53,
+            250.63
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t21",
+          "text": "阵地 → 产能 → 能力 → 市场 → 周转",
+          "bbox": [
+            578.21,
+            239.06,
+            689.76,
+            249.2
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p8_t22",
+          "text": "资金项",
+          "bbox": [
+            26.45,
+            256.24,
+            47.37,
+            266.38
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p8_t23",
+          "text": "金额",
+          "bbox": [
+            26.45,
+            266.36,
+            40.39,
+            276.5
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p8_t24",
+          "text": "对应阶段",
+          "bbox": [
+            26.45,
+            276.48,
+            54.31,
+            286.61
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p8_t25",
+          "text": "形成的实物／能力产出",
+          "bbox": [
+            26.45,
+            286.6,
+            96.07,
+            296.73
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p8_t26",
+          "text": "厂房建设",
+          "bbox": [
+            26.45,
+            300.51,
+            54.31,
+            310.65
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t27",
+          "text": "120 万元",
+          "bbox": [
+            26.45,
+            311.63,
+            52.9,
+            321.76
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p8_t28",
+          "text": "第一年",
+          "bbox": [
+            26.45,
+            323.45,
+            47.37,
+            333.59
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t29",
+          "text": "800 ㎡工坊建成投用，形成生产阵地与培训场所",
+          "bbox": [
+            26.45,
+            333.59,
+            171.75,
+            343.73
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t30",
+          "text": "设备采购",
+          "bbox": [
+            26.45,
+            301.08,
+            54.31,
+            311.22
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t31",
+          "text": "60 万元",
+          "bbox": [
+            26.45,
+            312.19,
+            49.66,
+            322.33
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p8_t32",
+          "text": "第一年进场、第二年扩产",
+          "bbox": [
+            26.45,
+            324.01,
+            103.04,
+            334.15
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t33",
+          "text": "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+          "bbox": [
+            26.45,
+            334.16,
+            203.9,
+            344.3
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t34",
+          "text": "培训经费",
+          "bbox": [
+            26.45,
+            301.65,
+            54.31,
+            311.79
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t35",
+          "text": "30 万元",
+          "bbox": [
+            26.45,
+            312.76,
+            49.61,
+            322.9
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p8_t36",
+          "text": "第一年为主、延续第二年",
+          "bbox": [
+            26.45,
+            324.58,
+            103.04,
+            334.72
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t37",
+          "text": "培训50 人，支撑计件农户由60 户扩至120 户",
+          "bbox": [
+            26.45,
+            334.73,
+            166.93,
+            344.87
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t38",
+          "text": "品牌推广",
+          "bbox": [
+            26.45,
+            302.21,
+            54.31,
+            312.35
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t39",
+          "text": "40 万元",
+          "bbox": [
+            26.45,
+            313.33,
+            49.61,
+            323.47
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p8_t40",
+          "text": "第三年",
+          "bbox": [
+            26.45,
+            325.12,
+            47.37,
+            335.26
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t41",
+          "text": "品牌包装设计与电商平台入驻运营，形成市场出口",
+          "bbox": [
+            26.45,
+            335.29,
+            179.6,
+            345.43
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t42",
+          "text": "流动资金",
+          "bbox": [
+            26.45,
+            302.78,
+            54.31,
+            312.92
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p8_t43",
+          "text": "30 万元",
+          "bbox": [
+            26.45,
+            313.89,
+            49.61,
+            324.03
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p8_t44",
+          "text": "三年滚动",
+          "bbox": [
+            26.45,
+            325.69,
+            54.31,
+            335.82
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t45",
+          "text": "原料统一采购与按件计酬按月兑付周转，保障不断链",
+          "bbox": [
+            26.45,
+            335.86,
+            186.55,
+            346.0
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p8_t46",
+          "text": "资金管理与合规",
+          "bbox": [
+            26.5,
+            295.86,
+            75.26,
+            306.0
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p8_t47",
+          "text": "专账核算",
+          "bbox": [
+            87.51,
+            295.81,
+            115.37,
+            305.95
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t48",
+          "text": "按进度拨付",
+          "bbox": [
+            130.28,
+            295.81,
+            165.12,
+            305.95
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t49",
+          "text": "验收后结算",
+          "bbox": [
+            180.14,
+            295.81,
+            214.98,
+            305.95
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t50",
+          "text": "留存凭证",
+          "bbox": [
+            230.23,
+            295.81,
+            258.1,
+            305.95
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p8_t51",
+          "text": "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。",
+          "bbox": [
+            26.45,
+            310.18,
+            445.83,
+            320.32
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p8_t52",
+          "text": "数据来源：申报口径给定值（总投资280 万元；厂房120 ／设备60 ／培训30 ／品牌40 ／流动资金30 万元）；占比为金额÷280 万元的算术测算值，四舍五入保留一位小数后合计100.0% ；合规口径参照",
+          "bbox": [
+            16.87,
+            354.37,
+            645.9,
+            364.51
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p8_t53",
+          "text": "文旅部工坊认定通知与县级衔接资金管理要求。",
+          "bbox": [
+            16.87,
+            362.76,
+            163.05,
+            372.9
+          ],
+          "color": "#87867f"
+        }
+      ],
+      "limit": "Bounding boxes assist localization only. Intersection is not proof of occlusion; inspect the image.",
+      "text_overlap_candidates": [
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t36",
+            "p8_t40"
+          ],
+          "texts": [
+            "第一年为主、延续第二年",
+            "第三年"
+          ],
+          "intersection": [
+            26.45,
+            325.12,
+            47.37,
+            334.72
+          ],
+          "union": [
+            26.45,
+            324.58,
+            103.04,
+            335.26
+          ],
+          "fraction_of_smaller_bbox": 0.9467,
+          "id": "p8_overlap_a6a1b443b8"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t28",
+            "p8_t32"
+          ],
+          "texts": [
+            "第一年",
+            "第一年进场、第二年扩产"
+          ],
+          "intersection": [
+            26.45,
+            324.01,
+            47.37,
+            333.59
+          ],
+          "union": [
+            26.45,
+            323.45,
+            103.04,
+            334.15
+          ],
+          "fraction_of_smaller_bbox": 0.9448,
+          "id": "p8_overlap_c4a669a9b7"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t34",
+            "p8_t38"
+          ],
+          "texts": [
+            "培训经费",
+            "品牌推广"
+          ],
+          "intersection": [
+            26.45,
+            302.21,
+            54.31,
+            311.79
+          ],
+          "union": [
+            26.45,
+            301.65,
+            54.31,
+            312.35
+          ],
+          "fraction_of_smaller_bbox": 0.9448,
+          "id": "p8_overlap_39d3ae07e1"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t37",
+            "p8_t41"
+          ],
+          "texts": [
+            "培训50 人，支撑计件农户由60 户扩至120 户",
+            "品牌包装设计与电商平台入驻运营，形成市场出口"
+          ],
+          "intersection": [
+            26.45,
+            335.29,
+            166.93,
+            344.87
+          ],
+          "union": [
+            26.45,
+            334.73,
+            179.6,
+            345.43
+          ],
+          "fraction_of_smaller_bbox": 0.9448,
+          "id": "p8_overlap_4e7d5b7230"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t39",
+            "p8_t43"
+          ],
+          "texts": [
+            "40 万元",
+            "30 万元"
+          ],
+          "intersection": [
+            26.45,
+            313.89,
+            49.61,
+            323.47
+          ],
+          "union": [
+            26.45,
+            313.33,
+            49.61,
+            324.03
+          ],
+          "fraction_of_smaller_bbox": 0.9448,
+          "id": "p8_overlap_ae71e6d3db"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t26",
+            "p8_t30"
+          ],
+          "texts": [
+            "厂房建设",
+            "设备采购"
+          ],
+          "intersection": [
+            26.45,
+            301.08,
+            54.31,
+            310.65
+          ],
+          "union": [
+            26.45,
+            300.51,
+            54.31,
+            311.22
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_ef2568778a"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t27",
+            "p8_t31"
+          ],
+          "texts": [
+            "120 万元",
+            "60 万元"
+          ],
+          "intersection": [
+            26.45,
+            312.19,
+            49.66,
+            321.76
+          ],
+          "union": [
+            26.45,
+            311.63,
+            52.9,
+            322.33
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_cc2a03c1bd"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t29",
+            "p8_t33"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用，形成生产阵地与培训场所",
+            "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力"
+          ],
+          "intersection": [
+            26.45,
+            334.16,
+            171.75,
+            343.73
+          ],
+          "union": [
+            26.45,
+            333.59,
+            203.9,
+            344.3
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_ad61a22885"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t30",
+            "p8_t34"
+          ],
+          "texts": [
+            "设备采购",
+            "培训经费"
+          ],
+          "intersection": [
+            26.45,
+            301.65,
+            54.31,
+            311.22
+          ],
+          "union": [
+            26.45,
+            301.08,
+            54.31,
+            311.79
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_a72d49ca17"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t31",
+            "p8_t35"
+          ],
+          "texts": [
+            "60 万元",
+            "30 万元"
+          ],
+          "intersection": [
+            26.45,
+            312.76,
+            49.61,
+            322.33
+          ],
+          "union": [
+            26.45,
+            312.19,
+            49.66,
+            322.9
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_48c8fbb3b6"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t32",
+            "p8_t36"
+          ],
+          "texts": [
+            "第一年进场、第二年扩产",
+            "第一年为主、延续第二年"
+          ],
+          "intersection": [
+            26.45,
+            324.58,
+            103.04,
+            334.15
+          ],
+          "union": [
+            26.45,
+            324.01,
+            103.04,
+            334.72
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_a751d757ef"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t33",
+            "p8_t37"
+          ],
+          "texts": [
+            "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+            "培训50 人，支撑计件农户由60 户扩至120 户"
+          ],
+          "intersection": [
+            26.45,
+            334.73,
+            166.93,
+            344.3
+          ],
+          "union": [
+            26.45,
+            334.16,
+            203.9,
+            344.87
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_35c1572542"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t35",
+            "p8_t39"
+          ],
+          "texts": [
+            "30 万元",
+            "40 万元"
+          ],
+          "intersection": [
+            26.45,
+            313.33,
+            49.61,
+            322.9
+          ],
+          "union": [
+            26.45,
+            312.76,
+            49.61,
+            323.47
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_7e35ecf708"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t38",
+            "p8_t42"
+          ],
+          "texts": [
+            "品牌推广",
+            "流动资金"
+          ],
+          "intersection": [
+            26.45,
+            302.78,
+            54.31,
+            312.35
+          ],
+          "union": [
+            26.45,
+            302.21,
+            54.31,
+            312.92
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_4c22b90597"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t40",
+            "p8_t44"
+          ],
+          "texts": [
+            "第三年",
+            "三年滚动"
+          ],
+          "intersection": [
+            26.45,
+            325.69,
+            47.37,
+            335.26
+          ],
+          "union": [
+            26.45,
+            325.12,
+            54.31,
+            335.82
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_7eb8baf0e7"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t41",
+            "p8_t45"
+          ],
+          "texts": [
+            "品牌包装设计与电商平台入驻运营，形成市场出口",
+            "原料统一采购与按件计酬按月兑付周转，保障不断链"
+          ],
+          "intersection": [
+            26.45,
+            335.86,
+            179.6,
+            345.43
+          ],
+          "union": [
+            26.45,
+            335.29,
+            186.55,
+            346.0
+          ],
+          "fraction_of_smaller_bbox": 0.9438,
+          "id": "p8_overlap_be8a32cef6"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t36",
+            "p8_t44"
+          ],
+          "texts": [
+            "第一年为主、延续第二年",
+            "三年滚动"
+          ],
+          "intersection": [
+            26.45,
+            325.69,
+            54.31,
+            334.72
+          ],
+          "union": [
+            26.45,
+            324.58,
+            103.04,
+            335.82
+          ],
+          "fraction_of_smaller_bbox": 0.8914,
+          "id": "p8_overlap_5514a0e831"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t32",
+            "p8_t40"
+          ],
+          "texts": [
+            "第一年进场、第二年扩产",
+            "第三年"
+          ],
+          "intersection": [
+            26.45,
+            325.12,
+            47.37,
+            334.15
+          ],
+          "union": [
+            26.45,
+            324.01,
+            103.04,
+            335.26
+          ],
+          "fraction_of_smaller_bbox": 0.8905,
+          "id": "p8_overlap_dbd019b1bf"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t28",
+            "p8_t36"
+          ],
+          "texts": [
+            "第一年",
+            "第一年为主、延续第二年"
+          ],
+          "intersection": [
+            26.45,
+            324.58,
+            47.37,
+            333.59
+          ],
+          "union": [
+            26.45,
+            323.45,
+            103.04,
+            334.72
+          ],
+          "fraction_of_smaller_bbox": 0.8886,
+          "id": "p8_overlap_3e7940c18d"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t30",
+            "p8_t38"
+          ],
+          "texts": [
+            "设备采购",
+            "品牌推广"
+          ],
+          "intersection": [
+            26.45,
+            302.21,
+            54.31,
+            311.22
+          ],
+          "union": [
+            26.45,
+            301.08,
+            54.31,
+            312.35
+          ],
+          "fraction_of_smaller_bbox": 0.8886,
+          "id": "p8_overlap_fc3971e7fb"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t33",
+            "p8_t41"
+          ],
+          "texts": [
+            "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+            "品牌包装设计与电商平台入驻运营，形成市场出口"
+          ],
+          "intersection": [
+            26.45,
+            335.29,
+            179.6,
+            344.3
+          ],
+          "union": [
+            26.45,
+            334.16,
+            203.9,
+            345.43
+          ],
+          "fraction_of_smaller_bbox": 0.8886,
+          "id": "p8_overlap_a8629bb4e8"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t34",
+            "p8_t42"
+          ],
+          "texts": [
+            "培训经费",
+            "流动资金"
+          ],
+          "intersection": [
+            26.45,
+            302.78,
+            54.31,
+            311.79
+          ],
+          "union": [
+            26.45,
+            301.65,
+            54.31,
+            312.92
+          ],
+          "fraction_of_smaller_bbox": 0.8886,
+          "id": "p8_overlap_97ad230c12"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t35",
+            "p8_t43"
+          ],
+          "texts": [
+            "30 万元",
+            "30 万元"
+          ],
+          "intersection": [
+            26.45,
+            313.89,
+            49.61,
+            322.9
+          ],
+          "union": [
+            26.45,
+            312.76,
+            49.61,
+            324.03
+          ],
+          "fraction_of_smaller_bbox": 0.8886,
+          "id": "p8_overlap_95529ad431"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t37",
+            "p8_t45"
+          ],
+          "texts": [
+            "培训50 人，支撑计件农户由60 户扩至120 户",
+            "原料统一采购与按件计酬按月兑付周转，保障不断链"
+          ],
+          "intersection": [
+            26.45,
+            335.86,
+            166.93,
+            344.87
+          ],
+          "union": [
+            26.45,
+            334.73,
+            186.55,
+            346.0
+          ],
+          "fraction_of_smaller_bbox": 0.8886,
+          "id": "p8_overlap_00d1dd8538"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t26",
+            "p8_t34"
+          ],
+          "texts": [
+            "厂房建设",
+            "培训经费"
+          ],
+          "intersection": [
+            26.45,
+            301.65,
+            54.31,
+            310.65
+          ],
+          "union": [
+            26.45,
+            300.51,
+            54.31,
+            311.79
+          ],
+          "fraction_of_smaller_bbox": 0.8876,
+          "id": "p8_overlap_fe92962663"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t27",
+            "p8_t35"
+          ],
+          "texts": [
+            "120 万元",
+            "30 万元"
+          ],
+          "intersection": [
+            26.45,
+            312.76,
+            49.61,
+            321.76
+          ],
+          "union": [
+            26.45,
+            311.63,
+            52.9,
+            322.9
+          ],
+          "fraction_of_smaller_bbox": 0.8876,
+          "id": "p8_overlap_06610340ea"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t29",
+            "p8_t37"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用，形成生产阵地与培训场所",
+            "培训50 人，支撑计件农户由60 户扩至120 户"
+          ],
+          "intersection": [
+            26.45,
+            334.73,
+            166.93,
+            343.73
+          ],
+          "union": [
+            26.45,
+            333.59,
+            171.75,
+            344.87
+          ],
+          "fraction_of_smaller_bbox": 0.8876,
+          "id": "p8_overlap_b345093e58"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t31",
+            "p8_t39"
+          ],
+          "texts": [
+            "60 万元",
+            "40 万元"
+          ],
+          "intersection": [
+            26.45,
+            313.33,
+            49.61,
+            322.33
+          ],
+          "union": [
+            26.45,
+            312.19,
+            49.66,
+            323.47
+          ],
+          "fraction_of_smaller_bbox": 0.8876,
+          "id": "p8_overlap_3a4a9304e8"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t27",
+            "p8_t51"
+          ],
+          "texts": [
+            "120 万元",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            311.63,
+            52.9,
+            320.32
+          ],
+          "union": [
+            26.45,
+            310.18,
+            445.83,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.8578,
+          "id": "p8_overlap_417bfdd8a9"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t28",
+            "p8_t40"
+          ],
+          "texts": [
+            "第一年",
+            "第三年"
+          ],
+          "intersection": [
+            26.45,
+            325.12,
+            47.37,
+            333.59
+          ],
+          "union": [
+            26.45,
+            323.45,
+            47.37,
+            335.26
+          ],
+          "fraction_of_smaller_bbox": 0.8353,
+          "id": "p8_overlap_34bec049be"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t32",
+            "p8_t44"
+          ],
+          "texts": [
+            "第一年进场、第二年扩产",
+            "三年滚动"
+          ],
+          "intersection": [
+            26.45,
+            325.69,
+            54.31,
+            334.15
+          ],
+          "union": [
+            26.45,
+            324.01,
+            103.04,
+            335.82
+          ],
+          "fraction_of_smaller_bbox": 0.8351,
+          "id": "p8_overlap_48d1aa8136"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t26",
+            "p8_t38"
+          ],
+          "texts": [
+            "厂房建设",
+            "品牌推广"
+          ],
+          "intersection": [
+            26.45,
+            302.21,
+            54.31,
+            310.65
+          ],
+          "union": [
+            26.45,
+            300.51,
+            54.31,
+            312.35
+          ],
+          "fraction_of_smaller_bbox": 0.8323,
+          "id": "p8_overlap_ea7056c000"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t29",
+            "p8_t41"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用，形成生产阵地与培训场所",
+            "品牌包装设计与电商平台入驻运营，形成市场出口"
+          ],
+          "intersection": [
+            26.45,
+            335.29,
+            171.75,
+            343.73
+          ],
+          "union": [
+            26.45,
+            333.59,
+            179.6,
+            345.43
+          ],
+          "fraction_of_smaller_bbox": 0.8323,
+          "id": "p8_overlap_1a8230e225"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t30",
+            "p8_t42"
+          ],
+          "texts": [
+            "设备采购",
+            "流动资金"
+          ],
+          "intersection": [
+            26.45,
+            302.78,
+            54.31,
+            311.22
+          ],
+          "union": [
+            26.45,
+            301.08,
+            54.31,
+            312.92
+          ],
+          "fraction_of_smaller_bbox": 0.8323,
+          "id": "p8_overlap_88233405ee"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t31",
+            "p8_t43"
+          ],
+          "texts": [
+            "60 万元",
+            "30 万元"
+          ],
+          "intersection": [
+            26.45,
+            313.89,
+            49.61,
+            322.33
+          ],
+          "union": [
+            26.45,
+            312.19,
+            49.66,
+            324.03
+          ],
+          "fraction_of_smaller_bbox": 0.8323,
+          "id": "p8_overlap_0748e365c9"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t33",
+            "p8_t45"
+          ],
+          "texts": [
+            "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+            "原料统一采购与按件计酬按月兑付周转，保障不断链"
+          ],
+          "intersection": [
+            26.45,
+            335.86,
+            186.55,
+            344.3
+          ],
+          "union": [
+            26.45,
+            334.16,
+            203.9,
+            346.0
+          ],
+          "fraction_of_smaller_bbox": 0.8323,
+          "id": "p8_overlap_af4f347981"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t27",
+            "p8_t39"
+          ],
+          "texts": [
+            "120 万元",
+            "40 万元"
+          ],
+          "intersection": [
+            26.45,
+            313.33,
+            49.61,
+            321.76
+          ],
+          "union": [
+            26.45,
+            311.63,
+            52.9,
+            323.47
+          ],
+          "fraction_of_smaller_bbox": 0.8314,
+          "id": "p8_overlap_779302dfa7"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t31",
+            "p8_t51"
+          ],
+          "texts": [
+            "60 万元",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            312.19,
+            49.66,
+            320.32
+          ],
+          "union": [
+            26.45,
+            310.18,
+            445.83,
+            322.33
+          ],
+          "fraction_of_smaller_bbox": 0.8018,
+          "id": "p8_overlap_52c51f7825"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t17",
+            "p8_t20"
+          ],
+          "texts": [
+            "120+60+30+40+30 ＝280 万元",
+            "资金—规划逐项对应表"
+          ],
+          "intersection": [
+            34.84,
+            237.57,
+            116.53,
+            246.73
+          ],
+          "union": [
+            26.45,
+            236.59,
+            129.12,
+            250.63
+          ],
+          "fraction_of_smaller_bbox": 0.7827,
+          "id": "p8_overlap_7248bedd4f"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t28",
+            "p8_t44"
+          ],
+          "texts": [
+            "第一年",
+            "三年滚动"
+          ],
+          "intersection": [
+            26.45,
+            325.69,
+            47.37,
+            333.59
+          ],
+          "union": [
+            26.45,
+            323.45,
+            54.31,
+            335.82
+          ],
+          "fraction_of_smaller_bbox": 0.7791,
+          "id": "p8_overlap_908c798fe4"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t26",
+            "p8_t42"
+          ],
+          "texts": [
+            "厂房建设",
+            "流动资金"
+          ],
+          "intersection": [
+            26.45,
+            302.78,
+            54.31,
+            310.65
+          ],
+          "union": [
+            26.45,
+            300.51,
+            54.31,
+            312.92
+          ],
+          "fraction_of_smaller_bbox": 0.7761,
+          "id": "p8_overlap_bef6f0f99c"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t27",
+            "p8_t43"
+          ],
+          "texts": [
+            "120 万元",
+            "30 万元"
+          ],
+          "intersection": [
+            26.45,
+            313.89,
+            49.61,
+            321.76
+          ],
+          "union": [
+            26.45,
+            311.63,
+            52.9,
+            324.03
+          ],
+          "fraction_of_smaller_bbox": 0.7761,
+          "id": "p8_overlap_680611c697"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t29",
+            "p8_t45"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用，形成生产阵地与培训场所",
+            "原料统一采购与按件计酬按月兑付周转，保障不断链"
+          ],
+          "intersection": [
+            26.45,
+            335.86,
+            171.75,
+            343.73
+          ],
+          "union": [
+            26.45,
+            333.59,
+            186.55,
+            346.0
+          ],
+          "fraction_of_smaller_bbox": 0.7761,
+          "id": "p8_overlap_7886992006"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t35",
+            "p8_t51"
+          ],
+          "texts": [
+            "30 万元",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            312.76,
+            49.61,
+            320.32
+          ],
+          "union": [
+            26.45,
+            310.18,
+            445.83,
+            322.9
+          ],
+          "fraction_of_smaller_bbox": 0.7456,
+          "id": "p8_overlap_5315c2771b"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t4",
+            "p8_t19"
+          ],
+          "texts": [
+            "60 万元 21.4%",
+            "占比为测算值，保留一位小数并四舍五入，合计100.0%"
+          ],
+          "intersection": [
+            57.6,
+            250.79,
+            110.07,
+            259.18
+          ],
+          "union": [
+            34.87,
+            249.04,
+            206.05,
+            262.24
+          ],
+          "fraction_of_smaller_bbox": 0.7328,
+          "id": "p8_overlap_1110d10414"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t3",
+            "p8_t20"
+          ],
+          "texts": [
+            "设备采购",
+            "资金—规划逐项对应表"
+          ],
+          "intersection": [
+            78.43,
+            242.34,
+            110.1,
+            250.63
+          ],
+          "union": [
+            26.45,
+            237.57,
+            116.53,
+            253.8
+          ],
+          "fraction_of_smaller_bbox": 0.7234,
+          "id": "p8_overlap_cebb92ecae"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t39",
+            "p8_t51"
+          ],
+          "texts": [
+            "40 万元",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            313.33,
+            49.61,
+            320.32
+          ],
+          "union": [
+            26.45,
+            310.18,
+            445.83,
+            323.47
+          ],
+          "fraction_of_smaller_bbox": 0.6893,
+          "id": "p8_overlap_4521328a09"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t43",
+            "p8_t51"
+          ],
+          "texts": [
+            "30 万元",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            313.89,
+            49.61,
+            320.32
+          ],
+          "union": [
+            26.45,
+            310.18,
+            445.83,
+            324.03
+          ],
+          "fraction_of_smaller_bbox": 0.6341,
+          "id": "p8_overlap_67b3f40322"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t26",
+            "p8_t46"
+          ],
+          "texts": [
+            "厂房建设",
+            "资金管理与合规"
+          ],
+          "intersection": [
+            26.5,
+            300.51,
+            54.31,
+            306.0
+          ],
+          "union": [
+            26.45,
+            295.86,
+            75.26,
+            310.65
+          ],
+          "fraction_of_smaller_bbox": 0.5404,
+          "id": "p8_overlap_11e2f98727"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t11",
+            "p8_t12"
+          ],
+          "texts": [
+            "总投资",
+            "280 万元"
+          ],
+          "intersection": [
+            115.23,
+            202.27,
+            138.95,
+            207.99
+          ],
+          "union": [
+            106.41,
+            196.54,
+            147.76,
+            217.75
+          ],
+          "fraction_of_smaller_bbox": 0.4996,
+          "id": "p8_overlap_27c2994e72"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t30",
+            "p8_t46"
+          ],
+          "texts": [
+            "设备采购",
+            "资金管理与合规"
+          ],
+          "intersection": [
+            26.5,
+            301.08,
+            54.31,
+            306.0
+          ],
+          "union": [
+            26.45,
+            295.86,
+            75.26,
+            311.22
+          ],
+          "fraction_of_smaller_bbox": 0.4843,
+          "id": "p8_overlap_0986bf9635"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t34",
+            "p8_t46"
+          ],
+          "texts": [
+            "培训经费",
+            "资金管理与合规"
+          ],
+          "intersection": [
+            26.5,
+            301.65,
+            54.31,
+            306.0
+          ],
+          "union": [
+            26.45,
+            295.86,
+            75.26,
+            311.79
+          ],
+          "fraction_of_smaller_bbox": 0.4282,
+          "id": "p8_overlap_7589fe3c49"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t3",
+            "p8_t19"
+          ],
+          "texts": [
+            "设备采购",
+            "占比为测算值，保留一位小数并四舍五入，合计100.0%"
+          ],
+          "intersection": [
+            78.43,
+            249.04,
+            110.1,
+            253.8
+          ],
+          "union": [
+            34.87,
+            242.34,
+            206.05,
+            259.18
+          ],
+          "fraction_of_smaller_bbox": 0.4154,
+          "id": "p8_overlap_ffda744e1d"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t3",
+            "p8_t17"
+          ],
+          "texts": [
+            "设备采购",
+            "120+60+30+40+30 ＝280 万元"
+          ],
+          "intersection": [
+            78.43,
+            242.34,
+            110.1,
+            246.73
+          ],
+          "union": [
+            34.84,
+            236.59,
+            129.12,
+            253.8
+          ],
+          "fraction_of_smaller_bbox": 0.3831,
+          "id": "p8_overlap_54a570b6f6"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t38",
+            "p8_t46"
+          ],
+          "texts": [
+            "品牌推广",
+            "资金管理与合规"
+          ],
+          "intersection": [
+            26.5,
+            302.21,
+            54.31,
+            306.0
+          ],
+          "union": [
+            26.45,
+            295.86,
+            75.26,
+            312.35
+          ],
+          "fraction_of_smaller_bbox": 0.3731,
+          "id": "p8_overlap_d7ceee8a58"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t42",
+            "p8_t46"
+          ],
+          "texts": [
+            "流动资金",
+            "资金管理与合规"
+          ],
+          "intersection": [
+            26.5,
+            302.78,
+            54.31,
+            306.0
+          ],
+          "union": [
+            26.45,
+            295.86,
+            75.26,
+            312.92
+          ],
+          "fraction_of_smaller_bbox": 0.317,
+          "id": "p8_overlap_765f8a6d2a"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t42",
+            "p8_t51"
+          ],
+          "texts": [
+            "流动资金",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            310.18,
+            54.31,
+            312.92
+          ],
+          "union": [
+            26.45,
+            302.78,
+            445.83,
+            320.32
+          ],
+          "fraction_of_smaller_bbox": 0.2702,
+          "id": "p8_overlap_93d0e547c9"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t7",
+            "p8_t8"
+          ],
+          "texts": [
+            "培训经费",
+            "30 万元 10.7%"
+          ],
+          "intersection": [
+            53.58,
+            185.2,
+            85.24,
+            188.23
+          ],
+          "union": [
+            32.99,
+            176.78,
+            85.24,
+            196.65
+          ],
+          "fraction_of_smaller_bbox": 0.2646,
+          "id": "p8_overlap_a6cce9b9ab"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t9",
+            "p8_t10"
+          ],
+          "texts": [
+            "流动资金",
+            "30 万元 10.7%"
+          ],
+          "intersection": [
+            73.73,
+            167.14,
+            105.39,
+            170.17
+          ],
+          "union": [
+            53.15,
+            158.72,
+            105.4,
+            178.59
+          ],
+          "fraction_of_smaller_bbox": 0.2645,
+          "id": "p8_overlap_f964c742cd"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t5",
+            "p8_t6"
+          ],
+          "texts": [
+            "品牌推广",
+            "40 万元 14.3%"
+          ],
+          "intersection": [
+            48.39,
+            217.99,
+            80.05,
+            221.0
+          ],
+          "union": [
+            27.69,
+            209.55,
+            80.05,
+            229.45
+          ],
+          "fraction_of_smaller_bbox": 0.2629,
+          "id": "p8_overlap_5e4c947dbb"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t3",
+            "p8_t4"
+          ],
+          "texts": [
+            "设备采购",
+            "60 万元 21.4%"
+          ],
+          "intersection": [
+            78.43,
+            250.79,
+            110.07,
+            253.8
+          ],
+          "union": [
+            57.6,
+            242.34,
+            110.1,
+            262.24
+          ],
+          "fraction_of_smaller_bbox": 0.2624,
+          "id": "p8_overlap_c01d40b24c"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t1",
+            "p8_t2"
+          ],
+          "texts": [
+            "厂房建设",
+            "120 万元 42.9%"
+          ],
+          "intersection": [
+            176.94,
+            198.61,
+            208.61,
+            201.61
+          ],
+          "union": [
+            176.91,
+            190.16,
+            233.73,
+            210.06
+          ],
+          "fraction_of_smaller_bbox": 0.262,
+          "id": "p8_overlap_b8e46920a2"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t29",
+            "p8_t44"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用，形成生产阵地与培训场所",
+            "三年滚动"
+          ],
+          "intersection": [
+            26.45,
+            333.59,
+            54.31,
+            335.82
+          ],
+          "union": [
+            26.45,
+            325.69,
+            171.75,
+            343.73
+          ],
+          "fraction_of_smaller_bbox": 0.2201,
+          "id": "p8_overlap_2e727781da"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t38",
+            "p8_t51"
+          ],
+          "texts": [
+            "品牌推广",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            310.18,
+            54.31,
+            312.35
+          ],
+          "union": [
+            26.45,
+            302.21,
+            445.83,
+            320.32
+          ],
+          "fraction_of_smaller_bbox": 0.214,
+          "id": "p8_overlap_37d35ed291"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t19",
+            "p8_t22"
+          ],
+          "texts": [
+            "占比为测算值，保留一位小数并四舍五入，合计100.0%",
+            "资金项"
+          ],
+          "intersection": [
+            34.87,
+            256.24,
+            47.37,
+            259.18
+          ],
+          "union": [
+            26.45,
+            249.04,
+            206.05,
+            266.38
+          ],
+          "fraction_of_smaller_bbox": 0.1732,
+          "id": "p8_overlap_6386687880"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t52",
+            "p8_t53"
+          ],
+          "texts": [
+            "数据来源：申报口径给定值（总投资280 万元；厂房120 ／设备60 ／培训30 ／品牌40 ／流动资金30 万元）；占比为金额÷280 万元的算术测算值，四舍五入保留一位小数后合计100.0% ；合规口径参照",
+            "文旅部工坊认定通知与县级衔接资金管理要求。"
+          ],
+          "intersection": [
+            16.87,
+            362.76,
+            163.05,
+            364.51
+          ],
+          "union": [
+            16.87,
+            354.37,
+            645.9,
+            372.9
+          ],
+          "fraction_of_smaller_bbox": 0.1726,
+          "id": "p8_overlap_5dcfb78327"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t29",
+            "p8_t40"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用，形成生产阵地与培训场所",
+            "第三年"
+          ],
+          "intersection": [
+            26.45,
+            333.59,
+            47.37,
+            335.26
+          ],
+          "union": [
+            26.45,
+            325.12,
+            171.75,
+            343.73
+          ],
+          "fraction_of_smaller_bbox": 0.1647,
+          "id": "p8_overlap_a3fcdcf41f"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t33",
+            "p8_t44"
+          ],
+          "texts": [
+            "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+            "三年滚动"
+          ],
+          "intersection": [
+            26.45,
+            334.16,
+            54.31,
+            335.82
+          ],
+          "union": [
+            26.45,
+            325.69,
+            203.9,
+            344.3
+          ],
+          "fraction_of_smaller_bbox": 0.1639,
+          "id": "p8_overlap_3dc084c5dd"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t34",
+            "p8_t51"
+          ],
+          "texts": [
+            "培训经费",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            310.18,
+            54.31,
+            311.79
+          ],
+          "union": [
+            26.45,
+            301.65,
+            445.83,
+            320.32
+          ],
+          "fraction_of_smaller_bbox": 0.1588,
+          "id": "p8_overlap_05f582e84b"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t7",
+            "p8_t10"
+          ],
+          "texts": [
+            "培训经费",
+            "30 万元 10.7%"
+          ],
+          "intersection": [
+            53.58,
+            176.78,
+            85.24,
+            178.59
+          ],
+          "union": [
+            53.15,
+            167.14,
+            105.39,
+            188.23
+          ],
+          "fraction_of_smaller_bbox": 0.1581,
+          "id": "p8_overlap_a6802700d3"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t27",
+            "p8_t42"
+          ],
+          "texts": [
+            "120 万元",
+            "流动资金"
+          ],
+          "intersection": [
+            26.45,
+            311.63,
+            52.9,
+            312.92
+          ],
+          "union": [
+            26.45,
+            302.78,
+            54.31,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.1273,
+          "id": "p8_overlap_3b61933ddf"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t29",
+            "p8_t36"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用，形成生产阵地与培训场所",
+            "第一年为主、延续第二年"
+          ],
+          "intersection": [
+            26.45,
+            333.59,
+            103.04,
+            334.72
+          ],
+          "union": [
+            26.45,
+            324.58,
+            171.75,
+            343.73
+          ],
+          "fraction_of_smaller_bbox": 0.1114,
+          "id": "p8_overlap_7ca7f34e7b"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t19",
+            "p8_t20"
+          ],
+          "texts": [
+            "占比为测算值，保留一位小数并四舍五入，合计100.0%",
+            "资金—规划逐项对应表"
+          ],
+          "intersection": [
+            34.87,
+            249.04,
+            116.53,
+            250.63
+          ],
+          "union": [
+            26.45,
+            237.57,
+            206.05,
+            259.18
+          ],
+          "fraction_of_smaller_bbox": 0.1104,
+          "id": "p8_overlap_0baed2074c"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t33",
+            "p8_t40"
+          ],
+          "texts": [
+            "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+            "第三年"
+          ],
+          "intersection": [
+            26.45,
+            334.16,
+            47.37,
+            335.26
+          ],
+          "union": [
+            26.45,
+            325.12,
+            203.9,
+            344.3
+          ],
+          "fraction_of_smaller_bbox": 0.1085,
+          "id": "p8_overlap_949ed877a3"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t37",
+            "p8_t44"
+          ],
+          "texts": [
+            "培训50 人，支撑计件农户由60 户扩至120 户",
+            "三年滚动"
+          ],
+          "intersection": [
+            26.45,
+            334.73,
+            54.31,
+            335.82
+          ],
+          "union": [
+            26.45,
+            325.69,
+            166.93,
+            344.87
+          ],
+          "fraction_of_smaller_bbox": 0.1076,
+          "id": "p8_overlap_00b0d6c9c7"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t30",
+            "p8_t51"
+          ],
+          "texts": [
+            "设备采购",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            310.18,
+            54.31,
+            311.22
+          ],
+          "union": [
+            26.45,
+            301.08,
+            445.83,
+            320.32
+          ],
+          "fraction_of_smaller_bbox": 0.1026,
+          "id": "p8_overlap_2dc9515320"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t25",
+            "p8_t46"
+          ],
+          "texts": [
+            "形成的实物／能力产出",
+            "资金管理与合规"
+          ],
+          "intersection": [
+            26.5,
+            295.86,
+            75.26,
+            296.73
+          ],
+          "union": [
+            26.45,
+            286.6,
+            96.07,
+            306.0
+          ],
+          "fraction_of_smaller_bbox": 0.0858,
+          "id": "p8_overlap_bb408e3b99"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t31",
+            "p8_t42"
+          ],
+          "texts": [
+            "60 万元",
+            "流动资金"
+          ],
+          "intersection": [
+            26.45,
+            312.19,
+            49.66,
+            312.92
+          ],
+          "union": [
+            26.45,
+            302.78,
+            54.31,
+            322.33
+          ],
+          "fraction_of_smaller_bbox": 0.072,
+          "id": "p8_overlap_5e480004af"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t27",
+            "p8_t38"
+          ],
+          "texts": [
+            "120 万元",
+            "品牌推广"
+          ],
+          "intersection": [
+            26.45,
+            311.63,
+            52.9,
+            312.35
+          ],
+          "union": [
+            26.45,
+            302.21,
+            54.31,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.0711,
+          "id": "p8_overlap_3215aba432"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t28",
+            "p8_t43"
+          ],
+          "texts": [
+            "第一年",
+            "30 万元"
+          ],
+          "intersection": [
+            26.45,
+            323.45,
+            47.37,
+            324.03
+          ],
+          "union": [
+            26.45,
+            313.89,
+            49.61,
+            333.59
+          ],
+          "fraction_of_smaller_bbox": 0.0572,
+          "id": "p8_overlap_26c68d4b53"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t29",
+            "p8_t32"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用，形成生产阵地与培训场所",
+            "第一年进场、第二年扩产"
+          ],
+          "intersection": [
+            26.45,
+            333.59,
+            103.04,
+            334.15
+          ],
+          "union": [
+            26.45,
+            324.01,
+            171.75,
+            343.73
+          ],
+          "fraction_of_smaller_bbox": 0.0552,
+          "id": "p8_overlap_e2124f69b7"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t33",
+            "p8_t36"
+          ],
+          "texts": [
+            "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+            "第一年为主、延续第二年"
+          ],
+          "intersection": [
+            26.45,
+            334.16,
+            103.04,
+            334.72
+          ],
+          "union": [
+            26.45,
+            324.58,
+            203.9,
+            344.3
+          ],
+          "fraction_of_smaller_bbox": 0.0552,
+          "id": "p8_overlap_257cd69c78"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t37",
+            "p8_t40"
+          ],
+          "texts": [
+            "培训50 人，支撑计件农户由60 户扩至120 户",
+            "第三年"
+          ],
+          "intersection": [
+            26.45,
+            334.73,
+            47.37,
+            335.26
+          ],
+          "union": [
+            26.45,
+            325.12,
+            166.93,
+            344.87
+          ],
+          "fraction_of_smaller_bbox": 0.0523,
+          "id": "p8_overlap_a421bca8ed"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t41",
+            "p8_t44"
+          ],
+          "texts": [
+            "品牌包装设计与电商平台入驻运营，形成市场出口",
+            "三年滚动"
+          ],
+          "intersection": [
+            26.45,
+            335.29,
+            54.31,
+            335.82
+          ],
+          "union": [
+            26.45,
+            325.69,
+            179.6,
+            345.43
+          ],
+          "fraction_of_smaller_bbox": 0.0523,
+          "id": "p8_overlap_7ce0af16be"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t26",
+            "p8_t51"
+          ],
+          "texts": [
+            "厂房建设",
+            "符合县级扶持资金与乡村振兴项目库管理要求（文旅部 工坊认定通知）；分渠道列支、科目不混用，配套结构按县级主管部门核定执行。"
+          ],
+          "intersection": [
+            26.45,
+            310.18,
+            54.31,
+            310.65
+          ],
+          "union": [
+            26.45,
+            300.51,
+            445.83,
+            320.32
+          ],
+          "fraction_of_smaller_bbox": 0.0464,
+          "id": "p8_overlap_02446da5f8"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t25",
+            "p8_t47"
+          ],
+          "texts": [
+            "形成的实物／能力产出",
+            "专账核算"
+          ],
+          "intersection": [
+            87.51,
+            295.81,
+            96.07,
+            296.73
+          ],
+          "union": [
+            26.45,
+            286.6,
+            115.37,
+            305.95
+          ],
+          "fraction_of_smaller_bbox": 0.0279,
+          "id": "p8_overlap_b97741436a"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t27",
+            "p8_t34"
+          ],
+          "texts": [
+            "120 万元",
+            "培训经费"
+          ],
+          "intersection": [
+            26.45,
+            311.63,
+            52.9,
+            311.79
+          ],
+          "union": [
+            26.45,
+            301.65,
+            54.31,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.0158,
+          "id": "p8_overlap_080efb2aae"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t31",
+            "p8_t38"
+          ],
+          "texts": [
+            "60 万元",
+            "品牌推广"
+          ],
+          "intersection": [
+            26.45,
+            312.19,
+            49.66,
+            312.35
+          ],
+          "union": [
+            26.45,
+            302.21,
+            54.31,
+            322.33
+          ],
+          "fraction_of_smaller_bbox": 0.0158,
+          "id": "p8_overlap_31c624ebbf"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t35",
+            "p8_t42"
+          ],
+          "texts": [
+            "30 万元",
+            "流动资金"
+          ],
+          "intersection": [
+            26.45,
+            312.76,
+            49.61,
+            312.92
+          ],
+          "union": [
+            26.45,
+            302.78,
+            54.31,
+            322.9
+          ],
+          "fraction_of_smaller_bbox": 0.0158,
+          "id": "p8_overlap_b5187ec7af"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t22",
+            "p8_t23"
+          ],
+          "texts": [
+            "资金项",
+            "金额"
+          ],
+          "intersection": [
+            26.45,
+            266.36,
+            40.39,
+            266.38
+          ],
+          "union": [
+            26.45,
+            256.24,
+            47.37,
+            276.5
+          ],
+          "fraction_of_smaller_bbox": 0.002,
+          "id": "p8_overlap_48597a9fe4"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t23",
+            "p8_t24"
+          ],
+          "texts": [
+            "金额",
+            "对应阶段"
+          ],
+          "intersection": [
+            26.45,
+            276.48,
+            40.39,
+            276.5
+          ],
+          "union": [
+            26.45,
+            266.36,
+            54.31,
+            286.61
+          ],
+          "fraction_of_smaller_bbox": 0.002,
+          "id": "p8_overlap_842143d196"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t28",
+            "p8_t39"
+          ],
+          "texts": [
+            "第一年",
+            "40 万元"
+          ],
+          "intersection": [
+            26.45,
+            323.45,
+            47.37,
+            323.47
+          ],
+          "union": [
+            26.45,
+            313.33,
+            49.61,
+            333.59
+          ],
+          "fraction_of_smaller_bbox": 0.002,
+          "id": "p8_overlap_bae19596b9"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t32",
+            "p8_t43"
+          ],
+          "texts": [
+            "第一年进场、第二年扩产",
+            "30 万元"
+          ],
+          "intersection": [
+            26.45,
+            324.01,
+            49.61,
+            324.03
+          ],
+          "union": [
+            26.45,
+            313.89,
+            103.04,
+            334.15
+          ],
+          "fraction_of_smaller_bbox": 0.002,
+          "id": "p8_overlap_46d2ad3292"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t24",
+            "p8_t25"
+          ],
+          "texts": [
+            "对应阶段",
+            "形成的实物／能力产出"
+          ],
+          "intersection": [
+            26.45,
+            286.6,
+            54.31,
+            286.61
+          ],
+          "union": [
+            26.45,
+            276.48,
+            96.07,
+            296.73
+          ],
+          "fraction_of_smaller_bbox": 0.001,
+          "id": "p8_overlap_dc4f5311aa"
+        },
+        {
+          "page": 8,
+          "span_ids": [
+            "p8_t17",
+            "p8_t18"
+          ],
+          "texts": [
+            "120+60+30+40+30 ＝280 万元",
+            "（合计一致）"
+          ],
+          "intersection": [
+            129.09,
+            236.59,
+            129.12,
+            246.73
+          ],
+          "union": [
+            34.84,
+            236.59,
+            170.87,
+            246.73
+          ],
+          "fraction_of_smaller_bbox": 0.0007,
+          "id": "p8_overlap_db440bb09d"
+        }
+      ]
+    },
+    {
+      "page": 9,
+      "page_size": [
+        720.0,
+        405.01416015625
+      ],
+      "coordinate_system": "PDF points; origin top left; bbox=x0,y0,x1,y1",
+      "spans": [
+        {
+          "id": "p9_t1",
+          "text": "效益保障：投入产出可考核，四类风险有防控",
+          "bbox": [
+            16.87,
+            27.18,
+            395.93,
+            54.68
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t2",
+          "text": "280 万元形成800 ㎡工坊、年产量10 万件产能，带动计件农户60 户→120 户、人均月增收约1800 元；四类风险均有防控措施与责任主体，四类保障机制同步落地。",
+          "bbox": [
+            16.87,
+            79.59,
+            600.28,
+            91.17
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t3",
+          "text": "投入产出对应关系图",
+          "bbox": [
+            24.75,
+            105.11,
+            96.94,
+            116.68
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t4",
+          "text": "与资金用途五项构成逐项对应",
+          "bbox": [
+            617.58,
+            106.85,
+            708.1,
+            116.99
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t5",
+          "text": "投入（资金项）",
+          "bbox": [
+            24.72,
+            119.04,
+            73.48,
+            129.18
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t6",
+          "text": "对应阶段",
+          "bbox": [
+            346.05,
+            132.82,
+            373.92,
+            142.96
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t7",
+          "text": "形成的产出／考核指标",
+          "bbox": [
+            24.72,
+            146.59,
+            94.34,
+            156.73
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t8",
+          "text": "厂房建设",
+          "bbox": [
+            30.93,
+            161.08,
+            58.79,
+            171.22
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t9",
+          "text": "120 万元",
+          "bbox": [
+            30.93,
+            170.06,
+            57.37,
+            180.2
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t10",
+          "text": "第一年",
+          "bbox": [
+            349.57,
+            185.17,
+            370.49,
+            195.31
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t11",
+          "text": "800 ㎡工坊建成投用",
+          "bbox": [
+            30.81,
+            204.39,
+            92.61,
+            214.53
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p9_t12",
+          "text": "设备采购",
+          "bbox": [
+            30.93,
+            218.99,
+            58.79,
+            229.13
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t13",
+          "text": "60 万元",
+          "bbox": [
+            30.93,
+            227.98,
+            54.14,
+            238.11
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t14",
+          "text": "第一年进场",
+          "bbox": [
+            342.57,
+            242.6,
+            377.41,
+            252.74
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t15",
+          "text": "第二年扩产",
+          "bbox": [
+            342.57,
+            250.99,
+            377.41,
+            261.13
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t16",
+          "text": "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+          "bbox": [
+            30.98,
+            269.67,
+            208.43,
+            279.81
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p9_t17",
+          "text": "培训经费",
+          "bbox": [
+            30.93,
+            284.3,
+            58.79,
+            294.44
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t18",
+          "text": "30 万元",
+          "bbox": [
+            30.93,
+            293.26,
+            54.09,
+            303.4
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t19",
+          "text": "第一年为主",
+          "bbox": [
+            342.57,
+            307.88,
+            377.41,
+            318.02
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t20",
+          "text": "延续第二年",
+          "bbox": [
+            342.57,
+            316.27,
+            377.41,
+            326.41
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t21",
+          "text": "培训50 人；支撑计件农户由60 户扩至120 户",
+          "bbox": [
+            30.9,
+            334.98,
+            171.38,
+            345.12
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p9_t22",
+          "text": "品牌推广",
+          "bbox": [
+            30.93,
+            349.58,
+            58.79,
+            359.72
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t23",
+          "text": "40 万元",
+          "bbox": [
+            30.93,
+            358.57,
+            54.09,
+            368.71
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t24",
+          "text": "第三年",
+          "bbox": [
+            349.57,
+            373.68,
+            370.49,
+            383.81
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t25",
+          "text": "品牌包装设计与电商平台入驻运营",
+          "bbox": [
+            30.93,
+            392.89,
+            135.36,
+            403.03
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p9_t26",
+          "text": "合计280 万元 · 贯穿性产出",
+          "bbox": [
+            31.44,
+            171.79,
+            119.17,
+            181.93
+          ],
+          "color": "#b0aea5"
+        },
+        {
+          "id": "p9_t27",
+          "text": "人均月增收约1800 元（三年贯穿）；12 位师傅技艺有人接续",
+          "bbox": [
+            111.37,
+            171.76,
+            299.82,
+            181.9
+          ],
+          "color": "#faf9f5"
+        },
+        {
+          "id": "p9_t28",
+          "text": "文化传承效益",
+          "bbox": [
+            23.58,
+            200.11,
+            65.37,
+            210.25
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t29",
+          "text": "可持续影响 + 社会效益",
+          "bbox": [
+            65.34,
+            200.11,
+            138.87,
+            210.25
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t30",
+          "text": "对象：12 位师傅（平均62 岁）与省级非遗竹编技艺",
+          "bbox": [
+            23.61,
+            211.42,
+            184.2,
+            221.56
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t31",
+          "text": "措施：师带徒与培训50 人，技艺记录与工序标准化",
+          "bbox": [
+            23.61,
+            222.05,
+            180.71,
+            232.19
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t32",
+          "text": "载体：800 ㎡工坊投用，工序与产品标准留存",
+          "bbox": [
+            23.61,
+            232.71,
+            163.65,
+            242.85
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t33",
+          "text": "凭证：培训台账、师带徒协议、技艺记录与标准文本",
+          "bbox": [
+            23.61,
+            243.37,
+            183.72,
+            253.51
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t34",
+          "text": "农户增收效益",
+          "bbox": [
+            370.09,
+            200.11,
+            411.88,
+            210.25
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t35",
+          "text": "社会效益",
+          "bbox": [
+            411.85,
+            200.11,
+            439.71,
+            210.25
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t36",
+          "text": "对象：计件农户首年60 户 → 第二年120 户",
+          "bbox": [
+            370.12,
+            211.42,
+            503.21,
+            221.56
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t37",
+          "text": "指标：人均月增收约1800 元，三年贯穿",
+          "bbox": [
+            370.12,
+            222.05,
+            492.52,
+            232.19
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t38",
+          "text": "测算：月增收总额10.8 万元 → 21.6 万元（户均1 人计件）",
+          "bbox": [
+            370.12,
+            232.71,
+            552.33,
+            242.85
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t39",
+          "text": "凭证：计件结算表、按月兑付凭证、带动农户名册",
+          "bbox": [
+            370.12,
+            243.37,
+            523.28,
+            253.51
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t40",
+          "text": "四类风险防控表",
+          "bbox": [
+            24.18,
+            254.25,
+            72.94,
+            264.39
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t41",
+          "text": "责任主体由公司、合作社、农户既定分工推导",
+          "bbox": [
+            576.45,
+            255.33,
+            715.69,
+            265.47
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t42",
+          "text": "风险类别",
+          "bbox": [
+            24.18,
+            268.14,
+            52.04,
+            278.28
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t43",
+          "text": "风险表现",
+          "bbox": [
+            24.18,
+            276.99,
+            52.05,
+            287.13
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t44",
+          "text": "防控措施",
+          "bbox": [
+            24.18,
+            285.86,
+            52.04,
+            296.0
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t45",
+          "text": "责任主体",
+          "bbox": [
+            24.18,
+            294.73,
+            52.05,
+            304.87
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t46",
+          "text": "技艺断代风险",
+          "bbox": [
+            24.18,
+            305.98,
+            65.97,
+            316.12
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t47",
+          "text": "12 位师傅平均62 岁，后继乏人则工序与产品标准失传",
+          "bbox": [
+            24.18,
+            315.17,
+            190.06,
+            325.31
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t48",
+          "text": "师带徒与培训50 人；技艺记录与工序标准化；培训经费30 万元专款用于培训与记录",
+          "bbox": [
+            24.18,
+            324.35,
+            282.64,
+            334.49
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p9_t49",
+          "text": "合作社 + 师傅",
+          "bbox": [
+            24.18,
+            333.54,
+            69.88,
+            343.68
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t50",
+          "text": "市场与订单风险",
+          "bbox": [
+            24.18,
+            343.29,
+            72.94,
+            353.43
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t51",
+          "text": "订单波动直接影响农户按件计酬收入与产能利用率",
+          "bbox": [
+            24.18,
+            352.47,
+            177.34,
+            362.61
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t52",
+          "text": "公司统一接单与销售；第三年入驻电商平台拓展渠道；按订单排产、以销定产",
+          "bbox": [
+            24.18,
+            361.66,
+            260.85,
+            371.8
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p9_t53",
+          "text": "公司",
+          "bbox": [
+            24.18,
+            370.84,
+            38.13,
+            380.98
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t54",
+          "text": "原料与品控风险",
+          "bbox": [
+            24.18,
+            380.59,
+            72.94,
+            390.73
+          ],
+          "color": "#141413"
+        },
+        {
+          "id": "p9_t55",
+          "text": "竹材供应量与质量不稳，影响交付与计件单价核算",
+          "bbox": [
+            24.18,
+            389.78,
+            177.34,
+            399.92
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t56",
+          "text": "合作社统一采购竹材；进厂交验质检并与计件结算挂钩；工序标准化统一品控口径",
+          "bbox": [
+            24.18,
+            398.96,
+            274.77,
+            409.1
+          ],
+          "color": "#4d4c48"
+        },
+        {
+          "id": "p9_t57",
+          "text": "组织保障",
+          "bbox": [
+            26.31,
+            303.23,
+            54.17,
+            313.37
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t58",
+          "text": "　县级主管部门指导，公司管设计与销售、",
+          "bbox": [
+            54.14,
+            303.23,
+            186.41,
+            313.37
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t59",
+          "text": "合作社管原料采购与培训、农户在家编织按件计酬",
+          "bbox": [
+            26.31,
+            311.63,
+            179.47,
+            321.76
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t60",
+          "text": "制度保障",
+          "bbox": [
+            202.99,
+            303.23,
+            230.85,
+            313.37
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t61",
+          "text": "　按件计酬结算制度、交验质检制度、",
+          "bbox": [
+            230.82,
+            303.23,
+            349.17,
+            313.37
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t62",
+          "text": "专账核算与凭证留存制度，载体为计件结算表与",
+          "bbox": [
+            202.99,
+            311.63,
+            349.18,
+            321.76
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t63",
+          "text": "质检记录",
+          "bbox": [
+            202.99,
+            320.02,
+            230.86,
+            330.16
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t64",
+          "text": "监督保障",
+          "bbox": [
+            372.02,
+            303.23,
+            399.88,
+            313.37
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t65",
+          "text": "　按进度拨付、验收后结算、结算公示、",
+          "bbox": [
+            399.86,
+            303.23,
+            525.18,
+            313.37
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t66",
+          "text": "年度验收与绩效报告，台账备查并接受县级主管",
+          "bbox": [
+            372.02,
+            311.63,
+            518.2,
+            321.76
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t67",
+          "text": "部门监督",
+          "bbox": [
+            372.02,
+            320.02,
+            399.88,
+            330.16
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t68",
+          "text": "持续保障",
+          "bbox": [
+            541.05,
+            303.23,
+            568.91,
+            313.37
+          ],
+          "color": "#c96442"
+        },
+        {
+          "id": "p9_t69",
+          "text": "　第三年品牌打造与电商平台入驻形成",
+          "bbox": [
+            568.89,
+            303.23,
+            687.23,
+            313.37
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t70",
+          "text": "外销出口与自我造血能力，降低对扶持资金的依",
+          "bbox": [
+            541.05,
+            311.63,
+            687.23,
+            321.76
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t71",
+          "text": "赖",
+          "bbox": [
+            541.05,
+            320.02,
+            548.05,
+            330.16
+          ],
+          "color": "#5e5d59"
+        },
+        {
+          "id": "p9_t72",
+          "text": "数据来源：申报锁定口径（280 万元五项构成、800 ㎡、培训50 人、年产量10 万件、60 户→120 户、人均月增收约1800 元）；月增收总额为算术测算值，绩效分栏参照财政项目支出绩效评价通用框",
+          "bbox": [
+            16.87,
+            354.37,
+            632.69,
+            364.51
+          ],
+          "color": "#87867f"
+        },
+        {
+          "id": "p9_t73",
+          "text": "架。",
+          "bbox": [
+            16.87,
+            362.76,
+            30.81,
+            372.9
+          ],
+          "color": "#87867f"
+        }
+      ],
+      "limit": "Bounding boxes assist localization only. Intersection is not proof of occlusion; inspect the image.",
+      "text_overlap_candidates": [
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t9",
+            "p9_t26"
+          ],
+          "texts": [
+            "120 万元",
+            "合计280 万元 · 贯穿性产出"
+          ],
+          "intersection": [
+            31.44,
+            171.79,
+            57.37,
+            180.2
+          ],
+          "union": [
+            30.93,
+            170.06,
+            119.17,
+            181.93
+          ],
+          "fraction_of_smaller_bbox": 0.8134,
+          "id": "p9_overlap_4e723c065a"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t51",
+            "p9_t72"
+          ],
+          "texts": [
+            "订单波动直接影响农户按件计酬收入与产能利用率",
+            "数据来源：申报锁定口径（280 万元五项构成、800 ㎡、培训50 人、年产量10 万件、60 户→120 户、人均月增收约1800 元）；月增收总额为算术测算值，绩效分栏参照财政项目支出绩效评价通用框"
+          ],
+          "intersection": [
+            24.18,
+            354.37,
+            177.34,
+            362.61
+          ],
+          "union": [
+            16.87,
+            352.47,
+            632.69,
+            364.51
+          ],
+          "fraction_of_smaller_bbox": 0.8126,
+          "id": "p9_overlap_c0f6b77122"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t18",
+            "p9_t45"
+          ],
+          "texts": [
+            "30 万元",
+            "责任主体"
+          ],
+          "intersection": [
+            30.93,
+            294.73,
+            52.05,
+            303.4
+          ],
+          "union": [
+            24.18,
+            293.26,
+            54.09,
+            304.87
+          ],
+          "fraction_of_smaller_bbox": 0.7797,
+          "id": "p9_overlap_945dbdcc71"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t21",
+            "p9_t49"
+          ],
+          "texts": [
+            "培训50 人；支撑计件农户由60 户扩至120 户",
+            "合作社 + 师傅"
+          ],
+          "intersection": [
+            30.9,
+            334.98,
+            69.88,
+            343.68
+          ],
+          "union": [
+            24.18,
+            333.54,
+            171.38,
+            345.12
+          ],
+          "fraction_of_smaller_bbox": 0.7318,
+          "id": "p9_overlap_402a27863e"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t46",
+            "p9_t57"
+          ],
+          "texts": [
+            "技艺断代风险",
+            "组织保障"
+          ],
+          "intersection": [
+            26.31,
+            305.98,
+            54.17,
+            313.37
+          ],
+          "union": [
+            24.18,
+            303.23,
+            65.97,
+            316.12
+          ],
+          "fraction_of_smaller_bbox": 0.7288,
+          "id": "p9_overlap_9924af4073"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t22",
+            "p9_t51"
+          ],
+          "texts": [
+            "品牌推广",
+            "订单波动直接影响农户按件计酬收入与产能利用率"
+          ],
+          "intersection": [
+            30.93,
+            352.47,
+            58.79,
+            359.72
+          ],
+          "union": [
+            24.18,
+            349.58,
+            177.34,
+            362.61
+          ],
+          "fraction_of_smaller_bbox": 0.715,
+          "id": "p9_overlap_8291ea8d24"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t12",
+            "p9_t31"
+          ],
+          "texts": [
+            "设备采购",
+            "措施：师带徒与培训50 人，技艺记录与工序标准化"
+          ],
+          "intersection": [
+            30.93,
+            222.05,
+            58.79,
+            229.13
+          ],
+          "union": [
+            23.61,
+            218.99,
+            180.71,
+            232.19
+          ],
+          "fraction_of_smaller_bbox": 0.6982,
+          "id": "p9_overlap_a2ce3697bb"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t23",
+            "p9_t52"
+          ],
+          "texts": [
+            "40 万元",
+            "公司统一接单与销售；第三年入驻电商平台拓展渠道；按订单排产、以销定产"
+          ],
+          "intersection": [
+            30.93,
+            361.66,
+            54.09,
+            368.71
+          ],
+          "union": [
+            24.18,
+            358.57,
+            260.85,
+            371.8
+          ],
+          "fraction_of_smaller_bbox": 0.6953,
+          "id": "p9_overlap_5aea71ec57"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t25",
+            "p9_t55"
+          ],
+          "texts": [
+            "品牌包装设计与电商平台入驻运营",
+            "竹材供应量与质量不稳，影响交付与计件单价核算"
+          ],
+          "intersection": [
+            30.93,
+            392.89,
+            135.36,
+            399.92
+          ],
+          "union": [
+            24.18,
+            389.78,
+            177.34,
+            403.03
+          ],
+          "fraction_of_smaller_bbox": 0.6933,
+          "id": "p9_overlap_6c38dbe9e8"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t47",
+            "p9_t59"
+          ],
+          "texts": [
+            "12 位师傅平均62 岁，后继乏人则工序与产品标准失传",
+            "合作社管原料采购与培训、农户在家编织按件计酬"
+          ],
+          "intersection": [
+            26.31,
+            315.17,
+            179.47,
+            321.76
+          ],
+          "union": [
+            24.18,
+            311.63,
+            190.06,
+            325.31
+          ],
+          "fraction_of_smaller_bbox": 0.6505,
+          "id": "p9_overlap_c5a9cf4d7d"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t16",
+            "p9_t42"
+          ],
+          "texts": [
+            "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+            "风险类别"
+          ],
+          "intersection": [
+            30.98,
+            269.67,
+            52.04,
+            278.28
+          ],
+          "union": [
+            24.18,
+            268.14,
+            208.43,
+            279.81
+          ],
+          "fraction_of_smaller_bbox": 0.6419,
+          "id": "p9_overlap_7dfaf9b80d"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t17",
+            "p9_t44"
+          ],
+          "texts": [
+            "培训经费",
+            "防控措施"
+          ],
+          "intersection": [
+            30.93,
+            285.86,
+            52.04,
+            294.44
+          ],
+          "union": [
+            24.18,
+            284.3,
+            58.79,
+            296.0
+          ],
+          "fraction_of_smaller_bbox": 0.6411,
+          "id": "p9_overlap_00c66404f4"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t23",
+            "p9_t72"
+          ],
+          "texts": [
+            "40 万元",
+            "数据来源：申报锁定口径（280 万元五项构成、800 ㎡、培训50 人、年产量10 万件、60 户→120 户、人均月增收约1800 元）；月增收总额为算术测算值，绩效分栏参照财政项目支出绩效评价通用框"
+          ],
+          "intersection": [
+            30.93,
+            358.57,
+            54.09,
+            364.51
+          ],
+          "union": [
+            16.87,
+            354.37,
+            632.69,
+            368.71
+          ],
+          "fraction_of_smaller_bbox": 0.5858,
+          "id": "p9_overlap_787c41c359"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t48",
+            "p9_t63"
+          ],
+          "texts": [
+            "师带徒与培训50 人；技艺记录与工序标准化；培训经费30 万元专款用于培训与记录",
+            "质检记录"
+          ],
+          "intersection": [
+            202.99,
+            324.35,
+            230.86,
+            330.16
+          ],
+          "union": [
+            24.18,
+            320.02,
+            282.64,
+            334.49
+          ],
+          "fraction_of_smaller_bbox": 0.573,
+          "id": "p9_overlap_90e079f9a8"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t13",
+            "p9_t32"
+          ],
+          "texts": [
+            "60 万元",
+            "载体：800 ㎡工坊投用，工序与产品标准留存"
+          ],
+          "intersection": [
+            30.93,
+            232.71,
+            54.14,
+            238.11
+          ],
+          "union": [
+            23.61,
+            227.98,
+            163.65,
+            242.85
+          ],
+          "fraction_of_smaller_bbox": 0.5331,
+          "id": "p9_overlap_2a058265b3"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t22",
+            "p9_t72"
+          ],
+          "texts": [
+            "品牌推广",
+            "数据来源：申报锁定口径（280 万元五项构成、800 ㎡、培训50 人、年产量10 万件、60 户→120 户、人均月增收约1800 元）；月增收总额为算术测算值，绩效分栏参照财政项目支出绩效评价通用框"
+          ],
+          "intersection": [
+            30.93,
+            354.37,
+            58.79,
+            359.72
+          ],
+          "union": [
+            16.87,
+            349.58,
+            632.69,
+            364.51
+          ],
+          "fraction_of_smaller_bbox": 0.5276,
+          "id": "p9_overlap_2d8966cd31"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t11",
+            "p9_t28"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用",
+            "文化传承效益"
+          ],
+          "intersection": [
+            30.81,
+            204.39,
+            65.37,
+            210.25
+          ],
+          "union": [
+            23.58,
+            200.11,
+            92.61,
+            214.53
+          ],
+          "fraction_of_smaller_bbox": 0.4779,
+          "id": "p9_overlap_bdd10cfed6"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t52",
+            "p9_t73"
+          ],
+          "texts": [
+            "公司统一接单与销售；第三年入驻电商平台拓展渠道；按订单排产、以销定产",
+            "架。"
+          ],
+          "intersection": [
+            24.18,
+            362.76,
+            30.81,
+            371.8
+          ],
+          "union": [
+            16.87,
+            361.66,
+            260.85,
+            372.9
+          ],
+          "fraction_of_smaller_bbox": 0.424,
+          "id": "p9_overlap_00374a9b40"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t46",
+            "p9_t59"
+          ],
+          "texts": [
+            "技艺断代风险",
+            "合作社管原料采购与培训、农户在家编织按件计酬"
+          ],
+          "intersection": [
+            26.31,
+            311.63,
+            65.97,
+            316.12
+          ],
+          "union": [
+            24.18,
+            305.98,
+            179.47,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.4202,
+          "id": "p9_overlap_ff811486ad"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t13",
+            "p9_t31"
+          ],
+          "texts": [
+            "60 万元",
+            "措施：师带徒与培训50 人，技艺记录与工序标准化"
+          ],
+          "intersection": [
+            30.93,
+            227.98,
+            54.14,
+            232.19
+          ],
+          "union": [
+            23.61,
+            222.05,
+            180.71,
+            238.11
+          ],
+          "fraction_of_smaller_bbox": 0.4156,
+          "id": "p9_overlap_e310f315d0"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t25",
+            "p9_t56"
+          ],
+          "texts": [
+            "品牌包装设计与电商平台入驻运营",
+            "合作社统一采购竹材；进厂交验质检并与计件结算挂钩；工序标准化统一品控口径"
+          ],
+          "intersection": [
+            30.93,
+            398.96,
+            135.36,
+            403.03
+          ],
+          "union": [
+            24.18,
+            392.89,
+            274.77,
+            409.1
+          ],
+          "fraction_of_smaller_bbox": 0.4014,
+          "id": "p9_overlap_cde877f12b"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t23",
+            "p9_t51"
+          ],
+          "texts": [
+            "40 万元",
+            "订单波动直接影响农户按件计酬收入与产能利用率"
+          ],
+          "intersection": [
+            30.93,
+            358.57,
+            54.09,
+            362.61
+          ],
+          "union": [
+            24.18,
+            352.47,
+            177.34,
+            368.71
+          ],
+          "fraction_of_smaller_bbox": 0.3984,
+          "id": "p9_overlap_3c097ffad5"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t22",
+            "p9_t50"
+          ],
+          "texts": [
+            "品牌推广",
+            "市场与订单风险"
+          ],
+          "intersection": [
+            30.93,
+            349.58,
+            58.79,
+            353.43
+          ],
+          "union": [
+            24.18,
+            343.29,
+            72.94,
+            359.72
+          ],
+          "fraction_of_smaller_bbox": 0.3797,
+          "id": "p9_overlap_2df490a659"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t11",
+            "p9_t30"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用",
+            "对象：12 位师傅（平均62 岁）与省级非遗竹编技艺"
+          ],
+          "intersection": [
+            30.81,
+            211.42,
+            92.61,
+            214.53
+          ],
+          "union": [
+            23.61,
+            204.39,
+            184.2,
+            221.56
+          ],
+          "fraction_of_smaller_bbox": 0.3067,
+          "id": "p9_overlap_365283ebe2"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t52",
+            "p9_t72"
+          ],
+          "texts": [
+            "公司统一接单与销售；第三年入驻电商平台拓展渠道；按订单排产、以销定产",
+            "数据来源：申报锁定口径（280 万元五项构成、800 ㎡、培训50 人、年产量10 万件、60 户→120 户、人均月增收约1800 元）；月增收总额为算术测算值，绩效分栏参照财政项目支出绩效评价通用框"
+          ],
+          "intersection": [
+            24.18,
+            361.66,
+            260.85,
+            364.51
+          ],
+          "union": [
+            16.87,
+            354.37,
+            632.69,
+            371.8
+          ],
+          "fraction_of_smaller_bbox": 0.2811,
+          "id": "p9_overlap_20e8149bb4"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t11",
+            "p9_t29"
+          ],
+          "texts": [
+            "800 ㎡工坊建成投用",
+            "可持续影响 + 社会效益"
+          ],
+          "intersection": [
+            65.34,
+            204.39,
+            92.61,
+            210.25
+          ],
+          "union": [
+            30.81,
+            200.11,
+            138.87,
+            214.53
+          ],
+          "fraction_of_smaller_bbox": 0.255,
+          "id": "p9_overlap_fa62a22cd7"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t12",
+            "p9_t30"
+          ],
+          "texts": [
+            "设备采购",
+            "对象：12 位师傅（平均62 岁）与省级非遗竹编技艺"
+          ],
+          "intersection": [
+            30.93,
+            218.99,
+            58.79,
+            221.56
+          ],
+          "union": [
+            23.61,
+            211.42,
+            184.2,
+            229.13
+          ],
+          "fraction_of_smaller_bbox": 0.2535,
+          "id": "p9_overlap_af07b9e367"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t18",
+            "p9_t44"
+          ],
+          "texts": [
+            "30 万元",
+            "防控措施"
+          ],
+          "intersection": [
+            30.93,
+            293.26,
+            52.04,
+            296.0
+          ],
+          "union": [
+            24.18,
+            285.86,
+            54.09,
+            303.4
+          ],
+          "fraction_of_smaller_bbox": 0.2463,
+          "id": "p9_overlap_18a5940458"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t17",
+            "p9_t43"
+          ],
+          "texts": [
+            "培训经费",
+            "风险表现"
+          ],
+          "intersection": [
+            30.93,
+            284.3,
+            52.05,
+            287.13
+          ],
+          "union": [
+            24.18,
+            276.99,
+            58.79,
+            294.44
+          ],
+          "fraction_of_smaller_bbox": 0.2116,
+          "id": "p9_overlap_b7c0cfca35"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t16",
+            "p9_t43"
+          ],
+          "texts": [
+            "支撑年产量10 万件的原料处理、编织辅助与烘干定型能力",
+            "风险表现"
+          ],
+          "intersection": [
+            30.98,
+            276.99,
+            52.05,
+            279.81
+          ],
+          "union": [
+            24.18,
+            269.67,
+            208.43,
+            287.13
+          ],
+          "fraction_of_smaller_bbox": 0.2103,
+          "id": "p9_overlap_b3e114cb2a"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t46",
+            "p9_t58"
+          ],
+          "texts": [
+            "技艺断代风险",
+            "　县级主管部门指导，公司管设计与销售、"
+          ],
+          "intersection": [
+            54.14,
+            305.98,
+            65.97,
+            313.37
+          ],
+          "union": [
+            24.18,
+            303.23,
+            186.41,
+            316.12
+          ],
+          "fraction_of_smaller_bbox": 0.2063,
+          "id": "p9_overlap_f0532521cf"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t14",
+            "p9_t39"
+          ],
+          "texts": [
+            "第一年进场",
+            "凭证：计件结算表、按月兑付凭证、带动农户名册"
+          ],
+          "intersection": [
+            370.12,
+            243.37,
+            377.41,
+            252.74
+          ],
+          "union": [
+            342.57,
+            242.6,
+            523.28,
+            253.51
+          ],
+          "fraction_of_smaller_bbox": 0.1934,
+          "id": "p9_overlap_7831d1e73e"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t14",
+            "p9_t15"
+          ],
+          "texts": [
+            "第一年进场",
+            "第二年扩产"
+          ],
+          "intersection": [
+            342.57,
+            250.99,
+            377.41,
+            252.74
+          ],
+          "union": [
+            342.57,
+            242.6,
+            377.41,
+            261.13
+          ],
+          "fraction_of_smaller_bbox": 0.1726,
+          "id": "p9_overlap_4be0e30aa9"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t19",
+            "p9_t20"
+          ],
+          "texts": [
+            "第一年为主",
+            "延续第二年"
+          ],
+          "intersection": [
+            342.57,
+            316.27,
+            377.41,
+            318.02
+          ],
+          "union": [
+            342.57,
+            307.88,
+            377.41,
+            326.41
+          ],
+          "fraction_of_smaller_bbox": 0.1726,
+          "id": "p9_overlap_cfa9d810a5"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t72",
+            "p9_t73"
+          ],
+          "texts": [
+            "数据来源：申报锁定口径（280 万元五项构成、800 ㎡、培训50 人、年产量10 万件、60 户→120 户、人均月增收约1800 元）；月增收总额为算术测算值，绩效分栏参照财政项目支出绩效评价通用框",
+            "架。"
+          ],
+          "intersection": [
+            16.87,
+            362.76,
+            30.81,
+            364.51
+          ],
+          "union": [
+            16.87,
+            354.37,
+            632.69,
+            372.9
+          ],
+          "fraction_of_smaller_bbox": 0.1726,
+          "id": "p9_overlap_c364185416"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t57",
+            "p9_t59"
+          ],
+          "texts": [
+            "组织保障",
+            "合作社管原料采购与培训、农户在家编织按件计酬"
+          ],
+          "intersection": [
+            26.31,
+            311.63,
+            54.17,
+            313.37
+          ],
+          "union": [
+            26.31,
+            303.23,
+            179.47,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.1716,
+          "id": "p9_overlap_8053b38b8e"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t60",
+            "p9_t62"
+          ],
+          "texts": [
+            "制度保障",
+            "专账核算与凭证留存制度，载体为计件结算表与"
+          ],
+          "intersection": [
+            202.99,
+            311.63,
+            230.85,
+            313.37
+          ],
+          "union": [
+            202.99,
+            303.23,
+            349.18,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.1716,
+          "id": "p9_overlap_8cbf155a50"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t61",
+            "p9_t62"
+          ],
+          "texts": [
+            "　按件计酬结算制度、交验质检制度、",
+            "专账核算与凭证留存制度，载体为计件结算表与"
+          ],
+          "intersection": [
+            230.82,
+            311.63,
+            349.17,
+            313.37
+          ],
+          "union": [
+            202.99,
+            303.23,
+            349.18,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.1716,
+          "id": "p9_overlap_73cfc21134"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t62",
+            "p9_t63"
+          ],
+          "texts": [
+            "专账核算与凭证留存制度，载体为计件结算表与",
+            "质检记录"
+          ],
+          "intersection": [
+            202.99,
+            320.02,
+            230.86,
+            321.76
+          ],
+          "union": [
+            202.99,
+            311.63,
+            349.18,
+            330.16
+          ],
+          "fraction_of_smaller_bbox": 0.1716,
+          "id": "p9_overlap_c7e4864fc7"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t64",
+            "p9_t66"
+          ],
+          "texts": [
+            "监督保障",
+            "年度验收与绩效报告，台账备查并接受县级主管"
+          ],
+          "intersection": [
+            372.02,
+            311.63,
+            399.88,
+            313.37
+          ],
+          "union": [
+            372.02,
+            303.23,
+            518.2,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.1716,
+          "id": "p9_overlap_4eb0b571d3"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t66",
+            "p9_t67"
+          ],
+          "texts": [
+            "年度验收与绩效报告，台账备查并接受县级主管",
+            "部门监督"
+          ],
+          "intersection": [
+            372.02,
+            320.02,
+            399.88,
+            321.76
+          ],
+          "union": [
+            372.02,
+            311.63,
+            518.2,
+            330.16
+          ],
+          "fraction_of_smaller_bbox": 0.1716,
+          "id": "p9_overlap_c0640751da"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t68",
+            "p9_t70"
+          ],
+          "texts": [
+            "持续保障",
+            "外销出口与自我造血能力，降低对扶持资金的依"
+          ],
+          "intersection": [
+            541.05,
+            311.63,
+            568.91,
+            313.37
+          ],
+          "union": [
+            541.05,
+            303.23,
+            687.23,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.1716,
+          "id": "p9_overlap_6e0a9d7beb"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t69",
+            "p9_t70"
+          ],
+          "texts": [
+            "　第三年品牌打造与电商平台入驻形成",
+            "外销出口与自我造血能力，降低对扶持资金的依"
+          ],
+          "intersection": [
+            568.89,
+            311.63,
+            687.23,
+            313.37
+          ],
+          "union": [
+            541.05,
+            303.23,
+            687.23,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.1716,
+          "id": "p9_overlap_fb46200f44"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t70",
+            "p9_t71"
+          ],
+          "texts": [
+            "外销出口与自我造血能力，降低对扶持资金的依",
+            "赖"
+          ],
+          "intersection": [
+            541.05,
+            320.02,
+            548.05,
+            321.76
+          ],
+          "union": [
+            541.05,
+            311.63,
+            687.23,
+            330.16
+          ],
+          "fraction_of_smaller_bbox": 0.1716,
+          "id": "p9_overlap_ca8e6444e0"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t58",
+            "p9_t59"
+          ],
+          "texts": [
+            "　县级主管部门指导，公司管设计与销售、",
+            "合作社管原料采购与培训、农户在家编织按件计酬"
+          ],
+          "intersection": [
+            54.14,
+            311.63,
+            179.47,
+            313.37
+          ],
+          "union": [
+            26.31,
+            303.23,
+            186.41,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.1626,
+          "id": "p9_overlap_f93a6a08ae"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t65",
+            "p9_t66"
+          ],
+          "texts": [
+            "　按进度拨付、验收后结算、结算公示、",
+            "年度验收与绩效报告，台账备查并接受县级主管"
+          ],
+          "intersection": [
+            399.86,
+            311.63,
+            518.2,
+            313.37
+          ],
+          "union": [
+            372.02,
+            303.23,
+            525.18,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.162,
+          "id": "p9_overlap_e2b6d6bb9b"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t21",
+            "p9_t50"
+          ],
+          "texts": [
+            "培训50 人；支撑计件农户由60 户扩至120 户",
+            "市场与订单风险"
+          ],
+          "intersection": [
+            30.9,
+            343.29,
+            72.94,
+            345.12
+          ],
+          "union": [
+            24.18,
+            334.98,
+            171.38,
+            353.43
+          ],
+          "fraction_of_smaller_bbox": 0.1556,
+          "id": "p9_overlap_79952677cf"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t45",
+            "p9_t57"
+          ],
+          "texts": [
+            "责任主体",
+            "组织保障"
+          ],
+          "intersection": [
+            26.31,
+            303.23,
+            52.05,
+            304.87
+          ],
+          "union": [
+            24.18,
+            294.73,
+            54.17,
+            313.37
+          ],
+          "fraction_of_smaller_bbox": 0.1494,
+          "id": "p9_overlap_f070fb8758"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t42",
+            "p9_t43"
+          ],
+          "texts": [
+            "风险类别",
+            "风险表现"
+          ],
+          "intersection": [
+            24.18,
+            276.99,
+            52.04,
+            278.28
+          ],
+          "union": [
+            24.18,
+            268.14,
+            52.05,
+            287.13
+          ],
+          "fraction_of_smaller_bbox": 0.1272,
+          "id": "p9_overlap_db6355791c"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t43",
+            "p9_t44"
+          ],
+          "texts": [
+            "风险表现",
+            "防控措施"
+          ],
+          "intersection": [
+            24.18,
+            285.86,
+            52.04,
+            287.13
+          ],
+          "union": [
+            24.18,
+            276.99,
+            52.05,
+            296.0
+          ],
+          "fraction_of_smaller_bbox": 0.1252,
+          "id": "p9_overlap_f2170ae231"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t44",
+            "p9_t45"
+          ],
+          "texts": [
+            "防控措施",
+            "责任主体"
+          ],
+          "intersection": [
+            24.18,
+            294.73,
+            52.04,
+            296.0
+          ],
+          "union": [
+            24.18,
+            285.86,
+            52.05,
+            304.87
+          ],
+          "fraction_of_smaller_bbox": 0.1252,
+          "id": "p9_overlap_4e966ae333"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t20",
+            "p9_t67"
+          ],
+          "texts": [
+            "延续第二年",
+            "部门监督"
+          ],
+          "intersection": [
+            372.02,
+            320.02,
+            377.41,
+            326.41
+          ],
+          "union": [
+            342.57,
+            316.27,
+            399.88,
+            330.16
+          ],
+          "fraction_of_smaller_bbox": 0.1219,
+          "id": "p9_overlap_ebf6ecf6a6"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t19",
+            "p9_t62"
+          ],
+          "texts": [
+            "第一年为主",
+            "专账核算与凭证留存制度，载体为计件结算表与"
+          ],
+          "intersection": [
+            342.57,
+            311.63,
+            349.18,
+            318.02
+          ],
+          "union": [
+            202.99,
+            307.88,
+            377.41,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.1196,
+          "id": "p9_overlap_42fccc2b74"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t17",
+            "p9_t18"
+          ],
+          "texts": [
+            "培训经费",
+            "30 万元"
+          ],
+          "intersection": [
+            30.93,
+            293.26,
+            54.09,
+            294.44
+          ],
+          "union": [
+            30.93,
+            284.3,
+            58.79,
+            303.4
+          ],
+          "fraction_of_smaller_bbox": 0.1164,
+          "id": "p9_overlap_d38883e0fd"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t8",
+            "p9_t9"
+          ],
+          "texts": [
+            "厂房建设",
+            "120 万元"
+          ],
+          "intersection": [
+            30.93,
+            170.06,
+            57.37,
+            171.22
+          ],
+          "union": [
+            30.93,
+            161.08,
+            58.79,
+            180.2
+          ],
+          "fraction_of_smaller_bbox": 0.1144,
+          "id": "p9_overlap_2da7772ecd"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t12",
+            "p9_t13"
+          ],
+          "texts": [
+            "设备采购",
+            "60 万元"
+          ],
+          "intersection": [
+            30.93,
+            227.98,
+            54.14,
+            229.13
+          ],
+          "union": [
+            30.93,
+            218.99,
+            58.79,
+            238.11
+          ],
+          "fraction_of_smaller_bbox": 0.1135,
+          "id": "p9_overlap_e5a1127c13"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t22",
+            "p9_t23"
+          ],
+          "texts": [
+            "品牌推广",
+            "40 万元"
+          ],
+          "intersection": [
+            30.93,
+            358.57,
+            54.09,
+            359.72
+          ],
+          "union": [
+            30.93,
+            349.58,
+            58.79,
+            368.71
+          ],
+          "fraction_of_smaller_bbox": 0.1134,
+          "id": "p9_overlap_d9e75cb765"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t19",
+            "p9_t64"
+          ],
+          "texts": [
+            "第一年为主",
+            "监督保障"
+          ],
+          "intersection": [
+            372.02,
+            307.88,
+            377.41,
+            313.37
+          ],
+          "union": [
+            342.57,
+            303.23,
+            399.88,
+            318.02
+          ],
+          "fraction_of_smaller_bbox": 0.1047,
+          "id": "p9_overlap_7ddf49fbcc"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t20",
+            "p9_t62"
+          ],
+          "texts": [
+            "延续第二年",
+            "专账核算与凭证留存制度，载体为计件结算表与"
+          ],
+          "intersection": [
+            342.57,
+            316.27,
+            349.18,
+            321.76
+          ],
+          "union": [
+            202.99,
+            311.63,
+            377.41,
+            326.41
+          ],
+          "fraction_of_smaller_bbox": 0.1027,
+          "id": "p9_overlap_ae50d13a9f"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t19",
+            "p9_t61"
+          ],
+          "texts": [
+            "第一年为主",
+            "　按件计酬结算制度、交验质检制度、"
+          ],
+          "intersection": [
+            342.57,
+            307.88,
+            349.17,
+            313.37
+          ],
+          "union": [
+            230.82,
+            303.23,
+            377.41,
+            318.02
+          ],
+          "fraction_of_smaller_bbox": 0.1026,
+          "id": "p9_overlap_2d15184e50"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t19",
+            "p9_t66"
+          ],
+          "texts": [
+            "第一年为主",
+            "年度验收与绩效报告，台账备查并接受县级主管"
+          ],
+          "intersection": [
+            372.02,
+            311.63,
+            377.41,
+            318.02
+          ],
+          "union": [
+            342.57,
+            307.88,
+            518.2,
+            321.76
+          ],
+          "fraction_of_smaller_bbox": 0.0975,
+          "id": "p9_overlap_01e12399ea"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t53",
+            "p9_t73"
+          ],
+          "texts": [
+            "公司",
+            "架。"
+          ],
+          "intersection": [
+            24.18,
+            370.84,
+            30.81,
+            372.9
+          ],
+          "union": [
+            16.87,
+            362.76,
+            38.13,
+            380.98
+          ],
+          "fraction_of_smaller_bbox": 0.0966,
+          "id": "p9_overlap_6c949c0551"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t47",
+            "p9_t48"
+          ],
+          "texts": [
+            "12 位师傅平均62 岁，后继乏人则工序与产品标准失传",
+            "师带徒与培训50 人；技艺记录与工序标准化；培训经费30 万元专款用于培训与记录"
+          ],
+          "intersection": [
+            24.18,
+            324.35,
+            190.06,
+            325.31
+          ],
+          "union": [
+            24.18,
+            315.17,
+            282.64,
+            334.49
+          ],
+          "fraction_of_smaller_bbox": 0.0947,
+          "id": "p9_overlap_523195d3d4"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t50",
+            "p9_t51"
+          ],
+          "texts": [
+            "市场与订单风险",
+            "订单波动直接影响农户按件计酬收入与产能利用率"
+          ],
+          "intersection": [
+            24.18,
+            352.47,
+            72.94,
+            353.43
+          ],
+          "union": [
+            24.18,
+            343.29,
+            177.34,
+            362.61
+          ],
+          "fraction_of_smaller_bbox": 0.0947,
+          "id": "p9_overlap_f4dd38546f"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t52",
+            "p9_t53"
+          ],
+          "texts": [
+            "公司统一接单与销售；第三年入驻电商平台拓展渠道；按订单排产、以销定产",
+            "公司"
+          ],
+          "intersection": [
+            24.18,
+            370.84,
+            38.13,
+            371.8
+          ],
+          "union": [
+            24.18,
+            361.66,
+            260.85,
+            380.98
+          ],
+          "fraction_of_smaller_bbox": 0.0947,
+          "id": "p9_overlap_ba47c18e92"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t55",
+            "p9_t56"
+          ],
+          "texts": [
+            "竹材供应量与质量不稳，影响交付与计件单价核算",
+            "合作社统一采购竹材；进厂交验质检并与计件结算挂钩；工序标准化统一品控口径"
+          ],
+          "intersection": [
+            24.18,
+            398.96,
+            177.34,
+            399.92
+          ],
+          "union": [
+            24.18,
+            389.78,
+            274.77,
+            409.1
+          ],
+          "fraction_of_smaller_bbox": 0.0947,
+          "id": "p9_overlap_5fe6838d32"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t46",
+            "p9_t47"
+          ],
+          "texts": [
+            "技艺断代风险",
+            "12 位师傅平均62 岁，后继乏人则工序与产品标准失传"
+          ],
+          "intersection": [
+            24.18,
+            315.17,
+            65.97,
+            316.12
+          ],
+          "union": [
+            24.18,
+            305.98,
+            190.06,
+            325.31
+          ],
+          "fraction_of_smaller_bbox": 0.0937,
+          "id": "p9_overlap_d64132e1be"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t48",
+            "p9_t49"
+          ],
+          "texts": [
+            "师带徒与培训50 人；技艺记录与工序标准化；培训经费30 万元专款用于培训与记录",
+            "合作社 + 师傅"
+          ],
+          "intersection": [
+            24.18,
+            333.54,
+            69.88,
+            334.49
+          ],
+          "union": [
+            24.18,
+            324.35,
+            282.64,
+            343.68
+          ],
+          "fraction_of_smaller_bbox": 0.0937,
+          "id": "p9_overlap_2c3c64cc69"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t51",
+            "p9_t52"
+          ],
+          "texts": [
+            "订单波动直接影响农户按件计酬收入与产能利用率",
+            "公司统一接单与销售；第三年入驻电商平台拓展渠道；按订单排产、以销定产"
+          ],
+          "intersection": [
+            24.18,
+            361.66,
+            177.34,
+            362.61
+          ],
+          "union": [
+            24.18,
+            352.47,
+            260.85,
+            371.8
+          ],
+          "fraction_of_smaller_bbox": 0.0937,
+          "id": "p9_overlap_2fbe466216"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t54",
+            "p9_t55"
+          ],
+          "texts": [
+            "原料与品控风险",
+            "竹材供应量与质量不稳，影响交付与计件单价核算"
+          ],
+          "intersection": [
+            24.18,
+            389.78,
+            72.94,
+            390.73
+          ],
+          "union": [
+            24.18,
+            380.59,
+            177.34,
+            399.92
+          ],
+          "fraction_of_smaller_bbox": 0.0937,
+          "id": "p9_overlap_6eeb618a34"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t26",
+            "p9_t27"
+          ],
+          "texts": [
+            "合计280 万元 · 贯穿性产出",
+            "人均月增收约1800 元（三年贯穿）；12 位师傅技艺有人接续"
+          ],
+          "intersection": [
+            111.37,
+            171.79,
+            119.17,
+            181.9
+          ],
+          "union": [
+            31.44,
+            171.76,
+            299.82,
+            181.93
+          ],
+          "fraction_of_smaller_bbox": 0.0886,
+          "id": "p9_overlap_7d4b306ee4"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t20",
+            "p9_t66"
+          ],
+          "texts": [
+            "延续第二年",
+            "年度验收与绩效报告，台账备查并接受县级主管"
+          ],
+          "intersection": [
+            372.02,
+            316.27,
+            377.41,
+            321.76
+          ],
+          "union": [
+            342.57,
+            311.63,
+            518.2,
+            326.41
+          ],
+          "fraction_of_smaller_bbox": 0.0838,
+          "id": "p9_overlap_d0b4ad02e7"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t15",
+            "p9_t39"
+          ],
+          "texts": [
+            "第二年扩产",
+            "凭证：计件结算表、按月兑付凭证、带动农户名册"
+          ],
+          "intersection": [
+            370.12,
+            250.99,
+            377.41,
+            253.51
+          ],
+          "union": [
+            342.57,
+            243.37,
+            523.28,
+            261.13
+          ],
+          "fraction_of_smaller_bbox": 0.052,
+          "id": "p9_overlap_9a5c12c69e"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t49",
+            "p9_t50"
+          ],
+          "texts": [
+            "合作社 + 师傅",
+            "市场与订单风险"
+          ],
+          "intersection": [
+            24.18,
+            343.29,
+            69.88,
+            343.68
+          ],
+          "union": [
+            24.18,
+            333.54,
+            72.94,
+            353.43
+          ],
+          "fraction_of_smaller_bbox": 0.0385,
+          "id": "p9_overlap_309ac91a7a"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t53",
+            "p9_t54"
+          ],
+          "texts": [
+            "公司",
+            "原料与品控风险"
+          ],
+          "intersection": [
+            24.18,
+            380.59,
+            38.13,
+            380.98
+          ],
+          "union": [
+            24.18,
+            370.84,
+            72.94,
+            390.73
+          ],
+          "fraction_of_smaller_bbox": 0.0385,
+          "id": "p9_overlap_5bd9333147"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t18",
+            "p9_t57"
+          ],
+          "texts": [
+            "30 万元",
+            "组织保障"
+          ],
+          "intersection": [
+            30.93,
+            303.23,
+            54.09,
+            303.4
+          ],
+          "union": [
+            26.31,
+            293.26,
+            54.17,
+            313.37
+          ],
+          "fraction_of_smaller_bbox": 0.0168,
+          "id": "p9_overlap_444f12596d"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t14",
+            "p9_t38"
+          ],
+          "texts": [
+            "第一年进场",
+            "测算：月增收总额10.8 万元 → 21.6 万元（户均1 人计件）"
+          ],
+          "intersection": [
+            370.12,
+            242.6,
+            377.41,
+            242.85
+          ],
+          "union": [
+            342.57,
+            232.71,
+            552.33,
+            252.74
+          ],
+          "fraction_of_smaller_bbox": 0.0052,
+          "id": "p9_overlap_72e3c2d8ac"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t34",
+            "p9_t35"
+          ],
+          "texts": [
+            "农户增收效益",
+            "社会效益"
+          ],
+          "intersection": [
+            411.85,
+            200.11,
+            411.88,
+            210.25
+          ],
+          "union": [
+            370.09,
+            200.11,
+            439.71,
+            210.25
+          ],
+          "fraction_of_smaller_bbox": 0.0011,
+          "id": "p9_overlap_e95c9bc70f"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t57",
+            "p9_t58"
+          ],
+          "texts": [
+            "组织保障",
+            "　县级主管部门指导，公司管设计与销售、"
+          ],
+          "intersection": [
+            54.14,
+            303.23,
+            54.17,
+            313.37
+          ],
+          "union": [
+            26.31,
+            303.23,
+            186.41,
+            313.37
+          ],
+          "fraction_of_smaller_bbox": 0.0011,
+          "id": "p9_overlap_9beff1b901"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t60",
+            "p9_t61"
+          ],
+          "texts": [
+            "制度保障",
+            "　按件计酬结算制度、交验质检制度、"
+          ],
+          "intersection": [
+            230.82,
+            303.23,
+            230.85,
+            313.37
+          ],
+          "union": [
+            202.99,
+            303.23,
+            349.17,
+            313.37
+          ],
+          "fraction_of_smaller_bbox": 0.0011,
+          "id": "p9_overlap_bac82a3987"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t28",
+            "p9_t29"
+          ],
+          "texts": [
+            "文化传承效益",
+            "可持续影响 + 社会效益"
+          ],
+          "intersection": [
+            65.34,
+            200.11,
+            65.37,
+            210.25
+          ],
+          "union": [
+            23.58,
+            200.11,
+            138.87,
+            210.25
+          ],
+          "fraction_of_smaller_bbox": 0.0007,
+          "id": "p9_overlap_b7e6f0be7f"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t64",
+            "p9_t65"
+          ],
+          "texts": [
+            "监督保障",
+            "　按进度拨付、验收后结算、结算公示、"
+          ],
+          "intersection": [
+            399.86,
+            303.23,
+            399.88,
+            313.37
+          ],
+          "union": [
+            372.02,
+            303.23,
+            525.18,
+            313.37
+          ],
+          "fraction_of_smaller_bbox": 0.0007,
+          "id": "p9_overlap_e9e8efbcac"
+        },
+        {
+          "page": 9,
+          "span_ids": [
+            "p9_t68",
+            "p9_t69"
+          ],
+          "texts": [
+            "持续保障",
+            "　第三年品牌打造与电商平台入驻形成"
+          ],
+          "intersection": [
+            568.89,
+            303.23,
+            568.91,
+            313.37
+          ],
+          "union": [
+            541.05,
+            303.23,
+            687.23,
+            313.37
+          ],
+          "fraction_of_smaller_bbox": 0.0007,
+          "id": "p9_overlap_a6e97b144b"
+        }
+      ]
+    }
+  ]
+}
