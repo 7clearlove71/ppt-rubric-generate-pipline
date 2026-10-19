@@ -1,5 +1,0 @@
-{
-  "status": "error",
-  "error_type": "ProviderError",
-  "message": "Output token limit reached; revise the task/budget instead of repeating the identical request"
-}

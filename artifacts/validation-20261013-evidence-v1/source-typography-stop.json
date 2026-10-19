@@ -1,7 +1,0 @@
-{
-  "at": "2026-10-13T13:07:12.137325+00:00",
-  "consumed_maas_requests": 368,
-  "worker_pid": 87826,
-  "no_current_started_requests_observed": true,
-  "reason": "Verified case05 source references rejected solely for Chinese vs ASCII comma; unify narrow typography handling without accepting paraphrase or noncontiguous text."
-}

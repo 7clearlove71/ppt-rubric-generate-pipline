@@ -1,7 +1,0 @@
-{
-  "original_automatic_status": "approved",
-  "current_validation_errors": [
-    "R09: valid arithmetic/rounding incorrectly labeled an error: ['120÷6.6写成18.2这类精度错误']; remove the false negative example or ground any stricter precision requirement in sources"
-  ],
-  "action": "do not score; preserve original false approval and re-audit under validator 8"
-}
