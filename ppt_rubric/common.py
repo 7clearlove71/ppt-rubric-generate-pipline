@@ -58,6 +58,8 @@ def write_jsonl(path, rows):
 
 def load_config(path):
     config = read_json(path)
+    from .provider_errors import validate_failure_options
+    validate_failure_options(config)
     if config.get('pipeline_stage') not in {None, 'rubric', 'judge'}:
         raise ValueError('pipeline_stage must be rubric or judge when specified')
     if type(config.get('max_visual_focus_images', 12)) is not int or config.get('max_visual_focus_images', 12) < 0:

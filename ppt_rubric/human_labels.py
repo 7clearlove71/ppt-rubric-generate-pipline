@@ -7,6 +7,10 @@ from pathlib import Path
 from .common import file_digest
 from .data import select_cases, validate_manifest
 
+# The historical Markdown importer keeps its single-record contract. New
+# multi-human collections have an explicit schema and separate output set.
+from .human_review import import_review_bundle  # noqa: F401
+
 
 def _field(text, name, multiline=False):
     # The template permits bold labels and either colon style.

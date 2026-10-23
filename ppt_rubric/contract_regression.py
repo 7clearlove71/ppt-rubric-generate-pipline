@@ -12,6 +12,26 @@ from .contract_v2 import VISUAL_ITEMS, compile_item, validate_config
 from .provider import Client
 
 
+def expected_visual_answers(sample):
+    """Labels stay offline; an axis failure is not an overlap/readability failure.
+
+    Existing overlap probes keep their frozen label semantics. New diagnostics
+    must explicitly specify the relevant criterion; no unrecognised label is
+    silently interpreted as a passing example.
+    """
+    expected = sample.get('expected_verdicts')
+    if expected is None:
+        relation = sample.get('ground_truth')
+        if relation not in {'overlap', 'separate', 'no_overlap', 'normal'}:
+            raise ValueError('Visual regression needs explicit expected_verdicts for this diagnostic')
+        expected = {'V_READ': 'no' if relation == 'overlap' else 'yes'}
+    valid = {item['id'] for item in VISUAL_ITEMS}
+    if (not isinstance(expected, dict) or not expected or not set(expected) <= valid
+            or any(answer not in {'yes', 'no', 'unknown'} for answer in expected.values())):
+        raise ValueError('Expected visual answers must name real criteria and yes/no/unknown')
+    return dict(expected)
+
+
 def visual_probe(sample, client):
     """Only neutral identity, exact images and the frozen rubric cross the API boundary."""
     image = sample['image_path']
@@ -28,8 +48,14 @@ def visual_probe(sample, client):
     images = [(doc + '/page/1', original)]
     if original != image:
         images.append((doc + '/page/1/local-view', image))
-    payload = {'document_id': doc, 'pages': [{'page': 1, 'page_id': doc + '/page/1'}], 'criteria': criteria}
-    validate = partial(validate_visual_batch, items=items, pages=[1])
+    require_diagnostics = getattr(client, 'config', {}).get('visual_diagnostics', False)
+    payload = {'document_id': doc, 'pages': [{'page': 1, 'page_id': doc + '/page/1'}], 'criteria': criteria,
+               'require_diagnostics': require_diagnostics,
+               'inspection_domains': ['page_edge', 'footer_last_line', 'overlap', 'axis_encoding'],
+               'image_supply': {'original_page': True, 'local_view': original != image,
+                                'automatic_verdict': False}}
+    validate = partial(validate_visual_batch, items=items, pages=[1],
+                       require_diagnostics=require_diagnostics)
     result = client.ask('judge', VISUAL_PROMPT, payload, images, validate=validate)
     validate(result)
     return result
@@ -38,8 +64,12 @@ def visual_probe(sample, client):
 def run_checks(dataset, primary, verifier, output):
     records = []
     for sample in dataset['samples']:
+        expected = expected_visual_answers(sample)
         row = {'id': sample['id'], 'image_sha256': sample['image']['sha256'],
-               'expected_relation': sample['ground_truth'], 'assessors': {}}
+               'original_page_sha256': sample['original_page']['sha256'],
+               'expected_relation': sample.get('ground_truth'), 'expected_verdicts': expected,
+               'diagnostic_category': sample.get('diagnostic_category'),
+               'assessors': {}}
         # Each provider still has its single shared limiter; no parallel same-provider processes.
         with ThreadPoolExecutor(max_workers=2) as pool:
             jobs = {name: pool.submit(visual_probe, sample, client)
@@ -48,17 +78,21 @@ def run_checks(dataset, primary, verifier, output):
                 try:
                     result = job.result()
                     verdicts = {v['rubric_id']: v for v in result['pages'][0]['verdicts']}
-                    expected = 'no' if sample['ground_truth'] == 'overlap' else 'yes'
+                    matches = {key: verdicts[key]['answer'] == answer for key, answer in expected.items()}
                     row['assessors'][name] = {'status': 'complete', 'response': result,
-                        'readability_matches_expected': verdicts['V_READ']['answer'] == expected,
-                        'layout_answer': verdicts['V_LAYOUT']['answer']}
+                        'criterion_matches_expected': matches,
+                        'all_expected_answers_match': all(matches.values()),
+                        'readability_matches_expected': matches.get('V_READ'),
+                        'layout_answer': verdicts['V_LAYOUT']['answer'],
+                        'rationale_review_status': 'pending_object_region_and_ownership_review'}
                 except Exception as exc:
                     row['assessors'][name] = {'status': 'unavailable', 'error_type': type(exc).__name__}
         records.append(row)
         write_json(Path(output) / 'results.json', {'records': records,
-            'scope': 'Four selected development locations; Codex image observations, not fresh human reannotation.',
-            'policy': 'Frozen labels withheld; expected relation comparison does not validate every rationale or the whole deck.'})
-        print(f'visual regression {sample["id"]}: ' + str({k: v.get('readability_matches_expected') for k, v in row['assessors'].items()}), flush=True)
+            'scope': dataset.get('scope', 'Selected development diagnostics; no inference to the complete deck or population.'),
+            'annotation_provenance': dataset.get('annotation_provenance', 'Frozen diagnostic expectations; not new human reannotation.'),
+            'policy': 'Frozen labels withheld; answer matching does not validate object attribution, lost information, severity, or defect ownership.'})
+        print(f'visual regression {sample["id"]}: ' + str({k: v.get('criterion_matches_expected') for k, v in row['assessors'].items()}), flush=True)
     return records
 
 

@@ -9,6 +9,7 @@ from collections import Counter
 from pathlib import Path
 
 from .common import digest, read_json, write_json
+from .candidate_mapping import IDENTITY_FIELDS, mapping_rows, write_candidate_mapping
 from .data import select_cases, validate_manifest
 from .evaluation import agreement
 from .label_reliability import analyze_label_reliability
@@ -31,6 +32,14 @@ def _interval(summary):
 
 
 def _validate_summary(summary):
+    if summary.get('status') == 'not_comparable':
+        if (any(summary.get(key) is not None for key in ('score', 'score_lower', 'score_upper'))
+                or summary.get('unresolved_weight') != 0
+                or set(summary.get('dimensions', {})) != DIMENSIONS
+                or any(row != {'earned': 0, 'possible': 0, 'unresolved': 0}
+                       for row in summary['dimensions'].values())):
+            raise ValueError('An empty comparison must not claim a score or interval')
+        return
     low, high = _interval(summary)
     status, score = summary.get('status'), summary.get('score')
     unresolved = summary.get('unresolved_weight')
@@ -116,6 +125,10 @@ def accounting(root):
     paths = [Path(root) / stage / provider / 'requests.json'
              for stage in ('rubrics', 'judgments', 'local-regression', 'holdout-rubrics', 'holdout-judgments')
              for provider in ('primary-api', 'verification-api')]
+    # The reusable v2.5 runner shares one journal per provider across source
+    # generation/audit and scoring. Keep these explicit so frozen or pre-repair
+    # snapshots cannot enter the total through a recursive search.
+    paths.extend(Path(root) / provider / 'requests.json' for provider in ('bailian-api', 'maas-api'))
     totals, journals, seen, duplicates = {}, [], {}, []
     for path in paths:
         if not path.exists():
@@ -295,6 +308,7 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
     judgment_root = root / ('holdout-judgments' if split == 'holdout' else 'judgments')
     rows, counts, suites = [], Counter(), {}
     item_agreement = Counter()
+    scoring_methods = set()
     for case in cases:
         cid = case['id']
         row = {'case_id': cid, 'rubric_status': 'missing', 'candidates': {}}
@@ -305,10 +319,16 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
                     or suite.get('rubric_hash') != digest({k: v for k, v in suite.items() if k != 'rubric_hash'})):
                 raise ValueError('Rubric hash, case, or protocol is invalid')
             row.update(rubric_status=suite['status'], rubric_items=len(suite['items']), rubric_hash=suite['rubric_hash'])
+            if 'pipeline_mode' in suite:
+                from .v25.contract_v2 import validate_readiness
+                validate_readiness(suite)
+                row.update(pipeline_mode=suite['pipeline_mode'], source_audit=suite['source_audit'])
             suites[cid] = suite
         elif (rubric_root / cid / 'status.json').exists():
             row['rubric_status'] = read_json(rubric_root / cid / 'status.json')['status']
         counts['rubrics_approved'] += row['rubric_status'] == 'approved'
+        if suite and 'source_audit' in suite:
+            counts['rubrics_audit_' + suite['source_audit']['status']] += 1
         reports = {}
         for candidate in case['candidates']:
             path = judgment_root / cid / f'{candidate["id"]}.json'
@@ -317,47 +337,114 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
             report = read_json(path)
             if candidate['sha256'] != report['candidate_hash'] or report.get('candidate_id') != candidate['id'] or report.get('case_id') != cid:
                 raise ValueError('Candidate hash differs from manifest')
-            if (not suite or suite['status'] != 'approved' or report.get('rubric_hash') != suite['rubric_hash']
+            ready = (suite and suite.get('status') == 'ready' and 'pipeline_mode' in suite
+                     and report.get('scoring_method') == 'single_k3')
+            if (not suite or (suite['status'] != 'approved' and not ready) or report.get('rubric_hash') != suite['rubric_hash']
                     or report.get('source_hash') != suite.get('provenance', {}).get('source_hash')
                     or report.get('evaluation_protocol') != 'contract_v2'):
                 raise ValueError('Evaluation does not belong to this approved rubric/source/protocol')
+            if suite and 'pipeline_mode' in suite and (
+                    report.get('pipeline_mode') != suite['pipeline_mode']
+                    or report.get('source_audit') != suite['source_audit']):
+                raise ValueError('Evaluation source audit status differs from its rubric')
             _validate_summary(report['summary'])
-            _validate_summary(report['primary']['summary'])
+            single = report.get('scoring_method') == 'single_k3'
+            scoring_methods.add('single_k3' if single else 'historical_dual_assessor')
+            if len(scoring_methods) > 1:
+                raise ValueError('Report single-K3 and historical dual-assessor runs separately')
+            assessment = report['assessment'] if single else report['primary']
+            _validate_summary(assessment['summary'])
+            if single and (any(key in report for key in ('primary', 'verification', 'consensus', 'verification_model'))
+                           or ('comparison' not in report and report['summary'] != assessment['summary'])
+                           or report['verdicts'] != assessment['verdicts']
+                           or report.get('judge_model') != 'kimi-k3'):
+                raise ValueError('Single-K3 report must preserve the sole assessment without a merge')
             reports[candidate['id']] = report
-            counts['primary_complete'] += report['primary']['summary']['status'] == 'complete'
-            counts['combined_complete'] += report['summary']['status'] == 'complete'
+            if single:
+                counts['assessment_complete'] += assessment['summary']['status'] == 'complete'
+                if 'comparison' in report:
+                    counts['comparison_complete'] += report['summary']['status'] == 'complete'
+            else:
+                counts['primary_complete'] += assessment['summary']['status'] == 'complete'
+                counts['combined_complete'] += report['summary']['status'] == 'complete'
             independent = set(report.get('consensus', {}).get('independently_evaluated_items', []))
             nonvisual = {item['id'] for item in suite['items'] if item['dimension'] != 'visual'}
             for verdict in report['verdicts']:
                 if verdict['rubric_id'] in independent & nonvisual:
                     item_agreement[verdict['assessment_status']] += 1
-            local = {item['id']: Counter(v['answer'] for p in report['primary']['visual_pages']
+            local = {item['id']: Counter(v['answer'] for p in assessment['visual_pages']
                                         for v in p['verdicts'] if v['rubric_id'] == item['id'])
                      for item in suite['items'] if item['dimension'] == 'visual'} if suite else {}
-            row['candidates'][candidate['id']] = {'primary': report['primary']['summary'],
-                'combined': report['summary'], 'visual_page_answers': local,
-                'ownership_conflicts': report['ownership_conflicts']}
+            candidate_result = {'visual_page_answers': local, 'ownership_conflicts': report['ownership_conflicts']}
+            if single:
+                candidate_result.update(assessment=assessment['summary'], scoring_method='single_k3')
+                if 'comparison' in report:
+                    candidate_result.update(summary=report['summary'], comparison=report['comparison'])
+            else:
+                candidate_result.update(primary=assessment['summary'], combined=report['summary'])
+            row['candidates'][candidate['id']] = candidate_result
+        if any('comparison' in report for report in reports.values()):
+            from .v25.comparison_scoring import validate_comparison
+            row['comparison'] = validate_comparison(case, suite, reports)
+            settings = ('rubric_hash', 'config_hash', 'judge_model', 'judge_validator_version',
+                        'judge_prompt_fingerprint', 'evaluation_protocol', 'scoring_method')
+            if any(len({r.get(key) for r in reports.values()}) != 1 for key in settings):
+                raise ValueError('Cannot compare mismatched candidate evaluations')
+        row['candidate_mapping'] = mapping_rows([case], {cid: reports}, judgment_root)
+        for identity in row['candidate_mapping']:
+            if identity['candidate_id'] in row['candidates']:
+                row['candidates'][identity['candidate_id']]['candidate_identity'] = {
+                    key: identity[key] for key in (*IDENTITY_FIELDS, 'page_count')}
         expected_candidates = {candidate['id'] for candidate in case['candidates']}
         if len(reports) == 2 and set(reports) == expected_candidates:
             candidate_ids = sorted(reports)
             a, b = (reports[c] for c in candidate_ids)
             if any(a.get(key) != b.get(key) for key in ('rubric_hash', 'config_hash', 'judge_model',
-                    'verification_model', 'judge_validator_version', 'judge_prompt_fingerprint', 'evaluation_protocol')):
+                    'verification_model', 'judge_validator_version', 'judge_prompt_fingerprint', 'evaluation_protocol',
+                    'scoring_method')):
                 raise ValueError('Cannot compare mismatched candidate evaluations')
-            row['combined_interval_preference'] = _candidate_preference(a['summary'], b['summary'], candidate_ids)
-            row['primary_preference'] = _candidate_preference(a['primary']['summary'], b['primary']['summary'], candidate_ids)
+            if a.get('scoring_method') == 'single_k3':
+                row['scoring_method'] = 'single_k3'
+                if row.get('comparison', {}).get('status') == 'not_comparable':
+                    row['interval_preference'] = {'prediction': None, 'status': 'not_comparable',
+                        'reason': 'All rubric items were excluded because of unknown verdicts',
+                        'difference_interval': None, 'candidate_order': candidate_ids, 'tie_margin': 3}
+                else:
+                    row['interval_preference'] = _candidate_preference(a['summary'], b['summary'], candidate_ids)
+            else:
+                row['combined_interval_preference'] = _candidate_preference(a['summary'], b['summary'], candidate_ids)
+                row['primary_preference'] = _candidate_preference(a['primary']['summary'], b['primary']['summary'], candidate_ids)
             if suite:
-                row['weight_sensitivity'] = weight_sensitivity(a['summary'], b['summary'], suite['dimension_weights'])
+                if row.get('comparison', {}).get('excluded_rubric_ids'):
+                    row['weight_sensitivity'] = {'status': 'not_applicable',
+                        'reason': 'Shared rubric exclusions reduce dimension budgets; weights are not redistributed'}
+                else:
+                    row['weight_sensitivity'] = weight_sensitivity(a['summary'], b['summary'], suite['dimension_weights'])
         rows.append(row)
+    candidate_mapping = [identity for row in rows for identity in row['candidate_mapping']]
     result = {'split': split, 'cases': rows, 'counts': dict(counts), 'total_cases': len(cases),
+              'manifest_id': manifest['id'], 'candidate_mapping': candidate_mapping,
               'total_decks': sum(len(c['candidates']) for c in cases),
               'independent_content_answers': dict(item_agreement), 'accounting': accounting(root),
               'interpretation': ['Primary score is one model judgment, not verified truth.',
                  'Combined scores retain independent model disagreements as intervals; local visuals may be singly assessed.',
-                 'Robust interval preference is not a complete score, and partial coverage is reported explicitly.',
-                 'Human preference is a comparison target, not the oracle for factual correctness.']}
+                 'Robust interval preference is not a complete score, and partial coverage is reported explicitly.']}
+    single_run = scoring_methods == {'single_k3'}
+    if single_run:
+        result.pop('independent_content_answers')
+        result['scoring_method'] = 'single_k3'
+        result['interpretation'] = [
+            'Content and visual scores come from one K3 model; there is no independent candidate review or merge.',
+            'Unknown answers retain score intervals; robust interval preference is separate from complete scores.',
+            'Independent source audit concerns the rubric, not the candidate scores.']
+        if any('comparison' in row for row in rows):
+            result['interpretation'][1] = (
+                'Current totals exclude each criterion with an unknown final verdict for any same-case candidate; '
+                'remaining weights are unchanged and raw assessment intervals are preserved. '
+                'Historical reports retain their original scoring policy.')
     result['source_semantic_qa'] = source_semantic_qa(root, manifest, rows, suites, split)
     if labels is not None:
+        result['interpretation'].append('Human preference is a development comparison target, not factual ground truth.')
         result['human_reliability'] = analyze_label_reliability(manifest, labels, split=split, allow_holdout=allow_holdout)
         result['complete_score_agreement'] = agreement(manifest, labels, judgment_root, split=split)
         lookup = {r['case_id']: r for r in labels['labels']}
@@ -372,19 +459,23 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
             if label.get('candidate_hashes') != expected:
                 raise ValueError('Human label candidate identity mismatch')
             decided_labels += 1
-            prediction = row.get('combined_interval_preference', {}).get('prediction')
+            preference_key = 'interval_preference' if single_run else 'combined_interval_preference'
+            prediction = row.get(preference_key, {}).get('prediction')
             row['human_label'] = label['winner']
             row['robust_interval_match'] = prediction == label['winner'] if prediction else None
             comparable += bool(prediction)
             matches += bool(prediction) and prediction == label['winner']
-            primary = {cid: candidate['primary'] for cid, candidate in row['candidates'].items()}
+            primary = {cid: candidate.get('summary', candidate['assessment']) if single_run else candidate['primary']
+                       for cid, candidate in row['candidates'].items()}
             if len(expected) != 2:
                 raise ValueError('Pairwise single-assessor comparison expects two candidates')
             if set(primary) != set(expected):
-                single_skipped.append({'case_id': row['case_id'], 'reason': 'missing primary candidate assessment'})
+                single_skipped.append({'case_id': row['case_id'], 'reason': (
+                    'missing K3 candidate assessment' if single_run else 'missing primary candidate assessment')})
                 continue
             if any(s['status'] != 'complete' or s['score'] is None for s in primary.values()):
-                single_skipped.append({'case_id': row['case_id'], 'reason': 'incomplete primary score'})
+                single_skipped.append({'case_id': row['case_id'], 'reason': (
+                    'incomplete K3 score' if single_run else 'incomplete primary score')})
                 continue
             ordered = sorted(expected)
             single = _candidate_preference(primary[ordered[0]], primary[ordered[1]], ordered)
@@ -413,6 +504,9 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
                 'majority_labels': sorted(k for k, count in single_labels.items() if count == majority_count),
                 'matches': majority_count, 'agreement': majority_count / single_n if single_n else None,
                 'meaning': 'Label frequency on exactly this comparable subset; not out-of-sample accuracy or a tuning target.'}}
+        if single_run:
+            result['single_assessor_agreement'].update(
+                assessment='single_k3', meaning='Descriptive comparison using complete K3 scores only.')
     return result
 
 
@@ -428,7 +522,9 @@ def main():
     result = summarize(read_json(args.manifest), args.run, read_json(args.labels) if args.labels else None,
                        args.split, args.allow_holdout)
     write_json(args.out, result)
-    print(json.dumps({'counts': result['counts'], 'accounting': result['accounting']}, ensure_ascii=False, indent=2))
+    mapping = write_candidate_mapping(Path(args.out).parent, result['candidate_mapping'], result['manifest_id'])
+    print(json.dumps({'counts': result['counts'], 'accounting': result['accounting'],
+                      'candidate_mapping_files': mapping['files']}, ensure_ascii=False, indent=2))
 
 
 if __name__ == '__main__':

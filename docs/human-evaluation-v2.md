@@ -74,7 +74,7 @@
 
 每名评测者原始记录独立保存，记录文件哈希、时间与匿名映射。候选规范编号由组织者转换；原始匿名选择仍保留。复评前不得将旧胜负或理由传给 rubric 生成器、judge 或其他评测模型。
 
-当前 `import_markdown_labels` 针对每案例一份历史 Markdown；它会拒绝同案多文件。新复评使用独立目录与原始记录结构，另行显式决定 canonical 标签；不得为了通过导入而删除其中一人的记录。
+当前 `import_markdown_labels` 针对每案例一份历史 Markdown；它会拒绝同案多文件。新复评使用 `python -m ppt_rubric.human_review prepare/import` 的schema-2独立目录与原始记录结构，完整保留多人判断，并由第三方显式裁决决定canonical；未裁决保持unlabeled，即使两人同意也不静默取首份。不得为了通过导入而删除其中一人的记录。静态包、哈希校验、字段与命令见[实施说明](scoring-and-human-validation-20261019.md)。
 
 `ppt_rubric.label_reliability.analyze_label_reliability(manifest, labels, split='dev')` 可为比较报告生成结构性可靠性摘要。它不访问记录路径、不分析理由、不裁决投票、不改 canonical winner。默认仅处理开发集；留出需要显式允许。
 

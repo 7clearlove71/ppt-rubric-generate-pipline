@@ -16,6 +16,14 @@ from ppt_rubric.source_catalog import source_catalog
 SOURCES = [{'id': 'prompt', 'text': 'Present the supplied facts accurately.\nState uncertainty.'}]
 
 
+@pytest.fixture(autouse=True)
+def handcrafted_scoring_contracts(monkeypatch):
+    # These scorer fixtures deliberately use custom budgets and small criterion
+    # sets to isolate aggregation/failure behavior. Real schema-3 publication
+    # checks are exercised without this substitution in test_contract_integrity.
+    monkeypatch.setattr('ppt_rubric.contract_judge.verify_contract_sources', lambda *_args: None)
+
+
 def rubric(case_id='01'):
     result = {'status': 'approved', 'evaluation_protocol': 'contract_v2', 'case_id': case_id,
             'provenance': {'source_hash': digest(SOURCES), 'case_id': case_id, 'validator_version': VALIDATOR_VERSION},
@@ -226,6 +234,16 @@ def test_content_only_verification_does_not_claim_visual_consensus(tmp_path):
     rows = {row['rubric_id']: row for row in result['verdicts']}
     assert rows['V_READ']['assessment_status'] == 'not_independently_verified'
     assert rows['V_READ']['verification_answer'] is None
+
+
+def test_identical_api_profile_cannot_be_claimed_as_independent_cached_verification(tmp_path):
+    primary, verifier = Client(), Client()
+    for client in (primary, verifier):
+        client.config.update(base_url='https://example.test/v1', judge_model='same-model', max_output_tokens=1000)
+    with pytest.raises(ValueError, match='identical cached request profile'):
+        evaluate_contract(case_manifest('A'), rubric(), config(), primary, {'A': decks()['A']}, SOURCES,
+                          tmp_path, verification_client=verifier)
+    assert not primary.calls and not verifier.calls
 
 
 def test_source_mismatch_rejected_before_api_calls(tmp_path):

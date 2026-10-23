@@ -153,6 +153,8 @@ def analyze_label_reliability(manifest, labels, split='dev', allow_holdout=False
                 'review_records': provenance,
                 'protocol_documentation': protocol,
                 'tie_semantics': tie_semantics,
+                'raw_rating_disagreement': _raw_rating_disagreement(records),
+                'explicit_adjudication_present': isinstance(label.get('adjudication'), Mapping),
             },
             'unknowns': unknowns,
         })
@@ -186,6 +188,25 @@ def analyze_label_reliability(manifest, labels, split='dev', allow_holdout=False
                 for row in labelled),
             'inter_rater_reliability': None,
             'inter_rater_reliability_reason': 'Canonical labels and provenance do not establish independent raw repeated ratings.',
+            'raw_rating_disagreement_cases': sum(
+                row['facts']['raw_rating_disagreement'].get('disagreement') is True for row in labelled),
         },
         'cases': rows,
     }
+
+
+def _raw_rating_disagreement(records):
+    """Describe supplied schema-2 raw choices without voting or changing labels.
+
+    Repeats by one person are kept as records; this summary does not call those
+    independent raters or estimate a population reliability coefficient.
+    """
+    ratings = [record for record in records
+               if record.get('schema_version') == 2 and record.get('actor_kind') == 'human'
+               and record.get('role') == 'independent_review']
+    choices = [(record.get('label_status'), record.get('winner'), record.get('choice'))
+               for record in ratings]
+    return {'raw_rating_records': len(ratings),
+            'disagreement': len(set(choices)) > 1 if len(ratings) >= 2 else None,
+            'canonical_choice_inferred': False,
+            'meaning': 'Observed raw choice disagreement; no majority vote, independence inference, or adjudication.'}

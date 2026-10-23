@@ -112,3 +112,37 @@ def resolve_source_ids(catalog, ids):
     if unknown:
         raise ValueError(f"Unknown source reference ids: {unknown}")
     return [dict(by_id[value]) for value in ids]
+
+
+def validate_source_coverage(catalog, coverage, targets):
+    """Require an explicit disposition for every exact source fragment.
+
+    This checks the inventory, not whether a model's semantic classification is
+    correct. Independent source audit must still check the context decisions.
+    Shared source spans are legitimate; scoring ownership belongs to targets.
+    """
+    if not isinstance(coverage, list):
+        raise ValueError('source_coverage must be a list')
+    by_target = {target['id']: target for target in targets}
+    expected = {fragment['id'] for fragment in catalog}
+    seen = set()
+    for row in coverage:
+        if not isinstance(row, dict) or row.get('source_id') not in expected or row['source_id'] in seen:
+            raise ValueError('source_coverage requires each supplied source fragment exactly once')
+        sid = row['source_id']
+        seen.add(sid)
+        ids = row.get('target_ids')
+        if (not isinstance(ids, list) or any(not isinstance(tid, str) or tid not in by_target for tid in ids)
+                or len(ids) != len(set(ids))):
+            raise ValueError('source_coverage target_ids must select unique semantic targets')
+        linked = {tid for tid, target in by_target.items() if sid in target['source_ids']}
+        if set(ids) != linked:
+            raise ValueError('source_coverage must preserve all source-to-target links')
+        if row.get('role') not in {'required', 'context', 'mixed'}:
+            raise ValueError('source_coverage role must be required/context/mixed')
+        if (row['role'] == 'context') != (not ids):
+            raise ValueError('Only context source fragments may have no scoring targets')
+        if not isinstance(row.get('rationale'), str) or not row['rationale'].strip():
+            raise ValueError('source_coverage needs a rationale, including context-only decisions')
+    if seen != expected:
+        raise ValueError('source_coverage omitted source fragments')

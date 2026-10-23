@@ -73,30 +73,42 @@ def extract_pptx(path):
 
 
 def rendered_text_geometry(deck):
-    """PDF text spans assist spatial checks; bounding boxes do not prove visibility."""
+    """Locate PDF text, including off-page spans, without asserting visibility.
+
+    The default extraction clip can discard complete out-of-page lines. An
+    unbounded text search keeps these localization hints, while all crops and
+    original rendered images still use the actual page rectangle.
+    """
     if not deck.get('pdf'):
         return []
     import fitz
-    from .visual_regions import overlap_regions
+    from .visual_regions import inspection_regions, overlap_regions
     pages = []
     wanted = {slide['page'] for slide in deck['slides']}
     with fitz.open(deck['pdf']) as pdf:
         for number in sorted(wanted):
             page = pdf[number - 1]
             spans = []
-            for block in page.get_text('dict')['blocks']:
-                for line in block.get('lines', []):
+            for block_number, block in enumerate(page.get_text('dict', clip=fitz.INFINITE_RECT())['blocks']):
+                for line_number, line in enumerate(block.get('lines', [])):
                     for span in line['spans']:
                         if not span['text'].strip():
                             continue
+                        intersection = fitz.Rect(span['bbox']) & page.rect
                         spans.append({'id': f'p{number}_t{len(spans)+1}', 'text': span['text'],
                                       'bbox': [round(x, 2) for x in span['bbox']],
-                                      'color': f'#{span["color"]:06x}'})
+                                      'color': f'#{span["color"]:06x}',
+                                      'font_size': round(span['size'], 2),
+                                      'line_id': f'p{number}_b{block_number}_l{line_number}',
+                                      'page_intersection': None if intersection.is_empty else
+                                      [round(x, 2) for x in intersection]})
             pages.append({'page': number, 'page_size': [page.rect.width, page.rect.height],
                           'coordinate_system': 'PDF points; origin top left; bbox=x0,y0,x1,y1',
                           'spans': spans,
-                          'limit': 'Bounding boxes assist localization only. Intersection is not proof of occlusion; inspect the image.'})
+                          'geometry_version': 2,
+                          'limit': 'Bounding boxes and extracted text assist localization only; text can be outside the image. Intersection is not proof of occlusion or visibility; inspect the original image.'})
             pages[-1]['text_overlap_candidates'] = overlap_regions(pages[-1])
+            pages[-1]['inspection_candidates'] = inspection_regions(pages[-1])
     return pages
 
 

@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "manifest_id": "10b5f81b4e69538cb52fb673a8bb85f927719fb6a9e76113327781400a845e5b",
+  "files": {
+    "json": "/srv/runs/batch-001/judgments/candidate-mapping.json",
+    "csv": "/srv/runs/batch-001/judgments/candidate-mapping.csv",
+    "md": "/srv/runs/batch-001/judgments/candidate-mapping.md"
+  },
+  "identity_rule": "Join scores by candidate_key (case_id/candidate_id) within this manifest, and verify SHA-256.",
+  "notes": [
+    "Fictional structure example only; files, hashes and scores do not describe an actual evaluation.",
+    "Candidate IDs are local to the current case and manifest.",
+    "display_name is a user label or file path label, not a verified generator model.",
+    "Rows follow manifest order, not rank. Incomplete scores retain intervals.",
+    "Current comparison totals share unknown exclusions and use score_possible without normalization.",
+    "Only compare or rank candidates for the same task/rubric; no cross-case ranking is implied.",
+    "Missing or pending rows do not have scores."
+  ],
+  "candidates": [
+    {
+      "candidate_key": "task-001/A",
+      "case_id": "task-001",
+      "candidate_id": "A",
+      "display_name": "proposal-002/result.pptx",
+      "input_pptx": "/srv/inputs/task-001/proposal-002/result.pptx",
+      "input_filename": "result.pptx",
+      "input_directory": "/srv/inputs/task-001/proposal-002",
+      "sha256": "4e29e7c71ac5408d747ed3334a21dfffd555732bd981da4c0b7e6af1c51bc61d",
+      "page_count": 10,
+      "document_id": null,
+      "score_status": "complete",
+      "score": 78.5,
+      "score_lower": 78.5,
+      "score_upper": 78.5,
+      "unresolved_weight": 0,
+      "score_possible": 90,
+      "excluded_weight": 10,
+      "excluded_rubric_ids": ["R_Q04"],
+      "comparison_policy": "exclude_unknown_across_candidates_v1",
+      "judgment_file": "/srv/runs/batch-001/judgments/task-001/A.json"
+    },
+    {
+      "candidate_key": "task-001/B",
+      "case_id": "task-001",
+      "candidate_id": "B",
+      "display_name": "proposal-001/result.pptx",
+      "input_pptx": "/srv/inputs/task-001/proposal-001/result.pptx",
+      "input_filename": "result.pptx",
+      "input_directory": "/srv/inputs/task-001/proposal-001",
+      "sha256": "53ecc2a74d1dd2f131423d05e4141296124cb1ecf2a11f4bab2665a70abe481e",
+      "page_count": 8,
+      "document_id": null,
+      "score_status": "complete",
+      "score": 82,
+      "score_lower": 82,
+      "score_upper": 82,
+      "unresolved_weight": 0,
+      "score_possible": 90,
+      "excluded_weight": 10,
+      "excluded_rubric_ids": ["R_Q04"],
+      "comparison_policy": "exclude_unknown_across_candidates_v1",
+      "judgment_file": "/srv/runs/batch-001/judgments/task-001/B.json"
+    }
+  ]
+}

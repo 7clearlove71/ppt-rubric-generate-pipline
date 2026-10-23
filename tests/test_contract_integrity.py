@@ -8,6 +8,7 @@ import pytest
 from ppt_rubric import contract_v2 as contract
 from ppt_rubric.common import digest, write_json
 from ppt_rubric.source_catalog import source_catalog
+from source_contract_fixtures import add_ledger, approval
 
 
 SOURCES = [{'id': 'prompt', 'text': '做一份项目简报。'}]
@@ -27,7 +28,8 @@ def outputs():
                    'source_ids': [catalog[0]['id']]}
     requirements = {'task_summary': '简报', 'source_policy': '补充数据需要说明边界',
                     'requirements': [requirement]}
-    return [requirements, {'approved': True, 'issues': [], 'summary': '有效'}]
+    requirements = add_ledger(requirements, catalog)
+    return [requirements, approval(requirements)]
 
 
 class Client:
@@ -64,6 +66,39 @@ def test_approved_contract_checks_full_frozen_definition(prepared):
     assert suite['source_catalog_hash'] == digest(source_catalog(SOURCES))
     assert suite['provenance']['reviewer_model'] == 'auditor'
     assert suite['requirements']['requirements'][0]['kind'] == 'deliverable'
+
+
+def test_rehashed_rejected_audit_cannot_authorize_published_rubric(prepared):
+    case, cfg, suite = prepared
+    suite['source_audit'] = {'approved': False, 'issues': [{
+        'item_ids': ['R_Q1'], 'source_ids': suite['source_targets'][0]['source_ids'],
+        'counterexample': '来源目标有未解决问题', 'fix': '须修订后重新审核'}]}
+    rehash(suite)
+    with pytest.raises(ValueError, match='explicitly approved embedded source audit'):
+        contract.verify_suite(case, suite, cfg)
+
+
+@pytest.mark.parametrize('mutation', ['rejected_audit', 'rewritten_criterion', 'schema_downgrade'])
+def test_direct_judge_uses_same_publication_gate_without_rehash_bypass(prepared, mutation):
+    from ppt_rubric.contract_judge import validate_inputs
+    case, cfg, suite = copy.deepcopy(prepared)
+    for candidate in case['candidates']:
+        candidate['sha256'] = digest(candidate['id'])
+    decks = {c['id']: {'identity': {'sha256': c['sha256']},
+                      'slides': [{'page': 1, 'image': '/test/original.png', 'text': '项目简报'}]}
+             for c in case['candidates']}
+    catalog = source_catalog(SOURCES)
+    validate_inputs(case, suite, cfg, decks, SOURCES, catalog)
+    if mutation == 'rejected_audit':
+        suite['source_audit'] = {'approved': False, 'issues': []}
+    elif mutation == 'rewritten_criterion':
+        suite['items'][0]['pass_condition'] = 'Always pass'
+        suite['items'][0]['judge_prompt'] = contract.compile_item(suite['items'][0])
+    else:
+        suite['schema_version'] = 2
+    rehash(suite)
+    with pytest.raises(ValueError):
+        validate_inputs(case, suite, cfg, decks, SOURCES, catalog)
 
 
 @pytest.mark.parametrize('change, match', [
@@ -127,7 +162,7 @@ def test_failed_regeneration_cannot_leave_previous_approved_filename(prepared, t
 def test_export_keeps_binary_visual_aggregation_and_source_context(prepared):
     case, cfg, suite = prepared
     result = contract.export_record(case, suite, cfg)
-    assert result['schema_version'] == 2
+    assert result['schema_version'] == 3
     assert result['source_catalog'] == source_catalog(SOURCES)
     assert result['scoring_policy']['page_aggregation'] == 'any_no_else_unknown_else_all_yes'
     rows = {item['id']: item for item in result['rubrics']}
@@ -217,6 +252,7 @@ def test_deterministic_compilation_cannot_expand_or_merge_neighbouring_goals():
         'id': 'Q2', 'kind': 'fact', 'text': '指标为12%，保留本期口径', 'importance': 2,
         'source_ids': requirements['requirements'][0]['source_ids'],
     })
+    requirements = add_ledger(requirements, source_catalog(SOURCES))
     design = contract.compile_requirements(requirements)
     assert [item['id'] for item in design['items']] == ['R_Q1', 'R_Q2']
     assert design['items'][0]['requirement_ids'] == ['Q1']
@@ -224,7 +260,7 @@ def test_deterministic_compilation_cannot_expand_or_merge_neighbouring_goals():
     assert design['items'][1]['dimension'] == 'correctness'
     assert design['items'][1]['importance'] == 2
     assert '12%' not in design['items'][0]['pass_condition']
-    assert design['items'][1]['pass_condition'].endswith(requirements['requirements'][1]['text'])
+    assert requirements['requirements'][1]['text'] in design['items'][1]['pass_condition']
     contract.validate_design(design, requirements, source_catalog(SOURCES))
     design['items'][0]['pass_condition'] += '；所有页面必须有标题。'
     with pytest.raises(ValueError, match='deterministic'):
@@ -298,6 +334,33 @@ def test_compiler_template_change_invalidates_previous_approval(prepared, monkey
     changed = copy.deepcopy(contract.REQUIREMENT_TEMPLATES)
     changed['deliverable']['prefix'] += '另一个规则：'
     monkeypatch.setattr(contract, 'REQUIREMENT_TEMPLATES', changed)
+    with pytest.raises(ValueError, match='fingerprint'):
+        contract.verify_suite(case, suite, cfg)
+
+
+def test_semantic_identity_policy_change_invalidates_previous_approval(prepared, monkeypatch):
+    case, cfg, suite = prepared
+    policy = copy.deepcopy(contract.SOURCE_IDENTITY_POLICY)
+    policy['version'] = 'another-ownership-policy'
+    monkeypatch.setattr(contract, 'SOURCE_IDENTITY_POLICY', policy)
+    with pytest.raises(ValueError, match='fingerprint'):
+        contract.verify_suite(case, suite, cfg)
+
+
+def test_source_graph_policy_change_invalidates_previous_approval(prepared, monkeypatch):
+    case, cfg, suite = prepared
+    policy = copy.deepcopy(contract.SOURCE_GRAPH_POLICY)
+    policy['version'] = 'another-graph-derivation-policy'
+    monkeypatch.setattr(contract, 'SOURCE_GRAPH_POLICY', policy)
+    with pytest.raises(ValueError, match='fingerprint'):
+        contract.verify_suite(case, suite, cfg)
+
+
+def test_audit_interface_policy_change_invalidates_previous_approval(prepared, monkeypatch):
+    case, cfg, suite = prepared
+    policy = copy.deepcopy(contract.AUDIT_INTERFACE_POLICY)
+    policy['version'] = 'another-audit-interface'
+    monkeypatch.setattr(contract, 'AUDIT_INTERFACE_POLICY', policy)
     with pytest.raises(ValueError, match='fingerprint'):
         contract.verify_suite(case, suite, cfg)
 

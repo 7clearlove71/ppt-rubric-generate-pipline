@@ -20,15 +20,27 @@ from .operations import plan_run, run_report, export_suites
 
 
 def main():
+    if sys.argv[1:2] == ['batch']:
+        from .batch import main as batch_main
+        result = batch_main(sys.argv[2:])
+        if result:
+            raise SystemExit(result)
+        return
+    if sys.argv[1:2] in (['contract-v2.5'], ['contract-v25']):
+        from .v25.contract_v2 import main as contract_main
+        return contract_main(sys.argv[2:])
     if sys.argv[1:2] == ['contract']:
         from .contract_v2 import main as contract_main
         return contract_main(sys.argv[2:])
     parser = argparse.ArgumentParser(description='One automatically audited PPT rubric per task')
     sub = parser.add_subparsers(dest='command', required=True)
+    sub.add_parser('batch', help='Run a complete batch; repeat the same command to resume')
     p = sub.add_parser('ingest')
     p.add_argument('--source', required=True)
     p.add_argument('--out', default='data/manifest.json')
     p.add_argument('--seed', type=int, default=20260930)
+    p.add_argument('--split', choices=['auto', 'dev', 'holdout'], default='auto',
+                   help='Use dev for all tasks in a user batch; auto retains the research dev/holdout split')
     for name in ['prepare', 'human-review', 'generate', 'audit', 'judge', 'plan', 'export']:
         p = sub.add_parser(name)
         p.add_argument('--manifest', default='data/manifest.json')
@@ -76,14 +88,22 @@ def main():
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return
     if args.command == 'ingest':
-        m = ingest(args.source, args.out, args.seed)
+        m = ingest(args.source, args.out, args.seed, args.split)
         print(json.dumps({'manifest_id':m['id'], 'cases':len(m['cases'])}))
         return
     m = read_json(args.manifest)
     validate_manifest(m)
     if args.command == 'import-labels':
         result = import_markdown_labels(m, args.source, args.split, args.allow_holdout)
-        write_json(args.out, result)
+        output = Path(args.out)
+        output.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            with output.open('x', encoding='utf-8') as stream:
+                json.dump(result, stream, ensure_ascii=False, indent=2, allow_nan=False)
+                stream.write('\n')
+        except FileExistsError:
+            if read_json(output) != result:
+                raise ValueError('Refusing to overwrite a different human label set; use a new output path')
         print(json.dumps({'imported':len(result['labels']), 'decided':result['decided'],
                           'undecided':result['undecided'], 'deferred_cases':result['deferred_cases'],
                           'out':args.out}, ensure_ascii=False))

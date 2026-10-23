@@ -31,7 +31,19 @@ def validate_manifest(manifest):
             raise ValueError('At least two uniquely identified candidates required')
 
 
-def ingest(source, output, seed=20260930):
+def _candidate_id(index):
+    """A..Z, AA..AZ, ...; preserve IDs for existing small frozen datasets."""
+    result = ''
+    number = index + 1
+    while number:
+        number, remainder = divmod(number - 1, 26)
+        result = chr(65 + remainder) + result
+    return result
+
+
+def ingest(source, output, seed=20260930, split='auto'):
+    if split not in {'auto', 'dev', 'holdout'}:
+        raise ValueError('Ingest split must be auto, dev, or holdout')
     source, output = Path(source).resolve(), Path(output)
     cases = []
     for folder in sorted(p for p in source.iterdir() if p.is_dir()):
@@ -49,14 +61,14 @@ def ingest(source, output, seed=20260930):
         attachments = [{'path':str(p.resolve()),'sha256':file_digest(p)}
                        for p in sorted((folder / 'attachments').rglob('*')) if p.is_file() and p.name != '.DS_Store']
         cases.append({"id": folder.name, "prompt": prompts[0], "attachments": attachments,
-                      "candidates": [{"id": chr(65 + i), "pptx": str(p / "result.pptx"),
+                      "candidates": [{"id": _candidate_id(i), "pptx": str(p / "result.pptx"),
                                       "sha256": file_digest(p / "result.pptx")}
                                      for i, p in enumerate(candidates)]})
     order = [c["id"] for c in cases]
     random.Random(seed).shuffle(order)
     holdout = set(order[max(1, round(len(order) * .7)):])
     for case in cases:
-        case["split"] = "holdout" if case["id"] in holdout else "dev"
+        case["split"] = ("holdout" if case["id"] in holdout else "dev") if split == 'auto' else split
     manifest = {"schema_version": 1, "seed": seed, "cases": cases}
     manifest["id"] = digest(manifest)
     validate_manifest(manifest)

@@ -1,0 +1,26 @@
+{
+  "base_version": "2026-10-14.contract-v2.3",
+  "baseline_directory": "artifacts/final-revision-20261014/frozen-source/ppt_rubric",
+  "baseline_sha256": {
+    "contract_judge.py": "00b4f3b3c1c46e9e48c6720299134766a99530d7eb8257010eafb94aef0869f6",
+    "contract_v2.py": "2db5960a2e35d19e18e3df7184dc30516b7ab197a22726b2ea0b93dd763eb0f9",
+    "render.py": "5e9c95447745a89d9c573b78d95c0d543c65c50ab961fc18833d43bee008a2b1",
+    "source_catalog.py": "bfd8d1c3dd782dc0e0e009ff06209f437220217c922f3136e5441e2e0a84a16e",
+    "visual_regions.py": "c09629b51ddf8dcff98298d495ca9d8b7f71c302bfaa7a2bb9707266427df0c0"
+  },
+  "shared_modules": [
+    "common",
+    "data",
+    "rubric",
+    "provider",
+    "prompts"
+  ],
+  "changes": [
+    "Version and CLI isolation",
+    "Only PDF text layer extraction is passed to content judges; field provenance and limitations explained",
+    "Explicit PDF-text presence and approval-version checks",
+    "K3 writes one title/question per extracted requirement; program binds ownership and boundaries before independent source audit",
+    "Shared PresentBench-style system shell with task framing; PDF provenance and response protocol supplied separately in user input; one criterion per request",
+    "Rubric validator 4 and judge validator 4; generated wording bound into approval provenance; mandatory boxed conclusions must agree with answers"
+  ]
+}

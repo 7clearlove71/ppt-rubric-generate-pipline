@@ -192,6 +192,19 @@ def test_summary_uses_same_frozen_automation_when_human_choice_changes(tmp_path,
     assert first['independent_content_answers'] == {'independent_agreement': 8}
 
 
+def test_summary_candidate_mapping_is_independent_of_development_labels(tmp_path):
+    manifest, labels = fixture_artifacts(tmp_path)
+    labels['labels'][0].update(reviewer='reviewer-one', reviewer_to_manifest={'A': 'B', 'B': 'A'})
+    result = summarize(manifest, tmp_path, labels)
+    rows = result['candidate_mapping']
+    assert rows == result['cases'][0]['candidate_mapping']
+    assert [r['candidate_key'] for r in rows] == ['01/A', '01/B']
+    assert all('human_candidate_ids' not in r for r in rows)
+    assert rows[0]['score'] == 100 and rows[1]['score'] == 85
+    assert result['cases'][0]['candidates']['A']['candidate_identity']['sha256'] == 'hash-A'
+    assert summarize(manifest, tmp_path)['candidate_mapping'] == rows
+
+
 def source_qa_fixture(root, material=True):
     suite = read_json(root / 'rubrics/01/rubric.json')
     return {'schema_version': 1, 'audit_status': 'complete',
@@ -503,6 +516,192 @@ def test_missing_case_is_excluded_and_majority_baseline_uses_only_comparable_sub
     assert metric['skipped'] == [{'case_id': '02', 'reason': 'missing primary candidate assessment'}]
     assert metric['majority_label_baseline']['label_counts'] == {'A': 1}
     assert metric['majority_label_baseline']['n'] == metric['n']
+
+
+def single_k3_artifacts(root, candidates=('A', 'B')):
+    """Build the direct-assessment schema without altering the legacy fixture."""
+    manifest, labels = fixture_artifacts(root)
+    for cid in candidates:
+        path = root / f'judgments/01/{cid}.json'
+        report = read_json(path)
+        report['assessment'] = report.pop('primary')
+        report.pop('verification_model')
+        report.pop('consensus')
+        for verdict in report['verdicts']:
+            verdict.pop('assessment_status')
+        report['assessment']['verdicts'] = copy.deepcopy(report['verdicts'])
+        report['assessment'].update(model='kimi-k3', scoring_method='single_k3')
+        report.update(judge_model='kimi-k3', scoring_method='single_k3')
+        write_json(path, report)
+    return manifest, labels
+
+
+def test_single_k3_report_preserves_one_assessment_and_reports_no_merge(tmp_path, monkeypatch):
+    manifest, labels = single_k3_artifacts(tmp_path)
+
+    def forbid_model(*args, **kwargs):
+        raise AssertionError('Offline reporting must not call a model')
+
+    monkeypatch.setattr('ppt_rubric.provider.Client.ask', forbid_model)
+    monkeypatch.setattr('ppt_rubric.provider.Client.ask_text', forbid_model)
+    before = {str(p.relative_to(tmp_path)): p.read_bytes() for p in tmp_path.rglob('*') if p.is_file()}
+    result = summarize(manifest, tmp_path, labels)
+    after = {str(p.relative_to(tmp_path)): p.read_bytes() for p in tmp_path.rglob('*') if p.is_file()}
+    assert before == after
+    assert result['scoring_method'] == 'single_k3'
+    assert result['counts'] == {'rubrics_approved': 1, 'assessment_complete': 2}
+    assert 'independent_content_answers' not in result
+    row = result['cases'][0]
+    assert row['interval_preference']['prediction'] == 'A'
+    assert 'primary_preference' not in row and 'combined_interval_preference' not in row
+    assert row['candidates']['A']['assessment']['score'] == 100
+    assert row['candidates']['B']['assessment']['score'] == 85
+    assert all('primary' not in c and 'combined' not in c for c in row['candidates'].values())
+    assert result['complete_score_agreement']['n'] == result['single_assessor_agreement']['n'] == 1
+    assert result['single_assessor_agreement']['assessment'] == 'single_k3'
+
+
+def test_single_k3_unknown_retains_interval_without_claiming_complete_score(tmp_path):
+    manifest, labels = single_k3_artifacts(tmp_path)
+    suite = read_json(tmp_path / 'rubrics/01/rubric.json')
+    for cid, criterion, answer in (('A', 'visual', 'unknown'), ('B', 'correctness', 'no')):
+        path = tmp_path / f'judgments/01/{cid}.json'
+        report = read_json(path)
+        next(v for v in report['verdicts'] if v['rubric_id'] == criterion)['answer'] = answer
+        report['summary'] = aggregate(suite, report['verdicts'])
+        report['assessment']['summary'] = copy.deepcopy(report['summary'])
+        report['assessment']['verdicts'] = copy.deepcopy(report['verdicts'])
+        if criterion == 'visual':
+            report['assessment']['visual_pages'][0]['verdicts'][0]['answer'] = answer
+        write_json(path, report)
+    result = summarize(manifest, tmp_path, labels)
+    a = result['cases'][0]['candidates']['A']['assessment']
+    assert a['score'] is None and (a['score_lower'], a['score_upper']) == (85, 100)
+    assert result['counts']['assessment_complete'] == 1
+    assert result['complete_score_agreement']['n'] == result['single_assessor_agreement']['n'] == 0
+    assert result['single_assessor_agreement']['skipped'] == [{'case_id': '01', 'reason': 'incomplete K3 score'}]
+    assert result['robust_interval_agreement']['n'] == result['robust_interval_agreement']['matches'] == 1
+
+
+@pytest.mark.parametrize('change', ['retired_merge', 'changed_summary', 'changed_verdict', 'wrong_model'])
+def test_single_k3_report_rejects_merge_or_rewritten_assessment(tmp_path, change):
+    manifest, _ = single_k3_artifacts(tmp_path)
+    path = tmp_path / 'judgments/01/A.json'
+    report = read_json(path)
+    if change == 'retired_merge':
+        report['consensus'] = {}
+    elif change == 'changed_summary':
+        report['summary'] = copy.deepcopy(read_json(tmp_path / 'judgments/01/B.json')['summary'])
+    elif change == 'changed_verdict':
+        report['verdicts'][0]['answer'] = 'no'
+    else:
+        report['judge_model'] = 'kimi-k2.6'
+    write_json(path, report)
+    with pytest.raises(ValueError, match='sole assessment'):
+        summarize(manifest, tmp_path)
+
+
+def test_single_k3_reports_are_not_mixed_with_historical_dual_assessor_scores(tmp_path):
+    manifest, _ = single_k3_artifacts(tmp_path, candidates=('A',))
+    with pytest.raises(ValueError, match='separately'):
+        summarize(manifest, tmp_path)
+
+
+def shared_subset_artifacts(root, all_unknown=False):
+    """Current scoring is explicit; historical fixtures retain their intervals."""
+    from ppt_rubric.v25.comparison_scoring import score_candidates
+    manifest, labels = single_k3_artifacts(root)
+    suite = read_json(root / 'rubrics/01/rubric.json')
+    reports = {cid: read_json(root / f'judgments/01/{cid}.json') for cid in ('A', 'B')}
+    for verdict in reports['A']['verdicts']:
+        if all_unknown or verdict['rubric_id'] == 'visual':
+            verdict['answer'] = 'unknown'
+    for report in reports.values():
+        report['assessment']['verdicts'] = copy.deepcopy(report['verdicts'])
+        report['assessment']['summary'] = aggregate(suite, report['verdicts'])
+    comparison, totals = score_candidates(suite, {cid: r['verdicts'] for cid, r in reports.items()}, reports)
+    for cid, report in reports.items():
+        report.update(comparison=copy.deepcopy(comparison), summary=totals[cid])
+        write_json(root / f'judgments/01/{cid}.json', report)
+    return manifest, labels
+
+
+def test_current_offline_report_uses_shared_subset_for_preference_and_mapping(tmp_path):
+    manifest, labels = shared_subset_artifacts(tmp_path)
+    before = {str(p): p.read_bytes() for p in tmp_path.rglob('*.json')}
+    result = summarize(manifest, tmp_path, labels)
+    row = result['cases'][0]
+    assert row['comparison']['excluded_rubric_ids'] == ['visual']
+    assert row['comparison']['score_possible'] == 85
+    assert row['candidates']['A']['assessment']['score'] is None  # Raw interval preserved.
+    assert all(c['summary']['score'] == 85 for c in row['candidates'].values())
+    assert row['interval_preference']['prediction'] == 'tie'
+    assert row['weight_sensitivity']['status'] == 'not_applicable'
+    assert all(c['score'] == 85 and c['score_possible'] == 85 for c in result['candidate_mapping'])
+    assert result['counts']['assessment_complete'] == 1
+    assert result['counts']['comparison_complete'] == 2
+    assert result['complete_score_agreement']['cases'][0]['predicted'] == 'tie'
+    assert result['single_assessor_agreement']['cases'][0]['prediction'] == 'tie'
+    assert before == {str(p): p.read_bytes() for p in tmp_path.rglob('*.json')}
+
+
+def test_offline_report_with_every_item_excluded_never_claims_a_tie(tmp_path):
+    manifest, labels = shared_subset_artifacts(tmp_path, all_unknown=True)
+    result = summarize(manifest, tmp_path, labels)
+    row = result['cases'][0]
+    assert row['comparison']['status'] == row['interval_preference']['status'] == 'not_comparable'
+    assert row['interval_preference']['prediction'] is None
+    assert all(c['score'] is None and c['score_possible'] == 0 for c in result['candidate_mapping'])
+    assert result['counts']['comparison_complete'] == 0
+    assert result['complete_score_agreement']['n'] == result['single_assessor_agreement']['n'] == 0
+
+
+@pytest.mark.parametrize('change', ['exclude_yes', 'wrong_score', 'raw_summary', 'raw_verdict',
+                                  'policy', 'legacy_mixture', 'missing_candidate'])
+def test_current_report_revalidates_shared_exclusions_and_original_assessments(tmp_path, change):
+    manifest, _ = shared_subset_artifacts(tmp_path)
+    path = tmp_path / 'judgments/01/A.json'
+    report = read_json(path)
+    if change == 'exclude_yes':
+        report['comparison']['excluded_rubric_ids'].append('correctness')
+    elif change == 'wrong_score':
+        report['summary']['score'] = report['summary']['score_lower'] = report['summary']['score_upper'] = 80
+    elif change == 'raw_summary':
+        report['assessment']['summary']['score_lower'] = 84
+        report['assessment']['summary']['score_upper'] = 99
+    elif change == 'raw_verdict':
+        # Keep both copies equal; replay must still reject a stale raw total.
+        report['verdicts'][0]['answer'] = report['assessment']['verdicts'][0]['answer'] = 'no'
+    elif change == 'policy':
+        report['comparison']['policy']['version'] = 'different'
+    elif change == 'legacy_mixture':
+        report.pop('comparison')
+        report['summary'] = copy.deepcopy(report['assessment']['summary'])
+    else:
+        (tmp_path / 'judgments/01/B.json').unlink()
+    write_json(path, report)
+    with pytest.raises(ValueError):
+        summarize(manifest, tmp_path)
+
+
+def test_accounting_counts_runner_provider_ledgers_once_and_ignores_snapshots(tmp_path):
+    k3 = [attempt(1, 'k3-shared', 'kimi-k3'),
+          attempt(2, 'k3-shared', 'kimi-k3', status='failed', tokens=None)]
+    audit = [attempt(1, 'source-audit', 'kimi-k2.6', status='started', tokens=None)]
+    write_json(tmp_path / 'bailian-api/requests.json', k3)
+    write_json(tmp_path / 'maas-api/requests.json', audit)
+    write_json(tmp_path / 'rubrics/primary-api/requests.json', k3[:1])
+    write_json(tmp_path / 'pre-repair/bailian-api/requests.json', k3)
+    write_json(tmp_path / 'frozen-source/maas-api/requests.json', audit)
+    result = accounting(tmp_path)
+    assert result['total_unique_requests'] == 3
+    assert len(result['journals']) == 3
+    assert len(result['excluded_duplicate_attempts']) == 1
+    assert result['models']['kimi-k3']['requests'] == 2
+    assert result['models']['kimi-k3']['reported_tokens'] == 10
+    assert result['models']['kimi-k3']['missing_usage'] == 1
+    assert result['models']['kimi-k2.6']['statuses'] == {'started': 1}
+    assert result['models']['kimi-k2.6']['missing_usage'] == 1
 
 
 def test_primary_incomplete_score_is_excluded_even_if_interval_preference_is_robust(tmp_path):

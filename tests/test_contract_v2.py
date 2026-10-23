@@ -5,6 +5,7 @@ import pytest
 from ppt_rubric.contract_v2 import (compile_suite, compile_item, compile_requirements, validate_design,
                                    validate_requirements, validate_review, generate_contract)
 from ppt_rubric.source_catalog import source_catalog
+from source_contract_fixtures import add_ledger, approval
 
 
 def fixture_contract():
@@ -13,6 +14,7 @@ def fixture_contract():
     reqs = {'task_summary': '简报', 'source_policy': '不虚构成果', 'requirements': [
         {'id': f'Q{n+1}', 'kind': kind, 'text': '项目进展', 'importance': 3,
          'source_ids': [catalog[0]['id']]} for n, kind in enumerate(kinds)]}
+    reqs = add_ledger(reqs, catalog)
     return catalog, reqs, compile_requirements(reqs)
 
 
@@ -68,7 +70,7 @@ def test_generator_cannot_access_candidates_or_human_labels(tmp_path, monkeypatc
     class FakeClient:
         def ask(self, role, system, payload, validate):
             calls.append(payload)
-            result = [reqs, {'approved': True, 'issues': [], 'summary': 'ok'}][len(calls) - 1]
+            result = [reqs, approval(reqs)][len(calls) - 1]
             validate(result)
             return result
     monkeypatch.setattr('ppt_rubric.contract_v2.case_sources', lambda *args: [{'id': 'prompt', 'text': '做一份简报，说明项目进展。'}])

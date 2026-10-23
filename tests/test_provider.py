@@ -176,3 +176,119 @@ def test_provider_specific_credentials_are_isolated(tmp_path, monkeypatch):
     monkeypatch.delenv('BAILIAN_API_KEY')
     with pytest.raises(ProviderError, match='BAILIAN_API_KEY'):
         Client(dict(config, api_key_env='BAILIAN_API_KEY'), tmp_path).key()
+
+
+def test_text_transport_preserves_prose_and_separates_json_cache(tmp_path, monkeypatch):
+    from ppt_rubric.v25.contract_judge import parse_boxed_answer
+    config = load_config('configs/default.json')
+    config['min_request_interval_seconds'] = 0
+    client = Client(config, tmp_path, journal_dir=tmp_path / 'run')
+    monkeypatch.setenv('PPT_RUBRIC_API_KEY', 'test-key')
+    text = '第3页的依据。\n' + r'\boxed{no}'
+    contents = iter([text, '{"answer":"yes"}'])
+    sent = []
+
+    class Response:
+        ok = True
+        status_code = 200
+        def json(self):
+            return {'choices': [{'message': {'content': next(contents)}, 'finish_reason': 'stop'}],
+                    'usage': {'total_tokens': 12}}
+
+    class Session:
+        def __enter__(self): return self
+        def __exit__(self, *args): pass
+        def post(self, *args, **kwargs):
+            sent.append(kwargs['json'])
+            return Response()
+
+    monkeypatch.setattr('ppt_rubric.provider.requests.Session', Session)
+    assert client.ask_text('judge', 'instruction', {}, validate=parse_boxed_answer) == text
+    assert client.ask_text('judge', 'instruction', {}, validate=parse_boxed_answer) == text
+    assert len(sent) == 1 and client.attempts[0]['status'] == 'success'
+    assert client.ask('judge', 'instruction', {}) == {'answer': 'yes'}
+    assert len(sent) == 2 and len(list((tmp_path / 'api').glob('*.json'))) == 2
+    assert all('response_format' not in request for request in sent)
+    assert [r['usage']['total_tokens'] for r in client.attempts] == [12, 12]
+
+
+def test_text_missing_boxed_retries_with_text_feedback_and_keeps_original(tmp_path, monkeypatch):
+    from ppt_rubric.v25.contract_judge import parse_boxed_answer
+    config = load_config('configs/default.json')
+    config.update(min_request_interval_seconds=0, max_api_requests=2)
+    client = Client(config, tmp_path, journal_dir=tmp_path / 'run')
+    monkeypatch.setenv('PPT_RUBRIC_API_KEY', 'test-key')
+    monkeypatch.setattr('ppt_rubric.provider.time.sleep', lambda n: None)
+    contents = iter(['Only an explanation.', r'Explanation. \boxed{yes}'])
+    sent = []
+
+    class Response:
+        ok = True
+        status_code = 200
+        def json(self):
+            return {'choices': [{'message': {'content': next(contents)}, 'finish_reason': 'stop'}]}
+
+    class Session:
+        def __enter__(self): return self
+        def __exit__(self, *args): pass
+        def post(self, *args, **kwargs):
+            sent.append(kwargs['json'])
+            return Response()
+
+    monkeypatch.setattr('ppt_rubric.provider.requests.Session', Session)
+    assert client.ask_text('judge', 'instruction', {}, validate=parse_boxed_answer) == r'Explanation. \boxed{yes}'
+    assert len(sent) == 2
+    feedback = sent[1]['messages'][-1]['content']
+    assert 'corrected text' in feedback and 'corrected JSON' not in feedback
+    invalid = tmp_path / 'run' / client.attempts[0]['invalid_response']
+    assert json.loads(invalid.read_text()) == 'Only an explanation.'
+    with pytest.raises(ProviderError, match='budget reached'):
+        client.ask('judge', 'another input', {})
+    assert client.request_count == 2 and len(sent) == 2
+
+
+def test_concurrent_text_calls_share_budget_and_record_waits(tmp_path, monkeypatch):
+    import threading
+    from concurrent.futures import ThreadPoolExecutor
+    config = load_config('configs/default.json')
+    config.update(api_concurrency=2, min_request_interval_seconds=0, max_api_requests=3)
+    client = Client(config, tmp_path, journal_dir=tmp_path / 'run')
+    monkeypatch.setenv('PPT_RUBRIC_API_KEY', 'test-key')
+    barrier = threading.Barrier(2)
+    guard = threading.Lock()
+    network = []
+
+    class Response:
+        ok = True
+        status_code = 200
+        def json(self):
+            return {'choices': [{'message': {'content': r'\boxed{yes}'}, 'finish_reason': 'stop'}]}
+
+    class Session:
+        def __enter__(self): return self
+        def __exit__(self, *args): pass
+        def post(self, *args, **kwargs):
+            with guard:
+                network.append(1)
+                early = len(network) <= 2
+            if early:
+                barrier.wait(timeout=5)
+            return Response()
+
+    monkeypatch.setattr('ppt_rubric.provider.requests.Session', Session)
+    def call(i):
+        try:
+            return client.ask_text('judge', 'test', {'task': i})
+        except ProviderError:
+            return 'budget'
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        results = list(pool.map(call, range(6)))
+    assert results.count(r'\boxed{yes}') == 3
+    assert results.count('budget') == 3
+    assert len(network) == client.request_count == len(client.attempts) == 3
+    assert len({row['request_id'] for row in client.attempts}) == 3
+    for row in client.attempts:
+        assert row['completed_unix'] >= row['started_unix']
+        assert all(row[key] >= 0 for key in
+                   ['preparation_seconds', 'semaphore_wait_seconds', 'pacing_wait_seconds'])
+    assert json.loads((tmp_path / 'run/requests.json').read_text()) == client.attempts

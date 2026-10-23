@@ -9,6 +9,7 @@ import argparse
 import copy
 import json
 import math
+import re
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -19,11 +20,12 @@ from .data import select_cases, validate_manifest
 from .provider import Client
 from .render import case_sources, prepare_case
 from .rubric import DIMENSIONS, assign_scores, unsupported_count_thresholds, false_arithmetic_examples
-from .source_catalog import source_catalog, resolve_source_ids
+from .source_catalog import source_catalog, resolve_source_ids, validate_source_coverage
 
-VERSION = '2026-10-14.contract-v2.3'
+VERSION = '2026-10-19.contract-v2.4'
 PROTOCOL = 'contract_v2'
-VALIDATOR_VERSION = 3
+VALIDATOR_VERSION = 4
+SCHEMA_VERSION = 3
 
 FIXED_WEIGHTS = {'fulfillment': 30, 'correctness': 25, 'integrity': 15, 'narrative': 15, 'visual': 15}
 SCORING_POLICY = {
@@ -100,7 +102,10 @@ def _contract_fingerprint(weights):
                    'extract': EXTRACT, 'audit': AUDIT,
                    'visual': VISUAL_ITEMS, 'quality': QUALITY_ITEMS, 'kind_dimension': KIND_DIMENSION,
                    'compiler_templates': REQUIREMENT_TEMPLATES, 'compiler_common': COMPILER_COMMON,
-                   'revision_instruction': REVISION_INSTRUCTION,
+                   'revision_instruction': REVISION_INSTRUCTION, 'schema_version': SCHEMA_VERSION,
+                   'target_fields': TARGET_FIELDS, 'source_identity_policy': SOURCE_IDENTITY_POLICY,
+                   'source_graph_policy': SOURCE_GRAPH_POLICY,
+                   'audit_interface_fingerprint': audit_interface_fingerprint(),
                    'weights': weights, 'scoring_policy': SCORING_POLICY})
 
 
@@ -131,10 +136,28 @@ kind=fact是给定关键事实/指标（存在且准确）；deliverable是其�
 用途介绍、“我会检查”“内容站得住”等一般性提醒保留在task_summary或source_policy，不单列成可扣分要求；不得由此推出每页有标题等额外义务。明确的受众、文体、时长等真实表达约束仍保留。
 同一关键事实的存在与准确只提取一次。事实之间的时序/衔接关系若是独立要求，只检查已呈现组件的关系；缺失组件由对应fact负责，不能再次作为关系缺陷。将此边界直接写入关系requirement.text。
 真正独立的模块、分析、计划等交付物缺失仍不满足其交付要求，不能用上述关系例外免除。要求粒度按独立评分目标确定，不按候选差异或预期胜负拆分。
+本版必须同时返回规范账本，旧版只有requirements的输出无效：
+"source_targets":[{"id":"T01","kind":"fact|deliverable|presentation|information_boundary",
+"object":"对象及作用范围","attribute":"唯一被核验属性","value":"值或明确交付内容",
+"unit":"单位，无则not_applicable","time":"时点/起点，无则not_applicable",
+"state":"事实/计划/初步观察/待考等原始状态，无则not_applicable","mandatory":true,
+"condition":{"mode":"always|if_present|source_condition","text":"always时为空，其余为来源支持的触发条件",
+"source_ids":[]},"relation":{"type":"none|before|sequence|depends_on","target_ids":[]},
+"source_ids":["真实ID"],"scoring_owner":"Q01"}]。
+每个Q增加"target_ids":["T01"]及"reference_target_ids":[]。target_ids拥有目标；reference_target_ids只为理解引用其他目标，不再处罚其缺失、状态或数值。
+每T只有一个Q所有者；每Q只拥有一个T。text只是可读摘要，编译器只把规范字段编译为通过条件，不能在text暗加义务。
+同一事实的对象、数值、单位、时间和待考等状态放在同一个T，不能把状态再次交给信息边界Q。模块只拥有独立交付结构，具体事实引用而不重述。
+全篇文体由一个presentation目标拥有，模块仅在有独立要求时拥有模块交付，不能再包含同一文体义务。
+关系单独建T；before的target_ids按先后列出两个组件T，sequence至少两个，depends_on至少一个。
+模块的相对顺序和模块内部事件顺序是不同关系，不得漏掉来源明确的先后关系。关系只核对已呈现组件，缺失归组件所有者。
+mandatory=true表示无条件必须呈现，condition.mode只能always；来源明确允许不出现、但出现后须准确的可选标杆用mandatory=false、if_present；来源条件触发的要求用mandatory=false、source_condition。条件本身必须由condition.source_ids支持；不得自造条件免除交付。
+"source_coverage":[{"source_id":"每个source_catalog片段ID","role":"required|context|mixed",
+"target_ids":["该片段支持的所有T"],"rationale":"哪些是评分目标，哪些仅为背景及理由"}]。
+每个片段恰好一行；context的target_ids为空，required/mixed不为空；混合片段用mixed明确解释背景。不得把未覆盖要求标成context来掩盖遗漏。
 '''
 
 AUDIT = BOUNDARY + '''独立审查来源、requirements和已编译rubric。你看不到候选或其分数。
-rubric由每个来源目标一对一确定性编译，不再由模型扩写；可以修订的只有requirements及其kind、text、source_ids、importance。
+rubric由每个来源目标一对一确定性编译，不再由模型扩写；可以修订的只有来源账本source_targets、source_coverage及其对应requirements，不能手改编译条目。
 先检查requirements自身是否漏掉原文目标、增加了原文没有的要求、把用途/检查提醒变成额外扣分义务，或者把同一事实拆成重复目标。Q文本不是权威，必须与source_catalog原文核对。
 关系目标只检查已呈现组件的时序/衔接；组件事实缺失只由其fact条目负责，但独立交付物缺失仍应失败。不能因编译字段形式一致就声称没有语义重叠。
 检查1来源明确目标是否实质覆盖；2是否强制额外阈值/实现；3单一通过条件与例外是否相容；
@@ -149,6 +172,24 @@ rubric由每个来源目标一对一确定性编译，不再由模型扩写；�
 "source_ids":["对应来源ID，可空"],"fix":"明确修订哪个Q的哪项内容或补充/合并哪个来源目标"}],"summary":"短结论"}。
 原文目标被遗漏时可用item_ids=[]，但source_ids须引用真实原文。固定质量库自身的问题如无法通过修订Q解决，只引用该固定库条目ID并明确说明；程序会停止，不会假装用Q修复固定库。
 仅实质错误进issues，无成立反例则approved=true且issues=[]。不能为显得严格编造问题。
+本版还必须返回以下可核查记录；approved不能替代逐项记录：
+"coverage_checks":[{"source_id":"每个片段ID","target_ids":["所有对应T"],"status":"covered|context|missing|disputed","rationale":"独立从原文核对，不照抄提取结论",
+"source_goals":[{"goal":"独立从本段原文列出的原子事实/状态/条件/关系或背景","disposition":"scored|context","target_ids":["其唯一对应T，背景为空"],"rationale":"归属或不评分理由"}]}]；每个片段恰好一行，尤其独立检查context是否遗漏目标。source_goals必须先从原文盘点，不能仅把已有Q改写一遍；遗漏的目标无归属就拒绝批准，不能补造T掩盖。
+"target_checks":[{"target_id":"每个T","source_ids":["实际支持对象/属性/状态/条件/关系的来源"],"owner_item_id":"R_Q01",
+"status":"grounded_unique|overlap|unsupported|disputed","rationale":"逐字段支持及唯一责任说明"}]；每T恰好一行。
+"counterexample_checks":[{"target_id":"T01","operation":"change_owned_property|condition_absent|reverse_relation",
+"candidate":"其他目标均正确的具体最小假想PPT，只改变一个属性；不虚构来源",
+"expected_failed_item_ids":["理论上应失败的唯一所有者或不触发时空列表"],
+"actual_failed_item_ids":["实际套用全部编译标准及例外后会失败的条目"],
+"repair":"修复哪一属性消除失败","status":"pass|fail|disputed"}]。
+每T必须有change_owned_property：删除/改错其独立所有属性，条件目标先使条件成立。所有条件目标还须condition_absent（不触发应无失败）；所有关系目标还须reverse_relation（交换已存在组件的关系，只有关系所有者失败）。
+实际应用全部标准，特别检查相邻Q及通用质量项是否也因同一修复失败。expected必须是唯一所有者；actual出现多项时是重复责任，需要issues具体修复，不得凭ID唯一就通过。
+approved=true要求每片段无遗漏/争议、每目标有来源且唯一归属、全部最小反例pass且actual与expected一致。任何不支持字段、条件冲突、无权限豁免或无法解释重复责任均阻止发布。
+程序在required_audit_checks中给出必检接口清单，不提供审核答案。批准前必须覆盖每个coverage_checks.source_goal_slots、每个target_checks目标以及每个counterexample_checks的(target_id,operation)组合。
+同一目标的不同operation是分别必检，不能用condition_absent替代change_owned_property，不能用reverse_relation替代change_owned_property。
+mixed片段必须在source_goals中分别列出scored目标和context背景，不能只在外层rationale提到背景。context目标的target_ids为空；每个scored目标只对应一个T。
+清单中的role来自待审核提取，不是独立真值。如果原文不支持该role或无法找到真实背景，应输出具体issue并拒绝，不得为了填满清单编造context或强行approved。
+requirements只提供task_summary、source_policy和Q列表；规范T、覆盖与完整编译判据统一读取rubric，避免对重复副本产生分歧。
 '''
 
 VISUAL_ITEMS = [
@@ -215,25 +256,200 @@ REQUIREMENT_TEMPLATES = {
 }
 REVISION_INSTRUCTION = ('仅根据原始source_catalog及独立审核中成立的反例修订requirements。'
                         '修正越权、遗漏或相邻目标重叠，保留所有真实来源要求；不得改固定质量库，'
+                        '同步修订source_targets、source_coverage及其所有者和引用关系。'
                         '不得添加候选相关要求，不自行改写原始来源。返回完整的提取JSON对象。')
+
+TARGET_FIELDS = ('object', 'attribute', 'value', 'unit', 'time', 'state')
+SOURCE_IDENTITY_POLICY = {
+    'version': '2026-10-19.kind-aware-v1',
+    'fact_fields': ('kind', 'object', 'attribute', 'time'),
+    'nonfact_fields': ('kind',) + TARGET_FIELDS + ('condition.mode', 'condition.text',
+                                                'relation.type', 'relation.target_ids'),
+    'text_normalization': 'strip; collapse whitespace; casefold',
+    'reference_identity': 'exact ordered target IDs',
+    'cross_kind_overlap': 'independent semantic audit; not an identity-key decision',
+}
+SOURCE_GRAPH_POLICY = {
+    'version': '2026-10-19.target-derived-graph-v1',
+    'authority': 'source_targets; semantic fields are never changed',
+    'requirement_sources': 'copy the owned target source_ids',
+    'relationship_references': 'ordered union of supplied references and relation component target IDs',
+    'coverage_target_links': 'ordered reverse index of target source_ids',
+    'invalid_raw_references': 'reject; never discard unknown or duplicate supplied IDs',
+    'context_conflicts': 'preserve role and reject; never reclassify a source fragment',
+}
+AUDIT_INTERFACE_POLICY = {
+    'version': '2026-10-19.explicit-audit-checklist-v1',
+    'requirements_projection': ('task_summary', 'source_policy', 'requirements'),
+    'source_graph_location': 'rubric.source_targets and rubric.source_coverage only',
+    'criterion_location': 'rubric.items, including fixed criteria; no duplicate fixed-library arrays',
+    'required_checks': 'per source goal slot, per target, per target-operation pair',
+    'checklist_meaning': 'interface coverage only; independent disagreement must remain an issue',
+}
+
+
+def audit_interface_fingerprint():
+    """Identify the audit request interface without changing semantic criteria."""
+    return digest({'prompt': AUDIT, 'policy': AUDIT_INTERFACE_POLICY})
+
+
+def required_audit_checks(suite):
+    """Enumerate coverage obligations, never judgments or expected answers."""
+    coverage = []
+    for row in suite['source_coverage']:
+        slots = [{'disposition': 'scored', 'target_ids': [tid]} for tid in row['target_ids']]
+        if row['role'] in {'context', 'mixed'}:
+            slots.append({'disposition': 'context', 'target_ids': []})
+        coverage.append({'source_id': row['source_id'], 'role_to_audit': row['role'],
+                         'source_goal_slots': slots})
+    target_checks, counterexamples = [], []
+    for target in suite['source_targets']:
+        target_checks.append({'target_id': target['id']})
+        operations = ['change_owned_property']
+        if target['condition']['mode'] != 'always':
+            operations.append('condition_absent')
+        if target['relation']['type'] != 'none':
+            operations.append('reverse_relation')
+        counterexamples.extend({'target_id': target['id'], 'operation': operation} for operation in operations)
+    return {'coverage_checks': coverage, 'target_checks': target_checks,
+            'counterexample_checks': counterexamples,
+            'counts': {'source_fragments': len(coverage), 'targets': len(target_checks),
+                       'counterexamples': len(counterexamples)}}
+
+
+def build_audit_payload(catalog, requirements, suite, *, source_graph_derivations=None,
+                        dimension_weights=None):
+    """One canonical source graph and criterion set, plus an answer-free checklist."""
+    return {'source_catalog': copy.deepcopy(catalog),
+            'requirements': {key: copy.deepcopy(requirements[key])
+                             for key in AUDIT_INTERFACE_POLICY['requirements_projection']},
+            'rubric': copy.deepcopy(suite),
+            'source_graph_derivations': copy.deepcopy(source_graph_derivations or []),
+            'source_graph_policy': copy.deepcopy(SOURCE_GRAPH_POLICY),
+            'dimension_weights': copy.deepcopy(dimension_weights or suite.get('dimension_weights', FIXED_WEIGHTS)),
+            'required_audit_checks': required_audit_checks(suite),
+            'audit_interface_fingerprint': audit_interface_fingerprint()}
+
+
+def normalize_source_graph(raw, catalog):
+    """Derive redundant graph metadata without editing any semantic field.
+
+    The returned deep copy is the strict validator's input. Original model JSON
+    remains the provider cache value and is saved separately by the publisher.
+    Source selection, conditions, target ownership and coverage dispositions
+    remain model decisions; this function cannot repair a semantic conflict.
+    """
+    if not isinstance(raw, dict):
+        raise ValueError('Source extraction must return an object')
+    canonical = copy.deepcopy(raw)
+    targets, rows = canonical.get('source_targets'), canonical.get('requirements')
+    if not isinstance(targets, list) or not targets:
+        raise ValueError('source_targets is required by contract-v2.4; old extraction cannot be reused')
+    by_target = {}
+    for target in targets:
+        if (not isinstance(target, dict) or not isinstance(target.get('id'), str)
+                or not target['id'] or target['id'] in by_target):
+            raise ValueError('Unique semantic target IDs required')
+        by_target[target['id']] = target
+        resolve_source_ids(catalog, target.get('source_ids'))
+        condition = target.get('condition')
+        if not isinstance(condition, dict):
+            raise ValueError('Explicit supported target condition required')
+        resolve_source_ids(catalog, condition.get('source_ids'))
+    if not isinstance(rows, list) or not rows:
+        raise ValueError('Nonempty source requirements required')
+    derivations = []
+
+    def derive(row, field, value, path, reason):
+        if field not in row or row[field] != value:
+            derivations.append({'path': path + '.' + field, 'before': copy.deepcopy(row.get(field)),
+                                'after': copy.deepcopy(value), 'reason': reason})
+        row[field] = copy.deepcopy(value)
+
+    for number, row in enumerate(rows):
+        if not isinstance(row, dict):
+            raise ValueError('Requirement objects required')
+        if 'source_ids' in row:
+            resolve_source_ids(catalog, row['source_ids'])
+        _ids(row.get('target_ids'), by_target, 'requirement.target_ids', True)
+        if len(row['target_ids']) != 1:
+            raise ValueError('Each requirement owns exactly one canonical semantic target')
+        refs = row.get('reference_target_ids', [])
+        _ids(refs, by_target, 'requirement.reference_target_ids')
+        target = by_target[row['target_ids'][0]]
+        relation = target.get('relation')
+        if not isinstance(relation, dict):
+            raise ValueError('Explicit supported target relation required')
+        components = relation.get('target_ids')
+        _ids(components, by_target, 'relation.target_ids')
+        path = f'requirements[{number}]'
+        derive(row, 'source_ids', target['source_ids'], path, 'owned target source_ids are authoritative')
+        derive(row, 'reference_target_ids', refs + [tid for tid in components if tid not in refs], path,
+               'relationship components are non-owning references')
+    coverage = canonical.get('source_coverage')
+    if not isinstance(coverage, list):
+        raise ValueError('source_coverage must be a list')
+    known_sources = {fragment['id'] for fragment in catalog}
+    seen = set()
+    for number, row in enumerate(coverage):
+        if (not isinstance(row, dict) or not isinstance(row.get('source_id'), str)
+                or row['source_id'] not in known_sources or row['source_id'] in seen):
+            raise ValueError('source_coverage requires each supplied source fragment exactly once')
+        seen.add(row['source_id'])
+        if 'target_ids' in row:
+            _ids(row['target_ids'], by_target, 'source_coverage.target_ids')
+        linked = [target['id'] for target in targets if row['source_id'] in target['source_ids']]
+        derive(row, 'target_ids', linked, f'source_coverage[{number}]', 'reverse index of target source_ids')
+    return canonical, derivations
+
+
+def _target_condition(target):
+    condition = target['condition']
+    if condition['mode'] == 'always':
+        return '来源明确要求，必须呈现并检查，不将缺失自动解释为不适用。'
+    if condition['mode'] == 'if_present':
+        return ('仅当以下来源允许的可选内容实际出现时核验；未出现自然满足，不要求补充：'
+                + condition['text'])
+    return ('仅当以下来源明确的条件成立时必须完成；条件未成立自然满足，不擅自推定触发：'
+            + condition['text'])
+
+
+def _target_contract(target):
+    labels = dict(object='对象', attribute='属性', value='内容/值', unit='单位', time='时间/起点', state='状态')
+    parts = [f'{labels[key]}={target[key]}' for key in TARGET_FIELDS if target[key] != 'not_applicable']
+    relation = target['relation']
+    if relation['type'] != 'none':
+        parts.append('独立关系=' + relation['type'] + '(' + ' → '.join(relation['target_ids']) + ')')
+        parts.append('只在关系组件均已呈现时核对关系；组件缺失只由组件所有者负责')
+    return '；'.join(parts)
 
 
 def compile_requirements(requirements):
     """One typed source requirement, one criterion; no free design expansion."""
     items = []
+    targets = {target['id']: target for target in requirements['source_targets']}
     for requirement in requirements['requirements']:
         template = REQUIREMENT_TEMPLATES[requirement['kind']]
+        target = targets[requirement['target_ids'][0]]
+        prefix = template['prefix']
+        if requirement['kind'] == 'fact' and not target['mandatory']:
+            prefix = '在本条适用条件成立时准确保留该来源目标，不强制可选目标出现：'
         items.append({
             'id': COMPILER_COMMON['id_prefix'] + requirement['id'], 'dimension': KIND_DIMENSION[requirement['kind']],
             'importance': requirement['importance'], 'requirement_ids': [requirement['id']],
             'source_ids': list(requirement['source_ids']),
             'objective': COMPILER_COMMON['objective_prefix'] + requirement['id'],
-            'scope': COMPILER_COMMON['scope'], 'applicability': COMPILER_COMMON['applicability'],
-            'pass_condition': template['prefix'] + requirement['text'],
-            'exclusions': COMPILER_COMMON['equivalence'] + template['exclusions'],
+            'scope': COMPILER_COMMON['scope'], 'applicability': _target_condition(target),
+            'pass_condition': prefix + _target_contract(target),
+            'exclusions': (COMPILER_COMMON['equivalence'] + template['exclusions']
+                           + '引用目标仅提供上下文，其缺失、值、状态和限定条件不在本条重复处罚。'),
+            'source_target_ids': list(requirement['target_ids']),
+            'reference_target_ids': list(requirement['reference_target_ids']),
+            'semantic_target': copy.deepcopy(target),
             'evidence_mode': COMPILER_COMMON['evidence_mode'], 'scope_type': COMPILER_COMMON['scope_type'],
         })
-    return {'items': items}
+    return {'items': items, 'source_targets': copy.deepcopy(requirements['source_targets']),
+            'source_coverage': copy.deepcopy(requirements['source_coverage'])}
 
 
 def _ids(values, known, field, nonempty=False):
@@ -266,6 +482,89 @@ def validate_requirements(result, catalog):
     for key in ('task_summary', 'source_policy'):
         if not isinstance(result.get(key), str) or not result[key].strip():
             raise ValueError(f'{key} required')
+    targets = result.get('source_targets')
+    if not isinstance(targets, list) or not targets:
+        raise ValueError('source_targets is required by contract-v2.4; old extraction cannot be reused')
+    by_target, semantic_keys = {}, set()
+    for target in targets:
+        if (not isinstance(target, dict) or not isinstance(target.get('id'), str)
+                or not target['id'] or target['id'] in by_target):
+            raise ValueError('Unique semantic target IDs required')
+        by_target[target['id']] = target
+        if target.get('kind') not in KIND_DIMENSION:
+            raise ValueError('Semantic target kind must match a supported requirement kind')
+        for key in TARGET_FIELDS:
+            if not isinstance(target.get(key), str) or not target[key].strip():
+                raise ValueError(f'Semantic target {key} requires explicit text or not_applicable')
+        if any(target[key] == 'not_applicable' for key in ('object', 'attribute', 'value')):
+            raise ValueError('Semantic object, attribute and value cannot be not_applicable')
+        if type(target.get('mandatory')) is not bool:
+            raise ValueError('Semantic target mandatory must be boolean')
+        resolve_source_ids(catalog, target.get('source_ids'))
+        if not target['source_ids']:
+            raise ValueError('Semantic target needs source support')
+        condition = target.get('condition')
+        if not isinstance(condition, dict) or condition.get('mode') not in {'always', 'if_present', 'source_condition'}:
+            raise ValueError('Explicit supported target condition required')
+        if not isinstance(condition.get('text'), str):
+            raise ValueError('Condition text required')
+        resolve_source_ids(catalog, condition.get('source_ids'))
+        if condition['mode'] == 'always':
+            if condition['text'] or condition['source_ids'] or not target['mandatory']:
+                raise ValueError('Always condition must be unconditional and mandatory')
+        elif (not condition['text'].strip() or not condition['source_ids'] or target['mandatory']
+                or not set(condition['source_ids']) <= set(target['source_ids'])):
+            raise ValueError('Conditional target needs source-backed condition and mandatory=false')
+        relation = target.get('relation')
+        if not isinstance(relation, dict) or relation.get('type') not in {'none', 'before', 'sequence', 'depends_on'}:
+            raise ValueError('Explicit supported target relation required')
+        ids = relation.get('target_ids')
+        if (not isinstance(ids, list) or any(not isinstance(tid, str) for tid in ids)
+                or len(ids) != len(set(ids)) or target['id'] in ids):
+            raise ValueError('Relation requires unique other target IDs')
+        if ((relation['type'] == 'none' and ids)
+                or (relation['type'] == 'before' and len(ids) != 2)
+                or (relation['type'] == 'sequence' and len(ids) < 2)
+                or (relation['type'] == 'depends_on' and not ids)):
+            raise ValueError('Relation arity does not match its type')
+        # A fact's state/value/unit belong to its object/property/time owner.
+        # Other kinds may describe independent deliveries in one container
+        # (e.g. object=PPT结构, attribute=模块交付 with two different modules).
+        # Cross-kind semantic overlap still requires the independent audit.
+        normalize = lambda text: re.sub(r'\s+', ' ', text.strip()).casefold()
+        identity_fields = SOURCE_IDENTITY_POLICY['fact_fields' if target['kind'] == 'fact' else 'nonfact_fields']
+        identity_values = []
+        for field in identity_fields:
+            value = target
+            for key in field.split('.'):
+                value = value[key]
+            identity_values.append(tuple(value) if isinstance(value, list) else normalize(value))
+        semantic_key = tuple(identity_values)
+        if semantic_key in semantic_keys:
+            raise ValueError('Duplicate semantic object/property/time has multiple targets')
+        semantic_keys.add(semantic_key)
+    owners = Counter()
+    for row in rows:
+        _ids(row.get('target_ids'), by_target, 'requirement.target_ids', True)
+        if len(row['target_ids']) != 1:
+            raise ValueError('Each requirement owns exactly one canonical semantic target')
+        _ids(row.get('reference_target_ids'), by_target, 'requirement.reference_target_ids')
+        if set(row['target_ids']) & set(row['reference_target_ids']):
+            raise ValueError('Referenced context cannot also be owned by the same requirement')
+        for tid in row['target_ids']:
+            target = by_target[tid]
+            owners[tid] += 1
+            if target.get('scoring_owner') != row['id'] or target['kind'] != row['kind']:
+                raise ValueError('Semantic target scoring owner and kind must match its requirement')
+            if set(target['source_ids']) != set(row['source_ids']):
+                raise ValueError('Requirement must preserve its semantic target source IDs')
+            if not set(target['relation']['target_ids']) <= set(row['reference_target_ids']):
+                raise ValueError('Relationship components must be explicit non-owning references')
+    if set(owners) != set(by_target) or any(count != 1 for count in owners.values()):
+        raise ValueError('Every semantic target requires exactly one scoring owner')
+    for target in targets:
+        _ids(target['relation']['target_ids'], by_target, 'relation.target_ids')
+    validate_source_coverage(catalog, result.get('source_coverage'), targets)
 
 
 def compile_item(item):
@@ -323,7 +622,9 @@ def validate_design(result, requirements, catalog):
 def compile_suite(design, weights):
     result = {'groups': [{'id': d, 'dimension': d, 'importance': 1,
                          'rationale': 'Fixed dimension budget; no candidate-dependent groups'} for d in sorted(DIMENSIONS)],
-              'items': copy.deepcopy(design['items']) + copy.deepcopy(QUALITY_ITEMS) + copy.deepcopy(VISUAL_ITEMS)}
+              'items': copy.deepcopy(design['items']) + copy.deepcopy(QUALITY_ITEMS) + copy.deepcopy(VISUAL_ITEMS),
+              'source_targets': copy.deepcopy(design['source_targets']),
+              'source_coverage': copy.deepcopy(design['source_coverage'])}
     for item in result['items']:
         item['group_id'] = item['dimension']
         item['scope_type'] = item.get('scope_type', 'deck')
@@ -332,7 +633,7 @@ def compile_suite(design, weights):
 
 
 def validate_review(result, suite, catalog):
-    if type(result.get('approved')) is not bool or not isinstance(result.get('issues'), list):
+    if not isinstance(result, dict) or type(result.get('approved')) is not bool or not isinstance(result.get('issues'), list):
         raise ValueError('Audit must return approved and issues')
     if result['approved'] != (not result['issues']):
         raise ValueError('Audit approval contradicts concrete issues')
@@ -346,9 +647,101 @@ def validate_review(result, suite, catalog):
         for key in ('counterexample', 'fix'):
             if not isinstance(issue.get(key), str) or not issue[key].strip():
                 raise ValueError(f'Audit requires {key}')
+    # A grounded early rejection can stop without fabricating exhaustive checks.
+    # Approval must carry the complete, inspectable source audit.
+    if not result['approved']:
+        return
+    targets = {target['id']: target for target in suite['source_targets']}
+    coverage = {row['source_id']: row for row in suite['source_coverage']}
+    checks = result.get('coverage_checks')
+    if not isinstance(checks, list) or len(checks) != len(catalog):
+        raise ValueError('Approval requires coverage_checks for every source fragment')
+    seen = set()
+    for check in checks:
+        if (not isinstance(check, dict) or check.get('source_id') not in coverage
+                or check['source_id'] in seen):
+            raise ValueError('Audit coverage_checks need unique supplied source IDs')
+        sid = check['source_id']
+        seen.add(sid)
+        _ids(check.get('target_ids'), targets, 'coverage_check.target_ids')
+        if set(check['target_ids']) != set(coverage[sid]['target_ids']):
+            raise ValueError('Audit coverage must account for every extracted target link')
+        expected_status = 'context' if coverage[sid]['role'] == 'context' else 'covered'
+        if check.get('status') != expected_status or not isinstance(check.get('rationale'), str) or not check['rationale'].strip():
+            raise ValueError('Approved source coverage cannot contain missing or disputed targets')
+        goals = check.get('source_goals')
+        if not isinstance(goals, list) or not goals:
+            raise ValueError('Coverage approval requires an independent source_goals inventory')
+        inventoried, dispositions = set(), set()
+        for goal in goals:
+            if not isinstance(goal, dict) or goal.get('disposition') not in {'scored', 'context'}:
+                raise ValueError('Source goals must distinguish scoring targets from context')
+            dispositions.add(goal['disposition'])
+            for field in ('goal', 'rationale'):
+                if not isinstance(goal.get(field), str) or not goal[field].strip():
+                    raise ValueError('Source goal inventory needs a concrete goal and disposition rationale')
+            _ids(goal.get('target_ids'), targets, 'source_goal.target_ids')
+            if (goal['disposition'] == 'context') != (not goal['target_ids']):
+                raise ValueError('An independent scoring source goal cannot remain without an owner')
+            if goal['disposition'] == 'scored' and len(goal['target_ids']) != 1:
+                raise ValueError('Each independent source goal must map to one semantic target owner')
+            inventoried.update(goal['target_ids'])
+        if inventoried != set(check['target_ids']):
+            raise ValueError('Independent source goal inventory must match the supported target links')
+        if coverage[sid]['role'] == 'mixed' and dispositions != {'scored', 'context'}:
+            raise ValueError('Mixed source coverage must identify both scoring goals and context')
+        if coverage[sid]['role'] == 'required' and 'context' in dispositions:
+            raise ValueError('Source containing context and scoring goals must be classified mixed')
+    checks = result.get('target_checks')
+    if not isinstance(checks, list) or len(checks) != len(targets):
+        raise ValueError('Approval requires target_checks for every semantic target')
+    seen = set()
+    for check in checks:
+        if (not isinstance(check, dict) or check.get('target_id') not in targets
+                or check['target_id'] in seen):
+            raise ValueError('Audit target_checks need unique semantic target IDs')
+        tid = check['target_id']
+        seen.add(tid)
+        target = targets[tid]
+        resolve_source_ids(catalog, check.get('source_ids'))
+        if (set(check['source_ids']) != set(target['source_ids'])
+                or check.get('owner_item_id') != 'R_' + target['scoring_owner']):
+            raise ValueError('Audit target check must preserve source and unique scoring owner')
+        if check.get('status') != 'grounded_unique' or not isinstance(check.get('rationale'), str) or not check['rationale'].strip():
+            raise ValueError('Approved audit requires grounded unique targets without unresolved ownership')
+    checks = result.get('counterexample_checks')
+    if not isinstance(checks, list):
+        raise ValueError('Approval requires inspectable minimal counterexample_checks')
+    expected_checks = {(check['target_id'], check['operation'])
+                       for check in required_audit_checks(suite)['counterexample_checks']}
+    seen = set()
+    known_items = {item['id'] for item in suite['items']}
+    for check in checks:
+        if not isinstance(check, dict):
+            raise ValueError('Counterexample checks must be objects')
+        key = (check.get('target_id'), check.get('operation'))
+        if key not in expected_checks or key in seen:
+            raise ValueError('Counterexample checks need unique required target/operation pairs')
+        seen.add(key)
+        expected = ([] if key[1] == 'condition_absent'
+                    else ['R_' + targets[key[0]]['scoring_owner']])
+        for field in ('expected_failed_item_ids', 'actual_failed_item_ids'):
+            _ids(check.get(field), known_items, field)
+            if set(check[field]) != set(expected):
+                raise ValueError('Minimal mutation must fail only its owner; same repair cannot trigger multiple penalties')
+        if check.get('status') != 'pass':
+            raise ValueError('Approved counterexamples must pass without semantic dispute')
+        for field in ('candidate', 'repair'):
+            if not isinstance(check.get(field), str) or not check[field].strip():
+                raise ValueError('Counterexample needs a concrete candidate and repair')
+    if seen != expected_checks:
+        raise ValueError('Audit omitted required minimal mutation, condition or relation counterexamples')
 
 
 def generate_contract(case, config, client, output, reviewer_client=None):
+    from .model_routing import validate_model_routing
+    validate_model_routing(getattr(client, 'config', config),
+        getattr(reviewer_client, 'config', None) if reviewer_client else None, 'generate')
     directory = Path(output) / case['id']
     directory.mkdir(parents=True, exist_ok=True)
     sources = case_sources(case, config)
@@ -384,7 +777,8 @@ def generate_contract(case, config, client, output, reviewer_client=None):
         path = directory / name
         if path.exists():
             _archive_file(path)
-    for pattern in ('draft-*.json', 'requirements-*.json'):
+    for pattern in ('draft-*.json', 'requirements-*.json', 'raw-requirements-*.json',
+                    'source-graph-derivations-*.json'):
         for path in directory.glob(pattern):
             if '-superseded-' not in path.stem:
                 _archive_file(path)
@@ -398,28 +792,34 @@ def generate_contract(case, config, client, output, reviewer_client=None):
         if requirements is not None:
             payload.update(previous_requirements=requirements, audit_feedback=history[-1]['review'],
                            revision_instruction=REVISION_INSTRUCTION)
-        requirements = client.ask('generator', EXTRACT, payload,
-                                  validate=lambda r: validate_requirements(r, catalog))
+        raw_requirements = client.ask('generator', EXTRACT, payload,
+            validate=lambda r: validate_requirements(normalize_source_graph(r, catalog)[0], catalog))
+        requirements, graph_derivations = normalize_source_graph(raw_requirements, catalog)
         validate_requirements(requirements, catalog)
+        write_json(directory / f'raw-requirements-{revision}.json', raw_requirements)
+        write_json(directory / f'source-graph-derivations-{revision}.json', graph_derivations)
         write_json(directory / 'requirements.json', requirements)
         write_json(directory / f'requirements-{revision}.json', requirements)
         draft = compile_requirements(requirements)
         validate_design(draft, requirements, catalog)
         suite = compile_suite(draft, config['dimension_weights'])
         write_json(directory / f'draft-{revision}.json', suite)
-        context = {'source_catalog': catalog, 'requirements': requirements,
-                   'fixed_visual_criteria': VISUAL_ITEMS, 'fixed_quality_criteria': QUALITY_ITEMS,
-                   'dimension_weights': config['dimension_weights']}
-        review = reviewer.ask('reviewer', AUDIT, {**context, 'rubric': suite},
+        context = build_audit_payload(catalog, requirements, suite,
+            source_graph_derivations=graph_derivations, dimension_weights=config['dimension_weights'])
+        review = reviewer.ask('reviewer', AUDIT, context,
             validate=lambda r: validate_review(r, suite, catalog))
         validate_review(review, suite, catalog)
-        history.append({'revision': revision, 'requirements_hash': digest(requirements), 'review': review})
+        history.append({'revision': revision, 'requirements_hash': digest(requirements),
+                        'raw_requirements_hash': digest(raw_requirements),
+                        'source_graph_derivations_hash': digest(graph_derivations), 'review': review})
         write_json(directory / 'reviews.json', history)
         if review['approved']:
-            suite.update(schema_version=2, evaluation_protocol=PROTOCOL, status='approved', case_id=case['id'],
+            suite.update(schema_version=SCHEMA_VERSION, evaluation_protocol=PROTOCOL, status='approved', case_id=case['id'],
                          provenance=meta, signature=signature, dimension_weights=config['dimension_weights'],
                          source_catalog_hash=digest(catalog), requirements=copy.deepcopy(requirements),
-                         contract_design=copy.deepcopy(draft), scoring_policy=copy.deepcopy(SCORING_POLICY))
+                         contract_design=copy.deepcopy(draft), scoring_policy=copy.deepcopy(SCORING_POLICY),
+                         source_audit=copy.deepcopy(review), raw_requirements_hash=digest(raw_requirements),
+                         source_graph_derivations=copy.deepcopy(graph_derivations))
             suite['rubric_hash'] = digest(suite)
             write_json(published, suite)
             write_json(directory / 'status.json', {'status': 'approved', 'items': len(suite['items']),
@@ -435,11 +835,17 @@ def generate_contract(case, config, client, output, reviewer_client=None):
 
 
 def verify_suite(case, suite, config):
+    return verify_contract_sources(case, suite, config, case_sources(case, config))
+
+
+def verify_contract_sources(case, suite, config, sources):
+    """Shared publication gate for disk-based commands and supplied judge inputs."""
     if suite.get('evaluation_protocol') != PROTOCOL or suite.get('status') != 'approved':
         raise ValueError('Only approved contract_v2 rubrics are eligible')
+    if suite.get('schema_version') != SCHEMA_VERSION:
+        raise ValueError('Rubric requires current source target schema; historical contracts remain read-only')
     if suite.get('rubric_hash') != digest({k: v for k, v in suite.items() if k != 'rubric_hash'}):
         raise ValueError('Rubric changed after approval')
-    sources = case_sources(case, config)
     catalog = source_catalog(sources)
     if suite.get('case_id') != case['id'] or suite['provenance']['source_hash'] != digest(sources):
         raise ValueError('Rubric source or case mismatch')
@@ -461,21 +867,31 @@ def verify_suite(case, suite, config):
     validate_requirements(suite['requirements'], catalog)
     validate_design(suite['contract_design'], suite['requirements'], catalog)
     canonical = compile_suite(suite['contract_design'], suite['dimension_weights'])
-    if suite.get('groups') != canonical['groups'] or suite.get('items') != canonical['items']:
+    if any(suite.get(key) != canonical[key] for key in ('groups', 'items', 'source_targets', 'source_coverage')):
         raise ValueError('Published criterion or scoring budget differs from canonical compilation')
+    if not isinstance(suite.get('source_audit'), dict) or suite['source_audit'].get('approved') is not True:
+        raise ValueError('Published rubric requires an explicitly approved embedded source audit')
+    validate_review(suite['source_audit'], suite, catalog)
     for item in suite['items']:
         if item['judge_prompt'] != compile_item(item):
             raise ValueError('Exported criterion differs from its canonical contract')
 
 
 def export_record(case, suite, config):
-    """Schema v2 preserves page aggregation; a two-field export is insufficient."""
+    """Preserve source ownership, audit and page aggregation in schema v3."""
     verify_suite(case, suite, config)
-    return {'schema_version': 2, 'case_id': case['id'], 'evaluation_protocol': PROTOCOL,
+    return {'schema_version': SCHEMA_VERSION, 'case_id': case['id'], 'evaluation_protocol': PROTOCOL,
             'rubric_hash': suite['rubric_hash'], 'scoring_policy': copy.deepcopy(SCORING_POLICY),
             'source_catalog': source_catalog(case_sources(case, config)),
+            'source_targets': copy.deepcopy(suite['source_targets']),
+            'source_coverage': copy.deepcopy(suite['source_coverage']),
+            'source_audit': copy.deepcopy(suite['source_audit']),
+            'source_graph_derivations': copy.deepcopy(suite.get('source_graph_derivations', [])),
+            'raw_requirements_hash': suite.get('raw_requirements_hash'),
             'rubrics': [{'id': item['id'], 'judge_prompt': item['judge_prompt'], 'score': item['score'],
                          'scope': item['scope'], 'scope_type': item['scope_type'],
+                         'source_target_ids': list(item.get('source_target_ids', [])),
+                         'reference_target_ids': list(item.get('reference_target_ids', [])),
                          'aggregation': ('any_no_else_unknown_else_all_yes' if item['scope_type'] == 'page'
                                          else 'single_deck_verdict')}
                         for item in suite['items']]}
@@ -513,6 +929,8 @@ def main(argv=None):
             if args.operation == 'export':
                 raise ValueError('Export does not invoke a verification client')
             validate_config(verification_config, args.operation)
+        from .model_routing import validate_model_routing
+        model_routing = validate_model_routing(config, verification_config, args.operation)
     except (ValueError, TypeError, KeyError) as error:
         parser.error(str(error))
     if args.operation == 'plan':
@@ -522,6 +940,7 @@ def main(argv=None):
         rows = [{'case_id': c['id'], 'sources': len(source_catalog(case_sources(c, config))),
                  'candidate_input_to_generator': False} for c in cases]
         result = {'protocol': PROTOCOL, 'cases': rows, 'offline': True,
+                  'model_routing': model_routing,
                   'generation_logical_calls_per_case': [2, 2 + 2 * revisions], 'max_revisions': revisions,
                   'generation_stages': ['extract_requirements', 'compile_locally', 'audit'],
                   'generation_http_attempts_upper_bound_per_case': http_max,
