@@ -47,7 +47,7 @@ def ingest(source, output, seed=20260930, split='auto'):
     source, output = Path(source).resolve(), Path(output)
     cases = []
     for folder in sorted(p for p in source.iterdir() if p.is_dir()):
-        candidates = sorted(p for p in folder.iterdir() if (p / "result.pptx").exists())
+        candidates = sorted(p for p in folder.iterdir() if p.name != 'attachments' and (p / "result.pptx").exists())
         if len(candidates) < 2:
             raise ValueError(f"Case {folder.name}: at least two PPTX candidates required")
         shared = folder / 'prompt.txt'
@@ -58,7 +58,8 @@ def ingest(source, output, seed=20260930, split='auto'):
         if len(set(prompts)) != 1:
             raise ValueError(f"Case {folder.name}: candidate prompts differ")
         random.Random(f"{seed}:{folder.name}").shuffle(candidates)
-        attachments = [{'path':str(p.resolve()),'sha256':file_digest(p)}
+        attachments = [{'path':str(p.resolve()),'sha256':file_digest(p),
+                        'name':p.relative_to(folder / 'attachments').as_posix()}
                        for p in sorted((folder / 'attachments').rglob('*')) if p.is_file() and p.name != '.DS_Store']
         cases.append({"id": folder.name, "prompt": prompts[0], "attachments": attachments,
                       "candidates": [{"id": _candidate_id(i), "pptx": str(p / "result.pptx"),

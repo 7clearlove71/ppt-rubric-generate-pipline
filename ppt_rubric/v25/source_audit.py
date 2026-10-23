@@ -136,13 +136,15 @@ SCORING_CONVENTIONS = ('总分100分；五维预算：需求落实30、正确性
     '这些是用户指定的通用评分约定。')
 
 
-def audit_payload(case, sources, suite):
+def audit_payload(case, sources, suite, images=True):
     """Only original task, attachments, user weights and actual questions/scores."""
     attachments = [source for source in sources if source['id'] != 'prompt']
     values = {
         '{{用户原始需求全文}}': case['prompt'],
         '{{用户提供的附件或其他来源原文；没有则填“无”}}': (
-            '\n\n'.join(source['id'] + '\n' + source['text'] for source in attachments) or '无'),
+            '\n\n'.join(source['id'] + (f' ({source["source_name"]}, page {source["page"]})'
+                                      if 'page_image' in source else '')
+                        + '\n' + source['text'] for source in attachments) or '无'),
         '{{用户明确指定的权重、分值或其他评分要求；没有则填“无”}}': SCORING_CONVENTIONS,
         '{{rubric_json}}': json.dumps([{'id': item['id'], 'content': item['judge_prompt'],
                                       'dimension': item['dimension'], 'score': item['score']} for item in suite['items']],
@@ -152,4 +154,8 @@ def audit_payload(case, sources, suite):
     import re
     filled = re.sub('|'.join(re.escape(key) for key in values),
                     lambda match: values[match.group()], AUDIT_TEMPLATE)
-    return '【用户原始需求prompt】' + filled.split('【用户原始需求prompt】', 1)[1]
+    result = '【用户原始需求prompt】' + filled.split('【用户原始需求prompt】', 1)[1]
+    if any('page_image' in source for source in sources):
+        from .materials import MATERIAL_NOTES, TEXT_MATERIAL_NOTES
+        result += '\n\n【材料输入说明】\n' + (MATERIAL_NOTES if images else TEXT_MATERIAL_NOTES)
+    return result

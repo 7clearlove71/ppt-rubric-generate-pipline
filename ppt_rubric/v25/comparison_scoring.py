@@ -8,6 +8,7 @@ from __future__ import annotations
 import math
 
 from ..rubric import aggregate
+from .capabilities import scoped_rubric
 
 
 COMPARISON_POLICY = {
@@ -20,13 +21,16 @@ COMPARISON_POLICY = {
 }
 
 
-def score_candidates(rubric, verdicts_by_candidate, candidate_ids):
+def score_candidates(rubric, verdicts_by_candidate, candidate_ids, coverage=None):
     """Return shared exclusions and totals without changing any model verdict."""
     candidate_ids = sorted(candidate_ids)
     if not candidate_ids or len(set(candidate_ids)) != len(candidate_ids):
         raise ValueError('Comparison requires unique candidate identifiers')
     if set(verdicts_by_candidate) != set(candidate_ids):
         raise ValueError('Comparison must cover exactly the frozen case candidates')
+    complete_rubric = rubric
+    if coverage is not None:
+        rubric = scoped_rubric(rubric, coverage)
     items = rubric['items']
     item_ids = {item['id'] for item in items}
     if not items or len(item_ids) != len(items):
@@ -58,6 +62,10 @@ def score_candidates(rubric, verdicts_by_candidate, candidate_ids):
         'score_possible': math.fsum(item['score'] for item in included),
         'excluded_weight': math.fsum(row['score'] for row in excluded),
     }
+    if coverage is not None and coverage['mode'] == 'content_only':
+        comparison.update(evaluation_coverage=coverage.copy(), scope_possible=coverage['score_possible'],
+                          unassessed_weight=coverage['unassessed_weight'],
+                          original_possible=math.fsum(i['score'] for i in complete_rubric['items']))
     summaries = {}
     for cid in candidate_ids:
         verdicts = [indexed[cid][item['id']] for item in included]
@@ -73,11 +81,21 @@ def validate_comparison(case, rubric, reports):
     if any(not isinstance(report.get('comparison'), dict)
            or report['comparison'].get('policy') != COMPARISON_POLICY for report in reports.values()):
         raise ValueError('Cannot compare mismatched comparison scoring policies')
+    coverages = [r['assessment'].get('evaluation_coverage') for r in reports.values()]
+    coverage = coverages[0] if coverages else None
+    if any(c != coverage for c in coverages):
+        raise ValueError('Cannot compare different evaluation coverage modes')
+    assessed_rubric = scoped_rubric(rubric, coverage) if coverage is not None else rubric
     comparison, summaries = score_candidates(
         rubric, {cid: r['assessment']['verdicts'] for cid, r in reports.items()},
-        [c['id'] for c in case['candidates']])
+        [c['id'] for c in case['candidates']], coverage=coverage)
     for cid, report in reports.items():
-        if report['assessment']['summary'] != aggregate(rubric, report['assessment']['verdicts']):
+        if coverage is not None and report.get('evaluation_coverage') != coverage:
+            raise ValueError('Report evaluation coverage differs from assessment')
+        if (coverage is not None and report.get('scoring_method') !=
+                ('single_text' if coverage['mode'] == 'content_only' else 'single_k3')):
+            raise ValueError('Scoring method differs from evaluation coverage')
+        if report['assessment']['summary'] != aggregate(assessed_rubric, report['assessment']['verdicts']):
             raise ValueError('Raw assessment summary differs from its original verdicts')
         if report['comparison'] != comparison or report['summary'] != summaries[cid]:
             raise ValueError('Comparison exclusions or totals differ from the shared rubric subset')

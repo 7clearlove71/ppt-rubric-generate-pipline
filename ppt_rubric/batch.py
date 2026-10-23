@@ -157,13 +157,14 @@ def preflight_resume(cases, output, state, config):
             if suite is None or decks is None:
                 raise ValueError('评分检查点缺少对应rubric或准备稿，请保留原运行目录')
             catalog = source_catalog(case_sources(case, config))
-            binding = assessment_binding(decks[candidate['id']], suite, catalog, config, judge.prompt_bundle(), strict=True)
+            binding = assessment_binding(decks[candidate['id']], suite, catalog, config, judge.prompt_bundle(config), strict=True)
             validate_checkpoint(checkpoint, binding, judge.parse_boxed_answer)
 
 
 def compact_reports(reports):
     fields = ('case_id', 'candidate_id', 'candidate_hash', 'candidate_identity', 'document_id',
-              'summary', 'comparison', 'execution', 'pipeline_mode', 'source_audit')
+              'summary', 'comparison', 'execution', 'pipeline_mode', 'source_audit',
+              'scoring_method', 'evaluation_coverage')
     return {cid: {key: copy.deepcopy(report[key]) for key in fields if key in report}
             for cid, report in reports.items()}
 
@@ -175,7 +176,8 @@ def publish(output, state, manifest, caps):
     accounting = {p: {**state.accounting(p), 'request_cap': cap} for p, cap in caps.items()}
     status = ('complete' if counts['complete'] == len(tasks) else
               'failed' if counts['error'] else 'incomplete')
-    summary = {'schema_version': SCHEMA, 'updated_unix': time.time(), 'manifest_id': manifest['id'],
+    summary = {'schema_version': SCHEMA, 'pipeline_version': contract.VERSION,
+               'updated_unix': time.time(), 'manifest_id': manifest['id'],
                'status': status, 'total_tasks': len(tasks), 'task_counts': dict(counts),
                'tasks': tasks, 'accounting': accounting,
                'comparison_policy': judge.COMPARISON_POLICY,
@@ -273,6 +275,8 @@ def main(argv=None):
         argparser.error('输出目录不是通用batch运行目录；请使用新目录，不会迁移历史运行')
     try:
         generator, assessor = read_json(args.config), read_json(args.judge_config)
+        for profile in (generator, assessor):
+            profile['source_cache_root'] = str(output / 'cache')
         generator['pipeline_mode'] = args.mode
         audit = read_json(args.source_audit_config) if args.mode == 'full' else None
         contract.validate_config(generator, 'generate')

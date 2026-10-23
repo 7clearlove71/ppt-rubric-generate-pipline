@@ -169,7 +169,7 @@ def test_old_atomicity_approval_requires_new_source_audit(tmp_path):
     config['pipeline_mode'] = 'full'
     case = {'id': 'atomic', 'prompt': '请介绍技术路线并提出下一步计划。', 'attachments': []}
     suite = contract.generate_contract(case, config, AtomicRevisionClient(config), tmp_path)
-    assert contract.VALIDATOR_VERSION == 10
+    assert contract.VALIDATOR_VERSION == 12
     suite['provenance']['validator_version'] = 9
     suite['signature'] = digest(suite['provenance'])
     suite['rubric_hash'] = digest({k: v for k, v in suite.items() if k != 'rubric_hash'})

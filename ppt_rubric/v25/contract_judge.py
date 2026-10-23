@@ -2,7 +2,7 @@
 
 Each content call sees one criterion and a complete document, never a competing candidate or a
 previous model answer. Each visual call sees one original page, its crops, and all five visual criteria.
-One K3 client produces the complete assessment. Raw unknown intervals are kept;
+One configured assessor produces the assessment; image-enabled scoring uses K3. Raw unknown intervals are kept;
 candidate totals share the same subset after cohort-wide unknown exclusions.
 """
 from __future__ import annotations
@@ -18,6 +18,8 @@ from ..common import digest, read_json, write_json
 from ..candidate_mapping import candidate_identity, mapping_rows, write_candidate_mapping
 from .comparison_scoring import COMPARISON_POLICY, score_candidates
 from .render import rendered_text_geometry
+from .materials import MATERIAL_NOTES, TEXT_MATERIAL_NOTES, check_image_budget, stage_materials
+from .capabilities import supports_images, scoring_method, evaluation_coverage, scoped_rubric
 from ..rubric import DIMENSIONS, aggregate
 from .source_catalog import source_catalog, resolve_source_ids
 from .visual_regions import focus_views
@@ -27,7 +29,7 @@ from .recovery import assessment_binding, image_references, request_hash, valida
 
 
 PROTOCOL = 'contract_v2'
-VALIDATOR_VERSION = 10
+VALIDATOR_VERSION = 12
 JUDGMENT_STRATEGY = 'content_single_visual_page_batch'
 SCORING_METHOD = 'single_k3'
 _RENDER_LOCK = threading.Lock()
@@ -62,22 +64,32 @@ CONTENT_INPUT_NOTES = """rendered_text由原始PPTX渲染为PDF后，用PyMuPDF�
 """
 
 VISUAL_INPUT_NOTES = '局部放大图来自对应原页PDF，图中标注的page为原页码。'
+TEXT_INPUT_NOTES = (
+    '本次仅内容评测，只提供用户任务、材料文字及候选渲染PDF的文本层，没有提供图片。'
+    '文本层可能遗漏图表、图片文字或改变顺序；空白文本页不证明成稿缺失内容，无法从文字核验时回答unknown。'
+    '不评视觉效果、版式、可读性或图像事实，不假称查看过原图。'
+)
 
 
 def compile_batch_prompt_template():
     return compile_batch_prompt([{'id': '{rubric_id}', 'judge_prompt': '{question}'}])
 
 
-def prompt_bundle():
+def prompt_bundle(config=None):
     """The full reusable wrapper, including user-input instructions."""
-    return copy.deepcopy({'common': JUDGE_PROMPT, 'content': CONTENT_PROMPT, 'visual': compile_batch_prompt_template(),
+    enabled = supports_images(config or {}, 'judge')
+    return copy.deepcopy({'common': JUDGE_PROMPT, 'content': CONTENT_PROMPT, 'visual': compile_batch_prompt_template() if enabled else None,
                           'system_template': SYSTEM_TEMPLATE,
-                          'visual_batch_prompt': compile_batch_prompt_template(),
-                          'content_input_notes': CONTENT_INPUT_NOTES, 'visual_input_notes': VISUAL_INPUT_NOTES,
+                          'visual_batch_prompt': compile_batch_prompt_template() if enabled else None,
+                          'content_input_notes': CONTENT_INPUT_NOTES if enabled else TEXT_INPUT_NOTES, 'visual_input_notes': VISUAL_INPUT_NOTES if enabled else None,
+                          'material_notes': MATERIAL_NOTES if enabled else TEXT_MATERIAL_NOTES, 'materials': 'all_pages_with_each_judgment',
+                          'text_input_notes': TEXT_INPUT_NOTES, 'text_material_notes': TEXT_MATERIAL_NOTES,
+                          'coverage_policy': 'skip_visual_when_judge_images_disabled_v1',
                           'response_mode': 'text', 'boxed_selection': 'first_valid_else_last',
-                          'visual_pages_per_request': 1, 'visual_criteria_per_request': 'all',
-                          'visual_response_mode': 'strict_json_verdicts', 'judgment_strategy': JUDGMENT_STRATEGY,
-                          'scoring_method': SCORING_METHOD})
+                          'visual_pages_per_request': 1 if enabled else 0, 'visual_criteria_per_request': 'all' if enabled else 'none',
+                          'visual_response_mode': 'strict_json_verdicts' if enabled else 'not_evaluated',
+                          'judgment_strategy': JUDGMENT_STRATEGY if enabled else 'content_single_text_only',
+                          'scoring_method': scoring_method(config or {})})
 
 
 def _evaluation_context(scope):
@@ -320,16 +332,21 @@ def _completed_tasks(function, values, workers):
 
 
 def _assess_document(deck, rubric, config, client, catalog, checkpoint=None, previous=None):
-    items = rubric['items']
+    client_config = getattr(client, 'config', config)
+    coverage = evaluation_coverage(rubric, client_config)
+    assessed_rubric = scoped_rubric(rubric, coverage)
+    items = assessed_rubric['items']
     content_items = [item for item in items if not visual_item(item)]
     visual_items = [item for item in items if visual_item(item)]
     doc = document_id(deck)
     pages = page_catalog(deck)
     by_page = {page['page']: page for page in pages}
-    client_config = getattr(client, 'config', config)
+    image_enabled = supports_images(client_config, 'judge')
+    visible_catalog, reference_images, material_notes = stage_materials(catalog, client_config, 'judge')
     result = {'model': _model_name(client, config), 'document_id': doc,
-              'recovery_binding': assessment_binding(deck, rubric, catalog, client_config, prompt_bundle()),
-              'scoring_method': SCORING_METHOD, 'judge_validator_version': VALIDATOR_VERSION,
+              'recovery_binding': assessment_binding(deck, rubric, catalog, client_config, prompt_bundle(client_config)),
+              'scoring_method': scoring_method(client_config), 'judge_validator_version': VALIDATOR_VERSION,
+              'evaluation_coverage': coverage,
               'content': {'strategy': 'one_criterion_per_request',
                           'records': copy.deepcopy((previous or {}).get('content', {}).get('records', []))},
               'visual_batches': copy.deepcopy((previous or {}).get('visual_batches', [])),
@@ -350,9 +367,14 @@ def _assess_document(deck, rubric, config, client, catalog, checkpoint=None, pre
     save()
 
     def assess_content(item):
-        payload = {**_evaluation_context('document'), 'document_id': doc, 'source_catalog': catalog,
+        payload = {**_evaluation_context('document'), 'document_id': doc, 'source_catalog': visible_catalog,
                    'pages': pages, 'criterion': _criterion(item)}
-        images = [(by_page[s['page']]['page_id'], s['image']) for s in deck['slides']]
+        if reference_images or not image_enabled:
+            payload['material_notes'] = material_notes
+        if not image_enabled:
+            payload['input_notes'] = TEXT_INPUT_NOTES
+        images = (reference_images + [(by_page[s['page']]['page_id'], s['image']) for s in deck['slides']]
+                  if image_enabled else [])
         record = _request(client, compile_judge_prompt(item), payload, images, previous_content.get(item['id']))
         return item, record
 
@@ -380,7 +402,7 @@ def _assess_document(deck, rubric, config, client, catalog, checkpoint=None, pre
         def assess_page(slide):
             page = slide['page']
             errors, batches = [], []
-            images = [(by_page[page]['page_id'], slide['image'])]
+            images = reference_images + [(by_page[page]['page_id'], slide['image'])]
             remaining_images = max(0, max_images - len(images))
             crop_limit = min(3, config.get('max_visual_focus_images', 3), remaining_images)
             focus_config = {**config, 'max_images_per_request': max_images,
@@ -403,9 +425,11 @@ def _assess_document(deck, rubric, config, client, catalog, checkpoint=None, pre
             if saved_images:
                 images = [(image['label'], image['path']) for image in saved_images]
             ids = [item['id'] for item in visual_items]
-            payload = {**_evaluation_context('page'), 'document_id': doc, 'source_catalog': catalog,
+            payload = {**_evaluation_context('page'), 'document_id': doc, 'source_catalog': visible_catalog,
                        'pages': [{'page': page, 'page_id': by_page[page]['page_id']}],
                        'criteria': [_criterion(item) for item in visual_items]}
+            if reference_images:
+                payload['material_notes'] = MATERIAL_NOTES
             record = _request(client, compile_batch_prompt(visual_items), payload, images, prior, rubric_ids=ids)
             batch = {'rubric_ids': ids, 'pages': [page],
                      'crop_ids': prior['crop_ids'] if prior else [f"{doc}/{v['id']}" for v in views],
@@ -442,7 +466,7 @@ def _assess_document(deck, rubric, config, client, catalog, checkpoint=None, pre
         result['verdicts'].extend(aggregate_visual(visual_items, result['visual_pages']))
     result['verdicts'] = sorted(result['verdicts'], key=lambda row: next(
         index for index, item in enumerate(items) if item['id'] == row['rubric_id']))
-    result['summary'] = aggregate(rubric, result['verdicts'])
+    result['summary'] = aggregate(assessed_rubric, result['verdicts'])
     result['ownership_conflicts'] = defect_conflicts(result['verdicts'])
     result['visual_evaluated'] = bool(visual_items)
     records = result['content']['records'] + result['visual_batches']
@@ -458,7 +482,7 @@ def _assess_document(deck, rubric, config, client, catalog, checkpoint=None, pre
 
 def evaluate_contract(case, rubric, config, client, decks, sources, output, verification_client=None, resume_from=None,
                       resume_current=False):
-    """Assess once with K3, then score all candidates on a shared rubric subset.
+    """Assess once with the configured model, then score a shared rubric subset.
 
     The retired verification argument is rejected before provider work so callers
     cannot silently run or reuse the former independent-review workflow. API
@@ -467,13 +491,28 @@ def evaluate_contract(case, rubric, config, client, decks, sources, output, veri
     if verification_client is not None:
         raise ValueError('contract-v2.5 uses one K3 assessor; verification_client is no longer supported')
     client_config = getattr(client, 'config', config)
-    if (client_config.get('judge_model') != 'kimi-k3'
+    image_enabled = supports_images(client_config, 'judge')
+    if image_enabled and (client_config.get('judge_model') != 'kimi-k3'
             or client_config.get('vision_model') != 'kimi-k3'):
         raise ValueError('contract-v2.5 requires kimi-k3 for content and visual judgments')
-    if config.get('scoring_method', SCORING_METHOD) != SCORING_METHOD:
-        raise ValueError('contract-v2.5 requires scoring_method=single_k3')
+    if not isinstance(client_config.get('judge_model'), str) or not client_config['judge_model'].strip():
+        raise ValueError('judge_model must be configured')
+    if config.get('scoring_method', SCORING_METHOD) not in {SCORING_METHOD, scoring_method(client_config)}:
+        raise ValueError('Image judging requires scoring_method=single_k3; text-only judging uses single_text')
     catalog = source_catalog(sources)
     validate_inputs(case, rubric, config, decks, sources, catalog)
+    # Check every candidate before starting any provider work for this task.
+    _, reference_images, _ = stage_materials(catalog, client_config, 'judge')
+    for deck in decks.values():
+        candidates = ([(str(s['page']), s['image']) for s in deck['slides']]
+                      if any(not visual_item(i) for i in rubric['items']) else [('page', deck['slides'][0]['image'])])
+        if image_enabled:
+            check_image_budget(reference_images + candidates, client_config, 'judge')
+        elif not any(s['rendered_text'].strip() for s in deck['slides']):
+            raise ValueError('Text-only judge requires candidate PDF text; no readable text on any page')
+        elif (sum(len(s['rendered_text']) for s in deck['slides']) + sum(len(s['text']) for s in catalog)
+              > client_config.get('max_case_text_chars', 100000)):
+            raise ValueError('Text-only judge material + candidate text exceeds max_case_text_chars; never truncate')
     workers = config.get('candidate_workers', 1)
     if type(workers) is not int or workers < 1:
         raise ValueError('candidate_workers must be a positive integer')
@@ -488,7 +527,7 @@ def evaluate_contract(case, rubric, config, client, decks, sources, output, veri
         for cid, deck in decks.items():
             checkpoint = output / f'{cid}-assessment.json'
             if checkpoint.exists():
-                binding = assessment_binding(deck, rubric, catalog, client_config, prompt_bundle(), strict=True)
+                binding = assessment_binding(deck, rubric, catalog, client_config, prompt_bundle(client_config), strict=True)
                 previous[cid] = validate_checkpoint(checkpoint, binding, parse_boxed_answer)
                 archived = output / 'checkpoint-history' / f'{cid}-{previous[cid]["checkpoint_hash"]}.json'
                 if not archived.exists():
@@ -499,13 +538,14 @@ def evaluate_contract(case, rubric, config, client, decks, sources, output, veri
         if output.exists() and any(output.iterdir()):
             raise ValueError('Recovery requires a new, empty candidate output directory')
         for cid, deck in decks.items():
-            binding = assessment_binding(deck, rubric, catalog, client_config, prompt_bundle(), strict=True)
+            binding = assessment_binding(deck, rubric, catalog, client_config, prompt_bundle(client_config), strict=True)
             previous[cid] = validate_checkpoint(Path(resume_from) / case['id'] / f'{cid}-assessment.json',
                                                 binding, parse_boxed_answer)
     output.mkdir(parents=True, exist_ok=True)
     identities = {c['id']: candidate_identity(case, c, decks[c['id']]) for c in case['candidates']}
     write_candidate_mapping(output, mapping_rows([case], output=output.parent))
-    settings = {'scoring_method': SCORING_METHOD, 'assessment': client_config, 'config': config,
+    coverage = evaluation_coverage(rubric, client_config)
+    settings = {'scoring_method': scoring_method(client_config), 'assessment': client_config, 'config': config,
                 'comparison_policy': COMPARISON_POLICY}
     reports = {}
     # Clear stale complete reports before any provider work can fail. Existing
@@ -526,9 +566,10 @@ def evaluate_contract(case, rubric, config, client, decks, sources, output, veri
                   'protocol': PROTOCOL, 'evaluation_protocol': PROTOCOL,
                   'pipeline_version': PIPELINE_VERSION, 'base_pipeline_version': BASE_VERSION,
                   'judge_validator_version': VALIDATOR_VERSION,
-                  'scoring_method': SCORING_METHOD,
-                  'judgment_strategy': JUDGMENT_STRATEGY,
-                  'judge_prompt_fingerprint': digest([PIPELINE_VERSION, prompt_bundle()]),
+                  'scoring_method': scoring_method(client_config),
+                  'evaluation_coverage': copy.deepcopy(coverage),
+                  'judgment_strategy': prompt_bundle(client_config)['judgment_strategy'],
+                  'judge_prompt_fingerprint': digest([PIPELINE_VERSION, prompt_bundle(client_config)]),
                   'pipeline_mode': rubric.get('pipeline_mode'),
                   'source_audit': copy.deepcopy(rubric.get('source_audit')),
                   'assessment': assessment,
@@ -537,7 +578,8 @@ def evaluate_contract(case, rubric, config, client, decks, sources, output, veri
                   'verdicts': copy.deepcopy(assessment['verdicts']),
                   'ownership_conflicts': copy.deepcopy(assessment['ownership_conflicts']),
                   'limitations': ['Single-model judgments are not independently verified.',
-                                 'Independent criterion reasons do not establish unique semantic defect ownership.']}
+                                 'Independent criterion reasons do not establish unique semantic defect ownership.']
+                                 + ([TEXT_INPUT_NOTES, TEXT_MATERIAL_NOTES] if not image_enabled else [])}
         return report
 
     # Candidate tasks share the original provider Client: semaphores, pacing,
@@ -549,7 +591,7 @@ def evaluate_contract(case, rubric, config, client, decks, sources, output, veri
             reports[cid] = future.result()
     comparison, summaries = score_candidates(
         rubric, {cid: report['verdicts'] for cid, report in reports.items()},
-        [c['id'] for c in case['candidates']])
+        [c['id'] for c in case['candidates']], coverage=coverage)
     # Publish totals only after every candidate has a final assessment, so a
     # faster candidate cannot be ranked using a different set of criteria.
     for cid, report in reports.items():

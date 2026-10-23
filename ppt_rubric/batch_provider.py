@@ -12,7 +12,8 @@ from .provider import Client, ProviderError
 def request_profile(config, role):
     return {'endpoint': config['base_url'], 'model': config[role + '_model'],
             'max_tokens': config.get('role_max_output_tokens', {}).get(role, config['max_output_tokens']),
-            'options': {**config.get('request_options', {}), **config.get('role_request_options', {}).get(role, {})}}
+            'options': {**config.get('request_options', {}), **config.get('role_request_options', {}).get(role, {})},
+            'supports_images': config.get('role_supports_images', {}).get(role, True)}
 
 
 def transport_config(generator, judge):
@@ -45,7 +46,8 @@ def transport_config(generator, judge):
         for stage, config in [('generate', generator), ('judge', judge)]}
     result['min_request_interval_seconds'] = max(generator.get('min_request_interval_seconds', 0),
                                                  judge.get('min_request_interval_seconds', 0))
-    result['max_images_per_request'] = judge['max_images_per_request']
+    # Each view checks its stage's capacity; the shared transport must allow both.
+    result['max_images_per_request'] = max(generator['max_images_per_request'], judge['max_images_per_request'])
     return result
 
 

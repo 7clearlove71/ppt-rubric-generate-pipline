@@ -178,27 +178,6 @@ def prepare_case(case, config, cache_root):
 
 
 def case_sources(case, config):
-    """No silent attachment omission. Plain text PDFs only until visual adaptation."""
-    blocks = [{"id": "prompt", "text": case['prompt']}]
-    for i, attachment in enumerate(case.get('attachments', []), 1):
-        path = Path(attachment['path'] if isinstance(attachment, dict) else attachment)
-        source_hash = file_digest(path)
-        if isinstance(attachment,dict) and attachment.get('sha256') and source_hash!=attachment['sha256']:
-            raise ValueError(f'Attachment {i} changed since manifest freeze')
-        if path.suffix.lower() in {'.txt', '.md', '.csv', '.json'}:
-            blocks.append({"id": f"attachment_{i}", "source_sha256":source_hash,"text": path.read_text(encoding='utf-8')})
-        elif path.suffix.lower() == '.pdf':
-            import fitz
-            with fitz.open(path) as pdf:
-                for j, page in enumerate(pdf, 1):
-                    if page.get_images(full=True) or page.get_drawings():
-                        raise ValueError(f'Attachment {i} page {j} contains visual elements; verified visual adapter required')
-                    text = page.get_text().strip()
-                    if not text:
-                        raise ValueError(f'Attachment {i} page {j} has no text; OCR/visual adapter required')
-                    blocks.append({"id": f"attachment_{i}_page_{j}", "source_sha256":source_hash,"text": text})
-        else:
-            raise ValueError(f'Unsupported attachment: {path.suffix}; add a verified adapter')
-    if sum(len(x['text']) for x in blocks) > config['max_case_text_chars']:
-        raise ValueError('Source text exceeds budget; require chunked evidence extraction, never truncate silently')
-    return blocks
+    """PDF/PPTX reference pages, with text and visual evidence kept together."""
+    from .materials import case_materials
+    return case_materials(case, config)

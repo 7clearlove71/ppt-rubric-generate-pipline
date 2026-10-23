@@ -187,3 +187,14 @@ def test_absent_environment_key_uses_file_only_in_memory(runner, monkeypatch):
     monkeypatch.setattr(runner, 'write_json', lambda *args: pytest.fail('Credential must not be written'))
     runner.configure_credential({'api_key_env': 'BAILIAN_API_KEY'}, '/offline/key.json')
     assert runner.os.environ['BAILIAN_API_KEY'] == 'file-offline-key'
+
+
+def test_runner_call_plan_can_disable_all_visual_calls(runner):
+    suite = {'requirements': {'requirements': [{}]}, 'items': [
+        {'dimension': 'fulfillment'}, {'dimension': 'correctness'},
+        {'dimension': 'visual'}, {'dimension': 'visual'}]}
+    decks = {'A': {'slides': [1, 2]}, 'B': {'slides': [1, 2, 3]}}
+    plan = runner.actual_call_plan(suite, decks, {'role_supports_images': {'judge': False}})
+    assert plan['judge_logical_calls_by_candidate'] == {'A': 2, 'B': 2}
+    assert plan['visual_criteria'] == 0 and plan['scoring_method'] == 'single_text'
+    assert plan['evaluation_mode'] == 'content_only'

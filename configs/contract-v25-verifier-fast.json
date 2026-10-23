@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.1",
   "base_url": "https://api.modelarts-maas.com/openai/v1",
   "generator_model": "kimi-k2.6",
   "vision_model": "kimi-k2.6",
@@ -55,7 +55,14 @@
   "verification_content_only": true,
   "visual_batch_size": 1,
   "api_key_env": "MAAS_API_KEY",
-  "contract_version": "2026-10-20.contract-v2.5",
+  "contract_version": "2026-10-23.contract-v2.5.2",
   "candidate_workers": 2,
-  "assessment_workers": 2
+  "assessment_workers": 2,
+  "source_dpi": 120,
+  "max_source_pages": 40,
+  "role_supports_images": {
+    "generator": true,
+    "reviewer": true,
+    "judge": true
+  }
 }

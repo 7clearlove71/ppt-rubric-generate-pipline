@@ -5,6 +5,12 @@ description: 为 PPT 任务构建和审核来源可追溯的加权语义 rubric�
 
 # PPT Rubric Generator
 
+2026-10-23 按阶段能力：当前版本 `2026-10-23.contract-v2.5.2`、包0.2.1、rubric/judge validator均12。`role_supports_images`分别配置generator/reviewer/judge，JSON布尔值、缺省均true，不猜模型能力。generator=false时提取/修订及rubric编写只传材料文字；reviewer=false时full审核只传文字（独立审核Client按自己的配置）。judge=false允许配置非K3文本模型，记录single_text，仅内容评分：保留四维原分值80，视觉5条20分显式未评，无图片请求或视觉调用，不伪造视觉unknown；完整rubric仍100。assessment/report的evaluation_coverage、comparison的scope_possible/unassessed_weight、候选映射evaluation_mode同步范围；unknown共同剔除只作用于实评内容，全部剔除仍not_comparable，禁止把内容分数归一化或与完整图文分数混比。材料任一页无文本时对应纯文本阶段失败；候选全无文本时纯文本judge失败，部分空页保留并声明文本缺失不证明原稿缺失；合计文字超限失败。能力绑定生成/请求/缓存/恢复指纹，改变能力或升级须新目录，历史授权不重开、09不恢复。默认true保持K3图文C＋P；纯文本仅C。详见docs/model-capabilities.md。本轮只离线模拟验证，不证明模型阅读质量。此节覆盖下文2.5.1版本及统一必传图片的旧约定。
+
+
+2026-10-23 附件增强：当前实现为 `2026-10-23.contract-v2.5.1`，包版本0.2.0，rubric/judge validator均11；命令入口和configs文件名保留v2.5/v25。PDF（含图表/扫描）和PPTX材料统一为页级图片＋PDF辅助文字；扫描空文本页仍有可引用ID。提取/重新提取、full审核和judge读取全部材料；逐条编写只读取当前需求、原始prompt及引用页，不传候选或全量无关材料。材料背景不自动成为逐条必需义务。默认材料总页数40、source_dpi120、每请求60图由材料与候选共享，超限明确失败；隐藏页/加密材料拒绝，备注/嵌入文件/动画过程不读。原文件、缓存PDF和图片指纹参与复用/恢复校验；升级使用新运行目录，不迁移历史检查点。batch统一<run>/cache，分阶段沿用同一--cache与来源渲染设置。旧文本附件继续兼容。详见docs/reference-materials.md与docs/input-format.md；本轮仅代码、文档和合成离线测试，未验证真实附件模型阅读质量或在线吞吐，不恢复09或历史授权。此节覆盖下文旧附件限制与validator说明。
+
+
 2026-10-23 当前默认：`light` 轻量模式；批量任务并发 `--workers 10`；K3 judge 全局最多 30 个在途请求，条目/页面调度默认 30。内容仍为一条 rubric 一次调用，视觉改为同页全部 5 条一次调用，共用该页原图和局部放大图，严格按 rubric ID 返回独立理由及 `yes/no/unknown`。视觉请求数由 `5×P` 变为 `P`，每稿评分调用为 `C＋P`（无视觉项时为 `C`）；不含失败重试。逐页 any-no 聚合、五维30/25/10/15/20、每条权重只计一次及同题 unknown 共同剔除均保持。judge validator 升为10，rubric validator仍为10；旧检查点不能混入新协议，历史记录不迁移或重评。本次仅离线实现与验证，未新增付费API调用。
 
 2026-10-22 通用用户批次优先用`python -m ppt_rubric batch --source <批次> --out <专用目录> --mode light --max-api-requests <百炼整批累计上限> --confirm-bailian-bulk`，full另需`--audit-max-api-requests`。自动导入整个批次、构建、渲染、评分及汇总；输入和输出完整约定见docs/batch.md。重复相同命令自动续跑：跳过完成题、启动未开始题，生成及评分成功响应从SQLite/严格检查点复用，即使cache/api已删除也不重评；模型unknown成功结果继续复用。增量账本、共享跨阶段限流/累计预算、输入/代码/参数/资产绑定和失败历史保持。旧检查点在batch续跑前归档，重建时保留既有逐请求记录，防止续跑中再中断丢失成功记录/HTTP400证据。每10秒直观输出进度，根目录提供summary.json/.md、三种候选映射、progress.json/.log和state.sqlite3。SIGINT/SIGTERM有界停止新请求并保存，在途未知消费保守计入；强制终止不能保证供应商恰好一次，已保存成功结果不重评。该模式不导入或重开历史运行/授权，原judge --resume-from仍保持新目录规则。模型、prompt、validator、权重与unknown政策不变，仅离线模拟验证。

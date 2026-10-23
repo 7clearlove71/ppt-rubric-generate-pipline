@@ -1,6 +1,6 @@
-# 安装与快速开始（contract-v2.5）
+# 安装与快速开始（contract-v2.5.2）
 
-用户提供任务、可选来源材料和同题候选PPTX，pipeline自动生成rubric并逐候选评分，输出分数、证据、未决项和文件映射。无需人工评测文件。本文使用当前contract-v2.5、单K3评分与light/full模式（默认light、任务并发10、judge并发30）；输入的完整约定见[用户输入与结果格式](input-format.md)。
+用户提供任务、可选来源材料和同题候选PPTX，pipeline自动生成rubric并逐候选评分，输出分数、证据、未决项和文件映射。无需人工评测文件。本文使用当前contract-v2.5.2（命令名保留contract-v2.5）、默认单K3图文评分与light/full模式（默认light、任务并发10、judge并发30）；输入的完整约定见[用户输入与结果格式](input-format.md)，生成或judge不支持图片时见[按阶段配置能力](model-capabilities.md)。
 
 命令从仓库根目录执行，适用于macOS/Linux；Windows可使用WSL。工具的自动评分仍有语义判定和渲染局限，现有研究记录不等于生产质量验收。
 
@@ -43,7 +43,7 @@ inputs/
 └── task-001/
     ├── prompt.txt
     ├── attachments/          # 可选，支持的来源格式见输入约定
-    │   └── facts.md
+    │   └── report.pdf
     ├── proposal-001/
     │   └── result.pptx
     └── proposal-002/
@@ -178,7 +178,7 @@ python -m ppt_rubric contract-v2.5 export \
 - **只恢复接口失败项**：使用 `judge --resume-from <旧评分目录> --recovery-request-cap <本次新增上限> --out <新目录>`；成功 yes/no/模型 unknown 直接复用，原 `unknown：HTTP400` 和失败日志保留。全部所选输入与检查点通过校验后才请求；此前缺少恢复绑定的历史报告不自动迁移。完整命令与累计预算见[错误日志与恢复](http-failures-and-recovery.md)。本次代码修订没有执行恢复请求。
 - **候选没有被导入**：确认层级是`批次/任务/候选/result.pptx`，每题至少两份，不要改候选固定文件名。
 - **批次只运行了部分任务**：自己的完整批次使用`ingest --split dev`；不要手改已有manifest中的分区和指纹。
-- **附件报错**：检查UTF-8和支持格式；PDF仅支持无图片/绘图且有文本层的纯文字材料。
+- **附件报错**：PDF支持扫描与图表，PPTX需可用的LibreOffice；检查是否加密、含隐藏页或超过材料页数/合计图片容量。支持范围见[附件能力](reference-materials.md)。
 - **找不到soffice或字体变化**：配置运行机器上的LibreOffice及字体，并抽查渲染页。
 - **400/401/403或模型不存在**：查看实际错误记录、参数、端点和权限；单凭HTTP状态码不能定位根因。
 - **429、超时或输出校验失败**：保留账本，检查限流/熔断；核算已有消耗后再恢复，不无限重试。

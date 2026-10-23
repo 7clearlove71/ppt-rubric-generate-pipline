@@ -20,14 +20,17 @@ from ..data import select_cases, validate_manifest
 from ..candidate_mapping import candidate_identity, mapping_rows, write_candidate_mapping
 from ..provider import Client
 from .render import case_sources, prepare_case
+from .materials import (MATERIAL_VERSION, MATERIAL_NOTES, validate_limits,
+                        stage_materials, TEXT_MATERIAL_NOTES)
+from .capabilities import validate_capabilities, supports_images, scoring_method, evaluation_coverage
 from .source_audit import AUDIT, AUDIT_TEMPLATE, SCORING_CONVENTIONS, audit_payload, parse_audit_output
 from ..rubric import DIMENSIONS, assign_scores, unsupported_count_thresholds, false_arithmetic_examples
 from .source_catalog import source_catalog, resolve_source_ids
 
 BASE_VERSION = '2026-10-14.contract-v2.3'
-VERSION = '2026-10-20.contract-v2.5'
+VERSION = '2026-10-23.contract-v2.5.2'
 PROTOCOL = 'contract_v2'
-VALIDATOR_VERSION = 10
+VALIDATOR_VERSION = 12
 PIPELINE_MODES = ('light', 'full')
 
 
@@ -65,7 +68,9 @@ def validate_config(config, operation):
     from ..provider_errors import validate_failure_options
     validate_failure_options(config)
     if config.get('contract_version') != VERSION:
-        raise ValueError('Use an explicit contract-v2.5 config; v2.3/v2.4 profiles cannot be mixed')
+        raise ValueError('Use an explicit contract-v2.5.2 config; historical profiles cannot be mixed')
+    validate_limits(config)
+    validate_capabilities(config)
     expected_stage = 'judge' if operation == 'judge' else 'rubric'
     if config.get('pipeline_stage') != expected_stage:
         raise ValueError(f'{operation} requires pipeline_stage={expected_stage}')
@@ -108,11 +113,11 @@ def validate_config(config, operation):
         if not isinstance(config.get(role + '_model'), str) or not config[role + '_model'].strip():
             raise ValueError(f'{role}_model must be configured')
     if operation == 'judge':
-        if config.get('scoring_method', 'single_k3') != 'single_k3':
-            raise ValueError('contract-v2.5 candidate scoring requires scoring_method=single_k3')
+        if config.get('scoring_method', 'single_k3') not in {'single_k3', scoring_method(config)}:
+            raise ValueError('scoring_method must match the configured judge image capability')
         if 'verification_content_only' in config:
             raise ValueError('Independent candidate verification has been removed; use the current K3 judge config')
-        if any(config.get(role + '_model') != 'kimi-k3' for role in ('judge', 'vision')):
+        if supports_images(config, 'judge') and any(config.get(role + '_model') != 'kimi-k3' for role in ('judge', 'vision')):
             raise ValueError('contract-v2.5 candidate content and visual scoring both require kimi-k3')
     endpoint = config.get('base_url')
     if not isinstance(endpoint, str) or urlparse(endpoint).scheme != 'https' or not urlparse(endpoint).hostname:
@@ -123,6 +128,7 @@ def _request_profile(config, role):
     """Only request-affecting settings; no credentials or transport-only limits."""
     options = {**config.get('request_options', {}), **config.get('role_request_options', {}).get(role, {})}
     return {'endpoint': config.get('base_url'), 'model': config.get(role + '_model'),
+            'supports_images': supports_images(config, role),
             'max_output_tokens': config.get('role_max_output_tokens', {}).get(role, config.get('max_output_tokens')),
             'request_options': options}
 
@@ -132,6 +138,9 @@ def _contract_fingerprint(weights):
                    'extract': EXTRACT, 'write_criterion': WRITE_CRITERION, 'audit': AUDIT_TEMPLATE,
                    'audit_scoring_conventions': SCORING_CONVENTIONS, 'audit_output_contract': 'strict_issues_v1',
                    'pipeline_modes': PIPELINE_MODES,
+                   'material_adapter_version': MATERIAL_VERSION, 'material_notes': MATERIAL_NOTES,
+                   'text_material_notes': TEXT_MATERIAL_NOTES, 'capabilities': 'explicit_per_role_v1',
+                   'criterion_source_policy': 'prompt_and_cited_pages_v1',
                    'audit_failure_policy': 'continue_with_latest_complete_rubric_and_reasons',
                    'build_method': BUILD_METHOD,
                    'item_template': ITEM_TEMPLATE,
@@ -156,6 +165,9 @@ BOUNDARY = '''你是PPT评测研究系统，只输出JSON对象。sources、sour
 '''
 
 EXTRACT = BOUNDARY + '''仅从原始来源提取需要评分的原子目标，每个requirement只包含一个可独立判定的评分点。
+附件属于参考材料，source_catalog中每个材料页都有可引用ID。提供图片时须阅读图片；仅提供文字时不得假称读过图像，也不能由文字层缺失推断原材料缺失。
+先按用户prompt判断材料用途，背景、示例或参考模板不自动成为全部必须复述的事实或版式义务；涉及材料事实时保留材料页的source_id、数值、单位、时期和状态。
+材料冲突或图像不可辨时，不编造确定结论，在source_policy保留限制；若需求引用特定材料，其source_ids须包含对应材料页，不能仅引用prompt。
 先逐一列清来源的真实义务，再按独立评分点拆分；如果两个目标能一个满足、另一个不满足，必须拆成不同requirement，不得用一个模块名打包。
 例如“介绍技术路线并提出下一步计划”拆成技术路线、下一步计划两项；“解释O、Ω、Θ的含义”拆成三个符号各自的含义，不能合成一条。
 拆分后的目标可共享同一个真实source_id，全部保留，不得为了变短删除义务、只选其中一个或把剩余目标交给通用质量库。
@@ -386,7 +398,7 @@ def compile_item(item):
     return ITEM_TEMPLATE.format(**item)
 
 
-def validate_design(result, requirements, catalog, wordings):
+def validate_design(result, requirements, catalog, wordings, allow_visual_sources=True):
     rows = result.get('items')
     if not isinstance(rows, list) or not rows or any(not isinstance(r, dict) for r in rows):
         raise ValueError('Nonempty criterion objects required')
@@ -410,14 +422,16 @@ def validate_design(result, requirements, catalog, wordings):
         if any(KIND_DIMENSION[known_q[qid]['kind']] != row['dimension'] for qid in row['requirement_ids']):
             raise ValueError(f'{rid}: dimension must match the owned requirement kind; key facts belong to correctness')
         owners.update(row['requirement_ids'])
-        resolve_source_ids(catalog, row.get('source_ids'))
+        cited_sources = resolve_source_ids(catalog, row.get('source_ids'))
         required_sources = {sid for qid in row['requirement_ids'] for sid in known_q[qid]['source_ids']}
         if not required_sources <= set(row['source_ids']):
             raise ValueError(f'{rid}: preserve source IDs of owned requirements')
         if row.get('evidence_mode') not in {'text', 'both'}:
             raise ValueError('Content evidence_mode must be text or both')
         text = compile_item(row)
-        if unsupported_count_thresholds(text, source_text):
+        # A text-layer omission cannot disprove a constraint shown in a cited scan.
+        # Visual source grounding belongs to extraction and independent source audit.
+        if unsupported_count_thresholds(text, source_text) and not (allow_visual_sources and any('page_image' in s for s in cited_sources)):
             raise ValueError(f'{rid}: unsupported exact count threshold')
         if false_arithmetic_examples(text, source_text):
             raise ValueError(f'{rid}: correct arithmetic cannot be a failure example')
@@ -460,6 +474,12 @@ def generate_contract(case, config, client, output, reviewer_client=None, progre
     if type(revision_limit) is not int or not 0 <= revision_limit <= 2:
         raise ValueError('max_revisions must be an integer from 0 to 2')
     reviewer = reviewer_client or client
+    generation_config = getattr(client, 'config', config)
+    _, images, _ = stage_materials(catalog, generation_config, 'generator')
+    review_config = getattr(reviewer, 'config', config)
+    review_images = []
+    if mode == 'full':
+        _, review_images, _ = stage_materials(catalog, review_config, 'reviewer')
     generation_profile = _request_profile(getattr(client, 'config', config), 'generator')
     review_profile = (_request_profile(getattr(reviewer, 'config', config), 'reviewer')
                       if mode == 'full' else None)
@@ -467,6 +487,8 @@ def generate_contract(case, config, client, output, reviewer_client=None, progre
             'prompt_fingerprint': fingerprint, 'validator_version': VALIDATOR_VERSION,
             'generator_model': generation_profile['model'], 'reviewer_model': review_profile['model'] if review_profile else None,
             'generation_request_hash': digest(generation_profile), 'review_request_hash': digest(review_profile),
+            'generation_supports_images': supports_images(generation_config, 'generator'),
+            'review_supports_images': supports_images(review_config, 'reviewer') if mode == 'full' else None,
             'source_catalog_hash': digest(catalog), 'pipeline_mode': mode,
             'max_revisions': revision_limit,
             'candidate_input': False, 'build_method': BUILD_METHOD}
@@ -523,7 +545,9 @@ def generate_contract(case, config, client, output, reviewer_client=None, progre
             break
         review_text = None
         try:
-            review_text = reviewer.ask_text('reviewer', AUDIT, audit_payload(case, sources, suite),
+            review_text = reviewer.ask_text('reviewer', AUDIT, audit_payload(case, sources, suite,
+                images=supports_images(review_config, 'reviewer')),
+                **({'images': review_images} if review_images else {}),
                 validate=lambda text: parse_audit_output(text, [item['id'] for item in suite['items']]))
             review = parse_audit_output(review_text, [item['id'] for item in suite['items']])
         except Exception as error:
@@ -565,30 +589,43 @@ def generate_contract(case, config, client, output, reviewer_client=None, progre
 
 
 def _build_round(client, catalog, config, directory, revision, requirements, history):
-    payload = {'source_catalog': catalog}
+    generation_config = getattr(client, 'config', config)
+    visible_catalog, images, notes = stage_materials(catalog, generation_config, 'generator')
+    payload = {'source_catalog': visible_catalog}
+    if images or not supports_images(generation_config, 'generator'):
+        payload['material_notes'] = notes
     if requirements is not None:
         payload.update(previous_requirements=requirements, audit_feedback=history[-1]['review'],
                        revision_instruction=REVISION_INSTRUCTION)
     requirements = client.ask('generator', EXTRACT, payload,
+                              **({'images': images} if images else {}),
                               validate=lambda r: validate_requirements(r, catalog))
     validate_requirements(requirements, catalog)
     write_json(directory / f'requirements-{revision}.json', requirements)
     wordings = []
     for requirement in requirements['requirements']:
         template = REQUIREMENT_TEMPLATES[requirement['kind']]
-        payload = {'requirement': requirement, 'source_catalog': catalog,
+        selected = resolve_source_ids(catalog, requirement['source_ids'])
+        selected_ids = {s['id'] for s in selected}
+        context = [s for s in catalog if s['source_id'] == 'prompt' or s['id'] in selected_ids]
+        visible_context, cited_images, notes = stage_materials(context, generation_config, 'generator')
+        payload = {'requirement': requirement, 'source_catalog': visible_context,
                    'task_summary': requirements['task_summary'], 'source_policy': requirements['source_policy'],
                    'scope': COMPILER_COMMON['scope'], 'applicability': COMPILER_COMMON['applicability'],
                    'exclusions': COMPILER_COMMON['equivalence'] + template['exclusions']}
+        if cited_images or not supports_images(generation_config, 'generator'):
+            payload['material_notes'] = notes
         if history:
             payload['audit_feedback'] = history[-1]['review']
         wording = client.ask('generator', WRITE_CRITERION, payload,
+                             **({'images': cited_images} if cited_images else {}),
                              validate=lambda r, q=requirement: validate_wording(r, q))
         validate_wording(wording, requirement)
         wordings.append(wording)
         write_json(directory / f'wordings-{revision}.json', wordings)
     draft = compile_requirements(requirements, wordings)
-    validate_design(draft, requirements, catalog, wordings)
+    validate_design(draft, requirements, catalog, wordings,
+                    allow_visual_sources=supports_images(generation_config, 'generator'))
     suite = compile_suite(draft, config['dimension_weights'])
     write_json(directory / f'draft-{revision}.json', suite)
     return requirements, wordings, draft, suite
@@ -670,7 +707,10 @@ def verify_suite(case, suite, config):
     if provenance.get('wordings_hash') != digest(suite.get('criterion_wordings')):
         raise ValueError('Generated wording differs from the approved wording hash')
     validate_requirements(suite['requirements'], catalog)
-    validate_design(suite['contract_design'], suite['requirements'], catalog, suite['criterion_wordings'])
+    if type(provenance.get('generation_supports_images')) is not bool:
+        raise ValueError('Rubric must preserve the generation image capability')
+    validate_design(suite['contract_design'], suite['requirements'], catalog, suite['criterion_wordings'],
+                    allow_visual_sources=provenance['generation_supports_images'])
     canonical = compile_suite(suite['contract_design'], suite['dimension_weights'])
     if suite.get('groups') != canonical['groups'] or suite.get('items') != canonical['items']:
         raise ValueError('Published criterion or scoring budget differs from canonical compilation')
@@ -682,22 +722,24 @@ def verify_suite(case, suite, config):
 def export_record(case, suite, config):
     """Schema v2 preserves page aggregation; a two-field export is insufficient."""
     verify_suite(case, suite, config)
-    from .contract_judge import prompt_bundle, compile_judge_prompt, compile_batch_prompt, visual_item, SCORING_METHOD, JUDGMENT_STRATEGY
+    from .contract_judge import prompt_bundle, compile_judge_prompt, compile_batch_prompt, visual_item
     from .comparison_scoring import COMPARISON_POLICY
 
-    visual_items = [i for i in suite['items'] if visual_item(i)]
+    coverage = evaluation_coverage(suite, config)
+    visual_items = [i for i in suite['items'] if visual_item(i) and supports_images(config, 'judge')]
     visual_system = compile_batch_prompt(visual_items) if visual_items else None
     return {'schema_version': 2, 'case_id': case['id'], 'evaluation_protocol': PROTOCOL,
             'pipeline_version': VERSION, 'build_method': BUILD_METHOD,
-            'scoring_method': SCORING_METHOD,
+            'scoring_method': scoring_method(config), 'evaluation_coverage': coverage,
             'pipeline_mode': suite['pipeline_mode'], 'source_audit': copy.deepcopy(suite['source_audit']),
-            'judgment_strategy': JUDGMENT_STRATEGY,
-            'judge_prompts': prompt_bundle(),
+            'judgment_strategy': prompt_bundle(config)['judgment_strategy'],
+            'judge_prompts': prompt_bundle(config),
             'visual_batch_system_prompt': visual_system,
             'rubric_hash': suite['rubric_hash'], 'scoring_policy': copy.deepcopy(SCORING_POLICY),
             'comparison_policy': copy.deepcopy(COMPARISON_POLICY),
             'source_catalog': source_catalog(case_sources(case, config)),
             'rubrics': [{'id': item['id'], 'judge_prompt': item['judge_prompt'], 'score': item['score'],
+                         'evaluated': item['id'] in coverage['evaluated_rubric_ids'],
                          'system_prompt': visual_system if visual_item(item) else compile_judge_prompt(item),
                          'scope': item['scope'], 'scope_type': item['scope_type'],
                          'aggregation': ('any_no_else_unknown_else_all_yes' if item['scope_type'] == 'page'
@@ -736,6 +778,7 @@ def main(argv=None):
     if args.workers < 1:
         parser.error('--workers must be a positive integer')
     manifest, config = read_json(args.manifest), read_json(args.config)
+    config['source_cache_root'] = str(Path(args.cache).resolve())
     validate_manifest(manifest)
     cases = select_cases(manifest, args.split, args.cases, args.allow_holdout)
     if not cases:
@@ -760,8 +803,15 @@ def main(argv=None):
     if args.operation == 'plan':
         revisions = config.get('max_revisions', 2) if mode == 'full' else 0
         review_config = verification_config or config
-        rows = [{'case_id': c['id'], 'sources': len(source_catalog(case_sources(c, config))),
-                 'candidate_input_to_generator': False} for c in cases]
+        rows = []
+        for case in cases:
+            catalog = source_catalog(case_sources(case, config))
+            _, images, _ = stage_materials(catalog, config, 'generator')
+            if mode == 'full':
+                stage_materials(catalog, review_config, 'reviewer')
+            rows.append({'case_id': case['id'], 'sources': len(catalog),
+                         'material_pages': sum('page_image' in row for row in catalog),
+                         'generator_image_count': len(images), 'candidate_input_to_generator': False})
         result = {'protocol': PROTOCOL, 'pipeline_version': VERSION, 'base_pipeline_version': BASE_VERSION,
                   'cases': rows, 'offline': True, 'pipeline_mode': mode,
                   'source_audit_failure_policy': 'continue_to_judge_with_reasons',
@@ -775,11 +825,33 @@ def main(argv=None):
                   'generation_request_limits': {'generator_max_retries': config['max_retries'],
                                                 'auditor_max_retries': review_config['max_retries'] if mode == 'full' else 0},
                   'call_bound_note': 'Requirement counts are unknown before extraction; no finite count bound is claimed.',
-                  'scoring_method': 'single_k3',
-                  'judge_models': {'content': 'kimi-k3', 'visual': 'kimi-k3'},
-                  'judge_logical_calls_per_document_formula': 'C + P (if V > 0; otherwise C)',
+                  'scoring_method': scoring_method(config),
+                  'role_supports_images': {role: supports_images(config, role) for role in ('generator', 'judge')}
+                      | {'reviewer': supports_images(review_config, 'reviewer') if mode == 'full' else None},
+                  'evaluation_mode': 'full' if supports_images(config, 'judge') else 'content_only',
+                  'evaluation_score_possible': 100 if supports_images(config, 'judge') else 80,
+                  'unassessed_weight': 0 if supports_images(config, 'judge') else 20,
+                  'judge_models': {'content': config.get('judge_model'),
+                                   'visual': config.get('judge_model') if supports_images(config, 'judge') else None},
+                  'judge_logical_calls_per_document_formula': ('C + P (if V > 0; otherwise C)'
+                      if supports_images(config, 'judge') else 'C'),
                   'judge_formula_variables': {'C': 'nonvisual criteria', 'V': 'visual criteria', 'P': 'original pages'},
+                  'material_input_policy': {'extract': ('prompt + all material pages' if supports_images(config, 'generator')
+                                                       else 'prompt + all material text layers; no images'),
+                                            'write_criterion': ('requirement + prompt + cited material pages' if supports_images(config, 'generator')
+                                                                else 'requirement + prompt + cited material text; no images'),
+                                            'audit': ('prompt + all material pages + complete rubric' if supports_images(review_config, 'reviewer')
+                                                      else 'prompt + all material text + complete rubric; no images'),
+                                            'judge': ('prompt + all material pages + candidate' if supports_images(config, 'judge')
+                                                      else 'prompt + all material and candidate PDF text; content only'),
+                                            'content_image_formula': 'A + P' if supports_images(config, 'judge') else '0',
+                                            'visual_image_formula': 'A + 1 + available candidate crops' if supports_images(config, 'judge') else 'not_evaluated',
+                                            'A': 'total PDF/PPTX material pages',
+                                            'max_source_pages': config.get('max_source_pages', 40),
+                                            'source_dpi': config.get('source_dpi', 120),
+                                            'overflow_policy': 'fail; never truncate or silently omit'},
                   'fixed_content_criteria': len(QUALITY_ITEMS), 'fixed_visual_criteria': len(VISUAL_ITEMS),
+                  'evaluated_fixed_visual_criteria': len(VISUAL_ITEMS) if supports_images(config, 'judge') else 0,
                   'judge_response_mode': {'content': 'text_with_boxed_conclusion', 'visual': 'strict_json_verdicts'},
                   'visual_pages_per_request': 1, 'visual_criteria_per_request': 'all',
                   'candidate_workers': config.get('candidate_workers', 1),
@@ -832,7 +904,7 @@ def main(argv=None):
                 catalog = source_catalog(sources)
                 validate_inputs(case, suite, config, decks, sources, catalog)
                 for cid, deck in decks.items():
-                    binding = assessment_binding(deck, suite, catalog, config, prompt_bundle(), strict=True)
+                    binding = assessment_binding(deck, suite, catalog, config, prompt_bundle(config), strict=True)
                     validate_checkpoint(resume_judgments / case['id'] / f'{cid}-assessment.json', binding, parse_boxed_answer)
                 recovered_inputs[case['id']] = (suite, decks, sources)
             config = {**config, 'max_api_requests': args.recovery_request_cap,
@@ -878,6 +950,8 @@ def main(argv=None):
                               'candidate_identity': r.get('candidate_identity') or candidate_identity(case, candidates[cid], decks[cid]),
                               'document_id': r.get('document_id'), 'pipeline_mode': suite['pipeline_mode'],
                               'comparison': r.get('comparison'),
+                              'evaluation_coverage': r.get('evaluation_coverage'),
+                              'scoring_method': r.get('scoring_method', scoring_method(config)),
                               'source_audit': suite['source_audit']} for cid, r in result.items()}
         except Exception as exc:
             return {'status': 'error', 'error_type': type(exc).__name__, 'message': str(exc)}

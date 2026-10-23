@@ -16,6 +16,7 @@ IDENTITY_FIELDS = ('candidate_key', 'case_id', 'candidate_id', 'display_name',
 MAPPING_FIELDS = (*IDENTITY_FIELDS, 'page_count', 'document_id', 'score_status', 'score',
                   'score_lower', 'score_upper', 'unresolved_weight', 'score_possible',
                   'excluded_weight', 'excluded_rubric_ids', 'comparison_policy', 'judgment_file')
+MAPPING_FIELDS = (*MAPPING_FIELDS, 'evaluation_mode', 'unassessed_weight')
 
 
 def candidate_identity(case, candidate, deck=None):
@@ -62,6 +63,7 @@ def mapping_rows(cases, results=None, output=None):
                 identity['page_count'] = recorded.get('page_count')
             summary = report.get('summary', report)
             comparison = report.get('comparison') or {}
+            coverage = report.get('evaluation_coverage') or comparison.get('evaluation_coverage') or {}
             status = summary.get('status') or ('error' if case_result.get('status') == 'error'
                                               else 'missing' if case['id'] in results else 'pending')
             rows.append({**identity, 'document_id': report.get('document_id'),
@@ -72,6 +74,8 @@ def mapping_rows(cases, results=None, output=None):
                          'excluded_weight': comparison.get('excluded_weight'),
                          'excluded_rubric_ids': comparison.get('excluded_rubric_ids'),
                          'comparison_policy': comparison.get('policy', {}).get('version'),
+                         'evaluation_mode': coverage.get('mode'),
+                         'unassessed_weight': coverage.get('unassessed_weight'),
                          'judgment_file': str(Path(output).resolve() / case['id'] / f'{candidate["id"]}.json')
                              if output is not None else None})
     return rows
@@ -104,11 +108,13 @@ def write_candidate_mapping(output, rows, manifest_id=None):
                       'Current comparison totals omit any criterion with a final unknown in the same-case cohort; '
                       'score_possible is the reduced maximum, without weight redistribution.',
                       'Only compare or rank candidates for the same task/rubric; no cross-case ranking is implied.',
+                      'Compare matching evaluation modes only; content_only leaves visual weight 20 unassessed, '
+                      'with original content maximum 80 and no normalization.',
                       'Missing or pending rows do not have scores.']}
     fields = ['candidate_key', 'display_name', 'input_pptx', 'sha256', 'page_count',
               'score_status', 'score', 'score_lower', 'score_upper', 'unresolved_weight',
               'score_possible', 'excluded_weight', 'excluded_rubric_ids', 'comparison_policy',
-              'judgment_file']
+              'judgment_file', 'evaluation_mode', 'unassessed_weight']
     buffer = io.StringIO(newline='')
     writer = csv.DictWriter(buffer, fieldnames=['manifest_id', *fields])
     writer.writeheader()
@@ -120,12 +126,13 @@ def write_candidate_mapping(output, rows, manifest_id=None):
         return ('' if value is None else str(value)).replace('|', '\\|').replace('\r', ' ').replace('\n', '<br>')
     headers = ['用例/候选ID', '名称（用户标签或来源目录/文件）', '输入PPTX', 'SHA-256', '页数',
                '评分状态', '比较分数', '分数下界', '分数上界', '未决权重',
-               '比较满分', '剔除权重', '共同剔除条目', '比较计分版本', '评分结果文件']
+               '比较满分', '剔除权重', '共同剔除条目', '比较计分版本', '评分结果文件', '评测范围', '未评权重']
     lines = ['# 候选身份映射', '',
              'manifest_id：' + cell(manifest_id), '',
              '按“用例ID/候选ID”关联分数和原始文件；A/B是本批次候选编号，名称来自输入目录或用户标签。', '',
              '表格按manifest顺序排列，不代表名次。未完整评分保留区间；跨用例分数不构成同题排序。', '',
              '当前比较分数对同题所有候选共同剔除最终unknown条目；其余原分值不变，以“比较满分”为分母。原始判断仍保留。', '',
+             'content_only表示仅内容评测，视觉未评，原内容满分80；full为全维评测。两种范围不可直接混比或折算成相同百分制。', '',
              '| ' + ' | '.join(headers) + ' |', '| ' + ' | '.join(['---'] * len(headers)) + ' |']
     for row in rows:
         values = [row.get(k) for k in fields]

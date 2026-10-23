@@ -18,6 +18,7 @@ from ppt_rubric.provider import Client
 from ppt_rubric.v25 import contract_v2 as contract
 from ppt_rubric.v25.contract_judge import evaluate_contract, visual_item
 from ppt_rubric.v25.render import case_sources
+from ppt_rubric.v25.capabilities import supports_images, scoring_method
 import fitz
 
 PARSER = argparse.ArgumentParser(description='Fresh single-case run; shared provider budgets and isolated artifacts.')
@@ -93,15 +94,18 @@ class RecordedClient(Client):
             accounting()
 
 
-def actual_call_plan(suite, decks):
-    """Estimate only the single K3 scoring pass, using the published rubric."""
+def actual_call_plan(suite, decks, config=None):
+    """Estimate the configured scoring pass, using the published rubric."""
     visual = sum(visual_item(item) for item in suite['items'])
     content = len(suite['items']) - visual
+    if not supports_images(config or {}, 'judge'):
+        visual = 0
     pages = {cid: len(deck['slides']) for cid, deck in decks.items()}
     calls = {cid: content + (count if visual else 0) for cid, count in pages.items()}
     return {'requirements': len(suite['requirements']['requirements']),
             'content_criteria': content, 'visual_criteria': visual,
-            'candidate_pages': pages, 'scoring_method': 'single_k3',
+            'candidate_pages': pages, 'scoring_method': scoring_method(config or {}),
+            'evaluation_mode': 'full' if supports_images(config or {}, 'judge') else 'content_only',
             'judge_logical_calls_by_candidate': calls,
             'judge_logical_calls': sum(calls.values()),
             'pipeline_mode': suite.get('pipeline_mode'), 'source_audit': suite.get('source_audit'),
@@ -168,12 +172,14 @@ def main(argv=None):
         'authorization_basis': 'Explicit current single-case run request and standing single-case trial allowance; no bulk or old balances.',
         'pipeline_mode': args.mode,
         'operational_caps_not_user_specified': CAPS, 'max_revisions': 2 if args.mode == 'full' else 0, 'max_attempts_per_logical_call': 3,
-        'models': {'extraction_and_wording': 'kimi-k3', 'candidate_scoring': 'kimi-k3',
-                   'independent_source_audit': 'kimi-k2.6' if args.mode == 'full' else None},
-        'scoring_method': 'single_k3',
+        'models': {'extraction_and_wording': profiles['k3']['generator_model'],
+                   'candidate_scoring': profiles['judge']['judge_model'],
+                   'independent_source_audit': profiles['auditor']['reviewer_model'] if args.mode == 'full' else None},
+        'scoring_method': scoring_method(profiles['judge']),
         'human_labels_in_inputs': False, 'holdout': False, 'started_unix': time.time(),
         'cost_estimate': None})
-    status = {'status': 'initializing', 'pipeline_mode': args.mode, 'started_unix': time.time(), 'scoring_method': 'single_k3'}
+    status = {'status': 'initializing', 'pipeline_mode': args.mode, 'started_unix': time.time(),
+              'scoring_method': scoring_method(profiles['judge'])}
     write_json(RUN / 'execution-status.json', status)
     mapping_results = {}
     try:
@@ -195,7 +201,7 @@ def main(argv=None):
             status['status'] = 'generation_failed'
             return 1
         contract.verify_suite(case, suite, profiles['judge'])
-        write_json(RUN / 'actual-call-plan.json', actual_call_plan(suite, decks))
+        write_json(RUN / 'actual-call-plan.json', actual_call_plan(suite, decks, profiles['judge']))
         primary.config = profiles['judge']
         # Generation has drained; update the same Client's transport capacity
         # while retaining its cumulative ledger, budget and circuit breakers.
@@ -212,7 +218,8 @@ def main(argv=None):
         execution_failed = any(r.get('execution', {}).get('status') == 'failed' for r in result.values())
         incomplete = any(r['summary']['status'] != 'complete'
                          or r.get('execution', {}).get('status', 'complete') != 'complete' for r in result.values())
-        status.update(status='failed' if execution_failed else 'incomplete' if incomplete else 'finished', scoring_method='single_k3',
+        status.update(status='failed' if execution_failed else 'incomplete' if incomplete else 'finished',
+                      scoring_method=scoring_method(profiles['judge']),
                       summaries={cid: r['summary'] for cid, r in result.items()},
                       comparisons={cid: r.get('comparison') for cid, r in result.items()})
     except Exception as error:

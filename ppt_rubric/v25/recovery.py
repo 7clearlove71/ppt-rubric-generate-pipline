@@ -21,15 +21,18 @@ def image_references(images, strict=False):
 def request_binding(config):
     return {key: copy.deepcopy(config.get(key)) for key in (
         'base_url', 'judge_model', 'max_output_tokens', 'role_max_output_tokens',
-        'request_options', 'role_request_options')}
+        'request_options', 'role_request_options', 'role_supports_images')}
 
 
 def assessment_binding(deck, rubric, catalog, config, prompts, strict=False):
+    from .materials import material_images
+    reference_images = material_images(catalog)
     pdf = Path(deck['pdf']) if deck.get('pdf') else None
     if strict and pdf is not None and not pdf.is_file():
         raise ValueError('Recovery PDF is missing; no requests were sent')
     return digest({'document': deck, 'rubric_hash': rubric['rubric_hash'],
                    'source_catalog': catalog, 'prompts': prompts,
+                   'material_images': image_references(reference_images, strict),
                    'request_profile': request_binding(config),
                    'focus_profile': {key: config.get(key) for key in
                                      ('max_images_per_request', 'max_visual_focus_images', 'dpi')},

@@ -10,6 +10,7 @@ to a model so that headings, table headers, and neighbouring rows remain visible
 from __future__ import annotations
 
 import hashlib
+import copy
 import json
 import re
 
@@ -73,6 +74,14 @@ def source_catalog(sources):
         if not isinstance(text, str):
             raise ValueError(f"Source text must be a string: {source_id}")
         seen_sources.add(source_id)
+        if 'page_image' in source:
+            # A whole page remains addressable when scanned or entirely visual.
+            catalog.append({**copy.deepcopy({k: v for k, v in source.items() if k not in {'id', 'text'}}),
+                            'id': 'src_' + hashlib.sha256(json.dumps(
+                                [source_id, source['source_sha256'], source['page_image']['sha256'], text],
+                                ensure_ascii=False).encode()).hexdigest()[:24],
+                            'source_id': source_id, 'text': text, 'start': 0, 'end': len(text)})
+            continue
         for line in _LINE.finditer(text):
             if not line.group().strip():
                 continue

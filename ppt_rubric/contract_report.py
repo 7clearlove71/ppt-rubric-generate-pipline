@@ -338,7 +338,7 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
             if candidate['sha256'] != report['candidate_hash'] or report.get('candidate_id') != candidate['id'] or report.get('case_id') != cid:
                 raise ValueError('Candidate hash differs from manifest')
             ready = (suite and suite.get('status') == 'ready' and 'pipeline_mode' in suite
-                     and report.get('scoring_method') == 'single_k3')
+                     and report.get('scoring_method') in {'single_k3', 'single_text'})
             if (not suite or (suite['status'] != 'approved' and not ready) or report.get('rubric_hash') != suite['rubric_hash']
                     or report.get('source_hash') != suite.get('provenance', {}).get('source_hash')
                     or report.get('evaluation_protocol') != 'contract_v2'):
@@ -348,17 +348,19 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
                     or report.get('source_audit') != suite['source_audit']):
                 raise ValueError('Evaluation source audit status differs from its rubric')
             _validate_summary(report['summary'])
-            single = report.get('scoring_method') == 'single_k3'
-            scoring_methods.add('single_k3' if single else 'historical_dual_assessor')
+            single = report.get('scoring_method') in {'single_k3', 'single_text'}
+            scoring_methods.add(report['scoring_method'] if single else 'historical_dual_assessor')
             if len(scoring_methods) > 1:
-                raise ValueError('Report single-K3 and historical dual-assessor runs separately')
+                raise ValueError('Report different scoring methods and evaluation coverage separately')
             assessment = report['assessment'] if single else report['primary']
             _validate_summary(assessment['summary'])
             if single and (any(key in report for key in ('primary', 'verification', 'consensus', 'verification_model'))
                            or ('comparison' not in report and report['summary'] != assessment['summary'])
                            or report['verdicts'] != assessment['verdicts']
-                           or report.get('judge_model') != 'kimi-k3'):
-                raise ValueError('Single-K3 report must preserve the sole assessment without a merge')
+                           or (report.get('scoring_method') == 'single_k3' and report.get('judge_model') != 'kimi-k3')
+                           or (report.get('scoring_method') == 'single_text' and
+                               report.get('evaluation_coverage', {}).get('mode') != 'content_only')):
+                raise ValueError('Single-assessor report must preserve the sole assessment and declared coverage')
             reports[candidate['id']] = report
             if single:
                 counts['assessment_complete'] += assessment['summary']['status'] == 'complete'
@@ -377,7 +379,9 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
                      for item in suite['items'] if item['dimension'] == 'visual'} if suite else {}
             candidate_result = {'visual_page_answers': local, 'ownership_conflicts': report['ownership_conflicts']}
             if single:
-                candidate_result.update(assessment=assessment['summary'], scoring_method='single_k3')
+                candidate_result.update(assessment=assessment['summary'], scoring_method=report['scoring_method'])
+                if 'evaluation_coverage' in report:
+                    candidate_result['evaluation_coverage'] = report['evaluation_coverage']
                 if 'comparison' in report:
                     candidate_result.update(summary=report['summary'], comparison=report['comparison'])
             else:
@@ -403,8 +407,8 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
                     'verification_model', 'judge_validator_version', 'judge_prompt_fingerprint', 'evaluation_protocol',
                     'scoring_method')):
                 raise ValueError('Cannot compare mismatched candidate evaluations')
-            if a.get('scoring_method') == 'single_k3':
-                row['scoring_method'] = 'single_k3'
+            if a.get('scoring_method') in {'single_k3', 'single_text'}:
+                row['scoring_method'] = a['scoring_method']
                 if row.get('comparison', {}).get('status') == 'not_comparable':
                     row['interval_preference'] = {'prediction': None, 'status': 'not_comparable',
                         'reason': 'All rubric items were excluded because of unknown verdicts',
@@ -415,7 +419,8 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
                 row['combined_interval_preference'] = _candidate_preference(a['summary'], b['summary'], candidate_ids)
                 row['primary_preference'] = _candidate_preference(a['primary']['summary'], b['primary']['summary'], candidate_ids)
             if suite:
-                if row.get('comparison', {}).get('excluded_rubric_ids'):
+                if (row.get('comparison', {}).get('excluded_rubric_ids')
+                        or row.get('comparison', {}).get('unassessed_weight')):
                     row['weight_sensitivity'] = {'status': 'not_applicable',
                         'reason': 'Shared rubric exclusions reduce dimension budgets; weights are not redistributed'}
                 else:
@@ -429,10 +434,10 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
               'interpretation': ['Primary score is one model judgment, not verified truth.',
                  'Combined scores retain independent model disagreements as intervals; local visuals may be singly assessed.',
                  'Robust interval preference is not a complete score, and partial coverage is reported explicitly.']}
-    single_run = scoring_methods == {'single_k3'}
+    single_run = len(scoring_methods) == 1 and scoring_methods <= {'single_k3', 'single_text'}
     if single_run:
         result.pop('independent_content_answers')
-        result['scoring_method'] = 'single_k3'
+        result['scoring_method'] = next(iter(scoring_methods))
         result['interpretation'] = [
             'Content and visual scores come from one K3 model; there is no independent candidate review or merge.',
             'Unknown answers retain score intervals; robust interval preference is separate from complete scores.',
@@ -442,6 +447,9 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
                 'Current totals exclude each criterion with an unknown final verdict for any same-case candidate; '
                 'remaining weights are unchanged and raw assessment intervals are preserved. '
                 'Historical reports retain their original scoring policy.')
+    if scoring_methods == {'single_text'}:
+        result['interpretation'].insert(0, 'Content-only evaluation using PDF text; visual criteria are unassessed. Original content maximum is 80, without normalization.')
+        result['interpretation'][1] = 'Content scores come from one configured text model; no images or independent candidate review were used.'
     result['source_semantic_qa'] = source_semantic_qa(root, manifest, rows, suites, split)
     if labels is not None:
         result['interpretation'].append('Human preference is a development comparison target, not factual ground truth.')
@@ -506,7 +514,7 @@ def summarize(manifest, root, labels=None, split='dev', allow_holdout=False):
                 'meaning': 'Label frequency on exactly this comparable subset; not out-of-sample accuracy or a tuning target.'}}
         if single_run:
             result['single_assessor_agreement'].update(
-                assessment='single_k3', meaning='Descriptive comparison using complete K3 scores only.')
+                assessment=next(iter(scoring_methods)), meaning='Descriptive comparison using complete single-assessor scores in the reported coverage only.')
     return result
 
 

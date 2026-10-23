@@ -568,3 +568,96 @@ def test_visual_batch_format_retry_preserves_bad_raw_and_one_record_per_page(use
         assessment = read_json(path)
         assert len(assessment['visual_batches']) == 1
         assert len(assessment['visual_pages'][0]['verdicts']) == 5
+
+
+@pytest.mark.parametrize('mode', ['light', 'full'])
+def test_batch_material_pdf_reaches_provider_and_survives_resume(user_batch, mode):
+    import fitz
+    args = single_task(user_batch)
+    _, source, output, sent, _, _, _ = user_batch
+    args[args.index('--mode') + 1] = mode
+    if mode == 'full':
+        args += ['--audit-max-api-requests', '10']
+    folder = source / 'task-000/attachments'
+    folder.mkdir()
+    with fitz.open() as pdf:
+        page = pdf.new_page(width=200, height=150)
+        page.draw_rect(fitz.Rect(10, 10, 100, 100), color=(1, 0, 0))
+        pdf.save(folder / 'reference.pdf')
+    assert batch.main(args) == 0
+    extract = next(request for system, _, request, _ in sent if system == contract.EXTRACT)
+    content = extract['messages'][1]['content']
+    assert any(part['type'] == 'image_url' and part['image_url']['url'].startswith('data:image/png;base64,')
+               for part in content)
+    assert any(part.get('text') == 'material/attachment_1_page_1' for part in content)
+    judges = [request for system, payload, request, _ in sent if isinstance(payload, dict) and 'document_id' in payload]
+    assert judges
+    assert all(sum(part['type'] == 'image_url' for part in req['messages'][1]['content']) == 2 for req in judges)
+    if mode == 'full':
+        audit = next(req for system, _, req, _ in sent if system == contract.AUDIT)
+        assert sum(part['type'] == 'image_url' for part in audit['messages'][1]['content']) == 1
+    count = len(sent)
+    shutil.rmtree(output / 'cache/api')
+    assert batch.main(args) == 0 and len(sent) == count
+    page_image = next((output / 'cache/materials').rglob('page-001.png'))
+    page_image.write_bytes(b'changed source image')
+    with pytest.raises(SystemExit):
+        batch.main(args)
+    assert len(sent) == count
+
+
+@pytest.mark.parametrize('mode', ['light', 'full'])
+@pytest.mark.parametrize('generator_images,judge_images', [(False, True), (True, False), (False, False)])
+def test_batch_stage_image_capabilities_and_content_scope(user_batch, mode, generator_images, judge_images):
+    import fitz
+    args = single_task(user_batch)
+    _, source, output, sent, _, faults, configs = user_batch
+    args[args.index('--mode') + 1] = mode
+    if mode == 'full':
+        args += ['--audit-max-api-requests', '10']
+    folder = source / 'task-000/attachments'
+    folder.mkdir()
+    with fitz.open() as pdf:
+        page = pdf.new_page(width=200, height=150)
+        page.insert_text((10, 30), 'Source investment: 280 million')
+        pdf.save(folder / 'reference.pdf')
+    for i, path in enumerate(configs):
+        cfg = read_json(path)
+        cfg['role_supports_images'] = {'generator': generator_images, 'reviewer': False, 'judge': judge_images}
+        if i == 1 and not judge_images:
+            cfg['judge_model'] = 'offline-text-model'
+            cfg.pop('vision_model')
+        write_json(path, cfg)
+    faults['model_unknown'] = True
+    assert batch.main(args) == 0
+    for system, payload, request, _ in sent:
+        image_count = sum(part['type'] == 'image_url' for part in request['messages'][1]['content'])
+        if system == contract.EXTRACT:
+            assert image_count == (1 if generator_images else 0)
+        elif system == contract.AUDIT:
+            assert image_count == 0
+        elif 'document_id' in payload:
+            assert image_count == (2 if judge_images else 0)
+            if not judge_images:
+                assert request['model'] == 'offline-text-model' and 'criteria' not in payload
+    mapping = read_json(output / 'candidate-mapping.json')
+    for row in mapping['candidates']:
+        assert row['evaluation_mode'] == ('full' if judge_images else 'content_only')
+        assert row['score_possible'] == pytest.approx(90 if judge_images else 70)
+        assert row['unassessed_weight'] == pytest.approx(0 if judge_images else 20)
+        assert row['excluded_rubric_ids'] == ['I_BOUNDARY']
+    summary = read_json(output / 'summary.json')
+    reports = summary['tasks']['task-000']['result']
+    assert all(r['scoring_method'] == ('single_k3' if judge_images else 'single_text') for r in reports.values())
+    count = len(sent)
+    shutil.rmtree(output / 'cache/api')
+    assert batch.main(args) == 0 and len(sent) == count
+    if not judge_images:
+        assert 'content_only' in (output / 'candidate-mapping.md').read_text()
+        cfg = read_json(configs[1])
+        cfg['role_supports_images']['judge'] = True
+        cfg['judge_model'] = cfg['vision_model'] = 'kimi-k3'
+        write_json(configs[1], cfg)
+        with pytest.raises(SystemExit):
+            batch.main(args)
+        assert len(sent) == count

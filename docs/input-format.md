@@ -1,6 +1,6 @@
-# 用户输入与结果格式约定（contract-v2.5）
+# 用户输入与结果格式约定（contract-v2.5.2）
 
-用户只需提供任务、可选来源材料及候选PPTX，系统自行生成rubric并评分，不需要附带人工评分或人工排序。当前入口为`contract-v2.5`，支持轻量`light`与全量`full`；默认full。安装、凭据与完整命令见[快速开始](quickstart.md)。
+用户只需提供任务、可选来源材料及候选PPTX，系统自行生成rubric并评分，不需要附带人工评分或人工排序。当前实现版本为`2026-10-23.contract-v2.5.2`，命令入口保留`contract-v2.5`，支持轻量`light`与全量`full`；默认light。安装、凭据与完整命令见[快速开始](quickstart.md)。
 
 推荐使用新的通用`python -m ppt_rubric batch --source inputs --out <专用运行目录> ...`，自动处理整个批次并支持同命令续跑，不需要先手动ingest。输入沿用下文目录约定；batch额外提供`summary.json/.md`、`progress.log/.json`、`state.sqlite3`及根目录候选映射。准确的批量命令、输出树和恢复规则见[批量使用说明](batch.md)。下文第3—4节的手动导入及report目录适用于原分阶段入口。
 
@@ -11,8 +11,8 @@ inputs/                         # 一次导入的批次
 ├── task-001/                    # 一项任务；名称成为case_id
 │   ├── prompt.txt              # 必填：UTF-8、非空的原始制作任务
 │   ├── attachments/            # 可选：所有候选共用的来源材料
-│   │   ├── facts.md
-│   │   └── budget.csv
+│   │   ├── report.pdf
+│   │   └── reference-slides.pptx
 │   ├── proposal-001/            # 一份候选；目录名用于辨认作品
 │   │   └── result.pptx          # 必填：固定文件名，小写扩展名
 │   ├── proposal-002/
@@ -53,13 +53,26 @@ inputs/                         # 一次导入的批次
 
 这只是格式示例。真实任务应写清实际要求；系统根据用户任务和附件生成标准，不要求套固定行业模板。
 
+附件放在任务根目录的 `attachments/` 中，所有候选共用；支持嵌套子目录。建议在 `prompt.txt` 中用相对文件名说明每份材料的用途，例如：
+
+```text
+依据 attachments/report.pdf 中的2025年度经营数据制作汇报。
+attachments/reference-slides.pptx 仅供结构参考，不要求复制其事实、配色或排版。
+保留报告中的单位和统计口径；材料冲突时说明待确认，不自行补数。
+```
+
 | 来源附件类型 | 读取方式与限制 |
 |---|---|
-| `.txt`、`.md`、`.csv`、`.json` | 按UTF-8文本读取。CSV/JSON作为来源文字，不是额外的数据库或表格计算接口。 |
-| `.pdf` | 仅支持每页可提取文字、且没有图片或矢量绘图的纯文本PDF。扫描件、图表PDF、空文本页会明确报错；当前没有来源PDF的OCR/视觉适配。 |
-| 其他类型 | `.docx`、`.xlsx`、图片、来源PPTX等目前不支持，须先整理为上述支持格式。不会自动忽略不支持的材料。 |
+| `.pdf` | 每页渲染为图片，同时提取文本层；支持文字、图表、扫描及混合页面。图文阶段无文本页仍发送图片；纯文本阶段遇无文本材料页明确报错，不生成虚构的OCR文本。未加密、非空且能正常打开。 |
+| `.pptx` | 用配置的LibreOffice转换为PDF，再逐页读取图片与PDF文字。使用实际幻灯片顺序；隐藏页、空稿或转换页数不匹配明确失败。备注、嵌入文件、音视频及动画过程不作为来源读取；请将必要信息放入可见页面。 |
+| 旧文本输入 | UTF-8 `.txt/.md/.csv/.json` 继续兼容；新材料推荐使用PDF/PPTX。 |
+| 其他类型 | 旧版`.ppt`、DOCX、XLSX、独立图片等不支持，明确报错，不自动忽略。 |
 
-来源正文超出配置的`max_case_text_chars`时明确失败，不静默截断。当前公开配置为100000字符。候选整稿图片超过模型请求容量也会明确失败；公开配置的图片上限为每请求60张，仍须满足供应商实际上下文限制。
+各阶段默认支持图片，可通过 `role_supports_images`独立关闭；设置与评分范围见[模型能力配置](model-capabilities.md)。关闭图片的阶段只接收材料文字；纯文本judge只评内容，原内容满分80，视觉20分显式未评。需求提取读取原始prompt和全部材料页；逐条生成rubric读取当前需求、原始prompt及所引用材料页；全量审核读取全部材料页和完整rubric；judge读取prompt、全部材料和当前候选。材料图片用 `material/attachment_N_page_P` 标签，候选图片用文档ID标签，二者不会混为同一份待评作品。附件背景或模板不自动成为全部必须复述的义务，具体用途由prompt决定。能力设计及离线验证范围见[附件能力说明](reference-materials.md)。
+
+下述图片容量适用于图文阶段；纯文本judge对材料和候选合计文字检查字符上限。默认材料总页数上限 `max_source_pages=40`，材料渲染 `source_dpi=120`；生成和judge配置须保持一致。全部来源文字（含prompt）不得超过 `max_case_text_chars`（公开配置100000字符）。每请求图片上限为 `max_images_per_request`（公开配置60张），材料页和候选页共用额度：内容判断需要“材料总页数＋候选页数”，视觉判断需要“材料总页数＋候选当前页＋可用局部图”。容量不足明确失败，不静默截断，也不自动抽样或压缩成摘要；仍须满足供应商实际上下文容量，当前未验证线上大附件吞吐或阅读质量。
+
+材料原文件、缓存PDF、逐页图片、页码、引用和渲染参数参与指纹校验。材料或已冻结图片变化、缺失时拒绝沿用旧结果。新版本不迁移历史rubric/检查点；升级后使用新运行目录。命令行 `--cache` 决定分阶段的材料缓存位置，batch统一放在运行目录的 `cache/`；分阶段构建与评分请沿用相同缓存和材料渲染配置。
 
 ## 3. 导入为manifest
 
@@ -78,7 +91,7 @@ python -m ppt_rubric ingest \
 
 - `case_id`：任务目录名，例如`task-001`。
 - `candidate_id`：本题候选编号，按固定seed随机打乱后分配`A`、`B`……`Z`、`AA`、`AB`……，不代表质量或排名。
-- 原始PPTX绝对路径、各候选完整SHA-256、附件路径及指纹。
+- 原始PPTX绝对路径、各候选完整SHA-256、附件路径、相对名称及指纹。
 - `manifest_id`：整份输入清单的指纹；JSON中的字段名为`id`。
 
 不要假定`A`就是字母排序第一的目录。输入新增、删除或变化后，应导入新的manifest并使用新的运行目录；不要手改已经冻结的manifest或指纹。相同输入和seed重复导入相同输出文件时允许复用，内容不同则拒绝覆盖。
@@ -96,7 +109,8 @@ manifest结构示意如下。路径和全零指纹是占位值，不能直接拿
       "prompt": "原始制作任务全文",
       "attachments": [
         {
-          "path": "/srv/inputs/task-001/attachments/facts.md",
+          "path": "/srv/inputs/task-001/attachments/report.pdf",
+          "name": "report.pdf",
           "sha256": "0000000000000000000000000000000000000000000000000000000000000000"
         }
       ],
@@ -169,6 +183,7 @@ artifacts/my-batch/
 | `unresolved_weight` | 尚未确定的分值。 |
 | `score_possible` | 共同剔除unknown后剩余的比较满分，不重新分配或归一化；历史报告为null。 |
 | `excluded_weight`、`excluded_rubric_ids` | 同题所有候选共同剔除的分值与条目ID。 |
+| `evaluation_mode`、`unassessed_weight` | `full`或`content_only`及因能力未评的权重；纯文本模式视觉20分未评，不计入unknown剔除。历史结果可为null。 |
 | `comparison_policy` | 当前为`exclude_unknown_across_candidates_v1`；历史报告为null。 |
 | `judgment_file` | 逐候选评分结果路径；pending/missing/error时可能尚未生成文件。 |
 

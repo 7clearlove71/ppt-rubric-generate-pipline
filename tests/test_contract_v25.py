@@ -92,7 +92,7 @@ def test_v25_keeps_source_ownership_and_dimension_budgets_when_fixed_items_split
         scale = contract.FIXED_WEIGHTS[new['dimension']] / old['dimension_weights'][new['dimension']]
         assert new['score'] == pytest.approx(previous['score'] * scale)
         assert new['judge_prompt'] == new['pass_condition']
-    assert suite['provenance']['prompt_version'] == '2026-10-20.contract-v2.5'
+    assert suite['provenance']['prompt_version'] == '2026-10-23.contract-v2.5.2'
     assert suite['rubric_hash'] != old['rubric_hash']
 
 

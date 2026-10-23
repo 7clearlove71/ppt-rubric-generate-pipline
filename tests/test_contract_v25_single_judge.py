@@ -71,7 +71,7 @@ def test_single_k3_excludes_unknown_and_keeps_original_assessment(isolated_evalu
     assert report['assessment']['summary']['unresolved_weight'] == 30
     assert report['verdicts'] == report['assessment']['verdicts']
     assert report['scoring_method'] == judge.SCORING_METHOD == 'single_k3'
-    assert report['judge_validator_version'] == judge.VALIDATOR_VERSION == 10
+    assert report['judge_validator_version'] == judge.VALIDATOR_VERSION == 12
     assert not {'primary', 'verification', 'consensus', 'verification_model'} & set(report)
     assert all('verification_answer' not in row and 'primary_answer' not in row
                for row in report['verdicts'])

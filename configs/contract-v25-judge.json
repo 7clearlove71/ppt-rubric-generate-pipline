@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.1",
   "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
   "generator_model": "kimi-k3",
   "vision_model": "kimi-k3",
@@ -58,7 +58,14 @@
   "visual_batch_size": 1,
   "max_visual_focus_images": 4,
   "api_key_env": "BAILIAN_API_KEY",
-  "contract_version": "2026-10-20.contract-v2.5",
+  "contract_version": "2026-10-23.contract-v2.5.2",
   "scoring_method": "single_k3",
-  "assessment_workers": 30
+  "assessment_workers": 30,
+  "source_dpi": 120,
+  "max_source_pages": 40,
+  "role_supports_images": {
+    "generator": true,
+    "reviewer": true,
+    "judge": true
+  }
 }

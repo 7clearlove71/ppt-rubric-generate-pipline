@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ppt-rubric"
-version = "0.1.0"
+version = "0.2.1"
 description = "Generate one audited semantic rubric per presentation task"
 requires-python = ">=3.9"
 dependencies = ["requests>=2.31,<3", "PyMuPDF>=1.24,<2"]
